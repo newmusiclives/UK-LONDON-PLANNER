@@ -1,0 +1,308 @@
+[
+  {
+    "id": "bath",
+    "name": "Bath",
+    "region": "South West",
+    "type": "city",
+    "description": "A stunning Georgian city built around natural hot springs. Roman Baths, the Royal Crescent, and Jane Austen connections make this one of England's most beautiful cities.",
+    "daysRecommended": 2,
+    "tags": ["history", "architecture", "romance", "wellness", "literary"],
+    "highlights": [
+      { "name": "Roman Baths", "description": "Remarkably preserved 2,000-year-old Roman bathing complex.", "cost": 28, "affiliateUrl": "https://www.getyourguide.com/bath-l226/roman-baths-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Thermae Bath Spa", "description": "Britain's only natural thermal spa. Rooftop pool with city views.", "cost": 42, "affiliateUrl": "https://www.getyourguide.com/bath-l226/thermae-bath-spa", "affiliateProvider": "getyourguide" },
+      { "name": "Royal Crescent & The Circus", "description": "Iconic Georgian architecture — the finest crescent of townhouses in the UK.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Jane Austen Centre", "description": "Explore the life and works of Bath's most famous resident.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Pulteney Bridge & Weir", "description": "One of only four bridges in the world lined with shops on both sides.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Sally Lunn's Historic Eating House", "description": "The oldest house in Bath (1482). Famous for the original Bath Bun.", "cost": 12, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Pump Room (afternoon tea)", "Sally Lunn's", "The Circus Restaurant", "Sotto Sotto (Italian)"],
+    "bestPubs": ["The Star Inn", "The Raven", "The Bell"],
+    "gettingThere": { "from": "London Paddington", "duration": "1h 22min", "mode": "train", "cost": 30, "affiliateUrl": "https://www.trainline.com/train-times/london-to-bath", "affiliateProvider": "trainline" },
+    "bestFor": ["Couples", "History lovers", "Wellness seekers", "Jane Austen fans"],
+    "hotels": {
+      "budget": { "name": "YHA Bath", "cost": 30 },
+      "mid-range": { "name": "The Roseate Villa Bath", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/roseate-villa-bath.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Royal Crescent Hotel & Spa", "cost": 350, "affiliateUrl": "https://www.booking.com/hotel/gb/royal-crescent-bath.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "edinburgh",
+    "name": "Edinburgh",
+    "region": "Scotland",
+    "type": "city",
+    "description": "Scotland's dramatic capital — a UNESCO World Heritage city of castles, cobbled streets, and literary pubs. Stunning architecture split between the medieval Old Town and Georgian New Town.",
+    "daysRecommended": 3,
+    "tags": ["history", "architecture", "literary", "nightlife", "photography", "food"],
+    "highlights": [
+      { "name": "Edinburgh Castle", "description": "Iconic fortress dominating the city skyline from Castle Rock.", "cost": 19.50, "affiliateUrl": "https://www.getyourguide.com/edinburgh-l44/edinburgh-castle-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Arthur's Seat", "description": "Hike the ancient volcano for panoramic city views. 251m summit.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "The Royal Mile", "description": "A mile of history from the Castle to Holyrood Palace. Closes, wynds, and hidden courtyards.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Scotch Whisky Experience", "description": "Learn about Scotland's national drink with tastings and the world's largest Scotch whisky collection.", "cost": 20, "affiliateUrl": "https://www.getyourguide.com/edinburgh-l44/scotch-whisky-experience", "affiliateProvider": "getyourguide" },
+      { "name": "National Museum of Scotland", "description": "World-class museum spanning science, nature, art, and Scottish history. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Calton Hill", "description": "Sunset viewpoint with neoclassical monuments. The 'Athens of the North'.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Witchery (fine dining)", "Dishoom Edinburgh", "The Kitchin (Michelin star)", "Oink (hog roast)"],
+    "bestPubs": ["The Bow Bar", "Sandy Bell's (live folk)", "The Last Drop", "Deacon Brodie's Tavern"],
+    "gettingThere": { "from": "London King's Cross", "duration": "4h 20min", "mode": "train", "cost": 50, "affiliateUrl": "https://www.trainline.com/train-times/london-to-edinburgh", "affiliateProvider": "trainline" },
+    "bestFor": ["History lovers", "Literary fans", "Whisky enthusiasts", "Photographers", "Lads trips", "Hen parties"],
+    "hotels": {
+      "budget": { "name": "Castle Rock Hostel", "cost": 25 },
+      "mid-range": { "name": "Motel One Edinburgh Royal", "cost": 110, "affiliateUrl": "https://www.booking.com/hotel/gb/motel-one-edinburgh-royal.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Balmoral", "cost": 400, "affiliateUrl": "https://www.booking.com/hotel/gb/the-balmoral.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "cotswolds",
+    "name": "The Cotswolds",
+    "region": "South West / Midlands",
+    "type": "countryside",
+    "description": "Rolling hills, honey-coloured stone villages, and quintessential English countryside. Bibury, Castle Combe, and Bourton-on-the-Water are picture-perfect.",
+    "daysRecommended": 2,
+    "tags": ["photography", "romance", "food", "wellness", "architecture"],
+    "highlights": [
+      { "name": "Bibury & Arlington Row", "description": "William Morris called it 'the most beautiful village in England'. The row of weavers' cottages is iconic.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Bourton-on-the-Water", "description": "The 'Venice of the Cotswolds' — a picture-perfect village with low bridges over the River Windrush.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Stow-on-the-Wold", "description": "Charming market town with antique shops and the famous tree-framed church door.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Castle Combe", "description": "Regularly voted England's prettiest village. Medieval market cross and golden stone cottages.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Blenheim Palace", "description": "Birthplace of Winston Churchill. Magnificent baroque palace with stunning gardens.", "cost": 32, "affiliateUrl": "https://www.getyourguide.com/cotswolds-l99/blenheim-palace-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Cotswolds Farm Park", "description": "Meet rare breed farm animals. Great for families.", "cost": 13, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Wild Rabbit (Michelin)", "The Wheatsheaf Inn", "5 North Street", "Chef's Table Tetbury"],
+    "bestPubs": ["The Slaughters Country Inn", "The Falkland Arms", "The King's Arms Stow"],
+    "gettingThere": { "from": "London Paddington", "duration": "1h 30min + drive", "mode": "train + car", "cost": 35, "affiliateUrl": "https://www.trainline.com/train-times/london-to-moreton-in-marsh", "affiliateProvider": "trainline" },
+    "bestFor": ["Couples", "Photographers", "Foodies", "Relaxation seekers"],
+    "hotels": {
+      "budget": { "name": "YHA Stow-on-the-Wold", "cost": 30 },
+      "mid-range": { "name": "The Old Stocks Inn", "cost": 130, "affiliateUrl": "https://www.booking.com/hotel/gb/old-stocks-inn.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Barnsley House", "cost": 350, "affiliateUrl": "https://www.booking.com/hotel/gb/barnsley-house.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "york",
+    "name": "York",
+    "region": "North East",
+    "type": "city",
+    "description": "A medieval walled city with a Viking heritage, Gothic cathedral, and The Shambles — one of the best-preserved medieval streets in Europe.",
+    "daysRecommended": 2,
+    "tags": ["history", "architecture", "food", "shopping", "family", "literary"],
+    "highlights": [
+      { "name": "York Minster", "description": "The largest Gothic cathedral in Northern Europe. Stunning stained glass and climb the tower for views.", "cost": 16, "affiliateUrl": "https://www.getyourguide.com/york-l227/york-minster-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "The Shambles", "description": "A narrow medieval street that inspired Diagon Alley in Harry Potter. Now packed with independent shops.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Jorvik Viking Centre", "description": "Travel back to Viking-age York on a ride through a recreated Viking settlement.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "York City Walls", "description": "Walk the 2-mile medieval walls encircling the city. The best-preserved in England.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "York Chocolate Story", "description": "York was the chocolate capital of Britain. Interactive tour through the history of Rowntree's, Terry's, and Kit Kat.", "cost": 16, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Betty's Tea Rooms", "description": "A York institution since 1936. Queues out the door for their legendary afternoon tea.", "cost": 25, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Betty's Tea Rooms", "The Star Inn the City", "Skosh", "Roots (Michelin star)"],
+    "bestPubs": ["The Guy Fawkes Inn", "Ye Olde Starre Inne", "The House of the Trembling Madness"],
+    "gettingThere": { "from": "London King's Cross", "duration": "1h 50min", "mode": "train", "cost": 35, "affiliateUrl": "https://www.trainline.com/train-times/london-to-york", "affiliateProvider": "trainline" },
+    "bestFor": ["Families", "History lovers", "Harry Potter fans", "Chocolate lovers"],
+    "hotels": {
+      "budget": { "name": "Safestay York", "cost": 25 },
+      "mid-range": { "name": "The Grand York", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/the-grand-york.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Principal York", "cost": 250, "affiliateUrl": "https://www.booking.com/hotel/gb/principal-york.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "lake-district",
+    "name": "Lake District",
+    "region": "North West",
+    "type": "countryside",
+    "description": "England's most dramatic landscape — mountains, lakes, and literary heritage. Wordsworth's inspiration, Beatrix Potter's home, and some of Britain's finest hiking.",
+    "daysRecommended": 3,
+    "tags": ["adventure", "wellness", "photography", "literary", "romance", "family"],
+    "highlights": [
+      { "name": "Lake Windermere Cruise", "description": "A scenic cruise on England's longest lake. Stunning mountain backdrop.", "cost": 12, "affiliateUrl": "https://www.getyourguide.com/lake-district-l99/windermere-cruise", "affiliateProvider": "getyourguide" },
+      { "name": "Catbells Fell Walk", "description": "The most popular fell walk in the Lakes. Manageable summit with spectacular Derwentwater views.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Beatrix Potter Gallery & Hill Top", "description": "Visit the home where Beatrix Potter wrote her famous tales.", "cost": 13, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Dove Cottage (Wordsworth)", "description": "The poet William Wordsworth's home. Where he wrote his greatest works.", "cost": 10, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Ambleside & Grasmere", "description": "Charming lakeside villages with excellent shops, cafes, and Grasmere gingerbread.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Helvellyn via Striding Edge", "description": "One of England's most thrilling mountain walks. Only for experienced hikers.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["L'Enclume (2 Michelin stars)", "The Drunken Duck", "Fellpack", "Sarah Nelson's Gingerbread Shop"],
+    "bestPubs": ["The Hole in t'Wall (Bowness)", "The Sun Inn (Coniston)", "The Kirkstile Inn"],
+    "gettingThere": { "from": "London Euston", "duration": "2h 40min to Oxenholme", "mode": "train", "cost": 45, "affiliateUrl": "https://www.trainline.com/train-times/london-to-windermere", "affiliateProvider": "trainline" },
+    "bestFor": ["Hikers", "Nature lovers", "Couples", "Literary fans", "Photographers"],
+    "hotels": {
+      "budget": { "name": "YHA Ambleside", "cost": 25 },
+      "mid-range": { "name": "Waterhead Hotel", "cost": 150, "affiliateUrl": "https://www.booking.com/hotel/gb/waterhead-ambleside.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Linthwaite House", "cost": 300, "affiliateUrl": "https://www.booking.com/hotel/gb/linthwaite-house.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "oxford",
+    "name": "Oxford",
+    "region": "South East",
+    "type": "city",
+    "description": "The City of Dreaming Spires. Home to the world's oldest English-speaking university, with stunning college architecture, Harry Potter film locations, and covered markets.",
+    "daysRecommended": 1,
+    "tags": ["history", "architecture", "literary", "photography", "family"],
+    "highlights": [
+      { "name": "Bodleian Library & Divinity School", "description": "One of Europe's oldest libraries. The Divinity School was used as the Hogwarts infirmary.", "cost": 16, "affiliateUrl": "https://www.getyourguide.com/oxford-l228/bodleian-library-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Christ Church College", "description": "The Great Hall inspired the Hogwarts dining hall. Lewis Carroll was a fellow here.", "cost": 18, "affiliateUrl": "https://www.getyourguide.com/oxford-l228/christ-church-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Radcliffe Camera & All Souls", "description": "Oxford's most photographed building. A circular library of extraordinary beauty.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Covered Market", "description": "A historic market since 1774 with independent shops, delis, and cafes.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Punting on the Cherwell", "description": "Glide along the river in a flat-bottomed punt. A quintessential Oxford experience.", "cost": 22, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Covered Market (lunch)", "The Eagle and Child (Tolkien's pub)", "Gee's Restaurant"],
+    "bestPubs": ["The Eagle and Child", "The Turf Tavern", "The Bear"],
+    "gettingThere": { "from": "London Paddington/Marylebone", "duration": "1h 5min", "mode": "train", "cost": 20, "affiliateUrl": "https://www.trainline.com/train-times/london-to-oxford", "affiliateProvider": "trainline" },
+    "bestFor": ["History lovers", "Harry Potter fans", "Literary fans", "Students"],
+    "hotels": {
+      "budget": { "name": "YHA Oxford", "cost": 28 },
+      "mid-range": { "name": "Mercure Oxford Eastgate", "cost": 120, "affiliateUrl": "https://www.booking.com/hotel/gb/mercure-oxford-eastgate.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Randolph Hotel", "cost": 250, "affiliateUrl": "https://www.booking.com/hotel/gb/randolph-oxford.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "cambridge",
+    "name": "Cambridge",
+    "region": "East",
+    "type": "city",
+    "description": "A beautiful university city of medieval colleges, soaring chapels, and peaceful river meadows. Punting on the Cam is a must.",
+    "daysRecommended": 1,
+    "tags": ["history", "architecture", "literary", "photography", "romance"],
+    "highlights": [
+      { "name": "King's College Chapel", "description": "One of the finest examples of Gothic architecture in Europe. The fan-vaulted ceiling is breathtaking.", "cost": 12, "affiliateUrl": "https://www.getyourguide.com/cambridge-l229/kings-college-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Punting on the Cam", "description": "Punt past the famous 'Backs' — the stunning college gardens that back onto the river.", "cost": 25, "affiliateUrl": "https://www.getyourguide.com/cambridge-l229/punting-tour", "affiliateProvider": "getyourguide" },
+      { "name": "The Fitzwilliam Museum", "description": "World-class art collection in a stunning neoclassical building. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "The Mathematical Bridge", "description": "A famous wooden bridge at Queens' College — legend says it was designed by Newton.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Fitzbillies (Chelsea buns)", "Midsummer House (Michelin)", "The Eagle Pub"],
+    "bestPubs": ["The Eagle (DNA discovery pub)", "The Granta", "The Free Press"],
+    "gettingThere": { "from": "London King's Cross", "duration": "50min", "mode": "train", "cost": 18, "affiliateUrl": "https://www.trainline.com/train-times/london-to-cambridge", "affiliateProvider": "trainline" },
+    "bestFor": ["Couples", "History lovers", "Photographers"],
+    "hotels": {
+      "budget": { "name": "YHA Cambridge", "cost": 25 },
+      "mid-range": { "name": "Gonville Hotel", "cost": 130, "affiliateUrl": "https://www.booking.com/hotel/gb/gonville-cambridge.html", "affiliateProvider": "booking" },
+      "premium": { "name": "University Arms", "cost": 280, "affiliateUrl": "https://www.booking.com/hotel/gb/university-arms-cambridge.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "cornwall",
+    "name": "Cornwall",
+    "region": "South West",
+    "type": "coastal",
+    "description": "Dramatic cliffs, turquoise seas, and charming fishing villages. St Ives, Padstow, and the Eden Project make Cornwall feel like another country entirely.",
+    "daysRecommended": 3,
+    "tags": ["photography", "food", "adventure", "romance", "family", "wellness"],
+    "highlights": [
+      { "name": "St Ives", "description": "An artists' paradise with golden beaches, the Tate St Ives gallery, and cobbled streets. Cornwall's prettiest town.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Eden Project", "description": "Giant biomes housing the world's largest indoor rainforest. Architecture as spectacular as the plants.", "cost": 32, "affiliateUrl": "https://www.getyourguide.com/cornwall-l99/eden-project-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Padstow & Rick Stein", "description": "A foodie fishing village made famous by chef Rick Stein. Incredible seafood.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Minack Theatre", "description": "An open-air theatre carved into a cliff above the sea. Performances with the Atlantic as backdrop.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "St Michael's Mount", "description": "A fairytale castle on a tidal island. Walk across the causeway at low tide.", "cost": 15, "affiliateUrl": "https://www.getyourguide.com/cornwall-l99/st-michaels-mount-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Coastal Path Walking", "description": "Part of the 630-mile South West Coast Path. Dramatic cliff walks with wildflowers and seabirds.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Seafood Restaurant (Stein's)", "Porthminster Beach Cafe", "Paul Ainsworth at No. 6", "The Hidden Hut"],
+    "bestPubs": ["The Sloop Inn (St Ives)", "The Ship Inn (Padstow)", "The Blue Anchor (Helston)"],
+    "gettingThere": { "from": "London Paddington", "duration": "4h 45min", "mode": "train", "cost": 55, "affiliateUrl": "https://www.trainline.com/train-times/london-to-st-ives-cornwall", "affiliateProvider": "trainline" },
+    "bestFor": ["Beach lovers", "Foodies", "Families", "Couples", "Photographers"],
+    "hotels": {
+      "budget": { "name": "YHA Treyarnon Bay", "cost": 25 },
+      "mid-range": { "name": "The Headland Hotel", "cost": 150, "affiliateUrl": "https://www.booking.com/hotel/gb/headland-newquay.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Carbis Bay Hotel", "cost": 300, "affiliateUrl": "https://www.booking.com/hotel/gb/carbis-bay.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "liverpool",
+    "name": "Liverpool",
+    "region": "North West",
+    "type": "city",
+    "description": "UNESCO World Heritage waterfront, the Beatles, two cathedrals, and one of the UK's best food and nightlife scenes. A city of culture, music, and football.",
+    "daysRecommended": 2,
+    "tags": ["music", "history", "sports", "nightlife", "architecture", "food"],
+    "highlights": [
+      { "name": "The Beatles Story", "description": "The world's largest permanent Beatles exhibition at the Albert Dock.", "cost": 18, "affiliateUrl": "https://www.getyourguide.com/liverpool-l230/beatles-story-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Anfield Stadium Tour (Liverpool FC)", "description": "Walk through the tunnel touching the 'This Is Anfield' sign. One of football's most legendary grounds.", "cost": 25, "affiliateUrl": "https://www.getyourguide.com/liverpool-l230/anfield-stadium-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Albert Dock", "description": "Beautifully restored Victorian dock complex with museums, restaurants, and bars.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Cavern Club", "description": "The club where the Beatles played 292 times. Still hosts live music daily.", "cost": 5, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Tate Liverpool", "description": "Home to the national collection of modern and contemporary art in the North. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Liverpool Cathedral", "description": "The largest cathedral in Britain. The tower views are spectacular.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Maray (Middle Eastern)", "The Art School", "Bold Street Coffee", "Neon Jamon"],
+    "bestPubs": ["The Philharmonic Dining Rooms", "Ye Cracke", "Peter Kavanagh's"],
+    "gettingThere": { "from": "London Euston", "duration": "2h 10min", "mode": "train", "cost": 35, "affiliateUrl": "https://www.trainline.com/train-times/london-to-liverpool", "affiliateProvider": "trainline" },
+    "bestFor": ["Beatles fans", "Football fans", "Music lovers", "Lads trips"],
+    "hotels": {
+      "budget": { "name": "YHA Liverpool Albert Dock", "cost": 22 },
+      "mid-range": { "name": "Hard Days Night Hotel", "cost": 120, "affiliateUrl": "https://www.booking.com/hotel/gb/hard-days-night.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Titanic Hotel", "cost": 200, "affiliateUrl": "https://www.booking.com/hotel/gb/titanic-liverpool.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "brighton",
+    "name": "Brighton",
+    "region": "South East",
+    "type": "coastal",
+    "description": "London's favourite seaside escape. Bohemian vibes, the iconic Royal Pavilion, vibrant LGBTQ+ scene, and The Lanes' vintage shops and restaurants.",
+    "daysRecommended": 1,
+    "tags": ["nightlife", "shopping", "food", "photography", "romance", "art"],
+    "highlights": [
+      { "name": "Royal Pavilion", "description": "An extraordinary Indo-Saracenic palace built for King George IV. Jaw-droppingly opulent.", "cost": 17, "affiliateUrl": "https://www.getyourguide.com/brighton-l231/royal-pavilion-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "The Lanes", "description": "A maze of narrow alleyways packed with vintage shops, jewellers, and independent boutiques.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Brighton Pier", "description": "Classic British seaside amusement pier. Fish and chips, arcades, and fairground rides.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "North Laine", "description": "Brighton's bohemian quarter. Independent shops, street art, vinyl stores, and veggie cafes.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Brighton Beach & Seafront", "description": "Pebble beach with the seafront promenade. Bars, clubs, and the iconic i360 tower.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Salt Room", "Fatto a Mano (pizza)", "The Gingerman", "Riddle & Finns (seafood)"],
+    "bestPubs": ["The Basketmakers Arms", "The Prince Albert", "The Fortune of War (beach bar)"],
+    "gettingThere": { "from": "London Victoria/London Bridge", "duration": "55min", "mode": "train", "cost": 15, "affiliateUrl": "https://www.trainline.com/train-times/london-to-brighton", "affiliateProvider": "trainline" },
+    "bestFor": ["Day trippers", "Couples", "LGBTQ+ travellers", "Shopping lovers", "Hen parties"],
+    "hotels": {
+      "budget": { "name": "YHA Brighton", "cost": 22 },
+      "mid-range": { "name": "Hotel du Vin Brighton", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/du-vin-brighton.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Grand Brighton", "cost": 250, "affiliateUrl": "https://www.booking.com/hotel/gb/the-grand-brighton.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "stratford-upon-avon",
+    "name": "Stratford-upon-Avon",
+    "region": "Midlands",
+    "type": "city",
+    "description": "Shakespeare's birthplace. A charming Tudor market town with world-class theatre, beautiful river walks, and connections to the greatest writer in the English language.",
+    "daysRecommended": 1,
+    "tags": ["literary", "history", "theatre", "romance", "photography"],
+    "highlights": [
+      { "name": "Shakespeare's Birthplace", "description": "The house where Shakespeare was born in 1564. Beautifully preserved with costumed guides.", "cost": 22, "affiliateUrl": "https://www.getyourguide.com/stratford-l99/shakespeares-birthplace-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Royal Shakespeare Company (RSC)", "description": "See a world-class Shakespeare production at the RSC Theatre on the river.", "cost": 40, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Anne Hathaway's Cottage", "description": "The thatched cottage where Shakespeare's wife grew up. Beautiful cottage garden.", "cost": 15, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "River Avon", "description": "Hire a rowing boat or take a river cruise past the theatre and the old town.", "cost": 8, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Opposition", "Lambs", "No. 9 Church Street"],
+    "bestPubs": ["The Dirty Duck (actors' pub)", "The Garrick Inn (oldest pub)"],
+    "gettingThere": { "from": "London Marylebone", "duration": "2h 10min", "mode": "train", "cost": 25, "affiliateUrl": "https://www.trainline.com/train-times/london-to-stratford-upon-avon", "affiliateProvider": "trainline" },
+    "bestFor": ["Shakespeare fans", "Literary lovers", "Theatre lovers", "Couples"],
+    "hotels": {
+      "budget": { "name": "YHA Stratford", "cost": 25 },
+      "mid-range": { "name": "Hotel Indigo", "cost": 130, "affiliateUrl": "https://www.booking.com/hotel/gb/hotel-indigo-stratford.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Arden Hotel", "cost": 220, "affiliateUrl": "https://www.booking.com/hotel/gb/arden-stratford.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "scottish-highlands",
+    "name": "Scottish Highlands",
+    "region": "Scotland",
+    "type": "countryside",
+    "description": "Wild, raw, and breathtakingly beautiful. Ancient castles, misty lochs, and mountains that feel like the edge of the world. Includes Loch Ness, Glencoe, and the Isle of Skye.",
+    "daysRecommended": 3,
+    "tags": ["adventure", "photography", "history", "romance", "wellness"],
+    "highlights": [
+      { "name": "Loch Ness", "description": "The legendary loch famous for its mythical monster. The ruins of Urquhart Castle on the shore are dramatic.", "cost": 12, "affiliateUrl": "https://www.getyourguide.com/scotland-l99/loch-ness-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Glencoe", "description": "Scotland's most dramatic valley. The site of the 1692 massacre and countless films (Harry Potter, James Bond).", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Isle of Skye", "description": "Fairy pools, dramatic cliffs, and otherworldly landscapes. The Old Man of Storr is iconic.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Eilean Donan Castle", "description": "Scotland's most photographed castle, on a small island where three lochs meet.", "cost": 10, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Ben Nevis", "description": "The UK's highest mountain at 1,345m. A challenging but rewarding climb.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Highland Whisky Distilleries", "description": "Tour a working distillery and taste single malts at the source.", "cost": 15, "affiliateUrl": "https://www.getyourguide.com/scotland-l99/whisky-distillery-tour", "affiliateProvider": "getyourguide" }
+    ],
+    "bestRestaurants": ["The Three Chimneys (Skye)", "Café 1 (Inverness)", "Crannog (Fort William)"],
+    "bestPubs": ["The Clachaig Inn (Glencoe)", "Applecross Inn", "The Old Forge (remotest pub)"],
+    "gettingThere": { "from": "Edinburgh", "duration": "3-4h drive", "mode": "car/tour", "cost": 0, "affiliateUrl": "https://www.getyourguide.com/edinburgh-l44/highlands-day-tour", "affiliateProvider": "getyourguide" },
+    "bestFor": ["Adventurers", "Photographers", "Whisky lovers", "Nature seekers", "Road trippers"],
+    "hotels": {
+      "budget": { "name": "YHA Glen Nevis", "cost": 22 },
+      "mid-range": { "name": "Kingsmills Hotel Inverness", "cost": 130, "affiliateUrl": "https://www.booking.com/hotel/gb/kingsmills-inverness.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Inverlochy Castle Hotel", "cost": 400, "affiliateUrl": "https://www.booking.com/hotel/gb/inverlochy-castle.html", "affiliateProvider": "booking" }
+    }
+  }
+]

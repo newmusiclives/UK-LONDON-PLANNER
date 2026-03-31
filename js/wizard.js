@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   UI.init();
 
   let currentStep = 1;
-  const totalSteps = 6;
+  const totalSteps = 7;
 
   const state = State.get();
   let tripDays = state.tripDays || CONFIG.trip.defaultDays;
@@ -10,8 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let interests = state.interests || [];
   let occasion = state.occasion || 'none';
   let groupType = state.groupType || 'couple';
+  let ukExtension = state.ukExtension || { enabled: false, days: 0, destinations: [] };
+  let ukDestinations = [];
 
-  // Render wizard
+  // Load UK destinations
+  fetch('data/uk-destinations.json')
+    .then(r => r.json())
+    .then(data => { ukDestinations = data; })
+    .catch(() => {});
+
   renderWizard();
   updateStep(1);
 
@@ -20,21 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
     main.innerHTML = `
       <div class="wizard">
         <div class="wizard__header">
-          <h1>Plan Your London Adventure</h1>
+          <h1>Plan Your Adventure</h1>
           <p>Answer a few questions and we'll create your perfect personalised itinerary</p>
         </div>
 
         <div class="wizard__progress progress-bar">
-          ${[1,2,3,4,5,6].map((step, i) => `
+          ${[1,2,3,4,5,6,7].map((step, i) => `
             <div class="progress-step" data-step="${step}">
               <div class="progress-step__circle">${step}</div>
-              <span class="progress-step__label">${['Duration', 'Who', 'Occasion', 'Budget', 'Interests', 'Review'][i]}</span>
-              ${i < 5 ? '<div class="progress-step__line"></div>' : ''}
+              <span class="progress-step__label">${['London', 'Beyond', 'Who', 'Occasion', 'Budget', 'Interests', 'Review'][i]}</span>
+              ${i < 6 ? '<div class="progress-step__line"></div>' : ''}
             </div>
           `).join('')}
         </div>
 
-        <!-- Step 1: Duration -->
+        <!-- Step 1: London Duration -->
         <div class="wizard__step" data-step="1">
           <h2 class="wizard__step-title">How many days in London?</h2>
           <p class="wizard__step-desc">From a weekend getaway to an extended exploration</p>
@@ -52,13 +59,60 @@ document.addEventListener('DOMContentLoaded', () => {
               <span>3 weeks</span>
             </div>
             <div class="duration-price-hint" id="price-hint">
-              Itinerary price: $${State.getPrice(tripDays)}
+              London itinerary: $${State.getPrice(tripDays)}
             </div>
           </div>
         </div>
 
-        <!-- Step 2: Group Type -->
+        <!-- Step 2: UK Extension -->
         <div class="wizard__step" data-step="2">
+          <h2 class="wizard__step-title">Explore Beyond London?</h2>
+          <p class="wizard__step-desc">Add extra days to discover the best of the UK — historic cities, stunning coastline, and beautiful countryside</p>
+
+          <div style="display:flex;gap:1rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap;">
+            <div class="chip ${!ukExtension.enabled ? 'active' : ''}" data-uk-toggle="no" style="padding:1rem 2rem;">
+              <span class="chip__icon">🇬🇧</span>
+              London Only
+            </div>
+            <div class="chip ${ukExtension.enabled ? 'active' : ''}" data-uk-toggle="yes" style="padding:1rem 2rem;">
+              <span class="chip__icon">🗺️</span>
+              London + UK Exploration
+            </div>
+          </div>
+
+          <div id="uk-options" style="display:${ukExtension.enabled ? 'block' : 'none'};">
+            <div style="text-align:center;margin-bottom:1.5rem;">
+              <label style="font-weight:600;margin-bottom:0.5rem;display:block;">How many extra days beyond London?</label>
+              <div class="duration-selector" style="padding:1rem;">
+                <div class="duration-display" style="font-size:3rem;">
+                  <span id="uk-day-count">${ukExtension.days || 5}</span>
+                  <span style="font-size:1rem;">days</span>
+                </div>
+                <input type="range" class="duration-slider" id="uk-duration-slider"
+                  min="1" max="14" value="${ukExtension.days || 5}">
+                <div class="duration-labels">
+                  <span>1 day</span>
+                  <span>1 week</span>
+                  <span>2 weeks</span>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="text-align:center;margin-bottom:1rem;">Where would you like to go?</h4>
+            <p style="text-align:center;font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
+              Select destinations that interest you — we'll build the perfect route
+            </p>
+            <div id="uk-destinations-grid" class="interests-grid" style="max-width:800px;margin:0 auto;">
+              <!-- populated dynamically -->
+            </div>
+
+            <div id="uk-price-hint" style="text-align:center;margin-top:1.5rem;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Group Type -->
+        <div class="wizard__step" data-step="3">
           <h2 class="wizard__step-title">Who's travelling?</h2>
           <p class="wizard__step-desc">We'll tailor activities and venues to suit your group</p>
           <div class="interests-grid" style="max-width: 600px; margin: 2rem auto 0;">
@@ -71,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 3: Occasion -->
-        <div class="wizard__step" data-step="3">
+        <!-- Step 4: Occasion -->
+        <div class="wizard__step" data-step="4">
           <h2 class="wizard__step-title">What's the occasion?</h2>
           <p class="wizard__step-desc">Celebrating something special? We'll make it unforgettable</p>
           <div class="interests-grid" style="max-width: 700px; margin: 2rem auto 0;">
@@ -85,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 4: Budget -->
-        <div class="wizard__step" data-step="4">
+        <!-- Step 5: Budget -->
+        <div class="wizard__step" data-step="5">
           <h2 class="wizard__step-title">What's your budget style?</h2>
           <p class="wizard__step-desc">We'll tailor recommendations to match your spending preferences</p>
           <div class="budget-grid">
@@ -113,8 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 5: Interests -->
-        <div class="wizard__step" data-step="5">
+        <!-- Step 6: Interests -->
+        <div class="wizard__step" data-step="6">
           <h2 class="wizard__step-title">What are you into?</h2>
           <p class="wizard__step-desc">Select at least 3 interests so we can personalise your trip</p>
           <div class="interest-count">
@@ -131,13 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 6: Review -->
-        <div class="wizard__step" data-step="6">
+        <!-- Step 7: Review -->
+        <div class="wizard__step" data-step="7">
           <h2 class="wizard__step-title">Your Trip Summary</h2>
           <p class="wizard__step-desc">Review your preferences before we generate your itinerary</p>
-          <div class="review-card" id="review-card">
-            <!-- Populated dynamically -->
-          </div>
+          <div class="review-card" id="review-card"></div>
         </div>
 
         <div class="wizard__nav">
@@ -154,6 +206,67 @@ document.addEventListener('DOMContentLoaded', () => {
     attachEvents();
   }
 
+  function populateUKDestinations() {
+    const grid = document.getElementById('uk-destinations-grid');
+    if (!grid || !ukDestinations.length) return;
+
+    grid.innerHTML = ukDestinations.map(dest => {
+      const typeIcon = dest.type === 'city' ? '🏰' : dest.type === 'coastal' ? '🏖️' : '🌿';
+      const selected = ukExtension.destinations.includes(dest.id);
+      return `
+        <div class="chip ${selected ? 'active' : ''}" data-uk-dest="${dest.id}" style="flex-direction:column;padding:1rem;min-width:140px;">
+          <span style="font-size:1.5rem;">${typeIcon}</span>
+          <strong>${dest.name}</strong>
+          <span style="font-size:0.7rem;color:var(--color-text-muted);">${dest.region} &middot; ${dest.daysRecommended}${dest.daysRecommended > 1 ? ' days' : ' day'}</span>
+        </div>
+      `;
+    }).join('');
+
+    // Reattach events
+    document.querySelectorAll('[data-uk-dest]').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const id = chip.dataset.ukDest;
+        if (ukExtension.destinations.includes(id)) {
+          ukExtension.destinations = ukExtension.destinations.filter(d => d !== id);
+          chip.classList.remove('active');
+        } else {
+          ukExtension.destinations.push(id);
+          chip.classList.add('active');
+        }
+        updateUKPriceHint();
+      });
+    });
+
+    updateUKPriceHint();
+  }
+
+  function getUKExtensionPrice(days) {
+    const p = CONFIG.ukExtension.pricing;
+    if (days <= 5) return p.short.price;
+    if (days <= 10) return p.standard.price;
+    return p.extended.price;
+  }
+
+  function updateUKPriceHint() {
+    const hint = document.getElementById('uk-price-hint');
+    if (!hint) return;
+    const ukDays = parseInt(document.getElementById('uk-duration-slider')?.value || ukExtension.days || 5);
+    const ukPrice = getUKExtensionPrice(ukDays);
+    const londonPrice = State.getPrice(tripDays);
+    const totalDays = tripDays + ukDays;
+    const selectedDests = ukExtension.destinations.map(id => {
+      const d = ukDestinations.find(dest => dest.id === id);
+      return d ? d.name : id;
+    }).join(', ');
+
+    hint.innerHTML = `
+      <div class="duration-price-hint" style="display:inline-block;">
+        London (${tripDays} days): $${londonPrice} + UK (${ukDays} days): $${ukPrice} = <strong>$${londonPrice + ukPrice} total</strong>
+      </div>
+      ${selectedDests ? `<p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0.5rem;">Selected: ${selectedDests}</p>` : ''}
+    `;
+  }
+
   function attachEvents() {
     // Duration slider
     const slider = document.getElementById('duration-slider');
@@ -163,7 +276,32 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('day-count').textContent = tripDays;
         document.getElementById('day-label').textContent = tripDays === 1 ? 'day' : 'days';
         document.getElementById('price-hint').textContent =
-          `Itinerary price: $${State.getPrice(tripDays)}`;
+          `London itinerary: $${State.getPrice(tripDays)}`;
+      });
+    }
+
+    // UK toggle
+    document.querySelectorAll('[data-uk-toggle]').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('[data-uk-toggle]').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        ukExtension.enabled = chip.dataset.ukToggle === 'yes';
+        const opts = document.getElementById('uk-options');
+        if (opts) opts.style.display = ukExtension.enabled ? 'block' : 'none';
+        if (ukExtension.enabled) {
+          ukExtension.days = parseInt(document.getElementById('uk-duration-slider')?.value || 5);
+          populateUKDestinations();
+        }
+      });
+    });
+
+    // UK duration slider
+    const ukSlider = document.getElementById('uk-duration-slider');
+    if (ukSlider) {
+      ukSlider.addEventListener('input', (e) => {
+        ukExtension.days = parseInt(e.target.value);
+        document.getElementById('uk-day-count').textContent = ukExtension.days;
+        updateUKPriceHint();
       });
     }
 
@@ -190,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Group type chips (single select)
+    // Group type chips
     document.querySelectorAll('.chip[data-group]').forEach(chip => {
       chip.addEventListener('click', () => {
         document.querySelectorAll('.chip[data-group]').forEach(c => c.classList.remove('active'));
@@ -199,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Occasion chips (single select)
+    // Occasion chips
     document.querySelectorAll('.chip[data-occasion]').forEach(chip => {
       chip.addEventListener('click', () => {
         document.querySelectorAll('.chip[data-occasion]').forEach(c => c.classList.remove('active'));
@@ -223,18 +361,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     currentStep++;
     updateStep(currentStep);
+
+    if (currentStep === 2) populateUKDestinations();
   }
 
   function handleBack() {
     if (currentStep > 1) {
       currentStep--;
       updateStep(currentStep);
+      if (currentStep === 2) populateUKDestinations();
     }
   }
 
   function validateStep(step) {
     switch (step) {
-      case 5:
+      case 6:
         if (interests.length < 3) {
           UI.showToast('Please select at least 3 interests');
           return false;
@@ -246,19 +387,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateStep(step) {
-    // Update panels
     document.querySelectorAll('.wizard__step').forEach(el => {
       el.classList.toggle('active', parseInt(el.dataset.step) === step);
     });
 
-    // Update progress
     document.querySelectorAll('.progress-step').forEach(el => {
       const s = parseInt(el.dataset.step);
       el.classList.toggle('active', s === step);
       el.classList.toggle('completed', s < step);
     });
 
-    // Update nav
     const backBtn = document.getElementById('btn-back');
     const nextBtn = document.getElementById('btn-next');
 
@@ -275,16 +413,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderReview() {
     const card = document.getElementById('review-card');
-    const price = State.getPrice(tripDays);
+    const londonPrice = State.getPrice(tripDays);
     const tierLabel = CONFIG.pricing[State.getPriceTier(tripDays)].label;
-
     const groupLabel = CONFIG.groupTypes.find(g => g.id === groupType);
     const occasionLabel = CONFIG.occasions.find(o => o.id === occasion);
 
+    let ukSection = '';
+    let totalPrice = londonPrice;
+
+    if (ukExtension.enabled && ukExtension.days > 0) {
+      const ukPrice = getUKExtensionPrice(ukExtension.days);
+      totalPrice += ukPrice;
+      const destNames = ukExtension.destinations.map(id => {
+        const d = ukDestinations.find(dest => dest.id === id);
+        return d ? d.name : id;
+      });
+
+      ukSection = `
+        <div class="review-item">
+          <span class="review-item__label">UK Extension</span>
+          <span class="review-item__value">${ukExtension.days} days (+$${ukPrice})</span>
+        </div>
+        ${destNames.length > 0 ? `
+          <div class="review-item">
+            <span class="review-item__label">UK Destinations</span>
+            <div class="review-interests">
+              ${destNames.map(n => `<span class="badge badge--accent">${n}</span>`).join('')}
+            </div>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    const totalDays = tripDays + (ukExtension.enabled ? ukExtension.days : 0);
+
     card.innerHTML = `
       <div class="review-item">
-        <span class="review-item__label">Duration</span>
+        <span class="review-item__label">London</span>
         <span class="review-item__value">${tripDays} ${tripDays === 1 ? 'day' : 'days'}</span>
+      </div>
+      ${ukSection}
+      <div class="review-item">
+        <span class="review-item__label">Total Trip</span>
+        <span class="review-item__value" style="color:var(--color-accent);font-size:1.1rem;">${totalDays} days</span>
       </div>
       <div class="review-item">
         <span class="review-item__label">Travellers</span>
@@ -296,21 +467,15 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div class="review-item">
         <span class="review-item__label">Accommodation</span>
-        <span class="review-item__value">${CONFIG.budgetTiers.accommodation[budget.accommodation].label}
-          <br><small style="color: var(--color-text-muted); font-weight: 400">${CONFIG.budgetTiers.accommodation[budget.accommodation].range}</small>
-        </span>
+        <span class="review-item__value">${CONFIG.budgetTiers.accommodation[budget.accommodation].label}</span>
       </div>
       <div class="review-item">
         <span class="review-item__label">Food</span>
-        <span class="review-item__value">${CONFIG.budgetTiers.food[budget.food].label}
-          <br><small style="color: var(--color-text-muted); font-weight: 400">${CONFIG.budgetTiers.food[budget.food].range}</small>
-        </span>
+        <span class="review-item__value">${CONFIG.budgetTiers.food[budget.food].label}</span>
       </div>
       <div class="review-item">
         <span class="review-item__label">Entertainment</span>
-        <span class="review-item__value">${CONFIG.budgetTiers.entertainment[budget.entertainment].label}
-          <br><small style="color: var(--color-text-muted); font-weight: 400">${CONFIG.budgetTiers.entertainment[budget.entertainment].range}</small>
-        </span>
+        <span class="review-item__value">${CONFIG.budgetTiers.entertainment[budget.entertainment].label}</span>
       </div>
       <div class="review-item">
         <span class="review-item__label">Interests</span>
@@ -322,10 +487,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="review-price">
-        <div class="review-price__desc">${tierLabel} Itinerary</div>
-        <div class="review-price__amount">$${price}</div>
+        <div class="review-price__desc">${totalDays}-Day ${ukExtension.enabled ? 'London + UK' : 'London'} Itinerary</div>
+        <div class="review-price__amount">$${totalPrice}</div>
         <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: var(--space-sm);">
-          Preview first 2 days free, then purchase to unlock all ${tripDays} days + PDF export
+          Preview first 2 days free, then purchase to unlock all ${totalDays} days + PDF export
+        </p>
+        <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+          Optional add-ons: Booking Concierge ($50) &middot; Personal Consultation ($75)
         </p>
       </div>
     `;
@@ -336,18 +504,144 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.disabled = true;
     nextBtn.innerHTML = '<div class="spinner" style="width:20px;height:20px;border-width:2px;display:inline-block;vertical-align:middle;"></div> Generating...';
 
-    // Save preferences
     State.save({
-      tripDays, budget, interests, occasion, groupType,
+      tripDays, budget, interests, occasion, groupType, ukExtension,
       generatedAt: new Date().toISOString()
     });
 
-    // Load data and generate
     await Engine.loadData();
     const itinerary = Engine.generate({ tripDays, budget, interests, occasion, groupType });
-    State.saveItinerary(itinerary);
 
-    // Redirect to itinerary page
+    // If UK extension, add UK days
+    if (ukExtension.enabled && ukExtension.days > 0) {
+      const ukDests = ukDestinations.filter(d => ukExtension.destinations.includes(d.id));
+      const ukDays = buildUKDays(ukDests, itinerary.days.length, ukExtension.days, budget, interests);
+      itinerary.days.push(...ukDays);
+      itinerary.ukExtension = ukExtension;
+      itinerary.ukDestinations = ukDests;
+      itinerary.tripDays = tripDays + ukExtension.days;
+    }
+
+    State.saveItinerary(itinerary);
     window.location.href = 'itinerary.html';
+  }
+
+  function buildUKDays(destinations, startDay, totalUKDays, budget, interests) {
+    const days = [];
+    let dayNum = startDay + 1;
+    let daysRemaining = totalUKDays;
+
+    // If no destinations selected, auto-pick based on interests
+    if (destinations.length === 0) {
+      destinations = ukDestinations
+        .map(d => ({ ...d, score: d.tags.filter(t => interests.includes(t)).length }))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, Math.min(4, Math.ceil(totalUKDays / 2)));
+    }
+
+    for (const dest of destinations) {
+      if (daysRemaining <= 0) break;
+
+      const daysHere = Math.min(dest.daysRecommended, daysRemaining);
+      const budgetKey = budget.accommodation;
+      const hotel = dest.hotels[budgetKey] || dest.hotels['mid-range'];
+
+      // Travel day / first day
+      const firstDayActivities = [
+        {
+          timeSlot: "Morning",
+          period: "morning",
+          name: `Travel to ${dest.name}`,
+          description: `${dest.gettingThere.mode === 'train' ? 'Take the train' : 'Travel'} from ${dest.gettingThere.from} (${dest.gettingThere.duration}). ${dest.description}`,
+          estimatedCost: `£${dest.gettingThere.cost}`,
+          estimatedCostValue: dest.gettingThere.cost,
+          affiliateUrl: dest.gettingThere.affiliateUrl || '',
+          affiliateLabel: dest.gettingThere.affiliateUrl ? 'Book Train Tickets' : '',
+          tips: `Book trains in advance for the best prices.`,
+          address: dest.gettingThere.from,
+          neighbourhood: dest.name,
+          type: 'transport'
+        }
+      ];
+
+      // Add highlights across the days
+      const highlights = [...dest.highlights];
+      let highlightIdx = 0;
+
+      for (let d = 0; d < daysHere; d++) {
+        const activities = d === 0 ? [...firstDayActivities] : [];
+        const slotsNeeded = d === 0 ? 3 : 4;
+
+        for (let s = 0; s < slotsNeeded && highlightIdx < highlights.length; s++) {
+          const h = highlights[highlightIdx++];
+          const periods = ['morning', 'lunch', 'afternoon', 'evening'];
+          activities.push({
+            timeSlot: d === 0 && s === 0 ? 'Afternoon' : ['Morning', 'Lunch', 'Afternoon', 'Evening'][s % 4],
+            period: periods[(d === 0 ? s + 1 : s) % 4],
+            name: h.name,
+            description: h.description,
+            estimatedCost: h.cost > 0 ? `£${h.cost.toFixed(2)}` : 'Free',
+            estimatedCostValue: h.cost,
+            affiliateUrl: h.affiliateUrl || '',
+            affiliateLabel: h.affiliateUrl ? 'Book Tickets' : '',
+            tips: '',
+            address: dest.name,
+            neighbourhood: dest.name,
+            type: 'attraction'
+          });
+        }
+
+        // Add restaurant
+        if (dest.bestRestaurants.length > 0) {
+          const rest = dest.bestRestaurants[d % dest.bestRestaurants.length];
+          activities.push({
+            timeSlot: '18:30 - 20:00',
+            period: 'dinner',
+            name: rest,
+            description: `Recommended restaurant in ${dest.name}.`,
+            estimatedCost: '£25-45',
+            estimatedCostValue: 35,
+            affiliateUrl: '',
+            affiliateLabel: '',
+            tips: 'Book in advance during peak season.',
+            address: dest.name,
+            neighbourhood: dest.name,
+            type: 'restaurant'
+          });
+        }
+
+        // Add pub
+        if (dest.bestPubs.length > 0) {
+          const pub = dest.bestPubs[d % dest.bestPubs.length];
+          activities.push({
+            timeSlot: '20:30 - 22:30',
+            period: 'evening',
+            name: pub,
+            description: `A local favourite in ${dest.name}.`,
+            estimatedCost: '£5-10',
+            estimatedCostValue: 7,
+            affiliateUrl: '',
+            affiliateLabel: '',
+            tips: '',
+            address: dest.name,
+            neighbourhood: dest.name,
+            type: 'nightlife'
+          });
+        }
+
+        days.push({
+          dayNumber: dayNum++,
+          theme: `${dest.name}${daysHere > 1 ? ` — Day ${d + 1}` : ''}`,
+          neighbourhoods: [dest.name, dest.region],
+          activities,
+          isUKExtension: true,
+          destination: dest
+        });
+
+        daysRemaining--;
+      }
+    }
+
+    return days;
   }
 });

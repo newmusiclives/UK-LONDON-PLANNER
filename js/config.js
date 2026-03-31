@@ -48,6 +48,28 @@ const CONFIG = {
     defaultDays: 5
   },
 
+  // UK Extension pricing (added to base London itinerary price)
+  ukExtension: {
+    enabled: true,
+    pricing: {
+      short:    { days: [1, 5],   price: 30, label: 'UK Short Break' },
+      standard: { days: [6, 10],  price: 55, label: 'UK Explorer' },
+      extended: { days: [11, 21], price: 85, label: 'Grand UK Tour' }
+    },
+    stripe: {
+      short:    'https://buy.stripe.com/YOUR_UK_SHORT_LINK',
+      standard: 'https://buy.stripe.com/YOUR_UK_STANDARD_LINK',
+      extended: 'https://buy.stripe.com/YOUR_UK_EXTENDED_LINK'
+    }
+  },
+
+  // UK destination types for filtering
+  ukDestinationTypes: [
+    { id: 'city', label: 'Historic Cities', icon: '🏰' },
+    { id: 'coastal', label: 'Coastal & Seaside', icon: '🏖️' },
+    { id: 'countryside', label: 'Countryside & Nature', icon: '🌿' }
+  ],
+
   // Interest options
   interests: [
     { id: 'history', label: 'History & Heritage', icon: '🏛️' },
