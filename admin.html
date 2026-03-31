@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — London Journey Planner</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .admin { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .admin h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .admin-subtitle { color: var(--color-text-muted); margin-bottom: 2rem; }
+
+    .admin-tabs {
+      display: flex; gap: 0; border-bottom: 2px solid var(--color-border);
+      margin-bottom: 2rem; overflow-x: auto;
+    }
+    .admin-tab {
+      padding: 0.75rem 1.5rem; font-weight: 600; font-size: 0.9rem;
+      color: var(--color-text-muted); cursor: pointer; border-bottom: 3px solid transparent;
+      white-space: nowrap; transition: all 0.2s;
+    }
+    .admin-tab:hover { color: var(--color-primary); }
+    .admin-tab.active {
+      color: var(--color-accent); border-bottom-color: var(--color-accent);
+    }
+
+    .admin-panel { display: none; }
+    .admin-panel.active { display: block; }
+
+    .admin-section {
+      background: var(--color-surface); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm); margin-bottom: 1.5rem; overflow: hidden;
+    }
+    .admin-section__header {
+      padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .admin-section__header h3 { font-size: 1.1rem; margin: 0; }
+    .admin-section__body { padding: 1.5rem; }
+
+    .field { margin-bottom: 1.25rem; }
+    .field:last-child { margin-bottom: 0; }
+    .field label {
+      display: block; font-weight: 600; font-size: 0.85rem;
+      margin-bottom: 0.4rem; color: var(--color-primary);
+    }
+    .field label small { font-weight: 400; color: var(--color-text-muted); }
+    .field input, .field select, .field textarea {
+      width: 100%; padding: 0.6rem 0.8rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 0.9rem; transition: border-color 0.2s;
+      font-family: var(--font-body);
+    }
+    .field input:focus, .field textarea:focus {
+      border-color: var(--color-accent); outline: none;
+    }
+    .field .hint {
+      font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.25rem;
+    }
+
+    .field-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    }
+    @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
+
+    .venue-list { max-height: 600px; overflow-y: auto; }
+    .venue-item {
+      padding: 1rem 1.5rem; border-bottom: 1px solid var(--color-border);
+      display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center;
+    }
+    .venue-item:last-child { border-bottom: none; }
+    .venue-item__name { font-weight: 600; color: var(--color-primary); font-size: 0.95rem; }
+    .venue-item__meta { font-size: 0.8rem; color: var(--color-text-muted); }
+    .venue-item__link {
+      font-size: 0.8rem; color: var(--color-success); word-break: break-all;
+    }
+    .venue-item__link--empty { color: var(--color-error); font-style: italic; }
+    .venue-item__actions { display: flex; gap: 0.5rem; }
+
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+      display: none; align-items: center; justify-content: center; z-index: 999;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: var(--color-surface); border-radius: var(--radius-xl);
+      padding: 2rem; max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto;
+    }
+    .modal h3 { margin-bottom: 1.5rem; }
+
+    .status-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--color-primary); color: white;
+      padding: 0.75rem 1.5rem; display: flex; align-items: center;
+      justify-content: space-between; z-index: 100;
+    }
+    .status-bar__text { font-size: 0.85rem; }
+
+    .search-bar {
+      display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: center;
+    }
+    .search-bar input {
+      flex: 1; padding: 0.6rem 1rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 0.9rem;
+    }
+    .search-bar select {
+      padding: 0.6rem 0.8rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 0.9rem;
+    }
+
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem; margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--color-surface); border-radius: var(--radius-md);
+      padding: 1.25rem; text-align: center; box-shadow: var(--shadow-sm);
+    }
+    .stat-card__num {
+      font-family: var(--font-heading); font-size: 2rem; font-weight: 700;
+      color: var(--color-accent);
+    }
+    .stat-card__label { font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .tag-active { background: #D1FAE5; color: #065F46; }
+    .tag-missing { background: #FEE2E2; color: #991B1B; }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <div class="admin">
+      <h1>Admin Panel</h1>
+      <p class="admin-subtitle">Manage affiliate links, payment settings, and venue data</p>
+
+      <!-- Stats -->
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <!-- Tabs -->
+      <div class="admin-tabs" id="admin-tabs">
+        <div class="admin-tab active" data-tab="payments">Payments & Stripe</div>
+        <div class="admin-tab" data-tab="affiliates">Affiliate IDs</div>
+        <div class="admin-tab" data-tab="attractions">Attractions</div>
+        <div class="admin-tab" data-tab="restaurants">Restaurants</div>
+        <div class="admin-tab" data-tab="nightlife">Pubs & Bars</div>
+        <div class="admin-tab" data-tab="entertainment">Entertainment</div>
+        <div class="admin-tab" data-tab="hotels">Hotels</div>
+        <div class="admin-tab" data-tab="export">Export / Import</div>
+      </div>
+
+      <!-- Payments Panel -->
+      <div class="admin-panel active" data-panel="payments">
+        <div class="admin-section">
+          <div class="admin-section__header">
+            <h3>Stripe Payment Links</h3>
+          </div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
+              Create Payment Links in your <a href="https://dashboard.stripe.com/payment-links" target="_blank" style="color:var(--color-accent);">Stripe Dashboard</a>, then paste them below. Each product needs its own link.
+            </p>
+            <div class="field">
+              <label>Short Stay Itinerary ($20) <small>1-5 days</small></label>
+              <input type="url" id="stripe-tier1" placeholder="https://buy.stripe.com/..." data-key="tier1">
+            </div>
+            <div class="field">
+              <label>Week Explorer Itinerary ($40) <small>6-10 days</small></label>
+              <input type="url" id="stripe-tier2" placeholder="https://buy.stripe.com/..." data-key="tier2">
+            </div>
+            <div class="field">
+              <label>Extended Adventure Itinerary ($75) <small>11-21 days</small></label>
+              <input type="url" id="stripe-tier3" placeholder="https://buy.stripe.com/..." data-key="tier3">
+            </div>
+            <div class="field">
+              <label>Booking Concierge Add-on ($50)</label>
+              <input type="url" id="stripe-concierge" placeholder="https://buy.stripe.com/..." data-key="concierge">
+            </div>
+            <div class="field">
+              <label>Personal Consultation ($75/hour)</label>
+              <input type="url" id="stripe-consultation" placeholder="https://buy.stripe.com/..." data-key="consultation">
+            </div>
+            <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Affiliate IDs Panel -->
+      <div class="admin-panel" data-panel="affiliates">
+        <div class="admin-section">
+          <div class="admin-section__header">
+            <h3>Affiliate Partner IDs</h3>
+          </div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
+              Enter your partner/affiliate IDs. These get automatically appended to all outbound links.
+              See <a href="AFFILIATE-SETUP-GUIDE.md" target="_blank" style="color:var(--color-accent);">Affiliate Setup Guide</a> for sign-up links.
+            </p>
+            <div class="field-row">
+              <div class="field">
+                <label>GetYourGuide Partner ID <small>(8% commission)</small></label>
+                <input type="text" id="aff-gyg" placeholder="e.g. ABC123" data-key="getYourGuide">
+                <div class="hint">Attractions, tours, experiences. <a href="https://partner.getyourguide.com/" target="_blank">Sign up</a></div>
+              </div>
+              <div class="field">
+                <label>Booking.com AID <small>(25-40% of their commission)</small></label>
+                <input type="text" id="aff-booking" placeholder="e.g. 1234567" data-key="booking">
+                <div class="hint">Hotels, hostels. <a href="https://www.booking.com/affiliate-program/v2/index.html" target="_blank">Sign up</a></div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Viator PID <small>(8% commission)</small></label>
+                <input type="text" id="aff-viator" placeholder="e.g. P12345" data-key="viator">
+                <div class="hint">Tours, activities. <a href="https://www.viator.com/affiliates" target="_blank">Sign up</a></div>
+              </div>
+              <div class="field">
+                <label>TodayTix Ref <small>(5-8% commission)</small></label>
+                <input type="text" id="aff-todaytix" placeholder="e.g. ref_abc" data-key="todayTix">
+                <div class="hint">Theatre tickets. Contact partnerships@todaytix.com</div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>OpenTable Ref <small>($1-2 per seated diner)</small></label>
+                <input type="text" id="aff-opentable" placeholder="e.g. OT123" data-key="openTable">
+                <div class="hint">Restaurant reservations. <a href="https://www.opentable.com/affiliates" target="_blank">Sign up</a></div>
+              </div>
+              <div class="field">
+                <label>Klook AID <small>(up to 5% commission)</small></label>
+                <input type="text" id="aff-klook" placeholder="e.g. K12345" data-key="klook">
+                <div class="hint">Attractions, transport. <a href="https://affiliate.klook.com/" target="_blank">Sign up</a></div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Tiqets Partner ID <small>(6% commission)</small></label>
+                <input type="text" id="aff-tiqets" placeholder="e.g. TQ123" data-key="tiqets">
+                <div class="hint">Museum/attraction tickets. <a href="https://www.tiqets.com/affiliates" target="_blank">Sign up</a></div>
+              </div>
+              <div class="field">
+                <label>Go City ID <small>(6-10% commission)</small></label>
+                <input type="text" id="aff-gocity" placeholder="e.g. GC123" data-key="goCity">
+                <div class="hint">Multi-attraction passes. <a href="https://gocity.com/affiliates" target="_blank">Sign up</a></div>
+              </div>
+            </div>
+            <div class="field">
+              <label>Trainline ID <small>(up to 2% commission)</small></label>
+              <input type="text" id="aff-trainline" placeholder="e.g. TL123" data-key="trainline">
+              <div class="hint">UK rail tickets. <a href="https://www.trainline.com/affiliates" target="_blank">Sign up</a></div>
+            </div>
+            <button class="btn btn--primary" onclick="saveAffiliateIds()">Save Affiliate IDs</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue Panels (attractions, restaurants, nightlife, entertainment, hotels) -->
+      <div class="admin-panel" data-panel="attractions">
+        <div class="search-bar">
+          <input type="text" id="search-attractions" placeholder="Search attractions..." oninput="filterVenues('attractions')">
+          <select id="filter-attractions-links" onchange="filterVenues('attractions')">
+            <option value="all">All</option>
+            <option value="has-link">Has affiliate link</option>
+            <option value="no-link">Missing affiliate link</option>
+          </select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('attractions')">+ Add New</button>
+        </div>
+        <div class="admin-section">
+          <div class="venue-list" id="venue-list-attractions"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel" data-panel="restaurants">
+        <div class="search-bar">
+          <input type="text" id="search-restaurants" placeholder="Search restaurants..." oninput="filterVenues('restaurants')">
+          <select id="filter-restaurants-links" onchange="filterVenues('restaurants')">
+            <option value="all">All</option>
+            <option value="has-link">Has affiliate link</option>
+            <option value="no-link">Missing affiliate link</option>
+          </select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('restaurants')">+ Add New</button>
+        </div>
+        <div class="admin-section">
+          <div class="venue-list" id="venue-list-restaurants"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel" data-panel="nightlife">
+        <div class="search-bar">
+          <input type="text" id="search-nightlife" placeholder="Search pubs & bars..." oninput="filterVenues('nightlife')">
+          <select id="filter-nightlife-links" onchange="filterVenues('nightlife')">
+            <option value="all">All</option>
+            <option value="has-link">Has affiliate link</option>
+            <option value="no-link">Missing affiliate link</option>
+          </select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('nightlife')">+ Add New</button>
+        </div>
+        <div class="admin-section">
+          <div class="venue-list" id="venue-list-nightlife"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel" data-panel="entertainment">
+        <div class="search-bar">
+          <input type="text" id="search-entertainment" placeholder="Search entertainment..." oninput="filterVenues('entertainment')">
+          <select id="filter-entertainment-links" onchange="filterVenues('entertainment')">
+            <option value="all">All</option>
+            <option value="has-link">Has affiliate link</option>
+            <option value="no-link">Missing affiliate link</option>
+          </select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('entertainment')">+ Add New</button>
+        </div>
+        <div class="admin-section">
+          <div class="venue-list" id="venue-list-entertainment"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel" data-panel="hotels">
+        <div class="search-bar">
+          <input type="text" id="search-hotels" placeholder="Search hotels..." oninput="filterVenues('hotels')">
+          <select id="filter-hotels-links" onchange="filterVenues('hotels')">
+            <option value="all">All</option>
+            <option value="has-link">Has affiliate link</option>
+            <option value="no-link">Missing affiliate link</option>
+          </select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('hotels')">+ Add New</button>
+        </div>
+        <div class="admin-section">
+          <div class="venue-list" id="venue-list-hotels"></div>
+        </div>
+      </div>
+
+      <!-- Export / Import Panel -->
+      <div class="admin-panel" data-panel="export">
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Export Data</h3></div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">
+              Download your current venue data as JSON files. Use these to replace the files in your <code>data/</code> folder when deploying.
+            </p>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <button class="btn btn--secondary btn--small" onclick="exportData('attractions')">Export Attractions</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('restaurants')">Export Restaurants</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('nightlife')">Export Nightlife</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('entertainment')">Export Entertainment</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('hotels')">Export Hotels</button>
+              <button class="btn btn--primary btn--small" onclick="exportAll()">Export All</button>
+              <button class="btn btn--primary btn--small" onclick="exportConfig()">Export Config (IDs & Links)</button>
+            </div>
+          </div>
+        </div>
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Import Data</h3></div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">
+              Import a JSON file to replace venue data. The file must match the expected schema.
+            </p>
+            <div class="field">
+              <label>Select data type to import</label>
+              <select id="import-type">
+                <option value="attractions">Attractions</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="nightlife">Nightlife</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="hotels">Hotels</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Choose JSON file</label>
+              <input type="file" id="import-file" accept=".json">
+            </div>
+            <button class="btn btn--primary" onclick="importData()">Import</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Edit Modal -->
+  <div class="modal-overlay" id="edit-modal">
+    <div class="modal">
+      <h3 id="modal-title">Edit Venue</h3>
+      <form id="modal-form"></form>
+    </div>
+  </div>
+
+  <!-- Status Bar -->
+  <div class="status-bar" id="status-bar" style="display:none;">
+    <span class="status-bar__text" id="status-text"></span>
+    <button class="btn btn--primary btn--small" onclick="hideStatus()">Dismiss</button>
+  </div>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    // ============================================================
+    // ADMIN STATE
+    // ============================================================
+    const ADMIN_KEY = 'londonPlannerAdmin';
+    const venueData = {};
+    const venueTypes = ['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'];
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    document.addEventListener('DOMContentLoaded', async () => {
+      UI.init();
+
+      // Load all venue data
+      for (const type of venueTypes) {
+        const stored = localStorage.getItem(`admin_${type}`);
+        if (stored) {
+          venueData[type] = JSON.parse(stored);
+        } else {
+          const res = await fetch(`data/${type}.json`);
+          venueData[type] = await res.json();
+        }
+      }
+
+      // Load saved admin config
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+
+      // Populate Stripe fields
+      document.querySelectorAll('[id^="stripe-"]').forEach(input => {
+        const key = input.dataset.key;
+        input.value = saved.stripe?.[key] || '';
+      });
+
+      // Populate Affiliate fields
+      document.querySelectorAll('[id^="aff-"]').forEach(input => {
+        const key = input.dataset.key;
+        input.value = saved.affiliates?.[key] || '';
+      });
+
+      // Render venue lists
+      for (const type of venueTypes) {
+        renderVenueList(type);
+      }
+
+      // Render stats
+      renderStats();
+
+      // Tab switching
+      document.querySelectorAll('.admin-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
+          tab.classList.add('active');
+          document.querySelector(`[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+        });
+      });
+    });
+
+    // ============================================================
+    // STATS
+    // ============================================================
+    function renderStats() {
+      const grid = document.getElementById('stats-grid');
+      let totalVenues = 0, withLinks = 0, missingLinks = 0;
+
+      for (const type of venueTypes) {
+        (venueData[type] || []).forEach(v => {
+          totalVenues++;
+          if (v.affiliateUrl) withLinks++;
+          else missingLinks++;
+        });
+      }
+
+      grid.innerHTML = `
+        <div class="stat-card">
+          <div class="stat-card__num">${totalVenues}</div>
+          <div class="stat-card__label">Total Venues</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num" style="color:var(--color-success);">${withLinks}</div>
+          <div class="stat-card__label">With Affiliate Links</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num" style="color:var(--color-error);">${missingLinks}</div>
+          <div class="stat-card__label">Missing Links</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num">${Math.round(withLinks / totalVenues * 100)}%</div>
+          <div class="stat-card__label">Link Coverage</div>
+        </div>
+      `;
+    }
+
+    // ============================================================
+    // SAVE PAYMENT LINKS
+    // ============================================================
+    function savePaymentLinks() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.stripe = {};
+      document.querySelectorAll('[id^="stripe-"]').forEach(input => {
+        saved.stripe[input.dataset.key] = input.value.trim();
+      });
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      showStatus('Payment links saved. Export config to update your live site.');
+    }
+
+    // ============================================================
+    // SAVE AFFILIATE IDS
+    // ============================================================
+    function saveAffiliateIds() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.affiliates = {};
+      document.querySelectorAll('[id^="aff-"]').forEach(input => {
+        saved.affiliates[input.dataset.key] = input.value.trim();
+      });
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      showStatus('Affiliate IDs saved. Export config to update your live site.');
+    }
+
+    // ============================================================
+    // VENUE LIST RENDERING
+    // ============================================================
+    function renderVenueList(type, filter = '', linkFilter = 'all') {
+      const list = document.getElementById(`venue-list-${type}`);
+      let items = venueData[type] || [];
+
+      if (filter) {
+        const f = filter.toLowerCase();
+        items = items.filter(v => v.name.toLowerCase().includes(f) || (v.neighbourhood || '').toLowerCase().includes(f));
+      }
+      if (linkFilter === 'has-link') items = items.filter(v => v.affiliateUrl);
+      if (linkFilter === 'no-link') items = items.filter(v => !v.affiliateUrl);
+
+      list.innerHTML = items.length === 0
+        ? '<div style="padding:2rem;text-align:center;color:var(--color-text-muted);">No venues found</div>'
+        : items.map((v, i) => `
+          <div class="venue-item">
+            <div>
+              <div class="venue-item__name">${v.name}</div>
+              <div class="venue-item__meta">
+                ${v.neighbourhood || 'Various'} &middot;
+                ${(v.tags || []).slice(0, 4).map(t => `<span class="badge badge--accent" style="font-size:0.65rem;padding:0.1rem 0.4rem;">${t}</span>`).join(' ')}
+              </div>
+              <div class="venue-item__link ${v.affiliateUrl ? '' : 'venue-item__link--empty'}">
+                ${v.affiliateUrl
+                  ? `<span class="badge tag-active" style="font-size:0.65rem;">✓ ${AffiliateLinks.detect(v.affiliateUrl)}</span> ${v.affiliateUrl.substring(0, 60)}...`
+                  : '⚠ No affiliate link set'}
+              </div>
+            </div>
+            <div class="venue-item__actions">
+              <button class="btn btn--primary btn--small" onclick="editVenue('${type}', '${v.id}')">Edit</button>
+              <button class="btn btn--outline btn--small" style="color:var(--color-error);border-color:var(--color-error);font-size:0.75rem;" onclick="deleteVenue('${type}', '${v.id}')">Delete</button>
+            </div>
+          </div>
+        `).join('');
+    }
+
+    function filterVenues(type) {
+      const search = document.getElementById(`search-${type}`).value;
+      const linkFilter = document.getElementById(`filter-${type}-links`).value;
+      renderVenueList(type, search, linkFilter);
+    }
+
+    // ============================================================
+    // EDIT VENUE MODAL
+    // ============================================================
+    function editVenue(type, id) {
+      const venue = venueData[type].find(v => v.id === id);
+      if (!venue) return;
+
+      const modal = document.getElementById('edit-modal');
+      document.getElementById('modal-title').textContent = `Edit: ${venue.name}`;
+
+      const isHotel = type === 'hotels';
+      const isRestaurant = type === 'restaurants';
+
+      document.getElementById('modal-form').innerHTML = `
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="edit-name" value="${venue.name || ''}">
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea id="edit-description" rows="3">${venue.description || ''}</textarea>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Neighbourhood</label>
+            <input type="text" id="edit-neighbourhood" value="${venue.neighbourhood || ''}">
+          </div>
+          <div class="field">
+            <label>Address</label>
+            <input type="text" id="edit-address" value="${venue.address || ''}">
+          </div>
+        </div>
+        ${isRestaurant ? `
+          <div class="field">
+            <label>Cuisine</label>
+            <input type="text" id="edit-cuisine" value="${venue.cuisine || ''}">
+          </div>
+        ` : ''}
+        ${isHotel ? `
+          <div class="field-row">
+            <div class="field">
+              <label>Star Rating</label>
+              <input type="number" id="edit-stars" min="1" max="5" value="${venue.starRating || 3}">
+            </div>
+            <div class="field">
+              <label>Price Range</label>
+              <input type="text" id="edit-priceRange" value="${venue.priceRange || ''}">
+            </div>
+          </div>
+        ` : ''}
+        <div class="field-row">
+          <div class="field">
+            <label>Estimated Cost (£)</label>
+            <input type="number" id="edit-cost" step="0.01" value="${venue.estimatedCost?.amount || 0}">
+          </div>
+          <div class="field">
+            <label>Budget Tiers <small>(comma separated)</small></label>
+            <input type="text" id="edit-budget" value="${(venue.budgetTier || []).join(', ')}">
+          </div>
+        </div>
+        <div class="field">
+          <label>Tags <small>(comma separated)</small></label>
+          <input type="text" id="edit-tags" value="${(venue.tags || []).join(', ')}">
+        </div>
+        <hr style="margin: 1.5rem 0; border: none; border-top: 2px solid var(--color-accent);">
+        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">Affiliate / Booking Link</h4>
+        <div class="field">
+          <label>Affiliate URL</label>
+          <input type="url" id="edit-affiliateUrl" value="${venue.affiliateUrl || ''}" placeholder="https://www.getyourguide.com/...">
+          <div class="hint">Paste the full product URL from the affiliate program (GetYourGuide, Booking.com, OpenTable, etc.)</div>
+        </div>
+        <div class="field">
+          <label>Button Label</label>
+          <input type="text" id="edit-affiliateLabel" value="${venue.affiliateLabel || ''}" placeholder="e.g. Book Skip-the-Line Tickets">
+        </div>
+        <div class="field">
+          <label>Insider Tips</label>
+          <textarea id="edit-tips" rows="2">${venue.tips || ''}</textarea>
+        </div>
+        <div style="display:flex;gap:1rem;margin-top:1.5rem;">
+          <button type="button" class="btn btn--primary" onclick="saveVenue('${type}', '${id}')">Save Changes</button>
+          <button type="button" class="btn btn--outline" onclick="closeModal()">Cancel</button>
+        </div>
+      `;
+
+      modal.classList.add('active');
+    }
+
+    function saveVenue(type, id) {
+      const venue = venueData[type].find(v => v.id === id);
+      if (!venue) return;
+
+      venue.name = document.getElementById('edit-name').value;
+      venue.description = document.getElementById('edit-description').value;
+      venue.neighbourhood = document.getElementById('edit-neighbourhood').value;
+      venue.address = document.getElementById('edit-address').value;
+      venue.affiliateUrl = document.getElementById('edit-affiliateUrl').value;
+      venue.affiliateLabel = document.getElementById('edit-affiliateLabel').value;
+      venue.tips = document.getElementById('edit-tips').value;
+      venue.estimatedCost = { amount: parseFloat(document.getElementById('edit-cost').value) || 0, currency: 'GBP' };
+      venue.budgetTier = document.getElementById('edit-budget').value.split(',').map(s => s.trim()).filter(Boolean);
+      venue.tags = document.getElementById('edit-tags').value.split(',').map(s => s.trim()).filter(Boolean);
+
+      if (document.getElementById('edit-cuisine')) venue.cuisine = document.getElementById('edit-cuisine').value;
+      if (document.getElementById('edit-stars')) venue.starRating = parseInt(document.getElementById('edit-stars').value);
+      if (document.getElementById('edit-priceRange')) venue.priceRange = document.getElementById('edit-priceRange').value;
+
+      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
+      renderVenueList(type);
+      renderStats();
+      closeModal();
+      showStatus(`"${venue.name}" updated. Export to save permanently.`);
+    }
+
+    // ============================================================
+    // ADD VENUE
+    // ============================================================
+    function addVenue(type) {
+      const id = 'new-' + Date.now();
+      const newVenue = {
+        id,
+        name: 'New Venue',
+        description: '',
+        neighbourhood: '',
+        budgetTier: ['mid-range'],
+        tags: [],
+        estimatedCost: { amount: 0, currency: 'GBP' },
+        address: '',
+        affiliateUrl: '',
+        affiliateLabel: '',
+        tips: ''
+      };
+
+      if (type === 'restaurants') { newVenue.cuisine = ''; newVenue.mealType = ['lunch', 'dinner']; }
+      if (type === 'nightlife') { newVenue.type = 'pub'; }
+      if (type === 'entertainment') { newVenue.type = 'experience'; }
+      if (type === 'hotels') { newVenue.starRating = 3; newVenue.priceRange = ''; }
+      if (type === 'attractions') { newVenue.duration = '1-2h'; newVenue.bestTimeOfDay = ['morning', 'afternoon']; }
+
+      venueData[type].push(newVenue);
+      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
+      editVenue(type, id);
+      renderStats();
+    }
+
+    // ============================================================
+    // DELETE VENUE
+    // ============================================================
+    function deleteVenue(type, id) {
+      const venue = venueData[type].find(v => v.id === id);
+      if (!venue || !confirm(`Delete "${venue.name}"? This cannot be undone.`)) return;
+
+      venueData[type] = venueData[type].filter(v => v.id !== id);
+      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
+      renderVenueList(type);
+      renderStats();
+      showStatus(`"${venue.name}" deleted.`);
+    }
+
+    // ============================================================
+    // EXPORT / IMPORT
+    // ============================================================
+    function exportData(type) {
+      const data = venueData[type];
+      downloadJSON(data, `${type}.json`);
+    }
+
+    function exportAll() {
+      for (const type of venueTypes) exportData(type);
+    }
+
+    function exportConfig() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      downloadJSON(saved, 'admin-config.json');
+    }
+
+    function downloadJSON(data, filename) {
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename; a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importData() {
+      const type = document.getElementById('import-type').value;
+      const file = document.getElementById('import-file').files[0];
+      if (!file) { showStatus('Please select a file to import.'); return; }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+          if (!Array.isArray(data)) throw new Error('Expected an array');
+          venueData[type] = data;
+          localStorage.setItem(`admin_${type}`, JSON.stringify(data));
+          renderVenueList(type);
+          renderStats();
+          showStatus(`Imported ${data.length} ${type} successfully.`);
+        } catch (err) {
+          showStatus(`Import failed: ${err.message}`);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // ============================================================
+    // MODAL & STATUS
+    // ============================================================
+    function closeModal() {
+      document.getElementById('edit-modal').classList.remove('active');
+    }
+
+    document.getElementById('edit-modal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+
+    function showStatus(msg) {
+      const bar = document.getElementById('status-bar');
+      document.getElementById('status-text').textContent = msg;
+      bar.style.display = 'flex';
+    }
+
+    function hideStatus() {
+      document.getElementById('status-bar').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
