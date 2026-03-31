@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Cancelled — London Journey Planner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+      <div class="container" style="text-align: center;">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">🔙</div>
+        <h1>Payment Cancelled</h1>
+        <div class="divider"></div>
+        <p style="font-size: 1.15rem; color: var(--color-text-muted); max-width: 500px; margin: 0 auto 1.5rem;">
+          No worries — your itinerary preview is still available. You can complete your purchase whenever you're ready.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="itinerary.html" class="btn btn--primary btn--large">Back to Itinerary</a>
+          <a href="index.html" class="btn btn--outline btn--large">Return Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => UI.init());</script>
+</body>
+</html>

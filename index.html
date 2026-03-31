@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Journey Planner — Your Perfect London Trip, Curated by Experts</title>
+  <meta name="description" content="Create a personalised London itinerary tailored to your interests, budget, and travel style. Day-by-day plans with insider tips, restaurant recommendations, and booking links.">
+  <meta property="og:title" content="London Journey Planner">
+  <meta property="og:description" content="Your Perfect London Trip, Curated by Experts">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 40%, #2A3F6B 100%);
+      overflow: hidden;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><text x="50%" y="50%" text-anchor="middle" font-size="300" fill="rgba(201,168,76,0.03)" font-family="serif">LONDON</text></svg>') center/cover no-repeat;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero__badge {
+      display: inline-block;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      color: var(--color-accent);
+      padding: 0.4rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 1.25rem;
+      line-height: 1.1;
+    }
+
+    .hero h1 span {
+      color: var(--color-accent);
+    }
+
+    .hero__subtitle {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .hero__ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero__stats {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .hero__stat {
+      text-align: center;
+    }
+
+    .hero__stat-num {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    .hero__stat-label {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Floating landmarks */
+    .hero__landmarks {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 26, 48, 0.8) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 3rem;
+      padding-bottom: 1.5rem;
+      font-size: 2.5rem;
+      opacity: 0.3;
+    }
+
+    /* How It Works */
+    .step-card {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .step-card__num {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .step-card h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .step-card p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Sample Day Preview */
+    .sample-timeline {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .sample-timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-accent);
+    }
+
+    .sample-item {
+      position: relative;
+      padding: 1rem 0 1rem 1.5rem;
+    }
+
+    .sample-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 1.35rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      border: 2px solid var(--color-surface);
+    }
+
+    .sample-item__time {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+    }
+
+    .sample-item__name {
+      font-weight: 700;
+      color: var(--color-primary);
+      margin: 0.25rem 0;
+    }
+
+    .sample-item__desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .testimonial-card__stars {
+      color: var(--color-accent);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-card__text {
+      font-style: italic;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .testimonial-card__author {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.25rem; }
+      .hero__subtitle { font-size: 1.05rem; }
+      .hero__stats { gap: 1.5rem; }
+      .hero__landmarks { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__badge">Trusted by 2,000+ travellers</div>
+        <h1>Your Perfect <span>London</span> Trip, Planned by Experts</h1>
+        <p class="hero__subtitle">
+          Tell us your interests, budget, and travel dates. We'll create a personalised
+          day-by-day itinerary packed with insider tips and hidden gems.
+        </p>
+        <div class="hero__ctas">
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip — From $20</a>
+          <a href="#how-it-works" class="btn btn--outline btn--large" style="border-color: rgba(255,255,255,0.3); color: white;">See How It Works</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-num">65+</div>
+            <div class="hero__stat-label">Attractions</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">40+</div>
+            <div class="hero__stat-label">Restaurants</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">30+</div>
+            <div class="hero__stat-label">Pubs & Bars</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">28</div>
+            <div class="hero__stat-label">Day Themes</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__landmarks">
+        🏰 🎡 🌉 ⛪ 🏛️ 🗼
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <div class="divider"></div>
+          <p>Three simple steps to your dream London itinerary</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="step-card">
+            <div class="step-card__num">1</div>
+            <h3>Tell Us About You</h3>
+            <p>Select your trip length, budget range, and interests — from history and food to nightlife and art.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">2</div>
+            <h3>Get Your Itinerary</h3>
+            <p>Our engine creates a personalised day-by-day plan with morning, afternoon, and evening activities.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">3</div>
+            <h3>Explore London</h3>
+            <p>Unlock your full guide with booking links, insider tips, a downloadable PDF, and money-saving secrets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Itinerary -->
+    <section class="section section--alt" id="sample">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sample Day: Royal London & Westminster</h2>
+          <div class="divider"></div>
+          <p>Here's a taste of what your personalised itinerary looks like</p>
+        </div>
+        <div class="sample-timeline">
+          <div class="sample-item">
+            <div class="sample-item__time">09:00 - 12:00 / Morning</div>
+            <div class="sample-item__name">Tower of London</div>
+            <div class="sample-item__desc">Explore nearly 1,000 years of royal history, see the Crown Jewels, and meet the Beefeaters. Arrive early to beat the crowds.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">12:30 - 13:30 / Lunch</div>
+            <div class="sample-item__name">Padella</div>
+            <div class="sample-item__desc">Outstanding handmade pasta at unbeatable prices. The pappardelle with 8-hour beef shin ragu is extraordinary.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">14:00 - 16:30 / Afternoon</div>
+            <div class="sample-item__name">Westminster Abbey & Houses of Parliament</div>
+            <div class="sample-item__desc">Gothic masterpiece and coronation church since 1066. Walk along the Thames to see Big Ben and Parliament up close.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">18:30 - 20:00 / Dinner</div>
+            <div class="sample-item__name">Rules Restaurant</div>
+            <div class="sample-item__desc">London's oldest restaurant (est. 1798). Traditional British fare in opulent Edwardian surroundings. The steak and kidney pie is legendary.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">20:30 - 22:30 / Evening</div>
+            <div class="sample-item__name">Gordon's Wine Bar</div>
+            <div class="sample-item__desc">London's oldest wine bar, hidden in a candlelit cave. Atmospheric, romantic, and unmissable. Arrive early for a spot.</div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="demo.html" class="btn btn--secondary btn--large">See Full 5-Day Demo</a>
+          <a href="wizard.html" class="btn btn--primary btn--large">Create My Personalised Itinerary</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Simple, Transparent Pricing</h2>
+          <div class="divider"></div>
+          <p>Preview 2 days free, then unlock your complete itinerary</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h4>Short Stay</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">1-5 days</p>
+            <div class="price-card__amount">$20</div>
+            <ul class="price-card__features">
+              <li>Up to 5 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+
+          <div class="price-card price-card--featured">
+            <h4>Week Explorer</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">6-10 days</p>
+            <div class="price-card__amount">$40</div>
+            <ul class="price-card__features">
+              <li>Up to 10 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+              <li>Day-trip recommendations</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+
+          <div class="price-card">
+            <h4>Extended Adventure</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">11-21 days</p>
+            <div class="price-card__amount">$75</div>
+            <ul class="price-card__features">
+              <li>Up to 21 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+              <li>Hidden gems & local favourites</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Consultation Upsell -->
+        <div style="max-width: 700px; margin: 3rem auto 0; text-align: center; background: var(--color-primary); color: white; border-radius: var(--radius-xl); padding: 2.5rem;">
+          <h3 style="color: white; margin-bottom: 0.5rem;">Want the VIP Treatment?</h3>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Book a 1-on-1 personal planning session with a London expert</p>
+          <div style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-accent); font-weight: 700; margin-bottom: 0.5rem;">$75</div>
+          <p style="color: var(--color-accent-light); font-size: 0.9rem; margin-bottom: 1.5rem;">1 Hour Private Video Consultation</p>
+          <a href="consultation.html" class="btn btn--primary">Book Your Session</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Travellers Say</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card testimonial-card">
+            <div class="card__body">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">"This itinerary saved us hours of research. Every restaurant recommendation was spot-on, and the insider tips made us feel like locals."</p>
+              <div class="testimonial-card__author">Sarah M. — 7-day trip</div>
+            </div>
+          </div>
+          <div class="card testimonial-card">
+            <div class="card__body">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">"We did the personal consultation and it was worth every penny. Our guide knew the perfect off-the-beaten-path spots for our family."</p>
+              <div class="testimonial-card__author">David & Lisa K. — 5-day family trip</div>
+            </div>
+          </div>
+          <div class="card testimonial-card">
+            <div class="card__body">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">"The pub and bar recommendations alone were worth $20. We had the best night out in Shoreditch thanks to this guide!"</p>
+              <div class="testimonial-card__author">James R. — 3-day weekend</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--dark">
+      <div class="container" style="text-align: center;">
+        <h2 style="color: white; font-size: 2.5rem;">Ready to Plan Your London Adventure?</h2>
+        <div class="divider"></div>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 500px; margin: 0 auto 2rem;">
+          Join thousands of travellers who've discovered their perfect London trip with our personalised itineraries.
+        </p>
+        <a href="wizard.html" class="btn btn--primary btn--large">Start Planning Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => UI.init());</script>
+</body>
+</html>

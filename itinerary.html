@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Itinerary — London Journey Planner</title>
+  <meta name="description" content="Your personalised London itinerary with day-by-day plans, restaurant picks, and insider tips.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/itinerary.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    @media print {
+      .header, .footer, .itinerary-toolbar, .purchase-banner, .affiliate-disclosure { display: none !important; }
+      .main { margin-top: 0; }
+      .day-card--locked .day-card__body { filter: none !important; }
+      .day-card--locked .lock-banner { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main"></main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/payment.js"></script>
+  <script src="js/itinerary-renderer.js"></script>
+</body>
+</html>

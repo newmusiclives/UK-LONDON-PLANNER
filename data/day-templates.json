@@ -1,0 +1,366 @@
+[
+  {
+    "id": "royal-london",
+    "name": "Royal London & Westminster",
+    "primaryTags": ["history", "architecture", "photography"],
+    "preferredNeighbourhoods": ["Westminster", "St James's"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "culture-arts",
+    "name": "Culture & Arts Day",
+    "primaryTags": ["art", "photography", "architecture"],
+    "preferredNeighbourhoods": ["South Kensington", "Bankside", "Bloomsbury"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 22:00" }
+    ]
+  },
+  {
+    "id": "east-end-explorer",
+    "name": "East End Explorer",
+    "primaryTags": ["food", "art", "markets", "nightlife"],
+    "preferredNeighbourhoods": ["Shoreditch", "Spitalfields", "Hoxton"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:00" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 23:00" }
+    ]
+  },
+  {
+    "id": "foodie-day",
+    "name": "London Foodie Trail",
+    "primaryTags": ["food", "markets"],
+    "preferredNeighbourhoods": ["Bankside", "Soho", "Bermondsey"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:30 - 11:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "theatre-west-end",
+    "name": "West End & Theatre Night",
+    "primaryTags": ["theatre", "shopping", "food"],
+    "preferredNeighbourhoods": ["West End", "Covent Garden", "Soho"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "17:30 - 18:45" },
+      { "period": "evening", "type": "entertainment", "time": "19:30 - 22:00" }
+    ]
+  },
+  {
+    "id": "romantic-day",
+    "name": "Romantic London",
+    "primaryTags": ["romance", "food", "photography"],
+    "preferredNeighbourhoods": ["South Bank", "Notting Hill", "Covent Garden", "Mayfair"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 14:00" },
+      { "period": "afternoon", "type": "attraction", "time": "14:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "19:00 - 20:30" },
+      { "period": "evening", "type": "nightlife", "time": "21:00 - 23:00" }
+    ]
+  },
+  {
+    "id": "family-fun",
+    "name": "Family Fun Day",
+    "primaryTags": ["family", "adventure"],
+    "preferredNeighbourhoods": ["South Kensington", "South Bank", "Westminster"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:30 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:00" },
+      { "period": "afternoon", "type": "attraction", "time": "13:30 - 16:00" },
+      { "period": "dinner", "type": "restaurant", "time": "17:30 - 18:30" },
+      { "period": "evening", "type": "entertainment", "time": "19:00 - 21:00" }
+    ]
+  },
+  {
+    "id": "south-bank-stroll",
+    "name": "South Bank & River Thames",
+    "primaryTags": ["photography", "art", "food", "romance"],
+    "preferredNeighbourhoods": ["South Bank", "Bankside", "London Bridge"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "literary-london",
+    "name": "Literary London",
+    "primaryTags": ["literary", "history"],
+    "preferredNeighbourhoods": ["Bloomsbury", "City of London", "Bankside"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:30 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:00" },
+      { "period": "afternoon", "type": "attraction", "time": "13:30 - 16:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "music-nightlife",
+    "name": "Music & Nightlife",
+    "primaryTags": ["music", "nightlife"],
+    "preferredNeighbourhoods": ["Soho", "Shoreditch", "Camden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:30 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "13:00 - 14:00" },
+      { "period": "afternoon", "type": "attraction", "time": "14:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "21:00 - 23:30" }
+    ]
+  },
+  {
+    "id": "shopping-day",
+    "name": "Shopping & Style",
+    "primaryTags": ["shopping", "markets", "food"],
+    "preferredNeighbourhoods": ["West End", "Covent Garden", "Notting Hill", "Camden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 22:00" }
+    ]
+  },
+  {
+    "id": "sports-adventure",
+    "name": "Sports & Adventure",
+    "primaryTags": ["sports", "adventure"],
+    "preferredNeighbourhoods": ["Various"],
+    "slots": [
+      { "period": "morning", "type": "entertainment", "time": "09:30 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "entertainment", "time": "14:00 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "wellness-relaxation",
+    "name": "Wellness & Relaxation",
+    "primaryTags": ["wellness", "romance"],
+    "preferredNeighbourhoods": ["Hampstead", "Hyde Park", "South Kensington", "Covent Garden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:00 - 11:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:30" },
+      { "period": "afternoon", "type": "entertainment", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:00" }
+    ]
+  },
+  {
+    "id": "city-views",
+    "name": "Iconic Views & Landmarks",
+    "primaryTags": ["photography", "architecture"],
+    "preferredNeighbourhoods": ["City of London", "London Bridge", "South Bank", "Westminster"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:00 - 11:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:00" },
+      { "period": "afternoon", "type": "attraction", "time": "13:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "attraction", "time": "20:30 - 22:00" }
+    ]
+  },
+  {
+    "id": "day-trip-greenwich",
+    "name": "Greenwich & Maritime London",
+    "primaryTags": ["history", "family", "photography"],
+    "preferredNeighbourhoods": ["Greenwich"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 22:00" }
+    ]
+  },
+  {
+    "id": "hidden-gems",
+    "name": "Hidden Gems & Secret London",
+    "primaryTags": ["adventure", "photography", "history"],
+    "preferredNeighbourhoods": ["Clerkenwell", "Bermondsey", "Wapping"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "attraction", "time": "14:00 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "birthday-celebration",
+    "name": "Birthday Celebration Day",
+    "primaryTags": ["birthday", "food", "nightlife", "romance"],
+    "preferredNeighbourhoods": ["Soho", "Covent Garden", "Mayfair", "Shoreditch"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 14:00" },
+      { "period": "afternoon", "type": "entertainment", "time": "14:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "19:00 - 21:00" },
+      { "period": "evening", "type": "nightlife", "time": "21:30 - 00:00" }
+    ]
+  },
+  {
+    "id": "anniversary-romance",
+    "name": "Anniversary & Special Occasion",
+    "primaryTags": ["anniversary", "romance", "food"],
+    "preferredNeighbourhoods": ["Mayfair", "South Bank", "Covent Garden", "Hyde Park"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 14:30" },
+      { "period": "afternoon", "type": "entertainment", "time": "15:00 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "19:00 - 21:00" },
+      { "period": "evening", "type": "nightlife", "time": "21:30 - 23:30" }
+    ]
+  },
+  {
+    "id": "hen-party",
+    "name": "Girls' Day Out / Hen Party",
+    "primaryTags": ["hen-party", "shopping", "food", "nightlife"],
+    "preferredNeighbourhoods": ["Covent Garden", "Soho", "Shoreditch", "Mayfair"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 14:30" },
+      { "period": "afternoon", "type": "entertainment", "time": "15:00 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "19:00 - 21:00" },
+      { "period": "evening", "type": "nightlife", "time": "21:30 - 00:00" }
+    ]
+  },
+  {
+    "id": "stag-do",
+    "name": "Lads' Day Out / Stag Do",
+    "primaryTags": ["stag-do", "sports", "nightlife", "adventure"],
+    "preferredNeighbourhoods": ["Shoreditch", "Soho", "Camden", "City of London"],
+    "slots": [
+      { "period": "morning", "type": "entertainment", "time": "10:00 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "13:00 - 14:00" },
+      { "period": "afternoon", "type": "nightlife", "time": "14:30 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "21:00 - 00:00" }
+    ]
+  },
+  {
+    "id": "girls-shopping-day",
+    "name": "Girls' Shopping & Pamper Day",
+    "primaryTags": ["hen-party", "shopping", "wellness", "food"],
+    "preferredNeighbourhoods": ["West End", "Mayfair", "Notting Hill", "Covent Garden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 14:00" },
+      { "period": "afternoon", "type": "entertainment", "time": "14:30 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 23:00" }
+    ]
+  },
+  {
+    "id": "lads-sports-day",
+    "name": "Lads' Sports & Beers Day",
+    "primaryTags": ["stag-do", "sports", "nightlife"],
+    "preferredNeighbourhoods": ["Various", "Shoreditch", "City of London"],
+    "slots": [
+      { "period": "morning", "type": "entertainment", "time": "09:30 - 12:00" },
+      { "period": "lunch", "type": "restaurant", "time": "12:30 - 13:30" },
+      { "period": "afternoon", "type": "entertainment", "time": "14:00 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 23:30" }
+    ]
+  },
+  {
+    "id": "engagement-proposal",
+    "name": "Proposal & Engagement Celebration",
+    "primaryTags": ["anniversary", "romance", "photography"],
+    "preferredNeighbourhoods": ["South Bank", "Hyde Park", "Mayfair", "Covent Garden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:30 - 11:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 14:00" },
+      { "period": "afternoon", "type": "attraction", "time": "14:30 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "19:00 - 21:30" },
+      { "period": "evening", "type": "nightlife", "time": "22:00 - 00:00" }
+    ]
+  },
+  {
+    "id": "group-party-night",
+    "name": "Group Night Out",
+    "primaryTags": ["birthday", "nightlife", "food", "adventure"],
+    "preferredNeighbourhoods": ["Shoreditch", "Soho", "Covent Garden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "11:00 - 13:00" },
+      { "period": "lunch", "type": "restaurant", "time": "13:00 - 14:30" },
+      { "period": "afternoon", "type": "nightlife", "time": "15:00 - 17:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:30" },
+      { "period": "evening", "type": "nightlife", "time": "21:00 - 00:00" }
+    ]
+  },
+  {
+    "id": "brunch-and-explore",
+    "name": "Late Start Brunch & Explore",
+    "primaryTags": ["food", "shopping", "photography"],
+    "preferredNeighbourhoods": ["Notting Hill", "Shoreditch", "King's Cross"],
+    "slots": [
+      { "period": "morning", "type": "restaurant", "time": "10:30 - 12:00" },
+      { "period": "lunch", "type": "attraction", "time": "12:30 - 14:30" },
+      { "period": "afternoon", "type": "attraction", "time": "15:00 - 17:00" },
+      { "period": "dinner", "type": "restaurant", "time": "18:30 - 20:00" },
+      { "period": "evening", "type": "nightlife", "time": "20:30 - 22:30" }
+    ]
+  },
+  {
+    "id": "market-hopping",
+    "name": "London Market Crawl",
+    "primaryTags": ["markets", "food", "shopping", "photography"],
+    "preferredNeighbourhoods": ["Bankside", "Bermondsey", "Camden", "Shoreditch"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "09:00 - 11:30" },
+      { "period": "lunch", "type": "restaurant", "time": "12:00 - 13:00" },
+      { "period": "afternoon", "type": "attraction", "time": "13:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 22:00" }
+    ]
+  },
+  {
+    "id": "pub-crawl-historic",
+    "name": "Historic London Pub Crawl",
+    "primaryTags": ["nightlife", "history", "food"],
+    "preferredNeighbourhoods": ["City of London", "Bankside", "Covent Garden", "Soho"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:00 - 12:00" },
+      { "period": "lunch", "type": "nightlife", "time": "12:30 - 14:00" },
+      { "period": "afternoon", "type": "nightlife", "time": "14:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 23:00" }
+    ]
+  },
+  {
+    "id": "cocktail-crawl",
+    "name": "London Cocktail Trail",
+    "primaryTags": ["nightlife", "food", "romance", "adventure"],
+    "preferredNeighbourhoods": ["Soho", "Shoreditch", "Covent Garden"],
+    "slots": [
+      { "period": "morning", "type": "attraction", "time": "10:30 - 12:30" },
+      { "period": "lunch", "type": "restaurant", "time": "13:00 - 14:00" },
+      { "period": "afternoon", "type": "attraction", "time": "14:30 - 16:30" },
+      { "period": "dinner", "type": "restaurant", "time": "18:00 - 19:30" },
+      { "period": "evening", "type": "nightlife", "time": "20:00 - 23:30" }
+    ]
+  }
+]

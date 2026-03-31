@@ -1,0 +1,311 @@
+/* Wizard Container */
+.wizard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+.wizard__header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.wizard__header h1 {
+  font-size: 2.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.wizard__header p {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+/* Progress */
+.wizard__progress {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-3xl);
+  padding: 0 var(--space-xl);
+}
+
+/* Step Panels */
+.wizard__step {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.wizard__step.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wizard__step-title {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.wizard__step-desc {
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  font-size: 1rem;
+}
+
+/* Duration Selector */
+.duration-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-2xl);
+}
+
+.duration-display {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.duration-display span {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.duration-slider {
+  width: 100%;
+  max-width: 500px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  outline: none;
+}
+
+.duration-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.4);
+  transition: transform var(--transition-fast);
+}
+
+.duration-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.duration-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.duration-price-hint {
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Budget Grid */
+.budget-grid {
+  display: grid;
+  gap: var(--space-2xl);
+  margin-top: var(--space-lg);
+}
+
+.budget-category {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.budget-category__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.budget-category__title .icon {
+  font-size: 1.5rem;
+}
+
+.budget-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.budget-option {
+  position: relative;
+}
+
+.budget-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.budget-option label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-md);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.budget-option label:hover {
+  border-color: var(--color-accent);
+  background: var(--color-surface-alt);
+}
+
+.budget-option input:checked + label {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.budget-option__tier {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.budget-option__range {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Interests Grid */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.interest-count {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.interest-count strong {
+  color: var(--color-accent);
+}
+
+/* Review Step */
+.review-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-item__label {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.review-item__value {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: right;
+}
+
+.review-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: flex-end;
+  max-width: 300px;
+}
+
+.review-interests .badge {
+  font-size: 0.7rem;
+}
+
+.review-price {
+  text-align: center;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 2px solid var(--color-accent);
+}
+
+.review-price__amount {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.review-price__desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Navigation Buttons */
+.wizard__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.wizard__nav .btn-back {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.wizard__nav .btn-back:hover {
+  color: var(--color-primary);
+}

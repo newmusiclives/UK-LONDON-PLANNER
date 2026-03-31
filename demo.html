@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Itinerary — Mark & Sophie's London Adventure</title>
+  <meta name="description" content="See a sample 5-day London itinerary for a couple who love music, sports, food, shopping & sightseeing.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/itinerary.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .demo-hero {
+      background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 40%, #2A3F6B 100%);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    .demo-hero h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .demo-hero h1 span {
+      color: var(--color-accent);
+    }
+
+    .demo-hero__subtitle {
+      color: rgba(255,255,255,0.75);
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.7;
+    }
+
+    .demo-hero__tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .demo-hero__tag {
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      color: var(--color-accent);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .demo-profiles {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .demo-profile {
+      text-align: center;
+    }
+
+    .demo-profile__avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+
+    .demo-profile__name {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .demo-profile__interests {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 0.25rem;
+    }
+
+    .demo-cta-bar {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .demo-cta-bar__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      max-width: var(--container-max);
+      margin: 0 auto;
+    }
+
+    .demo-cta-bar__text {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    .demo-day-intro {
+      background: var(--color-surface-alt);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius-md);
+      margin: 0 1.5rem 0;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      border-left: 3px solid var(--color-accent);
+    }
+
+    .demo-cost-summary {
+      background: var(--color-surface);
+      border: 2px solid var(--color-accent);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      max-width: 500px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .demo-cost-summary h3 {
+      margin-bottom: 1rem;
+    }
+
+    .demo-cost-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.95rem;
+    }
+
+    .demo-cost-row:last-of-type {
+      border-bottom: none;
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 1.1rem;
+      padding-top: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .demo-hero h1 { font-size: 1.75rem; }
+      .demo-profiles { gap: 1.5rem; }
+    }
+
+    @media print {
+      .header, .footer, .demo-cta-bar { display: none !important; }
+      .main { margin-top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <!-- Demo Hero -->
+    <section class="demo-hero">
+      <h1>Mark & Sophie's <span>London Adventure</span></h1>
+      <p class="demo-hero__subtitle">
+        A curated 5-day itinerary for a couple who love music, sports, food, shopping,
+        and exploring the iconic sights of every city they visit.
+      </p>
+      <div class="demo-hero__tags">
+        <span class="demo-hero__tag">🎵 Music</span>
+        <span class="demo-hero__tag">⚽ Sports</span>
+        <span class="demo-hero__tag">🍽️ Food</span>
+        <span class="demo-hero__tag">🛍️ Shopping</span>
+        <span class="demo-hero__tag">📸 Sightseeing</span>
+      </div>
+      <div class="demo-profiles">
+        <div class="demo-profile">
+          <div class="demo-profile__avatar">👨</div>
+          <div class="demo-profile__name">Mark</div>
+          <div class="demo-profile__interests">Music • Sports • Sightseeing</div>
+        </div>
+        <div class="demo-profile">
+          <div class="demo-profile__avatar">👩</div>
+          <div class="demo-profile__name">Sophie</div>
+          <div class="demo-profile__interests">Food • Shopping • Sightseeing</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="demo-cta-bar">
+      <div class="demo-cta-bar__inner">
+        <span class="demo-cta-bar__text">Love this? Get your own personalised itinerary</span>
+        <a href="wizard.html" class="btn btn--primary btn--small">Plan My Trip — From $20</a>
+        <a href="consultation.html" class="btn btn--outline btn--small">Book Consultation — $75</a>
+      </div>
+    </div>
+
+    <!-- Itinerary Content -->
+    <div class="itinerary-page" id="demo-content">
+      <div class="spinner" style="margin: 3rem auto;" id="demo-loader"></div>
+    </div>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      UI.init();
+
+      // Load demo itinerary
+      const res = await fetch('data/demo-itinerary.json');
+      const demo = await res.json();
+
+      const container = document.getElementById('demo-content');
+
+      const dayIntros = [
+        "Ease into London with the big-ticket sights, an incredible food market, and a sunset ride over the city skyline. The perfect first taste of what this city has to offer.",
+        "Mark takes the lead today — from the Beatles' hallowed ground to Camden's legendary music scene. Sophie gets incredible vintage shopping and street food. The night ends with world-class live music in Soho.",
+        "Mark goes behind the scenes at Wembley while Sophie gets an afternoon of West End shopping. They reunite for a brilliant budget steak dinner and a West End show. Something for everyone.",
+        "History, street art, vintage vinyl, designer boutiques, incredible Indian food, and free live blues. This is London at its most vibrant — the East End delivers for both Mark and Sophie.",
+        "The grand finale. Culture at the V&A, colour at Covent Garden, views from St Paul's, a farewell feast at Hawksmoor, and candlelit last drinks in London's oldest wine bar."
+      ];
+
+      let totalCost = 0;
+      demo.days.forEach(day => {
+        day.activities.forEach(a => {
+          totalCost += (a.estimatedCostValue || 0) * 2; // for two people
+        });
+      });
+
+      container.innerHTML = `
+        <!-- Hotel -->
+        <div class="hotel-card" style="margin: 0 0 2rem 0;">
+          <div class="hotel-card__title">🏨 Where They're Staying</div>
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">${demo.hotel.name}</h3>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">${demo.hotel.description}</p>
+          <div class="activity__details" style="margin-bottom: 0.75rem;">
+            <span class="activity__detail">📍 ${demo.hotel.neighbourhood}</span>
+            <span class="activity__detail">⭐ ${demo.hotel.starRating}-star</span>
+            <span class="activity__detail">💰 ${demo.hotel.priceRange}</span>
+          </div>
+          <div class="activity__tip">${demo.hotel.tips}</div>
+          ${demo.hotel.affiliateUrl ? `
+            <div style="margin-top: 1rem;">
+              <a href="${demo.hotel.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+                ${demo.hotel.affiliateLabel} →
+              </a>
+            </div>
+          ` : ''}
+        </div>
+
+        <!-- Days -->
+        ${demo.days.map((day, idx) => `
+          <div class="day-card">
+            <div class="day-card__header">
+              <div>
+                <div class="day-card__day-num">Day ${day.dayNumber}</div>
+                <div class="day-card__theme">${day.theme}</div>
+              </div>
+              <div class="day-card__neighbourhoods">
+                ${day.neighbourhoods.map(n => `<span class="badge badge--accent">${n}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="demo-day-intro" style="margin-top: 1rem;">
+              ${dayIntros[idx]}
+            </div>
+
+            <div class="day-card__body">
+              <div class="timeline">
+                ${day.activities.map(a => `
+                  <div class="activity activity--${a.period}">
+                    <div class="activity__time">
+                      ${a.timeSlot}
+                      <span class="activity__period activity__period--${a.period}">${a.period}</span>
+                    </div>
+                    <div class="activity__name">${a.name}</div>
+                    <p class="activity__description">${a.description}</p>
+                    <div class="activity__details">
+                      ${a.neighbourhood ? `<span class="activity__detail">📍 ${a.neighbourhood}</span>` : ''}
+                      <span class="activity__detail">💰 ${a.estimatedCost}</span>
+                    </div>
+                    ${a.tips ? `<div class="activity__tip">${a.tips}</div>` : ''}
+                    ${a.affiliateUrl ? `
+                      <div class="activity__cta">
+                        <a href="${a.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+                          ${a.affiliateLabel} →
+                        </a>
+                      </div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `).join('')}
+
+        <!-- Cost Summary -->
+        <div class="demo-cost-summary">
+          <h3>Estimated Trip Cost (for two)</h3>
+          <div class="demo-cost-row">
+            <span>Accommodation (5 nights)</span>
+            <span>£600 - £900</span>
+          </div>
+          <div class="demo-cost-row">
+            <span>Activities & Attractions</span>
+            <span>~£350</span>
+          </div>
+          <div class="demo-cost-row">
+            <span>Food & Drink</span>
+            <span>~£500</span>
+          </div>
+          <div class="demo-cost-row">
+            <span>Shopping Budget</span>
+            <span>Up to you!</span>
+          </div>
+          <div class="demo-cost-row">
+            <span>Estimated Total</span>
+            <span>£1,450 - £1,750</span>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="purchase-banner" style="margin-top: 2rem;">
+          <h3>Want Your Own Personalised Itinerary?</h3>
+          <p>Tell us your interests, budget, and trip length — we'll create a day-by-day plan tailored just for you</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip — From $20</a>
+            <a href="consultation.html" class="btn btn--outline btn--large" style="border-color: rgba(255,255,255,0.3); color: white;">Book Expert Consultation — $75</a>
+          </div>
+        </div>
+
+        <p class="affiliate-disclosure" style="text-align: center; margin-top: 2rem;">
+          ${CONFIG.affiliate.disclosureText}
+        </p>
+      `;
+    });
+  </script>
+</body>
+</html>
