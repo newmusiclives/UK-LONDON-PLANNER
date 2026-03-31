@@ -267,10 +267,23 @@
           <div class="activity__tip">${demo.hotel.tips}</div>
           ${demo.hotel.affiliateUrl ? `
             <div style="margin-top: 1rem;">
-              <a href="${demo.hotel.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+              <a href="${AffiliateLinks.auto(demo.hotel.affiliateUrl)}" target="_blank" rel="noopener" class="affiliate-cta">
                 ${demo.hotel.affiliateLabel} →
               </a>
             </div>
+          ` : ''}
+          ${demo.hotel.alternatives ? `
+            <details style="margin-top:0.75rem;">
+              <summary style="font-size:0.8rem;font-weight:600;color:var(--color-text-muted);cursor:pointer;">🔄 Alternative hotels</summary>
+              <div style="margin-top:0.5rem;font-size:0.85rem;">
+                ${demo.hotel.alternatives.map(alt => `
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:0.4rem 0;border-bottom:1px solid var(--color-border);">
+                    <div><strong>${alt.name}</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">${alt.why}</span></div>
+                    ${alt.url ? `<a href="${AffiliateLinks.auto(alt.url)}" target="_blank" rel="noopener" class="btn btn--small btn--outline" style="font-size:0.7rem;padding:0.25rem 0.5rem;">Book</a>` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </details>
           ` : ''}
         </div>
 
@@ -308,10 +321,28 @@
                     ${a.tips ? `<div class="activity__tip">${a.tips}</div>` : ''}
                     ${a.affiliateUrl ? `
                       <div class="activity__cta">
-                        <a href="${a.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+                        <a href="${AffiliateLinks.auto(a.affiliateUrl)}" target="_blank" rel="noopener" class="affiliate-cta">
                           ${a.affiliateLabel} →
                         </a>
                       </div>
+                    ` : ''}
+                    ${a.alternatives && a.alternatives.length ? `
+                      <details class="alternatives" style="margin-top:0.75rem;">
+                        <summary style="font-size:0.8rem;font-weight:600;color:var(--color-text-muted);cursor:pointer;">
+                          🔄 ${a.alternatives.length} alternative${a.alternatives.length > 1 ? 's' : ''} available
+                        </summary>
+                        <div style="margin-top:0.5rem;padding:0.75rem;background:var(--color-surface-alt);border-radius:var(--radius-md);font-size:0.85rem;">
+                          ${a.alternatives.map(alt => `
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.4rem 0;border-bottom:1px solid var(--color-border);">
+                              <div>
+                                <strong style="color:var(--color-primary);">${alt.name}</strong>
+                                <div style="font-size:0.75rem;color:var(--color-text-muted);">${alt.why}</div>
+                              </div>
+                              ${alt.url ? `<a href="${AffiliateLinks.auto(alt.url)}" target="_blank" rel="noopener" class="btn btn--small btn--outline" style="font-size:0.7rem;padding:0.25rem 0.5rem;">Book</a>` : ''}
+                            </div>
+                          `).join('')}
+                        </div>
+                      </details>
                     ` : ''}
                   </div>
                 `).join('')}
@@ -343,6 +374,24 @@
             <span>Estimated Total</span>
             <span>£1,450 - £1,750</span>
           </div>
+        </div>
+
+        <!-- Concierge Add-on -->
+        <div style="background:var(--color-surface);border:2px solid var(--color-accent);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin-top:2rem;">
+          <div style="font-size:2rem;margin-bottom:0.5rem;">🛎️</div>
+          <h3 style="margin-bottom:0.5rem;">Booking Concierge Service</h3>
+          <p style="color:var(--color-text-muted);max-width:500px;margin:0 auto 1.5rem;font-size:0.95rem;">
+            Don't want to handle the bookings yourself? For an additional <strong>$50</strong>, we'll make as many reservations as possible for you — restaurants, attractions, theatre tickets, and more.
+          </p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;max-width:600px;margin:0 auto 1.5rem;text-align:left;">
+            ${CONFIG.concierge.features.map(f => '<div style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;"><span style="color:var(--color-success);font-weight:700;">✓</span> ' + f + '</div>').join('')}
+          </div>
+          <div style="background:var(--color-surface-alt);border-radius:var(--radius-md);padding:1rem;max-width:500px;margin:0 auto 1.5rem;">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin:0;">
+              <strong>How it works:</strong> After purchasing your itinerary, add the concierge service. Share your travel dates and we'll handle the rest — you'll receive a confirmation email with all booking references. If anything is unavailable, we'll suggest and book the best alternative.
+            </p>
+          </div>
+          <a href="wizard.html" class="btn btn--primary btn--large">Get Started — Itinerary + Concierge</a>
         </div>
 
         <!-- Final CTA -->

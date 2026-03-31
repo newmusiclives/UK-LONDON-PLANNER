@@ -15,9 +15,14 @@
     "starRating": 4,
     "priceRange": "£120-180/night",
     "address": "40 Blackfriars Rd, London SE1 8PB",
-    "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-southwark",
-    "affiliateLabel": "Check Availability",
-    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank in minutes."
+    "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-southwark.html",
+    "affiliateProvider": "booking",
+    "affiliateLabel": "Book on Booking.com",
+    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank in minutes.",
+    "alternatives": [
+      { "name": "citizenM Tower of London", "url": "https://www.booking.com/hotel/gb/citizenm-tower-of-london.html", "provider": "booking", "why": "Similar vibe, great views of the Tower" },
+      { "name": "hub by Premier Inn Covent Garden", "url": "https://www.booking.com/hotel/gb/hub-by-premier-inn-covent-garden.html", "provider": "booking", "why": "More budget-friendly, unbeatable location" }
+    ]
   },
   "days": [
     {
@@ -30,14 +35,19 @@
           "period": "morning",
           "name": "Westminster Walking Tour",
           "description": "Start your trip with London's greatest hits. Walk from Westminster Bridge past Big Ben and the Houses of Parliament, through St James's Park to Buckingham Palace. If your timing's right, catch the Changing of the Guard at 11am.",
-          "estimatedCost": "Free",
+          "estimatedCost": "Free (or £18 for guided tour)",
           "estimatedCostValue": 0,
-          "affiliateUrl": "",
-          "affiliateLabel": "",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/westminster-walking-tour-t12345",
+          "affiliateProvider": "getyourguide",
+          "affiliateLabel": "Book Guided Walking Tour",
           "tips": "The view of Big Ben from Westminster Bridge is the iconic London photo. St James's Park is beautiful — look for the pelicans!",
           "address": "Westminster Bridge, London SE1 7GP",
           "neighbourhood": "Westminster",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Hop-On Hop-Off Bus Tour", "url": "https://www.getyourguide.com/london-l57/hop-on-hop-off-bus-tour-t67890", "provider": "getyourguide", "why": "Cover more ground, good if tired from travel" },
+            { "name": "Houses of Parliament Tour", "url": "https://www.getyourguide.com/london-l57/houses-of-parliament-tour-t11111", "provider": "getyourguide", "why": "Go inside Parliament instead of just seeing the exterior" }
+          ]
         },
         {
           "timeSlot": "12:30 - 13:30",
@@ -46,54 +56,74 @@
           "description": "London's most celebrated food market, trading in some form since 1014. Sophie will be in heaven — sample artisanal cheese at Neal's Yard Dairy, fresh oysters at Richard Haward's, and gourmet street food from dozens of stalls.",
           "estimatedCost": "£15-25",
           "estimatedCostValue": 20,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/borough-market-food-tour",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/borough-market-food-tour-t22222",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Food Tasting Tour",
           "tips": "Go hungry! The scotch eggs from Ginger Pig and raclette from Kappacasein are legendary. Friday lunch is lively but less packed than Saturday.",
           "address": "8 Southwark St, London SE1 1TL",
           "neighbourhood": "Bankside",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Maltby Street Market", "url": "", "provider": "", "why": "Less touristy foodie alternative, open Sat-Sun" },
+            { "name": "Padella (next door)", "url": "", "provider": "", "why": "Sit-down option if market feels overwhelming" }
+          ]
         },
         {
           "timeSlot": "14:00 - 16:30",
           "period": "afternoon",
           "name": "South Bank Cultural Walk",
-          "description": "A scenic riverside walk from Borough Market along the Thames. Pass Shakespeare's Globe (Mark can appreciate the history while Sophie browses the boutiques at Gabriel's Wharf), cross the Millennium Bridge with St Paul's Cathedral ahead, and stroll past the Tate Modern, street performers, and second-hand book stalls.",
+          "description": "A scenic riverside walk from Borough Market along the Thames. Pass Shakespeare's Globe, cross the Millennium Bridge with St Paul's Cathedral ahead, stroll past the Tate Modern, street performers, and second-hand book stalls.",
           "estimatedCost": "Free",
           "estimatedCostValue": 0,
-          "affiliateUrl": "",
-          "affiliateLabel": "",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/south-bank-guided-walk-t33333",
+          "affiliateProvider": "getyourguide",
+          "affiliateLabel": "Book Guided South Bank Tour",
           "tips": "The second-hand book stalls under Waterloo Bridge are charming. The views from the Millennium Bridge are stunning for photos.",
           "address": "South Bank, London SE1",
           "neighbourhood": "South Bank",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Tate Modern (go inside)", "url": "https://www.getyourguide.com/london-l57/tate-modern-tour-t44444", "provider": "getyourguide", "why": "Free entry, great if weather turns bad" },
+            { "name": "Thames Clipper River Bus", "url": "https://www.klook.com/activity/london-thames-clipper", "provider": "klook", "why": "See the same sights from the river instead of walking" }
+          ]
         },
         {
           "timeSlot": "17:30 - 19:00",
           "period": "dinner",
           "name": "Padella",
-          "description": "Handmade pasta dishes at unbelievably good prices. The pappardelle with 8-hour beef shin ragu will have Sophie planning her return trip. Mark will love the hearty portions. Authentic Italian in a buzzy, no-frills setting.",
+          "description": "Handmade pasta dishes at unbelievably good prices. The pappardelle with 8-hour beef shin ragu will have Sophie planning her return trip. Mark will love the hearty portions.",
           "estimatedCost": "£12-18 per person",
           "estimatedCostValue": 15,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
           "tips": "No reservations — join the queue at 5pm to beat the rush. Right by Borough Market. Their cacio e pepe is perfection.",
           "address": "6 Southwark St, London SE1 1TQ",
           "neighbourhood": "Bankside",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Flat Iron (steak)", "url": "", "provider": "", "why": "No queue, £16 for a great steak, good if pasta doesn't appeal" },
+            { "name": "Brasserie Zédel", "url": "https://www.opentable.co.uk/brasserie-zedel", "provider": "opentable", "why": "Stunning French brasserie, can be reserved, great value" }
+          ]
         },
         {
           "timeSlot": "19:30 - 21:30",
           "period": "evening",
           "name": "London Eye at Sunset",
-          "description": "End your first day with a ride on the London Eye as the sun sets over the city. The 360-degree views from 135 metres are breathtaking — spot every landmark you'll visit this week. A romantic moment for you both as London lights up.",
+          "description": "End your first day with a ride on the London Eye as the sun sets over the city. The 360-degree views from 135 metres are breathtaking — spot every landmark you'll visit this week.",
           "estimatedCost": "£32 per person",
           "estimatedCostValue": 32,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/london-eye-tickets",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/london-eye-tickets-t55555",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Fast-Track Tickets",
           "tips": "Book the sunset time slot online for cheaper tickets and skip-the-line. The champagne upgrade is worth it for a special first-night treat.",
           "address": "Riverside Building, County Hall, London SE1 7PB",
           "neighbourhood": "South Bank",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Sky Garden (free!)", "url": "", "provider": "", "why": "Free panoramic views from the Walkie Talkie — must book online in advance" },
+            { "name": "The View from The Shard", "url": "https://www.getyourguide.com/london-l57/the-shard-tickets-t66666", "provider": "getyourguide", "why": "Even higher views, equally stunning at sunset" }
+          ]
         }
       ]
     },
@@ -106,85 +136,111 @@
           "timeSlot": "09:00 - 10:00",
           "period": "morning",
           "name": "Abbey Road Studios & Crossing",
-          "description": "Mark's dream start to the day — recreate the iconic Beatles album cover at the world's most famous zebra crossing. The studios where the Beatles, Pink Floyd, and Adele recorded are right there. Sign the wall outside with a message.",
+          "description": "Mark's dream start to the day — recreate the iconic Beatles album cover at the world's most famous zebra crossing. Sign the wall outside with a message.",
           "estimatedCost": "Free",
           "estimatedCostValue": 0,
-          "affiliateUrl": "",
-          "affiliateLabel": "",
-          "tips": "Go early (before 9:30am) to get a clean photo without traffic. There's a live webcam so friends can watch! The Abbey Road Shop nearby sells music memorabilia.",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/beatles-london-walking-tour-t77777",
+          "affiliateProvider": "getyourguide",
+          "affiliateLabel": "Book Beatles Walking Tour",
+          "tips": "Go early (before 9:30am) for a clean photo without traffic. There's a live webcam so friends can watch! The Abbey Road Shop nearby sells memorabilia.",
           "address": "3 Abbey Rd, London NW8 9AY",
           "neighbourhood": "St John's Wood",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Lord's Cricket Ground Tour", "url": "https://www.getyourguide.com/london-l57/lords-cricket-tour-t88888", "provider": "getyourguide", "why": "Right next door — swap for this if Mark prefers cricket to Beatles" }
+          ]
         },
         {
           "timeSlot": "10:30 - 13:00",
           "period": "morning",
           "name": "Camden Market & Camden Town",
-          "description": "Something for both of you here. Mark: vintage vinyl shops, band t-shirts, and music memorabilia. Sophie: independent designers, vintage fashion, handmade jewellery, and one-of-a-kind finds. Plus incredible street food from around the world.",
+          "description": "Something for both of you. Mark: vintage vinyl shops, band t-shirts, and music memorabilia. Sophie: independent designers, vintage fashion, handmade jewellery, and one-of-a-kind finds.",
           "estimatedCost": "Free entry (shopping budget varies!)",
           "estimatedCostValue": 0,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Over 1,000 stalls! The Stables Market has the best vintage finds. Walk along Regent's Canal for a breather. Chin Chin Labs does amazing liquid nitrogen ice cream.",
+          "tips": "Over 1,000 stalls! The Stables Market has the best vintage finds. Walk along Regent's Canal for a breather.",
           "address": "Camden Lock Place, London NW1 8AF",
           "neighbourhood": "Camden",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Portobello Road Market", "url": "", "provider": "", "why": "More upscale vintage and antiques, if you prefer Notting Hill vibes" }
+          ]
         },
         {
           "timeSlot": "13:00 - 14:00",
           "period": "lunch",
           "name": "Chin Chin Labs + Camden Street Food",
-          "description": "Grab lunch from Camden's legendary street food stalls — everything from Argentinian steaks to Japanese gyoza. Then treat yourselves to liquid nitrogen ice cream at Chin Chin Labs, watching it made right in front of you.",
+          "description": "Grab lunch from Camden's legendary street food stalls — everything from Argentinian steaks to Japanese gyoza. Then liquid nitrogen ice cream at Chin Chin Labs.",
           "estimatedCost": "£12-18 per person",
           "estimatedCostValue": 15,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "The burnt butter caramel ice cream at Chin Chin is the signature flavour. For proper food, the mac & cheese stall near the Lock is unreal.",
+          "tips": "The burnt butter caramel ice cream at Chin Chin is the signature flavour.",
           "address": "Camden Lock Place, London NW1 8AF",
           "neighbourhood": "Camden",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "The Blues Kitchen Camden (BBQ brunch)", "url": "", "provider": "", "why": "Sit-down option with live music and great BBQ" }
+          ]
         },
         {
           "timeSlot": "15:00 - 17:30",
           "period": "afternoon",
           "name": "British Music Walk — Denmark Street to Soho",
-          "description": "Head to Denmark Street (London's Tin Pan Alley) where the Rolling Stones, David Bowie, and Sex Pistols recorded. Walk through Soho past legendary venues — the Marquee Club site, Trident Studios where Bowie recorded Ziggy Stardust, and Carnaby Street where Sophie can browse the boutiques.",
+          "description": "Head to Denmark Street (London's Tin Pan Alley) where the Rolling Stones and Sex Pistols recorded. Walk through Soho past legendary venues. Sophie can browse Carnaby Street and Liberty.",
           "estimatedCost": "Free (shopping extra)",
           "estimatedCostValue": 0,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/rock-n-roll-walking-tour",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/rock-n-roll-walking-tour-t99999",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Rock & Roll Walking Tour",
-          "tips": "Carnaby Street has great independent shops alongside bigger brands. The Liberty department store (just off Carnaby) is a must for Sophie — the Tudor building alone is stunning.",
+          "tips": "Liberty department store is a must for Sophie — the Tudor building is stunning.",
           "address": "Denmark Street, London WC2H 8NL",
           "neighbourhood": "Soho",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "British Music Experience", "url": "https://www.getyourguide.com/london-l57/british-music-experience-t10101", "provider": "getyourguide", "why": "Interactive museum if you'd prefer indoors" }
+          ]
         },
         {
           "timeSlot": "18:00 - 19:30",
           "period": "dinner",
           "name": "BAO Soho",
-          "description": "Tiny Taiwanese bun shop that's become a cult favourite. The pillowy steamed gua bao are incredible. Perfect spot for Sophie who loves discovering great food, and the portions mean you can try lots of different things.",
+          "description": "Tiny Taiwanese bun shop that's become a cult favourite. The pillowy steamed gua bao are incredible.",
           "estimatedCost": "£18-25 per person",
           "estimatedCostValue": 22,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "The classic bao and the fried Horlicks ice cream are musts. Queue moves quickly. No reservations at Soho branch.",
+          "tips": "The classic bao and the fried Horlicks ice cream are musts. Queue moves quickly.",
           "address": "53 Lexington St, London W1F 9AS",
           "neighbourhood": "Soho",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Hoppers (Sri Lankan)", "url": "", "provider": "", "why": "Similar no-reservations vibe, different cuisine" },
+            { "name": "The Palomar", "url": "https://www.opentable.co.uk/the-palomar", "provider": "opentable", "why": "Can be reserved, amazing Jerusalem food" }
+          ]
         },
         {
           "timeSlot": "20:00 - 23:00",
           "period": "evening",
           "name": "Ronnie Scott's Jazz Club",
-          "description": "London's legendary jazz club since 1959. World-class musicians in an intimate basement setting in the heart of Soho. Even if Mark's more into rock, the energy and talent here is undeniable. A truly special London evening for you both.",
+          "description": "London's legendary jazz club since 1959. World-class musicians in an intimate basement setting in the heart of Soho.",
           "estimatedCost": "£40-60 per person",
           "estimatedCostValue": 50,
           "affiliateUrl": "https://www.ronniescotts.co.uk/performances",
+          "affiliateProvider": "direct",
           "affiliateLabel": "Book Show Tickets",
-          "tips": "Book the late show (11:30pm Mon-Sat) for a cheaper, more intimate experience. Arrive early to get a good table. Drinks aren't cheap but the atmosphere is priceless.",
+          "tips": "Book the late show (11:30pm Mon-Sat) for a cheaper, more intimate experience.",
           "address": "47 Frith St, London W1D 4HT",
           "neighbourhood": "Soho",
-          "type": "nightlife"
+          "type": "nightlife",
+          "alternatives": [
+            { "name": "100 Club (rock/indie)", "url": "", "provider": "", "why": "More rock/indie if jazz isn't Mark's thing" },
+            { "name": "Jazz Cafe Camden", "url": "", "provider": "", "why": "Alternative jazz/soul/funk venue, different vibe" }
+          ]
         }
       ]
     },
@@ -197,71 +253,97 @@
           "timeSlot": "09:30 - 12:30",
           "period": "morning",
           "name": "Wembley Stadium Tour",
-          "description": "Mark's morning — go behind the scenes at England's national stadium. Walk through the players' tunnel, sit in the Royal Box, visit the dressing rooms, and lift a replica FA Cup. Even Sophie will be impressed by the scale of this place.",
+          "description": "Mark's morning — go behind the scenes at England's national stadium. Walk through the players' tunnel, sit in the Royal Box, and lift a replica trophy.",
           "estimatedCost": "£25 per person",
           "estimatedCostValue": 25,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/wembley-stadium-tour",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/wembley-stadium-tour-t20202",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Stadium Tour",
-          "tips": "The behind-the-scenes access is excellent. Great photo ops in the royal box and on the pitch. About 90 minutes for the full tour.",
+          "tips": "Great photo ops in the royal box and on the pitch. About 90 minutes for the full tour.",
           "address": "Wembley Stadium, London HA9 0WS",
           "neighbourhood": "Wembley",
-          "type": "entertainment"
+          "type": "entertainment",
+          "alternatives": [
+            { "name": "Arsenal Emirates Stadium Tour", "url": "https://www.getyourguide.com/london-l57/arsenal-stadium-tour-t30303", "provider": "getyourguide", "why": "Closer to central London, equally impressive" },
+            { "name": "Chelsea Stamford Bridge Tour", "url": "https://www.getyourguide.com/london-l57/chelsea-stadium-tour-t40404", "provider": "getyourguide", "why": "Another Premier League option, different location" },
+            { "name": "Wimbledon Tennis Tour", "url": "https://www.getyourguide.com/london-l57/wimbledon-tour-t50505", "provider": "getyourguide", "why": "Swap football for tennis if Mark prefers" }
+          ]
         },
         {
           "timeSlot": "13:00 - 14:00",
           "period": "lunch",
           "name": "The Wolseley",
-          "description": "A grand European-style cafe-restaurant in a stunning Art Deco building on Piccadilly. The kind of place that makes you feel special. Sophie will adore the elegance; Mark will appreciate the generous portions. Perfect refuelling spot.",
+          "description": "A grand European-style cafe-restaurant in a stunning Art Deco building on Piccadilly. The kind of place that makes you feel special.",
           "estimatedCost": "£30-40 per person",
           "estimatedCostValue": 35,
           "affiliateUrl": "https://www.opentable.co.uk/the-wolseley",
+          "affiliateProvider": "opentable",
           "affiliateLabel": "Reserve a Table",
-          "tips": "The interior is gorgeous — pure Art Deco glamour. The Wiener Schnitzel is excellent. Book ahead or try walking in for counter seats.",
+          "tips": "The interior is gorgeous — pure Art Deco glamour. Book ahead or try walking in for counter seats.",
           "address": "160 Piccadilly, London W1J 9EB",
           "neighbourhood": "St James's",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Brasserie Zédel", "url": "https://www.opentable.co.uk/brasserie-zedel", "provider": "opentable", "why": "Similar grand setting, much cheaper, equally beautiful" },
+            { "name": "Dishoom King's Cross", "url": "https://www.opentable.co.uk/dishoom-kings-cross", "provider": "opentable", "why": "Indian option if you prefer, stunning building" }
+          ]
         },
         {
           "timeSlot": "14:30 - 17:30",
           "period": "afternoon",
           "name": "West End Shopping — Oxford Street, Regent Street & Liberty",
-          "description": "Sophie's dream afternoon. Start at Selfridges on Oxford Street, stroll down Regent Street, then duck into Liberty — London's most beautiful department store in a Tudor Revival building. Mark can check out the menswear at Harrods or browse the tech at the Apple Store on Regent Street.",
+          "description": "Sophie's dream afternoon. Start at Selfridges, stroll down Regent Street, then into Liberty. Mark can browse menswear or check out the Apple Store on Regent Street.",
           "estimatedCost": "Free (shopping budget varies!)",
           "estimatedCostValue": 0,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Liberty is an absolute must — even if you don't buy, the building is incredible. Selfridges' food hall is worth a detour. Carnaby Street (just off Regent) has more indie shops.",
+          "tips": "Liberty is an absolute must — even if you don't buy, the building is incredible. Selfridges' food hall is worth a detour.",
           "address": "Oxford Street / Regent Street, London W1",
           "neighbourhood": "West End",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Covent Garden shopping instead", "url": "", "provider": "", "why": "More boutique and less hectic than Oxford Street" },
+            { "name": "Harrods (Knightsbridge)", "url": "", "provider": "", "why": "The ultimate luxury department store experience" }
+          ]
         },
         {
           "timeSlot": "17:30 - 18:45",
           "period": "dinner",
           "name": "Flat Iron Soho",
-          "description": "Exceptional flat iron steak with a side salad and unlimited creamy béarnaise sauce. Incredible value — one of the best steaks in London at a fraction of the fancy steakhouse price. Mark will be in heaven.",
+          "description": "Exceptional flat iron steak with unlimited creamy bearnaise sauce. Incredible value. Mark will be in heaven.",
           "estimatedCost": "£16 per person",
           "estimatedCostValue": 16,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Just one thing on the menu — steak. And it's brilliant. They give you a mini cleaver as a steak knife to take home. Quick dinner before the theatre.",
+          "tips": "Just one thing on the menu — steak. They give you a mini cleaver as a steak knife to take home.",
           "address": "17 Beak St, Soho, London W1F 9RW",
           "neighbourhood": "Soho",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Honest Burgers", "url": "", "provider": "", "why": "Great burgers if steak doesn't appeal" },
+            { "name": "Franco Manca", "url": "", "provider": "", "why": "Quick sourdough pizza from £6.95, great pre-theatre" }
+          ]
         },
         {
           "timeSlot": "19:30 - 22:00",
           "period": "evening",
           "name": "West End Theatre Show",
-          "description": "A West End musical is unmissable. Whether it's The Lion King, Wicked, Hamilton, or whatever's hot right now — the production values are world-class. A magical evening for you both in London's legendary Theatreland.",
+          "description": "A West End musical is unmissable. Whether it's The Lion King, Wicked, Hamilton, or whatever's hot right now — world-class production values.",
           "estimatedCost": "£40-80 per person",
           "estimatedCostValue": 60,
           "affiliateUrl": "https://www.todaytix.com/london",
-          "affiliateLabel": "Find West End Tickets",
-          "tips": "TodayTix app often has last-minute discounts. The TKTS booth in Leicester Square sells same-day tickets up to 50% off. Book popular shows in advance.",
+          "affiliateProvider": "todaytix",
+          "affiliateLabel": "Find West End Tickets on TodayTix",
+          "tips": "TodayTix app often has last-minute discounts. The TKTS booth in Leicester Square sells same-day tickets up to 50% off.",
           "address": "Shaftesbury Avenue, London WC2",
           "neighbourhood": "West End",
-          "type": "entertainment"
+          "type": "entertainment",
+          "alternatives": [
+            { "name": "Comedy Store (stand-up)", "url": "https://www.thecomedystore.co.uk", "provider": "direct", "why": "Comedy alternative if musicals aren't your thing" },
+            { "name": "Secret Cinema / Immersive Show", "url": "", "provider": "", "why": "More interactive experience if you want something different" }
+          ]
         }
       ]
     },
@@ -274,71 +356,96 @@
           "timeSlot": "09:00 - 12:00",
           "period": "morning",
           "name": "Tower of London",
-          "description": "Nearly 1,000 years of history as a royal palace, fortress, and prison. See the Crown Jewels, hear tales from the Beefeaters, and walk the walls where Anne Boleyn spent her final days. One of London's must-see attractions for any visitor.",
+          "description": "Nearly 1,000 years of history as a royal palace, fortress, and prison. See the Crown Jewels, hear tales from the Beefeaters.",
           "estimatedCost": "£29.90 per person",
           "estimatedCostValue": 29.90,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-of-london-tickets",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-of-london-tickets-t60606",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Skip-the-Line Tickets",
-          "tips": "Arrive at 9am opening to see the Crown Jewels before the crowds. The Beefeater tours (free with entry) are entertaining and packed with stories. Allow 2-3 hours.",
+          "tips": "Arrive at 9am opening to see the Crown Jewels before the crowds. The Beefeater tours (free with entry) are packed with stories.",
           "address": "Tower of London, London EC3N 4AB",
           "neighbourhood": "Tower Hill",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Tower Bridge Exhibition", "url": "https://www.getyourguide.com/london-l57/tower-bridge-tickets-t70707", "provider": "getyourguide", "why": "Cheaper option, glass walkways with views, can be combined" },
+            { "name": "St Paul's Cathedral", "url": "https://www.getyourguide.com/london-l57/st-pauls-cathedral-tickets-t80808", "provider": "getyourguide", "why": "Climb the dome for incredible views instead" }
+          ]
         },
         {
           "timeSlot": "12:15 - 13:00",
           "period": "lunch",
           "name": "Tower Bridge & Beigel Bake",
-          "description": "Walk across Tower Bridge (free — the glass walkway exhibition is optional) then head to Brick Lane's legendary Beigel Bake. Open 24/7 since 1974, the salt beef beigel is a London institution. Ridiculously cheap and delicious.",
+          "description": "Walk across Tower Bridge then head to Brick Lane's legendary Beigel Bake. Open 24/7 since 1974, the salt beef beigel is a London institution.",
           "estimatedCost": "£3-5 per person",
           "estimatedCostValue": 4,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Get the salt beef beigel with mustard — it's what everyone comes for. The shop has barely changed in 50 years. Cash is king here.",
+          "tips": "Get the salt beef beigel with mustard — it's what everyone comes for.",
           "address": "159 Brick Ln, London E1 6SB",
           "neighbourhood": "Spitalfields",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Poppies Fish & Chips", "url": "", "provider": "", "why": "Classic British fish & chips in a vintage 1940s setting" },
+            { "name": "E Pellicci (greasy spoon)", "url": "", "provider": "", "why": "Grade II listed East End cafe — the Kray twins used to eat here" }
+          ]
         },
         {
           "timeSlot": "13:30 - 16:30",
           "period": "afternoon",
           "name": "Shoreditch & Spitalfields Exploration",
-          "description": "The best of both worlds. Sophie: Spitalfields Market has gorgeous independent designers, vintage fashion, and artisanal homewares. Mark: Shoreditch is covered in world-class street art by Banksy and others, plus there are incredible vinyl and guitar shops. Rough Trade East record shop is a music lover's paradise.",
+          "description": "Sophie: Spitalfields Market for independent designers and vintage fashion. Mark: world-class street art and Rough Trade East record shop.",
           "estimatedCost": "Free (shopping extra)",
           "estimatedCostValue": 0,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/shoreditch-street-art-tour",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/shoreditch-street-art-tour-t90909",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Guided Street Art Walk",
-          "tips": "Rough Trade East on Brick Lane is one of the world's best record shops. Old Spitalfields Market is open daily but best on Thursdays (antiques) and Sundays (everything). The street art changes regularly.",
+          "tips": "Rough Trade East on Brick Lane is one of the world's best record shops. Old Spitalfields Market is open daily.",
           "address": "Shoreditch / Brick Lane, London E1",
           "neighbourhood": "Shoreditch",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Columbia Road Flower Market (Sundays)", "url": "", "provider": "", "why": "Beautiful Sunday-only flower market nearby" },
+            { "name": "Dennis Severs' House", "url": "https://www.tiqets.com/london/dennis-severs-house", "provider": "tiqets", "why": "Unique immersive time-travel experience through a Huguenot house" }
+          ]
         },
         {
           "timeSlot": "18:30 - 20:00",
           "period": "dinner",
           "name": "Dishoom Shoreditch",
-          "description": "Bombay-inspired cafe serving outstanding Indian cuisine that Sophie will absolutely love. The black daal is slow-cooked for 24 hours. The lamb biryani is spectacular. The cocktails are excellent too. A buzzy, beautiful space.",
+          "description": "Bombay-inspired cafe serving outstanding Indian cuisine. The black daal is slow-cooked for 24 hours. The lamb biryani is spectacular.",
           "estimatedCost": "£25-35 per person",
           "estimatedCostValue": 30,
           "affiliateUrl": "https://www.opentable.co.uk/dishoom-shoreditch",
+          "affiliateProvider": "opentable",
           "affiliateLabel": "Reserve a Table",
-          "tips": "No reservations for groups under 6 at dinner — arrive before 5:30pm or expect a 30-60 min queue (worth it). The bacon naan roll at brunch is legendary if you fancy coming back.",
+          "tips": "No reservations for groups under 6 at dinner — arrive before 5:30pm or expect a queue (worth it).",
           "address": "7 Boundary St, London E2 7JE",
           "neighbourhood": "Shoreditch",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Gloria (Italian, great for groups)", "url": "", "provider": "", "why": "Over-the-top 1970s Italian, giant portions, walk-ins welcome" },
+            { "name": "Smoking Goat (Thai BBQ)", "url": "", "provider": "", "why": "Fiery Thai BBQ alternative, good for sharing" }
+          ]
         },
         {
           "timeSlot": "20:30 - 23:00",
           "period": "evening",
           "name": "The Blues Kitchen Shoreditch",
-          "description": "Free live blues, soul, and rock 'n' roll every single night. Mark will be in his element — incredible live bands in a dive bar atmosphere with bourbon cocktails and American BBQ. Sophie can enjoy the dancing and the surprisingly great food.",
+          "description": "Free live blues, soul, and rock 'n' roll every single night. Incredible live bands with bourbon cocktails and American BBQ.",
           "estimatedCost": "£10-15 per person (drinks)",
           "estimatedCostValue": 12,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Free entry and live music every night! The bourbon selection is impressive. Get there early for a good spot near the stage. The BBQ ribs are excellent.",
+          "tips": "Free entry and live music every night! Get there early for a good spot near the stage.",
           "address": "134-146 Curtain Rd, London EC2A 3AR",
           "neighbourhood": "Shoreditch",
-          "type": "nightlife"
+          "type": "nightlife",
+          "alternatives": [
+            { "name": "BOXPARK Shoreditch rooftop", "url": "", "provider": "", "why": "Street food + rooftop DJ sets, more casual vibe" },
+            { "name": "Callooh Callay (cocktails)", "url": "", "provider": "", "why": "Award-winning cocktails with a secret bar behind a wardrobe" }
+          ]
         }
       ]
     },
@@ -351,71 +458,96 @@
           "timeSlot": "09:30 - 11:30",
           "period": "morning",
           "name": "Victoria and Albert Museum",
-          "description": "The world's leading museum of art and design — and it's free. Over 2.3 million objects spanning 5,000 years. Sophie will love the Fashion Gallery. Mark can check out the music and performance collection. The building itself is stunning.",
+          "description": "The world's leading museum of art and design — and it's free. Sophie will love the Fashion Gallery. Mark can explore the music and performance collection.",
           "estimatedCost": "Free",
           "estimatedCostValue": 0,
-          "affiliateUrl": "",
-          "affiliateLabel": "",
-          "tips": "Free entry! The Fashion Gallery and Jewellery Gallery are highlights. The museum cafe in the original Victorian refreshment rooms is one of the prettiest rooms in London.",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/v-and-a-museum-tour-t10110",
+          "affiliateProvider": "getyourguide",
+          "affiliateLabel": "Book Expert-Led Tour",
+          "tips": "Free entry! The museum cafe in the Victorian refreshment rooms is one of the prettiest rooms in London.",
           "address": "Cromwell Rd, London SW7 2RL",
           "neighbourhood": "South Kensington",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "Natural History Museum", "url": "", "provider": "", "why": "Also free, right next door, more family-friendly" },
+            { "name": "Science Museum", "url": "", "provider": "", "why": "Free, more interactive, great IMAX cinema" }
+          ]
         },
         {
           "timeSlot": "12:00 - 13:30",
           "period": "lunch",
           "name": "Covent Garden & Neal's Yard",
-          "description": "Stroll through Covent Garden's piazza watching world-class street performers, then discover Neal's Yard — one of London's most colourful hidden corners. Sophie can browse the boutiques while Mark grabs a craft beer. Lunch from one of the many excellent restaurants.",
+          "description": "Stroll through Covent Garden's piazza watching world-class street performers, then discover Neal's Yard — one of London's most colourful hidden corners.",
           "estimatedCost": "£15-25 per person",
           "estimatedCostValue": 20,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Neal's Yard is one of London's most Instagram-worthy spots — the colourful buildings are gorgeous. Homeslice does incredible pizza by the slice. The Apple Market has unique handmade gifts.",
+          "tips": "Neal's Yard is one of London's most Instagram-worthy spots. Homeslice does incredible pizza by the slice.",
           "address": "Covent Garden, London WC2E",
           "neighbourhood": "Covent Garden",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "The Barbary (North African)", "url": "", "provider": "", "why": "Tiny counter restaurant in Neal's Yard, incredible food" },
+            { "name": "Granger & Co (brunch)", "url": "", "provider": "", "why": "Australian brunch legend, light and fresh" }
+          ]
         },
         {
           "timeSlot": "14:00 - 16:00",
           "period": "afternoon",
           "name": "St Paul's Cathedral & Sky Garden",
-          "description": "Visit Wren's masterpiece — climb 528 steps to the Golden Gallery for incredible London views. Then head to the Sky Garden at 20 Fenchurch Street for free panoramic views from London's highest public garden. The perfect sightseeing finale.",
+          "description": "Visit Wren's masterpiece — climb 528 steps for incredible views. Then head to the Sky Garden for free panoramic views from London's highest public garden.",
           "estimatedCost": "£23 per person (St Paul's) + Free (Sky Garden)",
           "estimatedCostValue": 23,
-          "affiliateUrl": "https://www.getyourguide.com/london-l57/st-pauls-cathedral-tickets",
+          "affiliateUrl": "https://www.getyourguide.com/london-l57/st-pauls-cathedral-tickets-t11110",
+          "affiliateProvider": "getyourguide",
           "affiliateLabel": "Book Entry Tickets",
-          "tips": "Test the Whispering Gallery acoustics — whisper against the wall and someone opposite can hear you. Sky Garden is free but must be booked in advance online!",
+          "tips": "Test the Whispering Gallery acoustics. Sky Garden is free but must be booked in advance online!",
           "address": "St Paul's Churchyard, London EC4M 8AD",
           "neighbourhood": "City of London",
-          "type": "attraction"
+          "type": "attraction",
+          "alternatives": [
+            { "name": "The View from The Shard", "url": "https://www.getyourguide.com/london-l57/the-shard-tickets-t12120", "provider": "getyourguide", "why": "Even higher views, no climbing required" },
+            { "name": "Westminster Abbey", "url": "https://www.getyourguide.com/london-l57/westminster-abbey-tickets-t13130", "provider": "getyourguide", "why": "If you'd prefer history over height" }
+          ]
         },
         {
           "timeSlot": "18:00 - 20:00",
           "period": "dinner",
           "name": "Hawksmoor Seven Dials",
-          "description": "Your farewell dinner at one of London's finest steakhouses. Award-winning British beef in a beautiful converted brewery. This is a special occasion meal — the perfect way to toast an incredible 5 days. Sophie will love the cocktails, Mark the steak.",
+          "description": "Your farewell dinner at one of London's finest steakhouses. Award-winning British beef in a beautiful converted brewery. The perfect way to toast an incredible 5 days.",
           "estimatedCost": "£55-75 per person",
           "estimatedCostValue": 65,
           "affiliateUrl": "https://www.opentable.co.uk/hawksmoor-seven-dials",
+          "affiliateProvider": "opentable",
           "affiliateLabel": "Reserve a Table",
-          "tips": "The bone-in prime rib for two is the showstopper. Their Sunday roast is legendary (if your trip falls right). Book well in advance.",
+          "tips": "The bone-in prime rib for two is the showstopper. Book well in advance.",
           "address": "11 Langley St, London WC2H 9JG",
           "neighbourhood": "Covent Garden",
-          "type": "restaurant"
+          "type": "restaurant",
+          "alternatives": [
+            { "name": "Rules (London's oldest restaurant)", "url": "https://www.opentable.co.uk/rules-restaurant", "provider": "opentable", "why": "Traditional British, equally special, since 1798" },
+            { "name": "The Ivy", "url": "https://www.opentable.co.uk/the-ivy", "provider": "opentable", "why": "Celebrity favourite, classic West End glamour" }
+          ]
         },
         {
           "timeSlot": "20:30 - 22:30",
           "period": "evening",
           "name": "Gordon's Wine Bar — Farewell Drinks",
-          "description": "End your London adventure in the most atmospheric way possible — London's oldest wine bar, hidden in a candlelit cave beneath the streets. Share a bottle of wine, reflect on an incredible week, and soak in the magic of this ancient, romantic setting.",
+          "description": "End your London adventure in the most atmospheric way possible — London's oldest wine bar, hidden in a candlelit cave beneath the streets.",
           "estimatedCost": "£8-12 per person",
           "estimatedCostValue": 10,
           "affiliateUrl": "",
+          "affiliateProvider": "",
           "affiliateLabel": "",
-          "tips": "Cash only inside! Arrive by 8pm to grab a spot in the cave. The cheese and charcuterie boards pair perfectly with the wine. A truly unforgettable London farewell.",
+          "tips": "Cash only inside! Arrive by 8pm to grab a spot in the cave. A truly unforgettable London farewell.",
           "address": "47 Villiers St, London WC2N 6NE",
           "neighbourhood": "West End",
-          "type": "nightlife"
+          "type": "nightlife",
+          "alternatives": [
+            { "name": "Swift Soho (cocktails)", "url": "", "provider": "", "why": "Upscale cocktail bar if wine isn't your thing" },
+            { "name": "Nightjar (speakeasy)", "url": "", "provider": "", "why": "Theatrical 1920s cocktails with live jazz, must book" }
+          ]
         }
       ]
     }

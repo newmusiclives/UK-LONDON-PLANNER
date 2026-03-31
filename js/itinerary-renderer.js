@@ -62,6 +62,19 @@ function renderItinerary(itinerary, isPaid, price) {
 
       ${!isPaid ? renderPurchaseBanner(price, itinerary.tripDays) : ''}
 
+      <!-- Concierge Add-on -->
+      <div style="background:var(--color-surface);border:2px solid var(--color-accent);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin-top:2rem;">
+        <div style="font-size:2rem;margin-bottom:0.5rem;">🛎️</div>
+        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $50</h3>
+        <p style="color:var(--color-text-muted);max-width:500px;margin:0 auto 1rem;font-size:0.95rem;">
+          We'll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more. If anything is unavailable, we'll find and book the best alternative for you.
+        </p>
+        <ul style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left;">
+          ${CONFIG.concierge.features.map(f => '<li style="padding:0.3rem 0;font-size:0.85rem;"><span style="color:var(--color-success);font-weight:700;margin-right:0.5rem;">✓</span>' + f + '</li>').join('')}
+        </ul>
+        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $50</button>
+      </div>
+
       <!-- Consultation Upsell -->
       <div class="purchase-banner" style="background: linear-gradient(135deg, #2A3F6B 0%, #1B2A4A 100%); margin-top: 2rem;">
         <h3>Want a Truly Bespoke Experience?</h3>
@@ -102,7 +115,7 @@ function renderHotelCard(hotel) {
       ${hotel.tips ? `<div class="activity__tip">${hotel.tips}</div>` : ''}
       ${hotel.affiliateUrl ? `
         <div style="margin-top: 1rem;">
-          <a href="${hotel.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+          <a href="${AffiliateLinks.auto(hotel.affiliateUrl)}" target="_blank" rel="noopener" class="affiliate-cta">
             ${hotel.affiliateLabel || 'Check Availability'} →
           </a>
         </div>
@@ -160,7 +173,7 @@ function renderActivity(activity) {
       ${activity.tips ? `<div class="activity__tip">${activity.tips}</div>` : ''}
       ${activity.affiliateUrl ? `
         <div class="activity__cta">
-          <a href="${activity.affiliateUrl}" target="_blank" rel="noopener" class="affiliate-cta">
+          <a href="${AffiliateLinks.auto(activity.affiliateUrl)}" target="_blank" rel="noopener" class="affiliate-cta">
             ${activity.affiliateLabel || 'Book Now'} →
           </a>
         </div>
@@ -192,6 +205,17 @@ function renderPurchaseBanner(price, tripDays) {
       </p>
     </div>
   `;
+}
+
+function handleConcierge() {
+  const link = CONFIG.stripe.links.concierge;
+  const sessionId = State.getSessionId();
+
+  if (link && !link.includes('YOUR_')) {
+    window.location.href = `${link}?client_reference_id=${sessionId}`;
+  } else {
+    UI.showToast('Demo mode: In production, this would redirect to Stripe for $50 concierge payment');
+  }
 }
 
 function handlePurchase() {

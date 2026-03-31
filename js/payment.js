@@ -26,6 +26,18 @@ const Payment = {
     }
   },
 
+  initiateConcierge() {
+    const link = CONFIG.stripe.links.concierge;
+    const sessionId = State.getSessionId();
+
+    if (link && !link.includes('YOUR_')) {
+      const separator = link.includes('?') ? '&' : '?';
+      window.location.href = `${link}${separator}client_reference_id=${sessionId}`;
+    } else {
+      UI.showToast('Demo mode: In production, this would redirect to Stripe for $50 concierge payment');
+    }
+  },
+
   initiateConsultation() {
     const link = CONFIG.stripe.links.consultation;
     const sessionId = State.getSessionId();
