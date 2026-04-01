@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — London Journey Planner</title>
+  <meta name="description" content="Get in touch with the London Journey Planner team for questions, support, or partnership enquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Contact Us</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);">We'd love to hear from you</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="grid grid--2" style="gap:2rem;margin-bottom:2rem;">
+          <div class="card"><div class="card__body" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">📧</div>
+            <h4>Email</h4>
+            <p style="color:var(--color-text-muted);margin-top:0.5rem;">hello@londonjourneyplanner.com</p>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">We respond within 24 hours</p>
+          </div></div>
+          <div class="card"><div class="card__body" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">💬</div>
+            <h4>Live Chat</h4>
+            <p style="color:var(--color-text-muted);margin-top:0.5rem;">Available via SMS/WhatsApp</p>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">Powered by GoHighLevel</p>
+          </div></div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <h3 style="margin-bottom:1.5rem;">Send Us a Message</h3>
+            <form id="contact-form" style="display:grid;gap:1.25rem;">
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Name</label>
+                  <input type="text" id="contact-name" required placeholder="Your name"
+                    style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                </div>
+                <div>
+                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Email</label>
+                  <input type="email" id="contact-email" required placeholder="you@example.com"
+                    style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                </div>
+              </div>
+              <div>
+                <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Phone (optional)</label>
+                <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000"
+                  style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Subject</label>
+                <select id="contact-subject" style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                  <option value="general">General Enquiry</option>
+                  <option value="support">Itinerary Support</option>
+                  <option value="consultation">Consultation Question</option>
+                  <option value="partnership">Partnership / Affiliate</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+              <div>
+                <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Message</label>
+                <textarea id="contact-message" rows="5" required placeholder="How can we help?"
+                  style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;resize:vertical;"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--large btn--full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      document.getElementById('contact-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        const formData = {
+          name: document.getElementById('contact-name').value,
+          email: document.getElementById('contact-email').value,
+          phone: document.getElementById('contact-phone').value,
+          subject: document.getElementById('contact-subject').value,
+          message: document.getElementById('contact-message').value
+        };
+
+        await GHL.submitContactForm(formData);
+
+        btn.textContent = 'Message Sent!';
+        UI.showToast('Thanks! We\'ll get back to you within 24 hours.');
+        e.target.reset();
+        setTimeout(() => { btn.disabled = false; btn.textContent = 'Send Message'; }, 3000);
+      });
+    });
+  </script>
+</body>
+</html>

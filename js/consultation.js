@@ -91,6 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   placeholder="john@example.com">
               </div>
               <div>
+                <label style="font-weight: 600; display: block; margin-bottom: 0.5rem;">Phone Number</label>
+                <input type="tel" id="c-phone"
+                  style="width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: 1rem;"
+                  placeholder="+1 (555) 000-0000">
+              </div>
+              <div>
                 <label style="font-weight: 600; display: block; margin-bottom: 0.5rem;">Preferred Date & Time</label>
                 <input type="datetime-local" id="c-datetime"
                   style="width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: 1rem;">
@@ -111,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Book & Pay — $75
               </button>
               <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted);">
-                Secure payment via Stripe. Full refund if cancelled 48+ hours before your session.
+                Secure payment via Manifest Financial. Full refund if cancelled 48+ hours before your session.
               </p>
             </form>
           </div>
@@ -125,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h2 style="color: var(--color-text-light);">Prefer to Self-Plan?</h2>
         <div class="divider"></div>
         <p style="color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 2rem;">
-          Our AI-powered itinerary builder creates personalised day-by-day plans starting at just $20.
+          Our itinerary builder creates personalised day-by-day plans starting at just $20.
         </p>
         <a href="wizard.html" class="btn btn--primary btn--large">Create Your Itinerary</a>
       </div>
@@ -143,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = {
       name: document.getElementById('c-name').value,
       email: document.getElementById('c-email').value,
+      phone: document.getElementById('c-phone').value,
       datetime: document.getElementById('c-datetime').value,
       travelDates: document.getElementById('c-travel-dates').value,
       details: document.getElementById('c-details').value
@@ -151,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Store form data for reference after payment
     localStorage.setItem('consultationRequest', JSON.stringify(formData));
 
-    // Redirect to Stripe payment
-    Payment.initiateConsultation();
+    // Send to GoHighLevel CRM and redirect to Manifest Financial payment
+    Payment.initiateConsultation(formData);
   });
 });

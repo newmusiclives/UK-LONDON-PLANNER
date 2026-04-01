@@ -149,7 +149,7 @@
 
       <!-- Tabs -->
       <div class="admin-tabs" id="admin-tabs">
-        <div class="admin-tab active" data-tab="payments">Payments & Stripe</div>
+        <div class="admin-tab active" data-tab="payments">Payments & Manifest</div>
         <div class="admin-tab" data-tab="affiliates">Affiliate IDs</div>
         <div class="admin-tab" data-tab="attractions">Attractions</div>
         <div class="admin-tab" data-tab="restaurants">Restaurants</div>
@@ -163,31 +163,31 @@
       <div class="admin-panel active" data-panel="payments">
         <div class="admin-section">
           <div class="admin-section__header">
-            <h3>Stripe Payment Links</h3>
+            <h3>Manifest Financial Payment Links</h3>
           </div>
           <div class="admin-section__body">
             <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
-              Create Payment Links in your <a href="https://dashboard.stripe.com/payment-links" target="_blank" style="color:var(--color-accent);">Stripe Dashboard</a>, then paste them below. Each product needs its own link.
+              Create Payment Links in your <a href="https://app.manifestfinancial.com" target="_blank" style="color:var(--color-accent);">Manifest Financial Dashboard</a>, then paste them below. Each product needs its own link.
             </p>
             <div class="field">
               <label>Short Stay Itinerary ($20) <small>1-5 days</small></label>
-              <input type="url" id="stripe-tier1" placeholder="https://buy.stripe.com/..." data-key="tier1">
+              <input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1">
             </div>
             <div class="field">
               <label>Week Explorer Itinerary ($40) <small>6-10 days</small></label>
-              <input type="url" id="stripe-tier2" placeholder="https://buy.stripe.com/..." data-key="tier2">
+              <input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2">
             </div>
             <div class="field">
               <label>Extended Adventure Itinerary ($75) <small>11-21 days</small></label>
-              <input type="url" id="stripe-tier3" placeholder="https://buy.stripe.com/..." data-key="tier3">
+              <input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3">
             </div>
             <div class="field">
               <label>Booking Concierge Add-on ($50)</label>
-              <input type="url" id="stripe-concierge" placeholder="https://buy.stripe.com/..." data-key="concierge">
+              <input type="url" id="manifest-concierge" placeholder="https://pay.manifestfinancial.com/..." data-key="concierge">
             </div>
             <div class="field">
               <label>Personal Consultation ($75/hour)</label>
-              <input type="url" id="stripe-consultation" placeholder="https://buy.stripe.com/..." data-key="consultation">
+              <input type="url" id="manifest-consultation" placeholder="https://pay.manifestfinancial.com/..." data-key="consultation">
             </div>
             <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
           </div>
@@ -432,10 +432,10 @@
       // Load saved admin config
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
 
-      // Populate Stripe fields
-      document.querySelectorAll('[id^="stripe-"]').forEach(input => {
+      // Populate Manifest Financial fields
+      document.querySelectorAll('[id^="manifest-"]').forEach(input => {
         const key = input.dataset.key;
-        input.value = saved.stripe?.[key] || '';
+        input.value = saved.manifest?.[key] || '';
       });
 
       // Populate Affiliate fields
@@ -503,9 +503,9 @@
     // ============================================================
     function savePaymentLinks() {
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
-      saved.stripe = {};
-      document.querySelectorAll('[id^="stripe-"]').forEach(input => {
-        saved.stripe[input.dataset.key] = input.value.trim();
+      saved.manifest = {};
+      document.querySelectorAll('[id^="manifest-"]').forEach(input => {
+        saved.manifest[input.dataset.key] = input.value.trim();
       });
       localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
       showStatus('Payment links saved. Export config to update your live site.');

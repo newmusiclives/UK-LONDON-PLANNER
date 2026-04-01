@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Time to Visit London — London Journey Planner</title>
+  <meta name="description" content="Month-by-month guide to visiting London: weather, events, crowds, and prices throughout the year.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Best Time to Visit London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto;">A month-by-month guide to London's weather, events, and crowds</p>
+      </div>
+    </section>
+
+    <!-- Live Weather Widget -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container container--narrow">
+        <div id="weather-widget" class="card" style="margin-bottom:2rem;">
+          <div class="card__body" style="text-align:center;">
+            <h3>🌤️ London Weather Right Now</h3>
+            <div id="weather-content" style="margin-top:1rem;"><p style="color:var(--color-text-muted);">Loading weather...</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="card" style="margin-bottom:2rem;border-left:4px solid #2ECC71;">
+          <div class="card__body">
+            <h3>🌸 Spring (March - May) — Best Overall</h3>
+            <p style="margin-top:0.5rem;"><strong>Temp:</strong> 8-17°C (46-63°F) | <strong>Crowds:</strong> Moderate | <strong>Prices:</strong> Mid-range</p>
+            <p style="margin-top:0.5rem;">Parks bloom beautifully, days get longer, and the city comes alive. Cherry blossoms in Regent's Park and Kew Gardens are stunning. Easter brings special events. The Chelsea Flower Show in May is world-famous.</p>
+            <p style="margin-top:0.5rem;font-weight:600;color:var(--color-success);">Best for: Gardens, walking, photography, moderate prices</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;border-left:4px solid #F39C12;">
+          <div class="card__body">
+            <h3>☀️ Summer (June - August) — Peak Season</h3>
+            <p style="margin-top:0.5rem;"><strong>Temp:</strong> 15-25°C (59-77°F) | <strong>Crowds:</strong> High | <strong>Prices:</strong> Highest</p>
+            <p style="margin-top:0.5rem;">Long days (light until 9:30pm), outdoor dining, rooftop bars, and festivals galore. Wimbledon in July, Notting Hill Carnival in August, Proms concerts at the Royal Albert Hall. Book everything well in advance.</p>
+            <p style="margin-top:0.5rem;font-weight:600;color:var(--color-warning);">Best for: Outdoor activities, festivals, late evenings. Book early — prices peak.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;border-left:4px solid #E74C3C;">
+          <div class="card__body">
+            <h3>🍂 Autumn (September - November) — Hidden Gem</h3>
+            <p style="margin-top:0.5rem;"><strong>Temp:</strong> 7-18°C (45-64°F) | <strong>Crowds:</strong> Low-Moderate | <strong>Prices:</strong> Lower</p>
+            <p style="margin-top:0.5rem;">Gorgeous autumn colours in the parks, fewer tourists, lower prices. September is still warm. The theatre season kicks off with new shows. Bonfire Night (5 Nov) features spectacular fireworks along the Thames.</p>
+            <p style="margin-top:0.5rem;font-weight:600;color:var(--color-success);">Best for: Budget travel, museums, theatre, autumn walks, fewer crowds</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;border-left:4px solid #3498DB;">
+          <div class="card__body">
+            <h3>❄️ Winter (December - February) — Festive Magic</h3>
+            <p style="margin-top:0.5rem;"><strong>Temp:</strong> 2-8°C (36-46°F) | <strong>Crowds:</strong> Low (except Christmas) | <strong>Prices:</strong> Lowest (except Christmas)</p>
+            <p style="margin-top:0.5rem;">Christmas lights on Oxford Street and Regent Street are magical. Winter Wonderland in Hyde Park, ice skating at Somerset House, and pantomime season. January sales offer incredible shopping deals. February is the cheapest month to visit.</p>
+            <p style="margin-top:0.5rem;font-weight:600;color:var(--color-success);">Best for: Christmas markets, shopping sales, cosy pubs, lowest prices (Jan-Feb)</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>📊 Quick Comparison</h3>
+            <div style="overflow-x:auto;margin-top:1rem;">
+              <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+                <thead>
+                  <tr style="border-bottom:2px solid var(--color-accent);">
+                    <th style="text-align:left;padding:0.5rem;">Factor</th>
+                    <th style="padding:0.5rem;">Spring</th>
+                    <th style="padding:0.5rem;">Summer</th>
+                    <th style="padding:0.5rem;">Autumn</th>
+                    <th style="padding:0.5rem;">Winter</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:0.5rem;">Weather</td><td style="text-align:center;">⭐⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐</td><td style="text-align:center;">⭐⭐</td></tr>
+                  <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:0.5rem;">Crowds</td><td style="text-align:center;">⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐⭐⭐</td><td style="text-align:center;">⭐⭐</td><td style="text-align:center;">⭐</td></tr>
+                  <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:0.5rem;">Prices</td><td style="text-align:center;">⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐⭐⭐</td><td style="text-align:center;">⭐⭐</td><td style="text-align:center;">⭐</td></tr>
+                  <tr><td style="padding:0.5rem;">Events</td><td style="text-align:center;">⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐</td><td style="text-align:center;">⭐⭐⭐⭐</td></tr>
+                </tbody>
+              </table>
+              <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.5rem;">More stars = more of that factor (e.g., more crowds, higher prices)</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      // Load London weather
+      fetch('https://api.openweathermap.org/data/2.5/weather?q=London,GB&units=metric&appid=' + CONFIG.weather.apiKey)
+        .then(r => r.json())
+        .then(data => {
+          if (data.main) {
+            document.getElementById('weather-content').innerHTML = `
+              <div style="font-size:3rem;margin-bottom:0.5rem;">${data.weather[0].main === 'Clear' ? '☀️' : data.weather[0].main === 'Clouds' ? '☁️' : data.weather[0].main === 'Rain' ? '🌧️' : '🌤️'}</div>
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;">${Math.round(data.main.temp)}°C / ${Math.round(data.main.temp * 9/5 + 32)}°F</div>
+              <p style="color:var(--color-text-muted);margin-top:0.5rem;">${data.weather[0].description} · Feels like ${Math.round(data.main.feels_like)}°C · Humidity ${data.main.humidity}%</p>
+            `;
+          }
+        })
+        .catch(() => {
+          document.getElementById('weather-content').innerHTML = '<p style="color:var(--color-text-muted);">Weather data unavailable. London averages 11°C year-round with frequent light rain.</p>';
+        });
+    });
+  </script>
+</body>
+</html>

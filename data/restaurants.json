@@ -4,11 +4,22 @@
     "name": "Dishoom Shoreditch",
     "description": "Bombay-inspired cafe serving outstanding Indian cuisine in a beautifully designed space. Their bacon naan roll at breakfast is legendary.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "photography"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
     "cuisine": "Indian",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 25, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
     "address": "7 Boundary St, London E2 7JE",
     "affiliateUrl": "https://www.opentable.co.uk/dishoom-shoreditch",
     "affiliateLabel": "Reserve a Table",
@@ -19,11 +30,22 @@
     "name": "Padella",
     "description": "Handmade pasta dishes at incredibly reasonable prices. The pappardelle with 8-hour beef shin ragu is extraordinary.",
     "neighbourhood": "Bankside",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Italian",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 15, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
     "address": "6 Southwark St, London SE1 1TQ",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -34,11 +56,22 @@
     "name": "Sketch - The Gallery",
     "description": "An Instagram-famous pink afternoon tea in one of London's most visually stunning restaurants. A truly unique dining experience.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["food", "photography", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "romance"
+    ],
     "cuisine": "Afternoon Tea",
-    "mealType": ["lunch"],
-    "estimatedCost": { "amount": 75, "currency": "GBP" },
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
     "address": "9 Conduit St, London W1S 2XG",
     "affiliateUrl": "https://www.opentable.co.uk/sketch-the-gallery",
     "affiliateLabel": "Book Afternoon Tea",
@@ -47,13 +80,24 @@
   {
     "id": "flat-iron-soho",
     "name": "Flat Iron",
-    "description": "Exceptional flat iron steak served with a side salad and unlimited creamy béarnaise sauce. Incredible value.",
+    "description": "Exceptional flat iron steak served with a side salad and unlimited creamy bearnaise sauce. Incredible value.",
     "neighbourhood": "Soho",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Steakhouse",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 16, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
     "address": "17 Beak St, Soho, London W1F 9RW",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -64,11 +108,23 @@
     "name": "Duck & Waffle",
     "description": "London's highest restaurant, open 24/7. Famous for its signature duck and waffle dish and stunning City views.",
     "neighbourhood": "City of London",
-    "budgetTier": ["premium"],
-    "tags": ["food", "photography", "romance", "nightlife"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "romance",
+      "nightlife"
+    ],
     "cuisine": "British Modern",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 60, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
     "address": "110 Bishopsgate, London EC2N 4AY",
     "affiliateUrl": "https://www.opentable.co.uk/duck-and-waffle",
     "affiliateLabel": "Reserve a Table",
@@ -79,11 +135,23 @@
     "name": "The Wolseley",
     "description": "A grand European-style cafe-restaurant in a stunning Art Deco building on Piccadilly. Perfect for a refined breakfast or afternoon tea.",
     "neighbourhood": "St James's",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "architecture"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "architecture"
+    ],
     "cuisine": "European",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 35, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
     "address": "160 Piccadilly, London W1J 9EB",
     "affiliateUrl": "https://www.opentable.co.uk/the-wolseley",
     "affiliateLabel": "Reserve a Table",
@@ -94,11 +162,22 @@
     "name": "BAO Soho",
     "description": "Tiny Taiwanese bun shop serving pillowy gua bao and small plates. A cult favourite with always a queue.",
     "neighbourhood": "Soho",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Taiwanese",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 18, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
     "address": "53 Lexington St, London W1F 9AS",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -109,11 +188,23 @@
     "name": "Rules",
     "description": "London's oldest restaurant, established in 1798. Traditional British fare including game, pies, and puddings in opulent Edwardian surroundings.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["premium"],
-    "tags": ["food", "history", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "romance"
+    ],
     "cuisine": "Traditional British",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 55, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
     "address": "34-35 Maiden Ln, London WC2E 7LB",
     "affiliateUrl": "https://www.opentable.co.uk/rules-restaurant",
     "affiliateLabel": "Reserve a Table",
@@ -124,11 +215,23 @@
     "name": "The Palomar",
     "description": "Modern Jerusalem cuisine with influences from Southern Spain, North Africa, and the Levant. Vibrant, energetic atmosphere.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "nightlife"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
     "cuisine": "Middle Eastern / Mediterranean",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 40, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
     "address": "34 Rupert St, London W1D 6DN",
     "affiliateUrl": "https://www.opentable.co.uk/the-palomar",
     "affiliateLabel": "Reserve a Table",
@@ -139,11 +242,22 @@
     "name": "Beigel Bake, Brick Lane",
     "description": "A legendary 24-hour bagel shop serving London since 1974. The salt beef beigel is a London institution.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["budget"],
-    "tags": ["food", "history"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
     "cuisine": "Bagels / Deli",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 4, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 4,
+      "currency": "GBP"
+    },
     "address": "159 Brick Ln, London E1 6SB",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -154,11 +268,21 @@
     "name": "Hawksmoor Seven Dials",
     "description": "Award-winning steakhouse serving the finest British beef in a beautiful converted brewery. Sunday roast is legendary.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["premium"],
-    "tags": ["food", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
     "cuisine": "Steakhouse / British",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 65, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
     "address": "11 Langley St, London WC2H 9JG",
     "affiliateUrl": "https://www.opentable.co.uk/hawksmoor-seven-dials",
     "affiliateLabel": "Reserve a Table",
@@ -169,11 +293,22 @@
     "name": "Ceviche Soho",
     "description": "Vibrant Peruvian restaurant known for its fresh ceviches, pisco sours, and lively Soho atmosphere.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "nightlife"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
     "cuisine": "Peruvian",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 30, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
     "address": "17 Frith St, London W1D 4RG",
     "affiliateUrl": "https://www.opentable.co.uk/ceviche-soho",
     "affiliateLabel": "Reserve a Table",
@@ -184,11 +319,22 @@
     "name": "Nando's",
     "description": "A British high-street staple serving flame-grilled peri-peri chicken. Reliable, affordable, and loved by Londoners.",
     "neighbourhood": "West End",
-    "budgetTier": ["budget"],
-    "tags": ["food", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
     "cuisine": "Peri-Peri Chicken",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 14, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
     "address": "Various locations across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -199,11 +345,23 @@
     "name": "The Ivy",
     "description": "Legendary West End restaurant popular with theatre-goers and celebrities. Classic British and international dishes in Art Deco splendour.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["premium"],
-    "tags": ["food", "theatre", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "theatre",
+      "romance"
+    ],
     "cuisine": "British / International",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 50, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
     "address": "1-5 West St, London WC2H 9NQ",
     "affiliateUrl": "https://www.opentable.co.uk/the-ivy",
     "affiliateLabel": "Reserve a Table",
@@ -214,11 +372,23 @@
     "name": "Maltby Street Market",
     "description": "A foodie's paradise tucked under railway arches. Less touristy than Borough Market with incredible artisanal food stalls.",
     "neighbourhood": "Bermondsey",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "markets", "photography"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "markets",
+      "photography"
+    ],
     "cuisine": "Street Food",
-    "mealType": ["lunch"],
-    "estimatedCost": { "amount": 15, "currency": "GBP" },
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
     "address": "Maltby St, London SE1 3PA",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -229,11 +399,23 @@
     "name": "Ottolenghi Islington",
     "description": "Yotam Ottolenghi's flagship restaurant known for vibrant Mediterranean and Middle Eastern inspired cuisine.",
     "neighbourhood": "Islington",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "wellness"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "wellness"
+    ],
     "cuisine": "Mediterranean / Middle Eastern",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 35, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
     "address": "287 Upper St, London N1 2TZ",
     "affiliateUrl": "https://www.opentable.co.uk/ottolenghi-islington",
     "affiliateLabel": "Reserve a Table",
@@ -244,11 +426,24 @@
     "name": "Poppies Fish & Chips",
     "description": "Award-winning traditional fish and chips in a vintage 1940s-style setting. A proper British chippy experience.",
     "neighbourhood": "Spitalfields",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "history", "family"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "family"
+    ],
     "cuisine": "Fish & Chips",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 16, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
     "address": "6-8 Hanbury St, London E1 6QR",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -259,11 +454,23 @@
     "name": "Chin Chin Labs",
     "description": "London's first liquid nitrogen ice cream parlour. Watch your ice cream made with theatrical clouds of nitrogen.",
     "neighbourhood": "Camden",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "family", "photography"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family",
+      "photography"
+    ],
     "cuisine": "Ice Cream / Dessert",
-    "mealType": ["lunch"],
-    "estimatedCost": { "amount": 6, "currency": "GBP" },
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
     "address": "49-50 Camden Lock Place, London NW1 8AF",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -274,11 +481,20 @@
     "name": "Blacklock Sunday Roast",
     "description": "The legendary all-in Sunday roast — unlimited meat, potatoes, Yorkshire puddings, and gravy for one set price.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "British / Sunday Roast",
-    "mealType": ["lunch"],
-    "estimatedCost": { "amount": 25, "currency": "GBP" },
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
     "address": "24 Great Windmill St, London W1D 7LG",
     "affiliateUrl": "https://www.opentable.co.uk/blacklock-soho",
     "affiliateLabel": "Reserve a Table",
@@ -286,14 +502,27 @@
   },
   {
     "id": "brasserie-zedel",
-    "name": "Brasserie Zédel",
+    "name": "Brasserie Zedel",
     "description": "A grand Parisian brasserie hidden beneath Piccadilly. Stunning Art Deco interiors and incredibly good-value French cuisine. One of London's best-kept secrets.",
     "neighbourhood": "West End",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "architecture", "romance"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "architecture",
+      "romance"
+    ],
     "cuisine": "French",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 18, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
     "address": "20 Sherwood St, London W1F 7ED",
     "affiliateUrl": "https://www.opentable.co.uk/brasserie-zedel",
     "affiliateLabel": "Reserve a Table",
@@ -304,11 +533,22 @@
     "name": "Barrafina",
     "description": "Michelin-starred Spanish tapas at a counter — watch the chefs prepare your food before your eyes. Some of the best tapas outside Spain.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Spanish Tapas",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 40, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
     "address": "26-27 Dean St, London W1D 3LL",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -319,11 +559,23 @@
     "name": "St. JOHN Smithfield",
     "description": "The birthplace of nose-to-tail eating. Fergus Henderson's pioneering restaurant serves bold British food — bone marrow, devilled kidneys, and the legendary doughnut.",
     "neighbourhood": "Clerkenwell",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "history"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
     "cuisine": "British Nose-to-Tail",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 45, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
     "address": "26 St John St, London EC1M 4AY",
     "affiliateUrl": "https://www.opentable.co.uk/st-john-smithfield",
     "affiliateLabel": "Reserve a Table",
@@ -334,11 +586,22 @@
     "name": "Hoppers",
     "description": "Sri Lankan and South Indian street food in Soho. Named after the bowl-shaped crepes that are the national dish of Sri Lanka.",
     "neighbourhood": "Soho",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Sri Lankan / South Indian",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 20, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
     "address": "49 Frith St, London W1D 4SG",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -349,11 +612,22 @@
     "name": "Gloria",
     "description": "An over-the-top 1970s Italian trattoria from Big Mamma Group. Giant portions, incredible pasta, and a decor so kitsch it's cool. Great for groups and celebrations.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "photography", "nightlife"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "nightlife"
+    ],
     "cuisine": "Italian",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 30, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
     "address": "54-56 Great Eastern St, London EC2A 3QR",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -364,11 +638,23 @@
     "name": "Honest Burgers",
     "description": "Proper British burgers made with free-range beef, served with rosemary salted chips. Each branch has a unique local special burger.",
     "neighbourhood": "Various",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "family"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
     "cuisine": "Burgers",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 15, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
     "address": "Multiple locations across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -379,11 +665,22 @@
     "name": "Franco Manca",
     "description": "Sourdough pizza at prices that seem too good to be true. Started at Brixton Market and became a London institution. Incredible value.",
     "neighbourhood": "Various",
-    "budgetTier": ["budget"],
-    "tags": ["food", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
     "cuisine": "Sourdough Pizza",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 10, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
     "address": "Multiple locations across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -394,26 +691,49 @@
     "name": "Bleecker Burger",
     "description": "Widely regarded as London's best burger. Dry-aged beef patties, American cheese, and that's about it. Simple perfection.",
     "neighbourhood": "Various",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Burgers",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 12, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
     "address": "Victoria, Spitalfields & other locations",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "The Angry burger with jalapeños is the move. Their shakes are outstanding too."
+    "tips": "The Angry burger with jalapenos is the move. Their shakes are outstanding too."
   },
   {
     "id": "e-pellicci",
     "name": "E Pellicci",
     "description": "A Grade II listed East End greasy spoon that's been run by the same Italian family since 1900. Full English breakfasts, proper builders' tea, and genuine London character.",
     "neighbourhood": "Bethnal Green",
-    "budgetTier": ["budget"],
-    "tags": ["food", "history", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "family"
+    ],
     "cuisine": "British Cafe / Italian",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 10, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
     "address": "332 Bethnal Green Rd, London E2 0AG",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -424,11 +744,23 @@
     "name": "The Golden Hind",
     "description": "Classic fish and chips since 1914 in the heart of Marylebone. No frills, just perfectly battered fish and proper chips.",
     "neighbourhood": "Marylebone",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "history"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
     "cuisine": "Fish & Chips",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 14, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
     "address": "73 Marylebone Ln, London W1U 2PN",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -439,11 +771,22 @@
     "name": "Gymkhana",
     "description": "Michelin-starred Indian restaurant inspired by the gymkhana clubs of India. The kid goat keema and wild muntjac biryani are extraordinary.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["food", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
     "cuisine": "Indian Fine Dining",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 55, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
     "address": "42 Albemarle St, London W1S 4JH",
     "affiliateUrl": "https://www.opentable.co.uk/gymkhana",
     "affiliateLabel": "Reserve a Table",
@@ -454,11 +797,21 @@
     "name": "Smoking Goat",
     "description": "Thai BBQ and drinking food inspired by Bangkok's late-night canteens. Charcoal-grilled meats, fiery salads, and creative cocktails.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "nightlife"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
     "cuisine": "Thai BBQ",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 30, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
     "address": "64 Shoreditch High St, London E1 6JJ",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -469,11 +822,22 @@
     "name": "The Barbary",
     "description": "Tiny 24-seat counter restaurant serving bold North African and Middle Eastern food. Every dish is cooked over fire right in front of you.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "adventure"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
     "cuisine": "North African / Middle Eastern",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 35, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
     "address": "16 Neal's Yard, London WC2H 9DP",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -484,11 +848,21 @@
     "name": "Kiln",
     "description": "Blazingly good Thai food cooked over charcoal and wood in an open kitchen. Bold, fiery flavours from northern Thailand.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range"],
-    "tags": ["food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Thai",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 28, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
     "address": "58 Brewer St, London W1F 9TL",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -499,11 +873,22 @@
     "name": "Chiltern Firehouse",
     "description": "Celebrity hotspot in a converted Victorian fire station. The food is genuinely excellent — not just a scene. Spectacular courtyard terrace in summer.",
     "neighbourhood": "Marylebone",
-    "budgetTier": ["premium"],
-    "tags": ["food", "romance", "photography"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
     "cuisine": "American / International",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 70, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
     "address": "1 Chiltern St, London W1U 7PA",
     "affiliateUrl": "https://www.opentable.co.uk/chiltern-firehouse",
     "affiliateLabel": "Reserve a Table",
@@ -514,11 +899,23 @@
     "name": "Dinner by Heston Blumenthal",
     "description": "Two Michelin star restaurant reimagining historic British recipes with modern techniques. The Meat Fruit (chicken liver parfait disguised as a mandarin) is iconic.",
     "neighbourhood": "Hyde Park",
-    "budgetTier": ["premium"],
-    "tags": ["food", "history", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "romance"
+    ],
     "cuisine": "Historic British / Modern",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 85, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 85,
+      "currency": "GBP"
+    },
     "address": "66 Knightsbridge, London SW1X 7LA",
     "affiliateUrl": "https://www.opentable.co.uk/dinner-by-heston",
     "affiliateLabel": "Reserve a Table",
@@ -529,11 +926,20 @@
     "name": "BRAT",
     "description": "Michelin-starred Basque-inspired grill restaurant. Everything cooked over fire — whole turbot, aged beef, and incredible bread. Raw, elemental cooking.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["premium"],
-    "tags": ["food"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
     "cuisine": "Basque Grill",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 60, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
     "address": "4 Redchurch St, London E1 6JL",
     "affiliateUrl": "https://www.opentable.co.uk/brat-restaurant",
     "affiliateLabel": "Reserve a Table",
@@ -544,11 +950,22 @@
     "name": "Noble Rot",
     "description": "A wine bar and restaurant with an exceptional wine list and seasonal British-European cooking. Cosy, intimate, and romantic.",
     "neighbourhood": "Bloomsbury",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "romance"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
     "cuisine": "British-European",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 45, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
     "address": "51 Lamb's Conduit St, London WC1N 3NB",
     "affiliateUrl": "https://www.opentable.co.uk/noble-rot",
     "affiliateLabel": "Reserve a Table",
@@ -559,11 +976,23 @@
     "name": "The Breakfast Club",
     "description": "All-day brunch institution with queues round the block every weekend. American-style pancakes, eggs every way, and epic milkshakes.",
     "neighbourhood": "Soho",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "family"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
     "cuisine": "Brunch / American",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 14, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
     "address": "33 D'Arblay St, London W1F 8EU",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -574,11 +1003,22 @@
     "name": "Granger & Co",
     "description": "Aussie brunch legend Bill Granger's London outpost. Famous for the world's best ricotta hotcakes and perfectly scrambled eggs.",
     "neighbourhood": "Notting Hill",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "wellness"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "wellness"
+    ],
     "cuisine": "Australian / Brunch",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 18, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
     "address": "175 Westbourne Grove, London W11 2SB",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -589,11 +1029,23 @@
     "name": "Caravan King's Cross",
     "description": "All-day dining in a buzzy converted granary building. World-inspired brunch, excellent specialty coffee, and craft cocktails.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "photography"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
     "cuisine": "International / Brunch",
-    "mealType": ["breakfast", "lunch", "dinner"],
-    "estimatedCost": { "amount": 20, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
     "address": "1 Granary Square, London N1C 4AA",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -604,11 +1056,24 @@
     "name": "BOXPARK Shoreditch",
     "description": "The world's first pop-up mall made from shipping containers. Street food from around the globe, craft beers, and a lively rooftop bar.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "nightlife", "markets"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife",
+      "markets"
+    ],
     "cuisine": "Street Food Hall",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 12, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
     "address": "2-10 Bethnal Green Rd, London E1 6GY",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -619,11 +1084,24 @@
     "name": "Mercato Metropolitano",
     "description": "A massive sustainable community food market in a converted church. Italian-led with food stalls from around the world, a cinema, and live events.",
     "neighbourhood": "Elephant & Castle",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["food", "markets", "family"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "markets",
+      "family"
+    ],
     "cuisine": "International Food Market",
-    "mealType": ["lunch", "dinner"],
-    "estimatedCost": { "amount": 14, "currency": "GBP" },
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
     "address": "42 Newington Causeway, London SE1 6DR",
     "affiliateUrl": "",
     "affiliateLabel": "",
@@ -634,11 +1112,23 @@
     "name": "Brigadiers",
     "description": "Indian BBQ and bar inspired by the army mess halls of India. Pool tables, arcade machines, and a whisky bar make this perfect for groups.",
     "neighbourhood": "City of London",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "nightlife", "sports"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "nightlife",
+      "sports"
+    ],
     "cuisine": "Indian BBQ",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 40, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
     "address": "1-5 Bloomberg Arcade, London EC4N 8AR",
     "affiliateUrl": "https://www.opentable.co.uk/brigadiers",
     "affiliateLabel": "Reserve a Table",
@@ -649,11 +1139,23 @@
     "name": "SUSHISAMBA",
     "description": "Japanese, Brazilian, and Peruvian fusion on the 38th floor of Heron Tower. Stunning views and theatrical cocktails. A celebration destination.",
     "neighbourhood": "City of London",
-    "budgetTier": ["premium"],
-    "tags": ["food", "photography", "romance", "nightlife"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "romance",
+      "nightlife"
+    ],
     "cuisine": "Japanese-Brazilian-Peruvian",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 70, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
     "address": "110 Bishopsgate, London EC2N 4AY",
     "affiliateUrl": "https://www.opentable.co.uk/sushisamba",
     "affiliateLabel": "Reserve a Table",
@@ -664,11 +1166,23 @@
     "name": "Sexy Fish",
     "description": "An outrageously glamorous Asian seafood restaurant in Mayfair. Over-the-top interiors, incredible cocktails, and a late-night DJ set. See and be seen.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["food", "nightlife", "romance", "photography"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "nightlife",
+      "romance",
+      "photography"
+    ],
     "cuisine": "Asian Seafood",
-    "mealType": ["dinner"],
-    "estimatedCost": { "amount": 65, "currency": "GBP" },
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
     "address": "Berkeley Square House, London W1J 6BR",
     "affiliateUrl": "https://www.opentable.co.uk/sexy-fish",
     "affiliateLabel": "Reserve a Table",
@@ -679,14 +1193,3954 @@
     "name": "Blues Kitchen Bottomless Brunch",
     "description": "2 hours of unlimited prosecco, Bloody Marys, or beer with brunch and live blues music. The ultimate group brunch experience.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "music", "nightlife"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "music",
+      "nightlife"
+    ],
     "cuisine": "American BBQ / Brunch",
-    "mealType": ["breakfast", "lunch"],
-    "estimatedCost": { "amount": 35, "currency": "GBP" },
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
     "address": "134-146 Curtain Rd, London EC2A 3AR",
     "affiliateUrl": "",
     "affiliateLabel": "",
     "tips": "Perfect for hen parties, stag dos, and birthday groups. Book ahead — very popular on weekends."
+  },
+  {
+    "id": "tayyabs",
+    "name": "Tayyabs",
+    "description": "A legendary Punjabi restaurant that's been packing them in since 1972. BYO, dirt cheap, and the lamb chops are some of the best in London.",
+    "neighbourhood": "Whitechapel",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
+    "cuisine": "Indian / Punjabi",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "83-89 Fieldgate St, London E1 1JU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "BYO with no corkage. The dry lamb chops are legendary. Expect a queue at peak times but it moves fast."
+  },
+  {
+    "id": "roti-king",
+    "name": "Roti King",
+    "description": "Tiny basement restaurant serving Malaysian roti canai that draws queues down the street. Flaky, buttery roti with rich curries at rock-bottom prices.",
+    "neighbourhood": "Euston",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Malaysian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "40 Doric Way, London NW1 1LH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The roti canai with dhal is the star. Cash only. Expect to queue but it's worth every minute."
+  },
+  {
+    "id": "mangal-1",
+    "name": "Mangal 1",
+    "description": "Iconic Dalston ocakbasi grill beloved by locals and artists alike. Charcoal-grilled kebabs, fresh salads, and BYO at its finest.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Turkish",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "10 Arcola St, London E8 2DJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "BYO with no corkage. The adana kebab and lamb chops are excellent. A Dalston institution."
+  },
+  {
+    "id": "silk-road-camberwell",
+    "name": "Silk Road",
+    "description": "Authentic Xinjiang Chinese cuisine in an unassuming Camberwell setting. Hand-pulled noodles, cumin lamb, and bold Silk Road spices.",
+    "neighbourhood": "Camberwell",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese / Xinjiang",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "49 Camberwell Church St, London SE5 8TR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The big plate chicken and hand-pulled noodles are must-orders. BYO with a small corkage fee."
+  },
+  {
+    "id": "lahore-kebab-house",
+    "name": "Lahore Kebab House",
+    "description": "A Whitechapel institution serving fiery Pakistani grills and curries since 1972. No-frills setting, maximum flavour, tiny prices.",
+    "neighbourhood": "Whitechapel",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Pakistani",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "2-10 Umberston St, London E1 1PY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The seekh kebabs and lamb karahi are legendary. BYO. Don't expect fancy decor — come for the food."
+  },
+  {
+    "id": "keu-shoreditch",
+    "name": "Keu",
+    "description": "Authentic Vietnamese pho and banh mi made with love. The beef pho is rich and fragrant, the banh mi crisp and packed with flavour.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Vietnamese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "332 Old St, London EC1V 9DR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The 24-hour pho is deeply flavoured and comforting. Great quick lunch option in Shoreditch."
+  },
+  {
+    "id": "kanada-ya",
+    "name": "Kanada-Ya",
+    "description": "Tonkotsu ramen specialists serving some of London's richest, most authentic ramen. The broth is simmered for 18 hours.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese / Ramen",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "64 St Giles High St, London WC2H 8LE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Get the truffle ramen for a luxurious upgrade. Expect a queue at lunchtime — it moves quickly."
+  },
+  {
+    "id": "bone-daddies",
+    "name": "Bone Daddies",
+    "description": "Rock and roll ramen bar with loud music and bold Japanese flavours. The tonkotsu ramen is rich and the buns are addictive.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Japanese / Ramen",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "31 Peter St, London W1F 0AR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pork bone ramen and the chicken wings are must-orders. Fun, loud atmosphere."
+  },
+  {
+    "id": "bao-kings-cross",
+    "name": "BAO King's Cross",
+    "description": "The largest BAO outpost with the full range of Taiwanese dishes. A more relaxed experience than the Soho original with no queue.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Taiwanese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "Coal Drops Yard, Stable St, London N1C 4DQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Same great food as Soho but you can actually book here. The 40-day aged beef bao is incredible."
+  },
+  {
+    "id": "the-regency-cafe",
+    "name": "The Regency Cafe",
+    "description": "A proper 1940s greasy spoon with Art Deco tiles, Formica tables, and orders bellowed across the room. Full English perfection.",
+    "neighbourhood": "Westminster",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
+    "cuisine": "British Cafe",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "17-19 Regency St, London SW1P 4BY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Featured in Layer Cake and Pride. The staff shout your order when it's ready — part of the experience."
+  },
+  {
+    "id": "montys-deli",
+    "name": "Monty's Deli",
+    "description": "Authentic Jewish deli serving proper salt beef bagels, matzo ball soup, and chopped liver. A taste of old East End London.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Jewish Deli",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "Maltby Street Market, Arch 13, London SE1 3PA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The salt beef reuben is exceptional. Only at Maltby Street Market on weekends."
+  },
+  {
+    "id": "needoo-grill",
+    "name": "Needoo Grill",
+    "description": "Whitechapel's answer to Tayyabs, serving fiery Pakistani grills at unbeatable prices. Often less of a queue than its famous neighbour.",
+    "neighbourhood": "Whitechapel",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Pakistani",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "87 New Rd, London E1 1HH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Many locals prefer it to Tayyabs. The seekh kebabs and nihari are excellent. BYO."
+  },
+  {
+    "id": "coal-office",
+    "name": "Coal Office",
+    "description": "Israeli-inspired restaurant from chef Assaf Granit in the Coal Drops Yard development. Bold Middle Eastern flavours in a stunning industrial space.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
+    "cuisine": "Middle Eastern / Israeli",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "2 Bagley Walk, London N1C 4PQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The soft-serve tahini ice cream is legendary. Beautiful Tom Dixon-designed interiors."
+  },
+  {
+    "id": "circolo-popolare",
+    "name": "Circolo Popolare",
+    "description": "The sister restaurant to Gloria, with walls covered in thousands of bottles and giant portions of Italian food. A visual and culinary feast.",
+    "neighbourhood": "Fitzrovia",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "40-41 Rathbone Pl, London W1T 1HX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The lemon meringue pizza is an Instagram sensation. Book well ahead or try walk-in at opening time."
+  },
+  {
+    "id": "pizarro",
+    "name": "Pizarro",
+    "description": "Jose Pizarro's neighbourhood restaurant serving refined Spanish cooking with seasonal ingredients. Warm, inviting atmosphere.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "194 Bermondsey St, London SE1 3TQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Iberico pork dishes are exceptional. Great wine list focused on Spain."
+  },
+  {
+    "id": "berber-and-q",
+    "name": "Berber & Q",
+    "description": "Middle Eastern-inspired grill house serving bold charcoal-cooked meats, vibrant salads, and excellent cocktails. A Haggerston favourite.",
+    "neighbourhood": "Haggerston",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Middle Eastern BBQ",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "Arch 338, Acton Mews, London E8 4EA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The cauliflower shawarma is a must even for meat lovers. Great weekend brunch too."
+  },
+  {
+    "id": "smokestak",
+    "name": "Smokestak",
+    "description": "Serious BBQ and smoking in a stripped-back Shoreditch space. Beef brisket smoked for 16 hours and some of the best ribs in London.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "BBQ / Smokehouse",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "35 Sclater St, London E1 6LB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The 35-day-aged brisket is the star. The ox cheek doughnut at brunch is incredible."
+  },
+  {
+    "id": "jose-tapas",
+    "name": "Jose Tapas Bar",
+    "description": "A tiny standing-room tapas bar from Jose Pizarro. Authentic Spanish bites, excellent sherry, and a buzzy atmosphere.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish Tapas",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "104 Bermondsey St, London SE1 3UB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Mostly standing room only. The cured meats and croquetas are outstanding. Great sherry selection."
+  },
+  {
+    "id": "morito",
+    "name": "Morito",
+    "description": "The younger sibling of Moro, serving Moorish-inspired tapas in a vibrant, colourful space. Incredible small plates packed with flavour.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish / North African",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "32 Exmouth Market, London EC1R 4QE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Share lots of small plates. The deep-fried borek and patatas bravas are outstanding."
+  },
+  {
+    "id": "10-greek-street",
+    "name": "10 Greek Street",
+    "description": "A Soho neighbourhood restaurant serving excellent seasonal European food with a daily-changing menu. Relaxed, unfussy, and consistently great.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Seasonal",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "10 Greek St, London W1D 4DH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No reservations for dinner — arrive early. The daily menu means there's always something new."
+  },
+  {
+    "id": "andrew-edmunds",
+    "name": "Andrew Edmunds",
+    "description": "A candlelit Soho institution since 1985. Handwritten daily menus, excellent wine, and romantic atmosphere in a Georgian townhouse.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "European / Seasonal",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "46 Lexington St, London W1F 0LW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "One of the most romantic restaurants in Soho. The wine list offers incredible value. Book ahead for dinner."
+  },
+  {
+    "id": "brawn",
+    "name": "Brawn",
+    "description": "A modern European neighbourhood restaurant in Columbia Road with excellent natural wines and a daily-changing menu of bold flavours.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Natural Wine",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "49 Columbia Rd, London E2 7RG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with the Sunday Columbia Road Flower Market for a perfect morning. Excellent natural wine list."
+  },
+  {
+    "id": "cafe-murano",
+    "name": "Cafe Murano",
+    "description": "Angela Hartnett's elegant Italian restaurant serving refined Northern Italian cooking. Excellent handmade pasta and impeccable service.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "33 St James's St, London SW1A 1HD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The set lunch menu is excellent value. Refined Italian cooking without the stuffiness."
+  },
+  {
+    "id": "rochelle-canteen",
+    "name": "Rochelle Canteen",
+    "description": "Hidden inside an old school bike shed in Arnold Circus, serving simple, seasonal British food. A treasured secret among East London foodies.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "Rochelle School, Arnold Circus, London E2 7ES",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Ring the buzzer on the old school gate to enter. A true hidden gem. Lunch only."
+  },
+  {
+    "id": "st-john-bread-wine",
+    "name": "St John Bread and Wine",
+    "description": "The more casual sibling of St John Smithfield. Nose-to-tail cooking, excellent bread, and the famous Madeira cake doughnuts.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Nose-to-Tail",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "94-96 Commercial St, London E1 6LZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The bacon sandwich at breakfast is legendary. Pick up a doughnut from the bakery counter."
+  },
+  {
+    "id": "lyles",
+    "name": "Lyle's",
+    "description": "Michelin-starred restaurant serving a daily-changing set menu of refined, seasonal British cooking in a pared-back Shoreditch setting.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "Tea Building, 56 Shoreditch High St, London E1 6JJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The set dinner menu is a surprise each evening. Lunch is more affordable a la carte. Minimalist brilliance."
+  },
+  {
+    "id": "the-clove-club",
+    "name": "The Clove Club",
+    "description": "One of London's most celebrated restaurants, serving an innovative tasting menu in the old Shoreditch Town Hall. Creative, precise British cooking.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern / Tasting Menu",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 95,
+      "currency": "GBP"
+    },
+    "address": "Shoreditch Town Hall, 380 Old St, London EC1V 9LT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book well in advance. The tasting menu is a journey through modern British cuisine at its finest."
+  },
+  {
+    "id": "manteca",
+    "name": "Manteca",
+    "description": "Italian nose-to-tail cooking with in-house charcuterie and handmade pasta. A thrilling Shoreditch restaurant that pushes boundaries.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "49-51 Curtain Rd, London EC2A 3PT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The in-house salumi and handmade pasta are the highlights. One of the most exciting restaurants in London."
+  },
+  {
+    "id": "the-river-cafe",
+    "name": "The River Cafe",
+    "description": "Legendary Italian restaurant by the Thames that has trained some of London's greatest chefs. Simple, ingredient-driven cooking at its finest.",
+    "neighbourhood": "Hammersmith",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
+    "address": "Thames Wharf, Rainville Rd, London W6 9HA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Worth the journey to Hammersmith. The wood-fired oven dishes are exceptional. Beautiful riverside terrace."
+  },
+  {
+    "id": "cecconis",
+    "name": "Cecconi's",
+    "description": "Elegant Italian restaurant in Mayfair serving classic Venetian-inspired dishes. A Soho House favourite with impeccable service and beautiful Art Deco interior.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "5A Burlington Gardens, London W1S 3EP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Excellent for a power breakfast or elegant dinner. The cicchetti are perfect for sharing."
+  },
+  {
+    "id": "ember-yard",
+    "name": "Ember Yard",
+    "description": "Spanish and Italian tapas cooked over charcoal and wood. Smoky flavours, creative small plates, and an excellent drinks list.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish / Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "60 Berwick St, London W1F 8SU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "From the Salt Yard group. The smoked dishes are the highlight. Great for sharing."
+  },
+  {
+    "id": "bocca-di-lupo",
+    "name": "Bocca di Lupo",
+    "description": "A Soho gem serving regional Italian dishes from every corner of Italy. Counter seating facing the open kitchen is the best way to dine.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "12 Archer St, London W1D 7BB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sit at the counter to watch the chefs. Dishes come in small and large sizes — great for sampling. Gelupo gelato shop is next door."
+  },
+  {
+    "id": "moro",
+    "name": "Moro",
+    "description": "Pioneering North African and Spanish restaurant that has been an Exmouth Market institution since 1997. Bold, sun-drenched flavours.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish / North African",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "34-36 Exmouth Market, London EC1R 4QE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The wood-roasted dishes are exceptional. One of the most influential restaurants of its generation."
+  },
+  {
+    "id": "sabor",
+    "name": "Sabor",
+    "description": "Michelin-starred Spanish restaurant split across three floors, each representing a different region of Spain. The counter at the ground-floor asador is thrilling.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Spanish",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "35-37 Heddon St, London W1B 4BR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The ground-floor counter is the most fun. The suckling pig is extraordinary. Book well ahead."
+  },
+  {
+    "id": "yauatcha",
+    "name": "Yauatcha",
+    "description": "Michelin-starred dim sum restaurant and tea house in Soho. Exquisite dumplings, modern Chinese dishes, and stunning patisserie in a sleek blue-lit space.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Chinese / Dim Sum",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "15-17 Broadwick St, London W1F 0DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The venison puff and scallop shu mai are outstanding. The patisserie counter is incredible — take macarons home."
+  },
+  {
+    "id": "great-queen-street",
+    "name": "Great Queen Street",
+    "description": "A proper British gastropub championing seasonal ingredients. Robust, generous cooking — whole roast shoulders, pies, and proper puddings.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "32 Great Queen St, London WC2B 5AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The slow-cooked sharing dishes are the stars. Perfect for groups wanting proper British food."
+  },
+  {
+    "id": "the-eagle",
+    "name": "The Eagle",
+    "description": "London's original gastropub, established in 1991. Mediterranean-inspired daily menu with dishes chalked on the board. A legend of British dining.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
+    "cuisine": "Mediterranean / Gastropub",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "159 Farringdon Rd, London EC1R 3AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The place that started the gastropub revolution. The steak sandwich is legendary. No bookings, arrive early."
+  },
+  {
+    "id": "anchor-and-hope",
+    "name": "Anchor & Hope",
+    "description": "A Waterloo gastropub serving bold, gutsy British cooking. Whole roast animals, offal, and hearty dishes in a no-frills pub setting.",
+    "neighbourhood": "Waterloo",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Gastropub",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "36 The Cut, London SE1 8LP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No reservations except for Sunday lunch. Queue early for the best shot at a table. The food is worth the wait."
+  },
+  {
+    "id": "trullo",
+    "name": "Trullo",
+    "description": "A neighbourhood Italian restaurant in Highbury with handmade pasta, charcoal-grilled meats, and an excellent Italian wine list. Relaxed and welcoming.",
+    "neighbourhood": "Highbury",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "300-302 St Paul's Rd, London N1 2LH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The handmade pappardelle with beef shin ragu is outstanding. Great value set lunch menu."
+  },
+  {
+    "id": "gunpowder-spitalfields",
+    "name": "Gunpowder",
+    "description": "Bold, fiery Indian small plates inspired by family recipes. Tiny but mighty — the flavours are extraordinary and unlike typical curry houses.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Indian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "11 White's Row, London E1 7NF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The spiced venison and vermicelli doughnut, and the Kashmiri lamb chops are must-orders."
+  },
+  {
+    "id": "hakkasan",
+    "name": "Hakkasan",
+    "description": "Michelin-starred modern Chinese cuisine in a dramatic, moody basement setting. Dim sum, Peking duck, and cocktails in dark, seductive surroundings.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "nightlife"
+    ],
+    "cuisine": "Chinese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 80,
+      "currency": "GBP"
+    },
+    "address": "17 Bruton St, London W1J 6QB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dim sum lunch is more affordable. The Peking duck is carved tableside. The cocktail bar is excellent."
+  },
+  {
+    "id": "sketch-lecture-room",
+    "name": "Sketch - Lecture Room & Library",
+    "description": "Two Michelin-starred fine dining in an opulent, maximalist setting. A multi-course journey through French haute cuisine reimagined by Pierre Gagnaire.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 150,
+      "currency": "GBP"
+    },
+    "address": "9 Conduit St, London W1S 2XG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "A once-in-a-lifetime dining experience. The tasting menu is an event. Dress smartly."
+  },
+  {
+    "id": "core-by-clare-smyth",
+    "name": "Core by Clare Smyth",
+    "description": "Three Michelin-starred restaurant from the UK's first female chef to hold three stars. Elegant, refined British fine dining at its absolute peak.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "British Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 165,
+      "currency": "GBP"
+    },
+    "address": "92 Kensington Park Rd, London W11 2PN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The potato and roe dish is a modern classic. Book months in advance. Worth every penny."
+  },
+  {
+    "id": "the-ledbury",
+    "name": "The Ledbury",
+    "description": "Two Michelin-starred restaurant serving inventive modern European cuisine. Brett Graham's cooking is precise, creative, and deeply satisfying.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "European Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 140,
+      "currency": "GBP"
+    },
+    "address": "127 Ledbury Rd, London W11 2AQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The flame-grilled deer with smoked bone marrow is extraordinary. Book well in advance."
+  },
+  {
+    "id": "restaurant-gordon-ramsay",
+    "name": "Restaurant Gordon Ramsay",
+    "description": "London's longest-running three Michelin-starred restaurant. Classic French fine dining with impeccable technique and service in an elegant Chelsea setting.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 155,
+      "currency": "GBP"
+    },
+    "address": "68 Royal Hospital Rd, London SW3 4HP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The three-course lunch menu is the most accessible way in. Impeccable service. Jacket required for gentlemen."
+  },
+  {
+    "id": "alain-ducasse-dorchester",
+    "name": "Alain Ducasse at The Dorchester",
+    "description": "Three Michelin-starred French haute cuisine in the glamorous Dorchester hotel. Seasonally driven menus with flawless execution and tableside service.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 175,
+      "currency": "GBP"
+    },
+    "address": "The Dorchester, 53 Park Ln, London W1K 1QA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The lunch set menu offers better value. Exquisite trolley service for cheese and desserts."
+  },
+  {
+    "id": "kitchen-table",
+    "name": "Kitchen Table",
+    "description": "A two Michelin-starred 20-seat chef's counter hidden behind the Bubbledogs restaurant. An intimate, immersive multi-course experience.",
+    "neighbourhood": "Fitzrovia",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern / Tasting Menu",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 150,
+      "currency": "GBP"
+    },
+    "address": "70 Charlotte St, London W1T 4QG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Only 20 seats at the counter — incredibly intimate. Enter through the hot dog restaurant. Book well ahead."
+  },
+  {
+    "id": "the-araki",
+    "name": "The Araki",
+    "description": "Ultra-exclusive Japanese omakase with just nine seats at the counter. Formerly three Michelin-starred, offering the finest sushi experience in London.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese Omakase",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 310,
+      "currency": "GBP"
+    },
+    "address": "12 New Burlington St, London W1S 3BH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Only 9 seats. One of the most exclusive dining experiences in London. Reserve far in advance."
+  },
+  {
+    "id": "hide",
+    "name": "Hide",
+    "description": "A stunning restaurant from Ollie Dabbous across three floors connected by a sculptural oak staircase. Refined modern cooking with a world-class wine list.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "European Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 90,
+      "currency": "GBP"
+    },
+    "address": "85 Piccadilly, London W1J 7NB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Hide Above for fine dining, Hide Ground for all-day. The wine list has 6,000 bottles. The staircase is breathtaking."
+  },
+  {
+    "id": "a-wong",
+    "name": "A. Wong",
+    "description": "Two Michelin-starred Chinese restaurant serving extraordinary dim sum and regional Chinese dishes. Chef Andrew Wong reimagines Chinese cuisine with brilliance.",
+    "neighbourhood": "Victoria",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 85,
+      "currency": "GBP"
+    },
+    "address": "70 Wilton Rd, London SW1V 1DE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dim sum lunch is extraordinary. The tasting menu takes you on a tour of China's regions. Book well ahead."
+  },
+  {
+    "id": "pied-a-terre",
+    "name": "Pied a Terre",
+    "description": "One of London's longest-running fine dining restaurants. Refined French-European cooking in an intimate Fitzrovia townhouse since 1991.",
+    "neighbourhood": "Fitzrovia",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French / European",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 85,
+      "currency": "GBP"
+    },
+    "address": "34 Charlotte St, London W1T 2NH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The set lunch is excellent value for this calibre of cooking. Intimate and personal service."
+  },
+  {
+    "id": "the-square",
+    "name": "The Square",
+    "description": "Sophisticated modern French restaurant in Mayfair serving refined tasting menus with impeccable technique and presentation.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 90,
+      "currency": "GBP"
+    },
+    "address": "6-10 Bruton St, London W1J 6PU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The set lunch offers excellent value. A Mayfair classic with consistently high standards."
+  },
+  {
+    "id": "club-gascon",
+    "name": "Club Gascon",
+    "description": "Michelin-starred restaurant celebrating the cuisine of Gascony in southwest France. Foie gras, duck, and Armagnac feature heavily.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French / Gascon",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
+    "address": "57 W Smithfield, London EC1A 9DS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The foie gras dishes are a revelation. The marble-clad room is elegant. Good value set lunch."
+  },
+  {
+    "id": "trinity",
+    "name": "Trinity",
+    "description": "Michelin-starred neighbourhood restaurant in Clapham serving refined modern European cooking. Adam Byatt's cooking is precise and seasonal.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
+    "address": "4 The Polygon, London SW4 0JG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "One of south London's finest restaurants. The set lunch is excellent value for Michelin-starred cooking."
+  },
+  {
+    "id": "chez-bruce",
+    "name": "Chez Bruce",
+    "description": "A beloved neighbourhood restaurant on Wandsworth Common serving refined Mediterranean-influenced cooking. Regularly voted London's favourite restaurant.",
+    "neighbourhood": "Wandsworth",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "French / Mediterranean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
+    "address": "2 Bellevue Rd, London SW17 7EG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Consistently one of the best restaurants in London. The cheese trolley is legendary. Book well ahead."
+  },
+  {
+    "id": "the-five-fields",
+    "name": "The Five Fields",
+    "description": "Michelin-starred restaurant in Chelsea serving immaculate, seasonal British-French cooking. Ingredients from the restaurant's own farm in East Sussex.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "British-French Fine Dining",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 95,
+      "currency": "GBP"
+    },
+    "address": "8-9 Blacklands Terrace, London SW3 2SP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Intimate 40-seat room. The tasting menu changes with the seasons. One of London's hidden fine dining gems."
+  },
+  {
+    "id": "medlar",
+    "name": "Medlar",
+    "description": "A refined Chelsea neighbourhood restaurant serving excellent modern European cooking. Warm service and a beautifully balanced menu at fair prices.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "European",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
+    "address": "438 King's Rd, London SW10 0LJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The set lunch is outstanding value. Warm, personal service. A Chelsea local favourite."
+  },
+  {
+    "id": "la-dame-de-pic",
+    "name": "La Dame de Pic",
+    "description": "Anne-Sophie Pic's London outpost in the Four Seasons. Michelin-starred French fine dining with creative, aromatic, and visually stunning dishes.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 85,
+      "currency": "GBP"
+    },
+    "address": "Four Seasons Hotel, 10 Trinity Square, London EC3N 4AJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The berlingots (stuffed pasta) are a signature. The set lunch is excellent value for this level of cooking."
+  },
+  {
+    "id": "campania-gastronomia",
+    "name": "Campania & Jones",
+    "description": "A charming Italian deli and restaurant on Columbia Road. Authentic southern Italian cooking with ingredients imported directly from Campania.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "23 Ezra St, London E2 7RH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Perfect after the Columbia Road Flower Market on Sundays. The aubergine parmigiana is outstanding."
+  },
+  {
+    "id": "on-the-bab",
+    "name": "On The Bab",
+    "description": "Authentic Korean street food — fried chicken, bibimbap, and Korean tacos at wallet-friendly prices. Fast, flavourful, and fun.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Korean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "305 Old St, London EC1V 9LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Korean fried chicken is addictive. Great quick lunch option."
+  },
+  {
+    "id": "jinjuu",
+    "name": "Jinjuu",
+    "description": "Modern Korean restaurant from celebrity chef Judy Joo. Korean fried chicken, bibimbap, and creative cocktails in a stylish Soho setting.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Korean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "15 Kingly St, London W1B 5PS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Korean fried chicken and the ssam wraps are excellent. Fun cocktail menu."
+  },
+  {
+    "id": "viet-food",
+    "name": "Viet Food",
+    "description": "Authentic Vietnamese street food in the heart of Soho. Fresh pho, crispy spring rolls, and fragrant curries at great prices.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Vietnamese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "34-36 Wardour St, London W1D 6QT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pho and the summer rolls are excellent. Great value for central Soho."
+  },
+  {
+    "id": "wahaca",
+    "name": "Wahaca",
+    "description": "Mexican street food chain founded by MasterChef winner Thomasina Miers. Vibrant tacos, tostadas, and mezcal cocktails.",
+    "neighbourhood": "Southbank",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Mexican",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "119 Waterloo Rd, London SE1 8UL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pork pibil tacos and the churros are must-orders. Good value for the quality."
+  },
+  {
+    "id": "el-pastor",
+    "name": "El Pastor",
+    "description": "Outstanding Mexican tacos and mezcal in a buzzy Borough Market arch. The al pastor taco cooked on a proper trompo is one of London's best bites.",
+    "neighbourhood": "Borough",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Mexican",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "7A Stoney St, London SE1 9AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The al pastor taco is legendary. Great mezcal list. Queue at lunch, or book for dinner upstairs."
+  },
+  {
+    "id": "le-comptoir-robuchon",
+    "name": "Le Comptoir Robuchon",
+    "description": "The more accessible sibling of the late Joel Robuchon's empire. Refined French cooking including the famous pomme puree at Mayfair prices.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
+    "address": "6 Clarges St, London W1J 8AE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The mashed potato (pomme puree) is the most famous in the world. Set lunch is excellent value."
+  },
+  {
+    "id": "lemonia",
+    "name": "Lemonia",
+    "description": "A beloved Primrose Hill Greek restaurant serving generous portions of classic Greek dishes since 1985. A neighbourhood institution.",
+    "neighbourhood": "Primrose Hill",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Greek",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "89 Regent's Park Rd, London NW1 8UY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The charcoal-grilled lamb chops and moussaka are excellent. A Primrose Hill favourite for decades."
+  },
+  {
+    "id": "the-real-greek",
+    "name": "The Real Greek",
+    "description": "Modern Greek meze restaurant with a wide selection of sharing plates. Fresh, vibrant flavours at accessible prices.",
+    "neighbourhood": "Southbank",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Greek",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "Riverside Level 1, Royal Festival Hall, London SE1 8XX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Great for a pre-theatre meal at the Southbank Centre. Share the meze platters."
+  },
+  {
+    "id": "comptoir-libanais",
+    "name": "Comptoir Libanais",
+    "description": "Colourful Lebanese restaurant and deli serving fresh, authentic Middle Eastern dishes. Wraps, mezze, and tagines at great prices.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Lebanese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "Multiple locations across London",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Great for a quick, healthy lunch. The mixed mezze platter is excellent value."
+  },
+  {
+    "id": "maroush",
+    "name": "Maroush",
+    "description": "Iconic Lebanese restaurant in Mayfair serving authentic grills, mezze, and pastries since 1981. Open late and beloved by London's Middle Eastern community.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Lebanese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "21 Edgware Rd, London W2 2JE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open until 2am. The mixed grill and the baklava are outstanding. A Mayfair staple."
+  },
+  {
+    "id": "addis-ethiopian",
+    "name": "Queen of Sheba",
+    "description": "Authentic Ethiopian restaurant in Kentish Town serving traditional dishes on injera flatbread. Eat with your hands for the full experience.",
+    "neighbourhood": "Kentish Town",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Ethiopian",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "12 Fortess Rd, London NW5 2EU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Order the mixed platter to try everything. Eat with your hands using the injera bread. Great veggie options."
+  },
+  {
+    "id": "zeret-kitchen",
+    "name": "Zeret Kitchen",
+    "description": "A Camberwell favourite for authentic Ethiopian and Eritrean cuisine. Generous portions of stews and salads served on spongy injera.",
+    "neighbourhood": "Camberwell",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Ethiopian / Eritrean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "216 Camberwell New Rd, London SE5 0ED",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The vegetarian platter is outstanding. BYO with a small corkage fee."
+  },
+  {
+    "id": "roti-joupa",
+    "name": "Roti Joupa",
+    "description": "A Clapham institution serving authentic Trinidadian roti wraps packed with curry goat, chickpeas, and fiery pepper sauce.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Caribbean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "12 Clapham High St, London SW4 7UT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The curry goat roti is legendary. Homemade pepper sauce is seriously hot — use cautiously."
+  },
+  {
+    "id": "fish-wings-and-tings",
+    "name": "Fish, Wings & Tings",
+    "description": "Vibrant Caribbean restaurant in Brixton Village serving jerk chicken, ackee and saltfish, and fresh tropical juices.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Caribbean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "Brixton Village Market, Coldharbour Ln, London SW9 8PS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The jerk chicken and ackee and saltfish are excellent. Great vibe in Brixton Village."
+  },
+  {
+    "id": "the-ritz-afternoon-tea",
+    "name": "The Ritz - Afternoon Tea",
+    "description": "The quintessential London afternoon tea experience in the opulent Palm Court. Finger sandwiches, scones, and pastries served with champagne.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "Afternoon Tea",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
+    "address": "150 Piccadilly, London W1J 9BR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Smart dress code — jacket and tie required for gentlemen. Book well in advance. A bucket-list London experience."
+  },
+  {
+    "id": "claridges-afternoon-tea",
+    "name": "Claridge's - Afternoon Tea",
+    "description": "Art Deco glamour and impeccable service at one of London's most iconic hotels. The afternoon tea features delicate pastries and fine teas.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "Afternoon Tea",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 80,
+      "currency": "GBP"
+    },
+    "address": "Brook St, London W1K 4HR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Art Deco foyer is stunning. Book weeks ahead. Add champagne for the full experience."
+  },
+  {
+    "id": "fortnum-mason-tea",
+    "name": "Fortnum & Mason - Diamond Jubilee Tea Salon",
+    "description": "Afternoon tea in the elegant top-floor salon of London's most famous food emporium. Over 300 years of tea expertise.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
+    "cuisine": "Afternoon Tea",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
+    "address": "181 Piccadilly, London W1A 1ER",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Browse the food halls before or after tea. Their own-blend teas are exceptional."
+  },
+  {
+    "id": "mildreds",
+    "name": "Mildreds",
+    "description": "London's most beloved vegetarian restaurant since 1988. Creative plant-based dishes from around the world in a buzzy Soho setting.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "wellness"
+    ],
+    "cuisine": "Vegetarian / Vegan",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "45 Lexington St, London W1F 9AN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No reservations at Soho — queue early. Even committed carnivores love it here."
+  },
+  {
+    "id": "the-gate",
+    "name": "The Gate",
+    "description": "Sophisticated vegetarian restaurant serving creative, globally-inspired dishes. Beautiful presentations and flavours that make you forget about meat.",
+    "neighbourhood": "Hammersmith",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "wellness"
+    ],
+    "cuisine": "Vegetarian / Vegan",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "51 Queen Caroline St, London W6 9QL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The aubergine schnitzel is a signature dish. Great for showing meat-eaters how good veggie food can be."
+  },
+  {
+    "id": "gauthier-soho",
+    "name": "Gauthier Soho",
+    "description": "An entirely vegan fine dining restaurant in a beautiful Georgian townhouse. Alex Gauthier proves that plant-based cooking can be haute cuisine.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "wellness"
+    ],
+    "cuisine": "Vegan Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
+    "address": "21 Romilly St, London W1D 5AF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "London's finest vegan fine dining. The tasting menu is a revelation. Beautiful townhouse setting."
+  },
+  {
+    "id": "the-ivy-chelsea-garden",
+    "name": "The Ivy Chelsea Garden",
+    "description": "A glamorous all-day restaurant with a beautiful garden terrace. Classic British dishes, excellent brunch, and a see-and-be-seen crowd.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "romance"
+    ],
+    "cuisine": "British / International",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "195-197 King's Rd, London SW3 5EQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The garden terrace is stunning in summer. Great for weekend brunch."
+  },
+  {
+    "id": "j-sheekey",
+    "name": "J Sheekey",
+    "description": "London's most prestigious seafood restaurant, tucked away in a Theatreland alley. Impeccable fish and shellfish since 1896.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "theatre"
+    ],
+    "cuisine": "Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
+    "address": "28-32 St Martin's Ct, London WC2N 4AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Perfect pre or post-theatre. The fish pie is legendary. The Atlantic Bar next door is more casual."
+  },
+  {
+    "id": "bentleys",
+    "name": "Bentley's Oyster Bar & Grill",
+    "description": "Richard Corrigan's classic Mayfair seafood restaurant. The downstairs oyster bar is one of London's finest, serving pristine shellfish since 1916.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history"
+    ],
+    "cuisine": "Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
+    "address": "11-15 Swallow St, London W1B 4DG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The oyster bar is more casual and fun. The fish and chips are outstanding."
+  },
+  {
+    "id": "wright-brothers",
+    "name": "Wright Brothers",
+    "description": "A Borough Market seafood restaurant sourcing directly from their own oyster farm. Fresh, simply prepared fish and excellent oysters.",
+    "neighbourhood": "Borough",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "11 Stoney St, London SE1 9AD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The oyster happy hour offers great value. Right in the heart of Borough Market."
+  },
+  {
+    "id": "tonkotsu",
+    "name": "Tonkotsu",
+    "description": "Authentic Japanese ramen with rich, creamy tonkotsu broth. Gyoza and Japanese sides complete the menu. Fast, satisfying, and affordable.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese / Ramen",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "63 Dean St, London W1D 4QG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The gyoza are handmade and excellent. Great quick lunch in Soho."
+  },
+  {
+    "id": "dinings-sw3",
+    "name": "Dinings SW3",
+    "description": "Hidden Japanese tapas restaurant serving creative small plates that blend Japanese precision with Western flavours. Exquisite sushi and inventive hot dishes.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "address": "Walton House, Walton St, London SW3 2JH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Japanese tapas concept is brilliant. The truffle sushi roll is exceptional."
+  },
+  {
+    "id": "rosa-thai-cafe",
+    "name": "Rosa's Thai Cafe",
+    "description": "Authentic Thai food at great prices. Fresh, vibrant dishes from pad thai to green curry, with a cosy atmosphere.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Thai",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 13,
+      "currency": "GBP"
+    },
+    "address": "12 Hanbury St, London E1 6QR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pad thai and the massaman curry are excellent. Great value for the quality."
+  },
+  {
+    "id": "som-saa",
+    "name": "Som Saa",
+    "description": "Bold, authentic Thai cooking in a huge Whitechapel warehouse space. Dishes you won't find at your average Thai restaurant — rich, funky, and fiery.",
+    "neighbourhood": "Whitechapel",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Thai",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "43A Commercial St, London E1 6BD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The curry and larb dishes are outstanding. Order the whole deep-fried sea bass for the table."
+  },
+  {
+    "id": "xu-soho",
+    "name": "XU",
+    "description": "The upmarket sibling of BAO, serving refined Taiwanese cuisine in a beautiful 1930s-Taipei-inspired dining room. Cocktails are superb.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "Taiwanese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "30 Rupert St, London W1D 6DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The shou pa chicken and taro dumplings are outstanding. The cocktails are some of Soho's best."
+  },
+  {
+    "id": "mei-mei",
+    "name": "Mei Mei",
+    "description": "Modern Chinese small plates in a stylish Borough setting. Dumplings, noodles, and sharing plates with creative twists on Chinese classics.",
+    "neighbourhood": "Borough",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "Borough Yards, London SE1 9AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dumplings and dan dan noodles are excellent. Great for a quick Borough Market area lunch."
+  },
+  {
+    "id": "barshu",
+    "name": "Barshu",
+    "description": "Fiery Sichuan cuisine in the heart of Chinatown. Mouth-numbing Sichuan peppercorns, chilli oil, and bold flavours for the adventurous eater.",
+    "neighbourhood": "Chinatown",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Chinese / Sichuan",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "28 Frith St, London W1D 5LF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The mapo tofu and dan dan noodles are fiery perfection. Not for the faint-hearted. Bring water."
+  },
+  {
+    "id": "four-seasons-chinatown",
+    "name": "Four Seasons",
+    "description": "Famous for what many consider the best roast duck in London. No frills Chinatown restaurant where the crispy duck is the undisputed star.",
+    "neighbourhood": "Chinatown",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese / Cantonese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "12 Gerrard St, London W1D 5PR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Order the roast duck — it's what you're here for. Queue at peak times but worth it."
+  },
+  {
+    "id": "dim-t",
+    "name": "dim t",
+    "description": "Pan-Asian restaurant serving dim sum, noodles, and sushi in a stylish setting. Good variety and reliable quality.",
+    "neighbourhood": "Bloomsbury",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Pan-Asian / Dim Sum",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "32 Charlotte St, London W1T 2NQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Good for groups wanting a mix of Asian cuisines. The dim sum selection is solid."
+  },
+  {
+    "id": "tandoor-chop-house",
+    "name": "Tandoor Chop House",
+    "description": "Indian-British hybrid serving tandoor-grilled meats with British sides. Think lamb chops from the tandoor with mint sauce and dripping chips.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Indian / British",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "8 Adelaide St, London WC2N 4HZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The tandoori lamb chops are outstanding. A clever fusion that actually works."
+  },
+  {
+    "id": "trishna",
+    "name": "Trishna",
+    "description": "Michelin-starred Indian seafood restaurant serving coastal Indian cuisine. The brown crab with butter pepper and garlic is one of London's great dishes.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Indian / Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "15-17 Blandford St, London W1U 3DG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Dorset brown crab is the signature dish and unmissable. The tasting menu is excellent value."
+  },
+  {
+    "id": "scotts-mayfair",
+    "name": "Scott's",
+    "description": "Mayfair's grandest seafood restaurant, a favourite of the rich and famous since 1851. Oysters, lobster, and fish in a glamorous setting.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
+    "address": "20 Mount St, London W1K 2HE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The terrace on Mount Street is the place to be seen. The plateau de fruits de mer is spectacular."
+  },
+  {
+    "id": "hawksmoor-air-street",
+    "name": "Hawksmoor Air Street",
+    "description": "The Piccadilly Circus branch of London's finest steakhouse. Art Deco interiors, perfectly aged beef, and outstanding cocktails.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Steakhouse",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
+    "address": "5A Air St, London W1J 0AD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The express lunch menu is excellent value. The bar serves some of London's best cocktails."
+  },
+  {
+    "id": "goodman-mayfair",
+    "name": "Goodman",
+    "description": "A Mayfair steakhouse specialising in USDA and British beef aged on-site. Serious steak for serious steak lovers.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Steakhouse",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
+    "address": "26 Maddox St, London W1S 1QH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Choose your cut at the meat trolley. Both USDA and British options available. Excellent mac and cheese side."
+  },
+  {
+    "id": "blacklock-chops",
+    "name": "Blacklock",
+    "description": "Skinny chops, big chops, and pre-theatre deals in a former underground strip club. Simple concept, brilliantly executed, at great prices.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Steakhouse / Chops",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "24 Great Windmill St, London W1D 7LG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The all-in chop deal is incredible value. Great pre-theatre option at just a few pounds."
+  },
+  {
+    "id": "where-the-pancakes-are",
+    "name": "Where The Pancakes Are",
+    "description": "A dedicated pancake restaurant serving Dutch-style pancakes all day. Sweet, savoury, and everything in between.",
+    "neighbourhood": "Borough",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Brunch / Pancakes",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "85A Southwark Bridge Rd, London SE1 0NQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Dutch baby pancake is a showstopper. Great for brunch near Borough Market."
+  },
+  {
+    "id": "sunday-shoreditch",
+    "name": "Sunday",
+    "description": "A bright and airy brunch spot on Barnsbury Street. Eggs, pancakes, and shakshuka served in a relaxed neighbourhood setting.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Brunch",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "169 Hemingford Rd, London N1 1DA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Perfect lazy weekend brunch spot. The shakshuka is outstanding."
+  },
+  {
+    "id": "dishoom-kings-cross",
+    "name": "Dishoom King's Cross",
+    "description": "The grandest Dishoom, set in a spectacular converted transit shed. The breakfast naan roll and black daal are essential London experiences.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
+    "cuisine": "Indian",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "5 Stable St, London N1C 4AB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The only Dishoom that takes breakfast reservations. The bacon naan roll is legendary. The space is stunning."
+  },
+  {
+    "id": "pizza-pilgrims",
+    "name": "Pizza Pilgrims",
+    "description": "Neapolitan pizza made in Fior di Latte ovens shipped from Naples. Puffy, charred crusts and quality toppings at fair prices.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Italian / Pizza",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "11 Dean St, London W1D 3RP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The nduja honey pizza is a cult favourite. Great for a quick, delicious Soho lunch."
+  },
+  {
+    "id": "cay-tre",
+    "name": "Cay Tre",
+    "description": "Authentic Vietnamese cuisine in Shoreditch. Fragrant pho, crispy banh xeo pancakes, and vibrant salads in a stylish setting.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Vietnamese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "301 Old St, London EC1V 9LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pho and the banh xeo are standouts. Great value for the quality."
+  },
+  {
+    "id": "persepolis",
+    "name": "Persepolis",
+    "description": "A Persian grocery and cafe in Peckham serving authentic Iranian dishes. Homely, welcoming, and packed with flavour.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Persian / Iranian",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "28-30 Peckham High St, London SE15 5DT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Browse the Persian grocery while you wait. The lamb stews and rice dishes are authentic and delicious."
+  },
+  {
+    "id": "burger-and-lobster",
+    "name": "Burger & Lobster",
+    "description": "Simple concept done well — choose from a burger, a lobster, or a lobster roll. All served with fries and salad at a set price.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "American / Seafood",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "29 Clarges St, London W1J 7EF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The original lobster roll is hard to beat. Great value for Mayfair."
+  },
+  {
+    "id": "five-guys",
+    "name": "Five Guys",
+    "description": "American burger chain with a cult following. Customisable burgers, hand-cut fries, and free peanuts while you wait.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "American / Burgers",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "Multiple locations across London",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The regular fries are huge — a small is more than enough. Free toppings on all burgers."
+  },
+  {
+    "id": "patty-and-bun",
+    "name": "Patty & Bun",
+    "description": "Some of London's most flavour-packed burgers. The Ari Gold burger with smoky bacon, pickled onions, and special sauce is legendary.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "American / Burgers",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "54 James St, London W1U 1HE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Ari Gold is the signature — smoky, messy, and brilliant. Great shakes too."
+  },
+  {
+    "id": "nopi",
+    "name": "NOPI",
+    "description": "Ottolenghi's upmarket Soho restaurant. Refined Middle Eastern and Asian-inspired sharing plates in a bright, marble-clad space.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Middle Eastern / Asian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "21-22 Warwick St, London W1B 5NE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "More refined than the delis but equally vibrant. The burrata with burnt aubergine is outstanding."
+  },
+  {
+    "id": "darjeeling-express",
+    "name": "Darjeeling Express",
+    "description": "Chef Asma Khan's celebrated Indian restaurant serving Mughlai royal family recipes. As seen on Netflix's Chef's Table. An all-female kitchen.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Indian / Mughlai",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "Kingly Court, London W1B 5PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The goat biryani is legendary. Order the thali for a taste of everything. All-female kitchen team."
+  },
+  {
+    "id": "sketch-gallery-dinner",
+    "name": "Sketch - The Parlour",
+    "description": "A whimsical patisserie and tearoom at ground level in Sketch. Exquisite pastries, afternoon tea, and cocktails in a fantastical pink setting.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
+    "cuisine": "Patisserie / Afternoon Tea",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "9 Conduit St, London W1S 2XG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "More accessible and affordable than the Gallery upstairs. The pastries are works of art."
+  },
+  {
+    "id": "toyo-dumplings",
+    "name": "BAO Noodle Shop",
+    "description": "The noodle-focused sibling of BAO, serving hand-pulled noodles, dumplings, and Taiwanese beef noodle soup. Quick and satisfying.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Taiwanese / Noodles",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "4 Redchurch St, London E1 6JL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The beef noodle soup is rich and deeply flavoured. Quick service — great for a fast Shoreditch lunch."
+  },
+  {
+    "id": "foley-fitzrovia",
+    "name": "The Foley",
+    "description": "A stylish Fitzrovia pub serving elevated gastropub food. Seasonal British dishes, craft beers, and a great wine list in a relaxed setting.",
+    "neighbourhood": "Fitzrovia",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Gastropub",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "48 Foley St, London W1W 7TU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Great neighbourhood gastropub. The Sunday roast is excellent."
+  },
+  {
+    "id": "townsend",
+    "name": "Townsend",
+    "description": "A bright, all-day restaurant in the Whitechapel Gallery serving seasonal British food. Beautiful space with a focus on simplicity and quality ingredients.",
+    "neighbourhood": "Whitechapel",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "photography"
+    ],
+    "cuisine": "British Modern",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "Whitechapel Gallery, 77-82 Whitechapel High St, London E1 7QX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with a visit to the Whitechapel Gallery. The daily-changing menu focuses on seasonal ingredients."
+  },
+  {
+    "id": "paradise-kensal-green",
+    "name": "The Shed",
+    "description": "A Notting Hill restaurant run by three farming brothers, serving produce from their family farm in West Sussex. Rustic, seasonal, and genuine.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "122 Palace Gardens Terrace, London W8 4RT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Farm-to-table genuinely. The slow-cooked dishes are highlights. A Notting Hill local favourite."
+  },
+  {
+    "id": "chick-n-sours",
+    "name": "Chick 'n' Sours",
+    "description": "Fried chicken and sour cocktails in a fun, no-frills setting. Seriously good Korean-inspired fried chicken with creative sides.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Korean Fried Chicken",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "390 Kingsland Rd, London E8 4AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The fried chicken is crispy perfection. The sour cocktails are addictive. Great fun atmosphere."
+  },
+  {
+    "id": "salvation-in-noodles",
+    "name": "Salvation in Noodles",
+    "description": "A tiny Dalston Vietnamese cafe serving enormous bowls of pho at tiny prices. Authentic and beloved by the Vietnamese community.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Vietnamese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "122 Dalston Ln, London E8 1NG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pho is outstanding and enormous. Cash only. One of the best value meals in London."
+  },
+  {
+    "id": "bibimbap-soho",
+    "name": "Bibimbap",
+    "description": "Quick-service Korean restaurant specialising in the namesake rice bowl dish. Customise your toppings and enjoy authentic Korean flavours.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Korean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 11,
+      "currency": "GBP"
+    },
+    "address": "11 Greek St, London W1D 4DJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Get the hot stone bibimbap for the crispy rice at the bottom. Quick, cheap, and satisfying."
+  },
+  {
+    "id": "lupita-mexican",
+    "name": "Lupita",
+    "description": "Authentic Mexican restaurant near Charing Cross serving tacos, enchiladas, and mezcal cocktails. More refined than your average taqueria.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Mexican",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "60-62 Commercial St, London E1 6LT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The mole dishes are excellent. Great mezcal selection."
+  },
+  {
+    "id": "kebab-kid",
+    "name": "Le Bab",
+    "description": "Gourmet kebabs from a Michelin-trained team. Shawarma, doner, and shish reimagined with premium ingredients and creative toppings.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Middle Eastern / Modern Kebab",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "Kingly Court, 4 Kingly Ct, London W1B 5PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Kebabs reimagined — the lamb shawarma is outstanding. Proof that kebabs can be gourmet."
+  },
+  {
+    "id": "the-haberdashery",
+    "name": "The Haberdashery",
+    "description": "A quirky, vintage-styled cafe in Stoke Newington serving excellent brunch and cake. Mismatched furniture, board games, and all-day vibes.",
+    "neighbourhood": "Stoke Newington",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Brunch / Cafe",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "22 Middle Ln, London N8 8PL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The cakes are homemade and excellent. Lovely relaxed vibe with board games and vintage decor."
+  },
+  {
+    "id": "petersham-nurseries",
+    "name": "Petersham Nurseries Cafe",
+    "description": "A magical greenhouse restaurant in Richmond serving seasonal Italian-influenced food among the plants. One of London's most romantic settings.",
+    "neighbourhood": "Richmond",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "Italian / Seasonal",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "Church Ln, Off Petersham Rd, Richmond TW10 7AB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "One of the most beautiful dining settings in London. Lunch only. Book well in advance."
+  },
+  {
+    "id": "spring-somerset-house",
+    "name": "Spring",
+    "description": "Skye Gyngell's light-filled restaurant in Somerset House. Ingredient-driven Italian-influenced cooking in one of London's most beautiful dining rooms.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance",
+      "photography"
+    ],
+    "cuisine": "Italian / Seasonal",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "Lancaster Place, New Wing, Somerset House, London WC2R 1LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dining room is stunning with natural light. The set lunch is excellent value. Beautiful courtyard in summer."
+  },
+  {
+    "id": "sardine",
+    "name": "Sardine",
+    "description": "A southern French and Italian neighbourhood restaurant in a former warehouse. Simple, seasonal cooking focused on vegetables, fish, and fire.",
+    "neighbourhood": "Hoxton",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "French / Italian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "15 Micawber St, London N1 7TB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The wood-roasted dishes are the stars. Relaxed and unpretentious. A Hoxton gem."
+  },
+  {
+    "id": "palomar-clap",
+    "name": "Sessions Arts Club",
+    "description": "A stunning restaurant in a former courtroom on Clerkenwell Green. Seasonal European cooking in one of London's most dramatic dining rooms.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "photography",
+      "romance"
+    ],
+    "cuisine": "European",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "Clerkenwell Green, London EC1R 0NA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The crumbling, beautiful room is unforgettable. Book well ahead. One of London's most talked-about restaurants."
+  },
+  {
+    "id": "flor-borough",
+    "name": "Flor",
+    "description": "A restaurant from the team behind Lyle's, serving wood-fired dishes and exceptional natural wines above Borough Market. Mediterranean-inspired menu.",
+    "neighbourhood": "Borough",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Mediterranean",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "1 Bedale St, London SE1 9AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The bakery downstairs sells incredible sourdough. The wine list is outstanding."
+  },
+  {
+    "id": "jolene-newington-green",
+    "name": "Jolene",
+    "description": "A bakery-restaurant in Newington Green serving incredible sourdough, seasonal British food, and natural wines. All-day dining with a neighbourhood feel.",
+    "neighbourhood": "Newington Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Modern / Bakery",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "21 Newington Green, London N16 9PU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The sourdough bread is some of the best in London. Great for breakfast or a relaxed lunch."
+  },
+  {
+    "id": "cafe-cecilia",
+    "name": "Cafe Cecilia",
+    "description": "Max Rocha's beautiful Hackney canal-side restaurant serving hearty, seasonal dishes with an Irish and European influence. Warm and nurturing cooking.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Seasonal",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "32 Andrews Rd, London E8 4RL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The soda bread and the daily-changing menu are highlights. A restaurant with real soul."
+  },
+  {
+    "id": "mangal-2",
+    "name": "Mangal 2",
+    "description": "A Dalston ocakbasi grill that was a favourite of the late Anthony Bourdain. Charcoal-grilled Turkish meats at excellent prices.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Turkish",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "4 Stoke Newington Rd, London N16 8BH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Anthony Bourdain was a regular. BYO wine. The mixed grill is outstanding value."
+  },
+  {
+    "id": "orasay",
+    "name": "Orasay",
+    "description": "A refined seafood restaurant in Notting Hill inspired by the Scottish Hebrides. Elegant, coastal-inspired dishes with impeccable sourcing.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "Seafood / Scottish",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "address": "31 Kensington Park Rd, London W11 2EU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The whole roasted fish is the star. From the Brat team. Beautiful Notting Hill setting."
+  },
+  {
+    "id": "pavyllon-london",
+    "name": "Pavyllon London",
+    "description": "Yannick Alleno's London restaurant at the Four Seasons, serving modern French cuisine with theatrical counter seating and an open kitchen.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
+    "cuisine": "French Fine Dining",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 80,
+      "currency": "GBP"
+    },
+    "address": "Four Seasons Hotel, Hamilton Pl, London W1J 7DR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sit at the counter to watch the chefs. The sauce work is extraordinary. Set lunch offers good value."
+  },
+  {
+    "id": "masala-zone",
+    "name": "Masala Zone",
+    "description": "Vibrant Indian street food and thalis at wallet-friendly prices. A reliable chain for satisfying, flavourful Indian food across London.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Indian / Street Food",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "9 Marshall St, London W1F 7ER",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The thalis are excellent value and give you a taste of everything. Good for groups."
+  },
+  {
+    "id": "oka-kingsland-road",
+    "name": "Oka",
+    "description": "Refined Japanese restaurant on Kingsland Road serving excellent sushi, robata grill items, and creative cocktails. Sleek and stylish.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "71 Kingsland High St, London E8 2PB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The sushi and the robata-grilled dishes are highlights. A more refined alternative on Kingsland Road."
+  },
+  {
+    "id": "perilla-newington-green",
+    "name": "Perilla",
+    "description": "A modern European neighbourhood restaurant in Newington Green. Creative tasting menus and a la carte with brilliant natural wines.",
+    "neighbourhood": "Newington Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Modern",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "1-3 Green Lanes, London N16 9BS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The tasting menu is a steal for this quality. A gem of the north London dining scene."
+  },
+  {
+    "id": "the-marksman",
+    "name": "The Marksman",
+    "description": "A Michelin-starred pub in Hackney Road. The beef and barley bun is legendary, and the cooking elevates pub food to an art form.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "British Gastropub",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "254 Hackney Rd, London E2 7SJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The beef and barley bun is a must. A Michelin-starred pub — drink a pint downstairs and dine upstairs."
+  },
+  {
+    "id": "duck-and-rice",
+    "name": "The Duck & Rice",
+    "description": "A Chinese gastropub in Soho, combining craft beer and cocktails with Cantonese-inspired dishes. Alan Yau's casual dining concept.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "nightlife"
+    ],
+    "cuisine": "Chinese / Gastropub",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "90 Berwick St, London W1F 0QB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The crispy duck salad and dim sum are excellent. Great pub atmosphere with a Chinese twist."
+  },
+  {
+    "id": "taberna-do-mercado",
+    "name": "Taberna do Mercado",
+    "description": "Nuno Mendes' Portuguese tapas bar in Spitalfields Market. Petiscos, Portuguese wines, and pasteis de nata in a charming market setting.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Portuguese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "Old Spitalfields Market, London E1 6EW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The croquettes and the custard tarts are outstanding. A lovely spot inside Spitalfields Market."
+  },
+  {
+    "id": "kudu-peckham",
+    "name": "Kudu",
+    "description": "A South African-inspired restaurant in Peckham. Creative dishes blending South African and European influences with locally sourced ingredients.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "South African / European",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "119 Queen's Rd, London SE15 2EZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The braai-grilled dishes are superb. A rising star of the south London dining scene."
+  },
+  {
+    "id": "norman-restaurant",
+    "name": "Norman's",
+    "description": "A cosy, no-booking Tufnell Park restaurant that feels like eating in someone's home. Seasonal Mediterranean cooking and natural wines.",
+    "neighbourhood": "Tufnell Park",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Mediterranean",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "31 Brecknock Rd, London N7 0BT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No bookings — arrive early. Feels like eating in a friend's kitchen. Natural wines are excellent."
+  },
+  {
+    "id": "ab-pizza",
+    "name": "Santa Maria Pizzeria",
+    "description": "Award-winning Neapolitan pizza in Ealing — worth the journey from central London. The dough is fermented for 48 hours for maximum flavour.",
+    "neighbourhood": "Ealing",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Italian / Pizza",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "15 St Mary's Rd, London W5 5RA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Many say it's the best pizza in London. The pilgrimage to Ealing is worth it. BYO."
+  },
+  {
+    "id": "my-neighbours-the-dumplings",
+    "name": "My Neighbours The Dumplings",
+    "description": "Handmade Chinese dumplings in a fun, communal Hackney setting. Pork and chive, prawn, and creative seasonal fillings at great prices.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese / Dumplings",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 13,
+      "currency": "GBP"
+    },
+    "address": "165 Lower Clapton Rd, London E5 8EQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dumplings are handmade fresh. BYO wine. A Clapton favourite."
+  },
+  {
+    "id": "sami-peckham",
+    "name": "Peckham Bazaar",
+    "description": "A colourful Peckham restaurant celebrating the food of the Balkans, Middle East, and Eastern Mediterranean. Open fire cooking and vibrant flavours.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Middle Eastern / Balkan",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "119 Consort Rd, London SE15 3RU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Everything cooked over fire. The lamb dishes are exceptional. Great natural wine list."
+  },
+  {
+    "id": "morchella-hackney",
+    "name": "Planque",
+    "description": "A wine-focused restaurant in Hackney serving modern European dishes with an emphasis on natural wines. Beautiful arch setting.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Natural Wine",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "322 Acton Mews, London E8 4EA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The wine list is exceptional. The sharing plates are designed for groups. Under a railway arch."
+  },
+  {
+    "id": "mangal-ocakbasi",
+    "name": "Gokyuzu",
+    "description": "A massive Turkish ocakbasi grill on Green Lanes. Enormous portions of perfectly charcoal-grilled meats at absurdly low prices.",
+    "neighbourhood": "Harringay",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "family"
+    ],
+    "cuisine": "Turkish",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "26 Green Lanes, London N16 9HS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Huge portions and tiny prices. The mixed grill platter is enormous. BYO. Always busy — expect a short wait."
+  },
+  {
+    "id": "kricket",
+    "name": "Kricket",
+    "description": "Modern Indian small plates that push boundaries. Inventive, spice-led cooking that reimagines Indian food for London. Counter dining in Soho.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Indian / Modern",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "12 Denman St, London W1D 7HH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The samphire pakoras and the Keralan fried chicken are outstanding. Modern Indian at its best."
+  },
+  {
+    "id": "babeth-mayfair",
+    "name": "Isabel",
+    "description": "A glamorous Mayfair restaurant and bar serving Mediterranean and Latin American-inspired dishes. Beautiful interiors and a buzzy late-night scene.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "nightlife",
+      "romance"
+    ],
+    "cuisine": "Mediterranean / Latin American",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 60,
+      "currency": "GBP"
+    },
+    "address": "26 Albemarle St, London W1S 4HY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Great for a glamorous night out. The cocktails are excellent. Smart dress code."
+  },
+  {
+    "id": "sagar-vegetarian",
+    "name": "Sagar",
+    "description": "South Indian vegetarian restaurant serving outstanding dosas, idli, and thalis. Authentic, affordable, and beloved by London's vegetarian community.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food",
+      "wellness"
+    ],
+    "cuisine": "Indian Vegetarian",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "31 Catherine St, London WC2B 5JS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The masala dosa is enormous and delicious. Some of the best value vegetarian food in central London."
+  },
+  {
+    "id": "jin-kichi",
+    "name": "Jin Kichi",
+    "description": "An authentic Japanese izakaya in Hampstead. Yakitori grilled over charcoal, sashimi, and Japanese small plates in a cosy, neighbourhood setting.",
+    "neighbourhood": "Hampstead",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese / Izakaya",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "73 Heath St, London NW3 6UG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The yakitori is outstanding — grilled to perfection. A Hampstead favourite for decades."
+  },
+  {
+    "id": "bento-bab",
+    "name": "Kanada-Ya Piccadilly",
+    "description": "The Piccadilly branch of the celebrated ramen chain. Rich 18-hour tonkotsu broth, springy noodles, and flavour-packed toppings.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese / Ramen",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "3 Panton St, London SW1Y 4DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Central location for a quick ramen fix. The truffle ramen is worth the upgrade."
+  },
+  {
+    "id": "smoking-goat-soho",
+    "name": "Som Saa Thai Noodles",
+    "description": "Quick Thai noodle dishes from the Som Saa team. Bold, authentic flavours in a casual setting. Fast, fiery, and affordable.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Thai",
+    "mealType": [
+      "lunch"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "Old Spitalfields Market, London E1 6EW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "From the team behind Som Saa. Quick, authentic Thai noodles at market prices."
+  },
+  {
+    "id": "baozi-inn",
+    "name": "Baozi Inn",
+    "description": "Authentic Sichuan street food in Chinatown. Fiery dan dan noodles, steamed bao, and cold Sichuan dishes in a no-frills setting.",
+    "neighbourhood": "Chinatown",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Chinese / Sichuan",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "25-26 Newport Court, London WC2H 7JS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The dan dan noodles and the cold spicy pork are must-orders. Tiny and always busy."
+  },
+  {
+    "id": "the-manor-clapham",
+    "name": "The Manor",
+    "description": "A refined neighbourhood restaurant in Clapham Common. Creative modern European dishes with seasonal British ingredients.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "European / Modern",
+    "mealType": [
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "148 Clapham Manor St, London SW4 6BX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The tasting menu is excellent value. A south London hidden gem."
+  },
+  {
+    "id": "hunan-pimlico",
+    "name": "Hunan",
+    "description": "A unique leave-it-to-the-chef Chinese restaurant in Pimlico. No menu — Mr Peng sends out dish after dish of Hunanese and Sichuanese cooking.",
+    "neighbourhood": "Pimlico",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Chinese / Hunanese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "address": "51 Pimlico Rd, London SW1W 8NE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No menu — just tell them what you don't eat and the kitchen decides. A totally unique dining experience."
+  },
+  {
+    "id": "koya",
+    "name": "Koya",
+    "description": "Exceptional handmade udon noodles in a simple, no-frills Soho setting. Hot or cold broth, perfectly chewy noodles, and clean Japanese flavours.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "food"
+    ],
+    "cuisine": "Japanese / Udon",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 13,
+      "currency": "GBP"
+    },
+    "address": "49 Frith St, London W1D 4SG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The hot udon in dashi broth is soul food. Simple, perfect, and affordable."
+  },
+  {
+    "id": "fatt-pundit",
+    "name": "Fatt Pundit",
+    "description": "Indo-Chinese street food from Kolkata's Chinatown. A unique cuisine you won't find anywhere else in London — chilli paneer, Hakka noodles, and momos.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "adventure"
+    ],
+    "cuisine": "Indo-Chinese",
+    "mealType": [
+      "lunch",
+      "dinner"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "46 Great Windmill St, London W1D 7NB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "A cuisine you won't find elsewhere. The chilli chicken and momos are excellent."
   }
 ]

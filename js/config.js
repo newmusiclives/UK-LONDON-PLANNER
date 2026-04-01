@@ -10,14 +10,46 @@ const CONFIG = {
     consultation: { price: 75, currency: 'USD', duration: '1 hour' }
   },
 
-  // Replace these with your actual Stripe Payment Links
-  stripe: {
+  // ============================================================
+  // MANIFEST FINANCIAL — Payment Processing
+  // Replace these with your actual Manifest Financial payment links
+  // ============================================================
+  manifest: {
     links: {
-      tier1: 'https://buy.stripe.com/YOUR_TIER1_LINK',
-      tier2: 'https://buy.stripe.com/YOUR_TIER2_LINK',
-      tier3: 'https://buy.stripe.com/YOUR_TIER3_LINK',
-      concierge: 'https://buy.stripe.com/YOUR_CONCIERGE_LINK',
-      consultation: 'https://buy.stripe.com/YOUR_CONSULTATION_LINK'
+      tier1: 'https://pay.manifestfinancial.com/YOUR_TIER1_LINK',
+      tier2: 'https://pay.manifestfinancial.com/YOUR_TIER2_LINK',
+      tier3: 'https://pay.manifestfinancial.com/YOUR_TIER3_LINK',
+      concierge: 'https://pay.manifestfinancial.com/YOUR_CONCIERGE_LINK',
+      consultation: 'https://pay.manifestfinancial.com/YOUR_CONSULTATION_LINK'
+    }
+  },
+
+  // ============================================================
+  // GOHIGHLEVEL CRM — Email, SMS, Voice, and CRM Functions
+  // Replace with your actual GoHighLevel configuration
+  // ============================================================
+  goHighLevel: {
+    apiBaseUrl: 'https://rest.gohighlevel.com/v1',
+    locationId: 'YOUR_GHL_LOCATION_ID',
+    apiKey: 'YOUR_GHL_API_KEY',
+    // Webhook URLs for form submissions
+    webhooks: {
+      itineraryPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_ITINERARY_WEBHOOK',
+      consultationBooking: 'https://services.leadconnectorhq.com/hooks/YOUR_CONSULTATION_WEBHOOK',
+      conciergeBooking: 'https://services.leadconnectorhq.com/hooks/YOUR_CONCIERGE_WEBHOOK',
+      contactForm: 'https://services.leadconnectorhq.com/hooks/YOUR_CONTACT_WEBHOOK',
+      emailCapture: 'https://services.leadconnectorhq.com/hooks/YOUR_EMAIL_CAPTURE_WEBHOOK'
+    },
+    // Calendar ID for consultation bookings
+    calendarId: 'YOUR_GHL_CALENDAR_ID',
+    // Pipeline for tracking customer journey
+    pipelineId: 'YOUR_GHL_PIPELINE_ID',
+    pipelineStages: {
+      lead: 'YOUR_LEAD_STAGE_ID',
+      itineraryCreated: 'YOUR_ITINERARY_CREATED_STAGE_ID',
+      paid: 'YOUR_PAID_STAGE_ID',
+      conciergeAdded: 'YOUR_CONCIERGE_STAGE_ID',
+      consultationBooked: 'YOUR_CONSULTATION_BOOKED_STAGE_ID'
     }
   },
 
@@ -26,15 +58,15 @@ const CONFIG = {
   // See AFFILIATE-SETUP-GUIDE.md for sign-up links
   // ============================================================
   affiliateIds: {
-    getYourGuide: 'YOUR_GYG_PARTNER_ID',       // partner.getyourguide.com
-    booking:      'YOUR_BOOKING_AID',            // booking.com/affiliate-program
-    viator:       'YOUR_VIATOR_PID',             // viator.com/affiliates
-    todayTix:     'YOUR_TODAYTIX_ID',            // todaytix.com partnerships
-    openTable:    'YOUR_OPENTABLE_REF',          // opentable.com/affiliates
-    klook:        'YOUR_KLOOK_AID',              // affiliate.klook.com
-    tiqets:       'YOUR_TIQETS_ID',              // tiqets.com/affiliates
-    goCity:       'YOUR_GOCITY_ID',              // gocity.com/affiliates
-    trainline:    'YOUR_TRAINLINE_ID',           // trainline.com/affiliates
+    getYourGuide: 'YOUR_GYG_PARTNER_ID',
+    booking:      'YOUR_BOOKING_AID',
+    viator:       'YOUR_VIATOR_PID',
+    todayTix:     'YOUR_TODAYTIX_ID',
+    openTable:    'YOUR_OPENTABLE_REF',
+    klook:        'YOUR_KLOOK_AID',
+    tiqets:       'YOUR_TIQETS_ID',
+    goCity:       'YOUR_GOCITY_ID',
+    trainline:    'YOUR_TRAINLINE_ID',
   },
 
   // Pages
@@ -56,10 +88,10 @@ const CONFIG = {
       standard: { days: [6, 10],  price: 55, label: 'UK Explorer' },
       extended: { days: [11, 21], price: 85, label: 'Grand UK Tour' }
     },
-    stripe: {
-      short:    'https://buy.stripe.com/YOUR_UK_SHORT_LINK',
-      standard: 'https://buy.stripe.com/YOUR_UK_STANDARD_LINK',
-      extended: 'https://buy.stripe.com/YOUR_UK_EXTENDED_LINK'
+    manifest: {
+      short:    'https://pay.manifestfinancial.com/YOUR_UK_SHORT_LINK',
+      standard: 'https://pay.manifestfinancial.com/YOUR_UK_STANDARD_LINK',
+      extended: 'https://pay.manifestfinancial.com/YOUR_UK_EXTENDED_LINK'
     }
   },
 
@@ -131,6 +163,15 @@ const CONFIG = {
     }
   },
 
+  // Supported currencies for multi-currency display
+  currencies: {
+    USD: { symbol: '$', rate: 1 },
+    GBP: { symbol: '£', rate: 0.79 },
+    EUR: { symbol: '€', rate: 0.92 },
+    AUD: { symbol: 'A$', rate: 1.53 },
+    CAD: { symbol: 'C$', rate: 1.36 }
+  },
+
   // Concierge service details
   concierge: {
     price: 50,
@@ -165,6 +206,17 @@ const CONFIG = {
     utmSource: 'londonplanner',
     utmMedium: 'itinerary',
     disclosureText: 'We may earn a small commission from bookings made through our links, at no extra cost to you.'
+  },
+
+  // Weather API (free tier from OpenWeatherMap)
+  weather: {
+    apiKey: 'YOUR_OPENWEATHERMAP_API_KEY',
+    city: 'London,GB'
+  },
+
+  // TfL API (free, no key needed for basic access)
+  tfl: {
+    baseUrl: 'https://api.tfl.gov.uk'
   }
 };
 
@@ -212,7 +264,6 @@ const AffiliateLinks = {
     }
   },
 
-  // Detect provider from URL
   detect(url) {
     if (!url) return 'unknown';
     if (url.includes('getyourguide')) return 'getyourguide';
@@ -225,8 +276,106 @@ const AffiliateLinks = {
     return 'unknown';
   },
 
-  // Auto-build link with auto-detected provider
   auto(url) {
     return this.build(url, this.detect(url));
+  }
+};
+
+// ============================================================
+// GOHIGHLEVEL CRM INTEGRATION
+// Sends contact data to GoHighLevel for email, SMS, voice
+// ============================================================
+const GHL = {
+  async sendToWebhook(webhookKey, data) {
+    const url = CONFIG.goHighLevel.webhooks[webhookKey];
+    if (!url || url.includes('YOUR_')) {
+      console.log(`GHL Demo Mode [${webhookKey}]:`, data);
+      return { success: true, demo: true };
+    }
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...data,
+          source: 'London Journey Planner',
+          timestamp: new Date().toISOString()
+        })
+      });
+      return { success: response.ok };
+    } catch (e) {
+      console.warn('GHL webhook failed:', e);
+      return { success: false, error: e.message };
+    }
+  },
+
+  async captureContact(formData) {
+    return this.sendToWebhook('emailCapture', {
+      type: 'email_capture',
+      email: formData.email,
+      name: formData.name || '',
+      tags: ['london-planner', 'lead'],
+      ...formData
+    });
+  },
+
+  async trackItineraryPurchase(purchaseData) {
+    return this.sendToWebhook('itineraryPurchase', {
+      type: 'itinerary_purchase',
+      tags: ['london-planner', 'customer', 'itinerary-buyer'],
+      ...purchaseData
+    });
+  },
+
+  async trackConsultationBooking(bookingData) {
+    return this.sendToWebhook('consultationBooking', {
+      type: 'consultation_booking',
+      tags: ['london-planner', 'customer', 'consultation'],
+      ...bookingData
+    });
+  },
+
+  async trackConciergeBooking(bookingData) {
+    return this.sendToWebhook('conciergeBooking', {
+      type: 'concierge_booking',
+      tags: ['london-planner', 'customer', 'concierge'],
+      ...bookingData
+    });
+  },
+
+  async submitContactForm(formData) {
+    return this.sendToWebhook('contactForm', {
+      type: 'contact_form',
+      tags: ['london-planner', 'contact-form'],
+      ...formData
+    });
+  }
+};
+
+// ============================================================
+// CURRENCY CONVERTER
+// ============================================================
+const CurrencyConverter = {
+  _selected: localStorage.getItem('selectedCurrency') || 'USD',
+
+  get() {
+    return this._selected;
+  },
+
+  set(currency) {
+    this._selected = currency;
+    localStorage.setItem('selectedCurrency', currency);
+    document.dispatchEvent(new CustomEvent('currencyChanged', { detail: currency }));
+  },
+
+  convert(amountUSD) {
+    const rate = CONFIG.currencies[this._selected]?.rate || 1;
+    return amountUSD * rate;
+  },
+
+  format(amountUSD) {
+    const converted = this.convert(amountUSD);
+    const symbol = CONFIG.currencies[this._selected]?.symbol || '$';
+    return `${symbol}${converted.toFixed(converted % 1 === 0 ? 0 : 2)}`;
   }
 };

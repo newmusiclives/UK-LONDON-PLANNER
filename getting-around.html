@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Around London — London Journey Planner</title>
+  <meta name="description" content="Complete guide to London transport: Tube, buses, boats, cycling, walking routes, Oyster cards, and money-saving tips.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Getting Around London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto;">Your complete guide to navigating London like a local</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <!-- TfL Status Widget -->
+        <div id="tfl-status" class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚇 Live Tube Status</h3>
+            <div id="tube-status-content" style="margin-top:1rem;">
+              <p style="color:var(--color-text-muted);">Loading live Tube status...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚇 The Tube (Underground)</h3>
+            <p style="margin-top:1rem;">London's iconic underground railway is the fastest way to get around the city. 11 lines cover 270 stations across London.</p>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Hours:</strong> 5am-midnight (some lines run 24hr on Fridays & Saturdays — the "Night Tube")</li>
+              <li style="margin-bottom:0.5rem;"><strong>Cost:</strong> £2.80 per journey with Oyster/contactless (Zone 1). Daily cap: £8.10</li>
+              <li style="margin-bottom:0.5rem;"><strong>Top tip:</strong> Avoid rush hour (7:30-9:30am, 5-7pm) for a much better experience</li>
+              <li style="margin-bottom:0.5rem;"><strong>Night Tube:</strong> Victoria, Central, Jubilee, Northern, and Piccadilly lines run all night on Fri/Sat</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚌 Buses</h3>
+            <p style="margin-top:1rem;">London's iconic red buses cover routes the Tube doesn't reach, and you get to see the city as you travel.</p>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Cost:</strong> £1.75 per journey (Oyster/contactless only — no cash accepted)</li>
+              <li style="margin-bottom:0.5rem;"><strong>Hopper fare:</strong> Unlimited bus transfers within 1 hour for one fare</li>
+              <li style="margin-bottom:0.5rem;"><strong>Routes 11 and 15:</strong> Pass major landmarks — a budget sightseeing tour</li>
+              <li style="margin-bottom:0.5rem;"><strong>Night buses:</strong> Run all night (prefix "N" — e.g., N11)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>💳 Oyster Cards & Contactless</h3>
+            <p style="margin-top:1rem;">The most affordable way to use London transport.</p>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Contactless:</strong> Just tap your bank card — same price as Oyster. Works with Apple Pay and Google Pay.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Oyster card:</strong> £7 deposit from any Tube station. Good if you don't have contactless.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Daily cap:</strong> You'll never pay more than £8.10/day (Zones 1-2) no matter how many journeys.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Weekly cap:</strong> £40.70 for Zones 1-2 with contactless (Mon-Sun).</li>
+              <li style="margin-bottom:0.5rem;"><strong>Children under 11:</strong> Travel free with an adult on Tube, buses, and trains.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚶 Walking</h3>
+            <p style="margin-top:1rem;">London is incredibly walkable. Many "nearby" Tube stations are just 5-10 minutes apart on foot.</p>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>South Bank walk:</strong> Westminster Bridge to Tower Bridge — 3km of stunning riverside views</li>
+              <li style="margin-bottom:0.5rem;"><strong>Covent Garden to Soho:</strong> 10-minute walk through the heart of the West End</li>
+              <li style="margin-bottom:0.5rem;"><strong>Regent's Canal:</strong> Camden to King's Cross — a beautiful towpath walk</li>
+              <li style="margin-bottom:0.5rem;"><strong>Thames Path:</strong> 184-mile trail following the river — walk any section</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚕 Taxis & Rideshares</h3>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Black cabs:</strong> Iconic and excellent. Drivers know every street. Hail one with its light on, or use the Gett app.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Uber / Bolt:</strong> Usually 20-40% cheaper than black cabs. Available everywhere.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Late night:</strong> After midnight, taxis/rideshares are often the best option.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>🚲 Cycling</h3>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Santander Cycles ("Boris Bikes"):</strong> £1.65 for 30-min rides. Docking stations everywhere.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Lime / Forest e-bikes:</strong> Available via app. Great for longer journeys.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Best routes:</strong> Regent's Park, Hyde Park, along the Thames, and the Canals.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:2rem;">
+          <div class="card__body">
+            <h3>⛴️ River Boats</h3>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Uber Boat by Thames Clippers:</strong> Fast catamaran service along the Thames. Oyster/contactless accepted.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Great for:</strong> Westminster to Greenwich, or Embankment to Canary Wharf.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Cost:</strong> £8-9 single, or included in some travel passes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      // Load live Tube status from TfL API
+      fetch('https://api.tfl.gov.uk/Line/Mode/tube/Status')
+        .then(r => r.json())
+        .then(lines => {
+          const container = document.getElementById('tube-status-content');
+          container.innerHTML = lines.map(line => {
+            const status = line.lineStatuses[0];
+            const isGood = status.statusSeverity === 10;
+            return `<div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--color-border);">
+              <span style="font-weight:600;">${line.name}</span>
+              <span class="badge ${isGood ? 'badge--success' : 'badge--primary'}">${status.statusSeverityDescription}</span>
+            </div>`;
+          }).join('');
+        })
+        .catch(() => {
+          document.getElementById('tube-status-content').innerHTML = '<p style="color:var(--color-text-muted);">Unable to load live status. Check <a href="https://tfl.gov.uk/tube-dlr-overground/status/" target="_blank">TfL website</a> for updates.</p>';
+        });
+    });
+  </script>
+</body>
+</html>
