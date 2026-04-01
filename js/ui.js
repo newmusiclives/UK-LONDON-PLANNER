@@ -122,13 +122,13 @@ const UI = {
 
         await GHL.captureContact({ email, source: 'footer_email_capture' });
 
+        if (typeof Analytics !== 'undefined') Analytics.emailCapture('footer');
         btn.textContent = 'Sent!';
         emailForm.querySelector('input').value = '';
-        UI.showToast('Thanks! Check your inbox for London insider tips.');
+        UI.showToast('Thanks! Redirecting to your free tips...');
         setTimeout(() => {
-          btn.disabled = false;
-          btn.textContent = 'Get Free Tips';
-        }, 3000);
+          window.location.href = 'newsletter-welcome.html';
+        }, 1500);
       });
     }
   },
