@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderItinerary(itinerary, isPaid, price) {
   const main = document.querySelector('.main');
-  const interestLabels = itinerary.interests.map(id => {
+  try {
+  const interestLabels = (itinerary.interests||[]).map(id => {
     const found = CONFIG.interests.find(i => i.id === id);
     return found ? found.icon + ' ' + found.label : id;
   }).join(', ');
@@ -110,14 +111,14 @@ function renderItinerary(itinerary, isPaid, price) {
       <!-- Concierge Add-on -->
       <div style="background:var(--color-surface);border:2px solid var(--color-accent);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin-top:2rem;">
         <div style="font-size:2rem;margin-bottom:0.5rem;">🛎️</div>
-        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $50</h3>
+        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $150</h3>
         <p style="color:var(--color-text-muted);max-width:500px;margin:0 auto 1rem;font-size:0.95rem;">
           We'll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.
         </p>
         <ul style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left;">
           ${CONFIG.concierge.features.map(f => '<li style="padding:0.3rem 0;font-size:0.85rem;"><span style="color:var(--color-success);font-weight:700;margin-right:0.5rem;">✓</span>' + f + '</li>').join('')}
         </ul>
-        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $50</button>
+        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $150</button>
       </div>
 
       <!-- Consultation Upsell -->
@@ -206,6 +207,20 @@ function renderItinerary(itinerary, isPaid, price) {
       });
     }
   }
+  } catch (e) {
+    console.error('Itinerary render error:', e);
+    main.innerHTML = `
+      <div class="section" style="text-align:center;padding:60px 20px;">
+        <h2>Something went wrong</h2>
+        <p style="color:var(--color-text-muted);margin:1rem 0;">There was an error displaying your itinerary. This can happen if your browser data is outdated.</p>
+        <p style="color:var(--color-error);font-size:0.85rem;margin-bottom:2rem;">${e.message}</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="wizard.html" class="btn btn--primary btn--large">Generate New Itinerary</a>
+          <button class="btn btn--outline btn--large" onclick="localStorage.clear();location.reload();">Clear Data & Retry</button>
+        </div>
+      </div>
+    `;
+  }
 }
 
 function renderHotelCard(hotel) {
@@ -232,7 +247,8 @@ function renderHotelCard(hotel) {
 }
 
 function renderDayCard(day, locked) {
-  const dailyCost = day.dailyCost || day.activities.reduce((sum, a) => sum + (a.estimatedCostValue || 0), 0);
+  const activities = day.activities || [];
+  const dailyCost = day.dailyCost || activities.reduce((sum, a) => sum + (a.estimatedCostValue || 0), 0);
   return `
     <div class="day-card ${locked ? 'day-card--locked' : ''}" id="day-${day.dayNumber}">
       <div class="day-card__header">
@@ -242,7 +258,7 @@ function renderDayCard(day, locked) {
         </div>
         <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
           <div class="day-card__neighbourhoods">
-            ${day.neighbourhoods.slice(0, 3).map(n =>
+            ${(day.neighbourhoods||[]).slice(0, 3).map(n =>
               `<span class="badge badge--accent">${n}</span>`
             ).join('')}
           </div>
@@ -251,14 +267,14 @@ function renderDayCard(day, locked) {
       </div>
       <div class="day-card__body">
         <div class="timeline">
-          ${day.activities.map(activity => renderActivity(activity)).join('')}
+          ${activities.map(activity => renderActivity(activity)).join('')}
         </div>
       </div>
       ${locked ? `
         <div class="lock-banner">
           <div class="lock-banner__icon">🔒</div>
           <div class="lock-banner__text">Day ${day.dayNumber}: ${day.theme}</div>
-          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">${day.activities.length} activities planned across ${day.neighbourhoods.slice(0,2).join(' & ')}</p>
+          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">${activities.length} activities planned across ${(day.neighbourhoods||[]).slice(0,2).join(' & ')}</p>
           <button class="btn btn--primary btn--small" onclick="document.getElementById('purchase-section')?.scrollIntoView({behavior:'smooth'})">
             Unlock All Days
           </button>

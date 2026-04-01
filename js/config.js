@@ -1,12 +1,12 @@
 const CONFIG = {
-  siteName: 'London Journey Planner',
-  siteTagline: 'Your Perfect London Trip, Curated by Experts',
+  siteName: 'London & UK Planner',
+  siteTagline: 'Your Perfect London & UK Trip, Curated by Experts',
 
   pricing: {
     tier1: { label: 'Short Stay', days: [1, 5], price: 20, currency: 'USD' },
     tier2: { label: 'Week Explorer', days: [6, 10], price: 40, currency: 'USD' },
     tier3: { label: 'Extended Adventure', days: [11, 21], price: 75, currency: 'USD' },
-    concierge: { price: 50, currency: 'USD', label: 'Booking Concierge' },
+    concierge: { price: 150, currency: 'USD', label: 'Booking Concierge' },
     consultation: { price: 75, currency: 'USD', duration: '1 hour' }
   },
 
@@ -205,7 +205,7 @@ const CONFIG = {
 
   // Concierge service details
   concierge: {
-    price: 50,
+    price: 150,
     title: 'Booking Concierge Service',
     description: 'We\'ll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.',
     features: [
@@ -329,7 +329,7 @@ const GHL = {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          source: 'London Journey Planner',
+          source: 'London & UK Planner',
           timestamp: new Date().toISOString()
         })
       });

@@ -15,7 +15,7 @@ const UI = {
       <div class="header__inner">
         <a href="index.html" class="header__logo">
           <span class="header__logo-icon">🇬🇧</span>
-          London Planner
+          London & UK Planner
         </a>
         <nav class="header__nav" id="main-nav">
           <a href="demo.html">Demo</a>
@@ -44,7 +44,7 @@ const UI = {
       <div class="container">
         <div class="footer__grid">
           <div>
-            <div class="footer__brand">🇬🇧 London Journey Planner</div>
+            <div class="footer__brand">🇬🇧 London & UK Planner</div>
             <p class="footer__desc">
               Expertly curated London itineraries tailored to your interests, budget, and travel style.
               Your perfect London adventure starts here.
@@ -100,7 +100,7 @@ const UI = {
         </div>
 
         <div class="footer__bottom">
-          <span>&copy; ${new Date().getFullYear()} London Journey Planner. All rights reserved.</span>
+          <span>&copy; ${new Date().getFullYear()} London & UK Planner. All rights reserved.</span>
           <p class="footer__disclosure">${CONFIG.affiliate.disclosureText}</p>
         </div>
       </div>

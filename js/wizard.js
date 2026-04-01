@@ -803,7 +803,7 @@ document.addEventListener('DOMContentLoaded', () => {
           Preview first 2 days free, then purchase to unlock all ${totalDays} days + PDF export
         </p>
         <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.5rem;">
-          Optional add-ons: Booking Concierge ($50) &middot; Personal Consultation ($75)
+          Optional add-ons: Booking Concierge ($150) &middot; Personal Consultation ($75)
         </p>
       </div>
     `;
