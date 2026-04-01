@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p style="text-align:center;font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
               Select destinations that interest you — we'll build the perfect route
             </p>
-            <div id="uk-destinations-grid" class="interests-grid" style="max-width:800px;margin:0 auto;">
+            <div id="uk-destinations-grid" style="max-width:900px;margin:0 auto;">
             </div>
 
             <div id="uk-price-hint" style="text-align:center;margin-top:1.5rem;">
@@ -479,24 +479,51 @@ document.addEventListener('DOMContentLoaded', () => {
     grid.innerHTML = ukDestinations.map(dest => {
       const typeIcon = dest.type === 'city' ? '🏰' : dest.type === 'coastal' ? '🏖️' : '🌿';
       const selected = ukExtension.destinations.includes(dest.id);
+      const topHighlights = (dest.highlights || []).slice(0, 3).map(h => h.name);
+      const bestFor = (dest.bestFor || []).slice(0, 3);
+      const travel = dest.gettingThere || {};
       return `
-        <div class="chip ${selected ? 'active' : ''}" data-uk-dest="${dest.id}" style="flex-direction:column;padding:1.25rem 1.75rem;min-width:155px;border-radius:var(--radius-lg);">
-          <span style="font-size:1.75rem;">${typeIcon}</span>
-          <strong style="margin-top:0.25rem;">${dest.name}</strong>
-          <span style="font-size:0.7rem;color:var(--color-text-muted);margin-top:0.15rem;">${dest.region} &middot; ${dest.daysRecommended}${dest.daysRecommended > 1 ? ' days' : ' day'}</span>
+        <div class="uk-dest-card ${selected ? 'active' : ''}" data-uk-dest="${dest.id}">
+          <div class="uk-dest-card__header">
+            <span class="uk-dest-card__icon">${typeIcon}</span>
+            <div>
+              <strong class="uk-dest-card__name">${dest.name}</strong>
+              <span class="uk-dest-card__region">${dest.region}</span>
+            </div>
+            <span class="uk-dest-card__check">${selected ? '✓' : '+'}</span>
+          </div>
+          <p class="uk-dest-card__desc">${dest.description}</p>
+          <div class="uk-dest-card__meta">
+            <span>🚂 ${travel.duration || '?'} from ${travel.from || 'London'}</span>
+            <span>📅 ${dest.daysRecommended} ${dest.daysRecommended > 1 ? 'days' : 'day'} recommended</span>
+            ${travel.cost ? `<span>💷 ~£${travel.cost} train</span>` : ''}
+          </div>
+          ${topHighlights.length ? `
+            <div class="uk-dest-card__highlights">
+              <strong>Top sights:</strong> ${topHighlights.join(' · ')}
+            </div>
+          ` : ''}
+          ${bestFor.length ? `
+            <div class="uk-dest-card__tags">
+              ${bestFor.map(b => `<span class="uk-dest-card__tag">${b}</span>`).join('')}
+            </div>
+          ` : ''}
         </div>
       `;
     }).join('');
 
-    document.querySelectorAll('[data-uk-dest]').forEach(chip => {
-      chip.addEventListener('click', () => {
-        const id = chip.dataset.ukDest;
+    document.querySelectorAll('[data-uk-dest]').forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.dataset.ukDest;
+        const checkEl = card.querySelector('.uk-dest-card__check');
         if (ukExtension.destinations.includes(id)) {
           ukExtension.destinations = ukExtension.destinations.filter(d => d !== id);
-          chip.classList.remove('active');
+          card.classList.remove('active');
+          if (checkEl) checkEl.textContent = '+';
         } else {
           ukExtension.destinations.push(id);
-          chip.classList.add('active');
+          card.classList.add('active');
+          if (checkEl) checkEl.textContent = '✓';
         }
         updateUKPriceHint();
       });

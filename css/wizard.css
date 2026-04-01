@@ -310,3 +310,133 @@
 .wizard__nav .btn-back:hover {
   color: var(--color-primary);
 }
+
+/* UK Destination Cards */
+.uk-dest-card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.uk-dest-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.uk-dest-card.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.uk-dest-card.active .uk-dest-card__check {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.uk-dest-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.uk-dest-card__icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.uk-dest-card__name {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.uk-dest-card__region {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.uk-dest-card__check {
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.uk-dest-card__desc {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.uk-dest-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.65rem;
+}
+
+.uk-dest-card__highlights {
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+
+.uk-dest-card__highlights strong {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.uk-dest-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.uk-dest-card__tag {
+  display: inline-block;
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+.uk-dest-card.active .uk-dest-card__tag {
+  background: rgba(255,255,255,0.6);
+}
+
+#uk-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  #uk-destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}
