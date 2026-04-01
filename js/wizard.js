@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let interests = state.interests || [];
   let occasion = state.occasion || 'none';
   let groupType = state.groupType || 'couple';
+  let groupDetails = state.groupDetails || {};
   let ukExtension = state.ukExtension || { enabled: false, days: 0, destinations: [] };
   let ukDestinations = [];
 
@@ -103,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
               Select destinations that interest you — we'll build the perfect route
             </p>
             <div id="uk-destinations-grid" class="interests-grid" style="max-width:800px;margin:0 auto;">
-              <!-- populated dynamically -->
             </div>
 
             <div id="uk-price-hint" style="text-align:center;margin-top:1.5rem;">
@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 3: Group Type -->
+        <!-- Step 3: Group Type with Detail Forms -->
         <div class="wizard__step" data-step="3">
           <h2 class="wizard__step-title">Who's travelling?</h2>
-          <p class="wizard__step-desc">We'll tailor activities and venues to suit your group</p>
-          <div class="interests-grid" style="max-width: 600px; margin: 2rem auto 0;">
+          <p class="wizard__step-desc">We'll tailor activities and venues to suit your group perfectly</p>
+          <div class="interests-grid" style="max-width: 700px; margin: 2rem auto 0;">
             ${CONFIG.groupTypes.map(gt => `
               <div class="chip ${groupType === gt.id ? 'active' : ''}" data-group="${gt.id}">
                 <span class="chip__icon">${gt.icon}</span>
@@ -123,13 +123,21 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             `).join('')}
           </div>
+
+          <!-- Dynamic Group Details Panel -->
+          <div id="group-details-panel" style="max-width:600px;margin:2rem auto 0;display:none;">
+            <div class="card">
+              <div class="card__body" id="group-details-form">
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Step 4: Occasion -->
         <div class="wizard__step" data-step="4">
           <h2 class="wizard__step-title">What's the occasion?</h2>
           <p class="wizard__step-desc">Celebrating something special? We'll make it unforgettable</p>
-          <div class="interests-grid" style="max-width: 700px; margin: 2rem auto 0;">
+          <div class="interests-grid" style="max-width: 800px; margin: 2rem auto 0;">
             ${CONFIG.occasions.map(occ => `
               <div class="chip ${occasion === occ.id ? 'active' : ''}" data-occasion="${occ.id}">
                 <span class="chip__icon">${occ.icon}</span>
@@ -167,14 +175,14 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Step 6: Interests -->
+        <!-- Step 6: Interests (select up to 5 minimum) -->
         <div class="wizard__step" data-step="6">
           <h2 class="wizard__step-title">What are you into?</h2>
-          <p class="wizard__step-desc">Select at least 3 interests so we can personalise your trip</p>
+          <p class="wizard__step-desc">Select at least 5 interests so we can really personalise your trip</p>
           <div class="interest-count">
-            <strong id="interest-count">${interests.length}</strong> selected (minimum 3)
+            <strong id="interest-count">${interests.length}</strong> selected (minimum 5)
           </div>
-          <div class="interests-grid">
+          <div class="interests-grid" style="max-width:900px;margin:0 auto;">
             ${CONFIG.interests.map(interest => `
               <div class="chip ${interests.includes(interest.id) ? 'active' : ''}"
                 data-interest="${interest.id}">
@@ -206,6 +214,264 @@ document.addEventListener('DOMContentLoaded', () => {
     attachEvents();
   }
 
+  // ============================================================
+  // GROUP DETAILS FORMS
+  // ============================================================
+  function renderGroupDetails(type) {
+    const panel = document.getElementById('group-details-panel');
+    const form = document.getElementById('group-details-form');
+    const config = CONFIG.groupTypes.find(g => g.id === type);
+
+    if (!config || !config.needsDetails) {
+      panel.style.display = 'none';
+      groupDetails = {};
+      return;
+    }
+
+    panel.style.display = 'block';
+
+    switch (type) {
+      case 'family':
+        form.innerHTML = `
+          <h4 style="margin-bottom:1rem;">Tell us about your family</h4>
+          <div style="display:grid;gap:1rem;">
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many adults?</label>
+              <select id="gd-adults" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[1,2,3,4,5,6].map(n => `<option value="${n}" ${(groupDetails.adults||2)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many children?</label>
+              <select id="gd-children" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[0,1,2,3,4,5,6].map(n => `<option value="${n}" ${(groupDetails.children||1)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div id="children-ages-container">
+              ${renderChildAgeFields(groupDetails.children || 1)}
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Any mobility needs? <small style="font-weight:400;color:var(--color-text-muted);">(pushchairs, wheelchairs, limited walking)</small></label>
+              <select id="gd-mobility" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="none" ${(groupDetails.mobility||'none')==='none'?'selected':''}>No special needs</option>
+                <option value="pushchair" ${groupDetails.mobility==='pushchair'?'selected':''}>Pushchair / Stroller</option>
+                <option value="limited" ${groupDetails.mobility==='limited'?'selected':''}>Limited walking ability</option>
+                <option value="wheelchair" ${groupDetails.mobility==='wheelchair'?'selected':''}>Wheelchair accessible needed</option>
+              </select>
+            </div>
+          </div>
+        `;
+        // Dynamic children age fields
+        document.getElementById('gd-children').addEventListener('change', (e) => {
+          const count = parseInt(e.target.value);
+          document.getElementById('children-ages-container').innerHTML = renderChildAgeFields(count);
+          groupDetails.children = count;
+        });
+        break;
+
+      case 'parent-child':
+        form.innerHTML = `
+          <h4 style="margin-bottom:1rem;">Tell us about your trip</h4>
+          <div style="display:grid;gap:1rem;">
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many children?</label>
+              <select id="gd-children" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[1,2,3,4].map(n => `<option value="${n}" ${(groupDetails.children||1)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div id="children-ages-container">
+              ${renderChildAgeFields(groupDetails.children || 1)}
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Any mobility needs?</label>
+              <select id="gd-mobility" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="none" ${(groupDetails.mobility||'none')==='none'?'selected':''}>No special needs</option>
+                <option value="pushchair" ${groupDetails.mobility==='pushchair'?'selected':''}>Pushchair / Stroller</option>
+              </select>
+            </div>
+          </div>
+        `;
+        document.getElementById('gd-children').addEventListener('change', (e) => {
+          document.getElementById('children-ages-container').innerHTML = renderChildAgeFields(parseInt(e.target.value));
+        });
+        break;
+
+      case 'multi-family':
+        form.innerHTML = `
+          <h4 style="margin-bottom:1rem;">Tell us about the group</h4>
+          <div style="display:grid;gap:1rem;">
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many families?</label>
+              <select id="gd-families" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[2,3,4,5].map(n => `<option value="${n}" ${(groupDetails.families||2)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Total adults?</label>
+              <select id="gd-adults" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[2,3,4,5,6,7,8,9,10].map(n => `<option value="${n}" ${(groupDetails.adults||4)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Total children?</label>
+              <select id="gd-children" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[0,1,2,3,4,5,6,7,8].map(n => `<option value="${n}" ${(groupDetails.children||3)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Age range of children</label>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                ${['Under 2', '2-5', '6-11', '12-17'].map(range => `
+                  <label style="display:flex;align-items:center;gap:0.35rem;padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-full);font-size:0.85rem;cursor:pointer;">
+                    <input type="checkbox" class="gd-age-range" value="${range}" ${(groupDetails.ageRanges||[]).includes(range)?'checked':''}>
+                    ${range}
+                  </label>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+        break;
+
+      case 'friends-mixed':
+      case 'girls-group':
+      case 'lads-group':
+        const groupLabel = type === 'girls-group' ? 'girls' : type === 'lads-group' ? 'lads' : 'friends';
+        form.innerHTML = `
+          <h4 style="margin-bottom:1rem;">Tell us about your ${groupLabel} group</h4>
+          <div style="display:grid;gap:1rem;">
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many people?</label>
+              <select id="gd-group-size" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[2,3,4,5,6,7,8,9,10,11,12,13,14,15,'16+'].map(n => `<option value="${n}" ${(groupDetails.groupSize||4)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">General age range of the group</label>
+              <select id="gd-age-range" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="18-25" ${(groupDetails.ageRange||'')==='18-25'?'selected':''}>18-25 (Young adults)</option>
+                <option value="25-35" ${(groupDetails.ageRange||'25-35')==='25-35'?'selected':''}>25-35 (Late 20s/early 30s)</option>
+                <option value="35-50" ${groupDetails.ageRange==='35-50'?'selected':''}>35-50 (Mid-life)</option>
+                <option value="50-65" ${groupDetails.ageRange==='50-65'?'selected':''}>50-65</option>
+                <option value="65+" ${groupDetails.ageRange==='65+'?'selected':''}>65+</option>
+                <option value="mixed" ${groupDetails.ageRange==='mixed'?'selected':''}>Mixed ages</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Energy level <small style="font-weight:400;color:var(--color-text-muted);">(how active is the group?)</small></label>
+              <select id="gd-energy" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="relaxed" ${(groupDetails.energy||'')==='relaxed'?'selected':''}>Relaxed — we like to take it easy</option>
+                <option value="moderate" ${(groupDetails.energy||'moderate')==='moderate'?'selected':''}>Moderate — mix of activity and chill</option>
+                <option value="high" ${groupDetails.energy==='high'?'selected':''}>High energy — pack in as much as possible!</option>
+                <option value="party" ${groupDetails.energy==='party'?'selected':''}>Party mode — late nights and big experiences</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Anything else we should know? <small style="font-weight:400;color:var(--color-text-muted);">(optional)</small></label>
+              <textarea id="gd-notes" rows="2" placeholder="e.g. One person uses a wheelchair, we want a private dining room, someone is vegetarian..."
+                style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.9rem;resize:vertical;font-family:var(--font-body);">${groupDetails.notes || ''}</textarea>
+            </div>
+          </div>
+        `;
+        break;
+
+      case 'work-group':
+        form.innerHTML = `
+          <h4 style="margin-bottom:1rem;">Tell us about the work trip</h4>
+          <div style="display:grid;gap:1rem;">
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">How many colleagues?</label>
+              <select id="gd-group-size" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                ${[2,3,4,5,6,7,8,9,10,15,20,'20+'].map(n => `<option value="${n}" ${(groupDetails.groupSize||5)==n?'selected':''}>${n}</option>`).join('')}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Type of trip</label>
+              <select id="gd-work-type" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="team-building" ${(groupDetails.workType||'team-building')==='team-building'?'selected':''}>Team building / Offsite</option>
+                <option value="client-entertainment" ${groupDetails.workType==='client-entertainment'?'selected':''}>Client entertainment</option>
+                <option value="conference" ${groupDetails.workType==='conference'?'selected':''}>Conference with free time</option>
+                <option value="bleisure" ${groupDetails.workType==='bleisure'?'selected':''}>Business + leisure (bleisure)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Budget expensed?</label>
+              <select id="gd-expensed" style="width:100%;padding:0.6rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
+                <option value="yes" ${(groupDetails.expensed||'yes')==='yes'?'selected':''}>Yes — company pays</option>
+                <option value="partial" ${groupDetails.expensed==='partial'?'selected':''}>Partially — some personal spend</option>
+                <option value="no" ${groupDetails.expensed==='no'?'selected':''}>No — personal budget</option>
+              </select>
+            </div>
+          </div>
+        `;
+        break;
+    }
+  }
+
+  function renderChildAgeFields(count) {
+    if (count === 0) return '<p style="color:var(--color-text-muted);font-size:0.9rem;">No children — got it!</p>';
+    const existingAges = groupDetails.childAges || [];
+    return `
+      <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Age of each child</label>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        ${Array.from({length: count}, (_, i) => `
+          <select class="child-age-select" data-child="${i}"
+            style="width:80px;padding:0.5rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.9rem;">
+            <option value="" disabled ${!existingAges[i]?'selected':''}>Age</option>
+            ${['Under 1','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'].map(age =>
+              `<option value="${age}" ${existingAges[i]===age?'selected':''}>${age}</option>`
+            ).join('')}
+          </select>
+        `).join('')}
+      </div>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.5rem;">This helps us suggest age-appropriate activities</p>
+    `;
+  }
+
+  function collectGroupDetails() {
+    const type = groupType;
+    const details = { type };
+
+    switch (type) {
+      case 'family':
+      case 'parent-child': {
+        details.adults = parseInt(document.getElementById('gd-adults')?.value || 2);
+        details.children = parseInt(document.getElementById('gd-children')?.value || 1);
+        details.childAges = Array.from(document.querySelectorAll('.child-age-select'))
+          .map(s => s.value).filter(Boolean);
+        details.mobility = document.getElementById('gd-mobility')?.value || 'none';
+        break;
+      }
+      case 'multi-family': {
+        details.families = parseInt(document.getElementById('gd-families')?.value || 2);
+        details.adults = parseInt(document.getElementById('gd-adults')?.value || 4);
+        details.children = parseInt(document.getElementById('gd-children')?.value || 3);
+        details.ageRanges = Array.from(document.querySelectorAll('.gd-age-range:checked')).map(c => c.value);
+        break;
+      }
+      case 'friends-mixed':
+      case 'girls-group':
+      case 'lads-group': {
+        details.groupSize = document.getElementById('gd-group-size')?.value || '4';
+        details.ageRange = document.getElementById('gd-age-range')?.value || '25-35';
+        details.energy = document.getElementById('gd-energy')?.value || 'moderate';
+        details.notes = document.getElementById('gd-notes')?.value || '';
+        break;
+      }
+      case 'work-group': {
+        details.groupSize = document.getElementById('gd-group-size')?.value || '5';
+        details.workType = document.getElementById('gd-work-type')?.value || 'team-building';
+        details.expensed = document.getElementById('gd-expensed')?.value || 'yes';
+        break;
+      }
+    }
+
+    groupDetails = details;
+  }
+
+  // ============================================================
+  // UK DESTINATIONS
+  // ============================================================
   function populateUKDestinations() {
     const grid = document.getElementById('uk-destinations-grid');
     if (!grid || !ukDestinations.length) return;
@@ -222,7 +488,6 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }).join('');
 
-    // Reattach events
     document.querySelectorAll('[data-uk-dest]').forEach(chip => {
       chip.addEventListener('click', () => {
         const id = chip.dataset.ukDest;
@@ -253,7 +518,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const ukDays = parseInt(document.getElementById('uk-duration-slider')?.value || ukExtension.days || 5);
     const ukPrice = getUKExtensionPrice(ukDays);
     const londonPrice = State.getPrice(tripDays);
-    const totalDays = tripDays + ukDays;
     const selectedDests = ukExtension.destinations.map(id => {
       const d = ukDestinations.find(dest => dest.id === id);
       return d ? d.name : id;
@@ -267,6 +531,9 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
+  // ============================================================
+  // EVENT HANDLERS
+  // ============================================================
   function attachEvents() {
     // Duration slider
     const slider = document.getElementById('duration-slider');
@@ -324,16 +591,21 @@ document.addEventListener('DOMContentLoaded', () => {
           interests.push(id);
           chip.classList.add('active');
         }
-        document.getElementById('interest-count').textContent = interests.length;
+        const countEl = document.getElementById('interest-count');
+        if (countEl) countEl.textContent = interests.length;
       });
     });
 
     // Group type chips
     document.querySelectorAll('.chip[data-group]').forEach(chip => {
       chip.addEventListener('click', () => {
+        // Save current group details before switching
+        if (groupType) collectGroupDetails();
+
         document.querySelectorAll('.chip[data-group]').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         groupType = chip.dataset.group;
+        renderGroupDetails(groupType);
       });
     });
 
@@ -349,10 +621,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation
     document.getElementById('btn-next').addEventListener('click', handleNext);
     document.getElementById('btn-back').addEventListener('click', handleBack);
+
+    // Render initial group details if needed
+    renderGroupDetails(groupType);
   }
 
   function handleNext() {
     if (!validateStep(currentStep)) return;
+
+    // Collect group details before leaving step 3
+    if (currentStep === 3) collectGroupDetails();
 
     if (currentStep === totalSteps) {
       generateItinerary();
@@ -366,18 +644,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleBack() {
+    // Collect group details before leaving step 3
+    if (currentStep === 3) collectGroupDetails();
+
     if (currentStep > 1) {
       currentStep--;
       updateStep(currentStep);
       if (currentStep === 2) populateUKDestinations();
+      if (currentStep === 3) renderGroupDetails(groupType);
     }
   }
 
   function validateStep(step) {
     switch (step) {
       case 6:
-        if (interests.length < 3) {
-          UI.showToast('Please select at least 3 interests');
+        if (interests.length < 5) {
+          UI.showToast('Please select at least 5 interests to help us personalise your trip');
           return false;
         }
         return true;
@@ -447,6 +729,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const totalDays = tripDays + (ukExtension.enabled ? ukExtension.days : 0);
 
+    // Group details summary
+    let groupDetailsSummary = '';
+    if (groupDetails && Object.keys(groupDetails).length > 1) {
+      const parts = [];
+      if (groupDetails.adults) parts.push(`${groupDetails.adults} adults`);
+      if (groupDetails.children) {
+        const agesStr = groupDetails.childAges?.length ? ` (ages: ${groupDetails.childAges.join(', ')})` : '';
+        parts.push(`${groupDetails.children} children${agesStr}`);
+      }
+      if (groupDetails.groupSize) parts.push(`${groupDetails.groupSize} people`);
+      if (groupDetails.ageRange && groupDetails.ageRange !== 'mixed') parts.push(`ages ${groupDetails.ageRange}`);
+      if (groupDetails.energy) parts.push(`${groupDetails.energy} energy`);
+      if (groupDetails.mobility && groupDetails.mobility !== 'none') parts.push(groupDetails.mobility);
+      if (groupDetails.workType) parts.push(groupDetails.workType.replace(/-/g, ' '));
+      if (groupDetails.notes) parts.push(`Note: ${groupDetails.notes}`);
+      if (groupDetails.ageRanges?.length) parts.push(`child ages: ${groupDetails.ageRanges.join(', ')}`);
+
+      if (parts.length > 0) {
+        groupDetailsSummary = `
+          <div class="review-item">
+            <span class="review-item__label">Group Details</span>
+            <span class="review-item__value" style="font-size:0.9rem;">${parts.join(' · ')}</span>
+          </div>
+        `;
+      }
+    }
+
     card.innerHTML = `
       <div class="review-item">
         <span class="review-item__label">London</span>
@@ -461,6 +770,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="review-item__label">Travellers</span>
         <span class="review-item__value">${groupLabel ? groupLabel.icon + ' ' + groupLabel.label : groupType}</span>
       </div>
+      ${groupDetailsSummary}
       <div class="review-item">
         <span class="review-item__label">Occasion</span>
         <span class="review-item__value">${occasionLabel ? occasionLabel.icon + ' ' + occasionLabel.label : occasion}</span>
@@ -478,7 +788,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="review-item__value">${CONFIG.budgetTiers.entertainment[budget.entertainment].label}</span>
       </div>
       <div class="review-item">
-        <span class="review-item__label">Interests</span>
+        <span class="review-item__label">Interests (${interests.length})</span>
         <div class="review-interests">
           ${interests.map(id => {
             const interest = CONFIG.interests.find(i => i.id === id);
@@ -505,7 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.innerHTML = '<div class="spinner" style="width:20px;height:20px;border-width:2px;display:inline-block;vertical-align:middle;"></div> Generating...';
 
     State.save({
-      tripDays, budget, interests, occasion, groupType, ukExtension,
+      tripDays, budget, interests, occasion, groupType, groupDetails, ukExtension,
       generatedAt: new Date().toISOString()
     });
 
@@ -522,6 +832,9 @@ document.addEventListener('DOMContentLoaded', () => {
       itinerary.tripDays = tripDays + ukExtension.days;
     }
 
+    // Attach group details to itinerary
+    itinerary.groupDetails = groupDetails;
+
     State.saveItinerary(itinerary);
     window.location.href = 'itinerary.html';
   }
@@ -531,7 +844,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let dayNum = startDay + 1;
     let daysRemaining = totalUKDays;
 
-    // If no destinations selected, auto-pick based on interests
     if (destinations.length === 0) {
       destinations = ukDestinations
         .map(d => ({ ...d, score: d.tags.filter(t => interests.includes(t)).length }))
@@ -545,28 +857,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const daysHere = Math.min(dest.daysRecommended, daysRemaining);
       const budgetKey = budget.accommodation;
       const hotel = dest.hotels[budgetKey] || dest.hotels['mid-range'];
-
-      // Travel day / first day
-      const firstDayActivities = [
-        {
-          timeSlot: "Morning",
-          period: "morning",
-          name: `Travel to ${dest.name}`,
-          description: `${dest.gettingThere.mode === 'train' ? 'Take the train' : 'Travel'} from ${dest.gettingThere.from} (${dest.gettingThere.duration}). ${dest.description}`,
-          estimatedCost: `£${dest.gettingThere.cost}`,
-          estimatedCostValue: dest.gettingThere.cost,
-          affiliateUrl: dest.gettingThere.affiliateUrl || '',
-          affiliateLabel: dest.gettingThere.affiliateUrl ? 'Book Train Tickets' : '',
-          tips: `Book trains in advance for the best prices.`,
-          address: dest.gettingThere.from,
-          neighbourhood: dest.name,
-          type: 'transport'
-        }
-      ];
-
-      // Add highlights across the days
       const highlights = [...dest.highlights];
       let highlightIdx = 0;
+
+      const firstDayActivities = [
+        {
+          timeSlot: "Morning", period: "morning",
+          name: `Travel to ${dest.name}`,
+          description: `${dest.gettingThere.mode === 'train' ? 'Take the train' : 'Travel'} from ${dest.gettingThere.from} (${dest.gettingThere.duration}). ${dest.description}`,
+          estimatedCost: `£${dest.gettingThere.cost}`, estimatedCostValue: dest.gettingThere.cost,
+          affiliateUrl: dest.gettingThere.affiliateUrl || '', affiliateLabel: dest.gettingThere.affiliateUrl ? 'Book Train Tickets' : '',
+          tips: `Book trains in advance for the best prices.`,
+          address: dest.gettingThere.from, neighbourhood: dest.name, type: 'transport'
+        }
+      ];
 
       for (let d = 0; d < daysHere; d++) {
         const activities = d === 0 ? [...firstDayActivities] : [];
@@ -578,54 +882,33 @@ document.addEventListener('DOMContentLoaded', () => {
           activities.push({
             timeSlot: d === 0 && s === 0 ? 'Afternoon' : ['Morning', 'Lunch', 'Afternoon', 'Evening'][s % 4],
             period: periods[(d === 0 ? s + 1 : s) % 4],
-            name: h.name,
-            description: h.description,
-            estimatedCost: h.cost > 0 ? `£${h.cost.toFixed(2)}` : 'Free',
-            estimatedCostValue: h.cost,
-            affiliateUrl: h.affiliateUrl || '',
-            affiliateLabel: h.affiliateUrl ? 'Book Tickets' : '',
-            tips: '',
-            address: dest.name,
-            neighbourhood: dest.name,
-            type: 'attraction'
+            name: h.name, description: h.description,
+            estimatedCost: h.cost > 0 ? `£${h.cost.toFixed(2)}` : 'Free', estimatedCostValue: h.cost,
+            affiliateUrl: h.affiliateUrl || '', affiliateLabel: h.affiliateUrl ? 'Book Tickets' : '',
+            tips: '', address: dest.name, neighbourhood: dest.name, type: 'attraction'
           });
         }
 
-        // Add restaurant
         if (dest.bestRestaurants.length > 0) {
           const rest = dest.bestRestaurants[d % dest.bestRestaurants.length];
           activities.push({
-            timeSlot: '18:30 - 20:00',
-            period: 'dinner',
-            name: rest,
+            timeSlot: '18:30 - 20:00', period: 'dinner', name: rest,
             description: `Recommended restaurant in ${dest.name}.`,
-            estimatedCost: '£25-45',
-            estimatedCostValue: 35,
-            affiliateUrl: '',
-            affiliateLabel: '',
+            estimatedCost: '£25-45', estimatedCostValue: 35,
+            affiliateUrl: '', affiliateLabel: '',
             tips: 'Book in advance during peak season.',
-            address: dest.name,
-            neighbourhood: dest.name,
-            type: 'restaurant'
+            address: dest.name, neighbourhood: dest.name, type: 'restaurant'
           });
         }
 
-        // Add pub
         if (dest.bestPubs.length > 0) {
           const pub = dest.bestPubs[d % dest.bestPubs.length];
           activities.push({
-            timeSlot: '20:30 - 22:30',
-            period: 'evening',
-            name: pub,
+            timeSlot: '20:30 - 22:30', period: 'evening', name: pub,
             description: `A local favourite in ${dest.name}.`,
-            estimatedCost: '£5-10',
-            estimatedCostValue: 7,
-            affiliateUrl: '',
-            affiliateLabel: '',
-            tips: '',
-            address: dest.name,
-            neighbourhood: dest.name,
-            type: 'nightlife'
+            estimatedCost: '£5-10', estimatedCostValue: 7,
+            affiliateUrl: '', affiliateLabel: '',
+            tips: '', address: dest.name, neighbourhood: dest.name, type: 'nightlife'
           });
         }
 
@@ -633,9 +916,7 @@ document.addEventListener('DOMContentLoaded', () => {
           dayNumber: dayNum++,
           theme: `${dest.name}${daysHere > 1 ? ` — Day ${d + 1}` : ''}`,
           neighbourhoods: [dest.name, dest.region],
-          activities,
-          isUKExtension: true,
-          destination: dest
+          activities, isUKExtension: true, destination: dest
         });
 
         daysRemaining--;
