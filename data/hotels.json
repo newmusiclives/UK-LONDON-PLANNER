@@ -733,5 +733,20 @@
     "affiliateUrl": "https://www.booking.com/hotel/gb/lost-property-st-pauls-london",
     "affiliateLabel": "Check Availability",
     "tips": "Walk to St Paul's Cathedral in two minutes. The lobby cafe is a lovely spot for breakfast. Fun themed design."
+  },
+  {
+    "id": "kensington-hotel",
+    "name": "The Kensington Hotel",
+    "description": "Elegant Victorian townhouse hotel in the heart of South Kensington. Classic English interiors, a tranquil garden, and easy access to three world-class museums.",
+    "neighbourhood": "South Kensington",
+    "budgetTier": ["mid-range", "premium"],
+    "tags": ["romance", "family", "history"],
+    "starRating": 4,
+    "priceRange": "£180-300/night",
+    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "address": "109-113 Queen's Gate, London SW7 5LP",
+    "affiliateUrl": "https://www.booking.com/hotel/gb/the-kensington",
+    "affiliateLabel": "Check Availability",
+    "tips": "Steps from the V&A, Natural History Museum, and Science Museum. The garden is a peaceful retreat. Harrods is a short walk."
   }
 ]

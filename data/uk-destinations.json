@@ -304,5 +304,263 @@
       "mid-range": { "name": "Kingsmills Hotel Inverness", "cost": 130, "affiliateUrl": "https://www.booking.com/hotel/gb/kingsmills-inverness.html", "affiliateProvider": "booking" },
       "premium": { "name": "Inverlochy Castle Hotel", "cost": 400, "affiliateUrl": "https://www.booking.com/hotel/gb/inverlochy-castle.html", "affiliateProvider": "booking" }
     }
+  },
+  {
+    "id": "manchester",
+    "name": "Manchester",
+    "region": "North West",
+    "type": "city",
+    "description": "The birthplace of the Industrial Revolution, now a powerhouse of music, football, and culture. From Factory Records and Oasis to Old Trafford and the Etihad, Manchester pulses with energy and reinvention.",
+    "daysRecommended": 2,
+    "tags": ["music", "sports", "nightlife", "food", "history", "shopping"],
+    "highlights": [
+      { "name": "Old Trafford Stadium Tour (Manchester United)", "description": "Go behind the scenes at the Theatre of Dreams. Walk through the tunnel and sit in the dugout.", "cost": 28, "affiliateUrl": "https://www.getyourguide.com/manchester-l232/old-trafford-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Etihad Stadium Tour (Manchester City)", "description": "Explore the home of the Premier League champions with an interactive stadium tour.", "cost": 25, "affiliateUrl": "https://www.getyourguide.com/manchester-l232/etihad-stadium-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Northern Quarter", "description": "Manchester's creative heart. Street art, vinyl shops, craft beer bars, independent cafes, and live music venues.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Science and Industry Museum", "description": "Housed in the world's oldest surviving passenger railway station. Interactive exhibits on Manchester's industrial legacy. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Curry Mile (Rusholme)", "description": "Over 70 South Asian restaurants along Wilmslow Road — one of the greatest concentrations of curry houses in Europe.", "cost": 15, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "John Rylands Library", "description": "A stunning neo-Gothic library housing priceless manuscripts including a fragment of the Gospel of John from AD 200. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Hawksmoor Manchester", "Mana (Michelin star)", "Rudy's Neapolitan Pizza", "Dishoom Manchester"],
+    "bestPubs": ["The Peveril of the Peak", "The Britons Protection", "Marble Arch Inn"],
+    "gettingThere": { "from": "London Euston", "duration": "2h 5min", "mode": "train", "cost": 35, "affiliateUrl": "https://www.trainline.com/train-times/london-to-manchester", "affiliateProvider": "trainline" },
+    "bestFor": ["Football fans", "Music lovers", "Foodies", "Lads trips", "Nightlife seekers"],
+    "hotels": {
+      "budget": { "name": "YHA Manchester", "cost": 22 },
+      "mid-range": { "name": "Hotel Gotham", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/hotel-gotham.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Midland", "cost": 250, "affiliateUrl": "https://www.booking.com/hotel/gb/the-midland-manchester.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "cardiff",
+    "name": "Cardiff",
+    "region": "Wales",
+    "type": "city",
+    "description": "The Welsh capital blends a 2,000-year-old castle with a modern waterfront, Victorian arcades, and the roar of rugby at Principality Stadium. Compact, friendly, and full of character.",
+    "daysRecommended": 2,
+    "tags": ["history", "sports", "nightlife", "shopping", "architecture", "food"],
+    "highlights": [
+      { "name": "Cardiff Castle", "description": "A Norman keep, Roman fort, and lavish Victorian Gothic interiors all in one extraordinary site in the city centre.", "cost": 14, "affiliateUrl": "https://www.getyourguide.com/cardiff-l233/cardiff-castle-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Principality Stadium", "description": "The home of Welsh rugby. Stadium tours available, or catch a Six Nations match for an unforgettable atmosphere.", "cost": 15, "affiliateUrl": "https://www.getyourguide.com/cardiff-l233/principality-stadium-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Wales Millennium Centre", "description": "A striking arts venue in Cardiff Bay hosting opera, ballet, musicals, and concerts.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Cardiff Bay", "description": "A regenerated waterfront with restaurants, the Senedd (Welsh Parliament), and boat trips around the barrage.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Victorian & Edwardian Arcades", "description": "A network of beautiful covered shopping arcades — the largest collection in the UK. Independent shops, coffee, and Welsh cakes.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "National Museum Cardiff", "description": "Impressive Impressionist art collection including Renoir and Monet, plus natural history galleries. Free entry.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Potted Pig", "Heaneys", "Cafe Citta", "Purple Poppadom (Michelin recommended)"],
+    "bestPubs": ["City Arms", "Tiny Rebel Cardiff", "The Dead Canary (cocktail bar)"],
+    "gettingThere": { "from": "London Paddington", "duration": "2h", "mode": "train", "cost": 30, "affiliateUrl": "https://www.trainline.com/train-times/london-to-cardiff", "affiliateProvider": "trainline" },
+    "bestFor": ["Rugby fans", "History lovers", "Shopping lovers", "Weekend breakers"],
+    "hotels": {
+      "budget": { "name": "Safestay Cardiff", "cost": 22 },
+      "mid-range": { "name": "Hotel Indigo Cardiff", "cost": 120, "affiliateUrl": "https://www.booking.com/hotel/gb/hotel-indigo-cardiff.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Voco St David's Cardiff", "cost": 200, "affiliateUrl": "https://www.booking.com/hotel/gb/st-davids-hotel-spa.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "belfast",
+    "name": "Belfast",
+    "region": "Northern Ireland",
+    "type": "city",
+    "description": "A city reborn. The Titanic Quarter, political murals, vibrant Cathedral Quarter pubs, and easy access to Game of Thrones filming locations and the Giant's Causeway make Belfast one of the UK's most exciting destinations.",
+    "daysRecommended": 2,
+    "tags": ["history", "nightlife", "food", "film", "architecture", "adventure"],
+    "highlights": [
+      { "name": "Titanic Belfast", "description": "A world-class museum on the site where RMS Titanic was built. Nine interactive galleries telling the full story.", "cost": 24, "affiliateUrl": "https://www.getyourguide.com/belfast-l234/titanic-belfast-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Political Murals & Black Cab Tour", "description": "See the famous murals on the Falls and Shankill roads. A poignant, essential experience guided by local drivers.", "cost": 30, "affiliateUrl": "https://www.getyourguide.com/belfast-l234/black-cab-mural-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Cathedral Quarter", "description": "Belfast's cultural hub. Cobbled streets filled with pubs, live music, street art, and restaurants.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Giant's Causeway Day Trip", "description": "40,000 interlocking basalt columns on the Antrim Coast. A UNESCO World Heritage Site about 1.5 hours from Belfast.", "cost": 15, "affiliateUrl": "https://www.getyourguide.com/belfast-l234/giants-causeway-day-tour", "affiliateProvider": "getyourguide" },
+      { "name": "Game of Thrones Filming Locations", "description": "Northern Ireland was the primary filming location for the series. Visit the Dark Hedges, Castle Ward, and Cushendun Caves.", "cost": 40, "affiliateUrl": "https://www.getyourguide.com/belfast-l234/game-of-thrones-tour", "affiliateProvider": "getyourguide" },
+      { "name": "St George's Market", "description": "A Victorian covered market with local food, crafts, and live music on weekends. One of the best markets in the UK.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["OX Belfast (Michelin star)", "The Muddlers Club", "Deanes EIPIC", "Barking Dog"],
+    "bestPubs": ["The Crown Liquor Saloon (National Trust)", "The Duke of York", "Kelly's Cellars"],
+    "gettingThere": { "from": "London airports (Heathrow/Gatwick/Luton)", "duration": "1h 15min", "mode": "flight", "cost": 40, "affiliateUrl": "https://www.skyscanner.net/transport/flights/lond/bfs", "affiliateProvider": "skyscanner" },
+    "bestFor": ["History lovers", "Game of Thrones fans", "Pub lovers", "Culture seekers"],
+    "hotels": {
+      "budget": { "name": "Vagabonds Belfast", "cost": 20 },
+      "mid-range": { "name": "Bullitt Hotel", "cost": 110, "affiliateUrl": "https://www.booking.com/hotel/gb/bullitt-belfast.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Merchant Hotel", "cost": 280, "affiliateUrl": "https://www.booking.com/hotel/gb/the-merchant-hotel.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "peak-district",
+    "name": "Peak District",
+    "region": "Midlands / North",
+    "type": "countryside",
+    "description": "England's first national park, sitting between Manchester and Sheffield. Stately homes, market towns, limestone caves, and some of the finest walking in the country across moorland and dales.",
+    "daysRecommended": 2,
+    "tags": ["adventure", "photography", "history", "romance", "family", "wellness"],
+    "highlights": [
+      { "name": "Chatsworth House", "description": "The magnificent 'Palace of the Peak' — home of the Duke and Duchess of Devonshire, with 105 acres of gardens and a famous farmyard.", "cost": 28, "affiliateUrl": "https://www.getyourguide.com/peak-district-l99/chatsworth-house-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Bakewell", "description": "A charming market town famous for the Bakewell pudding. Browse the Monday market and cross the medieval five-arch bridge.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Mam Tor & The Great Ridge", "description": "A spectacular ridge walk with panoramic views across the Hope Valley. Known as the 'Shivering Mountain'.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Castleton Caves", "description": "Four show caves including the Blue John Cavern, famed for its semi-precious Blue John stone found nowhere else on Earth.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Monsal Trail", "description": "A traffic-free walking and cycling trail along a former railway line through stunning limestone dales and Victorian viaducts.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Haddon Hall", "description": "A beautifully preserved medieval manor house — one of the finest examples of a fortified medieval house in England.", "cost": 18, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Old Original Bakewell Pudding Shop", "Fischer's at Baslow Hall", "The Packhorse Inn", "Samuel Fox Country Inn"],
+    "bestPubs": ["The Barrel Inn (Bretton)", "Ye Olde Nags Head (Castleton)", "The Devonshire Arms (Beeley)"],
+    "gettingThere": { "from": "London St Pancras", "duration": "2h to Sheffield + 30min bus", "mode": "train + bus", "cost": 40, "affiliateUrl": "https://www.trainline.com/train-times/london-to-sheffield", "affiliateProvider": "trainline" },
+    "bestFor": ["Hikers", "Couples", "Families", "History lovers", "Cyclists"],
+    "hotels": {
+      "budget": { "name": "YHA Castleton", "cost": 22 },
+      "mid-range": { "name": "The Peacock at Rowsley", "cost": 150, "affiliateUrl": "https://www.booking.com/hotel/gb/the-peacock-at-rowsley.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Fischer's at Baslow Hall", "cost": 250, "affiliateUrl": "https://www.booking.com/hotel/gb/fischers-baslow-hall.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "norfolk-norwich",
+    "name": "Norfolk & Norwich",
+    "region": "East",
+    "type": "countryside",
+    "description": "Wide skies, peaceful waterways, and big sandy beaches. The Norfolk Broads offer Britain's best boating, Norwich has a fine medieval centre, and the north Norfolk coast is gloriously unspoilt.",
+    "daysRecommended": 2,
+    "tags": ["wellness", "family", "photography", "history", "adventure", "romance"],
+    "highlights": [
+      { "name": "Norfolk Broads", "description": "Britain's largest protected wetland — 125 miles of lock-free waterways. Hire a boat or kayak through reed-lined channels.", "cost": 45, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Norwich Cathedral", "description": "One of England's finest Norman cathedrals with the second-tallest spire in the country and stunning medieval cloisters.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Holkham Beach", "description": "A vast, pine-fringed sandy beach regularly voted one of the UK's best. Feels like a private paradise.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Sandringham Estate", "description": "The private country retreat of the Royal Family since 1862. Explore the house, gardens, and museum.", "cost": 20, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Blakeney Point Seal Colony", "description": "Take a boat trip to see hundreds of grey and common seals basking on the shingle spit.", "cost": 16, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Norwich Lanes", "description": "A network of medieval streets full of independent shops, cafes, and street food. Norwich's answer to The Lanes in Brighton.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Morston Hall (Michelin star)", "The Gunton Arms", "Benedicts (Norwich)", "The Dabbling Duck"],
+    "bestPubs": ["The Adam & Eve (Norwich, oldest pub)", "The Jolly Sailors (Brancaster)", "The Brisley Bell"],
+    "gettingThere": { "from": "London Liverpool Street", "duration": "1h 50min", "mode": "train", "cost": 25, "affiliateUrl": "https://www.trainline.com/train-times/london-to-norwich", "affiliateProvider": "trainline" },
+    "bestFor": ["Nature lovers", "Families", "Couples", "Birdwatchers", "Beach lovers"],
+    "hotels": {
+      "budget": { "name": "YHA Sheringham", "cost": 22 },
+      "mid-range": { "name": "The Hoste Arms (Burnham Market)", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoste.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Titchwell Manor", "cost": 220, "affiliateUrl": "https://www.booking.com/hotel/gb/titchwell-manor.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "jurassic-coast",
+    "name": "Jurassic Coast (Dorset)",
+    "region": "South West",
+    "type": "coastal",
+    "description": "England's only natural UNESCO World Heritage Site, spanning 95 miles of dramatic coastline. From the iconic Durdle Door arch to fossil-rich cliffs at Lyme Regis, this is 185 million years of geological history on display.",
+    "daysRecommended": 2,
+    "tags": ["adventure", "photography", "family", "history", "wellness", "romance"],
+    "highlights": [
+      { "name": "Durdle Door", "description": "A natural limestone arch jutting into turquoise waters — one of the most photographed landmarks in England.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Lulworth Cove", "description": "A near-perfect circular cove formed by the sea breaking through Portland limestone. A geological wonder.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Lyme Regis & Fossil Hunting", "description": "The fossil capital of the UK. Walk the beach where Mary Anning made her famous discoveries and find your own ammonite.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "South West Coast Path (Jurassic section)", "description": "Walk the cliff paths between Lulworth and Kimmeridge for some of England's most dramatic coastal scenery.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Corfe Castle", "description": "A dramatic ruined Norman castle perched on a hilltop above the village. One of England's most iconic ruins.", "cost": 12, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Old Harry Rocks", "description": "Towering chalk stacks at the eastern end of the Jurassic Coast. Spectacular cliff-top walk from Studland.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Hix Oyster & Fish House (Lyme Regis)", "The Pig on the Beach (Studland)", "The Club House (Lyme Regis)", "Shell Bay Seafood"],
+    "bestPubs": ["The Square & Compass (Worth Matravers)", "The Bankes Arms (Studland)", "The Harbour Inn (Lyme Regis)"],
+    "gettingThere": { "from": "London Waterloo", "duration": "2h 30min to Wareham/Dorchester", "mode": "train", "cost": 30, "affiliateUrl": "https://www.trainline.com/train-times/london-to-dorchester", "affiliateProvider": "trainline" },
+    "bestFor": ["Hikers", "Photographers", "Families", "Geology enthusiasts", "Fossil hunters"],
+    "hotels": {
+      "budget": { "name": "YHA Lulworth Cove", "cost": 22 },
+      "mid-range": { "name": "The Priory Hotel (Wareham)", "cost": 140, "affiliateUrl": "https://www.booking.com/hotel/gb/the-priory-wareham.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The Pig on the Beach", "cost": 260, "affiliateUrl": "https://www.booking.com/hotel/gb/the-pig-on-the-beach.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "isle-of-wight",
+    "name": "Isle of Wight",
+    "region": "South East",
+    "type": "coastal",
+    "description": "A miniature England off the Hampshire coast. Queen Victoria's favourite retreat, with sandy beaches, dramatic chalk cliffs at The Needles, and a famous festival scene. Just a short ferry from Portsmouth.",
+    "daysRecommended": 2,
+    "tags": ["family", "adventure", "history", "photography", "wellness", "music"],
+    "highlights": [
+      { "name": "Osborne House", "description": "Queen Victoria's beloved seaside palace. Lavish interiors, a private beach, and the Swiss Cottage where the royal children played.", "cost": 20, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "The Needles", "description": "Three iconic chalk stacks rising from the sea with a Victorian lighthouse. Take the chairlift down to Alum Bay's coloured sand cliffs.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Shanklin Old Village & Chine", "description": "A picturesque thatched village and dramatic coastal ravine with waterfalls and lush vegetation.", "cost": 5, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Cowes & Sailing Heritage", "description": "The sailing capital of the UK. Home to Cowes Week, the world's oldest and largest annual sailing regatta.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Carisbrooke Castle", "description": "A medieval castle where Charles I was imprisoned before his execution. Meet the famous donkeys that draw water from the well.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Isle of Wight Steam Railway", "description": "A heritage railway running restored Victorian and Edwardian steam trains through the island countryside.", "cost": 16, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Smoking Lobster (Ventnor)", "Robert Thompson at The Hambrough", "The Hut (Colwell Bay)", "The Salty Dog"],
+    "bestPubs": ["The Spyglass Inn (Ventnor)", "The Buddle Inn (Niton)", "The Folly (Cowes)"],
+    "gettingThere": { "from": "London Waterloo to Portsmouth Harbour + ferry", "duration": "2h 30min total", "mode": "train + ferry", "cost": 30, "affiliateUrl": "https://www.trainline.com/train-times/london-to-portsmouth-harbour", "affiliateProvider": "trainline" },
+    "bestFor": ["Families", "History lovers", "Beach lovers", "Festival goers", "Sailors"],
+    "hotels": {
+      "budget": { "name": "YHA Sandown", "cost": 22 },
+      "mid-range": { "name": "The Royal Hotel (Ventnor)", "cost": 120, "affiliateUrl": "https://www.booking.com/hotel/gb/royal-ventnor.html", "affiliateProvider": "booking" },
+      "premium": { "name": "The George Hotel (Yarmouth)", "cost": 220, "affiliateUrl": "https://www.booking.com/hotel/gb/the-george-yarmouth.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "windsor",
+    "name": "Windsor",
+    "region": "South East",
+    "type": "city",
+    "description": "Home to the world's oldest and largest occupied castle, the historic town of Eton, and the vast Great Park. A royal day trip just 30 minutes from central London with centuries of monarchy on display.",
+    "daysRecommended": 1,
+    "tags": ["history", "architecture", "family", "romance", "photography"],
+    "highlights": [
+      { "name": "Windsor Castle", "description": "The oldest and largest occupied castle in the world. State Apartments, St George's Chapel (where Harry and Meghan married), and Queen Mary's Dolls' House.", "cost": 30, "affiliateUrl": "https://www.getyourguide.com/windsor-l99/windsor-castle-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Eton College", "description": "The world's most famous school, founded in 1440 by Henry VI. Walking tours of the historic courtyards and chapel.", "cost": 12, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Windsor Great Park", "description": "4,800 acres of parkland with The Long Walk, the Savill Garden, and Virginia Water lake. Free to explore.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Changing of the Guard", "description": "The ceremonial changing of the castle guard with marching bands. A quintessential royal spectacle (check schedule).", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "River Thames Boat Trip", "description": "Scenic boat cruises from Windsor along the Thames past Bray, Maidenhead, and the riverbank meadows.", "cost": 12, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Fat Duck (Bray, 3 Michelin stars)", "The Waterside Inn (Bray, Michelin)", "The Duchess of Cambridge", "Meimo"],
+    "bestPubs": ["The Two Brewers", "The Carpenter's Arms", "The George Inn (Eton)"],
+    "gettingThere": { "from": "London Paddington (change at Slough) or London Waterloo", "duration": "30-55min", "mode": "train", "cost": 12, "affiliateUrl": "https://www.trainline.com/train-times/london-to-windsor", "affiliateProvider": "trainline" },
+    "bestFor": ["Families", "History lovers", "Royal enthusiasts", "Day trippers"],
+    "hotels": {
+      "budget": { "name": "Travelodge Windsor Central", "cost": 65 },
+      "mid-range": { "name": "Castle Hotel Windsor", "cost": 150, "affiliateUrl": "https://www.booking.com/hotel/gb/castle-hotel-windsor.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Fairmont Windsor Park", "cost": 350, "affiliateUrl": "https://www.booking.com/hotel/gb/fairmont-windsor-park.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "durham",
+    "name": "Durham",
+    "region": "North East",
+    "type": "city",
+    "description": "A compact cathedral city perched above a river gorge. Durham Cathedral and Castle form a UNESCO World Heritage Site, and the winding medieval streets are perfect for a short, rewarding visit.",
+    "daysRecommended": 1,
+    "tags": ["history", "architecture", "literary", "photography", "romance"],
+    "highlights": [
+      { "name": "Durham Cathedral", "description": "A masterpiece of Norman architecture and a UNESCO World Heritage Site. The cloisters were used as Hogwarts in the Harry Potter films.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Durham Castle", "description": "A Norman castle now part of Durham University. Guided tours reveal the Great Hall and the Norman Chapel.", "cost": 5, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "River Wear Walk", "description": "A beautiful circular walk along the wooded river gorge surrounding the cathedral peninsula.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Beamish Museum", "description": "A world-famous open-air museum recreating life in North East England from the 1820s to the 1950s. Trams, a colliery village, and a working farm.", "cost": 22, "affiliateUrl": "https://www.getyourguide.com/durham-l99/beamish-museum-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Prebends Bridge Viewpoint", "description": "The classic view of the cathedral above the river, painted by Turner and celebrated as one of England's finest vistas.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["The Garden House Inn", "Cellar Door Durham", "Tango Burrito", "Finbarr's"],
+    "bestPubs": ["The Shakespeare Tavern", "The Head of Steam", "The Victoria Inn"],
+    "gettingThere": { "from": "London King's Cross", "duration": "2h 50min", "mode": "train", "cost": 40, "affiliateUrl": "https://www.trainline.com/train-times/london-to-durham", "affiliateProvider": "trainline" },
+    "bestFor": ["History lovers", "Harry Potter fans", "Photographers", "Day trippers"],
+    "hotels": {
+      "budget": { "name": "Durham Castle Rooms (university)", "cost": 40 },
+      "mid-range": { "name": "Radisson Blu Durham", "cost": 120, "affiliateUrl": "https://www.booking.com/hotel/gb/radisson-blu-durham.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Seaham Hall", "cost": 280, "affiliateUrl": "https://www.booking.com/hotel/gb/seaham-hall.html", "affiliateProvider": "booking" }
+    }
+  },
+  {
+    "id": "snowdonia",
+    "name": "Snowdonia",
+    "region": "Wales",
+    "type": "countryside",
+    "description": "Wales' most spectacular national park, home to Mount Snowdon, medieval castles, slate quarries, and wild mountain lakes. Adventure activities abound, from zip lines to wild swimming in the shadow of Snowdon.",
+    "daysRecommended": 2,
+    "tags": ["adventure", "photography", "history", "wellness", "family"],
+    "highlights": [
+      { "name": "Mount Snowdon (Yr Wyddfa)", "description": "The highest peak in Wales at 1,085m. Hike one of six paths to the summit, or take the Snowdon Mountain Railway.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Snowdon Mountain Railway", "description": "A heritage rack railway climbing to the summit of Snowdon. Spectacular views without the hike.", "cost": 35, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Zip World Penrhyn Quarry", "description": "The fastest zip line in the world at 100mph, set in a dramatic former slate quarry.", "cost": 60, "affiliateUrl": "https://www.getyourguide.com/snowdonia-l99/zip-world-tickets", "affiliateProvider": "getyourguide" },
+      { "name": "Caernarfon Castle", "description": "A mighty UNESCO-listed Edward I castle dominating the Menai Strait. One of the finest medieval fortresses in Europe.", "cost": 12, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Portmeirion", "description": "A fantastical Italianate village on the coast, created by architect Clough Williams-Ellis. Colourful, surreal, and unforgettable.", "cost": 14, "affiliateUrl": "", "affiliateProvider": "" },
+      { "name": "Betws-y-Coed", "description": "A pretty Victorian village at the gateway to Snowdonia. Waterfalls, forest walks, and excellent outdoor shops.", "cost": 0, "affiliateUrl": "", "affiliateProvider": "" }
+    ],
+    "bestRestaurants": ["Bwyty Mawddach (Barmouth)", "Signatures Restaurant (Llandudno)", "Tyddyn Llan (Michelin star)", "The Peak (Llanberis)"],
+    "bestPubs": ["Y Stablau (Llanberis)", "The Heights (Llanberis)", "Ty Gwyn Hotel (Betws-y-Coed)"],
+    "gettingThere": { "from": "London Euston", "duration": "3h 10min to Bangor", "mode": "train", "cost": 40, "affiliateUrl": "https://www.trainline.com/train-times/london-to-bangor-gwynedd", "affiliateProvider": "trainline" },
+    "bestFor": ["Hikers", "Adventurers", "Photographers", "Families", "History lovers"],
+    "hotels": {
+      "budget": { "name": "YHA Snowdon Pen-y-Pass", "cost": 25 },
+      "mid-range": { "name": "Royal Victoria Hotel (Llanberis)", "cost": 110, "affiliateUrl": "https://www.booking.com/hotel/gb/royal-victoria-snowdonia.html", "affiliateProvider": "booking" },
+      "premium": { "name": "Portmeirion Hotel", "cost": 220, "affiliateUrl": "https://www.booking.com/hotel/gb/portmeirion-hotel.html", "affiliateProvider": "booking" }
+    }
   }
 ]
