@@ -67,6 +67,23 @@ const CONFIG = {
     tiqets:       'YOUR_TIQETS_ID',
     goCity:       'YOUR_GOCITY_ID',
     trainline:    'YOUR_TRAINLINE_ID',
+    expedia:      'YOUR_EXPEDIA_ID',
+    hostelworld:  'YOUR_HOSTELWORLD_ID',
+    skyscanner:   'YOUR_SKYSCANNER_ID',
+    amazonUK:     'YOUR_AMAZON_UK_TAG',
+    tripadvisor:  'YOUR_TRIPADVISOR_ID',
+    musement:     'YOUR_MUSEMENT_ID',
+    headout:      'YOUR_HEADOUT_ID',
+    eurostar:     'YOUR_EUROSTAR_ID',
+    omio:         'YOUR_OMIO_ID',
+    rentalcars:   'YOUR_RENTALCARS_ID',
+    theFork:      'YOUR_THEFORK_ID',
+    londonTheatreDirect: 'YOUR_LTD_ID',
+    worldNomads:  'YOUR_WORLDNOMADS_ID',
+    safetyWing:   'YOUR_SAFETYWING_ID',
+    wise:         'YOUR_WISE_ID',
+    revolut:      'YOUR_REVOLUT_ID',
+    airalo:       'YOUR_AIRALO_ID',
   },
 
   // Pages
@@ -261,37 +278,35 @@ const AffiliateLinks = {
     const ids = CONFIG.affiliateIds;
     const utm = `utm_source=${CONFIG.affiliate.utmSource}&utm_medium=${CONFIG.affiliate.utmMedium}`;
 
+    const sep = (u) => u.includes('?') ? '&' : '?';
+    const tag = (u, param, val) => val && !val.includes('YOUR_') ? `${u}${sep(u)}${param}=${val}&${utm}` : `${u}${sep(u)}${utm}`;
+
     switch (provider) {
-      case 'getyourguide':
-        return ids.getYourGuide !== 'YOUR_GYG_PARTNER_ID'
-          ? `${baseUrl}?partner_id=${ids.getYourGuide}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'booking':
-        return ids.booking !== 'YOUR_BOOKING_AID'
-          ? `${baseUrl}?aid=${ids.booking}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'viator':
-        return ids.viator !== 'YOUR_VIATOR_PID'
-          ? `${baseUrl}?pid=${ids.viator}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'todaytix':
-        return ids.todayTix !== 'YOUR_TODAYTIX_ID'
-          ? `${baseUrl}?ref=${ids.todayTix}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'opentable':
-        return ids.openTable !== 'YOUR_OPENTABLE_REF'
-          ? `${baseUrl}?ref=${ids.openTable}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'klook':
-        return ids.klook !== 'YOUR_KLOOK_AID'
-          ? `${baseUrl}?aid=${ids.klook}&${utm}`
-          : `${baseUrl}?${utm}`;
-      case 'tiqets':
-        return ids.tiqets !== 'YOUR_TIQETS_ID'
-          ? `${baseUrl}?partner=${ids.tiqets}&${utm}`
-          : `${baseUrl}?${utm}`;
-      default:
-        return baseUrl.includes('?') ? `${baseUrl}&${utm}` : `${baseUrl}?${utm}`;
+      case 'getyourguide': return tag(baseUrl, 'partner_id', ids.getYourGuide);
+      case 'booking': return tag(baseUrl, 'aid', ids.booking);
+      case 'viator': return tag(baseUrl, 'pid', ids.viator);
+      case 'todaytix': return tag(baseUrl, 'ref', ids.todayTix);
+      case 'opentable': return tag(baseUrl, 'ref', ids.openTable);
+      case 'klook': return tag(baseUrl, 'aid', ids.klook);
+      case 'tiqets': return tag(baseUrl, 'partner', ids.tiqets);
+      case 'trainline': return tag(baseUrl, 'partner', ids.trainline);
+      case 'expedia': return tag(baseUrl, 'affcid', ids.expedia);
+      case 'hostelworld': return tag(baseUrl, 'affiliate', ids.hostelworld);
+      case 'skyscanner': return tag(baseUrl, 'associateId', ids.skyscanner);
+      case 'amazon': return tag(baseUrl, 'tag', ids.amazonUK);
+      case 'tripadvisor': return tag(baseUrl, 'partner', ids.tripadvisor);
+      case 'musement': return tag(baseUrl, 'aid', ids.musement);
+      case 'headout': return tag(baseUrl, 'partner', ids.headout);
+      case 'eurostar': return tag(baseUrl, 'affiliate', ids.eurostar);
+      case 'omio': return tag(baseUrl, 'partner', ids.omio);
+      case 'rentalcars': return tag(baseUrl, 'affiliateCode', ids.rentalcars);
+      case 'thefork': return tag(baseUrl, 'ref', ids.theFork);
+      case 'londontheatredirect': return tag(baseUrl, 'partner', ids.londonTheatreDirect);
+      case 'worldnomads': return tag(baseUrl, 'affiliate', ids.worldNomads);
+      case 'safetywing': return tag(baseUrl, 'referenceID', ids.safetyWing);
+      case 'wise': return tag(baseUrl, 'partnerID', ids.wise);
+      case 'airalo': return tag(baseUrl, 'ref', ids.airalo);
+      default: return `${baseUrl}${sep(baseUrl)}${utm}`;
     }
   },
 
