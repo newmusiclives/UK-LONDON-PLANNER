@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a30"/>
+      <stop offset="50%" style="stop-color:#1B2A4A"/>
+      <stop offset="100%" style="stop-color:#2A3F6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#C9A84C">London &amp; UK Planner</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.8)">Your Perfect Trip, Curated by Experts</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">900+ Venues | 50 Day Themes | Interactive Maps | Insider Tips</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">Personalised Day-by-Day Itineraries from $20</text>
+  <rect x="450" y="470" width="300" height="55" rx="8" fill="#C9A84C"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1B2A4A">Plan My Trip</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="rgba(201,168,76,0.15)">uk-london-planner.netlify.app</text>
+</svg>

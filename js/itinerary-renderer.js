@@ -73,7 +73,7 @@ function renderItinerary(itinerary, isPaid, price) {
             <p style="color:var(--color-text-muted);font-size:0.85rem;">Based on activities, dining, and entertainment</p>
           </div>
           <div style="text-align:right;">
-            <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">£${totalCost.toFixed(0)}</div>
+            <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">£${totalCost.toFixed(0)}${typeof CurrencyConverter !== 'undefined' && CurrencyConverter.get() !== 'GBP' ? ` <span style="font-size:1.2rem;color:var(--color-text-muted);">(${CurrencyConverter.format(totalCost / (CONFIG.currencies?.GBP?.rate || 0.79))})</span>` : ''}</div>
             <div style="font-size:0.8rem;color:var(--color-text-muted);">~£${(totalCost / itinerary.tripDays).toFixed(0)}/day (activities only)</div>
           </div>
         </div>
@@ -95,6 +95,12 @@ function renderItinerary(itinerary, isPaid, price) {
 
       <!-- Hotel Recommendation -->
       ${itinerary.hotel ? renderHotelCard(itinerary.hotel) : ''}
+
+      <!-- Booking Widgets -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;" id="booking-widgets-row">
+        <div id="widget-gyg"></div>
+        <div id="widget-hotels"></div>
+      </div>
 
       <!-- Day Cards -->
       <div id="days-container">
@@ -170,6 +176,12 @@ function renderItinerary(itinerary, isPaid, price) {
 
   // Initialize map
   initMap(itinerary);
+
+  // Initialize booking widgets
+  if (typeof BookingWidgets !== 'undefined') {
+    BookingWidgets.renderGYGWidget('widget-gyg');
+    BookingWidgets.renderHotelWidget('widget-hotels');
+  }
 
   // Map day selector
   document.querySelectorAll('.map-day-btn').forEach(btn => {
@@ -332,7 +344,7 @@ function renderActivity(activity) {
       <p class="activity__description">${activity.description}</p>
       <div class="activity__details">
         ${activity.neighbourhood ? `<span class="activity__detail">📍 ${activity.neighbourhood}</span>` : ''}
-        <span class="activity__detail">💰 ${activity.estimatedCost}</span>
+        <span class="activity__detail">💰 ${activity.estimatedCost}${activity.estimatedCostValue && typeof CurrencyConverter !== 'undefined' && CurrencyConverter.get() !== 'GBP' ? ` (${CurrencyConverter.format(activity.estimatedCostValue / (CONFIG.currencies?.GBP?.rate || 0.79))})` : ''}</span>
         ${activity.duration ? `<span class="activity__detail">⏱️ ${activity.duration}</span>` : ''}
         ${activity.address ? `<span class="activity__detail">🗺️ ${activity.address}</span>` : ''}
       </div>

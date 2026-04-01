@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — London & UK Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section" style="min-height:60vh;display:flex;align-items:center;">
+      <div class="container" style="text-align:center;">
+        <div style="font-size:6rem;margin-bottom:1rem;">🗺️</div>
+        <h1 style="font-size:3rem;margin-bottom:0.5rem;">Lost in London?</h1>
+        <p style="font-size:1.15rem;color:var(--color-text-muted);max-width:500px;margin:0 auto 2rem;">
+          This page doesn't exist — but your perfect London trip does. Let us help you find your way.
+        </p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="index.html" class="btn btn--primary btn--large">Go Home</a>
+          <a href="wizard.html" class="btn btn--secondary btn--large">Plan My Trip</a>
+          <a href="blog.html" class="btn btn--outline btn--large">Travel Guide</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => UI.init());</script>
+</body>
+</html>

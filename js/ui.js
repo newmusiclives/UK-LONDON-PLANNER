@@ -4,6 +4,7 @@ const UI = {
     this.renderFooter();
     this.initMobileNav();
     this.initCurrencySelector();
+    this.initCookieConsent();
   },
 
   renderHeader() {
@@ -156,6 +157,22 @@ const UI = {
         CurrencyConverter.set(e.target.value);
       }
     });
+  },
+
+  initCookieConsent() {
+    if (localStorage.getItem('cookieConsent')) return;
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.innerHTML = `
+      <div style="position:fixed;bottom:0;left:0;right:0;background:var(--color-primary);color:white;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,0.2);">
+        <p style="font-size:0.85rem;margin:0;max-width:700px;">We use cookies and localStorage to save your itinerary preferences and improve your experience. By continuing to use this site, you agree to our <a href="privacy.html" style="color:var(--color-accent);text-decoration:underline;">Privacy Policy</a>.</p>
+        <div style="display:flex;gap:0.5rem;flex-shrink:0;">
+          <button onclick="document.getElementById('cookie-banner').remove();localStorage.setItem('cookieConsent','accepted')" class="btn btn--primary btn--small">Accept</button>
+          <button onclick="document.getElementById('cookie-banner').remove();localStorage.setItem('cookieConsent','essential')" class="btn btn--outline btn--small" style="color:white;border-color:rgba(255,255,255,0.3);">Essential Only</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(banner);
   },
 
   showToast(message, duration = 3000) {

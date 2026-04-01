@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://uk-london-planner.netlify.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/wizard.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/demo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/consultation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/book-services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/day-trips.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/airport-transfers.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-48-hours.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-budget.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-food-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-historic-pubs.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-secret-bars.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/blog-kids.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhoods.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-soho.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-shoreditch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-camden.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-south-bank.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-covent-garden.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/travel-tips.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/getting-around.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/best-time-to-visit.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/christmas-london.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/new-years-london.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/summer-london.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/faq.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://uk-london-planner.netlify.app/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
