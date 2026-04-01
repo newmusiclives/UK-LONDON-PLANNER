@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="wizard__step" data-step="3">
           <h2 class="wizard__step-title">Who's travelling?</h2>
           <p class="wizard__step-desc">We'll tailor activities and venues to suit your group perfectly</p>
-          <div class="interests-grid" style="max-width: 700px; margin: 2rem auto 0;">
+          <div class="interests-grid" style="max-width:800px;margin:2rem auto 0;">
             ${CONFIG.groupTypes.map(gt => `
               <div class="chip ${groupType === gt.id ? 'active' : ''}" data-group="${gt.id}">
                 <span class="chip__icon">${gt.icon}</span>
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="wizard__step" data-step="4">
           <h2 class="wizard__step-title">What's the occasion?</h2>
           <p class="wizard__step-desc">Celebrating something special? We'll make it unforgettable</p>
-          <div class="interests-grid" style="max-width: 800px; margin: 2rem auto 0;">
+          <div class="interests-grid" style="max-width:900px;margin:2rem auto 0;">
             ${CONFIG.occasions.map(occ => `
               <div class="chip ${occasion === occ.id ? 'active' : ''}" data-occasion="${occ.id}">
                 <span class="chip__icon">${occ.icon}</span>

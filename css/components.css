@@ -129,7 +129,7 @@
   align-items: center;
   gap: var(--space-xs);
   padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border-radius: var(--radius-full);
   border: 2px solid var(--color-border);
@@ -138,6 +138,7 @@
   user-select: none;
   background: var(--color-surface);
   color: var(--color-text);
+  white-space: nowrap;
 }
 
 .chip:hover {

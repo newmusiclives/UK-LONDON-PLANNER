@@ -71,7 +71,12 @@
   }
 
   .interests-grid {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.4rem;
+  }
+
+  .interests-grid .chip {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
   }
 
   .wizard__progress {

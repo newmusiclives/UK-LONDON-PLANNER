@@ -51,7 +51,17 @@ function renderItinerary(itinerary, isPaid, price) {
           <button class="btn btn--outline" id="btn-packing-list">🧳 Packing List</button>
           <a href="wizard.html" class="btn btn--outline">🔄 Create New</a>
         </div>
-      ` : ''}
+      ` : `
+        <div style="background:linear-gradient(135deg, #059669 0%, #047857 100%);border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+          <div>
+            <h4 style="color:white;margin:0 0 0.25rem;">🎉 Free Preview — First 2 Days Unlocked</h4>
+            <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin:0;">Browse your personalised itinerary below. Love it? Unlock all ${itinerary.tripDays} days for just $${price}.</p>
+          </div>
+          <button class="btn btn--primary" onclick="document.getElementById('purchase-section')?.scrollIntoView({behavior:'smooth'})">
+            Unlock All ${itinerary.tripDays} Days — $${price}
+          </button>
+        </div>
+      `}
 
       <!-- Budget Tracker -->
       <div class="budget-tracker" style="background:var(--color-surface);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;box-shadow:var(--shadow-sm);">
@@ -247,9 +257,10 @@ function renderDayCard(day, locked) {
       ${locked ? `
         <div class="lock-banner">
           <div class="lock-banner__icon">🔒</div>
-          <div class="lock-banner__text">Unlock to see Day ${day.dayNumber}</div>
+          <div class="lock-banner__text">Day ${day.dayNumber}: ${day.theme}</div>
+          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">${day.activities.length} activities planned across ${day.neighbourhoods.slice(0,2).join(' & ')}</p>
           <button class="btn btn--primary btn--small" onclick="document.getElementById('purchase-section')?.scrollIntoView({behavior:'smooth'})">
-            Unlock Full Itinerary
+            Unlock All Days
           </button>
         </div>
       ` : ''}
