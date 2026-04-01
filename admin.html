@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="css/responsive.css">
 
   <style>
-    .admin { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
-    .admin h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .admin { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .admin h1 { font-size: 2rem; margin-bottom: 0.25rem; }
     .admin-subtitle { color: var(--color-text-muted); margin-bottom: 2rem; }
 
     .admin-tabs {
@@ -26,14 +26,12 @@
       margin-bottom: 2rem; overflow-x: auto;
     }
     .admin-tab {
-      padding: 0.75rem 1.5rem; font-weight: 600; font-size: 0.9rem;
+      padding: 0.75rem 1.25rem; font-weight: 600; font-size: 0.85rem;
       color: var(--color-text-muted); cursor: pointer; border-bottom: 3px solid transparent;
       white-space: nowrap; transition: all 0.2s;
     }
     .admin-tab:hover { color: var(--color-primary); }
-    .admin-tab.active {
-      color: var(--color-accent); border-bottom-color: var(--color-accent);
-    }
+    .admin-tab.active { color: var(--color-accent); border-bottom-color: var(--color-accent); }
 
     .admin-panel { display: none; }
     .admin-panel.active { display: block; }
@@ -51,89 +49,58 @@
 
     .field { margin-bottom: 1.25rem; }
     .field:last-child { margin-bottom: 0; }
-    .field label {
-      display: block; font-weight: 600; font-size: 0.85rem;
-      margin-bottom: 0.4rem; color: var(--color-primary);
-    }
+    .field label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--color-primary); }
     .field label small { font-weight: 400; color: var(--color-text-muted); }
     .field input, .field select, .field textarea {
       width: 100%; padding: 0.6rem 0.8rem; border: 2px solid var(--color-border);
-      border-radius: var(--radius-md); font-size: 0.9rem; transition: border-color 0.2s;
-      font-family: var(--font-body);
+      border-radius: var(--radius-md); font-size: 0.9rem; transition: border-color 0.2s; font-family: var(--font-body);
     }
-    .field input:focus, .field textarea:focus {
-      border-color: var(--color-accent); outline: none;
-    }
-    .field .hint {
-      font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.25rem;
-    }
-
-    .field-row {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-    }
+    .field input:focus, .field textarea:focus { border-color: var(--color-accent); outline: none; }
+    .field .hint { font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.25rem; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
 
     .venue-list { max-height: 600px; overflow-y: auto; }
-    .venue-item {
-      padding: 1rem 1.5rem; border-bottom: 1px solid var(--color-border);
-      display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center;
-    }
+    .venue-item { padding: 1rem 1.5rem; border-bottom: 1px solid var(--color-border); display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; }
     .venue-item:last-child { border-bottom: none; }
     .venue-item__name { font-weight: 600; color: var(--color-primary); font-size: 0.95rem; }
     .venue-item__meta { font-size: 0.8rem; color: var(--color-text-muted); }
-    .venue-item__link {
-      font-size: 0.8rem; color: var(--color-success); word-break: break-all;
-    }
+    .venue-item__link { font-size: 0.8rem; color: var(--color-success); word-break: break-all; }
     .venue-item__link--empty { color: var(--color-error); font-style: italic; }
     .venue-item__actions { display: flex; gap: 0.5rem; }
 
-    .modal-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.6);
-      display: none; align-items: center; justify-content: center; z-index: 999;
-    }
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 999; }
     .modal-overlay.active { display: flex; }
-    .modal {
-      background: var(--color-surface); border-radius: var(--radius-xl);
-      padding: 2rem; max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto;
-    }
+    .modal { background: var(--color-surface); border-radius: var(--radius-xl); padding: 2rem; max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto; }
     .modal h3 { margin-bottom: 1.5rem; }
 
-    .status-bar {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: var(--color-primary); color: white;
-      padding: 0.75rem 1.5rem; display: flex; align-items: center;
-      justify-content: space-between; z-index: 100;
-    }
+    .status-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-primary); color: white; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; z-index: 100; }
     .status-bar__text { font-size: 0.85rem; }
 
-    .search-bar {
-      display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: center;
-    }
-    .search-bar input {
-      flex: 1; padding: 0.6rem 1rem; border: 2px solid var(--color-border);
-      border-radius: var(--radius-md); font-size: 0.9rem;
-    }
-    .search-bar select {
-      padding: 0.6rem 0.8rem; border: 2px solid var(--color-border);
-      border-radius: var(--radius-md); font-size: 0.9rem;
-    }
+    .search-bar { display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: center; }
+    .search-bar input { flex: 1; padding: 0.6rem 1rem; border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; }
+    .search-bar select { padding: 0.6rem 0.8rem; border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; }
 
-    .stats-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem; margin-bottom: 2rem;
-    }
-    .stat-card {
-      background: var(--color-surface); border-radius: var(--radius-md);
-      padding: 1.25rem; text-align: center; box-shadow: var(--shadow-sm);
-    }
-    .stat-card__num {
-      font-family: var(--font-heading); font-size: 2rem; font-weight: 700;
-      color: var(--color-accent);
-    }
-    .stat-card__label { font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .stat-card { background: var(--color-surface); border-radius: var(--radius-md); padding: 1.25rem; text-align: center; box-shadow: var(--shadow-sm); }
+    .stat-card__num { font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: var(--color-accent); }
+    .stat-card__label { font-size: 0.7rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem; }
 
     .tag-active { background: #D1FAE5; color: #065F46; }
     .tag-missing { background: #FEE2E2; color: #991B1B; }
+
+    /* Dashboard specific */
+    .dashboard-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    @media (max-width: 768px) { .dashboard-row { grid-template-columns: 1fr; } }
+    .sales-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .sales-table th { text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--color-accent); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); }
+    .sales-table td { padding: 0.75rem; border-bottom: 1px solid var(--color-border); }
+    .sales-table tr:hover { background: var(--color-surface-alt); }
+    .connect-card { border: 2px dashed var(--color-border); border-radius: var(--radius-lg); padding: 2rem; text-align: center; transition: all 0.2s; }
+    .connect-card:hover { border-color: var(--color-accent); }
+    .connect-card.connected { border-style: solid; border-color: var(--color-success); background: #F0FDF4; }
+    .connect-card__icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .connect-card__status { display: inline-block; padding: 0.2rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; margin-top: 0.75rem; }
   </style>
 </head>
 <body>
@@ -142,15 +109,18 @@
   <main class="main">
     <div class="admin">
       <h1>Admin Panel</h1>
-      <p class="admin-subtitle">Manage affiliate links, payment settings, and venue data</p>
+      <p class="admin-subtitle">Dashboard, sales, integrations, and venue management</p>
 
-      <!-- Stats -->
+      <!-- Top Stats -->
       <div class="stats-grid" id="stats-grid"></div>
 
       <!-- Tabs -->
       <div class="admin-tabs" id="admin-tabs">
-        <div class="admin-tab active" data-tab="payments">Payments & Manifest</div>
-        <div class="admin-tab" data-tab="affiliates">Affiliate IDs</div>
+        <div class="admin-tab active" data-tab="dashboard">Dashboard</div>
+        <div class="admin-tab" data-tab="sales">Sales & Revenue</div>
+        <div class="admin-tab" data-tab="integrations">Integrations</div>
+        <div class="admin-tab" data-tab="payments">Payments</div>
+        <div class="admin-tab" data-tab="affiliates">Affiliates</div>
         <div class="admin-tab" data-tab="attractions">Attractions</div>
         <div class="admin-tab" data-tab="restaurants">Restaurants</div>
         <div class="admin-tab" data-tab="nightlife">Pubs & Bars</div>
@@ -159,225 +129,335 @@
         <div class="admin-tab" data-tab="export">Export / Import</div>
       </div>
 
-      <!-- Payments Panel -->
-      <div class="admin-panel active" data-panel="payments">
+      <!-- ============================================================ -->
+      <!-- DASHBOARD -->
+      <!-- ============================================================ -->
+      <div class="admin-panel active" data-panel="dashboard">
+        <div class="dashboard-row">
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Revenue Overview</h3></div>
+            <div class="admin-section__body" id="revenue-overview">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                <div style="text-align:center;padding:1rem;background:var(--color-surface-alt);border-radius:var(--radius-md);">
+                  <div style="font-size:0.75rem;color:var(--color-text-muted);text-transform:uppercase;">This Month</div>
+                  <div id="revenue-month" style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">$0</div>
+                </div>
+                <div style="text-align:center;padding:1rem;background:var(--color-surface-alt);border-radius:var(--radius-md);">
+                  <div style="font-size:0.75rem;color:var(--color-text-muted);text-transform:uppercase;">All Time</div>
+                  <div id="revenue-total" style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-primary);">$0</div>
+                </div>
+              </div>
+              <div style="margin-top:1.5rem;">
+                <h4 style="font-size:0.85rem;margin-bottom:0.75rem;">Revenue by Product</h4>
+                <div id="revenue-products"></div>
+              </div>
+            </div>
+          </div>
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Quick Actions</h3></div>
+            <div class="admin-section__body">
+              <div style="display:grid;gap:0.75rem;">
+                <a href="wizard.html" target="_blank" class="btn btn--primary btn--full" style="justify-content:flex-start;gap:0.75rem;">🚀 Test Wizard Flow</a>
+                <a href="demo.html" target="_blank" class="btn btn--secondary btn--full" style="justify-content:flex-start;gap:0.75rem;">👁️ View Demo Itinerary</a>
+                <button class="btn btn--outline btn--full" style="justify-content:flex-start;gap:0.75rem;" onclick="document.querySelector('[data-tab=integrations]').click()">🔗 Configure Integrations</button>
+                <button class="btn btn--outline btn--full" style="justify-content:flex-start;gap:0.75rem;" onclick="exportConfig()">📥 Export All Config</button>
+                <button class="btn btn--outline btn--full" style="justify-content:flex-start;gap:0.75rem;" onclick="clearAllData()">🗑️ Clear Local Cache</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Recent Activity</h3></div>
+          <div class="admin-section__body" id="recent-activity">
+            <table class="sales-table">
+              <thead><tr><th>Time</th><th>Event</th><th>Details</th><th>Value</th></tr></thead>
+              <tbody id="activity-log"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dashboard-row">
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Venue Database Health</h3></div>
+            <div class="admin-section__body" id="db-health"></div>
+          </div>
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Integration Status</h3></div>
+            <div class="admin-section__body" id="integration-status"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SALES & REVENUE -->
+      <!-- ============================================================ -->
+      <div class="admin-panel" data-panel="sales">
+        <div class="stats-grid" id="sales-stats"></div>
+
         <div class="admin-section">
           <div class="admin-section__header">
-            <h3>Manifest Financial Payment Links</h3>
+            <h3>Sales Log</h3>
+            <div style="display:flex;gap:0.5rem;">
+              <select id="sales-filter" style="padding:0.4rem;border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:0.8rem;">
+                <option value="all">All Products</option>
+                <option value="itinerary">Itineraries</option>
+                <option value="concierge">Concierge</option>
+                <option value="consultation">Consultations</option>
+              </select>
+              <button class="btn btn--primary btn--small" onclick="exportSalesCSV()">Export CSV</button>
+            </div>
           </div>
           <div class="admin-section__body">
+            <table class="sales-table">
+              <thead><tr><th>Date</th><th>Product</th><th>Customer</th><th>Email</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody id="sales-log"></tbody>
+            </table>
+            <p id="sales-empty" style="text-align:center;color:var(--color-text-muted);padding:2rem;display:none;">No sales recorded yet. Sales will appear here once payments are processed through Manifest Financial.</p>
+          </div>
+        </div>
+
+        <div class="dashboard-row">
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Revenue by Product</h3></div>
+            <div class="admin-section__body" id="revenue-by-product"></div>
+          </div>
+          <div class="admin-section">
+            <div class="admin-section__header"><h3>Conversion Funnel</h3></div>
+            <div class="admin-section__body" id="conversion-funnel"></div>
+          </div>
+        </div>
+
+        <div class="admin-section">
+          <div class="admin-section__header">
+            <h3>Manual Sale Entry</h3>
+            <small style="color:var(--color-text-muted);">Record offline or manual payments</small>
+          </div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field">
+                <label>Customer Name</label>
+                <input type="text" id="sale-name" placeholder="John Smith">
+              </div>
+              <div class="field">
+                <label>Customer Email</label>
+                <input type="email" id="sale-email" placeholder="john@example.com">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Product</label>
+                <select id="sale-product">
+                  <option value="tier1">Short Stay Itinerary ($20)</option>
+                  <option value="tier2">Week Explorer Itinerary ($40)</option>
+                  <option value="tier3">Extended Adventure ($75)</option>
+                  <option value="concierge">Booking Concierge ($150)</option>
+                  <option value="consultation">Personal Consultation ($75)</option>
+                  <option value="uk-extension">UK Extension (varies)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Amount ($)</label>
+                <input type="number" id="sale-amount" step="0.01" placeholder="20.00">
+              </div>
+            </div>
+            <div class="field">
+              <label>Notes <small>(optional)</small></label>
+              <input type="text" id="sale-notes" placeholder="e.g. Paid via PayPal, 5-day London trip">
+            </div>
+            <button class="btn btn--primary" onclick="recordSale()">Record Sale</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- INTEGRATIONS -->
+      <!-- ============================================================ -->
+      <div class="admin-panel" data-panel="integrations">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:1.5rem;margin-bottom:2rem;">
+
+          <!-- GoHighLevel -->
+          <div class="connect-card" id="ghl-card">
+            <div class="connect-card__icon">📱</div>
+            <h4>GoHighLevel CRM</h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0;">Email, SMS, voice, pipelines, and automation</p>
+            <div class="connect-card__status tag-missing" id="ghl-status">Not Connected</div>
+          </div>
+
+          <!-- Manifest Financial -->
+          <div class="connect-card" id="manifest-card">
+            <div class="connect-card__icon">💳</div>
+            <h4>Manifest Financial</h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0;">Payment processing for itineraries and services</p>
+            <div class="connect-card__status tag-missing" id="manifest-status">Not Connected</div>
+          </div>
+
+          <!-- OpenWeatherMap -->
+          <div class="connect-card" id="weather-card">
+            <div class="connect-card__icon">🌤️</div>
+            <h4>OpenWeatherMap</h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0;">Live weather on Best Time to Visit page</p>
+            <div class="connect-card__status tag-missing" id="weather-status">Not Connected</div>
+          </div>
+
+          <!-- TfL -->
+          <div class="connect-card" id="tfl-card">
+            <div class="connect-card__icon">🚇</div>
+            <h4>TfL API</h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0;">Live Tube status (free, no key needed)</p>
+            <div class="connect-card__status tag-active" id="tfl-status">Active — Free API</div>
+          </div>
+        </div>
+
+        <!-- GoHighLevel Settings -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>GoHighLevel Configuration</h3></div>
+          <div class="admin-section__body">
             <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
-              Create Payment Links in your <a href="https://app.manifestfinancial.com" target="_blank" style="color:var(--color-accent);">Manifest Financial Dashboard</a>, then paste them below. Each product needs its own link.
+              Connect your GoHighLevel account to enable email sequences, SMS notifications, voice calls, contact management, and sales pipeline tracking.
+              <a href="https://app.gohighlevel.com" target="_blank" style="color:var(--color-accent);">Open GoHighLevel Dashboard</a>
+            </p>
+            <div class="field-row">
+              <div class="field">
+                <label>Location ID</label>
+                <input type="text" id="ghl-location" placeholder="e.g. abc123def456">
+                <div class="hint">Settings > Business Profile > Location ID</div>
+              </div>
+              <div class="field">
+                <label>API Key</label>
+                <input type="password" id="ghl-apikey" placeholder="eyJhbGciOi...">
+                <div class="hint">Settings > API Keys > Create new key</div>
+              </div>
+            </div>
+            <h4 style="margin:1.5rem 0 1rem;font-size:0.95rem;">Webhook URLs</h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:1rem;">Create inbound webhooks in GHL (Automation > Workflows > Trigger: Inbound Webhook) and paste the URLs below.</p>
+            <div class="field">
+              <label>Email Capture Webhook <small>(footer signup, blog subscribe)</small></label>
+              <input type="url" id="ghl-webhook-email" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Itinerary Purchase Webhook <small>(triggered on payment success)</small></label>
+              <input type="url" id="ghl-webhook-purchase" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Consultation Booking Webhook</label>
+              <input type="url" id="ghl-webhook-consultation" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Concierge Booking Webhook</label>
+              <input type="url" id="ghl-webhook-concierge" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Contact Form Webhook</label>
+              <input type="url" id="ghl-webhook-contact" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Calendar ID <small>(for consultation bookings)</small></label>
+                <input type="text" id="ghl-calendar" placeholder="e.g. cal_abc123">
+                <div class="hint">Calendars > Select calendar > Calendar ID</div>
+              </div>
+              <div class="field">
+                <label>Pipeline ID <small>(for tracking customer journey)</small></label>
+                <input type="text" id="ghl-pipeline" placeholder="e.g. pipe_abc123">
+                <div class="hint">Opportunities > Pipelines > Pipeline ID</div>
+              </div>
+            </div>
+            <button class="btn btn--primary" onclick="saveGHLConfig()">Save GoHighLevel Settings</button>
+            <button class="btn btn--outline" onclick="testGHLConnection()" style="margin-left:0.5rem;">Test Connection</button>
+          </div>
+        </div>
+
+        <!-- OpenWeatherMap Settings -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>OpenWeatherMap API</h3></div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">
+              Free API key for live London weather on the Best Time to Visit page.
+              <a href="https://openweathermap.org/api" target="_blank" style="color:var(--color-accent);">Get free API key</a>
             </p>
             <div class="field">
-              <label>Short Stay Itinerary ($20) <small>1-5 days</small></label>
-              <input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1">
+              <label>API Key</label>
+              <input type="text" id="weather-apikey" placeholder="e.g. abc123def456789">
+              <div class="hint">Free tier: 1,000 calls/day — more than enough</div>
             </div>
-            <div class="field">
-              <label>Week Explorer Itinerary ($40) <small>6-10 days</small></label>
-              <input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2">
-            </div>
-            <div class="field">
-              <label>Extended Adventure Itinerary ($75) <small>11-21 days</small></label>
-              <input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3">
-            </div>
-            <div class="field">
-              <label>Booking Concierge Add-on ($150)</label>
-              <input type="url" id="manifest-concierge" placeholder="https://pay.manifestfinancial.com/..." data-key="concierge">
-            </div>
-            <div class="field">
-              <label>Personal Consultation ($75/hour)</label>
-              <input type="url" id="manifest-consultation" placeholder="https://pay.manifestfinancial.com/..." data-key="consultation">
-            </div>
+            <button class="btn btn--primary" onclick="saveWeatherConfig()">Save Weather API Key</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- PAYMENTS (Manifest Financial) -->
+      <!-- ============================================================ -->
+      <div class="admin-panel" data-panel="payments">
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Manifest Financial Payment Links</h3></div>
+          <div class="admin-section__body">
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
+              Create Payment Links in your <a href="https://app.manifestfinancial.com" target="_blank" style="color:var(--color-accent);">Manifest Financial Dashboard</a>, then paste them below.
+            </p>
+            <div class="field"><label>Short Stay Itinerary ($20) <small>1-5 days</small></label><input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1"></div>
+            <div class="field"><label>Week Explorer Itinerary ($40) <small>6-10 days</small></label><input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2"></div>
+            <div class="field"><label>Extended Adventure Itinerary ($75) <small>11-21 days</small></label><input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3"></div>
+            <div class="field"><label>Booking Concierge ($150)</label><input type="url" id="manifest-concierge" placeholder="https://pay.manifestfinancial.com/..." data-key="concierge"></div>
+            <div class="field"><label>Personal Consultation ($75/hour)</label><input type="url" id="manifest-consultation" placeholder="https://pay.manifestfinancial.com/..." data-key="consultation"></div>
             <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
           </div>
         </div>
       </div>
 
-      <!-- Affiliate IDs Panel -->
+      <!-- ============================================================ -->
+      <!-- AFFILIATES -->
+      <!-- ============================================================ -->
       <div class="admin-panel" data-panel="affiliates">
         <div class="admin-section">
-          <div class="admin-section__header">
-            <h3>Affiliate Partner IDs</h3>
-          </div>
+          <div class="admin-section__header"><h3>Affiliate Partner IDs</h3></div>
           <div class="admin-section__body">
-            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
-              Enter your partner/affiliate IDs. These get automatically appended to all outbound links.
-              See <a href="AFFILIATE-SETUP-GUIDE.md" target="_blank" style="color:var(--color-accent);">Affiliate Setup Guide</a> for sign-up links.
-            </p>
-            <div class="field-row">
-              <div class="field">
-                <label>GetYourGuide Partner ID <small>(8% commission)</small></label>
-                <input type="text" id="aff-gyg" placeholder="e.g. ABC123" data-key="getYourGuide">
-                <div class="hint">Attractions, tours, experiences. <a href="https://partner.getyourguide.com/" target="_blank">Sign up</a></div>
-              </div>
-              <div class="field">
-                <label>Booking.com AID <small>(25-40% of their commission)</small></label>
-                <input type="text" id="aff-booking" placeholder="e.g. 1234567" data-key="booking">
-                <div class="hint">Hotels, hostels. <a href="https://www.booking.com/affiliate-program/v2/index.html" target="_blank">Sign up</a></div>
-              </div>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label>Viator PID <small>(8% commission)</small></label>
-                <input type="text" id="aff-viator" placeholder="e.g. P12345" data-key="viator">
-                <div class="hint">Tours, activities. <a href="https://www.viator.com/affiliates" target="_blank">Sign up</a></div>
-              </div>
-              <div class="field">
-                <label>TodayTix Ref <small>(5-8% commission)</small></label>
-                <input type="text" id="aff-todaytix" placeholder="e.g. ref_abc" data-key="todayTix">
-                <div class="hint">Theatre tickets. Contact partnerships@todaytix.com</div>
-              </div>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label>OpenTable Ref <small>($1-2 per seated diner)</small></label>
-                <input type="text" id="aff-opentable" placeholder="e.g. OT123" data-key="openTable">
-                <div class="hint">Restaurant reservations. <a href="https://www.opentable.com/affiliates" target="_blank">Sign up</a></div>
-              </div>
-              <div class="field">
-                <label>Klook AID <small>(up to 5% commission)</small></label>
-                <input type="text" id="aff-klook" placeholder="e.g. K12345" data-key="klook">
-                <div class="hint">Attractions, transport. <a href="https://affiliate.klook.com/" target="_blank">Sign up</a></div>
-              </div>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label>Tiqets Partner ID <small>(6% commission)</small></label>
-                <input type="text" id="aff-tiqets" placeholder="e.g. TQ123" data-key="tiqets">
-                <div class="hint">Museum/attraction tickets. <a href="https://www.tiqets.com/affiliates" target="_blank">Sign up</a></div>
-              </div>
-              <div class="field">
-                <label>Go City ID <small>(6-10% commission)</small></label>
-                <input type="text" id="aff-gocity" placeholder="e.g. GC123" data-key="goCity">
-                <div class="hint">Multi-attraction passes. <a href="https://gocity.com/affiliates" target="_blank">Sign up</a></div>
-              </div>
-            </div>
-            <div class="field">
-              <label>Trainline ID <small>(up to 2% commission)</small></label>
-              <input type="text" id="aff-trainline" placeholder="e.g. TL123" data-key="trainline">
-              <div class="hint">UK rail tickets. <a href="https://www.trainline.com/affiliates" target="_blank">Sign up</a></div>
-            </div>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">Enter your affiliate IDs. These get automatically appended to all outbound booking links. See <a href="AFFILIATE-SETUP-GUIDE.md" target="_blank" style="color:var(--color-accent);">Affiliate Setup Guide</a> for sign-up links.</p>
+            <div class="field-row"><div class="field"><label>GetYourGuide <small>(8%)</small></label><input type="text" id="aff-gyg" placeholder="e.g. ABC123" data-key="getYourGuide"><div class="hint"><a href="https://partner.getyourguide.com/" target="_blank">Sign up</a></div></div><div class="field"><label>Booking.com <small>(25-40%)</small></label><input type="text" id="aff-booking" placeholder="e.g. 1234567" data-key="booking"><div class="hint"><a href="https://www.booking.com/affiliate-program/v2/index.html" target="_blank">Sign up</a></div></div></div>
+            <div class="field-row"><div class="field"><label>Viator <small>(8%)</small></label><input type="text" id="aff-viator" placeholder="e.g. P12345" data-key="viator"><div class="hint"><a href="https://www.viator.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>TodayTix <small>(5-8%)</small></label><input type="text" id="aff-todaytix" placeholder="e.g. ref_abc" data-key="todayTix"><div class="hint">Contact partnerships@todaytix.com</div></div></div>
+            <div class="field-row"><div class="field"><label>OpenTable <small>($1-2/diner)</small></label><input type="text" id="aff-opentable" placeholder="e.g. OT123" data-key="openTable"><div class="hint"><a href="https://www.opentable.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>Klook <small>(5%)</small></label><input type="text" id="aff-klook" placeholder="e.g. K12345" data-key="klook"><div class="hint"><a href="https://affiliate.klook.com/" target="_blank">Sign up</a></div></div></div>
+            <div class="field-row"><div class="field"><label>Tiqets <small>(6%)</small></label><input type="text" id="aff-tiqets" placeholder="e.g. TQ123" data-key="tiqets"><div class="hint"><a href="https://www.tiqets.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>Go City <small>(6-10%)</small></label><input type="text" id="aff-gocity" placeholder="e.g. GC123" data-key="goCity"><div class="hint"><a href="https://gocity.com/affiliates" target="_blank">Sign up</a></div></div></div>
+            <div class="field"><label>Trainline <small>(2%)</small></label><input type="text" id="aff-trainline" placeholder="e.g. TL123" data-key="trainline"><div class="hint"><a href="https://www.trainline.com/affiliates" target="_blank">Sign up</a></div></div>
             <button class="btn btn--primary" onclick="saveAffiliateIds()">Save Affiliate IDs</button>
           </div>
         </div>
       </div>
 
-      <!-- Venue Panels (attractions, restaurants, nightlife, entertainment, hotels) -->
-      <div class="admin-panel" data-panel="attractions">
-        <div class="search-bar">
-          <input type="text" id="search-attractions" placeholder="Search attractions..." oninput="filterVenues('attractions')">
-          <select id="filter-attractions-links" onchange="filterVenues('attractions')">
-            <option value="all">All</option>
-            <option value="has-link">Has affiliate link</option>
-            <option value="no-link">Missing affiliate link</option>
-          </select>
-          <button class="btn btn--primary btn--small" onclick="addVenue('attractions')">+ Add New</button>
+      <!-- VENUE PANELS -->
+      ${['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'].map(type => `
+        <div class="admin-panel" data-panel="${type}">
+          <div class="search-bar">
+            <input type="text" id="search-${type}" placeholder="Search ${type}..." oninput="filterVenues('${type}')">
+            <select id="filter-${type}-links" onchange="filterVenues('${type}')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+            <button class="btn btn--primary btn--small" onclick="addVenue('${type}')">+ Add New</button>
+          </div>
+          <div class="admin-section"><div class="venue-list" id="venue-list-${type}"></div></div>
         </div>
-        <div class="admin-section">
-          <div class="venue-list" id="venue-list-attractions"></div>
-        </div>
-      </div>
+      `).join('')}
 
-      <div class="admin-panel" data-panel="restaurants">
-        <div class="search-bar">
-          <input type="text" id="search-restaurants" placeholder="Search restaurants..." oninput="filterVenues('restaurants')">
-          <select id="filter-restaurants-links" onchange="filterVenues('restaurants')">
-            <option value="all">All</option>
-            <option value="has-link">Has affiliate link</option>
-            <option value="no-link">Missing affiliate link</option>
-          </select>
-          <button class="btn btn--primary btn--small" onclick="addVenue('restaurants')">+ Add New</button>
-        </div>
-        <div class="admin-section">
-          <div class="venue-list" id="venue-list-restaurants"></div>
-        </div>
-      </div>
-
-      <div class="admin-panel" data-panel="nightlife">
-        <div class="search-bar">
-          <input type="text" id="search-nightlife" placeholder="Search pubs & bars..." oninput="filterVenues('nightlife')">
-          <select id="filter-nightlife-links" onchange="filterVenues('nightlife')">
-            <option value="all">All</option>
-            <option value="has-link">Has affiliate link</option>
-            <option value="no-link">Missing affiliate link</option>
-          </select>
-          <button class="btn btn--primary btn--small" onclick="addVenue('nightlife')">+ Add New</button>
-        </div>
-        <div class="admin-section">
-          <div class="venue-list" id="venue-list-nightlife"></div>
-        </div>
-      </div>
-
-      <div class="admin-panel" data-panel="entertainment">
-        <div class="search-bar">
-          <input type="text" id="search-entertainment" placeholder="Search entertainment..." oninput="filterVenues('entertainment')">
-          <select id="filter-entertainment-links" onchange="filterVenues('entertainment')">
-            <option value="all">All</option>
-            <option value="has-link">Has affiliate link</option>
-            <option value="no-link">Missing affiliate link</option>
-          </select>
-          <button class="btn btn--primary btn--small" onclick="addVenue('entertainment')">+ Add New</button>
-        </div>
-        <div class="admin-section">
-          <div class="venue-list" id="venue-list-entertainment"></div>
-        </div>
-      </div>
-
-      <div class="admin-panel" data-panel="hotels">
-        <div class="search-bar">
-          <input type="text" id="search-hotels" placeholder="Search hotels..." oninput="filterVenues('hotels')">
-          <select id="filter-hotels-links" onchange="filterVenues('hotels')">
-            <option value="all">All</option>
-            <option value="has-link">Has affiliate link</option>
-            <option value="no-link">Missing affiliate link</option>
-          </select>
-          <button class="btn btn--primary btn--small" onclick="addVenue('hotels')">+ Add New</button>
-        </div>
-        <div class="admin-section">
-          <div class="venue-list" id="venue-list-hotels"></div>
-        </div>
-      </div>
-
-      <!-- Export / Import Panel -->
+      <!-- EXPORT / IMPORT -->
       <div class="admin-panel" data-panel="export">
         <div class="admin-section">
           <div class="admin-section__header"><h3>Export Data</h3></div>
           <div class="admin-section__body">
-            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">
-              Download your current venue data as JSON files. Use these to replace the files in your <code>data/</code> folder when deploying.
-            </p>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">Download venue data as JSON files for deployment.</p>
             <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-              <button class="btn btn--secondary btn--small" onclick="exportData('attractions')">Export Attractions</button>
-              <button class="btn btn--secondary btn--small" onclick="exportData('restaurants')">Export Restaurants</button>
-              <button class="btn btn--secondary btn--small" onclick="exportData('nightlife')">Export Nightlife</button>
-              <button class="btn btn--secondary btn--small" onclick="exportData('entertainment')">Export Entertainment</button>
-              <button class="btn btn--secondary btn--small" onclick="exportData('hotels')">Export Hotels</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('attractions')">Attractions</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('restaurants')">Restaurants</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('nightlife')">Nightlife</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('entertainment')">Entertainment</button>
+              <button class="btn btn--secondary btn--small" onclick="exportData('hotels')">Hotels</button>
               <button class="btn btn--primary btn--small" onclick="exportAll()">Export All</button>
-              <button class="btn btn--primary btn--small" onclick="exportConfig()">Export Config (IDs & Links)</button>
+              <button class="btn btn--primary btn--small" onclick="exportConfig()">Export Config</button>
             </div>
           </div>
         </div>
         <div class="admin-section">
           <div class="admin-section__header"><h3>Import Data</h3></div>
           <div class="admin-section__body">
-            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1rem;">
-              Import a JSON file to replace venue data. The file must match the expected schema.
-            </p>
-            <div class="field">
-              <label>Select data type to import</label>
-              <select id="import-type">
-                <option value="attractions">Attractions</option>
-                <option value="restaurants">Restaurants</option>
-                <option value="nightlife">Nightlife</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="hotels">Hotels</option>
-              </select>
-            </div>
-            <div class="field">
-              <label>Choose JSON file</label>
-              <input type="file" id="import-file" accept=".json">
-            </div>
+            <div class="field"><label>Data type</label><select id="import-type"><option value="attractions">Attractions</option><option value="restaurants">Restaurants</option><option value="nightlife">Nightlife</option><option value="entertainment">Entertainment</option><option value="hotels">Hotels</option></select></div>
+            <div class="field"><label>JSON file</label><input type="file" id="import-file" accept=".json"></div>
             <button class="btn btn--primary" onclick="importData()">Import</button>
           </div>
         </div>
@@ -385,74 +465,52 @@
     </div>
   </main>
 
-  <!-- Edit Modal -->
-  <div class="modal-overlay" id="edit-modal">
-    <div class="modal">
-      <h3 id="modal-title">Edit Venue</h3>
-      <form id="modal-form"></form>
-    </div>
-  </div>
-
-  <!-- Status Bar -->
-  <div class="status-bar" id="status-bar" style="display:none;">
-    <span class="status-bar__text" id="status-text"></span>
-    <button class="btn btn--primary btn--small" onclick="hideStatus()">Dismiss</button>
-  </div>
-
+  <div class="modal-overlay" id="edit-modal"><div class="modal"><h3 id="modal-title">Edit Venue</h3><form id="modal-form"></form></div></div>
+  <div class="status-bar" id="status-bar" style="display:none;"><span class="status-bar__text" id="status-text"></span><button class="btn btn--primary btn--small" onclick="hideStatus()">Dismiss</button></div>
   <footer class="footer" id="site-footer"></footer>
 
   <script src="js/config.js"></script>
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
   <script>
-    // ============================================================
-    // ADMIN STATE
-    // ============================================================
     const ADMIN_KEY = 'londonPlannerAdmin';
+    const SALES_KEY = 'londonPlannerSales';
     const venueData = {};
     const venueTypes = ['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'];
 
-    // ============================================================
-    // INIT
-    // ============================================================
     document.addEventListener('DOMContentLoaded', async () => {
       UI.init();
 
-      // Load all venue data
       for (const type of venueTypes) {
         const stored = localStorage.getItem(`admin_${type}`);
-        if (stored) {
-          venueData[type] = JSON.parse(stored);
-        } else {
-          const res = await fetch(`data/${type}.json`);
-          venueData[type] = await res.json();
-        }
+        if (stored) { venueData[type] = JSON.parse(stored); }
+        else { try { const res = await fetch(`data/${type}.json`); venueData[type] = await res.json(); } catch(e) { venueData[type] = []; } }
       }
 
-      // Load saved admin config
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
 
-      // Populate Manifest Financial fields
-      document.querySelectorAll('[id^="manifest-"]').forEach(input => {
-        const key = input.dataset.key;
-        input.value = saved.manifest?.[key] || '';
-      });
+      // Populate fields
+      document.querySelectorAll('[id^="manifest-"]').forEach(i => { i.value = saved.manifest?.[i.dataset.key] || ''; });
+      document.querySelectorAll('[id^="aff-"]').forEach(i => { i.value = saved.affiliates?.[i.dataset.key] || ''; });
 
-      // Populate Affiliate fields
-      document.querySelectorAll('[id^="aff-"]').forEach(input => {
-        const key = input.dataset.key;
-        input.value = saved.affiliates?.[key] || '';
-      });
+      // GHL fields
+      document.getElementById('ghl-location').value = saved.ghl?.locationId || '';
+      document.getElementById('ghl-apikey').value = saved.ghl?.apiKey || '';
+      document.getElementById('ghl-webhook-email').value = saved.ghl?.webhooks?.emailCapture || '';
+      document.getElementById('ghl-webhook-purchase').value = saved.ghl?.webhooks?.itineraryPurchase || '';
+      document.getElementById('ghl-webhook-consultation').value = saved.ghl?.webhooks?.consultationBooking || '';
+      document.getElementById('ghl-webhook-concierge').value = saved.ghl?.webhooks?.conciergeBooking || '';
+      document.getElementById('ghl-webhook-contact').value = saved.ghl?.webhooks?.contactForm || '';
+      document.getElementById('ghl-calendar').value = saved.ghl?.calendarId || '';
+      document.getElementById('ghl-pipeline').value = saved.ghl?.pipelineId || '';
+      document.getElementById('weather-apikey').value = saved.weather?.apiKey || '';
 
-      // Render venue lists
-      for (const type of venueTypes) {
-        renderVenueList(type);
-      }
-
-      // Render stats
+      for (const type of venueTypes) renderVenueList(type);
       renderStats();
+      renderDashboard();
+      renderSalesPanel();
+      updateIntegrationStatus();
 
-      // Tab switching
       document.querySelectorAll('.admin-tab').forEach(tab => {
         tab.addEventListener('click', () => {
           document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
@@ -464,336 +522,355 @@
     });
 
     // ============================================================
+    // DASHBOARD
+    // ============================================================
+    function renderDashboard() {
+      const sales = JSON.parse(localStorage.getItem(SALES_KEY) || '[]');
+      const now = new Date();
+      const thisMonth = sales.filter(s => new Date(s.date).getMonth() === now.getMonth() && new Date(s.date).getFullYear() === now.getFullYear());
+
+      document.getElementById('revenue-month').textContent = '$' + thisMonth.reduce((s, x) => s + (x.amount || 0), 0).toFixed(0);
+      document.getElementById('revenue-total').textContent = '$' + sales.reduce((s, x) => s + (x.amount || 0), 0).toFixed(0);
+
+      // Revenue by product
+      const products = {};
+      sales.forEach(s => { products[s.product] = (products[s.product] || 0) + (s.amount || 0); });
+      document.getElementById('revenue-products').innerHTML = Object.keys(products).length === 0
+        ? '<p style="color:var(--color-text-muted);font-size:0.85rem;">No sales yet</p>'
+        : Object.entries(products).map(([p, amt]) => `
+          <div style="display:flex;justify-content:space-between;padding:0.4rem 0;border-bottom:1px solid var(--color-border);font-size:0.85rem;">
+            <span>${p}</span><strong>$${amt.toFixed(0)}</strong>
+          </div>`).join('');
+
+      // Activity log
+      const activity = sales.slice(-10).reverse();
+      document.getElementById('activity-log').innerHTML = activity.length === 0
+        ? '<tr><td colspan="4" style="text-align:center;color:var(--color-text-muted);padding:2rem;">No activity yet. Sales and events will appear here.</td></tr>'
+        : activity.map(s => `
+          <tr>
+            <td>${new Date(s.date).toLocaleDateString()} ${new Date(s.date).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}</td>
+            <td><span class="badge badge--accent">${s.product}</span></td>
+            <td>${s.name || 'Unknown'}</td>
+            <td><strong>$${(s.amount||0).toFixed(0)}</strong></td>
+          </tr>`).join('');
+
+      // DB Health
+      let total = 0, linked = 0;
+      const breakdown = {};
+      venueTypes.forEach(t => {
+        const items = venueData[t] || [];
+        const l = items.filter(v => v.affiliateUrl).length;
+        breakdown[t] = { total: items.length, linked: l };
+        total += items.length; linked += l;
+      });
+      document.getElementById('db-health').innerHTML = `
+        <div style="margin-bottom:1rem;">
+          <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.5rem;"><span>Link Coverage</span><strong>${total > 0 ? Math.round(linked/total*100) : 0}%</strong></div>
+          <div style="background:var(--color-border);border-radius:var(--radius-full);height:8px;overflow:hidden;">
+            <div style="background:var(--color-success);height:100%;width:${total > 0 ? (linked/total*100) : 0}%;border-radius:var(--radius-full);"></div>
+          </div>
+        </div>
+        ${Object.entries(breakdown).map(([t, d]) => `
+          <div style="display:flex;justify-content:space-between;padding:0.35rem 0;font-size:0.82rem;border-bottom:1px solid var(--color-border);">
+            <span style="text-transform:capitalize;">${t}</span>
+            <span>${d.total} venues · <span style="color:${d.linked > 0 ? 'var(--color-success)' : 'var(--color-error)'};">${d.linked} linked</span></span>
+          </div>
+        `).join('')}
+      `;
+
+      // Integration status
+      updateIntegrationStatus();
+    }
+
+    function updateIntegrationStatus() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      const checks = [
+        { name: 'GoHighLevel CRM', ok: saved.ghl?.locationId && saved.ghl?.apiKey, id: 'ghl' },
+        { name: 'Manifest Financial', ok: saved.manifest?.tier1, id: 'manifest' },
+        { name: 'OpenWeatherMap', ok: saved.weather?.apiKey, id: 'weather' }
+      ];
+
+      document.getElementById('integration-status').innerHTML = checks.map(c => `
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--color-border);">
+          <span style="font-size:0.85rem;">${c.name}</span>
+          <span class="badge ${c.ok ? 'tag-active' : 'tag-missing'}">${c.ok ? 'Connected' : 'Not Set Up'}</span>
+        </div>
+      `).join('') + `
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;">
+          <span style="font-size:0.85rem;">TfL Tube Status</span>
+          <span class="badge tag-active">Active (Free)</span>
+        </div>
+      `;
+
+      // Update connect cards
+      checks.forEach(c => {
+        const card = document.getElementById(`${c.id}-card`);
+        const status = document.getElementById(`${c.id}-status`);
+        if (card && status) {
+          if (c.ok) { card.classList.add('connected'); status.className = 'connect-card__status tag-active'; status.textContent = 'Connected'; }
+          else { card.classList.remove('connected'); status.className = 'connect-card__status tag-missing'; status.textContent = 'Not Connected'; }
+        }
+      });
+    }
+
+    // ============================================================
+    // SALES
+    // ============================================================
+    function renderSalesPanel() {
+      const sales = JSON.parse(localStorage.getItem(SALES_KEY) || '[]');
+      const now = new Date();
+      const thisMonth = sales.filter(s => { const d = new Date(s.date); return d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear(); });
+      const today = sales.filter(s => new Date(s.date).toDateString() === now.toDateString());
+
+      document.getElementById('sales-stats').innerHTML = `
+        <div class="stat-card"><div class="stat-card__num">${sales.length}</div><div class="stat-card__label">Total Sales</div></div>
+        <div class="stat-card"><div class="stat-card__num">${thisMonth.length}</div><div class="stat-card__label">This Month</div></div>
+        <div class="stat-card"><div class="stat-card__num">${today.length}</div><div class="stat-card__label">Today</div></div>
+        <div class="stat-card"><div class="stat-card__num">$${sales.reduce((s,x) => s + (x.amount||0), 0).toFixed(0)}</div><div class="stat-card__label">Total Revenue</div></div>
+        <div class="stat-card"><div class="stat-card__num">$${thisMonth.reduce((s,x) => s + (x.amount||0), 0).toFixed(0)}</div><div class="stat-card__label">Month Revenue</div></div>
+        <div class="stat-card"><div class="stat-card__num">$${sales.length > 0 ? (sales.reduce((s,x) => s + (x.amount||0), 0) / sales.length).toFixed(0) : '0'}</div><div class="stat-card__label">Avg Order Value</div></div>
+      `;
+
+      // Sales log
+      const log = document.getElementById('sales-log');
+      const empty = document.getElementById('sales-empty');
+      if (sales.length === 0) { log.innerHTML = ''; empty.style.display = 'block'; }
+      else {
+        empty.style.display = 'none';
+        log.innerHTML = sales.slice().reverse().map(s => `
+          <tr>
+            <td>${new Date(s.date).toLocaleDateString()}</td>
+            <td><span class="badge badge--accent">${s.product}</span></td>
+            <td>${s.name || '—'}</td>
+            <td>${s.email || '—'}</td>
+            <td><strong>$${(s.amount||0).toFixed(2)}</strong></td>
+            <td><span class="badge tag-active">${s.status || 'Completed'}</span></td>
+          </tr>
+        `).join('');
+      }
+
+      // Revenue by product
+      const products = {};
+      sales.forEach(s => { products[s.product] = (products[s.product]||0) + (s.amount||0); });
+      document.getElementById('revenue-by-product').innerHTML = Object.keys(products).length === 0
+        ? '<p style="text-align:center;color:var(--color-text-muted);padding:1rem;">No data yet</p>'
+        : Object.entries(products).sort((a,b) => b[1]-a[1]).map(([p,a]) => {
+          const max = Math.max(...Object.values(products));
+          return `<div style="margin-bottom:0.75rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.25rem;"><span>${p}</span><strong>$${a.toFixed(0)}</strong></div>
+            <div style="background:var(--color-border);border-radius:var(--radius-full);height:6px;"><div style="background:var(--color-accent);height:100%;width:${(a/max*100).toFixed(0)}%;border-radius:var(--radius-full);"></div></div>
+          </div>`;
+        }).join('');
+
+      // Conversion funnel
+      const wizardStarts = parseInt(localStorage.getItem('stat_wizard_starts') || '0');
+      const itinerariesGenerated = parseInt(localStorage.getItem('stat_itineraries_generated') || '0');
+      const purchases = sales.filter(s => ['tier1','tier2','tier3'].includes(s.product)).length;
+      document.getElementById('conversion-funnel').innerHTML = `
+        <div style="font-size:0.85rem;">
+          ${[
+            { label: 'Wizard Started', val: wizardStarts, pct: 100 },
+            { label: 'Itinerary Generated', val: itinerariesGenerated, pct: wizardStarts > 0 ? Math.round(itinerariesGenerated/wizardStarts*100) : 0 },
+            { label: 'Purchase Completed', val: purchases, pct: itinerariesGenerated > 0 ? Math.round(purchases/itinerariesGenerated*100) : 0 }
+          ].map(s => `
+            <div style="margin-bottom:1rem;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:0.25rem;"><span>${s.label}</span><strong>${s.val} (${s.pct}%)</strong></div>
+              <div style="background:var(--color-border);border-radius:var(--radius-full);height:8px;"><div style="background:var(--color-accent);height:100%;width:${s.pct}%;border-radius:var(--radius-full);"></div></div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function recordSale() {
+      const sale = {
+        date: new Date().toISOString(),
+        name: document.getElementById('sale-name').value,
+        email: document.getElementById('sale-email').value,
+        product: document.getElementById('sale-product').selectedOptions[0].text,
+        productKey: document.getElementById('sale-product').value,
+        amount: parseFloat(document.getElementById('sale-amount').value) || 0,
+        notes: document.getElementById('sale-notes').value,
+        status: 'Completed'
+      };
+      const sales = JSON.parse(localStorage.getItem(SALES_KEY) || '[]');
+      sales.push(sale);
+      localStorage.setItem(SALES_KEY, JSON.stringify(sales));
+      renderSalesPanel();
+      renderDashboard();
+      renderStats();
+      showStatus(`Sale recorded: ${sale.product} — $${sale.amount}`);
+      document.getElementById('sale-name').value = '';
+      document.getElementById('sale-email').value = '';
+      document.getElementById('sale-amount').value = '';
+      document.getElementById('sale-notes').value = '';
+    }
+
+    function exportSalesCSV() {
+      const sales = JSON.parse(localStorage.getItem(SALES_KEY) || '[]');
+      if (sales.length === 0) { showStatus('No sales to export'); return; }
+      const csv = 'Date,Product,Customer,Email,Amount,Status,Notes\n' + sales.map(s =>
+        `"${s.date}","${s.product}","${s.name||''}","${s.email||''}",${s.amount||0},"${s.status||'Completed'}","${s.notes||''}"`
+      ).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'sales-export.csv'; a.click();
+    }
+
+    // ============================================================
+    // SAVE INTEGRATIONS
+    // ============================================================
+    function saveGHLConfig() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.ghl = {
+        locationId: document.getElementById('ghl-location').value.trim(),
+        apiKey: document.getElementById('ghl-apikey').value.trim(),
+        webhooks: {
+          emailCapture: document.getElementById('ghl-webhook-email').value.trim(),
+          itineraryPurchase: document.getElementById('ghl-webhook-purchase').value.trim(),
+          consultationBooking: document.getElementById('ghl-webhook-consultation').value.trim(),
+          conciergeBooking: document.getElementById('ghl-webhook-concierge').value.trim(),
+          contactForm: document.getElementById('ghl-webhook-contact').value.trim()
+        },
+        calendarId: document.getElementById('ghl-calendar').value.trim(),
+        pipelineId: document.getElementById('ghl-pipeline').value.trim()
+      };
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      updateIntegrationStatus();
+      showStatus('GoHighLevel settings saved.');
+    }
+
+    function testGHLConnection() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      if (!saved.ghl?.webhooks?.emailCapture) { showStatus('Please save a webhook URL first.'); return; }
+      fetch(saved.ghl.webhooks.emailCapture, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'test', source: 'London & UK Planner Admin', timestamp: new Date().toISOString() })
+      }).then(r => showStatus(r.ok ? 'Test webhook sent successfully!' : 'Webhook returned error: ' + r.status))
+        .catch(e => showStatus('Connection failed: ' + e.message));
+    }
+
+    function saveWeatherConfig() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.weather = { apiKey: document.getElementById('weather-apikey').value.trim() };
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      updateIntegrationStatus();
+      showStatus('Weather API key saved.');
+    }
+
+    function savePaymentLinks() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.manifest = {};
+      document.querySelectorAll('[id^="manifest-"]').forEach(i => { saved.manifest[i.dataset.key] = i.value.trim(); });
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      updateIntegrationStatus();
+      showStatus('Payment links saved.');
+    }
+
+    function saveAffiliateIds() {
+      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      saved.affiliates = {};
+      document.querySelectorAll('[id^="aff-"]').forEach(i => { saved.affiliates[i.dataset.key] = i.value.trim(); });
+      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+      showStatus('Affiliate IDs saved.');
+    }
+
+    // ============================================================
     // STATS
     // ============================================================
     function renderStats() {
       const grid = document.getElementById('stats-grid');
-      let totalVenues = 0, withLinks = 0, missingLinks = 0;
-
-      for (const type of venueTypes) {
-        (venueData[type] || []).forEach(v => {
-          totalVenues++;
-          if (v.affiliateUrl) withLinks++;
-          else missingLinks++;
-        });
-      }
+      const sales = JSON.parse(localStorage.getItem(SALES_KEY) || '[]');
+      let totalVenues = 0, withLinks = 0;
+      venueTypes.forEach(t => { (venueData[t]||[]).forEach(v => { totalVenues++; if (v.affiliateUrl) withLinks++; }); });
 
       grid.innerHTML = `
-        <div class="stat-card">
-          <div class="stat-card__num">${totalVenues}</div>
-          <div class="stat-card__label">Total Venues</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card__num" style="color:var(--color-success);">${withLinks}</div>
-          <div class="stat-card__label">With Affiliate Links</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card__num" style="color:var(--color-error);">${missingLinks}</div>
-          <div class="stat-card__label">Missing Links</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card__num">${Math.round(withLinks / totalVenues * 100)}%</div>
-          <div class="stat-card__label">Link Coverage</div>
-        </div>
+        <div class="stat-card"><div class="stat-card__num">${totalVenues}</div><div class="stat-card__label">Total Venues</div></div>
+        <div class="stat-card"><div class="stat-card__num" style="color:var(--color-success);">${withLinks}</div><div class="stat-card__label">With Links</div></div>
+        <div class="stat-card"><div class="stat-card__num" style="color:var(--color-error);">${totalVenues - withLinks}</div><div class="stat-card__label">Missing Links</div></div>
+        <div class="stat-card"><div class="stat-card__num">${sales.length}</div><div class="stat-card__label">Total Sales</div></div>
+        <div class="stat-card"><div class="stat-card__num">$${sales.reduce((s,x) => s + (x.amount||0), 0).toFixed(0)}</div><div class="stat-card__label">Revenue</div></div>
+        <div class="stat-card"><div class="stat-card__num">${Math.round(withLinks / (totalVenues||1) * 100)}%</div><div class="stat-card__label">Coverage</div></div>
       `;
     }
 
     // ============================================================
-    // SAVE PAYMENT LINKS
-    // ============================================================
-    function savePaymentLinks() {
-      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
-      saved.manifest = {};
-      document.querySelectorAll('[id^="manifest-"]').forEach(input => {
-        saved.manifest[input.dataset.key] = input.value.trim();
-      });
-      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
-      showStatus('Payment links saved. Export config to update your live site.');
-    }
-
-    // ============================================================
-    // SAVE AFFILIATE IDS
-    // ============================================================
-    function saveAffiliateIds() {
-      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
-      saved.affiliates = {};
-      document.querySelectorAll('[id^="aff-"]').forEach(input => {
-        saved.affiliates[input.dataset.key] = input.value.trim();
-      });
-      localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
-      showStatus('Affiliate IDs saved. Export config to update your live site.');
-    }
-
-    // ============================================================
-    // VENUE LIST RENDERING
+    // VENUE MANAGEMENT (same as before)
     // ============================================================
     function renderVenueList(type, filter = '', linkFilter = 'all') {
       const list = document.getElementById(`venue-list-${type}`);
       let items = venueData[type] || [];
-
-      if (filter) {
-        const f = filter.toLowerCase();
-        items = items.filter(v => v.name.toLowerCase().includes(f) || (v.neighbourhood || '').toLowerCase().includes(f));
-      }
+      if (filter) { const f = filter.toLowerCase(); items = items.filter(v => v.name.toLowerCase().includes(f) || (v.neighbourhood||'').toLowerCase().includes(f)); }
       if (linkFilter === 'has-link') items = items.filter(v => v.affiliateUrl);
       if (linkFilter === 'no-link') items = items.filter(v => !v.affiliateUrl);
-
-      list.innerHTML = items.length === 0
-        ? '<div style="padding:2rem;text-align:center;color:var(--color-text-muted);">No venues found</div>'
-        : items.map((v, i) => `
-          <div class="venue-item">
-            <div>
-              <div class="venue-item__name">${v.name}</div>
-              <div class="venue-item__meta">
-                ${v.neighbourhood || 'Various'} &middot;
-                ${(v.tags || []).slice(0, 4).map(t => `<span class="badge badge--accent" style="font-size:0.65rem;padding:0.1rem 0.4rem;">${t}</span>`).join(' ')}
-              </div>
-              <div class="venue-item__link ${v.affiliateUrl ? '' : 'venue-item__link--empty'}">
-                ${v.affiliateUrl
-                  ? `<span class="badge tag-active" style="font-size:0.65rem;">✓ ${AffiliateLinks.detect(v.affiliateUrl)}</span> ${v.affiliateUrl.substring(0, 60)}...`
-                  : '⚠ No affiliate link set'}
-              </div>
-            </div>
-            <div class="venue-item__actions">
-              <button class="btn btn--primary btn--small" onclick="editVenue('${type}', '${v.id}')">Edit</button>
-              <button class="btn btn--outline btn--small" style="color:var(--color-error);border-color:var(--color-error);font-size:0.75rem;" onclick="deleteVenue('${type}', '${v.id}')">Delete</button>
-            </div>
-          </div>
-        `).join('');
+      list.innerHTML = items.length === 0 ? '<div style="padding:2rem;text-align:center;color:var(--color-text-muted);">No venues found</div>'
+        : items.map(v => `<div class="venue-item"><div><div class="venue-item__name">${v.name}</div><div class="venue-item__meta">${v.neighbourhood||'Various'} · ${(v.tags||[]).slice(0,4).map(t => `<span class="badge badge--accent" style="font-size:0.65rem;padding:0.1rem 0.4rem;">${t}</span>`).join(' ')}</div><div class="venue-item__link ${v.affiliateUrl?'':'venue-item__link--empty'}">${v.affiliateUrl ? `<span class="badge tag-active" style="font-size:0.65rem;">✓ ${AffiliateLinks.detect(v.affiliateUrl)}</span> ${v.affiliateUrl.substring(0,50)}...` : '⚠ No affiliate link'}</div></div><div class="venue-item__actions"><button class="btn btn--primary btn--small" onclick="editVenue('${type}','${v.id}')">Edit</button><button class="btn btn--outline btn--small" style="color:var(--color-error);border-color:var(--color-error);font-size:0.75rem;" onclick="deleteVenue('${type}','${v.id}')">Delete</button></div></div>`).join('');
     }
+    function filterVenues(type) { renderVenueList(type, document.getElementById(`search-${type}`).value, document.getElementById(`filter-${type}-links`).value); }
 
-    function filterVenues(type) {
-      const search = document.getElementById(`search-${type}`).value;
-      const linkFilter = document.getElementById(`filter-${type}-links`).value;
-      renderVenueList(type, search, linkFilter);
-    }
-
-    // ============================================================
-    // EDIT VENUE MODAL
-    // ============================================================
     function editVenue(type, id) {
-      const venue = venueData[type].find(v => v.id === id);
-      if (!venue) return;
-
-      const modal = document.getElementById('edit-modal');
+      const venue = venueData[type].find(v => v.id === id); if (!venue) return;
       document.getElementById('modal-title').textContent = `Edit: ${venue.name}`;
-
-      const isHotel = type === 'hotels';
-      const isRestaurant = type === 'restaurants';
-
+      const isHotel = type === 'hotels', isRestaurant = type === 'restaurants';
       document.getElementById('modal-form').innerHTML = `
-        <div class="field">
-          <label>Name</label>
-          <input type="text" id="edit-name" value="${venue.name || ''}">
-        </div>
-        <div class="field">
-          <label>Description</label>
-          <textarea id="edit-description" rows="3">${venue.description || ''}</textarea>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label>Neighbourhood</label>
-            <input type="text" id="edit-neighbourhood" value="${venue.neighbourhood || ''}">
-          </div>
-          <div class="field">
-            <label>Address</label>
-            <input type="text" id="edit-address" value="${venue.address || ''}">
-          </div>
-        </div>
-        ${isRestaurant ? `
-          <div class="field">
-            <label>Cuisine</label>
-            <input type="text" id="edit-cuisine" value="${venue.cuisine || ''}">
-          </div>
-        ` : ''}
-        ${isHotel ? `
-          <div class="field-row">
-            <div class="field">
-              <label>Star Rating</label>
-              <input type="number" id="edit-stars" min="1" max="5" value="${venue.starRating || 3}">
-            </div>
-            <div class="field">
-              <label>Price Range</label>
-              <input type="text" id="edit-priceRange" value="${venue.priceRange || ''}">
-            </div>
-          </div>
-        ` : ''}
-        <div class="field-row">
-          <div class="field">
-            <label>Estimated Cost (£)</label>
-            <input type="number" id="edit-cost" step="0.01" value="${venue.estimatedCost?.amount || 0}">
-          </div>
-          <div class="field">
-            <label>Budget Tiers <small>(comma separated)</small></label>
-            <input type="text" id="edit-budget" value="${(venue.budgetTier || []).join(', ')}">
-          </div>
-        </div>
-        <div class="field">
-          <label>Tags <small>(comma separated)</small></label>
-          <input type="text" id="edit-tags" value="${(venue.tags || []).join(', ')}">
-        </div>
-        <hr style="margin: 1.5rem 0; border: none; border-top: 2px solid var(--color-accent);">
-        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">Affiliate / Booking Link</h4>
-        <div class="field">
-          <label>Affiliate URL</label>
-          <input type="url" id="edit-affiliateUrl" value="${venue.affiliateUrl || ''}" placeholder="https://www.getyourguide.com/...">
-          <div class="hint">Paste the full product URL from the affiliate program (GetYourGuide, Booking.com, OpenTable, etc.)</div>
-        </div>
-        <div class="field">
-          <label>Button Label</label>
-          <input type="text" id="edit-affiliateLabel" value="${venue.affiliateLabel || ''}" placeholder="e.g. Book Skip-the-Line Tickets">
-        </div>
-        <div class="field">
-          <label>Insider Tips</label>
-          <textarea id="edit-tips" rows="2">${venue.tips || ''}</textarea>
-        </div>
-        <div style="display:flex;gap:1rem;margin-top:1.5rem;">
-          <button type="button" class="btn btn--primary" onclick="saveVenue('${type}', '${id}')">Save Changes</button>
-          <button type="button" class="btn btn--outline" onclick="closeModal()">Cancel</button>
-        </div>
-      `;
-
-      modal.classList.add('active');
+        <div class="field"><label>Name</label><input type="text" id="edit-name" value="${venue.name||''}"></div>
+        <div class="field"><label>Description</label><textarea id="edit-description" rows="3">${venue.description||''}</textarea></div>
+        <div class="field-row"><div class="field"><label>Neighbourhood</label><input type="text" id="edit-neighbourhood" value="${venue.neighbourhood||''}"></div><div class="field"><label>Address</label><input type="text" id="edit-address" value="${venue.address||''}"></div></div>
+        ${isRestaurant ? `<div class="field"><label>Cuisine</label><input type="text" id="edit-cuisine" value="${venue.cuisine||''}"></div>` : ''}
+        ${isHotel ? `<div class="field-row"><div class="field"><label>Stars</label><input type="number" id="edit-stars" min="1" max="5" value="${venue.starRating||3}"></div><div class="field"><label>Price Range</label><input type="text" id="edit-priceRange" value="${venue.priceRange||''}"></div></div>` : ''}
+        <div class="field-row"><div class="field"><label>Cost (£)</label><input type="number" id="edit-cost" step="0.01" value="${venue.estimatedCost?.amount||0}"></div><div class="field"><label>Budget Tiers</label><input type="text" id="edit-budget" value="${(venue.budgetTier||[]).join(', ')}"></div></div>
+        <div class="field"><label>Tags</label><input type="text" id="edit-tags" value="${(venue.tags||[]).join(', ')}"></div>
+        <hr style="margin:1.5rem 0;border:none;border-top:2px solid var(--color-accent);"><h4 style="color:var(--color-accent);margin-bottom:1rem;">Affiliate Link</h4>
+        <div class="field"><label>URL</label><input type="url" id="edit-affiliateUrl" value="${venue.affiliateUrl||''}"></div>
+        <div class="field"><label>Button Label</label><input type="text" id="edit-affiliateLabel" value="${venue.affiliateLabel||''}"></div>
+        <div class="field"><label>Tips</label><textarea id="edit-tips" rows="2">${venue.tips||''}</textarea></div>
+        <div style="display:flex;gap:1rem;margin-top:1.5rem;"><button type="button" class="btn btn--primary" onclick="saveVenue('${type}','${id}')">Save</button><button type="button" class="btn btn--outline" onclick="closeModal()">Cancel</button></div>`;
+      document.getElementById('edit-modal').classList.add('active');
     }
 
     function saveVenue(type, id) {
-      const venue = venueData[type].find(v => v.id === id);
-      if (!venue) return;
-
-      venue.name = document.getElementById('edit-name').value;
-      venue.description = document.getElementById('edit-description').value;
-      venue.neighbourhood = document.getElementById('edit-neighbourhood').value;
-      venue.address = document.getElementById('edit-address').value;
-      venue.affiliateUrl = document.getElementById('edit-affiliateUrl').value;
-      venue.affiliateLabel = document.getElementById('edit-affiliateLabel').value;
-      venue.tips = document.getElementById('edit-tips').value;
-      venue.estimatedCost = { amount: parseFloat(document.getElementById('edit-cost').value) || 0, currency: 'GBP' };
-      venue.budgetTier = document.getElementById('edit-budget').value.split(',').map(s => s.trim()).filter(Boolean);
-      venue.tags = document.getElementById('edit-tags').value.split(',').map(s => s.trim()).filter(Boolean);
-
-      if (document.getElementById('edit-cuisine')) venue.cuisine = document.getElementById('edit-cuisine').value;
-      if (document.getElementById('edit-stars')) venue.starRating = parseInt(document.getElementById('edit-stars').value);
-      if (document.getElementById('edit-priceRange')) venue.priceRange = document.getElementById('edit-priceRange').value;
-
-      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
-      renderVenueList(type);
-      renderStats();
-      closeModal();
-      showStatus(`"${venue.name}" updated. Export to save permanently.`);
+      const v = venueData[type].find(x => x.id === id); if (!v) return;
+      v.name = document.getElementById('edit-name').value; v.description = document.getElementById('edit-description').value;
+      v.neighbourhood = document.getElementById('edit-neighbourhood').value; v.address = document.getElementById('edit-address').value;
+      v.affiliateUrl = document.getElementById('edit-affiliateUrl').value; v.affiliateLabel = document.getElementById('edit-affiliateLabel').value;
+      v.tips = document.getElementById('edit-tips').value; v.estimatedCost = { amount: parseFloat(document.getElementById('edit-cost').value)||0, currency: 'GBP' };
+      v.budgetTier = document.getElementById('edit-budget').value.split(',').map(s=>s.trim()).filter(Boolean);
+      v.tags = document.getElementById('edit-tags').value.split(',').map(s=>s.trim()).filter(Boolean);
+      if (document.getElementById('edit-cuisine')) v.cuisine = document.getElementById('edit-cuisine').value;
+      if (document.getElementById('edit-stars')) v.starRating = parseInt(document.getElementById('edit-stars').value);
+      if (document.getElementById('edit-priceRange')) v.priceRange = document.getElementById('edit-priceRange').value;
+      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type])); renderVenueList(type); renderStats(); closeModal();
+      showStatus(`"${v.name}" updated.`);
     }
 
-    // ============================================================
-    // ADD VENUE
-    // ============================================================
     function addVenue(type) {
       const id = 'new-' + Date.now();
-      const newVenue = {
-        id,
-        name: 'New Venue',
-        description: '',
-        neighbourhood: '',
-        budgetTier: ['mid-range'],
-        tags: [],
-        estimatedCost: { amount: 0, currency: 'GBP' },
-        address: '',
-        affiliateUrl: '',
-        affiliateLabel: '',
-        tips: ''
-      };
-
-      if (type === 'restaurants') { newVenue.cuisine = ''; newVenue.mealType = ['lunch', 'dinner']; }
-      if (type === 'nightlife') { newVenue.type = 'pub'; }
-      if (type === 'entertainment') { newVenue.type = 'experience'; }
-      if (type === 'hotels') { newVenue.starRating = 3; newVenue.priceRange = ''; }
-      if (type === 'attractions') { newVenue.duration = '1-2h'; newVenue.bestTimeOfDay = ['morning', 'afternoon']; }
-
-      venueData[type].push(newVenue);
-      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
-      editVenue(type, id);
-      renderStats();
+      const nv = { id, name: 'New Venue', description: '', neighbourhood: '', budgetTier: ['mid-range'], tags: [], estimatedCost: { amount: 0, currency: 'GBP' }, address: '', affiliateUrl: '', affiliateLabel: '', tips: '' };
+      if (type==='restaurants') { nv.cuisine=''; nv.mealType=['lunch','dinner']; }
+      if (type==='nightlife') nv.type='pub'; if (type==='entertainment') nv.type='experience';
+      if (type==='hotels') { nv.starRating=3; nv.priceRange=''; }
+      if (type==='attractions') { nv.duration='1-2h'; nv.bestTimeOfDay=['morning','afternoon']; }
+      venueData[type].push(nv); localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type])); editVenue(type, id); renderStats();
     }
 
-    // ============================================================
-    // DELETE VENUE
-    // ============================================================
     function deleteVenue(type, id) {
-      const venue = venueData[type].find(v => v.id === id);
-      if (!venue || !confirm(`Delete "${venue.name}"? This cannot be undone.`)) return;
-
-      venueData[type] = venueData[type].filter(v => v.id !== id);
-      localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type]));
-      renderVenueList(type);
-      renderStats();
-      showStatus(`"${venue.name}" deleted.`);
+      const v = venueData[type].find(x => x.id === id); if (!v || !confirm(`Delete "${v.name}"?`)) return;
+      venueData[type] = venueData[type].filter(x => x.id !== id); localStorage.setItem(`admin_${type}`, JSON.stringify(venueData[type])); renderVenueList(type); renderStats();
     }
 
-    // ============================================================
-    // EXPORT / IMPORT
-    // ============================================================
-    function exportData(type) {
-      const data = venueData[type];
-      downloadJSON(data, `${type}.json`);
-    }
-
-    function exportAll() {
-      for (const type of venueTypes) exportData(type);
-    }
-
-    function exportConfig() {
-      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
-      downloadJSON(saved, 'admin-config.json');
-    }
-
-    function downloadJSON(data, filename) {
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = filename; a.click();
-      URL.revokeObjectURL(url);
-    }
-
+    function exportData(type) { downloadJSON(venueData[type], `${type}.json`); }
+    function exportAll() { venueTypes.forEach(t => exportData(t)); }
+    function exportConfig() { downloadJSON(JSON.parse(localStorage.getItem(ADMIN_KEY)||'{}'), 'admin-config.json'); }
+    function downloadJSON(data, fn) { const b = new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download=fn; a.click(); }
     function importData() {
-      const type = document.getElementById('import-type').value;
-      const file = document.getElementById('import-file').files[0];
-      if (!file) { showStatus('Please select a file to import.'); return; }
-
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        try {
-          const data = JSON.parse(e.target.result);
-          if (!Array.isArray(data)) throw new Error('Expected an array');
-          venueData[type] = data;
-          localStorage.setItem(`admin_${type}`, JSON.stringify(data));
-          renderVenueList(type);
-          renderStats();
-          showStatus(`Imported ${data.length} ${type} successfully.`);
-        } catch (err) {
-          showStatus(`Import failed: ${err.message}`);
-        }
-      };
-      reader.readAsText(file);
+      const type = document.getElementById('import-type').value, file = document.getElementById('import-file').files[0];
+      if (!file) { showStatus('Select a file.'); return; }
+      const r = new FileReader(); r.onload = e => { try { const d=JSON.parse(e.target.result); if(!Array.isArray(d)) throw new Error('Expected array'); venueData[type]=d; localStorage.setItem(`admin_${type}`,JSON.stringify(d)); renderVenueList(type); renderStats(); showStatus(`Imported ${d.length} ${type}.`); } catch(err) { showStatus('Import failed: '+err.message); } }; r.readAsText(file);
     }
-
-    // ============================================================
-    // MODAL & STATUS
-    // ============================================================
-    function closeModal() {
-      document.getElementById('edit-modal').classList.remove('active');
-    }
-
-    document.getElementById('edit-modal').addEventListener('click', (e) => {
-      if (e.target === e.currentTarget) closeModal();
-    });
-
-    function showStatus(msg) {
-      const bar = document.getElementById('status-bar');
-      document.getElementById('status-text').textContent = msg;
-      bar.style.display = 'flex';
-    }
-
-    function hideStatus() {
-      document.getElementById('status-bar').style.display = 'none';
-    }
+    function clearAllData() { if(!confirm('Clear all local admin data? This resets venue edits and sales log.')) return; venueTypes.forEach(t=>localStorage.removeItem(`admin_${t}`)); localStorage.removeItem(SALES_KEY); location.reload(); }
+    function closeModal() { document.getElementById('edit-modal').classList.remove('active'); }
+    document.getElementById('edit-modal').addEventListener('click', e => { if(e.target===e.currentTarget) closeModal(); });
+    function showStatus(msg) { document.getElementById('status-bar').style.display='flex'; document.getElementById('status-text').textContent=msg; }
+    function hideStatus() { document.getElementById('status-bar').style.display='none'; }
   </script>
 </body>
 </html>
