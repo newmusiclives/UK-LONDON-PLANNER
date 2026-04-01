@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Everything for Your Trip — London & UK Planner</title>
+  <meta name="description" content="Book flights, hotels, car hire, airport transfers, travel insurance, SIM cards, and a personal London guide — all in one place with best-price guarantees.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .service-card { background:var(--color-surface); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); overflow:hidden; border:1px solid var(--color-border); transition:all 0.2s; }
+    .service-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+    .service-card__icon { font-size:2.5rem; margin-bottom:0.75rem; }
+    .service-card__body { padding:2rem; text-align:center; }
+    .service-card__title { font-size:1.15rem; margin-bottom:0.5rem; }
+    .service-card__desc { font-size:0.85rem; color:var(--color-text-muted); margin-bottom:1.25rem; line-height:1.5; }
+    .service-card__partner { font-size:0.7rem; color:var(--color-text-muted); margin-top:0.75rem; }
+    .guide-pricing { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:1rem; margin:1.5rem 0; }
+    .guide-price { background:var(--color-surface-alt); border-radius:var(--radius-md); padding:1.25rem; text-align:center; border:2px solid var(--color-border); cursor:pointer; transition:all 0.2s; }
+    .guide-price:hover, .guide-price.active { border-color:var(--color-accent); background:var(--color-accent-light); }
+    .guide-price__days { font-size:1.5rem; font-weight:700; color:var(--color-primary); }
+    .guide-price__amount { font-family:var(--font-heading); font-size:1.25rem; font-weight:700; color:var(--color-accent); margin-top:0.25rem; }
+    .guide-price__perday { font-size:0.7rem; color:var(--color-text-muted); }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <!-- Hero -->
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Book Everything for Your Trip</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:650px;margin:0 auto;">Flights, hotels, car hire, transfers, insurance, and more — all the services you need, from trusted partners with the best prices</p>
+      </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Essential Travel Services</h2>
+          <div class="divider"></div>
+          <p>Everything you need to complete your London & UK trip</p>
+        </div>
+
+        <div class="grid grid--3" style="margin-bottom:3rem;">
+          <!-- Flights -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">✈️</div>
+              <h3 class="service-card__title">Flights to London</h3>
+              <p class="service-card__desc">Compare prices across 100+ airlines. Find the cheapest flights to Heathrow, Gatwick, Stansted, Luton, or London City.</p>
+              <a href="https://www.skyscanner.net/transport/flights-to/lond/london.html" target="_blank" rel="noopener" class="btn btn--primary btn--full">Search Flights</a>
+              <p class="service-card__partner">Powered by Skyscanner</p>
+            </div>
+          </div>
+
+          <!-- Hotels -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🏨</div>
+              <h3 class="service-card__title">Hotels & Accommodation</h3>
+              <p class="service-card__desc">From budget hostels to 5-star luxury. Free cancellation on most rooms. Best price guarantee.</p>
+              <a href="https://www.booking.com/city/gb/london.html" target="_blank" rel="noopener" class="btn btn--primary btn--full">Search Hotels</a>
+              <p class="service-card__partner">Powered by Booking.com</p>
+            </div>
+          </div>
+
+          <!-- Airport Transfers -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🚐</div>
+              <h3 class="service-card__title">Airport Transfers</h3>
+              <p class="service-card__desc">Pre-book your airport pickup. Private car, shared shuttle, or train tickets. Fixed prices, no surprises.</p>
+              <a href="airport-transfers.html" class="btn btn--primary btn--full">View All Options</a>
+              <p class="service-card__partner">Multiple providers compared</p>
+            </div>
+          </div>
+
+          <!-- Car Hire -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🚗</div>
+              <h3 class="service-card__title">Car Hire</h3>
+              <p class="service-card__desc">Essential for the Cotswolds, Lake District, and Scottish Highlands. Compare all major providers at every UK airport.</p>
+              <a href="https://www.rentalcars.com/city/gb/london/" target="_blank" rel="noopener" class="btn btn--primary btn--full">Compare Car Hire</a>
+              <p class="service-card__partner">Powered by RentalCars.com</p>
+            </div>
+          </div>
+
+          <!-- UK Rail -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🚂</div>
+              <h3 class="service-card__title">UK Train Tickets</h3>
+              <p class="service-card__desc">Book advance tickets for the best prices. London to Edinburgh, Bath, Oxford, and all UK destinations.</p>
+              <a href="https://www.trainline.com/" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book Train Tickets</a>
+              <p class="service-card__partner">Powered by Trainline</p>
+            </div>
+          </div>
+
+          <!-- Eurostar -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🚄</div>
+              <h3 class="service-card__title">Eurostar to London</h3>
+              <p class="service-card__desc">High-speed train from Paris, Brussels, or Amsterdam direct to London St Pancras. 2hr 15min from Paris.</p>
+              <a href="https://www.eurostar.com/" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book Eurostar</a>
+              <p class="service-card__partner">Powered by Eurostar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Essentials -->
+        <div class="section-header">
+          <h2>Travel Essentials</h2>
+          <div class="divider"></div>
+          <p>Don't leave home without these</p>
+        </div>
+
+        <div class="grid grid--3" style="margin-bottom:3rem;">
+          <!-- Travel Insurance -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🛡️</div>
+              <h3 class="service-card__title">Travel Insurance</h3>
+              <p class="service-card__desc">Medical emergencies, trip cancellations, lost luggage, and theft. Policies from just $4/day.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.worldnomads.com/" target="_blank" rel="noopener" class="btn btn--primary btn--full">World Nomads</a>
+                <a href="https://www.safetywing.com/" target="_blank" rel="noopener" class="btn btn--outline btn--full">SafetyWing</a>
+              </div>
+              <p class="service-card__partner">10% commission — recurring with SafetyWing</p>
+            </div>
+          </div>
+
+          <!-- eSIM -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">📱</div>
+              <h3 class="service-card__title">UK eSIM / Data</h3>
+              <p class="service-card__desc">Stay connected without roaming charges. Instant eSIM activation — works the moment you land. From $5 for 1GB.</p>
+              <a href="https://www.airalo.com/united-kingdom" target="_blank" rel="noopener" class="btn btn--primary btn--full">Get UK eSIM</a>
+              <p class="service-card__partner">Powered by Airalo · 15-30% commission</p>
+            </div>
+          </div>
+
+          <!-- Travel Money -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">💳</div>
+              <h3 class="service-card__title">Travel Money Card</h3>
+              <p class="service-card__desc">Best exchange rates, free ATM withdrawals, and no foreign transaction fees. Essential for UK travel.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://wise.com/" target="_blank" rel="noopener" class="btn btn--primary btn--full">Wise Card</a>
+                <a href="https://www.revolut.com/" target="_blank" rel="noopener" class="btn btn--outline btn--full">Revolut</a>
+              </div>
+              <p class="service-card__partner">Referral bonuses for both</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiences & Guides -->
+        <div class="section-header">
+          <h2>Experiences & Guides</h2>
+          <div class="divider"></div>
+          <p>Make your trip unforgettable with expert-led experiences</p>
+        </div>
+
+        <div class="grid grid--3" style="margin-bottom:3rem;">
+          <!-- Attraction Tickets -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🎟️</div>
+              <h3 class="service-card__title">Attraction Tickets</h3>
+              <p class="service-card__desc">Skip-the-line tickets for every major London attraction. Book in advance and save up to 20%.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.getyourguide.com/london-l57/" target="_blank" rel="noopener" class="btn btn--primary btn--full">GetYourGuide</a>
+                <a href="https://www.viator.com/London/d737-ttd" target="_blank" rel="noopener" class="btn btn--outline btn--full">Viator</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theatre Tickets -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🎭</div>
+              <h3 class="service-card__title">West End Theatre</h3>
+              <p class="service-card__desc">Book West End shows at the best prices. Last-minute deals and advance bookings available.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.todaytix.com/london" target="_blank" rel="noopener" class="btn btn--primary btn--full">TodayTix</a>
+                <a href="https://www.londontheatredirect.com/" target="_blank" rel="noopener" class="btn btn--outline btn--full">London Theatre Direct</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- London Pass -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🃏</div>
+              <h3 class="service-card__title">London Pass / Go City</h3>
+              <p class="service-card__desc">All-inclusive or explorer passes covering 80+ attractions. Save up to 50% vs buying individually.</p>
+              <a href="https://gocity.com/london" target="_blank" rel="noopener" class="btn btn--primary btn--full">View London Passes</a>
+              <p class="service-card__partner">6-10% commission via Go City</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal London Guide -->
+        <div class="admin-section" style="border:2px solid var(--color-accent);margin-bottom:3rem;">
+          <div style="background:linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);padding:2.5rem;text-align:center;">
+            <div style="font-size:3rem;margin-bottom:0.75rem;">🎩</div>
+            <h2 style="color:white;margin-bottom:0.5rem;">Personal London Guide</h2>
+            <p style="color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto 1.5rem;">Have a knowledgeable local guide accompany you throughout your London trip. They'll navigate, translate the culture, get you into hidden spots, and make sure you don't miss a thing.</p>
+
+            <div class="guide-pricing" style="max-width:700px;margin:1.5rem auto;">
+              <div class="guide-price" onclick="selectGuide(1)">
+                <div class="guide-price__days">1 Day</div>
+                <div class="guide-price__amount">$250</div>
+                <div class="guide-price__perday">Full day (8 hours)</div>
+              </div>
+              <div class="guide-price" onclick="selectGuide(2)">
+                <div class="guide-price__days">2 Days</div>
+                <div class="guide-price__amount">$450</div>
+                <div class="guide-price__perday">$225/day</div>
+              </div>
+              <div class="guide-price" onclick="selectGuide(3)">
+                <div class="guide-price__days">3 Days</div>
+                <div class="guide-price__amount">$600</div>
+                <div class="guide-price__perday">$200/day</div>
+              </div>
+              <div class="guide-price" onclick="selectGuide(4)">
+                <div class="guide-price__days">4 Days</div>
+                <div class="guide-price__amount">$750</div>
+                <div class="guide-price__perday">$188/day</div>
+              </div>
+              <div class="guide-price" onclick="selectGuide(5)">
+                <div class="guide-price__days">5 Days</div>
+                <div class="guide-price__amount">$900</div>
+                <div class="guide-price__perday">$180/day — Best Value</div>
+              </div>
+            </div>
+
+            <div style="max-width:600px;margin:0 auto;text-align:left;">
+              <h4 style="color:var(--color-accent);margin-bottom:0.75rem;">What's Included</h4>
+              <ul style="color:rgba(255,255,255,0.8);font-size:0.9rem;list-style:none;">
+                <li style="padding:0.3rem 0;">✓ Experienced local guide (born-and-raised Londoner)</li>
+                <li style="padding:0.3rem 0;">✓ Full day accompaniment (up to 8 hours per day)</li>
+                <li style="padding:0.3rem 0;">✓ Navigation and transport guidance</li>
+                <li style="padding:0.3rem 0;">✓ Access to hidden spots and local secrets</li>
+                <li style="padding:0.3rem 0;">✓ Restaurant recommendations and help with bookings</li>
+                <li style="padding:0.3rem 0;">✓ Photography tips and best photo spots</li>
+                <li style="padding:0.3rem 0;">✓ Customised to your itinerary and interests</li>
+                <li style="padding:0.3rem 0;">✓ Family-friendly guides available</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn--primary btn--large" style="padding:1.1rem 3rem;">Enquire About a Personal Guide</a>
+              <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:0.75rem;">We'll match you with the perfect guide. Powered by our network of vetted local experts.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking Concierge -->
+        <div class="card" style="border:2px solid var(--color-accent);margin-bottom:3rem;">
+          <div class="card__body" style="text-align:center;padding:2.5rem;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🛎️</div>
+            <h2 style="margin-bottom:0.5rem;">Booking Concierge — $150</h2>
+            <p style="color:var(--color-text-muted);max-width:600px;margin:0 auto 1.5rem;">Don't want to handle bookings yourself? Our team of travel assistants will book everything on your itinerary — restaurants, attractions, theatre tickets, tours, and more.</p>
+
+            <div style="max-width:500px;margin:0 auto 1.5rem;text-align:left;">
+              <h4 style="margin-bottom:0.75rem;">How It Works</h4>
+              <ol style="padding-left:1.25rem;color:var(--color-text-muted);font-size:0.9rem;">
+                <li style="margin-bottom:0.5rem;"><strong>Purchase your itinerary</strong> — get your personalised day-by-day plan</li>
+                <li style="margin-bottom:0.5rem;"><strong>Add Booking Concierge</strong> — $150 one-time fee</li>
+                <li style="margin-bottom:0.5rem;"><strong>We handle everything</strong> — our team books every restaurant, attraction, show, and experience</li>
+                <li style="margin-bottom:0.5rem;"><strong>Get your confirmation pack</strong> — email with all booking references, times, and addresses</li>
+              </ol>
+            </div>
+
+            <div style="background:var(--color-surface-alt);border-radius:var(--radius-md);padding:1rem;max-width:500px;margin:0 auto 1.5rem;text-align:left;">
+              <h4 style="font-size:0.85rem;margin-bottom:0.5rem;">What We Book For You</h4>
+              <ul style="font-size:0.85rem;color:var(--color-text-muted);list-style:none;">
+                <li style="padding:0.2rem 0;">✓ Restaurant reservations (including hard-to-get tables)</li>
+                <li style="padding:0.2rem 0;">✓ Attraction tickets (skip-the-line where available)</li>
+                <li style="padding:0.2rem 0;">✓ West End theatre tickets</li>
+                <li style="padding:0.2rem 0;">✓ Tours and experiences</li>
+                <li style="padding:0.2rem 0;">✓ Alternative suggestions if anything is sold out</li>
+                <li style="padding:0.2rem 0;">✓ Priority rebooking if your plans change</li>
+              </ul>
+            </div>
+
+            <a href="wizard.html" class="btn btn--primary btn--large">Get Your Itinerary First</a>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-top:0.5rem;">Add concierge after generating your itinerary</p>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div style="text-align:center;margin-top:2rem;">
+          <h3>Need help planning everything?</h3>
+          <p style="color:var(--color-text-muted);margin-bottom:1.5rem;">Start with a personalised itinerary and we'll help you book the rest.</p>
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => UI.init());
+
+    function selectGuide(days) {
+      document.querySelectorAll('.guide-price').forEach(p => p.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

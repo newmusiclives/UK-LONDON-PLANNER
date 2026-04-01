@@ -7,7 +7,13 @@ const CONFIG = {
     tier2: { label: 'Week Explorer', days: [6, 10], price: 40, currency: 'USD' },
     tier3: { label: 'Extended Adventure', days: [11, 21], price: 75, currency: 'USD' },
     concierge: { price: 150, currency: 'USD', label: 'Booking Concierge' },
-    consultation: { price: 75, currency: 'USD', duration: '1 hour' }
+    consultation: { price: 75, currency: 'USD', duration: '1 hour' },
+    personalGuide: {
+      perDay: 250,
+      currency: 'USD',
+      label: 'Personal London Guide',
+      days: { 1: 250, 2: 450, 3: 600, 4: 750, 5: 900 }
+    }
   },
 
   // ============================================================

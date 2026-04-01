@@ -297,6 +297,7 @@ function renderDayCard(day, locked) {
           <div style="font-size:0.85rem;font-weight:600;color:var(--color-accent);">£${dailyCost.toFixed(0)} est.</div>
         </div>
       </div>
+      ${day.travelWarning ? `<div style="background:#FEF3C7;padding:0.6rem 1rem;font-size:0.8rem;color:#92400E;display:flex;align-items:center;gap:0.5rem;"><span>🚇</span> ${day.travelWarning}</div>` : ''}
       <div class="day-card__body">
         <div class="timeline">
           ${activities.map(activity => renderActivity(activity)).join('')}
@@ -317,8 +318,12 @@ function renderDayCard(day, locked) {
 }
 
 function renderActivity(activity) {
+  const travelInfo = activity.travelFromPrev && activity.travelFromPrev > 0
+    ? `<div style="font-size:0.7rem;color:var(--color-text-muted);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.35rem;">🚶 ~${activity.travelFromPrev} min travel from previous</div>`
+    : '';
   return `
     <div class="activity activity--${activity.period}">
+      ${travelInfo}
       <div class="activity__time">
         ${activity.timeSlot}
         <span class="activity__period activity__period--${activity.period}">${activity.period}</span>
@@ -328,6 +333,7 @@ function renderActivity(activity) {
       <div class="activity__details">
         ${activity.neighbourhood ? `<span class="activity__detail">📍 ${activity.neighbourhood}</span>` : ''}
         <span class="activity__detail">💰 ${activity.estimatedCost}</span>
+        ${activity.duration ? `<span class="activity__detail">⏱️ ${activity.duration}</span>` : ''}
         ${activity.address ? `<span class="activity__detail">🗺️ ${activity.address}</span>` : ''}
       </div>
       ${activity.tips ? `<div class="activity__tip">${activity.tips}</div>` : ''}

@@ -21,7 +21,7 @@ const UI = {
         <nav class="header__nav" id="main-nav">
           <a href="demo.html">Demo</a>
           <a href="blog.html">Guide</a>
-          <a href="airport-transfers.html">Transfers</a>
+          <a href="book-services.html">Book Services</a>
           <a href="consultation.html">Consultation</a>
           <div class="currency-selector">
             <select id="currency-select" aria-label="Select currency">

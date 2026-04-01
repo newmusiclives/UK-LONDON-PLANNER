@@ -10,6 +10,14 @@ const Engine = {
     dayTemplates: []
   },
 
+  // Estimated travel times between neighbourhoods (minutes)
+  TRAVEL_TIMES: {
+    'adjacent': 10,    // Walking distance
+    'same_zone': 20,   // Same tube zone
+    'cross_zone': 35,  // Different zones
+    'outer': 50        // Zone 3+
+  },
+
   async loadData() {
     const files = ['attractions', 'restaurants', 'nightlife', 'hotels', 'entertainment', 'neighbourhoods', 'day-templates', 'cafes'];
     const results = await Promise.all(
@@ -29,7 +37,6 @@ const Engine = {
     const { tripDays, budget, interests, occasion, groupType } = preferences;
     const used = new Set();
 
-    // Build extended interest set including occasion/group tags
     const extendedTags = [...interests];
     if (occasion && occasion !== 'none') extendedTags.push(occasion);
     if (groupType === 'girls-group') extendedTags.push('hen-party', 'shopping', 'wellness');
@@ -39,7 +46,6 @@ const Engine = {
     }
     if (occasion === 'birthday') extendedTags.push('birthday', 'nightlife');
 
-    // Score and sort templates by interest match
     const scoredTemplates = this.data.dayTemplates
       .map(t => ({
         ...t,
@@ -47,13 +53,9 @@ const Engine = {
       }))
       .sort((a, b) => b.score - a.score);
 
-    // Select templates for each day, ensuring variety
     const selectedTemplates = this.selectTemplates(scoredTemplates, tripDays);
-
-    // Get hotel recommendation
     const hotel = this.pickHotel(budget.accommodation);
 
-    // Build each day
     const days = selectedTemplates.map((template, i) => {
       const dayNum = i + 1;
       const activities = [];
@@ -61,21 +63,24 @@ const Engine = {
 
       for (const slot of template.slots) {
         const item = this.pickItem(
-          slot.type, interests, budget, template.preferredNeighbourhoods, used, activities
+          slot.type, interests, budget, template.preferredNeighbourhoods, used, activities, slot.period
         );
 
         if (item) {
           used.add(item.id);
           const costValue = item.estimatedCost ? item.estimatedCost.amount : 0;
           dailyCost += costValue;
+
+          // Calculate travel time from previous activity
+          const prevActivity = activities[activities.length - 1];
+          const travelMins = prevActivity ? this.estimateTravelTime(prevActivity.neighbourhood, item.neighbourhood) : 0;
+
           activities.push({
             timeSlot: slot.time,
             period: slot.period,
             name: item.name,
             description: item.description,
-            estimatedCost: item.estimatedCost ?
-              `£${item.estimatedCost.amount.toFixed(2)}` :
-              'Free',
+            estimatedCost: item.estimatedCost ? `£${item.estimatedCost.amount.toFixed(2)}` : 'Free',
             estimatedCostValue: costValue,
             affiliateUrl: item.affiliateUrl || '',
             affiliateLabel: item.affiliateLabel || '',
@@ -83,25 +88,27 @@ const Engine = {
             address: item.address || '',
             neighbourhood: item.neighbourhood || '',
             type: slot.type,
-            lat: item.lat || null,
-            lng: item.lng || null
+            travelFromPrev: travelMins,
+            duration: item.duration || ''
           });
         }
       }
 
-      // Determine theme neighbourhoods
       const dayNeighbourhoods = [...new Set(activities.map(a => a.neighbourhood).filter(Boolean))];
+
+      // Add travel advisory if activities span far-apart neighbourhoods
+      const travelWarning = this.checkDayTravel(activities);
 
       return {
         dayNumber: dayNum,
         theme: template.name,
         neighbourhoods: dayNeighbourhoods,
         activities,
-        dailyCost
+        dailyCost,
+        travelWarning
       };
     });
 
-    // Calculate total trip cost estimate
     const totalCost = days.reduce((sum, d) => sum + d.dailyCost, 0);
 
     return {
@@ -123,12 +130,10 @@ const Engine = {
 
     for (let i = 0; i < numDays; i++) {
       let pick = scored.find(t => !usedTemplateIds.has(t.id));
-
       if (!pick) {
         usedTemplateIds.clear();
         pick = scored.find(t => !usedTemplateIds.has(t.id)) || scored[0];
       }
-
       if (pick) {
         selected.push(pick);
         usedTemplateIds.add(pick.id);
@@ -137,39 +142,21 @@ const Engine = {
     return selected;
   },
 
-  pickItem(type, interests, budget, preferredNeighbourhoods, used, existingActivities) {
+  pickItem(type, interests, budget, preferredNeighbourhoods, used, existingActivities, period) {
     let pool;
     let budgetCategory;
 
     switch (type) {
-      case 'attraction':
-        pool = this.data.attractions;
-        budgetCategory = 'entertainment';
-        break;
-      case 'restaurant':
-        pool = this.data.restaurants;
-        budgetCategory = 'food';
-        break;
-      case 'nightlife':
-        pool = this.data.nightlife;
-        budgetCategory = 'entertainment';
-        break;
-      case 'entertainment':
-        pool = this.data.entertainment;
-        budgetCategory = 'entertainment';
-        break;
-      case 'cafe':
-        pool = this.data.cafes;
-        budgetCategory = 'food';
-        break;
-      default:
-        pool = this.data.attractions;
-        budgetCategory = 'entertainment';
+      case 'attraction': pool = this.data.attractions; budgetCategory = 'entertainment'; break;
+      case 'restaurant': pool = this.data.restaurants; budgetCategory = 'food'; break;
+      case 'nightlife': pool = this.data.nightlife; budgetCategory = 'entertainment'; break;
+      case 'entertainment': pool = this.data.entertainment; budgetCategory = 'entertainment'; break;
+      case 'cafe': pool = this.data.cafes; budgetCategory = 'food'; break;
+      default: pool = this.data.attractions; budgetCategory = 'entertainment';
     }
 
     const budgetTier = budget[budgetCategory] || 'mid-range';
 
-    // Filter available items
     let candidates = pool.filter(item => {
       if (used.has(item.id)) return false;
       if (item.budgetTier && !item.budgetTier.includes(budgetTier)) return false;
@@ -177,13 +164,20 @@ const Engine = {
     });
 
     if (candidates.length === 0) {
-      // Relax budget constraint
       candidates = pool.filter(item => !used.has(item.id));
     }
-
     if (candidates.length === 0) return null;
 
-    // Score candidates
+    // Map period to bestTimeOfDay for validation
+    const periodToTime = {
+      'morning': 'morning',
+      'lunch': 'afternoon',
+      'afternoon': 'afternoon',
+      'dinner': 'evening',
+      'evening': 'evening'
+    };
+    const preferredTime = periodToTime[period] || 'afternoon';
+
     const scored = candidates.map(item => {
       let score = 0;
 
@@ -192,20 +186,33 @@ const Engine = {
         score += item.tags.filter(t => interests.includes(t)).length * 3;
       }
 
+      // Time-of-day validation for attractions
+      if (type === 'attraction' && item.bestTimeOfDay) {
+        if (item.bestTimeOfDay.includes(preferredTime)) {
+          score += 2; // Bonus for correct time
+        } else {
+          score -= 1; // Penalty for wrong time (but don't exclude entirely)
+        }
+      }
+
       // Neighbourhood preference
       if (preferredNeighbourhoods.includes(item.neighbourhood)) {
         score += 2;
       }
 
-      // Geographic clustering with existing activities
+      // Geographic clustering — prefer nearby locations for smoother travel
       if (existingActivities.length > 0 && item.neighbourhood) {
-        const nearby = existingActivities.some(a =>
-          this.areNearby(a.neighbourhood, item.neighbourhood)
-        );
-        if (nearby) score += 1;
+        const lastActivity = existingActivities[existingActivities.length - 1];
+        if (this.areNearby(lastActivity.neighbourhood, item.neighbourhood)) {
+          score += 3; // Strong bonus for walkable distance
+        } else if (this.areSameZone(lastActivity.neighbourhood, item.neighbourhood)) {
+          score += 1; // Small bonus for same zone
+        } else {
+          score -= 1; // Penalty for long travel
+        }
       }
 
-      // Bonus for items with affiliate links (revenue opportunity)
+      // Bonus for items with affiliate links
       if (item.affiliateUrl) score += 0.5;
 
       return { ...item, score };
@@ -213,7 +220,6 @@ const Engine = {
 
     scored.sort((a, b) => b.score - a.score);
 
-    // Pick from top candidates with slight randomness
     const topN = Math.min(3, scored.length);
     const idx = Math.floor(Math.random() * topN);
     return scored[idx];
@@ -226,15 +232,44 @@ const Engine = {
     return data.adjacent && data.adjacent.includes(n2);
   },
 
+  areSameZone(n1, n2) {
+    if (!n1 || !n2) return true;
+    const d1 = this.data.neighbourhoods[n1];
+    const d2 = this.data.neighbourhoods[n2];
+    if (!d1 || !d2) return true;
+    return d1.zone === d2.zone;
+  },
+
+  estimateTravelTime(from, to) {
+    if (!from || !to || from === to) return 0;
+    if (this.areNearby(from, to)) return this.TRAVEL_TIMES.adjacent;
+
+    const d1 = this.data.neighbourhoods[from];
+    const d2 = this.data.neighbourhoods[to];
+    if (!d1 || !d2) return this.TRAVEL_TIMES.same_zone;
+
+    if (d1.zone === d2.zone) return this.TRAVEL_TIMES.same_zone;
+    if (d1.zone >= 3 || d2.zone >= 3) return this.TRAVEL_TIMES.outer;
+    return this.TRAVEL_TIMES.cross_zone;
+  },
+
+  checkDayTravel(activities) {
+    let totalTravel = 0;
+    for (const a of activities) {
+      totalTravel += a.travelFromPrev || 0;
+    }
+    if (totalTravel > 90) {
+      return `This day involves ~${totalTravel} mins of travel. Consider using the Tube or a day travelcard.`;
+    }
+    return null;
+  },
+
   pickHotel(budgetTier) {
-    const candidates = this.data.hotels.filter(h =>
-      h.budgetTier.includes(budgetTier)
-    );
+    const candidates = this.data.hotels.filter(h => h.budgetTier.includes(budgetTier));
     if (candidates.length === 0) return this.data.hotels[0];
     return candidates[Math.floor(Math.random() * candidates.length)];
   },
 
-  // Generate packing list based on trip details
   generatePackingList(itinerary) {
     const items = {
       essentials: [
@@ -246,21 +281,17 @@ const Engine = {
       documents: ['Hotel booking confirmation', 'Itinerary (this PDF!)']
     };
 
-    // Weather-based additions
     items.clothing.push('Layers — London weather changes fast');
 
-    // Activity-based additions
-    const allActivities = itinerary.days.flatMap(d => d.activities);
-    const allTypes = new Set(allActivities.map(a => a.type));
-    const allTags = new Set(itinerary.interests);
+    const allTags = new Set(itinerary.interests || []);
 
     if (allTags.has('theatre')) items.clothing.push('Smart casual outfit for theatre');
-    if (allTags.has('nightlife')) items.clothing.push('Going-out outfit for bars/clubs');
+    if (allTags.has('nightlife') || allTags.has('cocktails')) items.clothing.push('Going-out outfit for bars/clubs');
     if (allTags.has('sports')) items.clothing.push('Sportswear if attending active experiences');
     if (allTags.has('wellness')) items.clothing.push('Swimwear for spa/swimming');
-    if (allTags.has('photography')) items.tech.push('Camera / extra phone storage');
+    if (allTags.has('photography') || allTags.has('instagram')) items.tech.push('Camera / extra phone storage');
     if (allTags.has('adventure')) items.clothing.push('Sturdy shoes for outdoor activities');
-    if (allTags.has('food')) items.essentials.push('Antacids (you\'ll eat a lot!)');
+    if (allTags.has('food') || allTags.has('street-food')) items.essentials.push('Antacids (you\'ll eat a lot!)');
 
     if (itinerary.tripDays > 5) {
       items.essentials.push('Laundry bag');
