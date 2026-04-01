@@ -410,17 +410,97 @@
       <!-- AFFILIATES -->
       <!-- ============================================================ -->
       <div class="admin-panel" data-panel="affiliates">
+        <!-- Attractions & Tours -->
         <div class="admin-section">
-          <div class="admin-section__header"><h3>Affiliate Partner IDs</h3></div>
+          <div class="admin-section__header"><h3>Attractions, Tours & Experiences</h3></div>
           <div class="admin-section__body">
-            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">Enter your affiliate IDs. These get automatically appended to all outbound booking links. See <a href="AFFILIATE-SETUP-GUIDE.md" target="_blank" style="color:var(--color-accent);">Affiliate Setup Guide</a> for sign-up links.</p>
-            <div class="field-row"><div class="field"><label>GetYourGuide <small>(8%)</small></label><input type="text" id="aff-gyg" placeholder="e.g. ABC123" data-key="getYourGuide"><div class="hint"><a href="https://partner.getyourguide.com/" target="_blank">Sign up</a></div></div><div class="field"><label>Booking.com <small>(25-40%)</small></label><input type="text" id="aff-booking" placeholder="e.g. 1234567" data-key="booking"><div class="hint"><a href="https://www.booking.com/affiliate-program/v2/index.html" target="_blank">Sign up</a></div></div></div>
-            <div class="field-row"><div class="field"><label>Viator <small>(8%)</small></label><input type="text" id="aff-viator" placeholder="e.g. P12345" data-key="viator"><div class="hint"><a href="https://www.viator.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>TodayTix <small>(5-8%)</small></label><input type="text" id="aff-todaytix" placeholder="e.g. ref_abc" data-key="todayTix"><div class="hint">Contact partnerships@todaytix.com</div></div></div>
-            <div class="field-row"><div class="field"><label>OpenTable <small>($1-2/diner)</small></label><input type="text" id="aff-opentable" placeholder="e.g. OT123" data-key="openTable"><div class="hint"><a href="https://www.opentable.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>Klook <small>(5%)</small></label><input type="text" id="aff-klook" placeholder="e.g. K12345" data-key="klook"><div class="hint"><a href="https://affiliate.klook.com/" target="_blank">Sign up</a></div></div></div>
-            <div class="field-row"><div class="field"><label>Tiqets <small>(6%)</small></label><input type="text" id="aff-tiqets" placeholder="e.g. TQ123" data-key="tiqets"><div class="hint"><a href="https://www.tiqets.com/affiliates" target="_blank">Sign up</a></div></div><div class="field"><label>Go City <small>(6-10%)</small></label><input type="text" id="aff-gocity" placeholder="e.g. GC123" data-key="goCity"><div class="hint"><a href="https://gocity.com/affiliates" target="_blank">Sign up</a></div></div></div>
-            <div class="field"><label>Trainline <small>(2%)</small></label><input type="text" id="aff-trainline" placeholder="e.g. TL123" data-key="trainline"><div class="hint"><a href="https://www.trainline.com/affiliates" target="_blank">Sign up</a></div></div>
-            <button class="btn btn--primary" onclick="saveAffiliateIds()">Save Affiliate IDs</button>
+            <div class="field-row">
+              <div class="field"><label>GetYourGuide <small>(8% commission)</small></label><input type="text" id="aff-gyg" placeholder="Partner ID" data-key="getYourGuide"><div class="hint">Attractions, tours, skip-the-line. <a href="https://partner.getyourguide.com/" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Viator <small>(8%)</small></label><input type="text" id="aff-viator" placeholder="PID" data-key="viator"><div class="hint">Tours, day trips, activities. <a href="https://www.viator.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Klook <small>(up to 5%)</small></label><input type="text" id="aff-klook" placeholder="AID" data-key="klook"><div class="hint">Attractions, transport, WiFi. <a href="https://affiliate.klook.com/" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Tiqets <small>(6%)</small></label><input type="text" id="aff-tiqets" placeholder="Partner ID" data-key="tiqets"><div class="hint">Museum & attraction tickets. <a href="https://www.tiqets.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Go City <small>(6-10%)</small></label><input type="text" id="aff-gocity" placeholder="ID" data-key="goCity"><div class="hint">All-inclusive & explorer passes. <a href="https://gocity.com/affiliates" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Musement <small>(up to 8%)</small></label><input type="text" id="aff-musement" placeholder="AID" data-key="musement"><div class="hint">Experiences & tours. <a href="https://www.musement.com/affiliates/" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Headout <small>(up to 10%)</small></label><input type="text" id="aff-headout" placeholder="Partner ID" data-key="headout"><div class="hint">Last-minute experiences, best price guarantee. <a href="https://www.headout.com/affiliates/" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>TripAdvisor <small>(50% of their commission)</small></label><input type="text" id="aff-tripadvisor" placeholder="Partner ID" data-key="tripadvisor"><div class="hint">Hotels, restaurants, attractions. <a href="https://www.tripadvisor.com/Affiliates" target="_blank">Sign up</a></div></div>
+            </div>
           </div>
+        </div>
+
+        <!-- Accommodation -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Accommodation</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field"><label>Booking.com <small>(25-40% of their commission)</small></label><input type="text" id="aff-booking" placeholder="AID" data-key="booking"><div class="hint">Hotels, apartments, hostels. <a href="https://www.booking.com/affiliate-program/v2/index.html" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Expedia <small>(6-12%)</small></label><input type="text" id="aff-expedia" placeholder="Affiliate ID" data-key="expedia"><div class="hint">Hotels, flights, packages, car rental. <a href="https://expediapartnersolutions.com/" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field">
+              <label>Hostelworld <small>(20-40% — huge for budget travellers)</small></label><input type="text" id="aff-hostelworld" placeholder="Affiliate ID" data-key="hostelworld"><div class="hint">Hostels & budget accommodation. Very high commission. <a href="https://www.hostelworld.com/affiliates" target="_blank">Sign up</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transport -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Transport & Travel</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field"><label>Trainline <small>(2%)</small></label><input type="text" id="aff-trainline" placeholder="ID" data-key="trainline"><div class="hint">UK & European rail. <a href="https://www.trainline.com/affiliates" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Omio <small>(CPA model)</small></label><input type="text" id="aff-omio" placeholder="Partner ID" data-key="omio"><div class="hint">Trains, buses, flights across Europe. <a href="https://www.omio.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Eurostar <small>(up to 5%)</small></label><input type="text" id="aff-eurostar" placeholder="Affiliate ID" data-key="eurostar"><div class="hint">London to Paris/Brussels by train. <a href="https://www.eurostar.com/uk-en/affiliates" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Skyscanner <small>(CPA/CPC)</small></label><input type="text" id="aff-skyscanner" placeholder="Associate ID" data-key="skyscanner"><div class="hint">Flight comparison, car hire. <a href="https://www.partners.skyscanner.net/" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field">
+              <label>RentalCars.com <small>(up to 8%)</small></label><input type="text" id="aff-rentalcars" placeholder="Affiliate Code" data-key="rentalcars"><div class="hint">Car hire for UK road trips (Cotswolds, Lake District, etc). <a href="https://www.rentalcars.com/affiliates" target="_blank">Sign up</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dining & Theatre -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Dining & Theatre</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field"><label>OpenTable <small>($1-2 per seated diner)</small></label><input type="text" id="aff-opentable" placeholder="Ref ID" data-key="openTable"><div class="hint">Restaurant reservations. <a href="https://www.opentable.com/affiliates" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>TheFork <small>(per-cover commission)</small></label><input type="text" id="aff-thefork" placeholder="Ref ID" data-key="theFork"><div class="hint">Restaurant bookings (owned by TripAdvisor). <a href="https://www.thefork.com/partnerships" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>TodayTix <small>(5-8%)</small></label><input type="text" id="aff-todaytix" placeholder="Ref ID" data-key="todayTix"><div class="hint">Last-minute theatre tickets. Contact partnerships@todaytix.com</div></div>
+              <div class="field"><label>London Theatre Direct <small>(5-8%)</small></label><input type="text" id="aff-ltd" placeholder="Partner ID" data-key="londonTheatreDirect"><div class="hint">West End show tickets. <a href="https://www.londontheatredirect.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Essentials -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Travel Essentials & Insurance</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field"><label>World Nomads <small>(up to 10%)</small></label><input type="text" id="aff-worldnomads" placeholder="Affiliate ID" data-key="worldNomads"><div class="hint">Travel insurance — popular with travellers. <a href="https://www.worldnomads.com/affiliate" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>SafetyWing <small>(10% recurring!)</small></label><input type="text" id="aff-safetywing" placeholder="Reference ID" data-key="safetyWing"><div class="hint">Travel medical insurance. Recurring commission! <a href="https://www.safetywing.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Wise (TransferWise) <small>(referral bonus)</small></label><input type="text" id="aff-wise" placeholder="Partner ID" data-key="wise"><div class="hint">Best exchange rates, multi-currency card. <a href="https://wise.com/partner/" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Revolut <small>(referral bonus)</small></label><input type="text" id="aff-revolut" placeholder="Ref ID" data-key="revolut"><div class="hint">Travel money card, free ATM withdrawals. <a href="https://www.revolut.com/affiliates" target="_blank">Sign up</a></div></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Airalo <small>(15-30% — high commission!)</small></label><input type="text" id="aff-airalo" placeholder="Ref ID" data-key="airalo"><div class="hint">eSIM for tourists — no roaming charges. <a href="https://www.airalo.com/affiliate" target="_blank">Sign up</a></div></div>
+              <div class="field"><label>Amazon UK <small>(1-10%)</small></label><input type="text" id="aff-amazon" placeholder="Tag (e.g. mysite-21)" data-key="amazonUK"><div class="hint">Travel gear, guidebooks, adapters. <a href="https://affiliate-program.amazon.co.uk/" target="_blank">Sign up</a></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:1.5rem;">
+          <button class="btn btn--primary btn--large" onclick="saveAffiliateIds()">Save All Affiliate IDs</button>
         </div>
       </div>
 
