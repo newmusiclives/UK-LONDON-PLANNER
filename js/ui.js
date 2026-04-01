@@ -71,10 +71,12 @@ const UI = {
             <div class="footer__title">Explore</div>
             <ul class="footer__links">
               <li><a href="demo.html">Sample Itinerary</a></li>
-              <li><a href="travel-tips.html">London Travel Tips</a></li>
+              <li><a href="blog.html">Travel Guide</a></li>
+              <li><a href="neighbourhoods.html">Neighbourhood Guides</a></li>
+              <li><a href="day-trips.html">Day Trips from London</a></li>
+              <li><a href="travel-tips.html">Travel Tips</a></li>
               <li><a href="getting-around.html">Getting Around</a></li>
               <li><a href="best-time-to-visit.html">Best Time to Visit</a></li>
-              <li><a href="blog.html">Travel Guide</a></li>
             </ul>
           </div>
           <div>
