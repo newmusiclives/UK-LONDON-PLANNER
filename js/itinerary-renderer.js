@@ -50,6 +50,7 @@ function renderItinerary(itinerary, isPaid, price) {
           <button class="btn btn--outline" onclick="window.print()">🖨️ Print</button>
           <button class="btn btn--secondary" id="btn-share">📤 Share Itinerary</button>
           <button class="btn btn--outline" id="btn-packing-list">🧳 Packing List</button>
+          <button class="btn btn--outline" id="btn-pocket-cards">🃏 Pocket Cards</button>
           <a href="wizard.html" class="btn btn--outline">🔄 Create New</a>
         </div>
       ` : `
@@ -206,7 +207,38 @@ function renderItinerary(itinerary, isPaid, price) {
         document.getElementById('packing-modal').classList.add('active');
       });
     }
+
+    // Pocket cards button
+    const pocketBtn = document.getElementById('btn-pocket-cards');
+    if (pocketBtn) {
+      pocketBtn.addEventListener('click', () => generatePocketCards(itinerary));
+    }
+
+    // Drag-and-drop reordering (paid users only)
+    if (typeof Sortable !== 'undefined') {
+      const container = document.getElementById('days-container');
+      if (container) {
+        Sortable.create(container, {
+          animation: 200,
+          handle: '.day-card__header',
+          ghostClass: 'day-card--dragging',
+          onEnd: (evt) => {
+            // Renumber days after reorder
+            const dayCards = container.querySelectorAll('.day-card');
+            dayCards.forEach((card, i) => {
+              const numEl = card.querySelector('.day-card__day-num');
+              if (numEl) numEl.textContent = `Day ${i + 1}`;
+            });
+            UI.showToast('Days reordered! Drag headers to rearrange.');
+          }
+        });
+      }
+    }
   }
+
+  // Countdown timer
+  renderCountdown(itinerary);
+
   } catch (e) {
     console.error('Itinerary render error:', e);
     main.innerHTML = `
@@ -638,8 +670,103 @@ function buildPDFContent(itinerary) {
     `).join('')}
 
     <div style="text-align:center; margin-top:30px; padding-top:20px; border-top:2px solid #C9A84C;">
-      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">London Journey Planner</p>
+      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">London & UK Planner</p>
       <p style="color:#888; font-size:9pt;">Enjoy your trip!</p>
     </div>
   `;
+}
+
+// ============================================================
+// COUNTDOWN TIMER
+// ============================================================
+function renderCountdown(itinerary) {
+  const section = document.getElementById('countdown-section');
+  if (!section) return;
+
+  const dates = itinerary.travelDates || State.get().travelDates;
+  if (!dates || !dates.start) return;
+
+  const tripDate = new Date(dates.start);
+  const now = new Date();
+  const diff = tripDate - now;
+
+  if (diff <= 0) {
+    section.innerHTML = `
+      <div style="background:linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-top:2rem;color:var(--color-primary);">
+        <div style="font-size:2rem;margin-bottom:0.5rem;">🎉</div>
+        <h3 style="color:var(--color-primary);margin-bottom:0.25rem;">Your Trip Is Here!</h3>
+        <p style="font-size:0.9rem;">Have an incredible time in London. Refer to this itinerary as you explore!</p>
+      </div>
+    `;
+    return;
+  }
+
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+
+  section.innerHTML = `
+    <div style="background:var(--color-primary);border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-top:2rem;color:white;">
+      <p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-accent);margin-bottom:0.5rem;">Your London Trip Starts In</p>
+      <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1rem;">
+        <div>
+          <div style="font-family:var(--font-heading);font-size:3rem;font-weight:700;color:var(--color-accent);">${days}</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);">DAYS</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-heading);font-size:3rem;font-weight:700;color:var(--color-accent);">${hours}</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);">HOURS</div>
+        </div>
+      </div>
+      <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);">${tripDate.toLocaleDateString('en-GB', {weekday:'long',day:'numeric',month:'long',year:'numeric'})}</p>
+      ${days <= 14 ? '<p style="font-size:0.8rem;color:var(--color-accent);margin-top:0.5rem;">Time to book your restaurants and attractions!</p>' : ''}
+    </div>
+  `;
+}
+
+// ============================================================
+// POCKET CARDS — Printable wallet-sized cards per day
+// ============================================================
+function generatePocketCards(itinerary) {
+  if (typeof Analytics !== 'undefined') Analytics.pdfDownload();
+
+  const container = document.getElementById('pdf-container');
+  container.innerHTML = `
+    <div style="font-family:Arial,sans-serif;font-size:9pt;width:210mm;">
+      ${itinerary.days.map(day => {
+        const acts = (day.activities || []);
+        return `
+          <div style="border:2px solid #C9A84C;border-radius:8px;padding:12px;margin-bottom:10px;page-break-inside:avoid;max-width:90mm;display:inline-block;vertical-align:top;margin-right:10px;">
+            <div style="font-weight:bold;font-size:11pt;color:#1B2A4A;border-bottom:1px solid #C9A84C;padding-bottom:4px;margin-bottom:6px;">
+              Day ${day.dayNumber}: ${day.theme}
+            </div>
+            ${acts.map(a => `
+              <div style="margin-bottom:4px;">
+                <strong style="font-size:8pt;">${a.timeSlot}</strong>
+                <span style="font-size:8.5pt;"> ${a.name}</span>
+                ${a.address ? `<br><span style="font-size:7pt;color:#888;">📍 ${a.address}</span>` : ''}
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+  container.classList.add('rendering');
+
+  if (typeof html2pdf !== 'undefined') {
+    html2pdf().set({
+      margin: 5,
+      filename: `London-Pocket-Cards-${itinerary.tripDays}days.pdf`,
+      image: { type: 'jpeg', quality: 0.95 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+    }).from(container).save().then(() => {
+      container.classList.remove('rendering');
+      container.innerHTML = '';
+    });
+  } else {
+    window.print();
+    container.classList.remove('rendering');
+    container.innerHTML = '';
+  }
 }

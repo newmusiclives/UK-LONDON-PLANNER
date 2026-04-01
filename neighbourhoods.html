@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Neighbourhood Guides — London & UK Planner</title>
+  <meta name="description" content="Explore London's best neighbourhoods with our in-depth local guides. From Soho nightlife to Camden markets, find your perfect London area.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .neighbourhood-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+    .neighbourhood-card { background:var(--color-surface); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); transition:transform 0.2s ease, box-shadow 0.2s ease; text-decoration:none; color:inherit; display:flex; flex-direction:column; }
+    .neighbourhood-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+    .neighbourhood-card__header { background:var(--color-primary); padding:1.75rem 1.5rem 1.25rem; position:relative; }
+    .neighbourhood-card__name { font-family:var(--font-heading); font-size:1.35rem; font-weight:700; color:white; margin:0; }
+    .neighbourhood-card__desc { color:rgba(255,255,255,0.75); font-size:0.9rem; margin-top:0.5rem; line-height:1.4; }
+    .neighbourhood-card__tags { padding:1rem 1.5rem 1.25rem; display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:auto; }
+    .neighbourhood-card__tag { background:var(--color-surface-alt); color:var(--color-text-muted); font-size:0.78rem; padding:0.3rem 0.7rem; border-radius:var(--radius-full); font-weight:500; }
+    .neighbourhood-card--active .neighbourhood-card__header { background:linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); }
+    .neighbourhood-card--active .neighbourhood-card__header::after { content:"Guide Available"; position:absolute; top:0.75rem; right:0.75rem; background:var(--color-accent); color:var(--color-primary-dark); font-size:0.7rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:var(--radius-full); text-transform:uppercase; letter-spacing:0.03em; }
+    @media(max-width:900px){ .neighbourhood-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:560px){ .neighbourhood-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">London Neighbourhood Guides</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:620px;margin:0 auto;">Discover what makes each corner of London unique — hand-picked restaurants, pubs, attractions, and insider tips for 15 iconic areas</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="neighbourhood-grid">
+
+          <a href="neighbourhood-soho.html" class="neighbourhood-card neighbourhood-card--active">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Soho</h2>
+              <p class="neighbourhood-card__desc">London's legendary entertainment district packed with theatres, restaurants, and nightlife</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Nightlife</span>
+              <span class="neighbourhood-card__tag">Dining</span>
+              <span class="neighbourhood-card__tag">Theatre</span>
+            </div>
+          </a>
+
+          <a href="neighbourhood-shoreditch.html" class="neighbourhood-card neighbourhood-card--active">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Shoreditch</h2>
+              <p class="neighbourhood-card__desc">The creative heart of East London with street art, tech startups, and buzzing nightlife</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Street Art</span>
+              <span class="neighbourhood-card__tag">Tech Scene</span>
+              <span class="neighbourhood-card__tag">Nightlife</span>
+            </div>
+          </a>
+
+          <a href="neighbourhood-camden.html" class="neighbourhood-card neighbourhood-card--active">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Camden</h2>
+              <p class="neighbourhood-card__desc">Iconic markets, live music venues, and canal-side charm in North London's alternative capital</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Markets</span>
+              <span class="neighbourhood-card__tag">Live Music</span>
+              <span class="neighbourhood-card__tag">Alternative</span>
+            </div>
+          </a>
+
+          <a href="neighbourhood-south-bank.html" class="neighbourhood-card neighbourhood-card--active">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">South Bank</h2>
+              <p class="neighbourhood-card__desc">London's cultural mile along the Thames with world-class galleries, theatres, and river views</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Culture</span>
+              <span class="neighbourhood-card__tag">Thames Views</span>
+              <span class="neighbourhood-card__tag">Art</span>
+            </div>
+          </a>
+
+          <a href="neighbourhood-covent-garden.html" class="neighbourhood-card neighbourhood-card--active">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Covent Garden</h2>
+              <p class="neighbourhood-card__desc">Historic piazza with street performers, boutique shopping, and the heart of London's Theatreland</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Shopping</span>
+              <span class="neighbourhood-card__tag">Theatre</span>
+              <span class="neighbourhood-card__tag">Street Performers</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Notting Hill</h2>
+              <p class="neighbourhood-card__desc">Pastel-coloured townhouses, Portobello Road Market, and a charming village feel in West London</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Markets</span>
+              <span class="neighbourhood-card__tag">Architecture</span>
+              <span class="neighbourhood-card__tag">Antiques</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Mayfair</h2>
+              <p class="neighbourhood-card__desc">London's most exclusive district with fine dining, luxury shopping, and private members' clubs</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Luxury</span>
+              <span class="neighbourhood-card__tag">Fine Dining</span>
+              <span class="neighbourhood-card__tag">Shopping</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Brixton</h2>
+              <p class="neighbourhood-card__desc">Vibrant multicultural hub with incredible food markets, live music, and South London energy</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Food Markets</span>
+              <span class="neighbourhood-card__tag">Music</span>
+              <span class="neighbourhood-card__tag">Multicultural</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Peckham</h2>
+              <p class="neighbourhood-card__desc">South London's coolest area with rooftop bars, contemporary art galleries, and diverse food</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Rooftop Bars</span>
+              <span class="neighbourhood-card__tag">Art</span>
+              <span class="neighbourhood-card__tag">Diverse Food</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Kensington</h2>
+              <p class="neighbourhood-card__desc">Museum quarter, royal palaces, and elegant garden squares in leafy West London</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Museums</span>
+              <span class="neighbourhood-card__tag">Royal Parks</span>
+              <span class="neighbourhood-card__tag">Elegant</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Islington</h2>
+              <p class="neighbourhood-card__desc">Trendy Upper Street packed with gastropubs, boutiques, and a thriving independent theatre scene</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Gastropubs</span>
+              <span class="neighbourhood-card__tag">Boutiques</span>
+              <span class="neighbourhood-card__tag">Theatre</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Greenwich</h2>
+              <p class="neighbourhood-card__desc">Maritime heritage, the Prime Meridian, and sweeping views of the London skyline from the park</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">History</span>
+              <span class="neighbourhood-card__tag">Views</span>
+              <span class="neighbourhood-card__tag">Maritime</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Hampstead</h2>
+              <p class="neighbourhood-card__desc">Village charm, wild heath walks, and literary history on London's highest hilltop</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Nature</span>
+              <span class="neighbourhood-card__tag">Village Feel</span>
+              <span class="neighbourhood-card__tag">Literary</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">Bermondsey</h2>
+              <p class="neighbourhood-card__desc">Foodie paradise with craft breweries, Maltby Street Market, and converted warehouse galleries</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Craft Beer</span>
+              <span class="neighbourhood-card__tag">Food</span>
+              <span class="neighbourhood-card__tag">Galleries</span>
+            </div>
+          </a>
+
+          <a href="wizard.html" class="neighbourhood-card">
+            <div class="neighbourhood-card__header">
+              <h2 class="neighbourhood-card__name">King's Cross</h2>
+              <p class="neighbourhood-card__desc">Regenerated railway quarter with Granary Square, Coal Drops Yard, and canalside restaurants</p>
+            </div>
+            <div class="neighbourhood-card__tags">
+              <span class="neighbourhood-card__tag">Regenerated</span>
+              <span class="neighbourhood-card__tag">Design</span>
+              <span class="neighbourhood-card__tag">Canalside</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- CTA -->
+        <div style="background:var(--color-primary);border-radius:var(--radius-xl);padding:3rem;text-align:center;margin-top:3rem;">
+          <h3 style="color:white;margin-bottom:0.5rem;">Not Sure Which Neighbourhood to Explore?</h3>
+          <p style="color:rgba(255,255,255,0.7);margin-bottom:1.5rem;">Tell us your interests and we'll build a custom itinerary across the best areas for you</p>
+          <a href="wizard.html" class="btn btn--primary">Build Your London Itinerary</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => { UI.init(); });</script>
+</body>
+</html>

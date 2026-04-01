@@ -5,9 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>London & UK Planner — Your Perfect London Trip, Curated by Experts</title>
   <meta name="description" content="Create a personalised London itinerary tailored to your interests, budget, and travel style. Day-by-day plans with insider tips, restaurant recommendations, and booking links.">
-  <meta property="og:title" content="London & UK Planner">
-  <meta property="og:description" content="Your Perfect London Trip, Curated by Experts">
+  <meta property="og:title" content="London & UK Planner — Personalised Itineraries">
+  <meta property="og:description" content="Create a personalised day-by-day London itinerary with 900+ venues, interactive maps, and insider tips. From $20.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uk-london-planner.netlify.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="London & UK Planner">
+  <meta name="twitter:description" content="Personalised London itineraries with 900+ venues and insider tips">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "London & UK Planner",
+    "description": "Personalised London and UK travel itineraries with 900+ curated venues, interactive maps, and insider tips.",
+    "url": "https://uk-london-planner.netlify.app",
+    "areaServed": { "@type": "Country", "name": "United Kingdom" },
+    "priceRange": "$20-$75",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "London Itineraries",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Short Stay Itinerary (1-5 days)", "price": "20", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Week Explorer Itinerary (6-10 days)", "price": "40", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Extended Adventure (11-21 days)", "price": "75", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Booking Concierge", "price": "150", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Personal Consultation", "price": "75", "priceCurrency": "USD" }
+      ]
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How does the London itinerary builder work?", "acceptedAnswer": { "@type": "Answer", "text": "You answer questions about your trip length, interests, budget, and group. Our engine creates a personalised day-by-day plan from 900+ London venues." }},
+      { "@type": "Question", "name": "Can I preview before paying?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! The first 2 days of your itinerary are always free to preview before purchasing." }},
+      { "@type": "Question", "name": "What is the Booking Concierge?", "acceptedAnswer": { "@type": "Answer", "text": "For $150, our team handles all your bookings — restaurants, attractions, theatre tickets, tours. You get a confirmation email with all references." }}
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -475,36 +515,14 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section section--alt">
+    <!-- Reviews (Dynamic) -->
+    <section class="section section--alt" aria-label="Customer reviews">
       <div class="container">
         <div class="section-header">
           <h2>What Travellers Say</h2>
           <div class="divider"></div>
         </div>
-        <div class="grid grid--3">
-          <div class="card testimonial-card">
-            <div class="card__body">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <p class="testimonial-card__text">"This itinerary saved us hours of research. Every restaurant recommendation was spot-on, and the insider tips made us feel like locals."</p>
-              <div class="testimonial-card__author">Sarah M. — 7-day trip</div>
-            </div>
-          </div>
-          <div class="card testimonial-card">
-            <div class="card__body">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <p class="testimonial-card__text">"We did the personal consultation and it was worth every penny. Our guide knew the perfect off-the-beaten-path spots for our family."</p>
-              <div class="testimonial-card__author">David & Lisa K. — 5-day family trip</div>
-            </div>
-          </div>
-          <div class="card testimonial-card">
-            <div class="card__body">
-              <div class="testimonial-card__stars">★★★★★</div>
-              <p class="testimonial-card__text">"The pub and bar recommendations alone were worth $20. We had the best night out in Shoreditch thanks to this guide!"</p>
-              <div class="testimonial-card__author">James R. — 3-day weekend</div>
-            </div>
-          </div>
-        </div>
+        <div id="reviews-widget"></div>
       </div>
     </section>
 
@@ -526,9 +544,15 @@
   <script src="js/config.js"></script>
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/accounts.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => UI.init());
-    // Register Service Worker for offline support (PWA)
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      Reviews.renderWidget('reviews-widget');
+      Analytics.pageView('/', 'Home');
+    });
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }

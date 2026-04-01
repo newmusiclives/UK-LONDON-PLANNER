@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let groupType = state.groupType || 'couple';
   let groupDetails = state.groupDetails || {};
   let ukExtension = state.ukExtension || { enabled: false, days: 0, destinations: [] };
+  let travelDates = state.travelDates || { start: '', end: '' };
   let ukDestinations = [];
 
   // Load UK destinations
@@ -61,6 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="duration-price-hint" id="price-hint">
               London itinerary: $${State.getPrice(tripDays)}
+            </div>
+          </div>
+
+          <!-- Travel Dates (optional) -->
+          <div style="max-width:500px;margin:2rem auto 0;text-align:center;">
+            <h4 style="margin-bottom:0.5rem;">Know your travel dates? <small style="font-weight:400;color:var(--color-text-muted);">(optional)</small></h4>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:1rem;">We'll add weather forecasts and seasonal tips to your itinerary</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+              <div style="text-align:left;">
+                <label style="font-size:0.8rem;font-weight:600;display:block;margin-bottom:0.25rem;">Arrival Date</label>
+                <input type="date" id="travel-start" value="${travelDates.start}"
+                  style="padding:0.6rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.9rem;font-family:var(--font-body);">
+              </div>
+              <div style="text-align:left;">
+                <label style="font-size:0.8rem;font-weight:600;display:block;margin-bottom:0.25rem;">Departure Date</label>
+                <input type="date" id="travel-end" value="${travelDates.end}"
+                  style="padding:0.6rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.9rem;font-family:var(--font-body);">
+              </div>
             </div>
           </div>
         </div>
@@ -574,6 +593,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Travel dates
+    const startDate = document.getElementById('travel-start');
+    const endDate = document.getElementById('travel-end');
+    if (startDate) startDate.addEventListener('change', (e) => { travelDates.start = e.target.value; });
+    if (endDate) endDate.addEventListener('change', (e) => { travelDates.end = e.target.value; });
+
     // UK toggle
     document.querySelectorAll('[data-uk-toggle]').forEach(chip => {
       chip.addEventListener('click', () => {
@@ -793,6 +818,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="review-item__label">Total Trip</span>
         <span class="review-item__value" style="color:var(--color-accent);font-size:1.1rem;">${totalDays} days</span>
       </div>
+      ${travelDates.start ? `
+        <div class="review-item">
+          <span class="review-item__label">Travel Dates</span>
+          <span class="review-item__value">${new Date(travelDates.start).toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'})}${travelDates.end ? ' — ' + new Date(travelDates.end).toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}) : ''}</span>
+        </div>
+      ` : ''}
       <div class="review-item">
         <span class="review-item__label">Travellers</span>
         <span class="review-item__value">${groupLabel ? groupLabel.icon + ' ' + groupLabel.label : groupType}</span>
@@ -842,9 +873,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.innerHTML = '<div class="spinner" style="width:20px;height:20px;border-width:2px;display:inline-block;vertical-align:middle;"></div> Generating...';
 
     State.save({
-      tripDays, budget, interests, occasion, groupType, groupDetails, ukExtension,
+      tripDays, budget, interests, occasion, groupType, groupDetails, ukExtension, travelDates,
       generatedAt: new Date().toISOString()
     });
+
+    // Track analytics
+    if (typeof Analytics !== 'undefined') {
+      Analytics.wizardComplete({ tripDays, groupType, occasion, interests, ukExtension });
+    }
 
     await Engine.loadData();
     const itinerary = Engine.generate({ tripDays, budget, interests, occasion, groupType });
@@ -859,8 +895,11 @@ document.addEventListener('DOMContentLoaded', () => {
       itinerary.tripDays = tripDays + ukExtension.days;
     }
 
-    // Attach group details to itinerary
+    // Attach group details and travel dates to itinerary
     itinerary.groupDetails = groupDetails;
+    itinerary.travelDates = travelDates;
+
+    if (typeof Analytics !== 'undefined') Analytics.itineraryGenerated(itinerary);
 
     State.saveItinerary(itinerary);
     window.location.href = 'itinerary.html';

@@ -12,9 +12,10 @@ const UI = {
 
     const curr = CurrencyConverter.get();
     header.innerHTML = `
+      <a href="#main-content" class="skip-link">Skip to main content</a>
       <div class="header__inner">
-        <a href="index.html" class="header__logo">
-          <span class="header__logo-icon">🇬🇧</span>
+        <a href="index.html" class="header__logo" aria-label="London & UK Planner - Home">
+          <span class="header__logo-icon" aria-hidden="true">🇬🇧</span>
           London & UK Planner
         </a>
         <nav class="header__nav" id="main-nav">

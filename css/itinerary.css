@@ -344,3 +344,22 @@
   padding: var(--space-sm) 0;
   border-bottom: 1px solid #eee;
 }
+
+/* Drag and Drop */
+.day-card__header {
+  cursor: grab;
+}
+
+.day-card__header:active {
+  cursor: grabbing;
+}
+
+.day-card--dragging {
+  opacity: 0.4;
+  border: 2px dashed var(--color-accent);
+}
+
+.day-card.sortable-chosen {
+  box-shadow: var(--shadow-xl);
+  transform: rotate(1deg);
+}
