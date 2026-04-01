@@ -15,14 +15,13 @@ const UI = {
       <div class="header__inner">
         <a href="index.html" class="header__logo">
           <span class="header__logo-icon">🇬🇧</span>
-          London Journey Planner
+          London Planner
         </a>
         <nav class="header__nav" id="main-nav">
-          <a href="index.html">Home</a>
-          <a href="demo.html">Demo Itinerary</a>
-          <a href="wizard.html">Plan My Trip</a>
-          <a href="blog.html">Travel Guide</a>
-          <a href="consultation.html">Expert Consultation</a>
+          <a href="demo.html">Demo</a>
+          <a href="blog.html">Guide</a>
+          <a href="airport-transfers.html">Transfers</a>
+          <a href="consultation.html">Consultation</a>
           <div class="currency-selector">
             <select id="currency-select" aria-label="Select currency">
               ${Object.keys(CONFIG.currencies).map(c =>
@@ -30,7 +29,7 @@ const UI = {
               ).join('')}
             </select>
           </div>
-          <a href="wizard.html" class="btn btn--primary btn--small header__cta">Start Planning</a>
+          <a href="wizard.html" class="btn btn--primary btn--small header__cta">Plan My Trip</a>
         </nav>
         <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
       </div>
@@ -62,6 +61,7 @@ const UI = {
             <ul class="footer__links">
               <li><a href="wizard.html">Create Itinerary</a></li>
               <li><a href="consultation.html">Expert Consultation</a></li>
+              <li><a href="airport-transfers.html">Airport Transfers</a></li>
               <li><a href="index.html#pricing">Pricing</a></li>
               <li><a href="index.html#how-it-works">How It Works</a></li>
             </ul>
@@ -73,7 +73,7 @@ const UI = {
               <li><a href="travel-tips.html">London Travel Tips</a></li>
               <li><a href="getting-around.html">Getting Around</a></li>
               <li><a href="best-time-to-visit.html">Best Time to Visit</a></li>
-              <li><a href="blog.html">Travel Blog</a></li>
+              <li><a href="blog.html">Travel Guide</a></li>
             </ul>
           </div>
           <div>

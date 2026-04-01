@@ -43,15 +43,16 @@
 .header__nav {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .header__nav a {
   color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: color var(--transition-fast);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .header__nav a:hover {

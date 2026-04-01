@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airport Transfers to London — London Journey Planner</title>
+  <meta name="description" content="Complete guide to getting from Heathrow, Gatwick, Stansted, and London City Airport to your London hotel. All transfer options compared.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .transfer-card { background:var(--color-surface); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); margin-bottom:1.5rem; overflow:hidden; border:1px solid var(--color-border); }
+    .transfer-card__header { background:var(--color-primary); color:white; padding:1.25rem 1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; }
+    .transfer-card__header h3 { color:white; margin:0; font-size:1.25rem; }
+    .transfer-card__distance { font-size:0.85rem; color:var(--color-accent-light); }
+    .transfer-card__body { padding:1.5rem; }
+    .transfer-option { display:grid; grid-template-columns:auto 1fr auto auto; gap:1rem; align-items:center; padding:1rem 0; border-bottom:1px solid var(--color-border); }
+    .transfer-option:last-child { border-bottom:none; }
+    .transfer-option__icon { font-size:1.5rem; }
+    .transfer-option__name { font-weight:600; color:var(--color-primary); }
+    .transfer-option__details { font-size:0.85rem; color:var(--color-text-muted); }
+    .transfer-option__time { font-weight:600; font-size:0.9rem; text-align:center; white-space:nowrap; }
+    .transfer-option__cost { font-weight:700; color:var(--color-accent); font-size:1rem; text-align:right; white-space:nowrap; }
+    .best-value { background:var(--color-accent-light); border-radius:var(--radius-sm); padding:0.15rem 0.5rem; font-size:0.7rem; font-weight:700; color:var(--color-primary); text-transform:uppercase; margin-left:0.5rem; }
+    @media (max-width:768px) {
+      .transfer-option { grid-template-columns:auto 1fr; }
+      .transfer-option__time, .transfer-option__cost { grid-column: 2; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Airport Transfers to London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:650px;margin:0 auto;">Every option for getting from your arrival airport to your London hotel — compared by cost, speed, and convenience</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+
+        <!-- Heathrow -->
+        <div class="transfer-card">
+          <div class="transfer-card__header">
+            <div>
+              <h3>✈️ Heathrow Airport (LHR)</h3>
+              <div class="transfer-card__distance">15 miles west of central London · London's busiest airport</div>
+            </div>
+          </div>
+          <div class="transfer-card__body">
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚄</div>
+              <div>
+                <div class="transfer-option__name">Heathrow Express<span class="best-value">Fastest</span></div>
+                <div class="transfer-option__details">Non-stop train to Paddington Station. Departs every 15 mins. Book online for cheaper fares.</div>
+              </div>
+              <div class="transfer-option__time">15 mins</div>
+              <div class="transfer-option__cost">£25 single<br><span style="font-size:0.75rem;color:var(--color-text-muted);">£12.50 advance</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚇</div>
+              <div>
+                <div class="transfer-option__name">Piccadilly Line (Tube)<span class="best-value">Best Value</span></div>
+                <div class="transfer-option__details">Direct Tube line to central London. Stops at South Kensington, Piccadilly Circus, King's Cross.</div>
+              </div>
+              <div class="transfer-option__time">50-60 mins</div>
+              <div class="transfer-option__cost">£5.50<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Oyster/contactless</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚌</div>
+              <div>
+                <div class="transfer-option__name">National Express Coach</div>
+                <div class="transfer-option__details">Coach to Victoria Coach Station. Runs 24 hours. Good for night arrivals.</div>
+              </div>
+              <div class="transfer-option__time">45-75 mins</div>
+              <div class="transfer-option__cost">£6-10</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚕</div>
+              <div>
+                <div class="transfer-option__name">Private Transfer / Taxi</div>
+                <div class="transfer-option__details">Door-to-door service. Pre-book a minicab for fixed price, or take a black cab on the meter.</div>
+              </div>
+              <div class="transfer-option__time">45-90 mins</div>
+              <div class="transfer-option__cost">£50-95<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Uber: £30-50</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚐</div>
+              <div>
+                <div class="transfer-option__name">Shared Shuttle (e.g. Hoppa)</div>
+                <div class="transfer-option__details">Shared minibus to nearby hotels. Book online in advance.</div>
+              </div>
+              <div class="transfer-option__time">60-90 mins</div>
+              <div class="transfer-option__cost">£20-30</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gatwick -->
+        <div class="transfer-card">
+          <div class="transfer-card__header">
+            <div>
+              <h3>✈️ Gatwick Airport (LGW)</h3>
+              <div class="transfer-card__distance">30 miles south of central London · Popular for budget airlines</div>
+            </div>
+          </div>
+          <div class="transfer-card__body">
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚄</div>
+              <div>
+                <div class="transfer-option__name">Gatwick Express<span class="best-value">Fastest</span></div>
+                <div class="transfer-option__details">Non-stop train to Victoria Station. Every 15 mins. Book advance for savings.</div>
+              </div>
+              <div class="transfer-option__time">30 mins</div>
+              <div class="transfer-option__cost">£19.90<br><span style="font-size:0.75rem;color:var(--color-text-muted);">£12 advance</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚂</div>
+              <div>
+                <div class="transfer-option__name">Thameslink / Southern Rail<span class="best-value">Best Value</span></div>
+                <div class="transfer-option__details">Regular trains to London Bridge, Blackfriars, St Pancras. Cheaper than Gatwick Express.</div>
+              </div>
+              <div class="transfer-option__time">35-45 mins</div>
+              <div class="transfer-option__cost">£10-15</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚌</div>
+              <div>
+                <div class="transfer-option__name">National Express / easyBus</div>
+                <div class="transfer-option__details">Coach to Victoria. easyBus from £2 if booked early. 24-hour service.</div>
+              </div>
+              <div class="transfer-option__time">75-120 mins</div>
+              <div class="transfer-option__cost">£5-15</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚕</div>
+              <div>
+                <div class="transfer-option__name">Private Transfer / Taxi</div>
+                <div class="transfer-option__details">Pre-booked minicab or Uber. Good for late arrivals or groups.</div>
+              </div>
+              <div class="transfer-option__time">60-120 mins</div>
+              <div class="transfer-option__cost">£60-120<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Uber: £40-65</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stansted -->
+        <div class="transfer-card">
+          <div class="transfer-card__header">
+            <div>
+              <h3>✈️ Stansted Airport (STN)</h3>
+              <div class="transfer-card__distance">40 miles northeast of central London · Ryanair & budget airline hub</div>
+            </div>
+          </div>
+          <div class="transfer-card__body">
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚄</div>
+              <div>
+                <div class="transfer-option__name">Stansted Express<span class="best-value">Fastest</span></div>
+                <div class="transfer-option__details">Direct train to Liverpool Street Station. Every 15 mins.</div>
+              </div>
+              <div class="transfer-option__time">47 mins</div>
+              <div class="transfer-option__cost">£19.40<br><span style="font-size:0.75rem;color:var(--color-text-muted);">£8 advance</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚌</div>
+              <div>
+                <div class="transfer-option__name">National Express / Airport Bus<span class="best-value">Best Value</span></div>
+                <div class="transfer-option__details">Coach to Stratford, Liverpool Street, or Victoria. Runs 24 hours. Book early for £2+.</div>
+              </div>
+              <div class="transfer-option__time">60-90 mins</div>
+              <div class="transfer-option__cost">£6-12</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚕</div>
+              <div>
+                <div class="transfer-option__name">Private Transfer / Taxi</div>
+                <div class="transfer-option__details">Pre-booked minicab recommended. Long distance means metered taxis are expensive.</div>
+              </div>
+              <div class="transfer-option__time">75-120 mins</div>
+              <div class="transfer-option__cost">£80-140<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Uber: £50-75</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- London City -->
+        <div class="transfer-card">
+          <div class="transfer-card__header">
+            <div>
+              <h3>✈️ London City Airport (LCY)</h3>
+              <div class="transfer-card__distance">6 miles east of the City · Closest airport to central London</div>
+            </div>
+          </div>
+          <div class="transfer-card__body">
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚇</div>
+              <div>
+                <div class="transfer-option__name">DLR (Docklands Light Railway)<span class="best-value">Best Option</span></div>
+                <div class="transfer-option__details">Direct DLR to Bank station (City of London) or connect to Tube anywhere. Incredibly easy.</div>
+              </div>
+              <div class="transfer-option__time">22 mins to Bank</div>
+              <div class="transfer-option__cost">£3.50<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Oyster/contactless</span></div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚕</div>
+              <div>
+                <div class="transfer-option__name">Taxi / Uber</div>
+                <div class="transfer-option__details">Short ride to most central London hotels. Quick and convenient for groups.</div>
+              </div>
+              <div class="transfer-option__time">20-40 mins</div>
+              <div class="transfer-option__cost">£20-40<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Uber: £15-25</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Luton -->
+        <div class="transfer-card">
+          <div class="transfer-card__header">
+            <div>
+              <h3>✈️ Luton Airport (LTN)</h3>
+              <div class="transfer-card__distance">35 miles north of central London · easyJet & Wizz Air hub</div>
+            </div>
+          </div>
+          <div class="transfer-card__body">
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚂</div>
+              <div>
+                <div class="transfer-option__name">Thameslink Train + DART shuttle<span class="best-value">Fastest</span></div>
+                <div class="transfer-option__details">DART shuttle (4 mins) to Luton Airport Parkway, then Thameslink to St Pancras.</div>
+              </div>
+              <div class="transfer-option__time">40-50 mins</div>
+              <div class="transfer-option__cost">£16-20</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚌</div>
+              <div>
+                <div class="transfer-option__name">National Express / Green Line<span class="best-value">Best Value</span></div>
+                <div class="transfer-option__details">Coach to Victoria, Baker Street, or Marble Arch. 24-hour service.</div>
+              </div>
+              <div class="transfer-option__time">60-90 mins</div>
+              <div class="transfer-option__cost">£5-14</div>
+            </div>
+            <div class="transfer-option">
+              <div class="transfer-option__icon">🚕</div>
+              <div>
+                <div class="transfer-option__name">Private Transfer / Taxi</div>
+                <div class="transfer-option__details">Pre-book a minicab for a fixed fare. Avoid metered taxis from Luton.</div>
+              </div>
+              <div class="transfer-option__time">60-100 mins</div>
+              <div class="transfer-option__cost">£70-120<br><span style="font-size:0.75rem;color:var(--color-text-muted);">Uber: £45-65</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="card" style="margin-top:1rem;">
+          <div class="card__body">
+            <h3>💡 Top Transfer Tips</h3>
+            <ul style="list-style:disc;padding-left:1.5rem;margin-top:1rem;">
+              <li style="margin-bottom:0.75rem;"><strong>Book train tickets in advance</strong> — Heathrow Express, Gatwick Express, and Stansted Express are all significantly cheaper when booked online ahead of time.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Get an Oyster card at the airport</strong> — Available at Heathrow and Gatwick Tube/rail stations. Or just use contactless.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Arriving late at night?</strong> Coaches and the N9 night bus from Heathrow run 24 hours. Uber/Bolt are reliable late-night options from all airports.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Travelling with heavy luggage?</strong> The Heathrow Express and Gatwick Express have dedicated luggage space. Tube escalators can be tough with big cases.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Groups of 3+?</strong> A private transfer often works out cheaper per person than individual train tickets, plus it's door-to-door.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Want us to arrange your transfer?</strong> Our <a href="consultation.html" style="color:var(--color-accent);font-weight:600;">Booking Concierge ($50)</a> can book your airport transfer along with all your London activities.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My London Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => UI.init());</script>
+</body>
+</html>
