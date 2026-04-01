@@ -480,10 +480,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const typeIcon = dest.type === 'city' ? '🏰' : dest.type === 'coastal' ? '🏖️' : '🌿';
       const selected = ukExtension.destinations.includes(dest.id);
       return `
-        <div class="chip ${selected ? 'active' : ''}" data-uk-dest="${dest.id}" style="flex-direction:column;padding:1rem;min-width:140px;">
-          <span style="font-size:1.5rem;">${typeIcon}</span>
-          <strong>${dest.name}</strong>
-          <span style="font-size:0.7rem;color:var(--color-text-muted);">${dest.region} &middot; ${dest.daysRecommended}${dest.daysRecommended > 1 ? ' days' : ' day'}</span>
+        <div class="chip ${selected ? 'active' : ''}" data-uk-dest="${dest.id}" style="flex-direction:column;padding:1.25rem 1.75rem;min-width:155px;border-radius:var(--radius-lg);">
+          <span style="font-size:1.75rem;">${typeIcon}</span>
+          <strong style="margin-top:0.25rem;">${dest.name}</strong>
+          <span style="font-size:0.7rem;color:var(--color-text-muted);margin-top:0.15rem;">${dest.region} &middot; ${dest.daysRecommended}${dest.daysRecommended > 1 ? ' days' : ' day'}</span>
         </div>
       `;
     }).join('');
