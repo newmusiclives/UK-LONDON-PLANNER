@@ -425,16 +425,46 @@
       </div>
 
       <!-- VENUE PANELS -->
-      ${['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'].map(type => `
-        <div class="admin-panel" data-panel="${type}">
-          <div class="search-bar">
-            <input type="text" id="search-${type}" placeholder="Search ${type}..." oninput="filterVenues('${type}')">
-            <select id="filter-${type}-links" onchange="filterVenues('${type}')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
-            <button class="btn btn--primary btn--small" onclick="addVenue('${type}')">+ Add New</button>
-          </div>
-          <div class="admin-section"><div class="venue-list" id="venue-list-${type}"></div></div>
+      <div class="admin-panel" data-panel="attractions">
+        <div class="search-bar">
+          <input type="text" id="search-attractions" placeholder="Search attractions..." oninput="filterVenues('attractions')">
+          <select id="filter-attractions-links" onchange="filterVenues('attractions')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('attractions')">+ Add New</button>
         </div>
-      `).join('')}
+        <div class="admin-section"><div class="venue-list" id="venue-list-attractions"></div></div>
+      </div>
+      <div class="admin-panel" data-panel="restaurants">
+        <div class="search-bar">
+          <input type="text" id="search-restaurants" placeholder="Search restaurants..." oninput="filterVenues('restaurants')">
+          <select id="filter-restaurants-links" onchange="filterVenues('restaurants')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('restaurants')">+ Add New</button>
+        </div>
+        <div class="admin-section"><div class="venue-list" id="venue-list-restaurants"></div></div>
+      </div>
+      <div class="admin-panel" data-panel="nightlife">
+        <div class="search-bar">
+          <input type="text" id="search-nightlife" placeholder="Search pubs & bars..." oninput="filterVenues('nightlife')">
+          <select id="filter-nightlife-links" onchange="filterVenues('nightlife')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('nightlife')">+ Add New</button>
+        </div>
+        <div class="admin-section"><div class="venue-list" id="venue-list-nightlife"></div></div>
+      </div>
+      <div class="admin-panel" data-panel="entertainment">
+        <div class="search-bar">
+          <input type="text" id="search-entertainment" placeholder="Search entertainment..." oninput="filterVenues('entertainment')">
+          <select id="filter-entertainment-links" onchange="filterVenues('entertainment')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('entertainment')">+ Add New</button>
+        </div>
+        <div class="admin-section"><div class="venue-list" id="venue-list-entertainment"></div></div>
+      </div>
+      <div class="admin-panel" data-panel="hotels">
+        <div class="search-bar">
+          <input type="text" id="search-hotels" placeholder="Search hotels..." oninput="filterVenues('hotels')">
+          <select id="filter-hotels-links" onchange="filterVenues('hotels')"><option value="all">All</option><option value="has-link">Has link</option><option value="no-link">Missing link</option></select>
+          <button class="btn btn--primary btn--small" onclick="addVenue('hotels')">+ Add New</button>
+        </div>
+        <div class="admin-section"><div class="venue-list" id="venue-list-hotels"></div></div>
+      </div>
 
       <!-- EXPORT / IMPORT -->
       <div class="admin-panel" data-panel="export">
