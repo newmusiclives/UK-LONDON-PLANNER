@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyster Card vs Travelcard vs Contactless Payment — London & UK Planner</title>
+  <meta name="description" content="Compare Oyster Card, Travelcard, and contactless payment for London transport. Find the cheapest option for your trip length and travel zones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .compare-hero{background:var(--color-dark,#1a1a2e);color:#fff;padding:4rem 1.5rem;text-align:center}
+    .compare-hero h1{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem}
+    .compare-hero p{font-size:1.15rem;max-width:680px;margin:0 auto;opacity:.9}
+    .compare-section{max-width:960px;margin:0 auto;padding:2rem 1.5rem}
+    .compare-card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:2rem;margin-bottom:2rem}
+    .compare-card h2{font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:1rem;color:var(--color-dark,#1a1a2e)}
+    .compare-card h3{font-size:1.15rem;margin:1.25rem 0 .5rem;color:var(--color-primary,#2563eb)}
+    .comparison-table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0}
+    .comparison-table-wrapper table{width:100%;border-collapse:collapse;min-width:520px}
+    .comparison-table-wrapper th{background:var(--color-primary,#2563eb);color:#fff;padding:.75rem 1rem;text-align:left;font-weight:600}
+    .comparison-table-wrapper td{padding:.75rem 1rem;border-bottom:1px solid #e5e7eb}
+    .comparison-table-wrapper tr:hover td{background:#f8fafc}
+    .best-for{background:#f0f9ff;border-radius:8px;padding:1.25rem;margin:.75rem 0;border-left:4px solid var(--color-primary,#2563eb)}
+    .best-for h4{margin:0 0 .35rem;color:var(--color-primary,#2563eb)}
+    .steps{counter-reset:step}
+    .steps li{counter-increment:step;padding:.5rem 0 .5rem 2.5rem;position:relative;border-bottom:1px solid #f1f5f9}
+    .steps li::before{content:counter(step);position:absolute;left:0;top:.5rem;width:1.75rem;height:1.75rem;background:var(--color-primary,#2563eb);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700}
+    .tip-box{background:#fefce8;border:1px solid #fde68a;border-radius:8px;padding:1rem 1.25rem;margin:.75rem 0}
+    .tip-box strong{color:#92400e}
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+
+    <section class="compare-hero">
+      <h1>Oyster Card vs Travelcard vs Contactless</h1>
+      <p>London's transport payment options can be confusing. Here is exactly which one saves you the most money based on your trip length.</p>
+    </section>
+
+    <div class="compare-section">
+
+      <div class="compare-card">
+        <h2>Quick Comparison</h2>
+        <div class="comparison-table-wrapper">
+          <table>
+            <thead><tr><th>Feature</th><th>Oyster Card</th><th>Travelcard</th><th>Contactless</th></tr></thead>
+            <tbody>
+              <tr><td>Type</td><td>Rechargeable smart card</td><td>Paper or Oyster-loaded pass</td><td>Bank card / phone</td></tr>
+              <tr><td>Single Fare (Zone 1)</td><td>&pound;2.80</td><td>N/A (unlimited)</td><td>&pound;2.80</td></tr>
+              <tr><td>Daily Cap (Zones 1&ndash;2)</td><td>&pound;8.10</td><td>&pound;8.10 (Day Travelcard)</td><td>&pound;8.10</td></tr>
+              <tr><td>Weekly Cap (Zones 1&ndash;2)</td><td>&pound;40.70</td><td>&pound;40.70</td><td>&pound;40.70 (Mon&ndash;Sun)</td></tr>
+              <tr><td>Zones Available</td><td>1&ndash;9</td><td>1&ndash;6 (Day), 1&ndash;9 (Annual)</td><td>1&ndash;9</td></tr>
+              <tr><td>Deposit</td><td>&pound;7 (refundable)</td><td>None</td><td>None</td></tr>
+              <tr><td>Where to Buy</td><td>Station machines, shops</td><td>Station machines, online</td><td>Already in your wallet</td></tr>
+              <tr><td>Covers Buses</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              <tr><td>Covers River Boats</td><td>Yes (discount)</td><td>33% discount</td><td>Yes (discount)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <h2>Best Option by Trip Length</h2>
+
+        <div class="best-for">
+          <h4>Tourists: 1&ndash;3 Days</h4>
+          <p><strong>Best choice: Contactless payment.</strong> Zero setup, automatic daily cap at the same rate as Oyster, and no deposit to worry about. Just tap your bank card or phone at every reader. Make sure your bank does not charge foreign transaction fees if you are visiting from overseas.</p>
+        </div>
+
+        <div class="best-for">
+          <h4>Short Stays: 4&ndash;7 Days</h4>
+          <p><strong>Best choice: Contactless or 7-Day Travelcard.</strong> If your stay spans Monday to Sunday, contactless automatically applies a weekly cap of &pound;40.70 for Zones 1&ndash;2. A 7-Day Travelcard costs the same but starts on any day, which is handy if you arrive mid-week. The Travelcard also includes a 33% discount on river boat services.</p>
+        </div>
+
+        <div class="best-for">
+          <h4>Longer Stays: 7+ Days</h4>
+          <p><strong>Best choice: Oyster with Auto-top-up or Monthly Travelcard.</strong> A monthly Zone 1&ndash;2 Travelcard costs &pound;156.30, equivalent to about 4 weeks of daily capping. If you travel daily it is the cheapest long-term option. Load it onto an Oyster card at any station.</p>
+        </div>
+
+        <div class="best-for">
+          <h4>Families</h4>
+          <p><strong>Best choice: Contactless for adults, free travel for children.</strong> Children under 11 travel free on the Tube and buses when with a fare-paying adult (up to 4 children). Children aged 11&ndash;15 can get a free Young Visitor Oyster discount (apply at a Visitor Centre). This means you only need to pay for adult fares.</p>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <h2>How to Get Each One</h2>
+
+        <h3>Oyster Card</h3>
+        <ol class="steps">
+          <li>Go to any Tube station ticket machine (they are at every station entrance).</li>
+          <li>Select "Get new Oyster card" and choose your language.</li>
+          <li>Pay the &pound;7 deposit plus however much credit you want to load.</li>
+          <li>Collect the card and tap in/out at yellow readers on every journey.</li>
+          <li>When leaving London, return the card at a machine for your deposit and remaining credit (up to &pound;10 balance).</li>
+        </ol>
+
+        <h3>Travelcard</h3>
+        <ol class="steps">
+          <li>Go to a Tube station ticket machine or ticket office.</li>
+          <li>Select "Travelcard" and choose Day, 7-Day, or Monthly.</li>
+          <li>Select your zones (most tourists only need Zones 1&ndash;2).</li>
+          <li>Pay and receive your pass. Day Travelcards come as paper tickets; longer ones load onto an Oyster card.</li>
+        </ol>
+
+        <h3>Contactless Payment</h3>
+        <ol class="steps">
+          <li>Ensure your bank card or phone supports contactless (look for the wave symbol).</li>
+          <li>Check with your bank that there are no foreign transaction fees if you are from overseas.</li>
+          <li>Tap the same card or device on every journey &mdash; in and out. Do not mix cards or you will be charged maximum fares.</li>
+          <li>Daily and weekly caps are applied automatically. Check your spending at contactless.tfl.gov.uk.</li>
+        </ol>
+      </div>
+
+      <div class="compare-card">
+        <h2>Money-Saving Tips</h2>
+        <div class="tip-box"><strong>Tip 1:</strong> Avoid buying single paper tickets. They cost &pound;6.70 for a single Zone 1 journey &mdash; more than double the Oyster/contactless fare of &pound;2.80.</div>
+        <div class="tip-box"><strong>Tip 2:</strong> Travel off-peak (after 9:30 AM on weekdays) and pay &pound;2.70 instead of &pound;2.80 per journey. The daily off-peak cap is also lower at &pound;7.40.</div>
+        <div class="tip-box"><strong>Tip 3:</strong> Use buses for short hops. A bus fare is &pound;1.75 with a &pound;5.25 daily cap, and you can transfer between buses for free within one hour (Hopper fare).</div>
+        <div class="tip-box"><strong>Tip 4:</strong> Walk between nearby stations. Central London is surprisingly compact &mdash; many Tube journeys can be replaced by a pleasant 10&ndash;15 minute walk.</div>
+        <div class="tip-box"><strong>Tip 5:</strong> If your hotel is in Zone 2, you will still mostly travel within Zones 1&ndash;2 and benefit from the cheaper cap. Zone 3 hotels are cheaper but transport costs creep up.</div>
+        <div class="tip-box"><strong>Tip 6:</strong> Use the TfL Go app (free) to plan routes and check live departures. It often suggests cheaper or faster alternatives to your default route.</div>
+      </div>
+
+      <div class="compare-card">
+        <h2>Common Mistakes to Avoid</h2>
+        <p><strong>Buying paper single tickets.</strong> At &pound;6.70 per Zone 1 journey, paper tickets cost more than double the Oyster/contactless fare. There is never a reason to buy one unless your contactless card is not working.</p>
+        <p><strong>Using different contactless cards on the same day.</strong> Each card is capped independently. If you tap Card A in the morning and Card B in the afternoon, both will be charged separately and neither will benefit from daily capping. Always use the same card or device for every journey.</p>
+        <p><strong>Forgetting to tap out.</strong> If you tap in but forget to tap out at your destination, you will be charged the maximum fare for that journey (up to &pound;8.60). Always tap out at the yellow readers on exit barriers. Bus journeys are the exception &mdash; you only tap once when boarding.</p>
+        <p><strong>Tapping your wallet with multiple cards.</strong> If your wallet contains several contactless cards, the reader may charge the wrong one. Either remove your preferred card from your wallet to tap, or use your phone (Apple Pay, Google Pay) instead.</p>
+        <p><strong>Assuming the Tube is always fastest.</strong> For short central London journeys, walking or taking a bus is often quicker than descending to the Tube platform, waiting, travelling one stop, and climbing back up. Use Citymapper to compare real-time options.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Accessibility and Special Needs</h2>
+        <p><strong>Step-free access:</strong> Not all Tube stations have step-free access, though TfL has been improving this. The Elizabeth Line is fully step-free, as are the DLR and London Overground. Check the TfL step-free Tube guide before travelling if this matters for your journey. All London buses are wheelchair accessible.</p>
+        <p><strong>Freedom Pass and 60+ Oyster:</strong> London residents aged 60+ can apply for free or reduced-cost travel. These do not apply to tourists, but visitors aged 60+ travelling from outside London can still benefit from off-peak senior railcard discounts if they purchase a Senior Railcard (&pound;30/year).</p>
+        <p><strong>Assistance:</strong> Every Tube station has staff who can help with route planning, accessibility queries, and emergencies. The TfL contact centre (0343 222 1234) can also help with journey planning for passengers with additional needs.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Quick Decision Guide</h2>
+        <div class="comparison-table-wrapper">
+          <table>
+            <thead><tr><th>Your Situation</th><th>Best Choice</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>International tourist, 1&ndash;4 days</td><td>Contactless</td><td>Zero setup, automatic capping, no deposit</td></tr>
+              <tr><td>Staying 5&ndash;7 days, arriving mid-week</td><td>7-Day Travelcard</td><td>Starts on any day, unlimited travel within zones</td></tr>
+              <tr><td>Staying 7+ days</td><td>Monthly Travelcard on Oyster</td><td>Best per-day rate for long stays</td></tr>
+              <tr><td>Family with young children</td><td>Contactless (adults only)</td><td>Under-11s travel free with paying adult</td></tr>
+              <tr><td>Bank charges foreign fees</td><td>Oyster Card</td><td>Top up once with cash to avoid per-transaction fees</td></tr>
+              <tr><td>Only using buses</td><td>Contactless</td><td>Bus cap is &pound;5.25/day &mdash; rarely worth a Travelcard</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/accounts.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{UI.init();});</script>
+</body>
+</html>

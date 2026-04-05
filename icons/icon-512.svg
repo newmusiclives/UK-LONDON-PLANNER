@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#1B2A4A"/>
+  <g transform="translate(256, 130)" fill="#C9A84C">
+    <polygon points="-54,0 -43,-38 -22,-11 0,-43 22,-11 43,-38 54,0"/>
+    <rect x="-54" y="0" width="108" height="16" rx="4"/>
+    <circle cx="-43" cy="-38" r="8"/>
+    <circle cx="0" cy="-43" r="8"/>
+    <circle cx="43" cy="-38" r="8"/>
+  </g>
+  <text x="256" y="370" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="266" font-weight="bold" fill="#C9A84C">L</text>
+</svg>

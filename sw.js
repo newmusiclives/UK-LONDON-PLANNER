@@ -1,4 +1,4 @@
-const CACHE_NAME = 'london-planner-v1';
+const CACHE_NAME = 'london-planner-v2';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -6,6 +6,8 @@ const urlsToCache = [
   '/itinerary.html',
   '/demo.html',
   '/consultation.html',
+  '/my-trips.html',
+  '/whats-on.html',
   '/css/variables.css',
   '/css/base.css',
   '/css/components.css',
@@ -20,6 +22,12 @@ const urlsToCache = [
   '/js/wizard.js',
   '/js/itinerary-renderer.js',
   '/js/payment.js',
+  '/js/chat-assistant.js',
+  '/js/social-proof.js',
+  '/js/exit-intent.js',
+  '/js/weather.js',
+  '/js/events-feed.js',
+  '/js/reviews-system.js',
   '/data/attractions.json',
   '/data/restaurants.json',
   '/data/nightlife.json',

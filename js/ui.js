@@ -19,11 +19,14 @@ const UI = {
           <span class="header__logo-icon" aria-hidden="true">🇬🇧</span>
           London & UK Planner
         </a>
-        <nav class="header__nav" id="main-nav">
+        <nav class="header__nav" id="main-nav" aria-label="Main navigation" role="navigation">
           <a href="demo.html">Demo</a>
           <a href="blog.html">Guide</a>
+          <a href="neighbourhoods.html">Neighbourhoods</a>
+          <a href="whats-on.html">What's On</a>
           <a href="book-services.html">Book Services</a>
           <a href="consultation.html">Consultation</a>
+          <a href="my-trips.html">My Trips</a>
           <div class="currency-selector">
             <select id="currency-select" aria-label="Select currency">
               ${Object.keys(CONFIG.currencies).map(c =>
@@ -31,9 +34,9 @@ const UI = {
               ).join('')}
             </select>
           </div>
-          <a href="wizard.html" class="btn btn--primary btn--small header__cta">Plan My Trip</a>
+          <a href="wizard.html" class="btn btn--primary btn--small header__cta" role="button">Plan My Trip</a>
         </nav>
-        <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+        <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
       </div>
     `;
   },
@@ -74,21 +77,37 @@ const UI = {
               <li><a href="demo.html">Sample Itinerary</a></li>
               <li><a href="blog.html">Travel Guide</a></li>
               <li><a href="neighbourhoods.html">Neighbourhood Guides</a></li>
+              <li><a href="whats-on.html">What's On in London</a></li>
               <li><a href="day-trips.html">Day Trips from London</a></li>
               <li><a href="travel-tips.html">Travel Tips</a></li>
               <li><a href="getting-around.html">Getting Around</a></li>
               <li><a href="best-time-to-visit.html">Best Time to Visit</a></li>
+              <li><a href="compare-london-paris.html">London vs Paris</a></li>
+              <li><a href="compare-oyster-travelcard.html">Oyster vs Travelcard</a></li>
             </ul>
           </div>
           <div>
             <div class="footer__title">Support</div>
             <ul class="footer__links">
+              <li><a href="my-trips.html">My Trips</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="privacy.html">Privacy Policy</a></li>
               <li><a href="terms.html">Terms of Service</a></li>
             </ul>
           </div>
+        </div>
+
+        <!-- UGC Gallery -->
+        <div style="margin-bottom:2rem;text-align:center;">
+          <h4 style="color:white;margin-bottom:0.5rem;">Share Your London Moments</h4>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">Tag <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> on Instagram for a chance to be featured</p>
+          <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:4px;border-radius:var(--radius-md);overflow:hidden;max-width:600px;margin:0 auto;">
+            ${['🌉','🎡','🏰','🌳','🍽️','🎭','🌅','🚕','🎪','☕','🎶','🏛️'].map((emoji, i) =>
+              '<div style="aspect-ratio:1;background:' + ['#2A3F6B','#1B2A4A','#3A4F7B','#1B2A4A','#2A3F6B','#3A4F7B'][i%6] + ';display:flex;align-items:center;justify-content:center;font-size:1.5rem;opacity:0.6;">' + emoji + '</div>'
+            ).join('')}
+          </div>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">Photo gallery coming soon — share your photos and we'll feature the best ones!</p>
         </div>
 
         <!-- Email Capture -->
@@ -139,14 +158,26 @@ const UI = {
     if (!toggle || !nav) return;
 
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
+      const isOpen = nav.classList.toggle('open');
+      toggle.textContent = isOpen ? '✕' : '☰';
+      toggle.setAttribute('aria-expanded', isOpen);
     });
 
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.header__inner')) {
         nav.classList.remove('open');
         toggle.textContent = '☰';
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close nav on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        toggle.textContent = '☰';
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
       }
     });
   },

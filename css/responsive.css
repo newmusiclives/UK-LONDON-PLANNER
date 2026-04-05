@@ -6,6 +6,19 @@
   h2 { font-size: 1.75rem; }
 }
 
+/* Responsive tables */
+@media (max-width: 768px) {
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+  .comparison-table-wrapper table {
+    min-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --space-xl: 1.5rem;

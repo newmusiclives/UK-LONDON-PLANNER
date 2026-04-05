@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where to Stay: Zone 1 vs Zone 2 vs Zone 3 — London & UK Planner</title>
+  <meta name="description" content="Compare London's Zone 1, Zone 2, and Zone 3 for accommodation prices, transport times, and neighbourhood character to find the best area for your stay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .compare-hero{background:var(--color-dark,#1a1a2e);color:#fff;padding:4rem 1.5rem;text-align:center}
+    .compare-hero h1{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem}
+    .compare-hero p{font-size:1.15rem;max-width:680px;margin:0 auto;opacity:.9}
+    .compare-section{max-width:960px;margin:0 auto;padding:2rem 1.5rem}
+    .compare-card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:2rem;margin-bottom:2rem}
+    .compare-card h2{font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:1rem;color:var(--color-dark,#1a1a2e)}
+    .compare-card h3{font-size:1.15rem;margin:1.25rem 0 .5rem;color:var(--color-primary,#2563eb)}
+    .comparison-table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0}
+    .comparison-table-wrapper table{width:100%;border-collapse:collapse;min-width:520px}
+    .comparison-table-wrapper th{background:var(--color-primary,#2563eb);color:#fff;padding:.75rem 1rem;text-align:left;font-weight:600}
+    .comparison-table-wrapper td{padding:.75rem 1rem;border-bottom:1px solid #e5e7eb}
+    .comparison-table-wrapper tr:hover td{background:#f8fafc}
+    .zone-card{border:2px solid #e5e7eb;border-radius:10px;padding:1.5rem;margin:1rem 0}
+    .zone-card.zone1{border-color:#ef4444}.zone-card.zone2{border-color:#f59e0b}.zone-card.zone3{border-color:#22c55e}
+    .zone-label{display:inline-block;padding:.25rem .75rem;border-radius:4px;color:#fff;font-weight:700;font-size:.85rem;margin-bottom:.75rem}
+    .zone1 .zone-label{background:#ef4444}.zone2 .zone-label{background:#f59e0b}.zone3 .zone-label{background:#22c55e}
+    .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem}
+    .pros li::before{content:"+ ";color:#22c55e;font-weight:700}
+    .cons li::before{content:"- ";color:#ef4444;font-weight:700}
+    .pros li,.cons li{padding:.25rem 0;list-style:none}
+    .pros,.cons{padding-left:0}
+    .neighbourhood-links a{display:inline-block;background:#f1f5f9;padding:.35rem .75rem;border-radius:6px;margin:.25rem .25rem .25rem 0;text-decoration:none;color:var(--color-primary,#2563eb);font-size:.9rem;transition:background .2s}
+    .neighbourhood-links a:hover{background:#e0e7ff}
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+
+    <section class="compare-hero">
+      <h1>Where to Stay: Zone 1 vs Zone 2 vs Zone 3</h1>
+      <p>Your choice of zone affects your budget, commute time, and the character of your neighbourhood. Here is how to choose.</p>
+    </section>
+
+    <div class="compare-section">
+
+      <div class="compare-card">
+        <h2>Price Comparison by Zone</h2>
+        <div class="comparison-table-wrapper">
+          <table>
+            <thead><tr><th>Accommodation Type</th><th>Zone 1</th><th>Zone 2</th><th>Zone 3</th></tr></thead>
+            <tbody>
+              <tr><td>Hostel (dorm bed)</td><td>&pound;25&ndash;45/night</td><td>&pound;18&ndash;30/night</td><td>&pound;15&ndash;25/night</td></tr>
+              <tr><td>Budget Hotel (2-star)</td><td>&pound;90&ndash;140/night</td><td>&pound;65&ndash;100/night</td><td>&pound;50&ndash;80/night</td></tr>
+              <tr><td>Mid-range Hotel (3-star)</td><td>&pound;150&ndash;250/night</td><td>&pound;100&ndash;170/night</td><td>&pound;75&ndash;130/night</td></tr>
+              <tr><td>Luxury Hotel (4&ndash;5 star)</td><td>&pound;300&ndash;800+/night</td><td>&pound;180&ndash;350/night</td><td>&pound;120&ndash;220/night</td></tr>
+              <tr><td>Airbnb (1-bed flat)</td><td>&pound;120&ndash;200/night</td><td>&pound;80&ndash;140/night</td><td>&pound;55&ndash;100/night</td></tr>
+              <tr><td>Avg savings vs Zone 1</td><td>&mdash;</td><td>25&ndash;35%</td><td>40&ndash;55%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.9rem;color:#64748b;margin-top:.75rem">Prices reflect 2025&ndash;2026 averages. Peak season (June&ndash;August) and special events can push prices 20&ndash;40% higher.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Zone-by-Zone Breakdown</h2>
+
+        <div class="zone-card zone1">
+          <span class="zone-label">Zone 1 &mdash; Central London</span>
+          <p>The heart of the city. You are walking distance from most major attractions, world-class dining, and iconic landmarks. The trade-off is price and noise &mdash; streets are busy late into the evening, and you will pay a premium for everything from hotels to coffee.</p>
+          <div class="pros-cons">
+            <ul class="pros">
+              <li>Walk to major sights</li>
+              <li>Lowest transport costs</li>
+              <li>Maximum dining options</li>
+              <li>Vibrant evening atmosphere</li>
+            </ul>
+            <ul class="cons">
+              <li>Most expensive accommodation</li>
+              <li>Noisy, especially weekends</li>
+              <li>Smaller rooms for the price</li>
+              <li>Tourist-heavy areas can feel crowded</li>
+            </ul>
+          </div>
+          <h3>Best Neighbourhoods</h3>
+          <div class="neighbourhood-links">
+            <a href="neighbourhood-covent-garden.html">Covent Garden</a>
+            <a href="neighbourhood-south-bank.html">South Bank</a>
+            <a href="neighbourhood-soho.html">Soho</a>
+            <a href="neighbourhood-westminster.html">Westminster</a>
+            <a href="neighbourhood-mayfair.html">Mayfair</a>
+          </div>
+        </div>
+
+        <div class="zone-card zone2">
+          <span class="zone-label">Zone 2 &mdash; Inner London</span>
+          <p>The sweet spot for most visitors. Zone 2 neighbourhoods have genuine local character &mdash; independent cafes, markets, and parks &mdash; while still being 10&ndash;20 minutes from the centre by Tube. This is where Londoners actually live, eat, and socialise.</p>
+          <div class="pros-cons">
+            <ul class="pros">
+              <li>25&ndash;35% cheaper than Zone 1</li>
+              <li>Authentic neighbourhood feel</li>
+              <li>Great food and bar scenes</li>
+              <li>Quick Tube access to centre</li>
+            </ul>
+            <ul class="cons">
+              <li>Slightly higher transport spend</li>
+              <li>Some areas have limited late-night options</li>
+              <li>Quality varies by neighbourhood</li>
+              <li>May need bus + Tube combos</li>
+            </ul>
+          </div>
+          <h3>Best Neighbourhoods</h3>
+          <div class="neighbourhood-links">
+            <a href="neighbourhood-shoreditch.html">Shoreditch</a>
+            <a href="neighbourhood-camden.html">Camden</a>
+            <a href="neighbourhood-brixton.html">Brixton</a>
+            <a href="neighbourhood-greenwich.html">Greenwich</a>
+            <a href="neighbourhood-notting-hill.html">Notting Hill</a>
+            <a href="neighbourhood-bermondsey.html">Bermondsey</a>
+          </div>
+        </div>
+
+        <div class="zone-card zone3">
+          <span class="zone-label">Zone 3 &mdash; Outer Inner London</span>
+          <p>Significant savings with a longer commute. Zone 3 includes some genuinely charming areas &mdash; think leafy suburbs, family-friendly parks, and high streets with character. Best for longer stays, families, or budget-conscious travellers who do not mind 25&ndash;40 minutes on the Tube.</p>
+          <div class="pros-cons">
+            <ul class="pros">
+              <li>40&ndash;55% cheaper than Zone 1</li>
+              <li>Quieter, more spacious</li>
+              <li>Larger rooms and apartments</li>
+              <li>Family-friendly parks</li>
+            </ul>
+            <ul class="cons">
+              <li>25&ndash;40 min commute to attractions</li>
+              <li>Higher daily transport cap</li>
+              <li>Fewer late-night options</li>
+              <li>Can feel disconnected from city buzz</li>
+            </ul>
+          </div>
+          <h3>Best Neighbourhoods</h3>
+          <div class="neighbourhood-links">
+            <a href="neighbourhood-hampstead.html">Hampstead</a>
+            <a href="neighbourhood-richmond.html">Richmond</a>
+            <a href="neighbourhood-wimbledon.html">Wimbledon</a>
+            <a href="neighbourhood-ealing.html">Ealing</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <h2>Transport Time to Major Attractions</h2>
+        <div class="comparison-table-wrapper">
+          <table>
+            <thead><tr><th>Attraction</th><th>From Zone 1 (avg)</th><th>From Zone 2 (avg)</th><th>From Zone 3 (avg)</th></tr></thead>
+            <tbody>
+              <tr><td>Tower of London</td><td>5&ndash;10 min</td><td>15&ndash;20 min</td><td>30&ndash;40 min</td></tr>
+              <tr><td>British Museum</td><td>5&ndash;10 min</td><td>12&ndash;18 min</td><td>25&ndash;35 min</td></tr>
+              <tr><td>Buckingham Palace</td><td>5&ndash;10 min</td><td>15&ndash;22 min</td><td>30&ndash;40 min</td></tr>
+              <tr><td>South Bank / London Eye</td><td>5&ndash;12 min</td><td>15&ndash;20 min</td><td>28&ndash;38 min</td></tr>
+              <tr><td>West End Theatres</td><td>5&ndash;8 min</td><td>12&ndash;18 min</td><td>25&ndash;35 min</td></tr>
+              <tr><td>Camden Market</td><td>8&ndash;15 min</td><td>10&ndash;18 min</td><td>20&ndash;30 min</td></tr>
+              <tr><td>Greenwich</td><td>20&ndash;25 min</td><td>10&ndash;20 min</td><td>15&ndash;30 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.9rem;color:#64748b;margin-top:.75rem">Times are door-to-door estimates including walking to station and waiting. Off-peak journeys may be faster.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Our Recommendation</h2>
+        <p><strong>First-time visitors (1&ndash;3 nights):</strong> Stay in Zone 1. The convenience of walking to everything is worth the premium for a short trip. You will save on transport and maximise sightseeing time.</p>
+        <p><strong>Repeat visitors or 4&ndash;7 nights:</strong> Stay in Zone 2. You get the best balance of price, local character, and accessibility. Areas like Shoreditch, Camden, and Notting Hill are destinations in their own right.</p>
+        <p><strong>Families or 7+ nights:</strong> Consider Zone 2 or Zone 3. Larger apartments at lower prices mean more comfort and savings, especially for groups. The transport cost difference is modest when you factor in the accommodation savings.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Transport Costs by Zone</h2>
+        <p>Your choice of zone directly affects your daily transport cap. Here is what you will pay with Oyster or contactless payment:</p>
+        <div class="comparison-table-wrapper">
+          <table>
+            <thead><tr><th>Zones Travelled</th><th>Peak Single</th><th>Off-Peak Single</th><th>Daily Cap</th><th>Weekly Cap</th></tr></thead>
+            <tbody>
+              <tr><td>Zone 1 only</td><td>&pound;2.80</td><td>&pound;2.70</td><td>&pound;8.10</td><td>&pound;40.70</td></tr>
+              <tr><td>Zones 1&ndash;2</td><td>&pound;2.80</td><td>&pound;2.70</td><td>&pound;8.10</td><td>&pound;40.70</td></tr>
+              <tr><td>Zones 1&ndash;3</td><td>&pound;3.40</td><td>&pound;2.80</td><td>&pound;9.60</td><td>&pound;47.90</td></tr>
+              <tr><td>Zones 1&ndash;4</td><td>&pound;4.10</td><td>&pound;2.80</td><td>&pound;11.70</td><td>&pound;58.50</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Staying in Zone 3 and travelling to Zone 1 daily costs an extra &pound;1.50 per day at peak cap. Over a 7-day trip, that is roughly &pound;10.50 extra in transport &mdash; easily offset by the &pound;30&ndash;70 per night saved on accommodation.</p>
+      </div>
+
+      <div class="compare-card">
+        <h2>Hidden Gems by Zone</h2>
+        <h3>Zone 1 Secrets</h3>
+        <p>Beyond the obvious landmarks, Zone 1 hides quiet corners that tourists miss. Postman's Park near St Paul's has a memorial wall of hand-painted tiles. The Sir John Soane's Museum in Lincoln's Inn Fields is a jaw-dropping house museum (free, small, and unforgettable). The Barbican Conservatory is a tropical greenhouse hidden inside London's brutalist arts centre.</p>
+
+        <h3>Zone 2 Secrets</h3>
+        <p>Columbia Road Flower Market on Sunday mornings is one of London's most magical experiences. God's Own Junkyard in Walthamstow is a neon wonderland. The Geffrye Museum (now the Museum of the Home) in Hoxton traces domestic life through the centuries. Peckham Levels is a multi-storey car park converted into studios, bars, and street food.</p>
+
+        <h3>Zone 3 Secrets</h3>
+        <p>Hampstead Heath's swimming ponds let you swim outdoors in natural water, summer or winter. Richmond Park is home to 630 free-roaming red and fallow deer. The Horniman Museum in Forest Hill has an eccentric collection including an overstuffed walrus. Eltham Palace combines Art Deco glamour with a medieval great hall.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/accounts.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{UI.init();});</script>
+</body>
+</html>

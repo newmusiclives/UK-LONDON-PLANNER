@@ -54,9 +54,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
   <meta name="theme-color" content="#C9A84C">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -304,7 +307,7 @@
 <body>
   <header class="header" id="site-header"></header>
 
-  <main class="main">
+  <main class="main" id="main-content" role="main">
     <!-- Hero -->
     <section class="hero">
       <div class="hero__content">
@@ -550,11 +553,20 @@
   <script src="js/analytics.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/accounts.js"></script>
+  <!-- New features -->
+  <script src="js/chat-assistant.js" defer></script>
+  <script src="js/social-proof.js" defer></script>
+  <script src="js/exit-intent.js" defer></script>
+  <script src="js/reviews-system.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       UI.init();
       Reviews.renderWidget('reviews-widget');
       Analytics.pageView('/', 'Home');
+      // Initialize new features
+      if (typeof ChatAssistant !== 'undefined') ChatAssistant.init();
+      if (typeof SocialProof !== 'undefined') SocialProof.init();
+      if (typeof ExitIntent !== 'undefined') ExitIntent.init();
     });
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});

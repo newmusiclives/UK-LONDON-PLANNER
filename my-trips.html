@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Trips — London & UK Planner</title>
+  <meta name="description" content="View, manage, and share your saved London itineraries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+    <section class="section section--dark" style="text-align:center;padding:3rem 0;">
+      <div class="container">
+        <h1 style="color:white;">My Trips</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);">Your saved London itineraries</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Quick Stats -->
+        <div id="trip-stats" style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap;"></div>
+
+        <!-- Current Trip Banner -->
+        <div id="current-trip-banner"></div>
+
+        <!-- Saved Trips Grid -->
+        <div id="saved-trips-grid"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/accounts.js"></script>
+  <script src="js/chat-assistant.js" defer></script>
+  <script>
+    // Saved Trips Manager
+    const SavedTrips = {
+      KEY: 'londonPlannerSavedTrips',
+
+      list() {
+        try {
+          const stored = localStorage.getItem(this.KEY);
+          return stored ? JSON.parse(stored) : [];
+        } catch { return []; }
+      },
+
+      save(itinerary) {
+        const trips = this.list();
+        const interestLabels = (itinerary.interests || []).slice(0, 3);
+        const trip = {
+          id: 'trip_' + Date.now(),
+          name: this.generateName(itinerary),
+          tripDays: itinerary.tripDays,
+          interests: itinerary.interests || [],
+          occasion: itinerary.occasion || '',
+          groupType: itinerary.groupType || '',
+          totalCost: itinerary.days?.reduce((sum, d) => sum + (d.dailyCost || 0), 0) || 0,
+          savedAt: new Date().toISOString(),
+          generatedAt: itinerary.generatedAt,
+          dayThemes: itinerary.days?.map(d => d.theme) || [],
+          data: itinerary
+        };
+        trips.unshift(trip);
+        localStorage.setItem(this.KEY, JSON.stringify(trips));
+        return trip;
+      },
+
+      delete(id) {
+        const trips = this.list().filter(t => t.id !== id);
+        localStorage.setItem(this.KEY, JSON.stringify(trips));
+      },
+
+      rename(id, newName) {
+        const trips = this.list();
+        const trip = trips.find(t => t.id === id);
+        if (trip) { trip.name = newName; localStorage.setItem(this.KEY, JSON.stringify(trips)); }
+      },
+
+      generateName(itinerary) {
+        const days = itinerary.tripDays;
+        const interests = itinerary.interests || [];
+        const themes = { food: 'Foodie', history: 'Heritage', nightlife: 'Nightlife', art: 'Cultural', romance: 'Romantic', family: 'Family', adventure: 'Adventure', shopping: 'Shopping' };
+        const theme = interests.find(i => themes[i]);
+        const label = theme ? themes[theme] : 'London';
+        return `${days}-Day ${label} Adventure`;
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      renderPage();
+    });
+
+    function renderPage() {
+      const currentItinerary = State.getItinerary();
+      const savedTrips = SavedTrips.list();
+
+      // Stats
+      renderStats(savedTrips, currentItinerary);
+
+      // Current trip banner
+      renderCurrentTrip(currentItinerary);
+
+      // Saved trips
+      renderSavedTrips(savedTrips);
+    }
+
+    function renderStats(trips, current) {
+      const container = document.getElementById('trip-stats');
+      const total = trips.length + (current ? 1 : 0);
+      const totalDays = trips.reduce((sum, t) => sum + (t.tripDays || 0), 0) + (current?.tripDays || 0);
+
+      // Most common interests
+      const interestCount = {};
+      [...trips.flatMap(t => t.interests || []), ...(current?.interests || [])].forEach(i => {
+        interestCount[i] = (interestCount[i] || 0) + 1;
+      });
+      const topInterest = Object.entries(interestCount).sort((a, b) => b[1] - a[1])[0];
+
+      container.innerHTML = `
+        <div style="text-align:center;padding:1rem 2rem;background:var(--color-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);min-width:120px;">
+          <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">${total}</div>
+          <div style="font-size:0.8rem;color:var(--color-text-muted);">Trips Created</div>
+        </div>
+        <div style="text-align:center;padding:1rem 2rem;background:var(--color-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);min-width:120px;">
+          <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">${totalDays}</div>
+          <div style="font-size:0.8rem;color:var(--color-text-muted);">Days Planned</div>
+        </div>
+        ${topInterest ? `
+        <div style="text-align:center;padding:1rem 2rem;background:var(--color-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);min-width:120px;">
+          <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);">${(CONFIG.interests.find(i => i.id === topInterest[0])?.icon) || '🎯'}</div>
+          <div style="font-size:0.8rem;color:var(--color-text-muted);">Top Interest: ${(CONFIG.interests.find(i => i.id === topInterest[0])?.label) || topInterest[0]}</div>
+        </div>
+        ` : ''}
+      `;
+    }
+
+    function renderCurrentTrip(itinerary) {
+      const container = document.getElementById('current-trip-banner');
+      if (!itinerary) { container.innerHTML = ''; return; }
+
+      const interests = (itinerary.interests || []).map(id => {
+        const found = CONFIG.interests.find(i => i.id === id);
+        return found ? found.icon : '';
+      }).join(' ');
+
+      container.innerHTML = `
+        <div style="background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light));border-radius:var(--radius-xl);padding:2rem;margin-bottom:2rem;color:white;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+            <div>
+              <span style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-accent);">Current Itinerary</span>
+              <h3 style="color:white;margin:0.25rem 0;">${itinerary.tripDays}-Day London Itinerary</h3>
+              <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin:0;">${interests} · Created ${new Date(itinerary.generatedAt).toLocaleDateString()}</p>
+            </div>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+              <a href="itinerary.html" class="btn btn--primary btn--small">View Itinerary</a>
+              <button class="btn btn--outline btn--small" style="color:white;border-color:rgba(255,255,255,0.3);" onclick="saveCurrentTrip()">Save to My Trips</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSavedTrips(trips) {
+      const container = document.getElementById('saved-trips-grid');
+      if (!trips.length) {
+        container.innerHTML = `
+          <div style="text-align:center;padding:4rem 2rem;">
+            <div style="font-size:4rem;margin-bottom:1rem;">🗺️</div>
+            <h3 style="margin-bottom:0.5rem;">No Saved Trips Yet</h3>
+            <p style="color:var(--color-text-muted);margin-bottom:2rem;">Create your first London itinerary and save it here for easy access.</p>
+            <a href="wizard.html" class="btn btn--primary btn--large">Plan My First Trip</a>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="grid grid--3">
+          ${trips.map(trip => {
+            const interests = (trip.interests || []).slice(0, 4).map(id => {
+              const found = CONFIG.interests.find(i => i.id === id);
+              return found ? found.icon : '';
+            }).join(' ');
+            return `
+              <div class="card" id="trip-${trip.id}">
+                <div class="card__body">
+                  <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:0.75rem;">
+                    <span class="badge badge--accent">${trip.tripDays} Days</span>
+                    <span style="font-size:0.75rem;color:var(--color-text-muted);">${new Date(trip.savedAt).toLocaleDateString()}</span>
+                  </div>
+                  <h4 style="margin-bottom:0.5rem;">${trip.name}</h4>
+                  <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+                    ${interests} · Est. £${trip.totalCost?.toFixed(0) || '0'}
+                  </p>
+                  <div style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:1rem;">
+                    ${(trip.dayThemes || []).slice(0, 3).map(t => `<span class="badge badge--accent" style="font-size:0.7rem;margin:2px;">${t}</span>`).join('')}
+                  </div>
+                  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                    <button class="btn btn--primary btn--small" onclick="loadTrip('${trip.id}')">View</button>
+                    <button class="btn btn--outline btn--small" onclick="deleteTrip('${trip.id}')">Delete</button>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    function saveCurrentTrip() {
+      const itinerary = State.getItinerary();
+      if (!itinerary) return;
+      SavedTrips.save(itinerary);
+      UI.showToast('Trip saved to My Trips!');
+      renderPage();
+    }
+
+    function loadTrip(id) {
+      const trips = SavedTrips.list();
+      const trip = trips.find(t => t.id === id);
+      if (trip?.data) {
+        State.saveItinerary(trip.data);
+        window.location.href = 'itinerary.html';
+      }
+    }
+
+    function deleteTrip(id) {
+      if (confirm('Delete this saved trip?')) {
+        SavedTrips.delete(id);
+        renderPage();
+        UI.showToast('Trip deleted.');
+      }
+    }
+  </script>
+</body>
+</html>

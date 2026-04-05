@@ -168,6 +168,43 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   }
 }
 
+/* High contrast mode */
+@media (forced-colors: active) {
+  .btn--primary, .btn--secondary, .badge, .chip.active {
+    border: 2px solid ButtonText;
+  }
+  .progress-step__circle {
+    border: 2px solid ButtonText;
+  }
+}
+
+/* Prefers contrast */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text-muted: #4B5563;
+    --color-border: #9CA3AF;
+  }
+  .btn--outline {
+    border-width: 3px;
+  }
+}
+
+/* Touch target sizing for mobile */
+@media (pointer: coarse) {
+  .btn--small {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .chip {
+    min-height: 44px;
+  }
+  .header__nav a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 /* Selection */
 ::selection {
   background-color: var(--color-accent);

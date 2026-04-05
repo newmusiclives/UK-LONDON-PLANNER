@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's On in London — Events, Festivals & Shows | London & UK Planner</title>
+  <meta name="description" content="Discover what's happening in London this month. Events, festivals, shows, exhibitions, and seasonal highlights throughout the year.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "What's On in London",
+    "description": "London events, festivals, shows, and seasonal highlights by month.",
+    "publisher": { "@type": "Organization", "name": "London & UK Planner" }
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">What's On in London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto;">Events, festivals, shows, and seasonal highlights — find out what's happening during your trip</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Month Tabs -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem;" id="month-tabs">
+          <button class="btn btn--small btn--outline month-tab" data-month="0">Jan</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="1">Feb</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="2">Mar</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="3">Apr</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="4">May</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="5">Jun</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="6">Jul</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="7">Aug</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="8">Sep</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="9">Oct</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="10">Nov</button>
+          <button class="btn btn--small btn--outline month-tab" data-month="11">Dec</button>
+        </div>
+
+        <!-- Category Filters -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem;" id="category-filters">
+          <button class="chip active" data-cat="all">All</button>
+          <button class="chip" data-cat="Music">🎵 Music</button>
+          <button class="chip" data-cat="Art">🎨 Art</button>
+          <button class="chip" data-cat="Food">🍽️ Food</button>
+          <button class="chip" data-cat="Sport">⚽ Sport</button>
+          <button class="chip" data-cat="Theatre">🎭 Theatre</button>
+          <button class="chip" data-cat="Festival">🎪 Festival</button>
+          <button class="chip" data-cat="Markets">🏪 Markets</button>
+          <button class="chip" data-cat="Family">👨‍👩‍👧‍👦 Family</button>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="grid grid--3" id="events-grid"></div>
+
+        <!-- CTA -->
+        <div style="text-align:center;margin-top:3rem;">
+          <h3 style="margin-bottom:1rem;">Plan Your Trip Around These Events</h3>
+          <p style="color:var(--color-text-muted);margin-bottom:1.5rem;">Our itinerary builder takes your travel dates into account</p>
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/accounts.js"></script>
+  <script src="js/events-feed.js"></script>
+  <script src="js/chat-assistant.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+
+      let currentMonth = new Date().getMonth();
+      let currentCategory = 'all';
+
+      function renderEvents() {
+        const events = EventsFeed.getEventsForMonth(currentMonth)
+          .filter(e => currentCategory === 'all' || e.category === currentCategory);
+
+        const grid = document.getElementById('events-grid');
+        if (!events.length) {
+          grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);"><p>No events found for this filter. Try a different month or category.</p></div>';
+          return;
+        }
+
+        const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        grid.innerHTML = events.map(e => `
+          <div class="card">
+            <div class="card__body">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:0.75rem;">
+                <span class="badge badge--accent">${EventsFeed.getCategoryIcon(e.category)} ${e.category}</span>
+                ${e.free ? '<span class="badge badge--success">FREE</span>' : ''}
+              </div>
+              <h4 style="margin-bottom:0.5rem;">${e.name}</h4>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">${e.description}</p>
+              <div style="font-size:0.8rem;color:var(--color-text-muted);">
+                <div>📅 ${e.dateRange}</div>
+                <div>📍 ${e.venue}</div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Month tabs
+      document.querySelectorAll('.month-tab').forEach(tab => {
+        if (parseInt(tab.dataset.month) === currentMonth) {
+          tab.classList.add('btn--primary');
+          tab.classList.remove('btn--outline');
+        }
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.month-tab').forEach(t => { t.classList.remove('btn--primary'); t.classList.add('btn--outline'); });
+          tab.classList.add('btn--primary');
+          tab.classList.remove('btn--outline');
+          currentMonth = parseInt(tab.dataset.month);
+          renderEvents();
+        });
+      });
+
+      // Category filters
+      document.querySelectorAll('#category-filters .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('#category-filters .chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          currentCategory = chip.dataset.cat;
+          renderEvents();
+        });
+      });
+
+      renderEvents();
+    });
+  </script>
+</body>
+</html>
