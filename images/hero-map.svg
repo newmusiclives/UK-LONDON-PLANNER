@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="mapbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8F6F1"/>
+      <stop offset="100%" stop-color="#F0EDE6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#mapbg)"/>
+
+  <!-- Map grid lines -->
+  <line x1="0" y1="100" x2="600" y2="100" stroke="#E5E1D8" stroke-width="0.5"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#E5E1D8" stroke-width="0.5"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#E5E1D8" stroke-width="0.5"/>
+  <line x1="150" y1="0" x2="150" y2="400" stroke="#E5E1D8" stroke-width="0.5"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#E5E1D8" stroke-width="0.5"/>
+  <line x1="450" y1="0" x2="450" y2="400" stroke="#E5E1D8" stroke-width="0.5"/>
+
+  <!-- Thames river -->
+  <path d="M0 220 Q100 200 200 230 Q300 260 400 220 Q500 180 600 210" stroke="#2A3F6B" stroke-width="12" fill="none" opacity="0.15" stroke-linecap="round"/>
+  <path d="M0 220 Q100 200 200 230 Q300 260 400 220 Q500 180 600 210" stroke="#2A3F6B" stroke-width="3" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Location pins -->
+  <!-- Westminster -->
+  <circle cx="180" cy="200" r="12" fill="#C9A84C" opacity="0.9"/>
+  <circle cx="180" cy="200" r="5" fill="white"/>
+  <text x="180" y="185" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Westminster</text>
+
+  <!-- Soho -->
+  <circle cx="250" cy="150" r="10" fill="#E74C3C" opacity="0.8"/>
+  <circle cx="250" cy="150" r="4" fill="white"/>
+  <text x="250" y="138" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Soho</text>
+
+  <!-- South Bank -->
+  <circle cx="300" cy="260" r="10" fill="#3498DB" opacity="0.8"/>
+  <circle cx="300" cy="260" r="4" fill="white"/>
+  <text x="300" y="280" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">South Bank</text>
+
+  <!-- Shoreditch -->
+  <circle cx="420" cy="130" r="10" fill="#2ECC71" opacity="0.8"/>
+  <circle cx="420" cy="130" r="4" fill="white"/>
+  <text x="420" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Shoreditch</text>
+
+  <!-- Camden -->
+  <circle cx="220" cy="80" r="10" fill="#9B59B6" opacity="0.8"/>
+  <circle cx="220" cy="80" r="4" fill="white"/>
+  <text x="220" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Camden</text>
+
+  <!-- Kensington -->
+  <circle cx="100" cy="200" r="10" fill="#F39C12" opacity="0.8"/>
+  <circle cx="100" cy="200" r="4" fill="white"/>
+  <text x="100" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Kensington</text>
+
+  <!-- Greenwich -->
+  <circle cx="500" cy="280" r="10" fill="#1ABC9C" opacity="0.8"/>
+  <circle cx="500" cy="280" r="4" fill="white"/>
+  <text x="500" y="300" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1B2A4A" font-weight="600">Greenwich</text>
+
+  <!-- Notting Hill -->
+  <circle cx="80" cy="130" r="9" fill="#E67E22" opacity="0.8"/>
+  <circle cx="80" cy="130" r="3.5" fill="white"/>
+  <text x="80" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#1B2A4A" font-weight="600">Notting Hill</text>
+
+  <!-- Dotted route line -->
+  <path d="M180 200 L250 150 L300 260 L420 130 L500 280" stroke="#C9A84C" stroke-width="2" stroke-dasharray="6 4" fill="none" opacity="0.5"/>
+
+  <!-- Day labels on route -->
+  <rect x="200" y="168" width="28" height="16" rx="8" fill="#1B2A4A"/>
+  <text x="214" y="180" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="white" font-weight="700">Day 1</text>
+  <rect x="340" y="185" width="28" height="16" rx="8" fill="#1B2A4A"/>
+  <text x="354" y="197" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="white" font-weight="700">Day 2</text>
+  <rect x="445" y="195" width="28" height="16" rx="8" fill="#1B2A4A"/>
+  <text x="459" y="207" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="white" font-weight="700">Day 3</text>
+</svg>

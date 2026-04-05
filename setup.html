@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Wizard — London & UK Planner</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+    <section class="section" style="padding-top:2rem;">
+      <div class="container" style="max-width:800px;">
+        <h1 style="margin-bottom:0.25rem;">Setup Wizard</h1>
+        <p style="color:var(--color-text-muted);margin-bottom:2rem;">Connect your services to go from demo mode to live revenue. Each step is optional — the site works in demo mode without any keys configured.</p>
+
+        <!-- Progress -->
+        <div style="display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap;">
+          <span class="badge" id="badge-ga4" style="background:#FEE2E2;color:#991B1B;">GA4: Not Set</span>
+          <span class="badge" id="badge-weather" style="background:#FEE2E2;color:#991B1B;">Weather: Not Set</span>
+          <span class="badge" id="badge-ghl" style="background:#FEE2E2;color:#991B1B;">GoHighLevel: Not Set</span>
+          <span class="badge" id="badge-manifest" style="background:#FEE2E2;color:#991B1B;">Payments: Not Set</span>
+          <span class="badge" id="badge-affiliates" style="background:#FEE2E2;color:#991B1B;">Affiliates: Not Set</span>
+        </div>
+
+        <!-- GA4 -->
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card__body">
+            <div style="display:flex;justify-content:space-between;align-items:start;">
+              <div>
+                <h3 style="margin-bottom:0.25rem;">1. Google Analytics 4</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;">Track visitors, conversions, and revenue.</p>
+              </div>
+              <span style="font-size:1.5rem;" id="icon-ga4">⚪</span>
+            </div>
+            <div style="margin-top:1rem;">
+              <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:0.5rem;">GA4 Measurement ID</label>
+              <div style="display:flex;gap:0.5rem;">
+                <input type="text" id="input-ga4" placeholder="G-XXXXXXXXXX" style="flex:1;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.9rem;">
+                <button class="btn btn--primary btn--small" onclick="saveConfig('ga4')">Save</button>
+              </div>
+              <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.5rem;">Get this from <a href="https://analytics.google.com" target="_blank" style="color:var(--color-accent);">Google Analytics</a> → Admin → Data Streams → Your stream → Measurement ID</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OpenWeatherMap -->
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card__body">
+            <div style="display:flex;justify-content:space-between;align-items:start;">
+              <div>
+                <h3 style="margin-bottom:0.25rem;">2. OpenWeatherMap</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;">Live weather forecasts on itineraries.</p>
+              </div>
+              <span style="font-size:1.5rem;" id="icon-weather">⚪</span>
+            </div>
+            <div style="margin-top:1rem;">
+              <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:0.5rem;">API Key</label>
+              <div style="display:flex;gap:0.5rem;">
+                <input type="text" id="input-weather" placeholder="Your API key" style="flex:1;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.9rem;">
+                <button class="btn btn--primary btn--small" onclick="saveConfig('weather')">Save</button>
+              </div>
+              <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.5rem;">Free tier at <a href="https://openweathermap.org/api" target="_blank" style="color:var(--color-accent);">openweathermap.org</a> — 1,000 calls/day, plenty for this site.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GoHighLevel -->
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card__body">
+            <div style="display:flex;justify-content:space-between;align-items:start;">
+              <div>
+                <h3 style="margin-bottom:0.25rem;">3. GoHighLevel CRM</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;">Email capture, SMS, pipelines, and automation.</p>
+              </div>
+              <span style="font-size:1.5rem;" id="icon-ghl">⚪</span>
+            </div>
+            <div style="margin-top:1rem;display:grid;gap:0.75rem;">
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:0.25rem;">Location ID</label>
+                <input type="text" id="input-ghl-location" placeholder="YOUR_GHL_LOCATION_ID" style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:0.25rem;">Email Capture Webhook URL</label>
+                <input type="text" id="input-ghl-email" placeholder="https://services.leadconnectorhq.com/hooks/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:0.25rem;">Contact Form Webhook URL</label>
+                <input type="text" id="input-ghl-contact" placeholder="https://services.leadconnectorhq.com/hooks/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <button class="btn btn--primary btn--small" onclick="saveConfig('ghl')" style="justify-self:start;">Save GHL Settings</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manifest Financial -->
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card__body">
+            <div style="display:flex;justify-content:space-between;align-items:start;">
+              <div>
+                <h3 style="margin-bottom:0.25rem;">4. Manifest Financial Payments</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;">Accept payments for itineraries and services.</p>
+              </div>
+              <span style="font-size:1.5rem;" id="icon-manifest">⚪</span>
+            </div>
+            <div style="margin-top:1rem;display:grid;gap:0.75rem;">
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;">Tier 1 ($20) Payment Link</label>
+                <input type="text" id="input-pay-t1" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;">Tier 2 ($40) Payment Link</label>
+                <input type="text" id="input-pay-t2" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;">Tier 3 ($75) Payment Link</label>
+                <input type="text" id="input-pay-t3" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <div>
+                <label style="font-weight:600;font-size:0.85rem;">Concierge ($150) Payment Link</label>
+                <input type="text" id="input-pay-con" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+              </div>
+              <button class="btn btn--primary btn--small" onclick="saveConfig('manifest')" style="justify-self:start;">Save Payment Links</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Affiliates -->
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card__body">
+            <div style="display:flex;justify-content:space-between;align-items:start;">
+              <div>
+                <h3 style="margin-bottom:0.25rem;">5. Affiliate IDs (Top 5)</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;">Start earning commissions. See <a href="AFFILIATE-SETUP-GUIDE.md" style="color:var(--color-accent);">full guide</a> for all 25+ programs.</p>
+              </div>
+              <span style="font-size:1.5rem;" id="icon-affiliates">⚪</span>
+            </div>
+            <div style="margin-top:1rem;display:grid;gap:0.75rem;">
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:0.5rem;align-items:center;">
+                <label style="font-weight:600;font-size:0.85rem;">GetYourGuide</label>
+                <input type="text" id="input-aff-gyg" placeholder="Partner ID (8% commission)" style="padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;">
+              </div>
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:0.5rem;align-items:center;">
+                <label style="font-weight:600;font-size:0.85rem;">Booking.com</label>
+                <input type="text" id="input-aff-booking" placeholder="Affiliate ID (4-6% commission)" style="padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;">
+              </div>
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:0.5rem;align-items:center;">
+                <label style="font-weight:600;font-size:0.85rem;">Viator</label>
+                <input type="text" id="input-aff-viator" placeholder="Partner ID (8% commission)" style="padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;">
+              </div>
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:0.5rem;align-items:center;">
+                <label style="font-weight:600;font-size:0.85rem;">Skyscanner</label>
+                <input type="text" id="input-aff-sky" placeholder="Associate ID" style="padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;">
+              </div>
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:0.5rem;align-items:center;">
+                <label style="font-weight:600;font-size:0.85rem;">TodayTix</label>
+                <input type="text" id="input-aff-todaytix" placeholder="Referral ID" style="padding:0.5rem 0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;">
+              </div>
+              <button class="btn btn--primary btn--small" onclick="saveConfig('affiliates')" style="justify-self:start;">Save Affiliate IDs</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status Summary -->
+        <div class="card" style="border:2px solid var(--color-accent);">
+          <div class="card__body" style="text-align:center;">
+            <h3 style="margin-bottom:0.5rem;">Setup Status</h3>
+            <p style="color:var(--color-text-muted);margin-bottom:1rem;" id="setup-summary">Checking configuration...</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+              <a href="admin.html" class="btn btn--secondary btn--small">Admin Dashboard</a>
+              <a href="index.html" class="btn btn--primary btn--small">View Live Site</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    const SETUP_KEY = 'londonPlannerSetup';
+
+    function getSetup() {
+      try { return JSON.parse(localStorage.getItem(SETUP_KEY)) || {}; } catch { return {}; }
+    }
+
+    function saveConfig(section) {
+      const setup = getSetup();
+
+      switch(section) {
+        case 'ga4':
+          setup.ga4 = document.getElementById('input-ga4').value.trim();
+          break;
+        case 'weather':
+          setup.weather = document.getElementById('input-weather').value.trim();
+          break;
+        case 'ghl':
+          setup.ghlLocation = document.getElementById('input-ghl-location').value.trim();
+          setup.ghlEmailWebhook = document.getElementById('input-ghl-email').value.trim();
+          setup.ghlContactWebhook = document.getElementById('input-ghl-contact').value.trim();
+          break;
+        case 'manifest':
+          setup.payTier1 = document.getElementById('input-pay-t1').value.trim();
+          setup.payTier2 = document.getElementById('input-pay-t2').value.trim();
+          setup.payTier3 = document.getElementById('input-pay-t3').value.trim();
+          setup.payConcierge = document.getElementById('input-pay-con').value.trim();
+          break;
+        case 'affiliates':
+          setup.affGYG = document.getElementById('input-aff-gyg').value.trim();
+          setup.affBooking = document.getElementById('input-aff-booking').value.trim();
+          setup.affViator = document.getElementById('input-aff-viator').value.trim();
+          setup.affSkyscanner = document.getElementById('input-aff-sky').value.trim();
+          setup.affTodayTix = document.getElementById('input-aff-todaytix').value.trim();
+          break;
+      }
+
+      localStorage.setItem(SETUP_KEY, JSON.stringify(setup));
+      UI.showToast('Settings saved!');
+      updateStatus();
+    }
+
+    function updateStatus() {
+      const s = getSetup();
+
+      const set = (id, val) => {
+        const el = document.getElementById(id);
+        if (val) {
+          el.style.background = '#D1FAE5'; el.style.color = '#065F46';
+          el.textContent = el.textContent.replace('Not Set', 'Connected');
+        }
+      };
+      const icon = (id, val) => {
+        document.getElementById(id).textContent = val ? '✅' : '⚪';
+      };
+
+      set('badge-ga4', s.ga4); icon('icon-ga4', s.ga4);
+      set('badge-weather', s.weather); icon('icon-weather', s.weather);
+      set('badge-ghl', s.ghlLocation || s.ghlEmailWebhook); icon('icon-ghl', s.ghlLocation || s.ghlEmailWebhook);
+      set('badge-manifest', s.payTier1); icon('icon-manifest', s.payTier1);
+      set('badge-affiliates', s.affGYG || s.affBooking); icon('icon-affiliates', s.affGYG || s.affBooking);
+
+      // Fill inputs from saved values
+      if (s.ga4) document.getElementById('input-ga4').value = s.ga4;
+      if (s.weather) document.getElementById('input-weather').value = s.weather;
+      if (s.ghlLocation) document.getElementById('input-ghl-location').value = s.ghlLocation;
+      if (s.ghlEmailWebhook) document.getElementById('input-ghl-email').value = s.ghlEmailWebhook;
+      if (s.ghlContactWebhook) document.getElementById('input-ghl-contact').value = s.ghlContactWebhook;
+      if (s.payTier1) document.getElementById('input-pay-t1').value = s.payTier1;
+      if (s.payTier2) document.getElementById('input-pay-t2').value = s.payTier2;
+      if (s.payTier3) document.getElementById('input-pay-t3').value = s.payTier3;
+      if (s.payConcierge) document.getElementById('input-pay-con').value = s.payConcierge;
+      if (s.affGYG) document.getElementById('input-aff-gyg').value = s.affGYG;
+      if (s.affBooking) document.getElementById('input-aff-booking').value = s.affBooking;
+      if (s.affViator) document.getElementById('input-aff-viator').value = s.affViator;
+      if (s.affSkyscanner) document.getElementById('input-aff-sky').value = s.affSkyscanner;
+      if (s.affTodayTix) document.getElementById('input-aff-todaytix').value = s.affTodayTix;
+
+      const count = [s.ga4, s.weather, s.ghlLocation || s.ghlEmailWebhook, s.payTier1, s.affGYG || s.affBooking].filter(Boolean).length;
+      document.getElementById('setup-summary').textContent = count === 5
+        ? 'All services connected! Your site is fully live.'
+        : `${count}/5 services configured. The site works in demo mode for unconfigured services.`;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      updateStatus();
+    });
+  </script>
+</body>
+</html>

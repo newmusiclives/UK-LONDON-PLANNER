@@ -1,9 +1,11 @@
 const UI = {
   init() {
+    if (typeof I18N !== 'undefined') I18N.init();
     this.renderHeader();
     this.renderFooter();
     this.initMobileNav();
     this.initCurrencySelector();
+    this.initLanguageSelector();
     this.initCookieConsent();
   },
 
@@ -12,6 +14,8 @@ const UI = {
     if (!header) return;
 
     const curr = CurrencyConverter.get();
+    const _t = (key, fallback) => typeof I18N !== 'undefined' ? I18N.t(key) : fallback;
+    const langSelector = typeof I18N !== 'undefined' ? I18N.renderLanguageSelector() : '';
     header.innerHTML = `
       <a href="#main-content" class="skip-link">Skip to main content</a>
       <div class="header__inner">
@@ -20,23 +24,26 @@ const UI = {
           London & UK Planner
         </a>
         <nav class="header__nav" id="main-nav" aria-label="Main navigation" role="navigation">
-          <a href="demo.html">Demo</a>
-          <a href="blog.html">Guide</a>
-          <a href="neighbourhoods.html">Neighbourhoods</a>
-          <a href="whats-on.html">What's On</a>
-          <a href="book-services.html">Book Services</a>
-          <a href="consultation.html">Consultation</a>
-          <a href="my-trips.html">My Trips</a>
+          <a href="demo.html">${_t('nav.demo', 'Demo')}</a>
+          <a href="blog.html">${_t('nav.guide', 'Guide')}</a>
+          <a href="neighbourhoods.html">${_t('nav.neighbourhoods', 'Neighbourhoods')}</a>
+          <a href="whats-on.html">${_t('nav.whatsOn', "What's On")}</a>
+          <a href="book-services.html">${_t('nav.bookServices', 'Book Services')}</a>
+          <a href="consultation.html">${_t('nav.consultation', 'Consultation')}</a>
+          <a href="my-trips.html">${_t('nav.myTrips', 'My Trips')}</a>
+          <div class="lang-selector" style="display:flex;align-items:center;gap:4px;">
+            ${langSelector}
+          </div>
           <div class="currency-selector">
-            <select id="currency-select" aria-label="Select currency">
+            <select id="currency-select" aria-label="${_t('currency.selectLabel', 'Select currency')}">
               ${Object.keys(CONFIG.currencies).map(c =>
                 `<option value="${c}" ${c === curr ? 'selected' : ''}>${CONFIG.currencies[c].symbol} ${c}</option>`
               ).join('')}
             </select>
           </div>
-          <a href="wizard.html" class="btn btn--primary btn--small header__cta" role="button">Plan My Trip</a>
+          <a href="wizard.html" class="btn btn--primary btn--small header__cta" role="button">${_t('nav.planMyTrip', 'Plan My Trip')}</a>
         </nav>
-        <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <button class="header__mobile-toggle" id="nav-toggle" aria-label="${_t('nav.toggleMenu', 'Toggle navigation menu')}" aria-expanded="false" aria-controls="main-nav">☰</button>
       </div>
     `;
   },
@@ -45,14 +52,14 @@ const UI = {
     const footer = document.getElementById('site-footer');
     if (!footer) return;
 
+    const _t = (key, fallback) => typeof I18N !== 'undefined' ? I18N.t(key) : fallback;
     footer.innerHTML = `
       <div class="container">
         <div class="footer__grid">
           <div>
             <div class="footer__brand">🇬🇧 London & UK Planner</div>
             <p class="footer__desc">
-              Expertly curated London itineraries tailored to your interests, budget, and travel style.
-              Your perfect London adventure starts here.
+              ${_t('footer.desc', 'Expertly curated London itineraries tailored to your interests, budget, and travel style. Your perfect London adventure starts here.')}
             </p>
             <div class="footer__social" style="margin-top:1rem;display:flex;gap:0.75rem;">
               <a href="#" aria-label="Instagram" style="font-size:1.25rem;">📷</a>
@@ -62,64 +69,65 @@ const UI = {
             </div>
           </div>
           <div>
-            <div class="footer__title">Plan</div>
+            <div class="footer__title">${_t('footer.plan', 'Plan')}</div>
             <ul class="footer__links">
-              <li><a href="wizard.html">Create Itinerary</a></li>
-              <li><a href="consultation.html">Expert Consultation</a></li>
-              <li><a href="airport-transfers.html">Airport Transfers</a></li>
-              <li><a href="index.html#pricing">Pricing</a></li>
-              <li><a href="index.html#how-it-works">How It Works</a></li>
+              <li><a href="wizard.html">${_t('footer.createItinerary', 'Create Itinerary')}</a></li>
+              <li><a href="consultation.html">${_t('footer.expertConsultation', 'Expert Consultation')}</a></li>
+              <li><a href="airport-transfers.html">${_t('footer.airportTransfers', 'Airport Transfers')}</a></li>
+              <li><a href="index.html#pricing">${_t('footer.pricing', 'Pricing')}</a></li>
+              <li><a href="index.html#how-it-works">${_t('footer.howItWorks', 'How It Works')}</a></li>
             </ul>
           </div>
           <div>
-            <div class="footer__title">Explore</div>
+            <div class="footer__title">${_t('footer.explore', 'Explore')}</div>
             <ul class="footer__links">
-              <li><a href="demo.html">Sample Itinerary</a></li>
-              <li><a href="blog.html">Travel Guide</a></li>
-              <li><a href="neighbourhoods.html">Neighbourhood Guides</a></li>
-              <li><a href="whats-on.html">What's On in London</a></li>
-              <li><a href="day-trips.html">Day Trips from London</a></li>
-              <li><a href="travel-tips.html">Travel Tips</a></li>
-              <li><a href="getting-around.html">Getting Around</a></li>
-              <li><a href="best-time-to-visit.html">Best Time to Visit</a></li>
+              <li><a href="demo.html">${_t('footer.sampleItinerary', 'Sample Itinerary')}</a></li>
+              <li><a href="blog.html">${_t('footer.travelGuide', 'Travel Guide')}</a></li>
+              <li><a href="neighbourhoods.html">${_t('footer.neighbourhoodGuides', 'Neighbourhood Guides')}</a></li>
+              <li><a href="whats-on.html">${_t('footer.whatsOnLondon', "What's On in London")}</a></li>
+              <li><a href="day-trips.html">${_t('footer.dayTrips', 'Day Trips from London')}</a></li>
+              <li><a href="travel-tips.html">${_t('footer.travelTips', 'Travel Tips')}</a></li>
+              <li><a href="getting-around.html">${_t('footer.gettingAround', 'Getting Around')}</a></li>
+              <li><a href="best-time-to-visit.html">${_t('footer.bestTimeToVisit', 'Best Time to Visit')}</a></li>
               <li><a href="compare-london-paris.html">London vs Paris</a></li>
               <li><a href="compare-oyster-travelcard.html">Oyster vs Travelcard</a></li>
             </ul>
           </div>
           <div>
-            <div class="footer__title">Support</div>
+            <div class="footer__title">${_t('footer.support', 'Support')}</div>
             <ul class="footer__links">
-              <li><a href="my-trips.html">My Trips</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="my-trips.html">${_t('nav.myTrips', 'My Trips')}</a></li>
+              <li><a href="testimonials.html">Share Your Experience</a></li>
+              <li><a href="contact.html">${_t('footer.contactUs', 'Contact Us')}</a></li>
+              <li><a href="faq.html">${_t('footer.faq', 'FAQ')}</a></li>
+              <li><a href="privacy.html">${_t('footer.privacyPolicy', 'Privacy Policy')}</a></li>
+              <li><a href="terms.html">${_t('footer.termsOfService', 'Terms of Service')}</a></li>
             </ul>
           </div>
         </div>
 
         <!-- UGC Gallery -->
         <div style="margin-bottom:2rem;text-align:center;">
-          <h4 style="color:white;margin-bottom:0.5rem;">Share Your London Moments</h4>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">Tag <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> on Instagram for a chance to be featured</p>
+          <h4 style="color:white;margin-bottom:0.5rem;">${_t('footer.shareYourMoments', 'Share Your London Moments')}</h4>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">${_t('footer.tagUs', 'Tag <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> on Instagram for a chance to be featured')}</p>
           <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:4px;border-radius:var(--radius-md);overflow:hidden;max-width:600px;margin:0 auto;">
             ${['🌉','🎡','🏰','🌳','🍽️','🎭','🌅','🚕','🎪','☕','🎶','🏛️'].map((emoji, i) =>
               '<div style="aspect-ratio:1;background:' + ['#2A3F6B','#1B2A4A','#3A4F7B','#1B2A4A','#2A3F6B','#3A4F7B'][i%6] + ';display:flex;align-items:center;justify-content:center;font-size:1.5rem;opacity:0.6;">' + emoji + '</div>'
             ).join('')}
           </div>
-          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">Photo gallery coming soon — share your photos and we'll feature the best ones!</p>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">${_t('footer.galleryComingSoon', "Photo gallery coming soon — share your photos and we'll feature the best ones!")}</p>
         </div>
 
         <!-- Email Capture -->
         <div class="footer__email-capture" style="background:var(--color-primary-light);border-radius:var(--radius-lg);padding:2rem;margin-bottom:2rem;text-align:center;">
-          <h4 style="color:white;margin-bottom:0.5rem;">Get 3 Free London Insider Tips</h4>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">Join 5,000+ travellers who get our best London secrets</p>
+          <h4 style="color:white;margin-bottom:0.5rem;">${_t('email.headline', 'Get 3 Free London Insider Tips')}</h4>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">${_t('email.subheadline', 'Join 5,000+ travellers who get our best London secrets')}</p>
           <form class="email-capture-form" id="footer-email-form" style="display:flex;gap:0.5rem;max-width:450px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
-            <input type="email" placeholder="Enter your email" required
+            <input type="email" placeholder="${_t('email.placeholder', 'Enter your email')}" required
               style="flex:1;min-width:200px;padding:0.75rem 1rem;border:2px solid rgba(255,255,255,0.2);border-radius:var(--radius-md);font-size:0.95rem;background:rgba(255,255,255,0.1);color:white;">
-            <button type="submit" class="btn btn--primary">Get Free Tips</button>
+            <button type="submit" class="btn btn--primary">${_t('email.cta', 'Get Free Tips')}</button>
           </form>
-          <p style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">No spam. Unsubscribe anytime.</p>
+          <p style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">${_t('email.disclaimer', 'No spam. Unsubscribe anytime.')}</p>
         </div>
 
         <div class="footer__bottom">
@@ -186,6 +194,14 @@ const UI = {
     document.addEventListener('change', (e) => {
       if (e.target.id === 'currency-select') {
         CurrencyConverter.set(e.target.value);
+      }
+    });
+  },
+
+  initLanguageSelector() {
+    document.addEventListener('change', (e) => {
+      if (e.target.id === 'lang-select' && typeof I18N !== 'undefined') {
+        I18N.setLang(e.target.value);
       }
     });
   },

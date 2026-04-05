@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London & UK Planner — Votre Voyage Parfait a Londres, Concu par des Experts</title>
+  <meta name="description" content="Creez un itineraire personnalise de Londres adapte a vos centres d'interet, budget et style de voyage. Plans jour par jour avec conseils locaux, recommandations de restaurants et liens de reservation.">
+  <meta property="og:title" content="London & UK Planner — Itineraires Personnalises">
+  <meta property="og:description" content="Creez un itineraire personnalise jour par jour de Londres avec plus de 900 lieux, cartes interactives et conseils locaux. A partir de $20.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uk-london-planner.netlify.app/fr/">
+  <meta property="og:image" content="https://uk-london-planner.netlify.app/og-image.svg">
+
+  <link rel="alternate" hreflang="en" href="https://uk-london-planner.netlify.app/">
+  <link rel="alternate" hreflang="es" href="https://uk-london-planner.netlify.app/es/">
+  <link rel="alternate" hreflang="fr" href="https://uk-london-planner.netlify.app/fr/">
+  <link rel="alternate" hreflang="de" href="https://uk-london-planner.netlify.app/de/">
+  <link rel="alternate" hreflang="x-default" href="https://uk-london-planner.netlify.app/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" type="image/svg+xml" href="../icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="../icons/icon-192.svg">
+  <meta name="theme-color" content="#C9A84C">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <style>
+    .hero{position:relative;min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#0f1a30 0%,#1B2A4A 40%,#2A3F6B 100%);overflow:hidden;padding:6rem 2rem 4rem}
+    .hero::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><text x="50%" y="50%" text-anchor="middle" font-size="300" fill="rgba(201,168,76,0.03)" font-family="serif">LONDON</text></svg>') center/cover no-repeat}
+    .hero__content{position:relative;z-index:1;max-width:800px}
+    .hero__badge{display:inline-block;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);color:var(--color-accent);padding:0.4rem 1.25rem;border-radius:var(--radius-full);font-size:0.85rem;font-weight:600;margin-bottom:1.5rem;letter-spacing:0.05em}
+    .hero h1{font-size:3.5rem;color:white;margin-bottom:1.25rem;line-height:1.1}
+    .hero h1 span{color:var(--color-accent)}
+    .hero__subtitle{font-size:1.25rem;color:rgba(255,255,255,0.75);margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.7}
+    .hero__ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .hero__stats{display:flex;gap:3rem;justify-content:center;margin-top:4rem;flex-wrap:wrap}
+    .hero__stat{text-align:center}
+    .hero__stat-num{font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent)}
+    .hero__stat-label{font-size:0.8rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.1em}
+    .hero__landmarks{position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(180deg,transparent 0%,rgba(15,26,48,0.8) 100%);display:flex;align-items:flex-end;justify-content:center;gap:3rem;padding-bottom:1.5rem;font-size:2.5rem;opacity:0.3}
+    .step-card{text-align:center;padding:2rem}
+    .step-card__num{width:60px;height:60px;border-radius:50%;background:var(--color-accent);color:var(--color-primary);font-family:var(--font-heading);font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem}
+    .step-card h3{margin-bottom:0.75rem;font-size:1.25rem}
+    .step-card p{color:var(--color-text-muted);font-size:0.95rem}
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto}
+    @media(max-width:768px){.hero h1{font-size:2.25rem}.hero__subtitle{font-size:1.05rem}.hero__stats{gap:1.5rem}.hero__landmarks{display:none}}
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main" id="main-content" role="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__badge">Approuve par plus de 2 000 voyageurs</div>
+        <h1>Votre Voyage Parfait a <span>Londres</span>, Concu par des Experts</h1>
+        <p class="hero__subtitle">
+          Dites-nous vos centres d'interet, votre budget et vos dates de voyage. Nous creons un itineraire
+          personnalise jour par jour avec des conseils locaux et des perles cachees.
+        </p>
+        <div class="hero__ctas">
+          <a href="../wizard.html" class="btn btn--primary btn--large">Planifier Mon Voyage — A partir de $20</a>
+          <a href="#how-it-works" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">Voir Comment Ca Marche</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><div class="hero__stat-num">200+</div><div class="hero__stat-label">Attractions</div></div>
+          <div class="hero__stat"><div class="hero__stat-num">200+</div><div class="hero__stat-label">Restaurants</div></div>
+          <div class="hero__stat"><div class="hero__stat-num">300+</div><div class="hero__stat-label">Pubs et Bars</div></div>
+          <div class="hero__stat"><div class="hero__stat-num">150+</div><div class="hero__stat-label">Cafes</div></div>
+          <div class="hero__stat"><div class="hero__stat-num">50</div><div class="hero__stat-label">Themes du Jour</div></div>
+        </div>
+      </div>
+      <div class="hero__landmarks">🏰 🎡 🌉 ⛪ 🏛️ 🗼</div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comment Ca Marche</h2>
+          <div class="divider"></div>
+          <p>Trois etapes simples pour votre itineraire de reve a Londres</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="step-card">
+            <div class="step-card__num">1</div>
+            <h3>Parlez-nous de Vous</h3>
+            <p>Selectionnez la duree de votre voyage, votre budget et vos centres d'interet — de l'histoire et la gastronomie a la vie nocturne et l'art.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">2</div>
+            <h3>Recevez Votre Itineraire</h3>
+            <p>Notre moteur cree un plan personnalise jour par jour avec des activites le matin, l'apres-midi et le soir.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">3</div>
+            <h3>Explorez Londres</h3>
+            <p>Debloquez votre guide complet avec liens de reservation, conseils locaux, un PDF telechargeable et des astuces pour economiser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tarifs Simples et Transparents</h2>
+          <div class="divider"></div>
+          <p>Apercu de 2 jours gratuit, puis debloquez votre itineraire complet</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h4>Court Sejour</h4>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;">1-5 jours</p>
+            <div class="price-card__amount">$20</div>
+            <ul class="price-card__features">
+              <li>Jusqu'a 5 jours planifies</li>
+              <li>Personnalise selon vos interets</li>
+              <li>Selection de restaurants et pubs</li>
+              <li>Conseils et secrets locaux</li>
+              <li>Guide PDF telechargeable</li>
+            </ul>
+            <a href="../wizard.html" class="btn btn--primary btn--full">Commencer</a>
+          </div>
+          <div class="price-card price-card--featured">
+            <h4>Explorateur Semaine</h4>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;">6-10 jours</p>
+            <div class="price-card__amount">$40</div>
+            <ul class="price-card__features">
+              <li>Jusqu'a 10 jours planifies</li>
+              <li>Personnalise selon vos interets</li>
+              <li>Selection de restaurants et pubs</li>
+              <li>Conseils et secrets locaux</li>
+              <li>Guide PDF telechargeable</li>
+              <li>Recommandations d'excursions</li>
+            </ul>
+            <a href="../wizard.html" class="btn btn--primary btn--full">Commencer</a>
+          </div>
+          <div class="price-card">
+            <h4>Aventure Prolongee</h4>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;">11-21 jours</p>
+            <div class="price-card__amount">$75</div>
+            <ul class="price-card__features">
+              <li>Jusqu'a 21 jours planifies</li>
+              <li>Personnalise selon vos interets</li>
+              <li>Selection de restaurants et pubs</li>
+              <li>Conseils et secrets locaux</li>
+              <li>Guide PDF telechargeable</li>
+              <li>Perles cachees et adresses locales</li>
+            </ul>
+            <a href="../wizard.html" class="btn btn--primary btn--full">Commencer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--dark">
+      <div class="container" style="text-align:center;">
+        <h2 style="color:white;font-size:2.5rem;">Pret a Planifier Votre Aventure a Londres ?</h2>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;max-width:500px;margin:0 auto 2rem;">
+          Rejoignez des milliers de voyageurs qui ont decouvert leur voyage parfait a Londres avec nos itineraires personnalises.
+        </p>
+        <a href="../wizard.html" class="btn btn--primary btn--large">Commencer a Planifier</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/state.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/analytics.js"></script>
+  <script src="../js/reviews.js"></script>
+  <script src="../js/accounts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Force French for this page
+      if (typeof I18N !== 'undefined') {
+        I18N.currentLang = 'fr';
+        localStorage.setItem('siteLang', 'fr');
+      }
+      UI.init();
+      if (typeof Analytics !== 'undefined') Analytics.pageView('/fr/', 'Home (FR)');
+    });
+  </script>
+</body>
+</html>
