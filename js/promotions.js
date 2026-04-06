@@ -458,15 +458,35 @@ ${sponsorBottom}
       ? (venue.estimatedCost.amount === 0 ? 'free' : (venue.estimatedCost.currency === 'GBP' ? '\u00A3' : '$') + venue.estimatedCost.amount)
       : '';
     if (cost) {
-      parts.push('Expect to spend around ' + cost + ' per person. ' + (cost === 'free' ? 'One of the great things about London is how much you can experience without spending a penny.' : 'Good value for what you get, especially compared to similar options in the area.'));
+      var costPhrases = [
+        'A worthwhile addition to any London itinerary at this price point.',
+        'Well-priced for what you get — a highlight of any trip to the city.',
+        'Budget-friendly and highly rated by our team of London experts.',
+        'Great value and consistently recommended by returning visitors.',
+        'Worth every penny — one of the best experiences in this price range.'
+      ];
+      var freePhrase = [
+        'One of the great things about London is how much you can experience without spending a penny.',
+        'Completely free to enjoy — proof that the best things in London don\'t always cost a fortune.',
+        'No entry fee required. London is full of incredible free experiences like this one.'
+      ];
+      var phrase = cost === 'free'
+        ? freePhrase[Math.floor(Math.random() * freePhrase.length)]
+        : costPhrases[Math.floor(Math.random() * costPhrases.length)];
+      parts.push('Expect to spend around ' + cost + ' per person. ' + phrase);
     }
 
-    const fullText = parts.join(' ');
-    // Truncate to ~400 words
-    const words = fullText.split(/\s+/);
-    const articleText = words.length > 400 ? words.slice(0, 400).join(' ') + '...' : fullText;
+    // Build paragraphs — each part becomes a separate <p>
+    const paragraphs = parts.map(p => {
+      const words = p.split(/\s+/);
+      return words.length > 100 ? words.slice(0, 100).join(' ') + '...' : p;
+    });
 
     const link = venue.affiliateUrl || '#';
+    const paraStyle = 'font-family:Georgia,serif;font-size:15px;color:#333333;line-height:1.8;margin:0;padding-bottom:14px;';
+    const paragraphsHtml = paragraphs.map(p =>
+      `<tr><td style="${paraStyle}">${this._escHtml(p)}</td></tr>`
+    ).join('');
 
     return `
 <!-- ${label} -->
@@ -483,9 +503,7 @@ ${sponsorBottom}
     <span style="display:inline-block;background-color:#f0ede6;color:#666666;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:4px 12px;border-radius:12px;">&#128205; ${this._escHtml(neighbourhood)}</span>
     ${cost ? `<span style="display:inline-block;background-color:#f0ede6;color:#666666;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:4px 12px;border-radius:12px;margin-left:6px;">&#128176; ${cost}</span>` : ''}
   </td></tr>` : ''}
-  <tr><td style="font-family:Georgia,serif;font-size:15px;color:#333333;line-height:1.8;padding-bottom:20px;">
-    ${this._escHtml(articleText)}
-  </td></tr>
+  ${paragraphsHtml}
   <tr><td>
     <table role="presentation" cellpadding="0" cellspacing="0" border="0">
     <tr><td style="background-color:${ctaColor};border-radius:6px;">
@@ -545,7 +563,13 @@ ${sponsorBottom}
 
   _adviceSection(advice) {
     if (!advice) return '';
-    const body = this._truncateWords(advice.body || '', 100);
+    const body = advice.body || '';
+    // Split into paragraphs by double newline or sentences
+    const rawParas = body.split(/\n\n+/).filter(p => p.trim());
+    const paras = rawParas.length > 1 ? rawParas : this._splitIntoParas(body, 2);
+    const paraStyle = 'font-family:Georgia,serif;font-size:15px;color:#333333;line-height:1.8;margin:0;padding-bottom:12px;';
+    const parasHtml = paras.map(p => `<tr><td style="${paraStyle}">${this._escHtml(p.trim())}</td></tr>`).join('');
+
     return `
 <!-- Advice Article -->
 <tr>
@@ -554,15 +578,13 @@ ${sponsorBottom}
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;color:#C9A84C;padding-bottom:8px;">
     Expert Advice
   </td></tr>
-  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;color:#1B2A4A;line-height:1.3;padding-bottom:10px;">
+  <tr><td style="font-family:Georgia,serif;font-size:20px;font-weight:bold;color:#1B2A4A;line-height:1.3;padding-bottom:10px;">
     ${this._escHtml(advice.title)}
   </td></tr>
   ${advice.category ? `<tr><td style="padding-bottom:10px;">
     <span style="display:inline-block;background-color:#f0ede6;color:#666666;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:4px 10px;border-radius:12px;">${this._escHtml(advice.category)}</span>
   </td></tr>` : ''}
-  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#333333;line-height:1.6;padding-bottom:16px;">
-    ${this._escHtml(body)}${body.length < (advice.body || '').length ? '&hellip;' : ''}
-  </td></tr>
+  ${parasHtml}
   <tr><td>
     <a href="{{advice_url}}" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;color:#C9A84C;text-decoration:none;">Read More &rarr;</a>
   </td></tr>
@@ -660,6 +682,17 @@ ${sponsorBottom}
   </table>
 </td>
 </tr>`;
+  },
+
+  _splitIntoParas(text, count) {
+    var sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+    if (sentences.length <= count) return [text];
+    var perPara = Math.ceil(sentences.length / count);
+    var paras = [];
+    for (var i = 0; i < sentences.length; i += perPara) {
+      paras.push(sentences.slice(i, i + perPara).join('').trim());
+    }
+    return paras;
   },
 
   _escHtml(str) {
