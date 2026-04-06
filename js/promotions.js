@@ -470,10 +470,11 @@ ${sponsorBottom}
         'Completely free to enjoy — proof that the best things in London don\'t always cost a fortune.',
         'No entry fee required. London is full of incredible free experiences like this one.'
       ];
-      var phrase = cost === 'free'
-        ? freePhrase[Math.floor(Math.random() * freePhrase.length)]
-        : costPhrases[Math.floor(Math.random() * costPhrases.length)];
-      parts.push('Expect to spend around ' + cost + ' per person. ' + phrase);
+      if (cost === 'free') {
+        parts.push('Entry is completely free. ' + freePhrase[Math.floor(Math.random() * freePhrase.length)]);
+      } else {
+        parts.push('Expect to spend around ' + cost + ' per person. ' + costPhrases[Math.floor(Math.random() * costPhrases.length)]);
+      }
     }
 
     // Build paragraphs — each part becomes a separate <p>
