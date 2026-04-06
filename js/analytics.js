@@ -76,17 +76,6 @@ const Analytics = {
     });
   },
 
-  // Concierge & consultation
-  conciergeClick() {
-    if (!window.gtag) return;
-    gtag('event', 'concierge_click', { event_category: 'upsell', value: 150 });
-  },
-
-  consultationClick() {
-    if (!window.gtag) return;
-    gtag('event', 'consultation_click', { event_category: 'upsell', value: 75 });
-  },
-
   // Affiliate link clicks
   affiliateClick(provider, venueName) {
     if (!window.gtag) return;

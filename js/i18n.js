@@ -15,7 +15,6 @@ const I18N = {
       'nav.neighbourhoods': 'Neighbourhoods',
       'nav.whatsOn': "What's On",
       'nav.bookServices': 'Book Services',
-      'nav.consultation': 'Consultation',
       'nav.myTrips': 'My Trips',
       'nav.planMyTrip': 'Plan My Trip',
       'nav.toggleMenu': 'Toggle navigation menu',
@@ -27,7 +26,6 @@ const I18N = {
 
       // Footer — Plan links
       'footer.createItinerary': 'Create Itinerary',
-      'footer.expertConsultation': 'Expert Consultation',
       'footer.airportTransfers': 'Airport Transfers',
       'footer.pricing': 'Pricing',
       'footer.howItWorks': 'How It Works',
@@ -119,7 +117,6 @@ const I18N = {
       'nav.neighbourhoods': 'Barrios',
       'nav.whatsOn': 'Agenda',
       'nav.bookServices': 'Reservar Servicios',
-      'nav.consultation': 'Consulta',
       'nav.myTrips': 'Mis Viajes',
       'nav.planMyTrip': 'Planificar Mi Viaje',
       'nav.toggleMenu': 'Alternar menu de navegacion',
@@ -131,7 +128,6 @@ const I18N = {
 
       // Footer — Plan links
       'footer.createItinerary': 'Crear Itinerario',
-      'footer.expertConsultation': 'Consulta con Experto',
       'footer.airportTransfers': 'Traslados al Aeropuerto',
       'footer.pricing': 'Precios',
       'footer.howItWorks': 'Como Funciona',
@@ -223,7 +219,6 @@ const I18N = {
       'nav.neighbourhoods': 'Quartiers',
       'nav.whatsOn': 'Agenda',
       'nav.bookServices': 'Reserver',
-      'nav.consultation': 'Consultation',
       'nav.myTrips': 'Mes Voyages',
       'nav.planMyTrip': 'Planifier Mon Voyage',
       'nav.toggleMenu': 'Basculer le menu de navigation',
@@ -235,7 +230,6 @@ const I18N = {
 
       // Footer — Plan links
       'footer.createItinerary': 'Creer un Itineraire',
-      'footer.expertConsultation': 'Consultation Expert',
       'footer.airportTransfers': "Transferts Aeroport",
       'footer.pricing': 'Tarifs',
       'footer.howItWorks': 'Comment Ca Marche',
@@ -327,7 +321,6 @@ const I18N = {
       'nav.neighbourhoods': 'Stadtviertel',
       'nav.whatsOn': 'Veranstaltungen',
       'nav.bookServices': 'Services Buchen',
-      'nav.consultation': 'Beratung',
       'nav.myTrips': 'Meine Reisen',
       'nav.planMyTrip': 'Meine Reise Planen',
       'nav.toggleMenu': 'Navigationsmenu umschalten',
@@ -339,7 +332,6 @@ const I18N = {
 
       // Footer — Plan links
       'footer.createItinerary': 'Reiseplan Erstellen',
-      'footer.expertConsultation': 'Expertenberatung',
       'footer.airportTransfers': 'Flughafentransfers',
       'footer.pricing': 'Preise',
       'footer.howItWorks': 'So Funktioniert Es',

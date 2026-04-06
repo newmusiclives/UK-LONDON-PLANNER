@@ -202,8 +202,6 @@
               <select id="sales-filter" style="padding:0.4rem;border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:0.8rem;">
                 <option value="all">All Products</option>
                 <option value="itinerary">Itineraries</option>
-                <option value="concierge">Concierge</option>
-                <option value="consultation">Consultations</option>
               </select>
               <button class="btn btn--primary btn--small" onclick="exportSalesCSV()">Export CSV</button>
             </div>
@@ -251,8 +249,6 @@
                   <option value="tier1">Short Stay Itinerary ($50)</option>
                   <option value="tier2">Week Explorer Itinerary ($75)</option>
                   <option value="tier3">Extended Adventure ($99)</option>
-                  <option value="concierge">Booking Concierge ($250)</option>
-                  <option value="consultation">Personal Consultation ($75)</option>
                   <option value="uk-extension">UK Extension (varies)</option>
                 </select>
               </div>
@@ -340,20 +336,12 @@
               <input type="url" id="ghl-webhook-purchase" placeholder="https://services.leadconnectorhq.com/hooks/...">
             </div>
             <div class="field">
-              <label>Consultation Booking Webhook</label>
-              <input type="url" id="ghl-webhook-consultation" placeholder="https://services.leadconnectorhq.com/hooks/...">
-            </div>
-            <div class="field">
-              <label>Concierge Booking Webhook</label>
-              <input type="url" id="ghl-webhook-concierge" placeholder="https://services.leadconnectorhq.com/hooks/...">
-            </div>
-            <div class="field">
               <label>Contact Form Webhook</label>
               <input type="url" id="ghl-webhook-contact" placeholder="https://services.leadconnectorhq.com/hooks/...">
             </div>
             <div class="field-row">
               <div class="field">
-                <label>Calendar ID <small>(for consultation bookings)</small></label>
+                <label>Calendar ID</label>
                 <input type="text" id="ghl-calendar" placeholder="e.g. cal_abc123">
                 <div class="hint">Calendars > Select calendar > Calendar ID</div>
               </div>
@@ -399,8 +387,6 @@
             <div class="field"><label>Short Stay Itinerary ($50) <small>1-5 days</small></label><input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1"></div>
             <div class="field"><label>Week Explorer Itinerary ($75) <small>6-10 days</small></label><input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2"></div>
             <div class="field"><label>Extended Adventure Itinerary ($99) <small>11-21 days</small></label><input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3"></div>
-            <div class="field"><label>Booking Concierge ($250)</label><input type="url" id="manifest-concierge" placeholder="https://pay.manifestfinancial.com/..." data-key="concierge"></div>
-            <div class="field"><label>Personal Consultation ($75/hour)</label><input type="url" id="manifest-consultation" placeholder="https://pay.manifestfinancial.com/..." data-key="consultation"></div>
             <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
           </div>
         </div>
@@ -608,8 +594,6 @@
       document.getElementById('ghl-apikey').value = saved.ghl?.apiKey || '';
       document.getElementById('ghl-webhook-email').value = saved.ghl?.webhooks?.emailCapture || '';
       document.getElementById('ghl-webhook-purchase').value = saved.ghl?.webhooks?.itineraryPurchase || '';
-      document.getElementById('ghl-webhook-consultation').value = saved.ghl?.webhooks?.consultationBooking || '';
-      document.getElementById('ghl-webhook-concierge').value = saved.ghl?.webhooks?.conciergeBooking || '';
       document.getElementById('ghl-webhook-contact').value = saved.ghl?.webhooks?.contactForm || '';
       document.getElementById('ghl-calendar').value = saved.ghl?.calendarId || '';
       document.getElementById('ghl-pipeline').value = saved.ghl?.pipelineId || '';
@@ -837,8 +821,6 @@
         webhooks: {
           emailCapture: document.getElementById('ghl-webhook-email').value.trim(),
           itineraryPurchase: document.getElementById('ghl-webhook-purchase').value.trim(),
-          consultationBooking: document.getElementById('ghl-webhook-consultation').value.trim(),
-          conciergeBooking: document.getElementById('ghl-webhook-concierge').value.trim(),
           contactForm: document.getElementById('ghl-webhook-contact').value.trim()
         },
         calendarId: document.getElementById('ghl-calendar').value.trim(),

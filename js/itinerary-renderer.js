@@ -115,28 +115,6 @@ function renderItinerary(itinerary, isPaid, price) {
       <!-- Countdown Timer (if trip dates set) -->
       <div id="countdown-section"></div>
 
-      <!-- Concierge Add-on -->
-      <div style="background:var(--color-surface);border:2px solid var(--color-accent);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin-top:2rem;">
-        <div style="font-size:2rem;margin-bottom:0.5rem;">🛎️</div>
-        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $250</h3>
-        <p style="color:var(--color-text-muted);max-width:500px;margin:0 auto 1rem;font-size:0.95rem;">
-          We'll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.
-        </p>
-        <ul style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left;">
-          ${CONFIG.concierge.features.map(f => '<li style="padding:0.3rem 0;font-size:0.85rem;"><span style="color:var(--color-success);font-weight:700;margin-right:0.5rem;">✓</span>' + f + '</li>').join('')}
-        </ul>
-        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $250</button>
-      </div>
-
-      <!-- Consultation Upsell -->
-      <div class="purchase-banner" style="background: linear-gradient(135deg, #2A3F6B 0%, #1B2A4A 100%); margin-top: 2rem;">
-        <h3>Want a Truly Bespoke Experience?</h3>
-        <p>Book a 1-on-1 consultation with a London expert who'll customise every detail of your trip</p>
-        <div class="purchase-banner__price">$75</div>
-        <p style="color: var(--color-accent); font-size: 0.9rem; margin-bottom: 1.5rem;">1 Hour Private Video Consultation</p>
-        <a href="consultation.html" class="btn btn--primary btn--large">Book Consultation</a>
-      </div>
-
       <p class="affiliate-disclosure" style="text-align: center; margin-top: 2rem;">
         ${CONFIG.affiliate.disclosureText}
       </p>
@@ -627,10 +605,6 @@ function renderPackingList(itinerary) {
 // ============================================================
 // PAYMENT HANDLERS
 // ============================================================
-function handleConcierge() {
-  Payment.initiateConcierge();
-}
-
 function handlePurchase() {
   const state = State.get();
   Payment.initiatePurchase(state.tripDays);

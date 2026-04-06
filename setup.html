@@ -124,10 +124,6 @@
                 <label style="font-weight:600;font-size:0.85rem;">Tier 3 ($99) Payment Link</label>
                 <input type="text" id="input-pay-t3" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
               </div>
-              <div>
-                <label style="font-weight:600;font-size:0.85rem;">Concierge ($250) Payment Link</label>
-                <input type="text" id="input-pay-con" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
-              </div>
               <button class="btn btn--primary btn--small" onclick="saveConfig('manifest')" style="justify-self:start;">Save Payment Links</button>
             </div>
           </div>
@@ -215,7 +211,6 @@
           setup.payTier1 = document.getElementById('input-pay-t1').value.trim();
           setup.payTier2 = document.getElementById('input-pay-t2').value.trim();
           setup.payTier3 = document.getElementById('input-pay-t3').value.trim();
-          setup.payConcierge = document.getElementById('input-pay-con').value.trim();
           break;
         case 'affiliates':
           setup.affGYG = document.getElementById('input-aff-gyg').value.trim();
@@ -260,7 +255,6 @@
       if (s.payTier1) document.getElementById('input-pay-t1').value = s.payTier1;
       if (s.payTier2) document.getElementById('input-pay-t2').value = s.payTier2;
       if (s.payTier3) document.getElementById('input-pay-t3').value = s.payTier3;
-      if (s.payConcierge) document.getElementById('input-pay-con').value = s.payConcierge;
       if (s.affGYG) document.getElementById('input-aff-gyg').value = s.affGYG;
       if (s.affBooking) document.getElementById('input-aff-booking').value = s.affBooking;
       if (s.affViator) document.getElementById('input-aff-viator').value = s.affViator;

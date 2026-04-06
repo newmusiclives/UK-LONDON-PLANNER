@@ -21,12 +21,6 @@
     .service-card__title { font-size:1.15rem; margin-bottom:0.5rem; }
     .service-card__desc { font-size:0.85rem; color:var(--color-text-muted); margin-bottom:1.25rem; line-height:1.5; }
     .service-card__partner { font-size:0.7rem; color:var(--color-text-muted); margin-top:0.75rem; }
-    .guide-pricing { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:1rem; margin:1.5rem 0; }
-    .guide-price { background:var(--color-surface-alt); border-radius:var(--radius-md); padding:1.25rem; text-align:center; border:2px solid var(--color-border); cursor:pointer; transition:all 0.2s; }
-    .guide-price:hover, .guide-price.active { border-color:var(--color-accent); background:var(--color-accent-light); }
-    .guide-price__days { font-size:1.5rem; font-weight:700; color:var(--color-primary); }
-    .guide-price__amount { font-family:var(--font-heading); font-size:1.25rem; font-weight:700; color:var(--color-accent); margin-top:0.25rem; }
-    .guide-price__perday { font-size:0.7rem; color:var(--color-text-muted); }
   </style>
 </head>
 <body>
@@ -215,98 +209,54 @@
           </div>
         </div>
 
-        <!-- Personal London Guide -->
-        <div class="admin-section" style="border:2px solid var(--color-accent);margin-bottom:3rem;">
-          <div style="background:linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);padding:2.5rem;text-align:center;">
-            <div style="font-size:3rem;margin-bottom:0.75rem;">🎩</div>
-            <h2 style="color:white;margin-bottom:0.5rem;">Personal London Guide</h2>
-            <p style="color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto 1.5rem;">Have a knowledgeable local guide accompany you throughout your London trip. They'll navigate, translate the culture, get you into hidden spots, and make sure you don't miss a thing.</p>
-
-            <!-- Row 1: 1-3 days -->
-            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1rem;max-width:700px;margin:1.5rem auto 1rem;">
-              <div class="guide-price" onclick="selectGuide(1)">
-                <div class="guide-price__days">1 Day</div>
-                <div class="guide-price__amount">$250</div>
-                <div class="guide-price__perday">Full day (8 hours)</div>
-              </div>
-              <div class="guide-price" onclick="selectGuide(2)">
-                <div class="guide-price__days">2 Days</div>
-                <div class="guide-price__amount">$450</div>
-                <div class="guide-price__perday">$225/day</div>
-              </div>
-              <div class="guide-price" onclick="selectGuide(3)">
-                <div class="guide-price__days">3 Days</div>
-                <div class="guide-price__amount">$600</div>
-                <div class="guide-price__perday">$200/day</div>
-              </div>
-            </div>
-            <!-- Row 2: 4-5 days -->
-            <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;max-width:460px;margin:0 auto 1.5rem;">
-              <div class="guide-price" onclick="selectGuide(4)">
-                <div class="guide-price__days">4 Days</div>
-                <div class="guide-price__amount">$750</div>
-                <div class="guide-price__perday">$188/day</div>
-              </div>
-              <div class="guide-price" onclick="selectGuide(5)" style="border-color:var(--color-accent);position:relative;">
-                <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--color-accent);color:var(--color-primary);font-size:0.65rem;font-weight:700;padding:0.15rem 0.6rem;border-radius:var(--radius-full);text-transform:uppercase;white-space:nowrap;">Best Value</div>
-                <div class="guide-price__days">5 Days</div>
-                <div class="guide-price__amount">$900</div>
-                <div class="guide-price__perday">$180/day</div>
-              </div>
-            </div>
-
-            <div style="max-width:600px;margin:0 auto;text-align:left;">
-              <h4 style="color:var(--color-accent);margin-bottom:0.75rem;">What's Included</h4>
-              <ul style="color:rgba(255,255,255,0.8);font-size:0.9rem;list-style:none;">
-                <li style="padding:0.3rem 0;">✓ Experienced local guide (born-and-raised Londoner)</li>
-                <li style="padding:0.3rem 0;">✓ Full day accompaniment (up to 8 hours per day)</li>
-                <li style="padding:0.3rem 0;">✓ Navigation and transport guidance</li>
-                <li style="padding:0.3rem 0;">✓ Access to hidden spots and local secrets</li>
-                <li style="padding:0.3rem 0;">✓ Restaurant recommendations and help with bookings</li>
-                <li style="padding:0.3rem 0;">✓ Photography tips and best photo spots</li>
-                <li style="padding:0.3rem 0;">✓ Customised to your itinerary and interests</li>
-                <li style="padding:0.3rem 0;">✓ Family-friendly guides available</li>
-              </ul>
-            </div>
-
-            <div style="margin-top:2rem;">
-              <a href="contact.html" class="btn btn--primary btn--large" style="padding:1.1rem 3rem;">Enquire About a Personal Guide</a>
-              <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:0.75rem;">We'll match you with the perfect guide. Powered by our network of vetted local experts.</p>
-            </div>
-          </div>
+        <!-- Expert & Concierge Services (Partner Provided) -->
+        <div class="section-header">
+          <h2>Expert & Concierge Services</h2>
+          <div class="divider"></div>
+          <p>Let trusted local experts handle the planning and bookings for you</p>
         </div>
 
-        <!-- Booking Concierge -->
-        <div class="card" style="border:2px solid var(--color-accent);margin-bottom:3rem;">
-          <div class="card__body" style="text-align:center;padding:2.5rem;">
-            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🛎️</div>
-            <h2 style="margin-bottom:0.5rem;">Booking Concierge — $250</h2>
-            <p style="color:var(--color-text-muted);max-width:600px;margin:0 auto 1.5rem;">Don't want to handle bookings yourself? Our team of travel assistants will book everything on your itinerary — restaurants, attractions, theatre tickets, tours, and more.</p>
-
-            <div style="max-width:500px;margin:0 auto 1.5rem;text-align:left;">
-              <h4 style="margin-bottom:0.75rem;">How It Works</h4>
-              <ol style="padding-left:1.25rem;color:var(--color-text-muted);font-size:0.9rem;">
-                <li style="margin-bottom:0.5rem;"><strong>Purchase your itinerary</strong> — get your personalised day-by-day plan</li>
-                <li style="margin-bottom:0.5rem;"><strong>Add Booking Concierge</strong> — $250 one-time fee</li>
-                <li style="margin-bottom:0.5rem;"><strong>We handle everything</strong> — our team books every restaurant, attraction, show, and experience</li>
-                <li style="margin-bottom:0.5rem;"><strong>Get your confirmation pack</strong> — email with all booking references, times, and addresses</li>
-              </ol>
+        <div class="grid grid--3" style="margin-bottom:3rem;">
+          <!-- Trip Planning Concierge -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🛎️</div>
+              <h3 class="service-card__title">Trip Planning & Concierge</h3>
+              <p class="service-card__desc">Let a London local plan and book everything for you — restaurants, attractions, theatre tickets, tours, and hidden gems. Share your dates and interests, they handle the rest.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.withlocals.com/experiences/london/" target="_blank" rel="noopener" class="btn btn--primary btn--full">WithLocals Trip Planning</a>
+                <a href="https://www.viator.com/London-tours/Private-and-Luxury/d737-g6-c78" target="_blank" rel="noopener" class="btn btn--outline btn--full">Viator Private Experiences</a>
+              </div>
+              <p class="service-card__partner">Powered by WithLocals & Viator · 5-8% commission</p>
             </div>
+          </div>
 
-            <div style="background:var(--color-surface-alt);border-radius:var(--radius-md);padding:1rem;max-width:500px;margin:0 auto 1.5rem;text-align:left;">
-              <h4 style="font-size:0.85rem;margin-bottom:0.5rem;">What We Book For You</h4>
-              <ul style="font-size:0.85rem;color:var(--color-text-muted);list-style:none;">
-                <li style="padding:0.2rem 0;">✓ Restaurant reservations (including hard-to-get tables)</li>
-                <li style="padding:0.2rem 0;">✓ Attraction tickets (skip-the-line where available)</li>
-                <li style="padding:0.2rem 0;">✓ West End theatre tickets</li>
-                <li style="padding:0.2rem 0;">✓ Tours and experiences</li>
-                <li style="padding:0.2rem 0;">✓ Alternative suggestions if anything is sold out</li>
-                <li style="padding:0.2rem 0;">✓ Priority rebooking if your plans change</li>
-              </ul>
+          <!-- Talk to a London Expert -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">💬</div>
+              <h3 class="service-card__title">Talk to a London Expert</h3>
+              <p class="service-card__desc">Book a private video call with a vetted London expert. Get personalised advice, insider tips, restaurant picks, and a customised plan for your trip.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.contexttravel.com/cities/london" target="_blank" rel="noopener" class="btn btn--primary btn--full">Context Travel Sessions</a>
+                <a href="https://www.withlocals.com/experiences/london/" target="_blank" rel="noopener" class="btn btn--outline btn--full">WithLocals Online</a>
+              </div>
+              <p class="service-card__partner">Powered by Context Travel & WithLocals · 5-10% commission</p>
             </div>
+          </div>
 
-            <a href="wizard.html" class="btn btn--primary btn--large">Get Your Itinerary First</a>
-            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-top:0.5rem;">Add concierge after generating your itinerary</p>
+          <!-- Private London Guide -->
+          <div class="service-card">
+            <div class="service-card__body">
+              <div class="service-card__icon">🎩</div>
+              <h3 class="service-card__title">Private London Guide</h3>
+              <p class="service-card__desc">Hire an experienced local guide to accompany you for the day. They'll navigate, share stories, unlock hidden spots, and make your trip unforgettable.</p>
+              <div style="display:flex;gap:0.5rem;flex-direction:column;">
+                <a href="https://www.toursbylocals.com/London-tours" target="_blank" rel="noopener" class="btn btn--primary btn--full">ToursByLocals Guides</a>
+                <a href="https://www.getyourguide.com/london-l57/?q=private+tour" target="_blank" rel="noopener" class="btn btn--outline btn--full">GetYourGuide Private Tours</a>
+              </div>
+              <p class="service-card__partner">Powered by ToursByLocals & GetYourGuide · 8% commission</p>
+            </div>
           </div>
         </div>
 
@@ -327,10 +277,6 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => UI.init());
 
-    function selectGuide(days) {
-      document.querySelectorAll('.guide-price').forEach(p => p.classList.remove('active'));
-      event.currentTarget.classList.add('active');
-    }
   </script>
   <script src="js/chat-assistant.js" defer></script>
   <script src="js/social-proof.js" defer></script>

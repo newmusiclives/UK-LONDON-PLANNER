@@ -29,7 +29,6 @@ const UI = {
           <a href="neighbourhoods.html">${_t('nav.neighbourhoods', 'Neighbourhoods')}</a>
           <a href="whats-on.html">${_t('nav.whatsOn', "What's On")}</a>
           <a href="book-services.html">${_t('nav.bookServices', 'Book Services')}</a>
-          <a href="consultation.html">${_t('nav.consultation', 'Consultation')}</a>
           <a href="my-trips.html">${_t('nav.myTrips', 'My Trips')}</a>
           <div class="lang-selector" style="display:flex;align-items:center;gap:4px;">
             ${langSelector}
@@ -72,7 +71,6 @@ const UI = {
             <div class="footer__title">${_t('footer.plan', 'Plan')}</div>
             <ul class="footer__links">
               <li><a href="wizard.html">${_t('footer.createItinerary', 'Create Itinerary')}</a></li>
-              <li><a href="consultation.html">${_t('footer.expertConsultation', 'Expert Consultation')}</a></li>
               <li><a href="airport-transfers.html">${_t('footer.airportTransfers', 'Airport Transfers')}</a></li>
               <li><a href="index.html#pricing">${_t('footer.pricing', 'Pricing')}</a></li>
               <li><a href="index.html#how-it-works">${_t('footer.howItWorks', 'How It Works')}</a></li>

@@ -38,51 +38,6 @@ const Payment = {
     }
   },
 
-  initiateConcierge(contactInfo) {
-    const link = CONFIG.manifest.links.concierge;
-    const sessionId = State.getSessionId();
-
-    if (contactInfo) {
-      GHL.trackConciergeBooking({
-        email: contactInfo.email,
-        name: contactInfo.name,
-        phone: contactInfo.phone || '',
-        sessionId
-      });
-    }
-
-    if (link && !link.includes('YOUR_')) {
-      const separator = link.includes('?') ? '&' : '?';
-      window.location.href = `${link}${separator}client_reference_id=${sessionId}`;
-    } else {
-      UI.showToast('Demo mode: In production, this would redirect to Manifest Financial for $250 concierge payment');
-    }
-  },
-
-  initiateConsultation(contactInfo) {
-    const link = CONFIG.manifest.links.consultation;
-    const sessionId = State.getSessionId();
-
-    if (contactInfo) {
-      GHL.trackConsultationBooking({
-        email: contactInfo.email,
-        name: contactInfo.name,
-        phone: contactInfo.phone || '',
-        datetime: contactInfo.datetime || '',
-        travelDates: contactInfo.travelDates || '',
-        details: contactInfo.details || '',
-        sessionId
-      });
-    }
-
-    if (link && !link.includes('YOUR_')) {
-      const separator = link.includes('?') ? '&' : '?';
-      window.location.href = `${link}${separator}client_reference_id=${sessionId}`;
-    } else {
-      UI.showToast('Demo mode: In production, this would redirect to Manifest Financial for $75 payment');
-    }
-  },
-
   unlockDemo(tier) {
     State.save({ paid: true, paymentTier: tier });
     UI.showToast('Demo mode: Itinerary unlocked! Configure Manifest Financial links in config.js for real payments.');

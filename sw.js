@@ -5,7 +5,6 @@ const urlsToCache = [
   '/wizard.html',
   '/itinerary.html',
   '/demo.html',
-  '/consultation.html',
   '/my-trips.html',
   '/whats-on.html',
   '/css/variables.css',

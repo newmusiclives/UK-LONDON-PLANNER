@@ -12,10 +12,8 @@ const SocialProof = {
     (n,c) => `${n} from ${c} downloaded their London itinerary`,
     (n,c) => `${n} & partner booked a romantic 4-day getaway`,
     (n,c) => `A group of ${Math.floor(Math.random()*5)+3} friends just planned a London trip`,
-    (n,c) => `${n} from ${c} booked a Booking Concierge`,
     (n,c) => `${n} from ${c} just started planning their trip`,
     (n,c) => `Couple from ${c} created a 5-day honeymoon itinerary`,
-    (n,c) => `${n} from ${c} booked an Expert Consultation`,
     (n,c) => `Family from ${c} planned a week-long London adventure`,
     (n,c) => `${n} from ${c} unlocked their full itinerary`
   ],
@@ -23,7 +21,7 @@ const SocialProof = {
   init() {
     // Only show on key pages
     const path = window.location.pathname;
-    const showPages = ['index.html', 'wizard.html', 'demo.html', 'consultation.html', 'book-services.html', '/'];
+    const showPages = ['index.html', 'wizard.html', 'demo.html', 'book-services.html', '/'];
     if (!showPages.some(p => path.endsWith(p))) return;
     if (localStorage.getItem('hideSocialProof')) return;
 

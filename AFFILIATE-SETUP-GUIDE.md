@@ -64,6 +64,27 @@
 - **Sign up:** https://affiliate-program.amazon.co.uk/
 - **Covers:** Add a "Pack for London" section with recommended gear
 
+### 11. WithLocals Partner Program
+- **What:** Trip planning, private experiences, online sessions with locals
+- **Commission:** 5-8% per booking
+- **Sign up:** https://www.withlocals.com/partners/ (via Impact.com)
+- **Covers:** Trip planning concierge, online expert consultations, private local experiences
+- **How to use:** Replace `YOUR_WITHLOCALS_ID` in config.js
+
+### 12. ToursByLocals Affiliate Program
+- **What:** Private local guides for multi-day or single-day tours
+- **Commission:** ~8% per booking
+- **Sign up:** https://www.toursbylocals.com/affiliates
+- **Covers:** Private London guide hire (replaces in-house personal guide offering)
+- **How to use:** Replace `YOUR_TOURSBYLOCALS_ID` in config.js
+
+### 13. Context Travel Affiliate Program
+- **What:** Expert-led walking tours and private "Context Conversations" (video planning calls)
+- **Commission:** ~10% per booking
+- **Sign up:** Via CJ Affiliate (Commission Junction) — search "Context Travel"
+- **Covers:** Expert consultation calls, scholar-led London tours
+- **How to use:** Replace `YOUR_CONTEXTTRAVEL_ID` in config.js
+
 ---
 
 ## Setup Steps
@@ -88,4 +109,13 @@ Assuming 50% of users click at least one affiliate link and 10% convert:
 | Tours/experiences | £80 | 8% | £6.40 |
 | **Total potential per converting customer** | | | **~£65** |
 
-Plus the itinerary fee ($20-$75) and optional concierge ($50) and consultation ($75).
+Plus the itinerary fee ($50-$99).
+
+### Partner Services (Expert & Concierge)
+
+| Source | Avg Booking Value | Commission | Est. Revenue |
+|--------|------------------|------------|--------------|
+| WithLocals trip planning | £200 | 6% | £12.00 |
+| Context Travel consultation | £80 | 10% | £8.00 |
+| ToursByLocals private guide | £300 | 8% | £24.00 |
+| **Total potential per converting customer** | | | **~£44** |

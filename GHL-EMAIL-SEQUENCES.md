@@ -90,26 +90,26 @@ Your trip is just 7 days away! Here's your final checklist:
 
 ---
 
-## 3. Concierge Upsell Sequence
-**Trigger:** 48 hours after itinerary purchase (if concierge not purchased)
+## 3. Partner Services Upsell Sequence
+**Trigger:** 48 hours after itinerary purchase
 
 ### Email 1
-**Subject:** Want us to handle all your London bookings?
+**Subject:** Need help booking everything on your itinerary?
 **Body:**
 Hi {{contact.first_name}},
 
 Now that you have your itinerary, there's a lot of booking to do — restaurants, attractions, theatre tickets, tours...
 
-Our **Booking Concierge ($150)** handles it all for you:
-✓ We book every restaurant, attraction & experience
-✓ Theatre ticket purchasing
-✓ Hotel reservation assistance
-✓ If anything's unavailable, we find the best alternative
-✓ You get a confirmation email with all booking references
+Our trusted partners can handle it all for you:
 
-Save hours of research and booking. We know the tricks to get tables at fully-booked restaurants.
+**Trip Planning Concierge** — A London local will book your restaurants, attractions, theatre, and experiences. Share your dates and they take care of the rest.
+[Browse Trip Planning Services on WithLocals] → affiliate link
 
-[Add Booking Concierge — $150] → link
+**Talk to a London Expert** — Book a private video call to get personalised advice, insider tips, and a customised plan for your trip.
+[Book a Session with Context Travel] → affiliate link
+
+**Hire a Private Guide** — Have an experienced local guide accompany you for the day and unlock the real London.
+[Find a Guide on ToursByLocals] → affiliate link
 
 ---
 
@@ -165,28 +165,26 @@ We'd love to hear about your trip. Your feedback helps us improve our itinerarie
 
 ---
 
-## 6. Consultation Follow-Up
-**Trigger:** Consultation form submission
+## 6. Partner Services Reminder
+**Trigger:** 5 days after itinerary purchase (if no partner link clicked)
 
-### Email 1 — Immediately
-**Subject:** Your consultation request is confirmed!
+### Email 1
+**Subject:** Still planning your London trip? Our partners can help
 **Body:**
-Thanks for booking a personal planning session! We'll be in touch within 24 hours to confirm your time slot.
+Hi {{contact.first_name}},
 
-### SMS — Immediately
-"Thanks for booking your London planning session! We'll confirm your slot within 24 hours. Reply with any questions."
+Need a hand turning your itinerary into reality? Our vetted partner services make it easy:
 
-### Email 2 — 24 hours before session
-**Subject:** Your London planning session is tomorrow!
-**Body:**
-Quick reminder: your 1-hour video consultation is tomorrow at {{custom.datetime}}.
+- **WithLocals** — Local trip planners who book everything for you
+- **Context Travel** — Private video calls with London experts
+- **ToursByLocals** — Hire a private guide for the day
 
-Have your questions ready — we'll cover everything from restaurant bookings to hidden gems.
+[Explore Partner Services] → link to book-services.html
 
 ---
 
 ## Setup Notes
 - All webhook URLs go in Admin Panel > Integrations > GoHighLevel
 - Use "Contact Tag" triggers in GHL to segment customers
-- Tags used: london-planner, lead, customer, itinerary-buyer, concierge, consultation
+- Tags used: london-planner, lead, customer, itinerary-buyer
 - Custom fields needed: trip_days, remaining_days, trip_start_date, occasion, group_type

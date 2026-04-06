@@ -6,9 +6,8 @@ const CONFIG = {
     tier1: { label: 'Short Stay', days: [1, 5], price: 50, currency: 'USD' },
     tier2: { label: 'Week Explorer', days: [6, 10], price: 75, currency: 'USD' },
     tier3: { label: 'Extended Adventure', days: [11, 21], price: 99, currency: 'USD' },
-    concierge: { price: 250, currency: 'USD', label: 'Booking Concierge' },
-    consultation: { price: 75, currency: 'USD', duration: '1 hour' },
-    personalGuide: {
+    // Personal guide pricing now handled by affiliate partners (ToursByLocals, WithLocals)
+    _personalGuideDeprecated: {
       perDay: 250,
       currency: 'USD',
       label: 'Personal London Guide',
@@ -25,8 +24,6 @@ const CONFIG = {
       tier1: 'https://pay.manifestfinancial.com/YOUR_TIER1_LINK',
       tier2: 'https://pay.manifestfinancial.com/YOUR_TIER2_LINK',
       tier3: 'https://pay.manifestfinancial.com/YOUR_TIER3_LINK',
-      concierge: 'https://pay.manifestfinancial.com/YOUR_CONCIERGE_LINK',
-      consultation: 'https://pay.manifestfinancial.com/YOUR_CONSULTATION_LINK'
     }
   },
 
@@ -41,12 +38,9 @@ const CONFIG = {
     // Webhook URLs for form submissions
     webhooks: {
       itineraryPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_ITINERARY_WEBHOOK',
-      consultationBooking: 'https://services.leadconnectorhq.com/hooks/YOUR_CONSULTATION_WEBHOOK',
-      conciergeBooking: 'https://services.leadconnectorhq.com/hooks/YOUR_CONCIERGE_WEBHOOK',
       contactForm: 'https://services.leadconnectorhq.com/hooks/YOUR_CONTACT_WEBHOOK',
       emailCapture: 'https://services.leadconnectorhq.com/hooks/YOUR_EMAIL_CAPTURE_WEBHOOK'
     },
-    // Calendar ID for consultation bookings
     calendarId: 'YOUR_GHL_CALENDAR_ID',
     // Pipeline for tracking customer journey
     pipelineId: 'YOUR_GHL_PIPELINE_ID',
@@ -54,8 +48,6 @@ const CONFIG = {
       lead: 'YOUR_LEAD_STAGE_ID',
       itineraryCreated: 'YOUR_ITINERARY_CREATED_STAGE_ID',
       paid: 'YOUR_PAID_STAGE_ID',
-      conciergeAdded: 'YOUR_CONCIERGE_STAGE_ID',
-      consultationBooked: 'YOUR_CONSULTATION_BOOKED_STAGE_ID'
     }
   },
 
@@ -90,6 +82,9 @@ const CONFIG = {
     wise:         'YOUR_WISE_ID',
     revolut:      'YOUR_REVOLUT_ID',
     airalo:       'YOUR_AIRALO_ID',
+    withLocals:   'YOUR_WITHLOCALS_ID',
+    toursByLocals: 'YOUR_TOURSBYLOCALS_ID',
+    contextTravel: 'YOUR_CONTEXTTRAVEL_ID',
   },
 
   // Pages
@@ -226,35 +221,6 @@ const CONFIG = {
     CAD: { symbol: 'C$', rate: 1.36 }
   },
 
-  // Concierge service details
-  concierge: {
-    price: 250,
-    title: 'Booking Concierge Service',
-    description: 'We\'ll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.',
-    features: [
-      'We book restaurants, attractions & experiences for you',
-      'Theatre & show ticket purchasing',
-      'Hotel reservation assistance',
-      'Alternative suggestions if anything is unavailable',
-      'Confirmation email with all booking references',
-      'Priority rebooking if plans change'
-    ]
-  },
-
-  // Consultation details
-  consultation: {
-    title: 'Personal London Planning Session',
-    description: 'Get a one-on-one video call with a London expert who will customise your itinerary, share insider tips, book restaurants, and answer all your questions.',
-    features: [
-      '1-hour private video consultation',
-      'Customised itinerary adjustments',
-      'Restaurant & hotel booking assistance',
-      'Insider tips & hidden gems',
-      'Follow-up email with notes & links',
-      'Priority email support for 7 days'
-    ]
-  },
-
   // Affiliate tracking
   affiliate: {
     utmSource: 'londonplanner',
@@ -312,6 +278,9 @@ const AffiliateLinks = {
       case 'safetywing': return tag(baseUrl, 'referenceID', ids.safetyWing);
       case 'wise': return tag(baseUrl, 'partnerID', ids.wise);
       case 'airalo': return tag(baseUrl, 'ref', ids.airalo);
+      case 'withlocals': return tag(baseUrl, 'affiliate_id', ids.withLocals);
+      case 'toursbylocals': return tag(baseUrl, 'ref', ids.toursByLocals);
+      case 'contexttravel': return tag(baseUrl, 'affiliate', ids.contextTravel);
       default: return `${baseUrl}${sep(baseUrl)}${utm}`;
     }
   },
@@ -325,6 +294,9 @@ const AffiliateLinks = {
     if (url.includes('opentable')) return 'opentable';
     if (url.includes('klook')) return 'klook';
     if (url.includes('tiqets')) return 'tiqets';
+    if (url.includes('withlocals')) return 'withlocals';
+    if (url.includes('toursbylocals')) return 'toursbylocals';
+    if (url.includes('contexttravel')) return 'contexttravel';
     return 'unknown';
   },
 
@@ -376,22 +348,6 @@ const GHL = {
       type: 'itinerary_purchase',
       tags: ['london-planner', 'customer', 'itinerary-buyer'],
       ...purchaseData
-    });
-  },
-
-  async trackConsultationBooking(bookingData) {
-    return this.sendToWebhook('consultationBooking', {
-      type: 'consultation_booking',
-      tags: ['london-planner', 'customer', 'consultation'],
-      ...bookingData
-    });
-  },
-
-  async trackConciergeBooking(bookingData) {
-    return this.sendToWebhook('conciergeBooking', {
-      type: 'concierge_booking',
-      tags: ['london-planner', 'customer', 'concierge'],
-      ...bookingData
     });
   },
 
