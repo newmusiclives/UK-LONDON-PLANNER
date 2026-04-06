@@ -228,6 +228,7 @@
   <script src="js/config.js"></script>
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/day-map.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       UI.init();
@@ -288,7 +289,10 @@
         </div>
 
         <!-- Days -->
-        ${demo.days.map((day, idx) => `
+        ${demo.days.map((day, idx) => {
+          const dayColors = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6'];
+          const travelHtml = typeof DayMap !== 'undefined' ? DayMap.renderTravelDirections(day.activities) : '';
+          return `
           <div class="day-card">
             <div class="day-card__header">
               <div>
@@ -300,7 +304,10 @@
               </div>
             </div>
 
-            <div class="demo-day-intro" style="margin-top: 1rem;">
+            <div id="demo-day-map-${day.dayNumber}" class="day-card__map"></div>
+            ${travelHtml}
+
+            <div class="demo-day-intro" style="margin-top: 0.5rem;">
               ${dayIntros[idx]}
             </div>
 
@@ -349,7 +356,7 @@
               </div>
             </div>
           </div>
-        `).join('')}
+        `}).join('')}
 
         <!-- Cost Summary -->
         <div class="demo-cost-summary">
@@ -408,6 +415,17 @@
           ${CONFIG.affiliate.disclosureText}
         </p>
       `;
+
+      // Initialize per-day maps
+      if (typeof DayMap !== 'undefined') {
+        const dayColors = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6'];
+        demo.days.forEach((day, idx) => {
+          DayMap.renderMap('demo-day-map-' + day.dayNumber, day.activities, {
+            color: dayColors[idx % dayColors.length],
+            height: '220px'
+          });
+        });
+      }
     });
   </script>
   <script src="js/chat-assistant.js" defer></script>

@@ -1,5 +1,5 @@
 const CONFIG = {
-  siteName: 'London & UK Planner',
+  siteName: 'UK & London Planner',
   siteTagline: 'Your Perfect London & UK Trip, Curated by Experts',
 
   pricing: {
@@ -350,7 +350,7 @@ const GHL = {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          source: 'London & UK Planner',
+          source: 'UK & London Planner',
           timestamp: new Date().toISOString()
         })
       });

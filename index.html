@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>London & UK Planner — Your Perfect London Trip, Curated by Experts</title>
+  <title>UK & London Planner — Your Perfect London Trip, Curated by Experts</title>
   <meta name="description" content="Create a personalised London itinerary tailored to your interests, budget, and travel style. Day-by-day plans with insider tips, restaurant recommendations, and booking links.">
-  <meta property="og:title" content="London & UK Planner — Personalised Itineraries">
+  <meta property="og:title" content="UK & London Planner — Personalised Itineraries">
   <meta property="og:description" content="Create a personalised day-by-day London itinerary with 900+ venues, interactive maps, and insider tips. From $20.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://uk-london-planner.netlify.app">
@@ -13,7 +13,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="London & UK Planner">
+  <meta name="twitter:title" content="UK & London Planner">
   <meta name="twitter:description" content="Personalised London itineraries with 900+ venues and insider tips">
 
   <link rel="alternate" hreflang="en" href="https://uk-london-planner.netlify.app/">
@@ -27,7 +27,7 @@
   {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "London & UK Planner",
+    "name": "UK & London Planner",
     "description": "Personalised London and UK travel itineraries with 900+ curated venues, interactive maps, and insider tips.",
     "url": "https://uk-london-planner.netlify.app",
     "areaServed": { "@type": "Country", "name": "United Kingdom" },
@@ -391,6 +391,12 @@
           <div class="divider"></div>
           <p>Here's a taste of what your personalised itinerary looks like</p>
         </div>
+        <!-- Day Map -->
+        <div id="sample-day-map" style="margin-bottom:1rem;"></div>
+
+        <!-- Travel Directions -->
+        <div id="sample-travel-directions" style="margin-bottom:1.5rem;"></div>
+
         <div class="sample-timeline">
           <div class="sample-item">
             <div class="sample-item__time">09:00 - 12:00 / Morning</div>
@@ -560,6 +566,7 @@
   <script src="js/analytics.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/accounts.js"></script>
+  <script src="js/day-map.js"></script>
   <!-- New features -->
   <script src="js/chat-assistant.js" defer></script>
   <script src="js/social-proof.js" defer></script>
@@ -575,6 +582,20 @@
       if (typeof ChatAssistant !== 'undefined') ChatAssistant.init();
       if (typeof SocialProof !== 'undefined') SocialProof.init();
       if (typeof ExitIntent !== 'undefined') ExitIntent.init();
+
+      // Sample day map + travel directions
+      if (typeof DayMap !== 'undefined') {
+        const sampleActivities = [
+          { name: 'Tower of London', neighbourhood: 'Tower Hill', period: 'morning' },
+          { name: 'Padella', neighbourhood: 'London Bridge', period: 'lunch' },
+          { name: 'Westminster Abbey', neighbourhood: 'Westminster', period: 'afternoon' },
+          { name: 'Rules Restaurant', neighbourhood: 'Covent Garden', period: 'evening' },
+          { name: "Gordon's Wine Bar", neighbourhood: 'West End', period: 'evening' }
+        ];
+        DayMap.renderMap('sample-day-map', sampleActivities, { color: '#C9A84C', height: '250px' });
+        const directionsEl = document.getElementById('sample-travel-directions');
+        if (directionsEl) directionsEl.innerHTML = DayMap.renderTravelDirections(sampleActivities);
+      }
     });
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});

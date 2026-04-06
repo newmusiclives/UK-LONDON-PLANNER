@@ -30,6 +30,9 @@
         <!-- Quick Stats -->
         <div id="trip-stats" style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap;"></div>
 
+        <!-- Action Buttons -->
+        <div id="trip-actions" style="display:flex;gap:0.75rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap;"></div>
+
         <!-- Current Trip Banner -->
         <div id="current-trip-banner"></div>
 
@@ -112,11 +115,51 @@
       // Stats
       renderStats(savedTrips, currentItinerary);
 
+      // Action buttons
+      renderActions(savedTrips, currentItinerary);
+
       // Current trip banner
       renderCurrentTrip(currentItinerary);
 
       // Saved trips
       renderSavedTrips(savedTrips);
+    }
+
+    function renderActions(trips, current) {
+      const container = document.getElementById('trip-actions');
+      const hasAnything = trips.length > 0 || current;
+      if (!hasAnything) { container.innerHTML = ''; return; }
+
+      container.innerHTML = `
+        ${current ? `<button class="btn btn--outline btn--small" onclick="clearCurrentTrip()" style="color:var(--color-error);border-color:var(--color-error);">Clear Current Itinerary</button>` : ''}
+        ${trips.length > 0 ? `<button class="btn btn--outline btn--small" onclick="clearAllSavedTrips()" style="color:var(--color-error);border-color:var(--color-error);">Clear All Saved Trips</button>` : ''}
+        ${hasAnything ? `<button class="btn btn--outline btn--small" onclick="clearEverything()" style="color:var(--color-error);border-color:var(--color-error);">Clear Everything</button>` : ''}
+      `;
+    }
+
+    function clearCurrentTrip() {
+      if (confirm('Clear your current itinerary? This cannot be undone.')) {
+        State.clear();
+        UI.showToast('Current itinerary cleared.');
+        renderPage();
+      }
+    }
+
+    function clearAllSavedTrips() {
+      if (confirm('Delete all saved trips? This cannot be undone.')) {
+        localStorage.removeItem(SavedTrips.KEY);
+        UI.showToast('All saved trips cleared.');
+        renderPage();
+      }
+    }
+
+    function clearEverything() {
+      if (confirm('Clear your current itinerary AND all saved trips? This cannot be undone.')) {
+        State.clear();
+        localStorage.removeItem(SavedTrips.KEY);
+        UI.showToast('All trip data cleared.');
+        renderPage();
+      }
     }
 
     function renderStats(trips, current) {

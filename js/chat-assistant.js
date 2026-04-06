@@ -6,8 +6,21 @@ const ChatAssistant = {
   data: null,
   isOpen: false,
   messages: [],
+  _initialized: false,
+  _leadCaptured: false,
+  _pendingResponse: null,
+  _collectingLead: false,
+  _leadStep: null, // 'name' or 'email'
+  _leadName: '',
 
   async init() {
+    if (this._initialized) return;
+    this._initialized = true;
+    // Check if lead was previously captured
+    try {
+      const stored = localStorage.getItem('chatAssistantLead');
+      if (stored) this._leadCaptured = true;
+    } catch {}
     await this.loadData();
     this.render();
     this.bindEvents();
@@ -71,7 +84,7 @@ const ChatAssistant = {
       </style>
       <div id="chat-panel">
         <div class="chat-header">
-          <h4>London Assistant</h4>
+          <h4>UK & London Assistant</h4>
           <button class="chat-close" onclick="ChatAssistant.toggle()" aria-label="Close chat">✕</button>
         </div>
         <div class="chat-messages" id="chat-messages"></div>
@@ -133,19 +146,73 @@ const ChatAssistant = {
     this.addUserMessage(query);
     input.value = '';
 
-    // Show typing indicator
+    // Handle lead capture flow
+    if (this._collectingLead) {
+      this.handleLeadCapture(query);
+      return;
+    }
+
+    // Generate response
+    const response = this.getResponse(query);
+
+    // If lead not yet captured, collect name/email before showing the answer
+    if (!this._leadCaptured) {
+      this._pendingResponse = response;
+      this._collectingLead = true;
+      this._leadStep = 'name';
+      this.showTypingThen("I'd love to share that with you! Could you tell me your <strong>name</strong> first?");
+      return;
+    }
+
+    // Lead already captured — respond directly
+    this.showTypingThen(response);
+
+    if (typeof Analytics !== 'undefined' && Analytics.chatInteraction) Analytics.chatInteraction(query);
+  },
+
+  handleLeadCapture(input) {
+    if (this._leadStep === 'name') {
+      this._leadName = input;
+      this._leadStep = 'email';
+      this.showTypingThen(`Thanks, ${input}! And what's your <strong>email address</strong> so we can send you more London tips?`);
+    } else if (this._leadStep === 'email') {
+      const email = input;
+      // Basic email validation
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        this.showTypingThen("That doesn't look like a valid email. Could you try again?");
+        return;
+      }
+      // Save lead
+      this._leadCaptured = true;
+      this._collectingLead = false;
+      this._leadStep = null;
+      try {
+        localStorage.setItem('chatAssistantLead', JSON.stringify({ name: this._leadName, email }));
+      } catch {}
+      // Track in GHL if available
+      if (typeof GHL !== 'undefined' && GHL.createContact) {
+        GHL.createContact({ name: this._leadName, email, source: 'chat-assistant' });
+      }
+      // Now deliver the pending response
+      this.showTypingThen(`Great, thanks ${this._leadName}! Here's what I found:<br><br>${this._pendingResponse}`);
+      this._pendingResponse = null;
+
+      if (typeof Analytics !== 'undefined' && Analytics.chatInteraction) Analytics.chatInteraction('lead_captured');
+    }
+  },
+
+  showTypingThen(html) {
     const typing = document.createElement('div');
     typing.className = 'chat-typing';
     typing.innerHTML = '<span></span><span></span><span></span>';
     document.getElementById('chat-messages').appendChild(typing);
+    const container = document.getElementById('chat-messages');
+    container.scrollTop = container.scrollHeight;
 
     setTimeout(() => {
       typing.remove();
-      const response = this.getResponse(query);
-      this.addBotMessage(response);
+      this.addBotMessage(html);
     }, 600 + Math.random() * 400);
-
-    if (typeof Analytics !== 'undefined' && Analytics.chatInteraction) Analytics.chatInteraction(query);
   },
 
   addBotMessage(html) {
@@ -171,7 +238,7 @@ const ChatAssistant = {
 
     // Greetings
     if (/^(hi|hello|hey|hiya|yo)[\s!.]*$/i.test(q)) {
-      return "Hello! Welcome to London & UK Planner. I can help you find restaurants, pubs, attractions, and hidden gems. What are you interested in?";
+      return "Hello! Welcome to UK & London Planner. I can help you find restaurants, pubs, attractions, and hidden gems. What are you interested in?";
     }
 
     // Page redirects
@@ -232,9 +299,9 @@ const ChatAssistant = {
   }
 };
 
-// Auto-initialize on DOM ready
+// Auto-initialize on DOM ready (only if not already initialized by the page)
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof ChatAssistant !== 'undefined') ChatAssistant.init();
+  if (typeof ChatAssistant !== 'undefined' && !ChatAssistant._initialized) ChatAssistant.init();
 });
 
 // Add analytics stub

@@ -174,8 +174,9 @@ function renderItinerary(itinerary, isPaid, price) {
     <div id="pdf-container"></div>
   `;
 
-  // Initialize map
+  // Initialize maps
   initMap(itinerary);
+  initDayMaps(itinerary);
 
   // Initialize booking widgets
   if (typeof BookingWidgets !== 'undefined') {
@@ -293,6 +294,11 @@ function renderHotelCard(hotel) {
 function renderDayCard(day, locked) {
   const activities = day.activities || [];
   const dailyCost = day.dailyCost || activities.reduce((sum, a) => sum + (a.estimatedCostValue || 0), 0);
+  const dayColors = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C', '#E67E22', '#34495E'];
+  const mapColor = dayColors[(day.dayNumber - 1) % dayColors.length];
+  const mapId = `day-map-${day.dayNumber}`;
+  const travelHtml = typeof DayMap !== 'undefined' ? DayMap.renderTravelDirections(activities) : '';
+
   return `
     <div class="day-card ${locked ? 'day-card--locked' : ''}" id="day-${day.dayNumber}">
       <div class="day-card__header">
@@ -309,6 +315,8 @@ function renderDayCard(day, locked) {
           <div style="font-size:0.85rem;font-weight:600;color:var(--color-accent);">£${dailyCost.toFixed(0)} est.</div>
         </div>
       </div>
+      <div id="${mapId}" class="day-card__map"></div>
+      ${travelHtml}
       ${day.travelWarning ? `<div style="background:#FEF3C7;padding:0.6rem 1rem;font-size:0.8rem;color:#92400E;display:flex;align-items:center;gap:0.5rem;"><span>🚇</span> ${day.travelWarning}</div>` : ''}
       <div class="day-card__body">
         <div class="timeline">
@@ -327,6 +335,16 @@ function renderDayCard(day, locked) {
       ` : ''}
     </div>
   `;
+}
+
+function initDayMaps(itinerary) {
+  if (typeof DayMap === 'undefined') return;
+  const dayColors = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C', '#E67E22', '#34495E'];
+  itinerary.days.forEach(day => {
+    const mapId = `day-map-${day.dayNumber}`;
+    const color = dayColors[(day.dayNumber - 1) % dayColors.length];
+    DayMap.renderMap(mapId, day.activities || [], { color, height: '220px' });
+  });
 }
 
 function renderActivity(activity) {
@@ -688,7 +706,7 @@ function buildPDFContent(itinerary) {
     `).join('')}
 
     <div style="text-align:center; margin-top:30px; padding-top:20px; border-top:2px solid #C9A84C;">
-      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">London & UK Planner</p>
+      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">UK & London Planner</p>
       <p style="color:#888; font-size:9pt;">Enjoy your trip!</p>
     </div>
   `;

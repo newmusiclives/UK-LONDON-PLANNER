@@ -19,9 +19,9 @@ const UI = {
     header.innerHTML = `
       <a href="#main-content" class="skip-link">Skip to main content</a>
       <div class="header__inner">
-        <a href="index.html" class="header__logo" aria-label="London & UK Planner - Home">
+        <a href="index.html" class="header__logo" aria-label="UK & London Planner - Home">
           <span class="header__logo-icon" aria-hidden="true">🇬🇧</span>
-          London & UK Planner
+          UK & London Planner
         </a>
         <nav class="header__nav" id="main-nav" aria-label="Main navigation" role="navigation">
           <a href="demo.html">${_t('nav.demo', 'Demo')}</a>
@@ -57,7 +57,7 @@ const UI = {
       <div class="container">
         <div class="footer__grid">
           <div>
-            <div class="footer__brand">🇬🇧 London & UK Planner</div>
+            <div class="footer__brand">🇬🇧 UK & London Planner</div>
             <p class="footer__desc">
               ${_t('footer.desc', 'Expertly curated London itineraries tailored to your interests, budget, and travel style. Your perfect London adventure starts here.')}
             </p>
@@ -131,7 +131,7 @@ const UI = {
         </div>
 
         <div class="footer__bottom">
-          <span>&copy; ${new Date().getFullYear()} London & UK Planner. All rights reserved.</span>
+          <span>&copy; ${new Date().getFullYear()} UK & London Planner. All rights reserved.</span>
           <p class="footer__disclosure">${CONFIG.affiliate.disclosureText}</p>
         </div>
       </div>

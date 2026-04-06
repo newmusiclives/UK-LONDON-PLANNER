@@ -215,6 +215,13 @@
   margin-bottom: var(--space-md);
 }
 
+/* Per-Day Map */
+.day-card__map {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 0;
+}
+
 /* Locked State */
 .day-card--locked {
   position: relative;
