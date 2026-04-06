@@ -1,4 +1,4 @@
-const CACHE_NAME = 'london-planner-v2';
+const CACHE_NAME = 'london-planner-v3';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -34,7 +34,8 @@ const urlsToCache = [
   '/data/hotels.json',
   '/data/entertainment.json',
   '/data/neighbourhoods.json',
-  '/data/day-templates.json'
+  '/data/day-templates.json',
+  '/data/promotions-content.json'
 ];
 
 // Install — cache essential files

@@ -7,6 +7,8 @@ const Analytics = {
 
   init() {
     if (this.GA_ID === 'G-XXXXXXXXXX') return; // Skip if not configured
+    // Respect cookie consent — only load analytics if user accepted
+    if (localStorage.getItem('cookieConsent') === 'essential') return;
 
     // Load gtag.js
     const script = document.createElement('script');
