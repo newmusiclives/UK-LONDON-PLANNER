@@ -57,12 +57,6 @@ const UI = {
             <p class="footer__desc">
               ${_t('footer.desc', 'Expertly curated London itineraries tailored to your interests, budget, and travel style. Your perfect London adventure starts here.')}
             </p>
-            <div class="footer__social" style="margin-top:1rem;display:flex;gap:0.75rem;">
-              <a href="#" aria-label="Instagram" style="font-size:1.25rem;">📷</a>
-              <a href="#" aria-label="TikTok" style="font-size:1.25rem;">🎵</a>
-              <a href="#" aria-label="Facebook" style="font-size:1.25rem;">📘</a>
-              <a href="#" aria-label="Twitter" style="font-size:1.25rem;">🐦</a>
-            </div>
           </div>
           <div>
             <div class="footer__title">${_t('footer.plan', 'Plan')}</div>
