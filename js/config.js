@@ -39,7 +39,8 @@ const CONFIG = {
     webhooks: {
       itineraryPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_ITINERARY_WEBHOOK',
       contactForm: 'https://services.leadconnectorhq.com/hooks/YOUR_CONTACT_WEBHOOK',
-      emailCapture: 'https://services.leadconnectorhq.com/hooks/YOUR_EMAIL_CAPTURE_WEBHOOK'
+      emailCapture: 'https://services.leadconnectorhq.com/hooks/YOUR_EMAIL_CAPTURE_WEBHOOK',
+      promotionsNewsletter: 'https://services.leadconnectorhq.com/hooks/YOUR_NEWSLETTER_WEBHOOK'
     },
     calendarId: 'YOUR_GHL_CALENDAR_ID',
     // Pipeline for tracking customer journey

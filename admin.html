@@ -101,6 +101,9 @@
     .connect-card.connected { border-style: solid; border-color: var(--color-success); background: #F0FDF4; }
     .connect-card__icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
     .connect-card__status { display: inline-block; padding: 0.2rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; margin-top: 0.75rem; }
+
+    .content-subtab { display: none; }
+    .content-subtab.active { display: block; }
   </style>
 </head>
 <body>
@@ -127,6 +130,7 @@
         <div class="admin-tab" data-tab="entertainment">Entertainment</div>
         <div class="admin-tab" data-tab="hotels">Hotels</div>
         <div class="admin-tab" data-tab="export">Export / Import</div>
+        <div class="admin-tab" data-tab="promotions">Promotions</div>
       </div>
 
       <!-- ============================================================ -->
@@ -572,8 +576,311 @@
           </div>
         </div>
       </div>
+      <!-- ============================================================ -->
+      <!-- PROMOTIONS -->
+      <!-- ============================================================ -->
+      <div class="admin-panel" data-panel="promotions">
+
+        <!-- Section A: Newsletter Builder -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Newsletter Builder</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field">
+                <label>Issue Number</label>
+                <input type="number" id="promo-issue-number" min="1" placeholder="Auto-increments">
+                <div class="hint">Auto-incremented from localStorage</div>
+              </div>
+              <div class="field">
+                <label>Send Date</label>
+                <input type="date" id="promo-send-date">
+                <div class="hint">Defaults to next Tuesday or Friday</div>
+              </div>
+            </div>
+            <div class="field">
+              <label>Subject Line</label>
+              <input type="text" id="promo-subject" placeholder="Auto-generated from selections">
+              <div class="hint">Auto-generated but editable</div>
+            </div>
+
+            <h4 style="margin:1.5rem 0 1rem;font-size:0.95rem;">Featured Venues</h4>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+              <button class="btn btn--outline btn--small" onclick="promoAutoSelect('attraction')">Auto-Select Attraction</button>
+              <button class="btn btn--outline btn--small" onclick="promoAutoSelect('restaurant')">Auto-Select Restaurant</button>
+              <button class="btn btn--outline btn--small" onclick="promoAutoSelect('pub')">Auto-Select Pub</button>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Featured Attraction</label>
+                <select id="promo-attraction"><option value="">-- Select Attraction --</option></select>
+              </div>
+              <div class="field">
+                <label>Featured Restaurant</label>
+                <select id="promo-restaurant"><option value="">-- Select Restaurant --</option></select>
+              </div>
+            </div>
+            <div class="field">
+              <label>Featured Pub</label>
+              <select id="promo-pub"><option value="">-- Select Pub --</option></select>
+            </div>
+
+            <h4 style="margin:1.5rem 0 1rem;font-size:0.95rem;">Content Sections</h4>
+            <div class="field-row">
+              <div class="field">
+                <label>Advice Article</label>
+                <select id="promo-advice"><option value="">-- Select Advice Article --</option></select>
+              </div>
+              <div class="field">
+                <label>Trivia Question</label>
+                <select id="promo-trivia"><option value="">-- Select Trivia --</option></select>
+              </div>
+            </div>
+            <div class="field">
+              <label>Poll</label>
+              <select id="promo-poll"><option value="">-- Select Poll --</option></select>
+            </div>
+
+            <div id="promo-selections-display" style="margin-top:1.5rem;padding:1rem;background:var(--color-surface-alt);border-radius:var(--radius-md);font-size:0.85rem;display:none;">
+              <h4 style="margin:0 0 0.75rem;">Current Selections</h4>
+              <div id="promo-selections-list"></div>
+            </div>
+
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1.5rem;">
+              <button class="btn btn--primary" onclick="previewNewsletter()">Preview Newsletter</button>
+              <button class="btn btn--secondary" onclick="copyNewsletterHTML()">Copy HTML to Clipboard</button>
+              <button class="btn btn--outline" onclick="sendToGoHighLevel()">Send to GoHighLevel</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section B: Sponsor Manager -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Sponsor Manager</h3></div>
+          <div class="admin-section__body">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;">
+              <!-- Sponsor Slot 1 -->
+              <div style="border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 style="margin:0 0 1rem;font-size:0.95rem;">Sponsor Slot 1</h4>
+                <div class="field"><label>Sponsor Name</label><input type="text" id="sponsor-1-name" placeholder="e.g. Acme Travel Co."></div>
+                <div class="field"><label>Image URL</label><input type="url" id="sponsor-1-image" placeholder="https://..."></div>
+                <div class="field"><label>Link URL</label><input type="url" id="sponsor-1-link" placeholder="https://..."></div>
+                <div class="field"><label>Alt Text</label><input type="text" id="sponsor-1-alt" placeholder="Sponsor banner alt text"></div>
+                <div class="field"><label>Type</label><select id="sponsor-1-type"><option value="affiliate">Affiliate Partner</option><option value="paid">Paid Advertiser</option></select></div>
+                <div class="field-row">
+                  <div class="field"><label>Start Date</label><input type="date" id="sponsor-1-start"></div>
+                  <div class="field"><label>End Date</label><input type="date" id="sponsor-1-end"></div>
+                </div>
+                <div class="field"><label style="display:flex;align-items:center;gap:0.5rem;"><input type="checkbox" id="sponsor-1-active" checked style="width:auto;"> Active</label></div>
+              </div>
+              <!-- Sponsor Slot 2 -->
+              <div style="border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 style="margin:0 0 1rem;font-size:0.95rem;">Sponsor Slot 2</h4>
+                <div class="field"><label>Sponsor Name</label><input type="text" id="sponsor-2-name" placeholder="e.g. Acme Travel Co."></div>
+                <div class="field"><label>Image URL</label><input type="url" id="sponsor-2-image" placeholder="https://..."></div>
+                <div class="field"><label>Link URL</label><input type="url" id="sponsor-2-link" placeholder="https://..."></div>
+                <div class="field"><label>Alt Text</label><input type="text" id="sponsor-2-alt" placeholder="Sponsor banner alt text"></div>
+                <div class="field"><label>Type</label><select id="sponsor-2-type"><option value="affiliate">Affiliate Partner</option><option value="paid">Paid Advertiser</option></select></div>
+                <div class="field-row">
+                  <div class="field"><label>Start Date</label><input type="date" id="sponsor-2-start"></div>
+                  <div class="field"><label>End Date</label><input type="date" id="sponsor-2-end"></div>
+                </div>
+                <div class="field"><label style="display:flex;align-items:center;gap:0.5rem;"><input type="checkbox" id="sponsor-2-active" style="width:auto;"> Active</label></div>
+              </div>
+              <!-- Sponsor Slot 3 -->
+              <div style="border:2px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem;">
+                <h4 style="margin:0 0 1rem;font-size:0.95rem;">Sponsor Slot 3</h4>
+                <div class="field"><label>Sponsor Name</label><input type="text" id="sponsor-3-name" placeholder="e.g. Acme Travel Co."></div>
+                <div class="field"><label>Image URL</label><input type="url" id="sponsor-3-image" placeholder="https://..."></div>
+                <div class="field"><label>Link URL</label><input type="url" id="sponsor-3-link" placeholder="https://..."></div>
+                <div class="field"><label>Alt Text</label><input type="text" id="sponsor-3-alt" placeholder="Sponsor banner alt text"></div>
+                <div class="field"><label>Type</label><select id="sponsor-3-type"><option value="affiliate">Affiliate Partner</option><option value="paid">Paid Advertiser</option></select></div>
+                <div class="field-row">
+                  <div class="field"><label>Start Date</label><input type="date" id="sponsor-3-start"></div>
+                  <div class="field"><label>End Date</label><input type="date" id="sponsor-3-end"></div>
+                </div>
+                <div class="field"><label style="display:flex;align-items:center;gap:0.5rem;"><input type="checkbox" id="sponsor-3-active" style="width:auto;"> Active</label></div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;">
+              <button class="btn btn--primary" onclick="saveSponsors()">Save Sponsors</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section C: Blog Generator -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Blog Generator</h3></div>
+          <div class="admin-section__body">
+            <div class="field-row">
+              <div class="field">
+                <label>Title</label>
+                <input type="text" id="blog-title" placeholder="Blog post title" oninput="autoGenerateSlug()">
+              </div>
+              <div class="field">
+                <label>Slug</label>
+                <input type="text" id="blog-slug" placeholder="auto-generated-from-title">
+                <div class="hint">Auto-generated from title</div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Category</label>
+                <select id="blog-category">
+                  <option value="london-guide">London Guide</option>
+                  <option value="restaurant-review">Restaurant Review</option>
+                  <option value="pub-pick">Pub Pick</option>
+                  <option value="travel-tips">Travel Tips</option>
+                  <option value="weekly-roundup">Weekly Roundup</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Meta Description</label>
+                <textarea id="blog-meta" rows="2" placeholder="SEO meta description (150-160 chars)"></textarea>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.5rem;margin-bottom:1.25rem;">
+              <button class="btn btn--outline btn--small" onclick="generateBlogFromNewsletter()">Generate from Newsletter</button>
+            </div>
+            <div class="field">
+              <label>Content Preview</label>
+              <div id="blog-content-preview" style="min-height:150px;padding:1rem;background:var(--color-surface-alt);border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:0.85rem;overflow-y:auto;max-height:400px;">
+                <p style="color:var(--color-text-muted);font-style:italic;">Generate or write blog content above...</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.5rem;margin-top:1rem;">
+              <button class="btn btn--primary" onclick="previewBlogNewTab()">Preview in New Tab</button>
+              <button class="btn btn--secondary" onclick="downloadBlogHTML()">Download HTML File</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section D: Social Media -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Social Media</h3></div>
+          <div class="admin-section__body">
+            <div class="field">
+              <label>Platforms</label>
+              <div style="display:flex;gap:1.5rem;margin-top:0.25rem;">
+                <label style="display:flex;align-items:center;gap:0.4rem;font-weight:400;font-size:0.9rem;"><input type="checkbox" id="social-facebook" checked style="width:auto;"> Facebook</label>
+                <label style="display:flex;align-items:center;gap:0.4rem;font-weight:400;font-size:0.9rem;"><input type="checkbox" id="social-instagram" checked style="width:auto;"> Instagram</label>
+                <label style="display:flex;align-items:center;gap:0.4rem;font-weight:400;font-size:0.9rem;"><input type="checkbox" id="social-twitter" checked style="width:auto;"> Twitter/X</label>
+              </div>
+            </div>
+            <div style="margin-bottom:1.25rem;">
+              <button class="btn btn--outline btn--small" onclick="generateSocialFromNewsletter()">Generate Posts from Newsletter</button>
+            </div>
+            <div class="field">
+              <label>Post Text</label>
+              <textarea id="social-post-text" rows="5" placeholder="Write or generate your social media post..." oninput="updateCharCount()"></textarea>
+              <div class="hint"><span id="social-char-count">0</span> characters <span id="social-char-limit" style="margin-left:0.5rem;"></span></div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Schedule Date</label>
+                <input type="date" id="social-schedule-date">
+              </div>
+              <div class="field">
+                <label>Schedule Time</label>
+                <input type="time" id="social-schedule-time" value="10:00">
+              </div>
+            </div>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <button class="btn btn--primary" onclick="pushToGHLSocial()">Push to GoHighLevel Social Planner</button>
+              <button class="btn btn--secondary" onclick="copySocialText()">Copy Post Text</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section E: Content Library -->
+        <div class="admin-section">
+          <div class="admin-section__header"><h3>Content Library</h3></div>
+          <div class="admin-section__body">
+            <div style="display:flex;gap:0;border-bottom:2px solid var(--color-border);margin-bottom:1.5rem;">
+              <div class="admin-tab active" data-subtab="trivia" onclick="switchContentTab('trivia')" style="padding:0.5rem 1rem;font-size:0.85rem;">Trivia</div>
+              <div class="admin-tab" data-subtab="polls" onclick="switchContentTab('polls')" style="padding:0.5rem 1rem;font-size:0.85rem;">Polls</div>
+              <div class="admin-tab" data-subtab="advice" onclick="switchContentTab('advice')" style="padding:0.5rem 1rem;font-size:0.85rem;">Advice Articles</div>
+            </div>
+
+            <!-- Trivia Sub-Tab -->
+            <div class="content-subtab active" id="subtab-trivia">
+              <div id="trivia-list" style="margin-bottom:1rem;"></div>
+              <button class="btn btn--outline btn--small" onclick="addContentItem('trivia')">+ Add New Trivia</button>
+              <div id="trivia-add-form" style="display:none;margin-top:1rem;padding:1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);">
+                <div class="field"><label>Question</label><input type="text" id="trivia-new-question" placeholder="Did you know...?"></div>
+                <div class="field"><label>Answer</label><textarea id="trivia-new-answer" rows="2" placeholder="The answer..."></textarea></div>
+                <div class="field"><label>Category</label><input type="text" id="trivia-new-category" placeholder="e.g. History, Architecture"></div>
+                <div style="display:flex;gap:0.5rem;"><button class="btn btn--primary btn--small" onclick="saveContentItem('trivia')">Save</button><button class="btn btn--outline btn--small" onclick="cancelContentAdd('trivia')">Cancel</button></div>
+              </div>
+            </div>
+
+            <!-- Polls Sub-Tab -->
+            <div class="content-subtab" id="subtab-polls" style="display:none;">
+              <div id="polls-list" style="margin-bottom:1rem;"></div>
+              <button class="btn btn--outline btn--small" onclick="addContentItem('polls')">+ Add New Poll</button>
+              <div id="polls-add-form" style="display:none;margin-top:1rem;padding:1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);">
+                <div class="field"><label>Poll Question</label><input type="text" id="polls-new-question" placeholder="What is your favourite...?"></div>
+                <div class="field"><label>Option A</label><input type="text" id="polls-new-optionA" placeholder="Option A"></div>
+                <div class="field"><label>Option B</label><input type="text" id="polls-new-optionB" placeholder="Option B"></div>
+                <div class="field"><label>Option C</label><input type="text" id="polls-new-optionC" placeholder="Option C"></div>
+                <div class="field"><label>Option D <small>(optional)</small></label><input type="text" id="polls-new-optionD" placeholder="Option D"></div>
+                <div style="display:flex;gap:0.5rem;"><button class="btn btn--primary btn--small" onclick="saveContentItem('polls')">Save</button><button class="btn btn--outline btn--small" onclick="cancelContentAdd('polls')">Cancel</button></div>
+              </div>
+            </div>
+
+            <!-- Advice Sub-Tab -->
+            <div class="content-subtab" id="subtab-advice" style="display:none;">
+              <div id="advice-list" style="margin-bottom:1rem;"></div>
+              <button class="btn btn--outline btn--small" onclick="addContentItem('advice')">+ Add New Advice Article</button>
+              <div id="advice-add-form" style="display:none;margin-top:1rem;padding:1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);">
+                <div class="field"><label>Title</label><input type="text" id="advice-new-title" placeholder="e.g. How to Use the Oyster Card"></div>
+                <div class="field"><label>Summary</label><textarea id="advice-new-summary" rows="3" placeholder="Brief summary of the article..."></textarea></div>
+                <div class="field"><label>Category</label><input type="text" id="advice-new-category" placeholder="e.g. Transport, Money, Safety"></div>
+                <div style="display:flex;gap:0.5rem;"><button class="btn btn--primary btn--small" onclick="saveContentItem('advice')">Save</button><button class="btn btn--outline btn--small" onclick="cancelContentAdd('advice')">Cancel</button></div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:0.5rem;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--color-border);">
+              <button class="btn btn--outline btn--small" onclick="importContentJSON()">Import from JSON</button>
+              <button class="btn btn--outline btn--small" onclick="exportContentJSON()">Export to JSON</button>
+              <input type="file" id="content-import-file" accept=".json" style="display:none;" onchange="handleContentImport(event)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Section F: Featured History -->
+        <div class="admin-section">
+          <div class="admin-section__header">
+            <h3>Featured History</h3>
+            <button class="btn btn--outline btn--small" onclick="clearFeaturedHistory()" style="color:var(--color-error);border-color:var(--color-error);">Clear History</button>
+          </div>
+          <div class="admin-section__body">
+            <div style="overflow-x:auto;">
+              <table class="sales-table" id="featured-history-table">
+                <thead>
+                  <tr><th>Date</th><th>Venue</th><th>Type</th><th>Medium</th></tr>
+                </thead>
+                <tbody id="featured-history-body">
+                  <tr><td colspan="4" style="text-align:center;color:var(--color-text-muted);padding:2rem;">No featured history yet. Venues will appear here once newsletters are sent.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
+
+  <!-- Newsletter Preview Modal -->
+  <div class="modal-overlay" id="newsletter-preview-modal">
+    <div class="modal" style="max-width:700px;max-height:90vh;overflow:auto;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <h3 style="margin:0;">Newsletter Preview</h3>
+        <button onclick="document.getElementById('newsletter-preview-modal').classList.remove('active')" style="font-size:1.5rem;background:none;border:none;cursor:pointer;">&#10005;</button>
+      </div>
+      <iframe id="newsletter-preview-frame" style="width:100%;height:70vh;border:1px solid var(--color-border);border-radius:var(--radius-md);"></iframe>
+    </div>
+  </div>
 
   <div class="modal-overlay" id="edit-modal"><div class="modal"><h3 id="modal-title">Edit Venue</h3><form id="modal-form"></form></div></div>
   <div class="status-bar" id="status-bar" style="display:none;"><span class="status-bar__text" id="status-text"></span><button class="btn btn--primary btn--small" onclick="hideStatus()">Dismiss</button></div>
@@ -582,6 +889,7 @@
   <script src="js/config.js"></script>
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/promotions.js"></script>
   <script>
     const ADMIN_KEY = 'londonPlannerAdmin';
     const SALES_KEY = 'londonPlannerSales';
@@ -627,6 +935,11 @@
           document.querySelector(`[data-panel="${tab.dataset.tab}"]`).classList.add('active');
         });
       });
+
+      // Initialize Promotions module
+      if (typeof PromotionsData !== 'undefined') {
+        PromotionsData.loadContent().then(() => PromotionsData.loadVenues().then(() => initPromotionsUI()));
+      }
     });
 
     // ============================================================
@@ -977,6 +1290,524 @@
     document.getElementById('edit-modal').addEventListener('click', e => { if(e.target===e.currentTarget) closeModal(); });
     function showStatus(msg) { document.getElementById('status-bar').style.display='flex'; document.getElementById('status-text').textContent=msg; }
     function hideStatus() { document.getElementById('status-bar').style.display='none'; }
+
+    // ============================================================
+    // PROMOTIONS — UI Functions
+    // ============================================================
+    const PROMO_KEY = 'londonPlannerPromo';
+    const SPONSORS_KEY = 'londonPlannerSponsors';
+    const FEATURED_HISTORY_KEY = 'londonPlannerFeaturedHistory';
+    const CONTENT_LIBRARY_KEY = 'londonPlannerContentLibrary';
+
+    function initPromotionsUI() {
+      // Populate venue dropdowns from loaded venueData
+      populateVenueDropdown('promo-attraction', venueData.attractions || []);
+      populateVenueDropdown('promo-restaurant', venueData.restaurants || []);
+      populateVenueDropdown('promo-pub', venueData.nightlife || []);
+
+      // Populate content dropdowns from PromotionsData (if available)
+      const content = (typeof PromotionsData !== 'undefined' && PromotionsData._content) ? PromotionsData._content : {};
+      populateContentDropdown('promo-advice', content.adviceArticles || []);
+      populateContentDropdown('promo-trivia', content.trivia || []);
+      populateContentDropdown('promo-poll', content.polls || []);
+
+      // Load saved sponsors
+      loadSponsors();
+
+      // Load featured history
+      renderFeaturedHistory();
+
+      // Load content library lists
+      renderContentLibrary();
+
+      // Set default issue number
+      const savedPromo = JSON.parse(localStorage.getItem(PROMO_KEY) || '{}');
+      const issueNum = (savedPromo.lastIssue || 0) + 1;
+      document.getElementById('promo-issue-number').value = issueNum;
+
+      // Set default date to next Tuesday or Friday
+      const now = new Date();
+      const day = now.getDay();
+      let daysUntilTue = (2 - day + 7) % 7 || 7;
+      let daysUntilFri = (5 - day + 7) % 7 || 7;
+      const nextDate = new Date(now);
+      nextDate.setDate(now.getDate() + Math.min(daysUntilTue, daysUntilFri));
+      document.getElementById('promo-send-date').value = nextDate.toISOString().split('T')[0];
+
+      // Auto-generate slug from blog title
+      const titleInput = document.getElementById('blog-title');
+      if (titleInput) {
+        titleInput.addEventListener('input', autoGenerateSlug);
+      }
+    }
+
+    function populateVenueDropdown(selectId, venues) {
+      const sel = document.getElementById(selectId);
+      if (!sel) return;
+      const existing = sel.querySelector('option');
+      sel.innerHTML = '';
+      const defaultOpt = document.createElement('option');
+      defaultOpt.value = '';
+      defaultOpt.textContent = existing ? existing.textContent : '-- Select --';
+      sel.appendChild(defaultOpt);
+      venues.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v.id;
+        opt.textContent = `${v.name}${v.neighbourhood ? ' (' + v.neighbourhood + ')' : ''}`;
+        sel.appendChild(opt);
+      });
+    }
+
+    function populateContentDropdown(selectId, items) {
+      const sel = document.getElementById(selectId);
+      if (!sel) return;
+      const placeholder = sel.querySelector('option')?.textContent || '-- Select --';
+      sel.innerHTML = '';
+      const defaultOpt = document.createElement('option');
+      defaultOpt.value = '';
+      defaultOpt.textContent = placeholder;
+      sel.appendChild(defaultOpt);
+      items.forEach((item, i) => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = item.title || item.question || `Item ${i + 1}`;
+        sel.appendChild(opt);
+      });
+    }
+
+    function promoAutoSelect(type) {
+      const history = JSON.parse(localStorage.getItem(FEATURED_HISTORY_KEY) || '[]');
+      const featured = history.map(h => h.venueId);
+      let pool, selectId;
+      if (type === 'attraction') { pool = venueData.attractions || []; selectId = 'promo-attraction'; }
+      else if (type === 'restaurant') { pool = venueData.restaurants || []; selectId = 'promo-restaurant'; }
+      else { pool = venueData.nightlife || []; selectId = 'promo-pub'; }
+      const available = pool.filter(v => !featured.includes(v.id));
+      const pick = available.length > 0 ? available[Math.floor(Math.random() * available.length)] : (pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : null);
+      if (pick) {
+        document.getElementById(selectId).value = pick.id;
+        updateSelectionsDisplay();
+        showStatus(`Auto-selected: ${pick.name}`);
+      } else {
+        showStatus(`No ${type}s available to select.`);
+      }
+    }
+
+    function updateSelectionsDisplay() {
+      const display = document.getElementById('promo-selections-display');
+      const list = document.getElementById('promo-selections-list');
+      const selections = [];
+      const attrId = document.getElementById('promo-attraction').value;
+      const restId = document.getElementById('promo-restaurant').value;
+      const pubId = document.getElementById('promo-pub').value;
+      if (attrId) { const v = (venueData.attractions||[]).find(x=>x.id===attrId); if(v) selections.push(`<strong>Attraction:</strong> ${v.name}`); }
+      if (restId) { const v = (venueData.restaurants||[]).find(x=>x.id===restId); if(v) selections.push(`<strong>Restaurant:</strong> ${v.name}`); }
+      if (pubId) { const v = (venueData.nightlife||[]).find(x=>x.id===pubId); if(v) selections.push(`<strong>Pub:</strong> ${v.name}`); }
+      if (selections.length > 0) {
+        display.style.display = 'block';
+        list.innerHTML = selections.join('<br>');
+      } else {
+        display.style.display = 'none';
+      }
+      // Auto-generate subject line
+      const parts = [];
+      if (attrId) { const v = (venueData.attractions||[]).find(x=>x.id===attrId); if(v) parts.push(v.name); }
+      if (restId) { const v = (venueData.restaurants||[]).find(x=>x.id===restId); if(v) parts.push(v.name); }
+      const subj = document.getElementById('promo-subject');
+      if (parts.length > 0 && !subj.dataset.userEdited) {
+        const issue = document.getElementById('promo-issue-number').value;
+        subj.value = `London Planner #${issue}: ${parts.join(', ')} & More`;
+      }
+    }
+
+    // Attach change listeners for venue selects
+    ['promo-attraction','promo-restaurant','promo-pub'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('change', updateSelectionsDisplay);
+    });
+
+    function buildNewsletterConfig() {
+      const sel = getNewsletterSelections();
+      const attr = (venueData.attractions||[]).find(x => x.id === sel.attractionId);
+      const rest = (venueData.restaurants||[]).find(x => x.id === sel.restaurantId);
+      const pub = (venueData.nightlife||[]).find(x => x.id === sel.pubId);
+      const content = (typeof PromotionsData !== 'undefined' && PromotionsData._content) ? PromotionsData._content : {};
+      const trivia = sel.triviaIndex !== '' ? (content.trivia || [])[parseInt(sel.triviaIndex)] : null;
+      const poll = sel.pollIndex !== '' ? (content.polls || [])[parseInt(sel.pollIndex)] : null;
+      const advice = sel.adviceIndex !== '' ? (content.adviceArticles || [])[parseInt(sel.adviceIndex)] : null;
+      const sponsors = JSON.parse(localStorage.getItem(SPONSORS_KEY) || '[]').filter(s => s.active);
+      const sendDate = sel.sendDate ? new Date(sel.sendDate + 'T00:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+      return {
+        attraction: attr || null, restaurant: rest || null, pub: pub || null,
+        advice: advice || null, trivia: trivia || null, poll: poll || null,
+        sponsors, issueNumber: parseInt(sel.issueNumber) || 1, sendDate
+      };
+    }
+
+    function previewNewsletter() {
+      if (typeof NewsletterBuilder !== 'undefined' && typeof NewsletterBuilder.build === 'function') {
+        const html = NewsletterBuilder.build(buildNewsletterConfig());
+        const frame = document.getElementById('newsletter-preview-frame');
+        frame.srcdoc = html;
+        document.getElementById('newsletter-preview-modal').classList.add('active');
+      } else {
+        showStatus('Newsletter builder not loaded. Ensure promotions.js is available.');
+      }
+    }
+
+    function copyNewsletterHTML() {
+      if (typeof NewsletterBuilder !== 'undefined' && typeof NewsletterBuilder.build === 'function') {
+        const html = NewsletterBuilder.build(buildNewsletterConfig());
+        navigator.clipboard.writeText(html).then(() => showStatus('Newsletter HTML copied to clipboard.'));
+      } else {
+        showStatus('Newsletter builder not loaded.');
+      }
+    }
+
+    function sendToGoHighLevel() {
+      const selections = getNewsletterSelections();
+      const webhookUrl = CONFIG.goHighLevel?.webhooks?.promotionsNewsletter;
+      if (!webhookUrl || webhookUrl.includes('YOUR_')) {
+        showStatus('GoHighLevel newsletter webhook not configured. Update config.js.');
+        return;
+      }
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...selections, source: 'UK & London Planner Admin', timestamp: new Date().toISOString() })
+      }).then(r => {
+        if (r.ok) {
+          showStatus('Newsletter data sent to GoHighLevel.');
+          recordFeaturedHistory(selections);
+          const savedPromo = JSON.parse(localStorage.getItem(PROMO_KEY) || '{}');
+          savedPromo.lastIssue = parseInt(document.getElementById('promo-issue-number').value) || 1;
+          localStorage.setItem(PROMO_KEY, JSON.stringify(savedPromo));
+        } else {
+          showStatus('GoHighLevel webhook error: ' + r.status);
+        }
+      }).catch(e => showStatus('Send failed: ' + e.message));
+    }
+
+    function getNewsletterSelections() {
+      return {
+        issueNumber: document.getElementById('promo-issue-number').value,
+        sendDate: document.getElementById('promo-send-date').value,
+        subject: document.getElementById('promo-subject').value,
+        attractionId: document.getElementById('promo-attraction').value,
+        restaurantId: document.getElementById('promo-restaurant').value,
+        pubId: document.getElementById('promo-pub').value,
+        adviceIndex: document.getElementById('promo-advice').value,
+        triviaIndex: document.getElementById('promo-trivia').value,
+        pollIndex: document.getElementById('promo-poll').value
+      };
+    }
+
+    // Sponsor Manager
+    function saveSponsors() {
+      const sponsors = [];
+      for (let i = 1; i <= 3; i++) {
+        sponsors.push({
+          name: document.getElementById(`sponsor-${i}-name`).value,
+          image: document.getElementById(`sponsor-${i}-image`).value,
+          link: document.getElementById(`sponsor-${i}-link`).value,
+          alt: document.getElementById(`sponsor-${i}-alt`).value,
+          type: document.getElementById(`sponsor-${i}-type`).value,
+          start: document.getElementById(`sponsor-${i}-start`).value,
+          end: document.getElementById(`sponsor-${i}-end`).value,
+          active: document.getElementById(`sponsor-${i}-active`).checked
+        });
+      }
+      localStorage.setItem(SPONSORS_KEY, JSON.stringify(sponsors));
+      showStatus('Sponsors saved.');
+    }
+
+    function loadSponsors() {
+      const sponsors = JSON.parse(localStorage.getItem(SPONSORS_KEY) || '[]');
+      sponsors.forEach((s, i) => {
+        const idx = i + 1;
+        if (idx > 3) return;
+        const el = id => document.getElementById(id);
+        if (el(`sponsor-${idx}-name`)) el(`sponsor-${idx}-name`).value = s.name || '';
+        if (el(`sponsor-${idx}-image`)) el(`sponsor-${idx}-image`).value = s.image || '';
+        if (el(`sponsor-${idx}-link`)) el(`sponsor-${idx}-link`).value = s.link || '';
+        if (el(`sponsor-${idx}-alt`)) el(`sponsor-${idx}-alt`).value = s.alt || '';
+        if (el(`sponsor-${idx}-type`)) el(`sponsor-${idx}-type`).value = s.type || 'affiliate';
+        if (el(`sponsor-${idx}-start`)) el(`sponsor-${idx}-start`).value = s.start || '';
+        if (el(`sponsor-${idx}-end`)) el(`sponsor-${idx}-end`).value = s.end || '';
+        if (el(`sponsor-${idx}-active`)) el(`sponsor-${idx}-active`).checked = s.active !== false;
+      });
+    }
+
+    // Blog Generator
+    function autoGenerateSlug() {
+      const title = document.getElementById('blog-title').value;
+      const slug = title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+      document.getElementById('blog-slug').value = slug;
+    }
+
+    function generateBlogFromNewsletter() {
+      const sel = getNewsletterSelections();
+      const attr = (venueData.attractions||[]).find(x => x.id === sel.attractionId);
+      const rest = (venueData.restaurants||[]).find(x => x.id === sel.restaurantId);
+      const pub = (venueData.nightlife||[]).find(x => x.id === sel.pubId);
+      const title = `London Weekly: ${[attr,rest,pub].filter(Boolean).map(v=>v.name).join(', ')}`;
+      document.getElementById('blog-title').value = title;
+      autoGenerateSlug();
+      document.getElementById('blog-category').value = 'weekly-roundup';
+      document.getElementById('blog-meta').value = `This week's London picks: ${[attr,rest,pub].filter(Boolean).map(v=>v.name).join(', ')}. Your insider guide to the best of London.`;
+      let preview = '<h2>' + title + '</h2>';
+      if (attr) preview += `<h3>Featured Attraction: ${attr.name}</h3><p>${attr.description||'A must-visit London attraction.'}</p>`;
+      if (rest) preview += `<h3>Featured Restaurant: ${rest.name}</h3><p>${rest.description||'A top London dining pick.'}</p>`;
+      if (pub) preview += `<h3>Featured Pub: ${pub.name}</h3><p>${pub.description||'A great London pub to discover.'}</p>`;
+      document.getElementById('blog-content-preview').innerHTML = preview;
+      showStatus('Blog generated from newsletter selections.');
+    }
+
+    function previewBlogNewTab() {
+      const content = document.getElementById('blog-content-preview').innerHTML;
+      const title = document.getElementById('blog-title').value || 'Blog Preview';
+      const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${title}</title><style>body{font-family:system-ui,sans-serif;max-width:700px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1a1a2e;}h2{color:#1a1a2e;}h3{color:#c9a227;}</style></head><body>${content}</body></html>`;
+      const w = window.open(); w.document.write(html); w.document.close();
+    }
+
+    function downloadBlogHTML() {
+      const content = document.getElementById('blog-content-preview').innerHTML;
+      const title = document.getElementById('blog-title').value || 'blog-post';
+      const slug = document.getElementById('blog-slug').value || 'blog-post';
+      const meta = document.getElementById('blog-meta').value || '';
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${title} — UK & London Planner</title><meta name="description" content="${meta}"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"></head><body><main style="max-width:700px;margin:2rem auto;padding:0 1.5rem;">${content}</main></body></html>`;
+      const blob = new Blob([html], { type: 'text/html' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `${slug}.html`; a.click();
+      showStatus(`Blog HTML downloaded: ${slug}.html`);
+    }
+
+    // Social Media
+    function updateCharCount() {
+      const text = document.getElementById('social-post-text').value;
+      document.getElementById('social-char-count').textContent = text.length;
+      const twitterChecked = document.getElementById('social-twitter').checked;
+      document.getElementById('social-char-limit').textContent = twitterChecked ? '(Twitter/X limit: 280)' : '';
+      if (twitterChecked && text.length > 280) {
+        document.getElementById('social-char-count').style.color = 'var(--color-error)';
+      } else {
+        document.getElementById('social-char-count').style.color = '';
+      }
+    }
+
+    function generateSocialFromNewsletter() {
+      const sel = getNewsletterSelections();
+      const attr = (venueData.attractions||[]).find(x => x.id === sel.attractionId);
+      const rest = (venueData.restaurants||[]).find(x => x.id === sel.restaurantId);
+      const pub = (venueData.nightlife||[]).find(x => x.id === sel.pubId);
+      const parts = [];
+      if (attr) parts.push(attr.name);
+      if (rest) parts.push(rest.name);
+      if (pub) parts.push(pub.name);
+      const post = parts.length > 0
+        ? `This week's London picks:\n\n${parts.map(p => '- ' + p).join('\n')}\n\nRead more in our latest newsletter!\n\n#London #Travel #LondonGuide`
+        : 'Check out our latest London newsletter with top picks for attractions, dining, and pubs!\n\n#London #Travel #LondonGuide';
+      document.getElementById('social-post-text').value = post;
+      updateCharCount();
+      showStatus('Social post generated from newsletter.');
+    }
+
+    function copySocialText() {
+      const text = document.getElementById('social-post-text').value;
+      navigator.clipboard.writeText(text).then(() => showStatus('Post text copied to clipboard.'));
+    }
+
+    function pushToGHLSocial() {
+      const text = document.getElementById('social-post-text').value;
+      const date = document.getElementById('social-schedule-date').value;
+      const time = document.getElementById('social-schedule-time').value;
+      const platforms = [];
+      if (document.getElementById('social-facebook').checked) platforms.push('facebook');
+      if (document.getElementById('social-instagram').checked) platforms.push('instagram');
+      if (document.getElementById('social-twitter').checked) platforms.push('twitter');
+      if (!text.trim()) { showStatus('Write or generate a post first.'); return; }
+      GHL.sendToWebhook('promotionsNewsletter', {
+        type: 'social_post',
+        text,
+        platforms,
+        scheduledDate: date,
+        scheduledTime: time
+      }).then(r => {
+        showStatus(r.demo ? 'Social post logged (demo mode — configure GHL webhook).' : 'Social post pushed to GoHighLevel.');
+      });
+    }
+
+    // Content Library
+    function switchContentTab(tab) {
+      document.querySelectorAll('[data-subtab]').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.content-subtab').forEach(p => p.style.display = 'none');
+      document.querySelector(`[data-subtab="${tab}"]`).classList.add('active');
+      document.getElementById(`subtab-${tab}`).style.display = 'block';
+    }
+
+    function getContentLibrary() {
+      return JSON.parse(localStorage.getItem(CONTENT_LIBRARY_KEY) || '{"trivia":[],"polls":[],"advice":[]}');
+    }
+
+    function saveContentLibrary(lib) {
+      localStorage.setItem(CONTENT_LIBRARY_KEY, JSON.stringify(lib));
+    }
+
+    function renderContentLibrary() {
+      const lib = getContentLibrary();
+      renderContentList('trivia', lib.trivia || []);
+      renderContentList('polls', lib.polls || []);
+      renderContentList('advice', lib.advice || []);
+    }
+
+    function renderContentList(type, items) {
+      const container = document.getElementById(`${type}-list`);
+      if (!container) return;
+      if (items.length === 0) {
+        container.innerHTML = `<p style="color:var(--color-text-muted);font-size:0.85rem;">No ${type} items yet.</p>`;
+        return;
+      }
+      container.innerHTML = items.map((item, i) => `
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid var(--color-border);font-size:0.85rem;">
+          <span>${item.title || item.question || 'Item ' + (i+1)}</span>
+          <div style="display:flex;gap:0.5rem;">
+            <button class="btn btn--outline btn--small" onclick="deleteContentItem('${type}',${i})" style="color:var(--color-error);border-color:var(--color-error);font-size:0.7rem;">Delete</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addContentItem(type) {
+      document.getElementById(`${type}-add-form`).style.display = 'block';
+    }
+
+    function cancelContentAdd(type) {
+      document.getElementById(`${type}-add-form`).style.display = 'none';
+    }
+
+    function saveContentItem(type) {
+      const lib = getContentLibrary();
+      if (type === 'trivia') {
+        lib.trivia.push({
+          question: document.getElementById('trivia-new-question').value,
+          answer: document.getElementById('trivia-new-answer').value,
+          category: document.getElementById('trivia-new-category').value
+        });
+        document.getElementById('trivia-new-question').value = '';
+        document.getElementById('trivia-new-answer').value = '';
+        document.getElementById('trivia-new-category').value = '';
+      } else if (type === 'polls') {
+        const options = [
+          document.getElementById('polls-new-optionA').value,
+          document.getElementById('polls-new-optionB').value,
+          document.getElementById('polls-new-optionC').value,
+          document.getElementById('polls-new-optionD').value
+        ].filter(Boolean);
+        lib.polls.push({
+          question: document.getElementById('polls-new-question').value,
+          options
+        });
+        document.getElementById('polls-new-question').value = '';
+        document.getElementById('polls-new-optionA').value = '';
+        document.getElementById('polls-new-optionB').value = '';
+        document.getElementById('polls-new-optionC').value = '';
+        document.getElementById('polls-new-optionD').value = '';
+      } else if (type === 'advice') {
+        lib.advice.push({
+          title: document.getElementById('advice-new-title').value,
+          summary: document.getElementById('advice-new-summary').value,
+          category: document.getElementById('advice-new-category').value
+        });
+        document.getElementById('advice-new-title').value = '';
+        document.getElementById('advice-new-summary').value = '';
+        document.getElementById('advice-new-category').value = '';
+      }
+      saveContentLibrary(lib);
+      renderContentLibrary();
+      cancelContentAdd(type);
+      showStatus(`${type.charAt(0).toUpperCase() + type.slice(1)} item added.`);
+    }
+
+    function deleteContentItem(type, index) {
+      if (!confirm('Delete this item?')) return;
+      const lib = getContentLibrary();
+      if (lib[type]) { lib[type].splice(index, 1); }
+      saveContentLibrary(lib);
+      renderContentLibrary();
+      showStatus('Item deleted.');
+    }
+
+    function importContentJSON() {
+      document.getElementById('content-import-file').click();
+    }
+
+    function handleContentImport(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const data = JSON.parse(e.target.result);
+          saveContentLibrary(data);
+          renderContentLibrary();
+          showStatus('Content library imported.');
+        } catch(err) {
+          showStatus('Import failed: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
+    function exportContentJSON() {
+      const lib = getContentLibrary();
+      downloadJSON(lib, 'promotions-content-library.json');
+      showStatus('Content library exported.');
+    }
+
+    // Featured History
+    function recordFeaturedHistory(selections) {
+      const history = JSON.parse(localStorage.getItem(FEATURED_HISTORY_KEY) || '[]');
+      const date = selections.sendDate || new Date().toISOString().split('T')[0];
+      if (selections.attractionId) {
+        const v = (venueData.attractions||[]).find(x => x.id === selections.attractionId);
+        if (v) history.push({ date, venue: v.name, venueId: v.id, type: 'Attraction', medium: 'Newsletter' });
+      }
+      if (selections.restaurantId) {
+        const v = (venueData.restaurants||[]).find(x => x.id === selections.restaurantId);
+        if (v) history.push({ date, venue: v.name, venueId: v.id, type: 'Restaurant', medium: 'Newsletter' });
+      }
+      if (selections.pubId) {
+        const v = (venueData.nightlife||[]).find(x => x.id === selections.pubId);
+        if (v) history.push({ date, venue: v.name, venueId: v.id, type: 'Pub', medium: 'Newsletter' });
+      }
+      localStorage.setItem(FEATURED_HISTORY_KEY, JSON.stringify(history));
+      renderFeaturedHistory();
+    }
+
+    function renderFeaturedHistory() {
+      const history = JSON.parse(localStorage.getItem(FEATURED_HISTORY_KEY) || '[]');
+      const tbody = document.getElementById('featured-history-body');
+      if (!tbody) return;
+      if (history.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:var(--color-text-muted);padding:2rem;">No featured history yet. Venues will appear here once newsletters are sent.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = history.slice().reverse().map(h => `
+        <tr>
+          <td>${h.date}</td>
+          <td>${h.venue}</td>
+          <td><span class="badge badge--accent">${h.type}</span></td>
+          <td>${h.medium}</td>
+        </tr>
+      `).join('');
+    }
+
+    function clearFeaturedHistory() {
+      if (!confirm('Clear all featured history? This cannot be undone.')) return;
+      localStorage.removeItem(FEATURED_HISTORY_KEY);
+      renderFeaturedHistory();
+      showStatus('Featured history cleared.');
+    }
   </script>
 </body>
 </html>

@@ -1,0 +1,333 @@
+{
+  "trivia": [
+    {
+      "id": "trivia-001",
+      "question": "How deep is the deepest Tube station in London?",
+      "options": ["42 metres", "58 metres", "67 metres", "76 metres"],
+      "answer": "58 metres",
+      "funFact": "Hampstead station on the Northern line is 58.5 metres deep, making it the deepest station on the entire Underground network. Its lifts take about a minute to reach the platform.",
+      "category": "transport"
+    },
+    {
+      "id": "trivia-002",
+      "question": "What year did the Great Fire of London occur?",
+      "options": ["1656", "1666", "1676", "1686"],
+      "answer": "1666",
+      "funFact": "The Great Fire of London in 1666 destroyed 13,200 houses and 87 churches over four days, but officially only six people were recorded as dying. It started in a bakery on Pudding Lane.",
+      "category": "history"
+    },
+    {
+      "id": "trivia-003",
+      "question": "Approximately how many languages are spoken in London?",
+      "options": ["Over 100", "Over 200", "Over 300", "Over 400"],
+      "answer": "Over 300",
+      "funFact": "London is one of the most linguistically diverse cities on the planet, with over 300 languages spoken. After English, the most commonly spoken languages include Bengali, Polish, and Gujarati.",
+      "category": "culture"
+    },
+    {
+      "id": "trivia-004",
+      "question": "What is the oldest restaurant in London, continuously operating since 1798?",
+      "options": ["Simpson's in the Strand", "Rules", "Wiltons", "The Ritz"],
+      "answer": "Rules",
+      "funFact": "Rules in Covent Garden opened in 1798, making it London's oldest restaurant. It specialises in classic British cuisine and game, and has hosted guests from Charles Dickens to King Edward VII.",
+      "category": "food"
+    },
+    {
+      "id": "trivia-005",
+      "question": "How many bridges cross the Thames in Greater London?",
+      "options": ["15", "23", "33", "45"],
+      "answer": "33",
+      "funFact": "There are 33 bridges crossing the Thames in London, from Hampton Court Bridge in the west to the Queen Elizabeth II Bridge in the east. Tower Bridge, completed in 1894, is the most iconic.",
+      "category": "architecture"
+    },
+    {
+      "id": "trivia-006",
+      "question": "Which London palace has been the official residence of the British monarch since 1837?",
+      "options": ["Kensington Palace", "St James's Palace", "Buckingham Palace", "Hampton Court Palace"],
+      "answer": "Buckingham Palace",
+      "funFact": "Buckingham Palace has 775 rooms, including 78 bathrooms, 52 royal and guest bedrooms, and 19 state rooms. The famous balcony where the Royal Family waves was added in 1854.",
+      "category": "royals"
+    },
+    {
+      "id": "trivia-007",
+      "question": "What was London's original Roman name?",
+      "options": ["Londonium", "Londinium", "Lundinium", "Londonia"],
+      "answer": "Londinium",
+      "funFact": "The Romans founded Londinium around 47 AD near the site of today's City of London. You can still see remnants of the Roman wall near Tower Hill and the Museum of London.",
+      "category": "history"
+    },
+    {
+      "id": "trivia-008",
+      "question": "How many trees are estimated to be in London?",
+      "options": ["About 2 million", "About 5 million", "About 8 million", "About 12 million"],
+      "answer": "About 8 million",
+      "funFact": "London has roughly 8 million trees, nearly one for every resident. This density of tree coverage means London technically qualifies as an urban forest under the United Nations definition.",
+      "category": "geography"
+    },
+    {
+      "id": "trivia-009",
+      "question": "Which London market has been operating since 1756 and is famous for flowers?",
+      "options": ["Borough Market", "Columbia Road", "Covent Garden", "Portobello Road"],
+      "answer": "Columbia Road",
+      "funFact": "Columbia Road Flower Market in East London operates only on Sundays from 8am to 3pm. The entire street transforms into a fragrant corridor of plants, flowers, and garden supplies.",
+      "category": "culture"
+    },
+    {
+      "id": "trivia-010",
+      "question": "What colour were London's iconic phone boxes before they were painted red?",
+      "options": ["Green", "Blue", "Silver", "Cream"],
+      "answer": "Silver",
+      "funFact": "The original K1 phone boxes designed in 1921 were painted silver with red glazing bars. The all-red design came with Giles Gilbert Scott's iconic K2 model in 1926, commissioned by the General Post Office.",
+      "category": "culture"
+    },
+    {
+      "id": "trivia-011",
+      "question": "How long is the Thames Path, which runs through London?",
+      "options": ["64 km", "117 km", "184 miles", "296 miles"],
+      "answer": "184 miles",
+      "funFact": "The Thames Path is a 184-mile National Trail running from the river's source in Gloucestershire to the Thames Barrier in Greenwich. The central London stretch from Westminster to Greenwich is one of the best urban walks in the world.",
+      "category": "geography"
+    },
+    {
+      "id": "trivia-012",
+      "question": "Which London building is informally known as 'The Gherkin'?",
+      "options": ["The Shard", "30 St Mary Axe", "20 Fenchurch Street", "The Leadenhall Building"],
+      "answer": "30 St Mary Axe",
+      "funFact": "30 St Mary Axe was designed by Norman Foster and completed in 2003. Despite its curved glass appearance, there is only one piece of curved glass in the entire building — the cap at the very top.",
+      "category": "architecture"
+    },
+    {
+      "id": "trivia-013",
+      "question": "How many Tube stations are there on the London Underground?",
+      "options": ["212", "248", "272", "305"],
+      "answer": "272",
+      "funFact": "The London Underground has 272 stations across 11 lines, making it one of the largest metro systems in the world. Despite the name, only about 45% of the network is actually underground.",
+      "category": "transport"
+    },
+    {
+      "id": "trivia-014",
+      "question": "What is the name of the traditional London dish of jellied eels?",
+      "options": ["Spotted Dick", "Jellied Eels", "Eel Pie", "Cockney Slither"],
+      "answer": "Jellied Eels",
+      "funFact": "Jellied eels have been an East London delicacy since the 18th century when eels were plentiful in the Thames. Today you can still try them at traditional pie and mash shops like M. Manze in Bermondsey, open since 1902.",
+      "category": "food"
+    },
+    {
+      "id": "trivia-015",
+      "question": "Which park is the largest of London's eight Royal Parks?",
+      "options": ["Hyde Park", "Richmond Park", "Regent's Park", "Greenwich Park"],
+      "answer": "Richmond Park",
+      "funFact": "Richmond Park covers 2,500 acres, making it the largest Royal Park in London and the largest enclosed urban park in Europe. It is home to around 630 free-roaming red and fallow deer.",
+      "category": "geography"
+    },
+    {
+      "id": "trivia-016",
+      "question": "How many coronations have taken place at Westminster Abbey?",
+      "options": ["25", "31", "39", "46"],
+      "answer": "39",
+      "funFact": "Westminster Abbey has hosted 39 coronations since William the Conqueror in 1066, the most recent being King Charles III in 2023. Every English and British monarch has been crowned there for nearly 1,000 years.",
+      "category": "royals"
+    },
+    {
+      "id": "trivia-017",
+      "question": "What is the speed limit for the Tube's oldest line, the Metropolitan line, in some sections?",
+      "options": ["25 mph", "40 mph", "60 mph", "80 mph"],
+      "answer": "60 mph",
+      "funFact": "The Metropolitan line, opened in 1863, was the world's first underground railway. On some of its straighter, above-ground sections in the north-west, trains can reach 60 mph.",
+      "category": "transport"
+    },
+    {
+      "id": "trivia-018",
+      "question": "Which London neighbourhood is known as 'Little Venice' due to its canal network?",
+      "options": ["Maida Vale", "Camden", "Islington", "Hackney"],
+      "answer": "Maida Vale",
+      "funFact": "Little Venice in Maida Vale is where the Grand Union and Regent's Canals meet, creating a picturesque area of colourful narrowboats and waterside cafes. You can take a canal boat from here all the way to Camden Lock.",
+      "category": "geography"
+    },
+    {
+      "id": "trivia-019",
+      "question": "How tall is The Shard, London's tallest building?",
+      "options": ["245 metres", "290 metres", "310 metres", "350 metres"],
+      "answer": "310 metres",
+      "funFact": "The Shard stands at 310 metres (1,016 feet) and has 95 storeys. Designed by Renzo Piano, it was completed in 2012 and its viewing platform on floors 68-72 offers views of up to 40 miles on a clear day.",
+      "category": "architecture"
+    },
+    {
+      "id": "trivia-020",
+      "question": "What is the traditional afternoon tea time in London?",
+      "options": ["2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"],
+      "answer": "4:00 PM",
+      "funFact": "Afternoon tea was popularised in the 1840s by Anna, the 7th Duchess of Bedford, who found the gap between lunch and dinner too long. Traditional afternoon tea at 4pm includes finger sandwiches, scones with clotted cream and jam, and pastries.",
+      "category": "food"
+    }
+  ],
+  "polls": [
+    {
+      "id": "poll-001",
+      "question": "Which London market is your favourite to visit?",
+      "options": ["Borough Market", "Camden Market", "Portobello Road", "Columbia Road Flower Market", "Brick Lane Market", "Greenwich Market"],
+      "category": "activities"
+    },
+    {
+      "id": "poll-002",
+      "question": "What is the best way to get around central London?",
+      "options": ["The Tube", "Walking", "Bus", "Black cab", "Santander bike", "Uber boat by Thames Clippers"],
+      "category": "travel"
+    },
+    {
+      "id": "poll-003",
+      "question": "Which London neighbourhood would you most like to stay in?",
+      "options": ["Covent Garden", "South Kensington", "Shoreditch", "Notting Hill", "Southbank", "Marylebone"],
+      "category": "neighbourhoods"
+    },
+    {
+      "id": "poll-004",
+      "question": "What is the best traditional British food to try in London?",
+      "options": ["Fish and chips", "Full English breakfast", "Sunday roast", "Afternoon tea", "Pie and mash", "Scotch egg"],
+      "category": "food"
+    },
+    {
+      "id": "poll-005",
+      "question": "Which free London museum is the most impressive?",
+      "options": ["British Museum", "Natural History Museum", "Tate Modern", "V&A", "Science Museum", "National Gallery"],
+      "category": "culture"
+    },
+    {
+      "id": "poll-006",
+      "question": "What is your ideal London rainy day activity?",
+      "options": ["Museum hopping", "Afternoon tea", "West End show", "Pub crawl", "Shopping at Harrods", "Cinema at BFI Southbank"],
+      "category": "activities"
+    },
+    {
+      "id": "poll-007",
+      "question": "Which Royal Palace would you most want to visit?",
+      "options": ["Buckingham Palace", "Tower of London", "Hampton Court Palace", "Kensington Palace", "Windsor Castle"],
+      "category": "culture"
+    },
+    {
+      "id": "poll-008",
+      "question": "What is the best London park for a relaxing afternoon?",
+      "options": ["Hyde Park", "Regent's Park", "Richmond Park", "St James's Park", "Hampstead Heath"],
+      "category": "activities"
+    },
+    {
+      "id": "poll-009",
+      "question": "Which day trip from London appeals to you the most?",
+      "options": ["Stonehenge & Bath", "Oxford", "Cambridge", "Brighton", "Cotswolds", "Canterbury"],
+      "category": "travel"
+    },
+    {
+      "id": "poll-010",
+      "question": "Which London street food cuisine would you try first?",
+      "options": ["Indian curry on Brick Lane", "Chinese in Chinatown", "Turkish in Dalston", "Caribbean in Brixton", "Vietnamese on Kingsland Road"],
+      "category": "food"
+    }
+  ],
+  "adviceArticles": [
+    {
+      "id": "advice-001",
+      "title": "Oyster Card vs Contactless: Which Should You Use?",
+      "body": "If you have a contactless bank card from Visa, Mastercard, or Amex, you almost certainly do not need an Oyster card. Contactless payments work on the Tube, buses, DLR, Overground, and Elizabeth line, and the daily and weekly fare caps are identical to Oyster. Simply tap in and tap out the same way you would with an Oyster card.\n\nThe main advantage of contactless is convenience — no queuing to top up, no leftover balance to reclaim when you leave, and Apple Pay or Google Pay work too. One important note: make sure you always tap the same card or device for every journey, as the system calculates your cap per payment method.\n\nThere are a couple of exceptions where Oyster still makes sense. If your bank charges foreign transaction fees, loading an Oyster card with cash avoids those per-trip charges. Oyster is also required if you want a Travelcard for zones beyond what you plan to use, or if you are travelling with children who qualify for free or discounted travel. For the vast majority of tourists, though, contactless is the smarter, simpler choice.",
+      "category": "transport",
+      "tags": ["oyster", "contactless", "tube", "transport", "budget"]
+    },
+    {
+      "id": "advice-002",
+      "title": "Tipping Etiquette in London: What You Actually Need to Know",
+      "body": "Tipping culture in London is far more relaxed than in the United States, but there are still a few conventions worth knowing. In restaurants, many places add an optional 12.5% service charge to your bill automatically. If service has been good, you can simply leave it. If it has not, you are completely within your rights to ask for it to be removed — it is optional by law.\n\nIf no service charge is added, a tip of 10-15% is appreciated but never mandatory. For pubs, you do not tip when ordering drinks at the bar — it is not expected and would look unusual. However, if you eat a sit-down meal at a pub with table service, a small tip is a nice gesture.\n\nFor black cabs, rounding up to the nearest pound or adding 10% is common but not required. Hotel porters usually receive one to two pounds per bag. Tour guides appreciate a few pounds if you enjoyed the experience. The key thing to remember is that hospitality workers in London earn at least the National Living Wage, so tips are a bonus rather than a necessity.",
+      "category": "culture",
+      "tags": ["tipping", "etiquette", "restaurants", "pubs", "budget"]
+    },
+    {
+      "id": "advice-003",
+      "title": "How to Make the Most of London's Free Museums",
+      "body": "London has one of the best free museum offerings of any city in the world. The British Museum, Natural History Museum, Science Museum, V&A, Tate Modern, Tate Britain, National Gallery, and National Portrait Gallery all have free permanent collections. This is an enormous amount of world-class culture available without spending a penny.\n\nThe trick to enjoying them is not trying to see everything in one go. Each of these museums could easily fill an entire day if you let it. Instead, pick two or three galleries or exhibits that genuinely interest you and spend an hour or two with them. You can always come back. Most museums also have free daily tours or talks — check the information desk when you arrive.\n\nBe aware that while permanent collections are free, special temporary exhibitions almost always charge admission, often between fifteen and twenty-five pounds. These can be excellent but book online in advance as they frequently sell out. If you are on a budget, skip the special exhibitions and focus on the permanent collections, which honestly contain some of the greatest artefacts and artworks on the planet. Arrive early in the morning or after 3pm to avoid the worst crowds.",
+      "category": "culture",
+      "tags": ["museums", "free", "budget", "culture", "attractions"]
+    },
+    {
+      "id": "advice-004",
+      "title": "Getting Cheap West End Theatre Tickets: A Practical Guide",
+      "body": "West End theatre tickets do not have to break the bank. The most reliable method for discounts is the TKTS booth in Leicester Square, run by the Society of London Theatre. It sells same-day and next-day tickets for a wide range of shows at up to 50% off, and there is no booking fee. Arrive when it opens at 10am for the best selection.\n\nMany shows also run their own lottery or rush ticket schemes. Hamilton, for example, offers a digital lottery for forty-pound front-row tickets. Check the website of the specific show you want to see, as these deals are not always widely advertised. The TodayTix app is another good resource that aggregates last-minute deals and lottery entries in one place.\n\nIf you are flexible about what you see, day seats are another excellent option. Some theatres release a limited number of cheap seats when the box office opens each morning, typically around ten to twenty-five pounds. You will need to queue early, but for popular shows it is a great way to get premium seats at a fraction of the price. Finally, midweek performances are nearly always cheaper than Friday or Saturday evening shows.",
+      "category": "budget",
+      "tags": ["theatre", "west-end", "budget", "entertainment", "tickets"]
+    },
+    {
+      "id": "advice-005",
+      "title": "Pub Etiquette: How to Order and Behave Like a Local",
+      "body": "British pubs have their own unwritten rules, and knowing them will make your experience much smoother. The most important one: you order and pay at the bar, not at your table. Walk up, wait your turn, and make eye contact with the bartender when they are ready. Do not wave money or shout to get attention — the bar staff know who arrived first and will serve people in order.\n\nWhen ordering, it helps to know the basics. A pint is the standard measure for beer and cider. If you want something smaller, ask for a half. If you are in a group, it is customary to buy rounds — one person buys drinks for everyone, and you take turns throughout the evening. Opting out of the round is considered poor form.\n\nMost pubs serve food, and many do an excellent Sunday roast. Last orders for drinks are typically called at 11pm on weeknights and midnight on weekends, though hours vary. If you hear the bell or a shout of 'last orders,' you have about fifteen minutes to get your final drink. Do not expect to be rushed out immediately after closing time — there is usually a bit of grace for finishing up. And remember, tipping at the bar is not expected.",
+      "category": "culture",
+      "tags": ["pubs", "etiquette", "drinks", "culture", "food"]
+    },
+    {
+      "id": "advice-006",
+      "title": "The Best Times to Visit London's Popular Markets",
+      "body": "London's markets are a highlight of any visit, but timing can make or break the experience. Borough Market is open Tuesday to Saturday, but the best time to go is early on a weekday morning — arrive by 10am on a Wednesday or Thursday and you will have space to browse and sample without the weekend crush. Saturday mornings are packed from opening.\n\nColumbia Road Flower Market only operates on Sundays from 8am to 3pm. Get there at 8am for the full selection and a relaxed atmosphere, or arrive after 2pm when vendors start slashing prices to avoid taking stock home. Camden Market is open daily but weekends are the busiest. Weekday afternoons offer a much calmer experience with all the same stalls open.\n\nPortobello Road in Notting Hill is at its best on Saturday mornings when the full antiques market runs. Arrive before 9am to beat the tourist crowds and have first pick of the vintage finds. Brick Lane Market in East London peaks on Sundays, and the surrounding food stalls and vintage shops make it worth combining with a visit to the nearby Spitalfields Market. Whatever market you visit, bring cash for the smaller stalls, though card payments are increasingly common.",
+      "category": "shopping",
+      "tags": ["markets", "shopping", "food", "timing", "planning"]
+    },
+    {
+      "id": "advice-007",
+      "title": "Rainy Day Plans: What to Do When London Weather Strikes",
+      "body": "Rain in London is not a question of if but when, so having a backup plan is essential. The good news is that London is possibly the best city in the world for rainy day activities. The free museums alone could fill a week of wet weather, but there are plenty of other options too.\n\nA West End matinee is a classic choice — afternoon shows typically start at 2:30pm and get you off the streets for a couple of hours. Afternoon tea at a hotel or tea room is another quintessentially London experience that works perfectly when it is grey outside. Book ahead for popular spots like The Wolseley or Sketch.\n\nFor something more active, try one of London's covered food halls or arcades. The food hall at Harrods is an attraction in itself, and the Burlington Arcade in Mayfair is a beautiful covered shopping passage. If you are near the Southbank, the BFI Southbank cinema shows classic and independent films all day. And never underestimate the appeal of simply finding a cosy pub with a fireplace and settling in with a pint. London pubs were practically designed for rainy afternoons. Always carry a compact umbrella or a light waterproof jacket — locals rarely use full-size umbrellas.",
+      "category": "planning",
+      "tags": ["rain", "weather", "indoor", "planning", "activities"]
+    },
+    {
+      "id": "advice-008",
+      "title": "How to Use the London Bus Network Like a Pro",
+      "body": "While the Tube gets most of the attention, London's bus network is extensive, affordable, and one of the best ways to actually see the city. A single bus journey costs £1.75 and there is a daily cap of £5.25 on bus-only travel. The Hopper fare lets you make unlimited bus transfers within an hour of your first tap for just one fare.\n\nUnlike the Tube, buses let you see London's landmarks as you travel. The number 11 bus from Liverpool Street to Fulham Broadway passes St Paul's Cathedral, Trafalgar Square, Westminster, and the King's Road. The RV1 runs from Covent Garden along the South Bank past the Tate Modern and Tower Bridge. These routes cost a fraction of a sightseeing bus tour.\n\nA few practical tips: buses are cashless, so you must use contactless or Oyster to board. Enter through the front door and tap your card on the reader. If you are unsure of your stop, sit on the upper deck for better views and use Google Maps or Citymapper to track your location. Night buses, prefixed with 'N', run through the night and are invaluable after the Tube closes. The bus stop displays show estimated arrival times, and the TfL Go app gives you real-time tracking for every route.",
+      "category": "transport",
+      "tags": ["buses", "transport", "budget", "sightseeing", "tips"]
+    },
+    {
+      "id": "advice-009",
+      "title": "Staying Safe in London: Practical Tips for Tourists",
+      "body": "London is one of the safest major cities in the world, but like any large city, a little common sense goes a long way. Pickpocketing is the most common crime affecting tourists, and it tends to happen in crowded places like Oxford Street, the Tube, and busy markets. Keep your phone in a zipped pocket or bag, carry your bag in front of you in crowds, and be aware of your surroundings.\n\nAvoid unlicensed minicabs, especially late at night. Licensed black cabs are safe and can be hailed on the street — look for the orange 'For Hire' light. If you want a private hire car, book through a licensed app like Uber, Bolt, or Free Now. Never accept a ride from someone who approaches you outside a club or station offering a taxi.\n\nIf you need help, London has an excellent emergency infrastructure. Dial 999 for emergencies or 111 for non-urgent medical advice. The NHS provides free emergency treatment at A&E departments regardless of your nationality. For non-emergencies, the Metropolitan Police can be reached on 101. Keep a photo of your passport on your phone in case the original is lost or stolen, and make sure your travel insurance covers medical expenses and personal belongings.",
+      "category": "safety",
+      "tags": ["safety", "pickpockets", "taxis", "emergency", "tips"]
+    },
+    {
+      "id": "advice-010",
+      "title": "Eating Well in London Without Spending a Fortune",
+      "body": "London has a reputation for being expensive, but eating well on a budget is absolutely possible if you know where to look. Market food stalls are your best friend — Borough Market, Mercato Metropolitano, and Kerb at Seven Dials Market all offer high-quality meals for eight to twelve pounds. Street food in London is world-class, and a meal from a market stall often rivals sit-down restaurants.\n\nFor sit-down dining, look for lunch deals and pre-theatre menus. Many restaurants in areas like Soho and Covent Garden offer two or three courses for fifteen to twenty-five pounds at lunchtime, serving the same food that would cost double at dinner. Chains like Dishoom, Padella, and Bao offer incredible food at reasonable prices, though you may need to queue.\n\nSupermarkets are another smart option. Marks & Spencer, Sainsbury's, and Tesco meal deals offer a sandwich, snack, and drink for around four to five pounds and the quality is genuinely good. For breakfast, skip the hotel restaurant and find a local greasy spoon cafe for a full English — it will cost around six to eight pounds and be far more authentic. Finally, most pubs serve hearty meals for ten to fifteen pounds, and a Sunday roast at a good pub is one of London's most underrated dining experiences.",
+      "category": "food",
+      "tags": ["food", "budget", "restaurants", "markets", "street-food"]
+    },
+    {
+      "id": "advice-011",
+      "title": "Understanding London's Zones and Planning Your Travel",
+      "body": "London's transport network is divided into nine fare zones, radiating outward from Zone 1 in the centre. Most tourist attractions fall within Zones 1 and 2, and the vast majority of visitors never need to travel beyond Zone 2 unless visiting places like Kew Gardens (Zone 3), Wimbledon (Zone 3), or Hampton Court (Zone 6).\n\nFare zone awareness matters because your Tube and rail fares are calculated based on which zones you travel through. A journey within Zone 1 is the cheapest, and the price increases as you cross more zones. The daily cap for Zones 1-2 is around eight pounds with contactless or Oyster, which means once you hit that cap, all further journeys that day are free.\n\nWhen choosing your accommodation, staying in Zone 1 puts you within walking distance of most landmarks but comes at a premium. Zones 2 and 3 often offer better value hotels with a short Tube ride to the centre. Areas like Shoreditch, Brixton, and Greenwich are in Zone 2 and have thriving food and nightlife scenes of their own. Use the TfL Journey Planner or Citymapper app to check travel times — you will often find that a Zone 2 hotel is only ten to fifteen minutes further than a Zone 1 option at half the price.",
+      "category": "transport",
+      "tags": ["zones", "transport", "planning", "accommodation", "budget"]
+    },
+    {
+      "id": "advice-012",
+      "title": "Planning a Day Trip from London by Train",
+      "body": "London is perfectly positioned for day trips, with fast trains reaching dozens of historic towns and cities. Bath, Oxford, Cambridge, Brighton, Canterbury, and Stratford-upon-Avon are all reachable in under two hours. The key to making day trips affordable is booking train tickets in advance — walk-up fares can be three to four times the price of an advance ticket booked two to four weeks ahead.\n\nUse Trainline or National Rail to search for cheap advance fares, which are available on most routes. For example, an advance return to Bath from Paddington can cost around twenty to thirty pounds, versus over sixty pounds on the day. If you are flexible with times, travelling outside peak hours (before 9:30am and after 4pm on weekdays) saves significantly.\n\nWhen planning your day, aim to catch a train by 8:30am to maximise your time. Most of these destinations are compact enough to explore on foot once you arrive. Bring a packed lunch from a supermarket to save money, and check whether any attractions require advance booking. If you are visiting multiple places during your trip, a BritRail pass can offer savings, but do the maths first — individual advance tickets are sometimes cheaper depending on your specific itinerary.",
+      "category": "planning",
+      "tags": ["day-trips", "trains", "planning", "budget", "transport"]
+    },
+    {
+      "id": "advice-013",
+      "title": "London Shopping: From High Street to Hidden Gems",
+      "body": "London offers shopping for every budget and taste, from world-famous department stores to tucked-away vintage boutiques. Oxford Street is the most well-known shopping destination, but locals tend to avoid it due to the crowds. Regent Street and Bond Street offer a more pleasant experience with higher-end shops and better architecture.\n\nFor unique finds, head to the independent shops in areas like Marylebone High Street, Seven Dials in Covent Garden, or Lamb's Conduit Street in Bloomsbury. These streets are lined with boutiques, bookshops, and specialty stores that you will not find anywhere else. If vintage and secondhand shopping is your thing, Brick Lane, Portobello Road, and the charity shops of Notting Hill and Islington are treasure troves.\n\nA few money-saving tips: international visitors from non-UK countries can no longer claim VAT refunds since Brexit, so the price you see is the price you pay. For designer bargains, check out the Bicester Village outlet centre, about an hour from London by train. Department stores like Liberty, Selfridges, and Fortnum & Mason are worth visiting even if you do not buy anything — they are architectural landmarks and cultural experiences in their own right.",
+      "category": "shopping",
+      "tags": ["shopping", "vintage", "markets", "fashion", "budget"]
+    },
+    {
+      "id": "advice-014",
+      "title": "Walking London: The Best Routes for First-Time Visitors",
+      "body": "London is one of the great walking cities, and covering the major landmarks on foot is not only free but gives you a far better sense of the city than the Tube ever could. A classic first-day walk starts at Westminster Bridge for views of Big Ben and the Houses of Parliament, then crosses to the South Bank, passing the London Eye, Tate Modern, and Shakespeare's Globe before crossing the Millennium Bridge to St Paul's Cathedral.\n\nAnother excellent route begins at Buckingham Palace, walks through St James's Park to Trafalgar Square, continues up to Covent Garden, and ends in the British Museum. This covers about three miles and takes two to three hours with photo stops. For something less touristy, walk along the Regent's Canal from Little Venice to Camden Lock — it is peaceful, photogenic, and entirely flat.\n\nComfortable shoes are essential. London's pavements are unforgiving, and you will walk far more than you expect — most visitors average fifteen to twenty thousand steps per day. Download a map app that works offline in case you lose signal, and keep an eye out for the blue plaques on buildings that mark where famous historical figures lived. They turn an ordinary walk into an informal history lesson.",
+      "category": "planning",
+      "tags": ["walking", "sightseeing", "free", "routes", "landmarks"]
+    },
+    {
+      "id": "advice-015",
+      "title": "London with Kids: How to Keep Everyone Happy",
+      "body": "London is a surprisingly brilliant city for families. Children under 11 travel free on the Tube, buses, and DLR when accompanied by an adult, which immediately takes the sting out of transport costs. The free museums are another huge advantage — the Natural History Museum with its dinosaur galleries, the Science Museum with its interactive exhibits, and the V&A Museum of Childhood in Bethnal Green are all fantastic for kids.\n\nFor outdoor fun, the Diana Memorial Playground in Kensington Gardens is one of London's best playgrounds, featuring a giant wooden pirate ship. The London Zoo in Regent's Park is a classic family day out, and the Sea Life London Aquarium near the London Eye is perfect for younger children. If the weather cooperates, a boat ride on the Thames from Westminster to Greenwich combines transport with sightseeing.\n\nPractical tips for families: most restaurants are child-friendly and many offer kids' menus for around five to seven pounds. Avoid rush hour on the Tube with a pushchair — it is genuinely difficult to navigate the crowds and many stations lack step-free access. The TfL website has a step-free Tube map that is essential for planning routes with pushchairs. Finally, book any paid attractions online in advance to skip the queues, as children's patience for queuing is famously limited.",
+      "category": "planning",
+      "tags": ["kids", "families", "free", "museums", "planning", "budget"]
+    }
+  ]
+}
