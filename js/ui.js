@@ -15,7 +15,7 @@ const UI = {
 
     const curr = CurrencyConverter.get();
     const _t = (key, fallback) => typeof I18N !== 'undefined' ? I18N.t(key) : fallback;
-    const langSelector = typeof I18N !== 'undefined' ? I18N.renderLanguageSelector() : '';
+    const langSelector = '';
     header.innerHTML = `
       <a href="#main-content" class="skip-link">Skip to main content</a>
       <div class="header__inner">
@@ -30,9 +30,6 @@ const UI = {
           <a href="whats-on.html">${_t('nav.whatsOn', "What's On")}</a>
           <a href="book-services.html">${_t('nav.bookServices', 'Book Services')}</a>
           <a href="my-trips.html">${_t('nav.myTrips', 'My Trips')}</a>
-          <div class="lang-selector" style="display:flex;align-items:center;gap:4px;">
-            ${langSelector}
-          </div>
           <div class="currency-selector">
             <select id="currency-select" aria-label="${_t('currency.selectLabel', 'Select currency')}">
               ${Object.keys(CONFIG.currencies).map(c =>
