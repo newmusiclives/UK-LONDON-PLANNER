@@ -93,8 +93,8 @@ function renderItinerary(itinerary, isPaid, price) {
         `).join('')}
       </div>
 
-      <!-- Hotel Recommendation -->
-      ${itinerary.hotel ? renderHotelCard(itinerary.hotel) : ''}
+      <!-- Hotel Options -->
+      ${itinerary.hotels && itinerary.hotels.length > 1 ? renderHotelOptions(itinerary.hotels) : (itinerary.hotel ? renderHotelCard(itinerary.hotel) : '')}
 
       <!-- Booking Widgets -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;" id="booking-widgets-row">
@@ -106,7 +106,7 @@ function renderItinerary(itinerary, isPaid, price) {
       <div id="days-container">
         ${itinerary.days.map((day, index) => {
           const locked = !isPaid && index >= 2;
-          return renderDayCard(day, locked);
+          return renderDayCard(day, locked, itinerary.hotel?.neighbourhood);
         }).join('')}
       </div>
 
@@ -269,13 +269,45 @@ function renderHotelCard(hotel) {
   `;
 }
 
-function renderDayCard(day, locked) {
+function renderHotelOptions(hotels) {
+  const labels = ['Top Pick', 'Great Alternative', 'Also Consider'];
+  return `
+    <div style="margin:0 0 2rem;">
+      <div style="font-weight:700;font-size:1.1rem;margin-bottom:1rem;color:var(--color-primary);">🏨 Accommodation Options</div>
+      <p style="color:var(--color-text-muted);font-size:0.85rem;margin-bottom:1.25rem;">We've selected ${hotels.length} options in case your first choice is unavailable.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1rem;">
+        ${hotels.map((hotel, i) => `
+          <div class="hotel-card" style="margin:0;${i === 0 ? 'border:2px solid var(--color-accent);' : ''}">
+            <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:${i === 0 ? 'var(--color-accent)' : 'var(--color-text-muted)'};margin-bottom:0.5rem;">${labels[i] || 'Option ' + (i+1)}</div>
+            <h3 style="margin-bottom:0.5rem;font-size:1.1rem;">${hotel.name}</h3>
+            <p style="color:var(--color-text-muted);font-size:0.85rem;margin-bottom:0.75rem;">${hotel.description}</p>
+            <div class="activity__details" style="margin-bottom:0.75rem;">
+              <span class="activity__detail">📍 ${hotel.neighbourhood}</span>
+              <span class="activity__detail">⭐ ${hotel.starRating}-star</span>
+              <span class="activity__detail">💰 ${hotel.priceRange}</span>
+            </div>
+            ${hotel.tips ? `<div class="activity__tip">${hotel.tips}</div>` : ''}
+            ${hotel.affiliateUrl ? `
+              <div style="margin-top:1rem;">
+                <a href="${AffiliateLinks.auto(hotel.affiliateUrl)}" target="_blank" rel="noopener" class="affiliate-cta">
+                  ${hotel.affiliateLabel || 'Check Availability'} →
+                </a>
+              </div>
+            ` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderDayCard(day, locked, hotelNeighbourhood) {
   const activities = day.activities || [];
   const dailyCost = day.dailyCost || activities.reduce((sum, a) => sum + (a.estimatedCostValue || 0), 0);
   const dayColors = ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C', '#E67E22', '#34495E'];
   const mapColor = dayColors[(day.dayNumber - 1) % dayColors.length];
   const mapId = `day-map-${day.dayNumber}`;
-  const travelHtml = typeof DayMap !== 'undefined' ? DayMap.renderTravelDirections(activities) : '';
+  const travelHtml = typeof DayMap !== 'undefined' ? DayMap.renderTravelDirections(activities, hotelNeighbourhood) : '';
 
   return `
     <div class="day-card ${locked ? 'day-card--locked' : ''}" id="day-${day.dayNumber}">
@@ -654,12 +686,22 @@ function buildPDFContent(itinerary) {
       <p style="color:#666; font-size:11pt; margin:8px 0 0;">${itinerary.tripDays} Days | Created ${new Date(itinerary.generatedAt).toLocaleDateString()}</p>
     </div>
 
-    ${itinerary.hotel ? `
+    ${itinerary.hotels && itinerary.hotels.length > 0 ? `
+      <div style="background:#f5f3ee; padding:15px; border-radius:8px; margin-bottom:25px;">
+        <h3 style="font-family:Georgia,serif; color:#1B2A4A; font-size:13pt; margin:0 0 10px;">Accommodation Options</h3>
+        ${itinerary.hotels.map((h, i) => `
+          <div style="margin-bottom:${i < itinerary.hotels.length - 1 ? '10px; padding-bottom:10px; border-bottom:1px solid #ddd;' : '0;'}">
+            <p style="font-weight:bold; color:#1B2A4A; font-size:11pt; margin:0 0 3px;">${i === 0 ? '★ ' : ''}${h.name}</p>
+            <p style="color:#666; font-size:10pt; margin:0;">${h.neighbourhood} | ${h.priceRange} | ${h.address || ''}</p>
+          </div>
+        `).join('')}
+      </div>
+    ` : (itinerary.hotel ? `
       <div style="background:#f5f3ee; padding:15px; border-radius:8px; margin-bottom:25px;">
         <h3 style="font-family:Georgia,serif; color:#1B2A4A; font-size:13pt; margin:0 0 5px;">Recommended Hotel: ${itinerary.hotel.name}</h3>
         <p style="color:#666; font-size:10pt; margin:0;">${itinerary.hotel.neighbourhood} | ${itinerary.hotel.priceRange} | ${itinerary.hotel.address}</p>
       </div>
-    ` : ''}
+    ` : '')}
 
     ${itinerary.days.map(day => `
       <div class="pdf-day" style="page-break-inside:avoid; margin-bottom:25px;">

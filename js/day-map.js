@@ -202,25 +202,40 @@ const DayMap = {
   /**
    * Generate HTML for travel directions between activities
    */
-  renderTravelDirections(activities) {
+  renderTravelDirections(activities, hotelNeighbourhood) {
     if (!activities || activities.length < 2) return '';
 
     let html = '<div class="day-travel-directions" style="margin:0.75rem 1.5rem 0.5rem;padding:0.75rem 1rem;background:var(--color-surface-alt, #f8f7f4);border-radius:8px;border-left:3px solid var(--color-accent, #C9A84C);">';
     html += '<div style="font-weight:600;font-size:0.8rem;margin-bottom:0.5rem;color:var(--color-primary, #1B2A4A);">🗺️ Getting Around This Day</div>';
 
+    const dirRow = (icon, fromName, toName, text, border) => `
+      <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;font-size:0.78rem;${border ? 'border-bottom:1px solid var(--color-border, #e5e1d8);' : ''}">
+        <span style="min-width:1.2rem;text-align:center;">${icon}</span>
+        <span style="color:var(--color-text-muted, #6B7280);">
+          <strong>${fromName}</strong> → <strong>${toName}</strong>
+        </span>
+        <span style="margin-left:auto;white-space:nowrap;font-weight:600;color:var(--color-primary, #1B2A4A);">${text}</span>
+      </div>`;
+
+    // Hotel to first activity
+    if (hotelNeighbourhood && activities[0]?.neighbourhood) {
+      const s = this.getTravelSuggestion(hotelNeighbourhood, activities[0].neighbourhood);
+      html += dirRow(s.icon, '🏨 Hotel', activities[0].name, s.text, true);
+    }
+
+    // Between activities
     for (let i = 0; i < activities.length - 1; i++) {
       const from = activities[i];
       const to = activities[i + 1];
       const suggestion = this.getTravelSuggestion(from.neighbourhood, to.neighbourhood);
+      html += dirRow(suggestion.icon, from.name, to.name, suggestion.text, true);
+    }
 
-      html += `
-        <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;font-size:0.78rem;${i < activities.length - 2 ? 'border-bottom:1px solid var(--color-border, #e5e1d8);' : ''}">
-          <span style="min-width:1.2rem;text-align:center;">${suggestion.icon}</span>
-          <span style="color:var(--color-text-muted, #6B7280);">
-            <strong>${from.name}</strong> → <strong>${to.name}</strong>
-          </span>
-          <span style="margin-left:auto;white-space:nowrap;font-weight:600;color:var(--color-primary, #1B2A4A);">${suggestion.text}</span>
-        </div>`;
+    // Last activity back to hotel
+    if (hotelNeighbourhood && activities[activities.length - 1]?.neighbourhood) {
+      const last = activities[activities.length - 1];
+      const s = this.getTravelSuggestion(last.neighbourhood, hotelNeighbourhood);
+      html += dirRow(s.icon, last.name, '🏨 Hotel', s.text, false);
     }
 
     html += '</div>';

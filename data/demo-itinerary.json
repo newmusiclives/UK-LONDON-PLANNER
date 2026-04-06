@@ -18,12 +18,46 @@
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-southwark.html",
     "affiliateProvider": "booking",
     "affiliateLabel": "Book on Booking.com",
-    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank in minutes.",
-    "alternatives": [
-      { "name": "citizenM Tower of London", "url": "https://www.booking.com/hotel/gb/citizenm-tower-of-london.html", "provider": "booking", "why": "Similar vibe, great views of the Tower" },
-      { "name": "hub by Premier Inn Covent Garden", "url": "https://www.booking.com/hotel/gb/hub-by-premier-inn-covent-garden.html", "provider": "booking", "why": "More budget-friendly, unbeatable location" }
-    ]
+    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank in minutes."
   },
+  "hotels": [
+    {
+      "name": "The Hoxton Southwark",
+      "description": "Design-led boutique hotel with a lively lobby, rooftop bar, and excellent on-site dining.",
+      "neighbourhood": "Bankside",
+      "starRating": 4,
+      "priceRange": "£120-180/night",
+      "address": "40 Blackfriars Rd, London SE1 8PB",
+      "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-southwark.html",
+      "affiliateProvider": "booking",
+      "affiliateLabel": "Book on Booking.com",
+      "tips": "The rooftop restaurant Seabird has stunning views."
+    },
+    {
+      "name": "citizenM Tower of London",
+      "description": "Tech-forward hotel with mood-setting rooms, a buzzing canteen, and unbeatable Tower of London views.",
+      "neighbourhood": "Tower Hill",
+      "starRating": 4,
+      "priceRange": "£130-200/night",
+      "address": "40 Trinity Square, London EC3N 4DJ",
+      "affiliateUrl": "https://www.booking.com/hotel/gb/citizenm-tower-of-london.html",
+      "affiliateProvider": "booking",
+      "affiliateLabel": "Book on Booking.com",
+      "tips": "Rooftop bar has stunning Tower Bridge views."
+    },
+    {
+      "name": "hub by Premier Inn Covent Garden",
+      "description": "Compact, clever rooms in the heart of the West End. App-controlled everything and unbeatable central location.",
+      "neighbourhood": "Covent Garden",
+      "starRating": 3,
+      "priceRange": "£80-120/night",
+      "address": "110 St Martin's Lane, London WC2N 4BA",
+      "affiliateUrl": "https://www.booking.com/hotel/gb/hub-by-premier-inn-covent-garden.html",
+      "affiliateProvider": "booking",
+      "affiliateLabel": "Book on Booking.com",
+      "tips": "Walk to theatres, restaurants, and the Tube in minutes."
+    }
+  ],
   "days": [
     {
       "dayNumber": 1,

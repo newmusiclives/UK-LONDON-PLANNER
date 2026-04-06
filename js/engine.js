@@ -54,7 +54,7 @@ const Engine = {
       .sort((a, b) => b.score - a.score);
 
     const selectedTemplates = this.selectTemplates(scoredTemplates, tripDays);
-    const hotel = this.pickHotel(budget.accommodation);
+    const hotels = this.pickHotels(budget.accommodation, 3);
 
     const days = selectedTemplates.map((template, i) => {
       const dayNum = i + 1;
@@ -113,7 +113,8 @@ const Engine = {
 
     return {
       days,
-      hotel,
+      hotel: hotels[0],
+      hotels,
       tripDays,
       interests,
       budget,
@@ -268,6 +269,13 @@ const Engine = {
     const candidates = this.data.hotels.filter(h => h.budgetTier.includes(budgetTier));
     if (candidates.length === 0) return this.data.hotels[0];
     return candidates[Math.floor(Math.random() * candidates.length)];
+  },
+
+  pickHotels(budgetTier, count = 3) {
+    const candidates = this.data.hotels.filter(h => h.budgetTier.includes(budgetTier));
+    const pool = candidates.length > 0 ? candidates : this.data.hotels;
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, Math.min(count, shuffled.length));
   },
 
   generatePackingList(itinerary) {
