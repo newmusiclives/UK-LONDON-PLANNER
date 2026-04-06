@@ -581,9 +581,31 @@
       <!-- ============================================================ -->
       <div class="admin-panel" data-panel="promotions">
 
-        <!-- Section A: Newsletter Builder -->
+        <!-- Auto-Generated Issues: The London Edit -->
+        <div class="admin-section" style="border:2px solid var(--color-accent);">
+          <div class="admin-section__header" style="background:linear-gradient(135deg, var(--color-primary) 0%, #2A3F6B 100%);">
+            <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+              <div>
+                <h3 style="color:white;margin:0;">📰 The London Edit</h3>
+                <p style="color:rgba(255,255,255,0.7);font-size:0.8rem;margin:0.25rem 0 0;">Your twice-weekly London newsletter — auto-generated, seasonally curated</p>
+              </div>
+              <button class="btn btn--primary btn--small" onclick="autoGenerateWeeklyIssues()">Generate This Week's Issues</button>
+            </div>
+          </div>
+          <div class="admin-section__body">
+            <div id="auto-issues-container">
+              <p style="color:var(--color-text-muted);font-size:0.9rem;">Click "Generate This Week's Issues" to auto-create Tuesday and Friday editions with seasonally relevant venues, trivia, polls, and advice.</p>
+            </div>
+            <div id="past-issues-list" style="margin-top:1.5rem;display:none;">
+              <h4 style="margin-bottom:0.75rem;">Recent Issues</h4>
+              <div id="past-issues-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section A: Newsletter Builder (Manual) -->
         <div class="admin-section">
-          <div class="admin-section__header"><h3>Newsletter Builder</h3></div>
+          <div class="admin-section__header"><h3>Newsletter Builder (Manual Override)</h3></div>
           <div class="admin-section__body">
             <div class="field-row">
               <div class="field">
@@ -1339,7 +1361,106 @@
       if (titleInput) {
         titleInput.addEventListener('input', autoGenerateSlug);
       }
+
+      // Show any previously generated issues
+      renderSavedIssues();
     }
+
+    function autoGenerateWeeklyIssues() {
+      if (typeof AutoIssueGenerator === 'undefined') {
+        showStatus('Auto-generator not loaded.'); return;
+      }
+      const issues = AutoIssueGenerator.generateWeeklyPair();
+      if (!issues || issues.length === 0) {
+        showStatus('Could not generate issues. Make sure venue data is loaded.'); return;
+      }
+
+      const container = document.getElementById('auto-issues-container');
+      container.innerHTML = issues.map((issue, idx) => {
+        if (!issue) return '';
+        const subj = AutoIssueGenerator.getSubjectLine(issue);
+        return `
+          <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.25rem;margin-bottom:1rem;${idx === 0 ? 'border-left:4px solid var(--color-accent);' : 'border-left:4px solid var(--color-primary);'}">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;">
+              <div>
+                <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--color-accent);margin-bottom:0.25rem;">
+                  ${issue.dayOfWeek} Edition — ${issue.season}
+                </div>
+                <h4 style="margin:0 0 0.25rem;">The London Edit #${issue.issueNumber}</h4>
+                <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0;">${issue.sendDate}</p>
+              </div>
+              <div style="display:flex;gap:0.5rem;">
+                <button class="btn btn--outline btn--small" onclick="previewAutoIssue(${idx})">Preview</button>
+                <button class="btn btn--primary btn--small" onclick="publishAutoIssue(${idx})">Publish & Copy HTML</button>
+              </div>
+            </div>
+            <div style="margin-top:0.75rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;font-size:0.8rem;">
+              <div style="padding:0.5rem;background:var(--color-surface-alt);border-radius:var(--radius-sm);">
+                <strong>🏛️ Attraction</strong><br>${issue.attraction?.name || 'None'}
+              </div>
+              <div style="padding:0.5rem;background:var(--color-surface-alt);border-radius:var(--radius-sm);">
+                <strong>🍽️ Restaurant</strong><br>${issue.restaurant?.name || 'None'}
+              </div>
+              <div style="padding:0.5rem;background:var(--color-surface-alt);border-radius:var(--radius-sm);">
+                <strong>🍺 Pub</strong><br>${issue.pub?.name || 'None'}
+              </div>
+            </div>
+            <div style="margin-top:0.5rem;font-size:0.75rem;color:var(--color-text-muted);">
+              <strong>Trivia:</strong> ${issue.trivia?.question || 'None'} ·
+              <strong>Poll:</strong> ${issue.poll?.question || 'None'} ·
+              <strong>Advice:</strong> ${issue.advice?.title || 'None'}
+            </div>
+            <div style="margin-top:0.5rem;font-size:0.75rem;color:var(--color-text-muted);">
+              <strong>Subject:</strong> ${subj}
+            </div>
+          </div>`;
+      }).join('');
+
+      // Store temporarily for preview/publish
+      window._autoIssues = issues;
+      showStatus('Generated 2 issues for this week: Tuesday & Friday editions.');
+    }
+
+    function previewAutoIssue(idx) {
+      const issue = window._autoIssues?.[idx];
+      if (!issue) return;
+      const html = NewsletterBuilder.build(issue);
+      const frame = document.getElementById('newsletter-preview-frame');
+      frame.srcdoc = html;
+      document.getElementById('newsletter-preview-modal').classList.add('active');
+    }
+
+    function publishAutoIssue(idx) {
+      const issue = window._autoIssues?.[idx];
+      if (!issue) return;
+      const html = AutoIssueGenerator.publishIssue(issue);
+      navigator.clipboard.writeText(html).then(() => {
+        showStatus(`Issue #${issue.issueNumber} published! HTML copied to clipboard. Paste into GoHighLevel email campaign.`);
+        renderSavedIssues();
+        renderFeaturedHistory();
+      }).catch(() => {
+        // Fallback: open in new window
+        const w = window.open(); w.document.write(html); w.document.close();
+        showStatus(`Issue #${issue.issueNumber} published! HTML opened in new tab — copy from there.`);
+        renderSavedIssues();
+        renderFeaturedHistory();
+      });
+    }
+
+    function renderSavedIssues() {
+      if (typeof AutoIssueGenerator === 'undefined') return;
+      const issues = AutoIssueGenerator.getSavedIssues();
+      const container = document.getElementById('past-issues-content');
+      const wrapper = document.getElementById('past-issues-list');
+      if (!container || !wrapper) return;
+      if (issues.length === 0) { wrapper.style.display = 'none'; return; }
+      wrapper.style.display = 'block';
+      container.innerHTML = issues.slice(0, 10).map(i => `
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--color-border);font-size:0.8rem;">
+          <span><strong>The London Edit #${i.issueNumber}</strong> — ${i.sendDate}</span>
+          <span style="color:${i.published ? 'var(--color-success)' : 'var(--color-text-muted)'};">${i.published ? '✓ Published' : 'Draft'}</span>
+        </div>
+      `).join('');
 
     function populateVenueDropdown(selectId, venues) {
       const sel = document.getElementById(selectId);

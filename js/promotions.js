@@ -296,7 +296,7 @@ const NewsletterBuilder = {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-<title>UK &amp; London Planner &mdash; ${issueLabel}</title>
+<title>The London Edit &mdash; ${issueLabel}</title>
 <!--[if mso]>
 <noscript>
 <xml>
@@ -320,10 +320,13 @@ const NewsletterBuilder = {
 <tr>
 <td style="background-color:#1B2A4A;padding:32px 30px;text-align:center;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;color:#ffffff;text-align:center;line-height:1.3;">
-    &#127468;&#127463; UK &amp; London Planner
+  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#C9A84C;text-align:center;padding-bottom:4px;letter-spacing:1.5px;text-transform:uppercase;">
+    &#127468;&#127463; UK &amp; London Planner presents
   </td></tr>
-  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#C9A84C;text-align:center;padding-top:8px;letter-spacing:0.5px;">
+  <tr><td style="font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#ffffff;text-align:center;line-height:1.2;">
+    The London Edit
+  </td></tr>
+  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#C9A84C;text-align:center;padding-top:8px;letter-spacing:0.5px;">
     ${issueLabel}
   </td></tr>
   </table>
@@ -355,7 +358,7 @@ ${triviaHtml}
     <strong>Trivia answer:</strong> ${triviaAnswer}${triviaFunFact ? ` &mdash; ${triviaFunFact}` : ''}
   </td></tr>` : ''}
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#999999;text-align:center;line-height:1.6;">
-    You are receiving this because you subscribed to the UK &amp; London Planner newsletter.<br>
+    You are receiving this because you subscribed to The London Edit by UK &amp; London Planner.<br>
     <a href="{{unsubscribe_url}}" style="color:#C9A84C;text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
     <a href="{{preferences_url}}" style="color:#C9A84C;text-decoration:underline;">Manage Preferences</a>
   </td></tr>
@@ -931,5 +934,264 @@ const SocialGenerator = {
     if (!str) return '';
     if (str.length <= maxLen) return str;
     return str.slice(0, maxLen).replace(/\s+\S*$/, '') + '...';
+  }
+};
+
+
+// ============================================================
+// 7. AutoIssueGenerator — "The London Edit" auto-generation
+// ============================================================
+const AutoIssueGenerator = {
+  NEWSLETTER_NAME: 'The London Edit',
+  _ISSUES_KEY: 'london_edit_issues',
+  _ISSUE_NUM_KEY: 'london_edit_issue_number',
+
+  // Seasonal tag mappings — which venue tags fit each season/month
+  _seasonalTags: {
+    0:  ['history', 'architecture', 'coffee', 'hidden-gems', 'markets'],        // Jan
+    1:  ['romance', 'food', 'cocktails', 'theatre', 'wellness'],                // Feb
+    2:  ['gardens', 'coffee', 'markets', 'photography', 'art'],                 // Mar
+    3:  ['gardens', 'family', 'photography', 'history', 'brunch'],              // Apr
+    4:  ['gardens', 'markets', 'street-food', 'craft-beer', 'instagram'],       // May
+    5:  ['nightlife', 'music', 'food', 'romance', 'instagram'],                 // Jun
+    6:  ['nightlife', 'sports', 'street-food', 'craft-beer', 'adventure'],      // Jul
+    7:  ['music', 'family', 'street-food', 'markets', 'adventure'],             // Aug
+    8:  ['art', 'architecture', 'food', 'photography', 'hidden-gems'],          // Sep
+    9:  ['dark-history', 'hidden-gems', 'coffee', 'cocktails', 'literary'],     // Oct
+    10: ['shopping', 'theatre', 'markets', 'food', 'royals'],                   // Nov
+    11: ['shopping', 'markets', 'theatre', 'royals', 'family']                  // Dec
+  },
+
+  _seasonNames: {
+    0: 'Winter', 1: 'Winter', 2: 'Spring', 3: 'Spring',
+    4: 'Spring', 5: 'Summer', 6: 'Summer', 7: 'Summer',
+    8: 'Autumn', 9: 'Autumn', 10: 'Autumn', 11: 'Winter'
+  },
+
+  _monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+
+  /**
+   * Get the next Tuesday and Friday dates from today
+   */
+  getNextIssueDates() {
+    const dates = [];
+    const now = new Date();
+    for (let d = 1; d <= 14; d++) {
+      const date = new Date(now);
+      date.setDate(now.getDate() + d);
+      const dow = date.getDay();
+      if (dow === 2 || dow === 5) { // Tue=2, Fri=5
+        dates.push(date);
+        if (dates.length >= 2) break;
+      }
+    }
+    return dates;
+  },
+
+  /**
+   * Get the current issue number (auto-increments)
+   */
+  getIssueNumber() {
+    return parseInt(localStorage.getItem(this._ISSUE_NUM_KEY) || '0') + 1;
+  },
+
+  incrementIssueNumber() {
+    const num = this.getIssueNumber();
+    localStorage.setItem(this._ISSUE_NUM_KEY, num.toString());
+    return num;
+  },
+
+  /**
+   * Pick a venue weighted by seasonal relevance
+   */
+  _seasonalPick(venues, month) {
+    if (!venues || venues.length === 0) return null;
+    const seasonTags = this._seasonalTags[month] || [];
+    const recentIds = new Set(PromotionsHistory.getRecent(90));
+
+    const eligible = venues.filter(v => !recentIds.has(v.id));
+    const pool = eligible.length > 0 ? eligible : venues;
+
+    // Score by seasonal tag matches + affiliate bonus
+    const scored = pool.map(v => {
+      let score = 1;
+      if (v.tags) {
+        score += v.tags.filter(t => seasonTags.includes(t)).length * 3;
+      }
+      if (v.affiliateUrl) score += 2;
+      return { venue: v, score };
+    });
+
+    // Weighted random selection
+    const totalScore = scored.reduce((sum, s) => sum + s.score, 0);
+    let rand = Math.random() * totalScore;
+    for (const s of scored) {
+      rand -= s.score;
+      if (rand <= 0) return s.venue;
+    }
+    return scored[scored.length - 1].venue;
+  },
+
+  /**
+   * Generate a seasonal trivia question if existing ones have been used
+   */
+  _pickSeasonalTrivia(month, excludeIds) {
+    const seasonTags = this._seasonalTags[month] || [];
+    const all = PromotionsData._content?.trivia || [];
+    const excluded = new Set(excludeIds || []);
+
+    // Try seasonal match first
+    const seasonal = all.filter(t =>
+      !excluded.has(t.id) && seasonTags.includes(t.category)
+    );
+    if (seasonal.length > 0) return seasonal[Math.floor(Math.random() * seasonal.length)];
+
+    // Fall back to any unused
+    const unused = all.filter(t => !excluded.has(t.id));
+    if (unused.length > 0) return unused[Math.floor(Math.random() * unused.length)];
+
+    return all.length > 0 ? all[Math.floor(Math.random() * all.length)] : null;
+  },
+
+  _pickSeasonalPoll(month, excludeIds) {
+    const all = PromotionsData._content?.polls || [];
+    const excluded = new Set(excludeIds || []);
+    const unused = all.filter(p => !excluded.has(p.id));
+    if (unused.length > 0) return unused[Math.floor(Math.random() * unused.length)];
+    return all.length > 0 ? all[Math.floor(Math.random() * all.length)] : null;
+  },
+
+  _pickSeasonalAdvice(month, excludeIds) {
+    const seasonTags = this._seasonalTags[month] || [];
+    const all = PromotionsData._content?.adviceArticles || [];
+    const excluded = new Set(excludeIds || []);
+
+    const seasonal = all.filter(a =>
+      !excluded.has(a.id) && a.tags && a.tags.some(t => seasonTags.includes(t))
+    );
+    if (seasonal.length > 0) return seasonal[Math.floor(Math.random() * seasonal.length)];
+
+    const unused = all.filter(a => !excluded.has(a.id));
+    if (unused.length > 0) return unused[Math.floor(Math.random() * unused.length)];
+    return all.length > 0 ? all[Math.floor(Math.random() * all.length)] : null;
+  },
+
+  /**
+   * Auto-generate a complete newsletter issue config
+   */
+  generateIssue(targetDate) {
+    if (!targetDate) targetDate = this.getNextIssueDates()[0] || new Date();
+    const month = targetDate.getMonth();
+    const venues = PromotionsData.getVenues();
+    if (!venues) return null;
+
+    const issueNum = this.getIssueNumber();
+    const season = this._seasonNames[month];
+    const monthName = this._monthNames[month];
+
+    // Featured history for exclusion
+    const usedTrivia = PromotionsHistory.getAll()
+      .filter(h => h.type === 'trivia').map(h => h.venueId);
+    const usedPolls = PromotionsHistory.getAll()
+      .filter(h => h.type === 'poll').map(h => h.venueId);
+    const usedAdvice = PromotionsHistory.getAll()
+      .filter(h => h.type === 'advice').map(h => h.venueId);
+
+    const attraction = this._seasonalPick(venues.attractions, month);
+    const restaurant = this._seasonalPick(venues.restaurants, month);
+    const pub = this._seasonalPick(venues.pubs, month);
+    const trivia = this._pickSeasonalTrivia(month, usedTrivia);
+    const poll = this._pickSeasonalPoll(month, usedPolls);
+    const advice = this._pickSeasonalAdvice(month, usedAdvice);
+    const sponsors = SponsorManager.getActiveSponsors();
+
+    const dateStr = targetDate.toLocaleDateString('en-GB', {
+      day: 'numeric', month: 'long', year: 'numeric'
+    });
+
+    const dayOfWeek = targetDate.toLocaleDateString('en-GB', { weekday: 'long' });
+
+    // Get any seasonal events happening this month
+    const seasonalEvents = (typeof EventsFeed !== 'undefined' && EventsFeed.events)
+      ? EventsFeed.events.filter(e => e.month === month).slice(0, 2)
+      : [];
+
+    return {
+      issueNumber: issueNum,
+      sendDate: dateStr,
+      dayOfWeek,
+      season,
+      monthName,
+      attraction,
+      restaurant,
+      pub,
+      trivia,
+      poll,
+      advice,
+      sponsors,
+      seasonalEvents,
+      newsletterName: this.NEWSLETTER_NAME,
+      autoGenerated: true,
+      generatedAt: new Date().toISOString()
+    };
+  },
+
+  /**
+   * Auto-generate both issues for the current week (Tue + Fri)
+   */
+  generateWeeklyPair() {
+    const dates = this.getNextIssueDates();
+    return dates.map(date => this.generateIssue(date));
+  },
+
+  /**
+   * Get saved/auto-generated issues
+   */
+  getSavedIssues() {
+    try {
+      return JSON.parse(localStorage.getItem(this._ISSUES_KEY)) || [];
+    } catch { return []; }
+  },
+
+  /**
+   * Save an issue (after review or auto-generation)
+   */
+  saveIssue(issue) {
+    const issues = this.getSavedIssues();
+    // Replace if same issue number exists
+    const idx = issues.findIndex(i => i.issueNumber === issue.issueNumber);
+    if (idx >= 0) issues[idx] = issue;
+    else issues.unshift(issue);
+    // Keep last 52 issues (1 year)
+    localStorage.setItem(this._ISSUES_KEY, JSON.stringify(issues.slice(0, 52)));
+  },
+
+  /**
+   * Publish an issue: record history, increment issue number, build HTML
+   */
+  publishIssue(issue) {
+    // Record featured venues in history
+    if (issue.attraction) PromotionsHistory.record(issue.attraction.id, 'attraction', 'newsletter', issue.sendDate);
+    if (issue.restaurant) PromotionsHistory.record(issue.restaurant.id, 'restaurant', 'newsletter', issue.sendDate);
+    if (issue.pub) PromotionsHistory.record(issue.pub.id, 'pub', 'newsletter', issue.sendDate);
+    if (issue.trivia) PromotionsHistory.record(issue.trivia.id, 'trivia', 'newsletter', issue.sendDate);
+    if (issue.poll) PromotionsHistory.record(issue.poll.id, 'poll', 'newsletter', issue.sendDate);
+    if (issue.advice) PromotionsHistory.record(issue.advice.id, 'advice', 'newsletter', issue.sendDate);
+
+    this.incrementIssueNumber();
+    this.saveIssue({ ...issue, published: true, publishedAt: new Date().toISOString() });
+
+    return NewsletterBuilder.build(issue);
+  },
+
+  /**
+   * Format a nice subject line
+   */
+  getSubjectLine(issue) {
+    const parts = [this.NEWSLETTER_NAME];
+    if (issue.attraction) parts.push(issue.attraction.name);
+    if (issue.restaurant) parts.push(issue.restaurant.name);
+    parts.push(`Issue #${issue.issueNumber}`);
+    return parts.join(' | ');
   }
 };
