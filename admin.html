@@ -919,50 +919,61 @@
     const venueTypes = ['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'];
 
     document.addEventListener('DOMContentLoaded', async () => {
-      UI.init();
+      try { UI.init(); } catch(e) { console.error('UI.init failed:', e); }
 
       for (const type of venueTypes) {
-        const stored = localStorage.getItem(`admin_${type}`);
-        if (stored) { venueData[type] = JSON.parse(stored); }
-        else { try { const res = await fetch(`data/${type}.json`); venueData[type] = await res.json(); } catch(e) { venueData[type] = []; } }
+        try {
+          const stored = localStorage.getItem(`admin_${type}`);
+          if (stored) { venueData[type] = JSON.parse(stored); }
+          else { const res = await fetch(`data/${type}.json`); venueData[type] = await res.json(); }
+        } catch(e) { venueData[type] = []; console.warn('Failed to load', type, e); }
       }
 
-      const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
+      try {
+        const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
 
-      // Populate fields
-      document.querySelectorAll('[id^="manifest-"]').forEach(i => { i.value = saved.manifest?.[i.dataset.key] || ''; });
-      document.querySelectorAll('[id^="aff-"]').forEach(i => { i.value = saved.affiliates?.[i.dataset.key] || ''; });
+        // Populate fields
+        document.querySelectorAll('[id^="manifest-"]').forEach(i => { i.value = (saved.manifest && saved.manifest[i.dataset.key]) || ''; });
+        document.querySelectorAll('[id^="aff-"]').forEach(i => { i.value = (saved.affiliates && saved.affiliates[i.dataset.key]) || ''; });
 
-      // GHL fields
-      document.getElementById('ghl-location').value = saved.ghl?.locationId || '';
-      document.getElementById('ghl-apikey').value = saved.ghl?.apiKey || '';
-      document.getElementById('ghl-webhook-email').value = saved.ghl?.webhooks?.emailCapture || '';
-      document.getElementById('ghl-webhook-purchase').value = saved.ghl?.webhooks?.itineraryPurchase || '';
-      document.getElementById('ghl-webhook-contact').value = saved.ghl?.webhooks?.contactForm || '';
-      document.getElementById('ghl-calendar').value = saved.ghl?.calendarId || '';
-      document.getElementById('ghl-pipeline').value = saved.ghl?.pipelineId || '';
-      document.getElementById('weather-apikey').value = saved.weather?.apiKey || '';
+        // GHL fields
+        var ghl = saved.ghl || {};
+        var ghlWebhooks = ghl.webhooks || {};
+        if (document.getElementById('ghl-location')) document.getElementById('ghl-location').value = ghl.locationId || '';
+        if (document.getElementById('ghl-apikey')) document.getElementById('ghl-apikey').value = ghl.apiKey || '';
+        if (document.getElementById('ghl-webhook-email')) document.getElementById('ghl-webhook-email').value = ghlWebhooks.emailCapture || '';
+        if (document.getElementById('ghl-webhook-purchase')) document.getElementById('ghl-webhook-purchase').value = ghlWebhooks.itineraryPurchase || '';
+        if (document.getElementById('ghl-webhook-contact')) document.getElementById('ghl-webhook-contact').value = ghlWebhooks.contactForm || '';
+        if (document.getElementById('ghl-calendar')) document.getElementById('ghl-calendar').value = ghl.calendarId || '';
+        if (document.getElementById('ghl-pipeline')) document.getElementById('ghl-pipeline').value = ghl.pipelineId || '';
+        if (document.getElementById('weather-apikey')) document.getElementById('weather-apikey').value = (saved.weather && saved.weather.apiKey) || '';
+      } catch(e) { console.error('Field population failed:', e); }
 
-      for (const type of venueTypes) renderVenueList(type);
-      renderStats();
-      renderDashboard();
-      renderSalesPanel();
-      updateIntegrationStatus();
+      try { for (const type of venueTypes) renderVenueList(type); } catch(e) { console.error('renderVenueList failed:', e); }
+      try { renderStats(); } catch(e) { console.error('renderStats failed:', e); }
+      try { renderDashboard(); } catch(e) { console.error('renderDashboard failed:', e); }
+      try { renderSalesPanel(); } catch(e) { console.error('renderSalesPanel failed:', e); }
+      try { updateIntegrationStatus(); } catch(e) { console.error('updateIntegrationStatus failed:', e); }
 
+      // Tab switching
       document.querySelectorAll('#admin-tabs > .admin-tab').forEach(tab => {
         tab.addEventListener('click', () => {
           document.querySelectorAll('#admin-tabs > .admin-tab').forEach(t => t.classList.remove('active'));
           document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
           tab.classList.add('active');
-          const panel = document.querySelector(`[data-panel="${tab.dataset.tab}"]`);
+          const panel = document.querySelector('[data-panel="' + tab.dataset.tab + '"]');
           if (panel) panel.classList.add('active');
         });
       });
 
       // Initialize Promotions module
-      if (typeof PromotionsData !== 'undefined') {
-        PromotionsData.loadContent().then(() => PromotionsData.loadVenues().then(() => initPromotionsUI()));
-      }
+      try {
+        if (typeof PromotionsData !== 'undefined') {
+          await PromotionsData.loadContent();
+          await PromotionsData.loadVenues();
+          initPromotionsUI();
+        }
+      } catch(e) { console.error('Promotions init failed:', e); }
     });
 
     // ============================================================
