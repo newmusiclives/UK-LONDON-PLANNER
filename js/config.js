@@ -3,10 +3,10 @@ const CONFIG = {
   siteTagline: 'Your Perfect London & UK Trip, Curated by Experts',
 
   pricing: {
-    tier1: { label: 'Short Stay', days: [1, 5], price: 20, currency: 'USD' },
-    tier2: { label: 'Week Explorer', days: [6, 10], price: 40, currency: 'USD' },
-    tier3: { label: 'Extended Adventure', days: [11, 21], price: 75, currency: 'USD' },
-    concierge: { price: 150, currency: 'USD', label: 'Booking Concierge' },
+    tier1: { label: 'Short Stay', days: [1, 5], price: 50, currency: 'USD' },
+    tier2: { label: 'Week Explorer', days: [6, 10], price: 75, currency: 'USD' },
+    tier3: { label: 'Extended Adventure', days: [11, 21], price: 99, currency: 'USD' },
+    concierge: { price: 250, currency: 'USD', label: 'Booking Concierge' },
     consultation: { price: 75, currency: 'USD', duration: '1 hour' },
     personalGuide: {
       perDay: 250,
@@ -107,9 +107,9 @@ const CONFIG = {
   ukExtension: {
     enabled: true,
     pricing: {
-      short:    { days: [1, 5],   price: 30, label: 'UK Short Break' },
-      standard: { days: [6, 10],  price: 55, label: 'UK Explorer' },
-      extended: { days: [11, 21], price: 85, label: 'Grand UK Tour' }
+      short:    { days: [1, 5],   price: 50, label: 'UK Short Break' },
+      standard: { days: [6, 10],  price: 75, label: 'UK Explorer' },
+      extended: { days: [11, 21], price: 99, label: 'Grand UK Tour' }
     },
     manifest: {
       short:    'https://pay.manifestfinancial.com/YOUR_UK_SHORT_LINK',
@@ -228,7 +228,7 @@ const CONFIG = {
 
   // Concierge service details
   concierge: {
-    price: 150,
+    price: 250,
     title: 'Booking Concierge Service',
     description: 'We\'ll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.',
     features: [

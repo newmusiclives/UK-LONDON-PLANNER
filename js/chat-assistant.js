@@ -244,7 +244,7 @@ const ChatAssistant = {
     // Page redirects
     if (/airport|heathrow|gatwick|transfer/.test(q)) return 'Great question! Check our <a href="airport-transfers.html">Airport Transfer Guide</a> for all options from every London airport.';
     if (/neighbourhood|area|where to stay|district/.test(q)) return 'We have detailed guides for 15 London neighbourhoods! Browse them all at <a href="neighbourhoods.html">Neighbourhood Guides</a>.';
-    if (/price|cost|how much/.test(q)) return 'Our itineraries start from just $20 for 1-5 days. <a href="index.html#pricing">See all pricing</a>. The 2-day preview is completely free!';
+    if (/price|cost|how much/.test(q)) return 'Our itineraries start from just $50 for 1-5 days. <a href="index.html#pricing">See all pricing</a>. The 2-day preview is completely free!';
     if (/weather|rain|temperature/.test(q)) return 'London weather varies! Check our <a href="best-time-to-visit.html">Best Time to Visit</a> guide for monthly breakdowns.';
     if (/tube|transport|oyster|bus/.test(q)) return 'Our <a href="getting-around.html">Getting Around London</a> guide covers the Tube, buses, Oyster cards, and more. Also see <a href="compare-oyster-travelcard.html">Oyster vs Travelcard</a>.';
     if (/tip|advice|first time/.test(q)) return 'Check our <a href="travel-tips.html">Essential Travel Tips</a> — covers everything from tipping to safety to packing.';

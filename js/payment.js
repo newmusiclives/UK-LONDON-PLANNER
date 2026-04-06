@@ -55,7 +55,7 @@ const Payment = {
       const separator = link.includes('?') ? '&' : '?';
       window.location.href = `${link}${separator}client_reference_id=${sessionId}`;
     } else {
-      UI.showToast('Demo mode: In production, this would redirect to Manifest Financial for $150 concierge payment');
+      UI.showToast('Demo mode: In production, this would redirect to Manifest Financial for $250 concierge payment');
     }
   },
 

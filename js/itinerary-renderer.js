@@ -118,14 +118,14 @@ function renderItinerary(itinerary, isPaid, price) {
       <!-- Concierge Add-on -->
       <div style="background:var(--color-surface);border:2px solid var(--color-accent);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin-top:2rem;">
         <div style="font-size:2rem;margin-bottom:0.5rem;">🛎️</div>
-        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $150</h3>
+        <h3 style="margin-bottom:0.5rem;">Add Booking Concierge — $250</h3>
         <p style="color:var(--color-text-muted);max-width:500px;margin:0 auto 1rem;font-size:0.95rem;">
           We'll handle as many of your bookings and reservations as possible — restaurants, attractions, theatre tickets, tours, and more.
         </p>
         <ul style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left;">
           ${CONFIG.concierge.features.map(f => '<li style="padding:0.3rem 0;font-size:0.85rem;"><span style="color:var(--color-success);font-weight:700;margin-right:0.5rem;">✓</span>' + f + '</li>').join('')}
         </ul>
-        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $150</button>
+        <button class="btn btn--primary btn--large" onclick="handleConcierge()">Add Concierge — $250</button>
       </div>
 
       <!-- Consultation Upsell -->

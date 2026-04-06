@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h2 style="color: var(--color-text-light);">Prefer to Self-Plan?</h2>
         <div class="divider"></div>
         <p style="color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 2rem;">
-          Our itinerary builder creates personalised day-by-day plans starting at just $20.
+          Our itinerary builder creates personalised day-by-day plans starting at just $50.
         </p>
         <a href="wizard.html" class="btn btn--primary btn--large">Create Your Itinerary</a>
       </div>

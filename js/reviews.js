@@ -55,7 +55,7 @@ const Reviews = {
     const allReviews = [
       { name: 'Sarah M.', rating: 5, text: 'This itinerary saved us hours of research. Every restaurant recommendation was spot-on, and the insider tips made us feel like locals.', tripType: '7-day trip', date: '2026-02-15' },
       { name: 'David & Lisa K.', rating: 5, text: 'We did the personal consultation and it was worth every penny. Our guide knew the perfect off-the-beaten-path spots for our family.', tripType: '5-day family trip', date: '2026-01-20' },
-      { name: 'James R.', rating: 5, text: 'The pub and bar recommendations alone were worth $20. We had the best night out in Shoreditch thanks to this guide!', tripType: '3-day weekend', date: '2026-03-05' },
+      { name: 'James R.', rating: 5, text: 'The pub and bar recommendations alone were worth $50. We had the best night out in Shoreditch thanks to this guide!', tripType: '3-day weekend', date: '2026-03-05' },
       ...reviews
     ];
 

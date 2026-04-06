@@ -10,8 +10,8 @@ const ABTesting = {
       name: 'Pricing Tier Test',
       variants: {
         control: {
-          label: 'Control ($20/$40/$75)',
-          tier1: 20, tier2: 40, tier3: 75
+          label: 'Control ($50/$75/$99)',
+          tier1: 50, tier2: 75, tier3: 99
         },
         lower: {
           label: 'Lower ($15/$35/$65)',
@@ -88,8 +88,8 @@ const ABTesting = {
       });
       // Update purchase buttons
       document.querySelectorAll('[onclick*="handlePurchase"]').forEach(btn => {
-        if (pricing.tier1 && btn.textContent.includes('$20')) {
-          btn.textContent = btn.textContent.replace('$20', `$${pricing.tier1}`);
+        if (pricing.tier1 && btn.textContent.includes('$50')) {
+          btn.textContent = btn.textContent.replace('$50', `$${pricing.tier1}`);
         }
       });
     }
