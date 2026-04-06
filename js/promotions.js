@@ -279,15 +279,20 @@ const NewsletterBuilder = {
     const c = config;
     const issueLabel = `Issue #${c.issueNumber} &mdash; ${c.sendDate}`;
 
-    const attractionHtml = this._venueCard(c.attraction, 'Featured Attraction', 'Book Now &rarr;', '#C9A84C');
-    const restaurantHtml = this._venueCard(c.restaurant, 'Featured Restaurant', 'Reserve a Table &rarr;', '#C9A84C');
-    const pubHtml = this._venueCard(c.pub, 'Featured Pub', 'Find It &rarr;', '#C9A84C');
+    const attractionHtml = this._venueArticle(c.attraction, 'Featured Attraction', 'Book Now &rarr;', '#C9A84C');
+    const restaurantHtml = this._venueArticle(c.restaurant, 'Featured Restaurant', 'Reserve a Table &rarr;', '#C9A84C');
+    const pubHtml = this._venueArticle(c.pub, 'Featured Pub', 'Find It &rarr;', '#C9A84C');
     const adviceHtml = this._adviceSection(c.advice);
-    const sponsorHtml = this._sponsorRow(c.sponsors || []);
     const pollHtml = this._pollSection(c.poll);
     const triviaHtml = this._triviaSection(c.trivia);
     const triviaAnswer = c.trivia ? this._escHtml(c.trivia.answer) : '';
     const triviaFunFact = c.trivia && c.trivia.funFact ? this._escHtml(c.trivia.funFact) : '';
+
+    // 3 sponsor positions: top, middle, bottom
+    const sponsors = c.sponsors && c.sponsors.length > 0 ? c.sponsors : this._defaultSponsors();
+    const sponsorTop = this._singleSponsorBanner(sponsors[0], 'Sponsored');
+    const sponsorMid = this._singleSponsorBanner(sponsors[1] || sponsors[0], 'From Our Partners');
+    const sponsorBottom = this._singleSponsorBanner(sponsors[2] || sponsors[0], 'Recommended');
 
     return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -336,19 +341,23 @@ const NewsletterBuilder = {
 <!-- Divider line -->
 <tr><td style="height:4px;background-color:#C9A84C;font-size:0;line-height:0;">&nbsp;</td></tr>
 
+${sponsorTop}
+
 ${attractionHtml}
-
-${restaurantHtml}
-
-${pubHtml}
-
-${adviceHtml}
-
-${sponsorHtml}
 
 ${pollHtml}
 
+${restaurantHtml}
+
+${sponsorMid}
+
+${pubHtml}
+
 ${triviaHtml}
+
+${adviceHtml}
+
+${sponsorBottom}
 
 <!-- Footer -->
 <tr>
@@ -389,6 +398,107 @@ ${triviaHtml}
   },
 
   // -- Private helpers --
+
+  _defaultSponsors() {
+    return [
+      { name: 'GetYourGuide', linkUrl: 'https://www.getyourguide.com/london-l57/', imageUrl: '', altText: 'Book London attractions on GetYourGuide', active: true, type: 'affiliate' },
+      { name: 'Booking.com', linkUrl: 'https://www.booking.com/city/gb/london.html', imageUrl: '', altText: 'Find London hotels on Booking.com', active: true, type: 'affiliate' },
+      { name: 'Airalo eSIM', linkUrl: 'https://www.airalo.com/united-kingdom', imageUrl: '', altText: 'Get a UK eSIM from Airalo', active: true, type: 'affiliate' }
+    ];
+  },
+
+  _singleSponsorBanner(sponsor, label) {
+    if (!sponsor || !sponsor.name) return '';
+    const link = sponsor.linkUrl || '#';
+    return `
+<!-- ${label} -->
+<tr>
+<td style="padding:16px 30px;background-color:#f8f7f4;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#999999;padding-bottom:8px;">
+    ${this._escHtml(label)}
+  </td></tr>
+  <tr><td style="text-align:center;">
+    <a href="${this._escAttr(link)}" target="_blank" style="text-decoration:none;">
+      ${sponsor.imageUrl
+        ? `<img src="${this._escAttr(sponsor.imageUrl)}" alt="${this._escAttr(sponsor.altText || sponsor.name)}" width="540" style="display:block;margin:0 auto;max-width:540px;border-radius:6px;" />`
+        : `<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+          <td style="background-color:#1B2A4A;border-radius:6px;padding:18px 24px;text-align:center;">
+            <span style="font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#C9A84C;">${this._escHtml(sponsor.name)}</span>
+            <br><span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#ffffff;">${this._escHtml(sponsor.altText || 'Visit our partner')}</span>
+          </td></tr></table>`
+      }
+    </a>
+  </td></tr>
+  </table>
+</td>
+</tr>`;
+  },
+
+  _venueArticle(venue, label, ctaText, ctaColor) {
+    if (!venue) return '';
+    // Build a longer-form article (up to 400 words) from venue data
+    const parts = [];
+    if (venue.description) parts.push(venue.description);
+    if (venue.tips) parts.push(venue.tips);
+
+    // Generate additional editorial content based on venue data
+    const neighbourhood = venue.neighbourhood || '';
+    if (neighbourhood) {
+      parts.push('Located in ' + neighbourhood + ', this is one of the area\'s standout destinations that our team regularly recommends to visitors.');
+    }
+    if (venue.tags && venue.tags.length > 0) {
+      const tagLabels = venue.tags.slice(0, 4).join(', ');
+      parts.push('Perfect for anyone interested in ' + tagLabels + '. Whether you\'re visiting London for the first time or returning for another trip, this is well worth adding to your itinerary.');
+    }
+    if (venue.address) {
+      parts.push('You\'ll find it at ' + venue.address + '. We recommend checking opening times before you visit as they can vary by season.');
+    }
+    const cost = venue.estimatedCost
+      ? (venue.estimatedCost.amount === 0 ? 'free' : (venue.estimatedCost.currency === 'GBP' ? '\u00A3' : '$') + venue.estimatedCost.amount)
+      : '';
+    if (cost) {
+      parts.push('Expect to spend around ' + cost + ' per person. ' + (cost === 'free' ? 'One of the great things about London is how much you can experience without spending a penny.' : 'Good value for what you get, especially compared to similar options in the area.'));
+    }
+
+    const fullText = parts.join(' ');
+    // Truncate to ~400 words
+    const words = fullText.split(/\s+/);
+    const articleText = words.length > 400 ? words.slice(0, 400).join(' ') + '...' : fullText;
+
+    const link = venue.affiliateUrl || '#';
+
+    return `
+<!-- ${label} -->
+<tr>
+<td style="padding:28px 30px 24px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;color:#C9A84C;padding-bottom:8px;">
+    ${this._escHtml(label)}
+  </td></tr>
+  <tr><td style="font-family:Georgia,serif;font-size:24px;font-weight:bold;color:#1B2A4A;line-height:1.3;padding-bottom:10px;">
+    ${this._escHtml(venue.name)}
+  </td></tr>
+  ${neighbourhood ? `<tr><td style="padding-bottom:12px;">
+    <span style="display:inline-block;background-color:#f0ede6;color:#666666;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:4px 12px;border-radius:12px;">&#128205; ${this._escHtml(neighbourhood)}</span>
+    ${cost ? `<span style="display:inline-block;background-color:#f0ede6;color:#666666;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:4px 12px;border-radius:12px;margin-left:6px;">&#128176; ${cost}</span>` : ''}
+  </td></tr>` : ''}
+  <tr><td style="font-family:Georgia,serif;font-size:15px;color:#333333;line-height:1.8;padding-bottom:20px;">
+    ${this._escHtml(articleText)}
+  </td></tr>
+  <tr><td>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+    <tr><td style="background-color:${ctaColor};border-radius:6px;">
+      <a href="${this._escAttr(link)}" target="_blank" style="display:inline-block;padding:14px 32px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#1B2A4A;text-decoration:none;">${ctaText}</a>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td>
+</tr>
+<!-- Divider -->
+<tr><td style="padding:0 30px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td style="border-top:1px solid #eeeeee;font-size:0;line-height:0;height:1px;">&nbsp;</td></tr></table></td></tr>`;
+  },
 
   _venueCard(venue, label, ctaText, ctaColor) {
     if (!venue) return '';
@@ -1079,27 +1189,32 @@ const AutoIssueGenerator = {
   /**
    * Auto-generate a complete newsletter issue config
    */
-  generateIssue(targetDate) {
+  generateIssue(targetDate, batchExclusions) {
     if (!targetDate) targetDate = this.getNextIssueDates()[0] || new Date();
     const month = targetDate.getMonth();
     const venues = PromotionsData.getVenues();
     if (!venues) return null;
 
-    const issueNum = this.getIssueNumber();
+    const batch = batchExclusions || { trivia: [], polls: [], advice: [], venues: [] };
+    const issueNum = this.getIssueNumber() + batch.venues.length; // offset for 2nd issue
     const season = this._seasonNames[month];
     const monthName = this._monthNames[month];
 
-    // Featured history for exclusion
+    // Featured history for exclusion + batch exclusions
     const usedTrivia = PromotionsHistory.getAll()
-      .filter(h => h.type === 'trivia').map(h => h.venueId);
+      .filter(h => h.type === 'trivia').map(h => h.venueId).concat(batch.trivia);
     const usedPolls = PromotionsHistory.getAll()
-      .filter(h => h.type === 'poll').map(h => h.venueId);
+      .filter(h => h.type === 'poll').map(h => h.venueId).concat(batch.polls);
     const usedAdvice = PromotionsHistory.getAll()
-      .filter(h => h.type === 'advice').map(h => h.venueId);
+      .filter(h => h.type === 'advice').map(h => h.venueId).concat(batch.advice);
 
-    const attraction = this._seasonalPick(venues.attractions, month);
-    const restaurant = this._seasonalPick(venues.restaurants, month);
-    const pub = this._seasonalPick(venues.pubs, month);
+    // Exclude venues used in this batch
+    const batchVenueIds = new Set(batch.venues);
+    const filterBatch = (arr) => arr ? arr.filter(v => !batchVenueIds.has(v.id)) : [];
+
+    const attraction = this._seasonalPick(filterBatch(venues.attractions), month);
+    const restaurant = this._seasonalPick(filterBatch(venues.restaurants), month);
+    const pub = this._seasonalPick(filterBatch(venues.pubs), month);
     const trivia = this._pickSeasonalTrivia(month, usedTrivia);
     const poll = this._pickSeasonalPoll(month, usedPolls);
     const advice = this._pickSeasonalAdvice(month, usedAdvice);
@@ -1141,7 +1256,23 @@ const AutoIssueGenerator = {
    */
   generateWeeklyPair() {
     const dates = this.getNextIssueDates();
-    return dates.map(date => this.generateIssue(date));
+    const issues = [];
+    const usedInThisBatch = { trivia: [], polls: [], advice: [], venues: [] };
+
+    for (const date of dates) {
+      const issue = this.generateIssue(date, usedInThisBatch);
+      if (issue) {
+        // Track what was used so edition 2 gets different content
+        if (issue.trivia) usedInThisBatch.trivia.push(issue.trivia.id);
+        if (issue.poll) usedInThisBatch.polls.push(issue.poll.id);
+        if (issue.advice) usedInThisBatch.advice.push(issue.advice.id);
+        if (issue.attraction) usedInThisBatch.venues.push(issue.attraction.id);
+        if (issue.restaurant) usedInThisBatch.venues.push(issue.restaurant.id);
+        if (issue.pub) usedInThisBatch.venues.push(issue.pub.id);
+        issues.push(issue);
+      }
+    }
+    return issues;
   },
 
   /**
