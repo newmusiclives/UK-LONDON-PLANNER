@@ -75,7 +75,7 @@
     grid.innerHTML = reg.agents.map((a) => `
       <div style="border:1px solid #e5e7eb;border-radius:8px;padding:1rem;background:white;">
         <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
-          <h4 style="margin:0 0 0.25rem;font-size:1rem;">${escapeHtml(a.name)}</h4>
+          <h4 style="margin:0 0 0.25rem;font-size:1rem;">${escapeHtml(a.name)}${a.title ? ` <span style="font-weight:400;color:#6b7280;font-size:0.85rem;">— ${escapeHtml(a.title)}</span>` : ''}</h4>
           ${a.humanGated ? '<span style="font-size:0.7rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:3px;white-space:nowrap;">HUMAN-GATED</span>' : ''}
         </div>
         <div style="font-size:0.75rem;color:#6b7280;font-family:monospace;margin-bottom:0.5rem;">${escapeHtml(a.schedule)}</div>

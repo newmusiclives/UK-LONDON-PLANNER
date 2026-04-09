@@ -14,7 +14,8 @@
   "agents": [
     {
       "id": "editor-in-chief",
-      "name": "Editor-in-Chief",
+      "name": "Margaret Thornbury",
+      "title": "Editor-in-Chief",
       "role": "orchestrator",
       "promptFile": "agents/editor-in-chief.md",
       "schedule": "0 7 * * *",
@@ -26,7 +27,8 @@
     },
     {
       "id": "content-writer",
-      "name": "Content Writer",
+      "name": "Oliver Finch",
+      "title": "Content Writer",
       "role": "blog",
       "promptFile": "agents/content-writer.md",
       "schedule": "0 8 * * *",
@@ -39,7 +41,8 @@
     },
     {
       "id": "newsletter-producer",
-      "name": "Newsletter Producer",
+      "name": "Beatrice Calloway",
+      "title": "Newsletter Producer",
       "role": "email",
       "promptFile": "agents/newsletter-producer.md",
       "schedule": "0 9 * * 2",
@@ -53,7 +56,8 @@
     },
     {
       "id": "social-media-manager",
-      "name": "Social Media Manager",
+      "name": "Poppy Whitfield",
+      "title": "Social Media Manager",
       "role": "social",
       "promptFile": "agents/social-media-manager.md",
       "schedule": "0 9,13,18 * * *",
@@ -66,7 +70,8 @@
     },
     {
       "id": "seo-strategist",
-      "name": "SEO Strategist",
+      "name": "Alistair Pemberton",
+      "title": "SEO Strategist",
       "role": "seo",
       "promptFile": "agents/seo-strategist.md",
       "schedule": "0 10 * * 1",
@@ -79,7 +84,8 @@
     },
     {
       "id": "outreach-pr",
-      "name": "Outreach & PR Agent",
+      "name": "Charlotte Ainsworth",
+      "title": "Outreach & PR",
       "role": "outreach",
       "promptFile": "agents/outreach-pr.md",
       "schedule": "0 11 * * 3",
@@ -92,7 +98,8 @@
     },
     {
       "id": "affiliate-scout",
-      "name": "Affiliate Partnership Scout",
+      "name": "Rupert Kingsmill",
+      "title": "Affiliate Partnership Scout",
       "role": "partnerships",
       "promptFile": "agents/affiliate-scout.md",
       "schedule": "0 12 * * 4",
@@ -105,7 +112,8 @@
     },
     {
       "id": "community-reputation",
-      "name": "Community & Reputation Agent",
+      "name": "Hugh Baxter",
+      "title": "Community & Reputation",
       "role": "community",
       "promptFile": "agents/community-reputation.md",
       "schedule": "0 14 * * *",
@@ -118,7 +126,8 @@
     },
     {
       "id": "analytics-growth",
-      "name": "Analytics & Growth Agent",
+      "name": "Fiona Hargreaves",
+      "title": "Analytics & Growth",
       "role": "analytics",
       "promptFile": "agents/analytics-growth.md",
       "schedule": "0 16 * * 5",
