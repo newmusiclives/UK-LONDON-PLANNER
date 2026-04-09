@@ -392,10 +392,21 @@
             <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
               Create Payment Links in your <a href="https://app.manifestfinancial.com" target="_blank" style="color:var(--color-accent);">Manifest Financial Dashboard</a>, then paste them below.
             </p>
-            <div class="field"><label>Short Stay Itinerary ($50) <small>1-5 days</small></label><input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1"></div>
-            <div class="field"><label>Week Explorer Itinerary ($75) <small>6-10 days</small></label><input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2"></div>
-            <div class="field"><label>Extended Adventure Itinerary ($99) <small>11-21 days</small></label><input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3"></div>
-            <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
+            <h4 style="margin:0 0 0.75rem;font-size:0.95rem;">London Itinerary</h4>
+            <div class="field"><label>Short Stay ($50) <small>1-5 days</small></label><input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1"></div>
+            <div class="field"><label>Week Explorer ($75) <small>6-10 days</small></label><input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2"></div>
+            <div class="field"><label>Extended Adventure ($99) <small>11-21 days</small></label><input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3"></div>
+            <h4 style="margin:1.5rem 0 0.75rem;font-size:0.95rem;">UK Extension Add-on</h4>
+            <div class="field"><label>UK Short Break ($50) <small>1-5 days</small></label><input type="url" id="manifest-ukShort" placeholder="https://pay.manifestfinancial.com/..." data-key="ukShort"></div>
+            <div class="field"><label>UK Explorer ($75) <small>6-10 days</small></label><input type="url" id="manifest-ukStandard" placeholder="https://pay.manifestfinancial.com/..." data-key="ukStandard"></div>
+            <div class="field"><label>Grand UK Tour ($99) <small>11-21 days</small></label><input type="url" id="manifest-ukExtended" placeholder="https://pay.manifestfinancial.com/..." data-key="ukExtended"></div>
+            <div style="margin-top:1.5rem;display:flex;gap:0.75rem;align-items:center;">
+              <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
+              <span id="payment-save-status" style="font-size:0.85rem;color:#16a34a;display:none;">Saved and active!</span>
+            </div>
+            <div style="margin-top:1rem;padding:0.75rem;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:4px;font-size:0.8rem;color:#374151;">
+              <strong>How it works:</strong> Links saved here are stored in your browser and applied site-wide. For production, also add them as Netlify environment variables (MANIFEST_LINK_TIER1, etc.) so they work for all visitors.
+            </div>
           </div>
         </div>
       </div>
@@ -1257,10 +1268,25 @@
     function savePaymentLinks() {
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
       saved.manifest = {};
-      document.querySelectorAll('[id^="manifest-"]').forEach(i => { saved.manifest[i.dataset.key] = i.value.trim(); });
+      document.querySelectorAll('[id^="manifest-"]').forEach(i => {
+        if (i.dataset.key) saved.manifest[i.dataset.key] = i.value.trim();
+      });
       localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
+
+      // Patch CONFIG live so links work immediately across the site
+      if (typeof CONFIG !== 'undefined') {
+        if (saved.manifest.tier1) CONFIG.manifest.links.tier1 = saved.manifest.tier1;
+        if (saved.manifest.tier2) CONFIG.manifest.links.tier2 = saved.manifest.tier2;
+        if (saved.manifest.tier3) CONFIG.manifest.links.tier3 = saved.manifest.tier3;
+        if (saved.manifest.ukShort) CONFIG.ukExtension.manifest.short = saved.manifest.ukShort;
+        if (saved.manifest.ukStandard) CONFIG.ukExtension.manifest.standard = saved.manifest.ukStandard;
+        if (saved.manifest.ukExtended) CONFIG.ukExtension.manifest.extended = saved.manifest.ukExtended;
+      }
+
       updateIntegrationStatus();
-      showStatus('Payment links saved.');
+      showStatus('Payment links saved and active!');
+      const statusEl = document.getElementById('payment-save-status');
+      if (statusEl) { statusEl.style.display = 'inline'; setTimeout(() => statusEl.style.display = 'none', 3000); }
     }
 
     function saveAffiliateIds() {

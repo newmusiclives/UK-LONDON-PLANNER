@@ -74,7 +74,43 @@
     }
   }
 
-  // Run immediately (before DOMContentLoaded so Analytics.init() picks up the real GA ID)
+  // Apply admin-saved config from localStorage (works without Netlify env vars)
+  function applyAdminConfig() {
+    try {
+      const saved = JSON.parse(localStorage.getItem('londonPlannerAdmin') || '{}');
+      if (typeof CONFIG === 'undefined') return;
+
+      // Manifest payment links
+      if (saved.manifest) {
+        if (saved.manifest.tier1) CONFIG.manifest.links.tier1 = saved.manifest.tier1;
+        if (saved.manifest.tier2) CONFIG.manifest.links.tier2 = saved.manifest.tier2;
+        if (saved.manifest.tier3) CONFIG.manifest.links.tier3 = saved.manifest.tier3;
+        if (saved.manifest.ukShort) CONFIG.ukExtension.manifest.short = saved.manifest.ukShort;
+        if (saved.manifest.ukStandard) CONFIG.ukExtension.manifest.standard = saved.manifest.ukStandard;
+        if (saved.manifest.ukExtended) CONFIG.ukExtension.manifest.extended = saved.manifest.ukExtended;
+      }
+
+      // GHL webhooks
+      if (saved.ghl) {
+        if (saved.ghl.itineraryPurchase) CONFIG.goHighLevel.webhooks.itineraryPurchase = saved.ghl.itineraryPurchase;
+        if (saved.ghl.contactForm) CONFIG.goHighLevel.webhooks.contactForm = saved.ghl.contactForm;
+        if (saved.ghl.emailCapture) CONFIG.goHighLevel.webhooks.emailCapture = saved.ghl.emailCapture;
+        if (saved.ghl.newsletter) CONFIG.goHighLevel.webhooks.promotionsNewsletter = saved.ghl.newsletter;
+      }
+
+      // Affiliate IDs
+      if (saved.affiliates) {
+        for (const [key, val] of Object.entries(saved.affiliates)) {
+          if (val && CONFIG.affiliateIds[key]) CONFIG.affiliateIds[key] = val;
+        }
+      }
+    } catch {}
+  }
+
+  // Apply localStorage config first (instant, synchronous)
+  applyAdminConfig();
+
+  // Then fetch Netlify env config (async, overrides localStorage if present)
   load().then(() => {
     // Re-init analytics if it already ran with placeholder
     if (typeof Analytics !== 'undefined' && Analytics.GA_ID !== 'G-XXXXXXXXXX' && !window.gtag) {
