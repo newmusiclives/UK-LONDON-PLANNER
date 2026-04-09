@@ -1,0 +1,14 @@
+{
+  "name": "uk-london-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UK & London Planner — static site + AI Staff orchestrator",
+  "scripts": {
+    "ai:status": "node ai-staff/orchestrator.js status",
+    "ai:list": "node ai-staff/orchestrator.js list",
+    "ai:run": "node ai-staff/orchestrator.js run",
+    "ai:tick": "node ai-staff/orchestrator.js tick",
+    "ai:queue": "node ai-staff/orchestrator.js queue",
+    "ai:approve": "node ai-staff/orchestrator.js approve"
+  }
+}

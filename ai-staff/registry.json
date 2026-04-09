@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "schedulesEnabled": false,
+  "_note": "schedulesEnabled is FALSE by design — owner will enable after manual test. Orchestrator tick() refuses to run agents while this is false. Manual `run <agent>` still works for testing.",
+  "site": {
+    "name": "UK & London Planner",
+    "url": "https://uk-london-planner.netlify.app",
+    "tagline": "Your Perfect London & UK Trip, Curated by Experts"
+  },
+  "model": {
+    "default": "claude-opus-4-6",
+    "fast": "claude-haiku-4-5-20251001"
+  },
+  "agents": [
+    {
+      "id": "editor-in-chief",
+      "name": "Editor-in-Chief",
+      "role": "orchestrator",
+      "promptFile": "agents/editor-in-chief.md",
+      "schedule": "0 7 * * *",
+      "model": "default",
+      "outputDir": "queue/plans",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Reads calendar, weather, season; assigns the day's brief to each agent."
+    },
+    {
+      "id": "content-writer",
+      "name": "Content Writer",
+      "role": "blog",
+      "promptFile": "agents/content-writer.md",
+      "schedule": "0 8 * * *",
+      "model": "default",
+      "outputDir": "queue/blog",
+      "outputFormat": "html",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Writes blog posts and neighbourhood spotlights from the venue database."
+    },
+    {
+      "id": "newsletter-producer",
+      "name": "Newsletter Producer",
+      "role": "email",
+      "promptFile": "agents/newsletter-producer.md",
+      "schedule": "0 9 * * 2",
+      "model": "default",
+      "outputDir": "queue/newsletter",
+      "outputFormat": "html",
+      "destination": "ghl:campaign",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Weekly newsletter with attraction, restaurant, pub, advice, trivia, poll, sponsors."
+    },
+    {
+      "id": "social-media-manager",
+      "name": "Social Media Manager",
+      "role": "social",
+      "promptFile": "agents/social-media-manager.md",
+      "schedule": "0 9,13,18 * * *",
+      "model": "fast",
+      "outputDir": "queue/social",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Repurposes content into Instagram, TikTok, X, Threads, Pinterest, Facebook posts."
+    },
+    {
+      "id": "seo-strategist",
+      "name": "SEO Strategist",
+      "role": "seo",
+      "promptFile": "agents/seo-strategist.md",
+      "schedule": "0 10 * * 1",
+      "model": "default",
+      "outputDir": "queue/seo",
+      "outputFormat": "md",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Weekly SEO audit, keyword gap analysis, schema markup, internal linking suggestions."
+    },
+    {
+      "id": "outreach-pr",
+      "name": "Outreach & PR Agent",
+      "role": "outreach",
+      "promptFile": "agents/outreach-pr.md",
+      "schedule": "0 11 * * 3",
+      "model": "default",
+      "outputDir": "queue/outreach",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": true,
+      "description": "Builds prospect lists and drafts personalised pitches. ALWAYS human-approved."
+    },
+    {
+      "id": "affiliate-scout",
+      "name": "Affiliate Partnership Scout",
+      "role": "partnerships",
+      "promptFile": "agents/affiliate-scout.md",
+      "schedule": "0 12 * * 4",
+      "model": "default",
+      "outputDir": "queue/affiliates",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": true,
+      "description": "Finds new affiliate programs, drafts applications, tracks EPC of existing 28."
+    },
+    {
+      "id": "community-reputation",
+      "name": "Community & Reputation Agent",
+      "role": "community",
+      "promptFile": "agents/community-reputation.md",
+      "schedule": "0 14 * * *",
+      "model": "default",
+      "outputDir": "queue/community",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": true,
+      "description": "Watches Reddit/forums for London trip questions; drafts helpful replies + review requests."
+    },
+    {
+      "id": "analytics-growth",
+      "name": "Analytics & Growth Agent",
+      "role": "analytics",
+      "promptFile": "agents/analytics-growth.md",
+      "schedule": "0 16 * * 5",
+      "model": "default",
+      "outputDir": "queue/analytics",
+      "outputFormat": "md",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Pulls GA4/Netlify/GHL data, reports funnel + top sources, recommends 3 weekly experiments."
+    }
+  ],
+  "eventTriggers": [
+    {
+      "id": "wizard-abandoned",
+      "trigger": "ghl:webhook:wizard_abandoned",
+      "agent": "newsletter-producer",
+      "promptOverride": "Draft a personalised recovery email for a user who abandoned the wizard at step {step} after {minutes} minutes. Reference their selected interests: {interests}."
+    },
+    {
+      "id": "purchase-complete",
+      "trigger": "ghl:webhook:itinerary_purchase",
+      "agent": "content-writer",
+      "promptOverride": "Draft a day-1 onboarding email with packing tips, weather forecast for their travel dates, and the first day's preview."
+    },
+    {
+      "id": "trip-tomorrow",
+      "trigger": "ghl:webhook:trip_starts_tomorrow",
+      "agent": "content-writer",
+      "promptOverride": "Send weather + transit alert + final-prep checklist for a trip starting tomorrow."
+    },
+    {
+      "id": "trip-ended",
+      "trigger": "ghl:webhook:trip_ended",
+      "agent": "community-reputation",
+      "promptOverride": "Draft a warm review-request email referencing 1-2 specific itinerary highlights."
+    }
+  ]
+}

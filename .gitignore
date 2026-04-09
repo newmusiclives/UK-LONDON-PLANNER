@@ -1,2 +1,16 @@
 # Local Netlify folder
 .netlify
+
+# Secrets
+.env
+.env.local
+
+# AI Staff runtime artefacts (queue/published/logs are local-only)
+ai-staff/queue/
+ai-staff/published/
+ai-staff/logs/
+ai-staff/node_modules/
+
+# Node
+node_modules/
+npm-debug.log*
