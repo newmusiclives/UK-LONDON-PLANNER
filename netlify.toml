@@ -21,3 +21,9 @@
   from = "/api/config"
   to = "/.netlify/functions/runtime-config"
   status = 200
+
+# 404 fallback — must be last redirect
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

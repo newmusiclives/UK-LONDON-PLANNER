@@ -6,5 +6,8 @@ Disallow: /success.html
 Disallow: /cancel.html
 Disallow: /newsletter-welcome.html
 Disallow: /GHL-WELCOME-EMAIL-TEMPLATE.html
+Disallow: /email-templates/
+Disallow: /downloads/
+Disallow: /ai-staff/
 
 Sitemap: https://uk-london-planner.netlify.app/sitemap.xml

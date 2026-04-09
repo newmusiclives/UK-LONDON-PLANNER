@@ -105,10 +105,20 @@
           message: document.getElementById('contact-message').value
         };
 
-        await GHL.submitContactForm(formData);
+        const result = await GHL.submitContactForm(formData);
 
-        btn.textContent = 'Message Sent!';
-        UI.showToast('Thanks! We\'ll get back to you within 24 hours.');
+        if (result.demo) {
+          btn.textContent = 'Message Saved';
+          UI.showToast('Contact form submitted — email delivery will be live soon. Your message has been logged.');
+        } else if (result.success) {
+          btn.textContent = 'Message Sent!';
+          UI.showToast('Thanks! We\'ll get back to you within 24 hours.');
+        } else {
+          btn.textContent = 'Send Failed';
+          UI.showToast('Something went wrong. Please try again or email us directly.');
+          btn.disabled = false;
+          return;
+        }
         e.target.reset();
         setTimeout(() => { btn.disabled = false; btn.textContent = 'Send Message'; }, 3000);
       });

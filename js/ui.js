@@ -7,6 +7,7 @@ const UI = {
     this.initCurrencySelector();
     this.initLanguageSelector();
     this.initCookieConsent();
+    this.initAffiliateDisclosure();
   },
 
   renderHeader() {
@@ -28,6 +29,8 @@ const UI = {
           <a href="blog.html">${_t('nav.guide', 'Guide')}</a>
           <a href="neighbourhoods.html">${_t('nav.neighbourhoods', 'Neighbourhoods')}</a>
           <a href="whats-on.html">${_t('nav.whatsOn', "What's On")}</a>
+          <a href="quiz.html">${_t('nav.quiz', 'Quiz')}</a>
+          <a href="free-guide.html">${_t('nav.freeGuide', 'Free Guide')}</a>
           <a href="book-services.html">${_t('nav.bookServices', 'Book Services')}</a>
           <a href="my-trips.html">${_t('nav.myTrips', 'My Trips')}</a>
           <div class="currency-selector">
@@ -62,6 +65,8 @@ const UI = {
             <div class="footer__title">${_t('footer.plan', 'Plan')}</div>
             <ul class="footer__links">
               <li><a href="wizard.html">${_t('footer.createItinerary', 'Create Itinerary')}</a></li>
+              <li><a href="quiz.html">${_t('footer.quiz', 'What Type of Traveller?')}</a></li>
+              <li><a href="free-guide.html">${_t('footer.freeGuide', 'Free London Guide')}</a></li>
               <li><a href="airport-transfers.html">${_t('footer.airportTransfers', 'Airport Transfers')}</a></li>
               <li><a href="index.html#pricing">${_t('footer.pricing', 'Pricing')}</a></li>
               <li><a href="index.html#how-it-works">${_t('footer.howItWorks', 'How It Works')}</a></li>
@@ -193,6 +198,18 @@ const UI = {
         I18N.setLang(e.target.value);
       }
     });
+  },
+
+  initAffiliateDisclosure() {
+    // Show affiliate disclosure on blog and booking pages
+    const path = window.location.pathname;
+    if (!path.includes('blog-') && !path.includes('book-') && !path.includes('compare-') && !path.includes('neighbourhood-')) return;
+    const main = document.getElementById('main-content') || document.querySelector('main');
+    if (!main) return;
+    const notice = document.createElement('div');
+    notice.style.cssText = 'background:#fefce8;border-left:4px solid #f59e0b;padding:0.75rem 1rem;font-size:0.8rem;color:#92400e;max-width:800px;margin:1rem auto;border-radius:4px;';
+    notice.textContent = CONFIG?.affiliate?.disclosureText || 'We may earn a small commission from bookings made through our links, at no extra cost to you.';
+    main.insertBefore(notice, main.firstChild?.nextSibling || main.firstChild);
   },
 
   initCookieConsent() {
