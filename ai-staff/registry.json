@@ -137,6 +137,62 @@
       "autoPublish": false,
       "humanGated": false,
       "description": "Pulls GA4/Netlify/GHL data, reports funnel + top sources, recommends 3 weekly experiments."
+    },
+    {
+      "id": "subscriber-growth",
+      "name": "Edith Langley",
+      "title": "Subscriber Growth Lead",
+      "role": "growth",
+      "promptFile": "agents/subscriber-growth.md",
+      "schedule": "0 8 * * 3",
+      "model": "default",
+      "outputDir": "queue/growth",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Designs lead magnets, opt-in funnels, quizzes, and referral programmes to grow the email list."
+    },
+    {
+      "id": "sales-conversion",
+      "name": "William Drummond",
+      "title": "Sales & Conversion Specialist",
+      "role": "sales",
+      "promptFile": "agents/sales-conversion.md",
+      "schedule": "0 9 * * *",
+      "model": "default",
+      "outputDir": "queue/sales",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Audits the purchase funnel daily, writes recovery emails, pricing tests, upsells, and urgency hooks."
+    },
+    {
+      "id": "promotions-campaigns",
+      "name": "Georgina Hartwell",
+      "title": "Promotions & Campaigns Manager",
+      "role": "campaigns",
+      "promptFile": "agents/promotions-campaigns.md",
+      "schedule": "0 10 * * 2",
+      "model": "default",
+      "outputDir": "queue/campaigns",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Plans seasonal/flash/referral campaigns, writes launch sequences, runs retrospectives."
+    },
+    {
+      "id": "revenue-optimisation",
+      "name": "Edmund Ashworth",
+      "title": "Revenue Optimisation Director",
+      "role": "revenue",
+      "promptFile": "agents/revenue-optimisation.md",
+      "schedule": "0 11 * * 5",
+      "model": "default",
+      "outputDir": "queue/revenue",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Pricing strategy, LTV analysis, affiliate revenue audit, sponsorship rate card, new monetisation ideas."
     }
   ],
   "eventTriggers": [

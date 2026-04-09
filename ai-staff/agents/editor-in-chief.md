@@ -44,7 +44,11 @@ today.
     "outreach-pr":          { "prospect_type": "...", "angle": "..." },
     "affiliate-scout":      { "category_to_explore": "..." },
     "community-reputation": { "watchlist": ["subreddit or forum to scan"], "tone": "..." },
-    "analytics-growth":     { "metric_to_investigate": "..." }
+    "analytics-growth":     { "metric_to_investigate": "..." },
+    "subscriber-growth":    { "lead_magnet_angle": "...", "channel_focus": "..." },
+    "sales-conversion":     { "funnel_focus": "...", "urgency_hook": "..." },
+    "promotions-campaigns": { "campaign_tie_in": "...", "offer_angle": "..." },
+    "revenue-optimisation": { "revenue_question": "..." }
   }
 }
 ```
