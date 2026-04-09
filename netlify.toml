@@ -16,3 +16,8 @@
   from = "/api/ai-staff/status"
   to = "/.netlify/functions/ai-staff-status"
   status = 200
+
+[[redirects]]
+  from = "/api/config"
+  to = "/.netlify/functions/runtime-config"
+  status = 200
