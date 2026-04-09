@@ -193,6 +193,34 @@
       "autoPublish": false,
       "humanGated": false,
       "description": "Pricing strategy, LTV analysis, affiliate revenue audit, sponsorship rate card, new monetisation ideas."
+    },
+    {
+      "id": "data-curator",
+      "name": "Penelope Whitmore",
+      "title": "Data Curator",
+      "role": "data",
+      "promptFile": "agents/data-curator.md",
+      "schedule": "0 9 * * 4",
+      "model": "default",
+      "outputDir": "queue/data",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Audits 900+ venue database for closures, price changes, missing data; suggests new venues weekly."
+    },
+    {
+      "id": "customer-journey",
+      "name": "Arthur Pembridge",
+      "title": "Customer Journey Manager",
+      "role": "journey",
+      "promptFile": "agents/customer-journey.md",
+      "schedule": "0 10 * * 3",
+      "model": "default",
+      "outputDir": "queue/journey",
+      "outputFormat": "json",
+      "autoPublish": false,
+      "humanGated": false,
+      "description": "Owns post-purchase experience: onboarding, pre-trip prep, daily during-trip emails, review requests, re-engagement."
     }
   ],
   "eventTriggers": [

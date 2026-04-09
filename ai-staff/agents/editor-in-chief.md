@@ -48,7 +48,9 @@ today.
     "subscriber-growth":    { "lead_magnet_angle": "...", "channel_focus": "..." },
     "sales-conversion":     { "funnel_focus": "...", "urgency_hook": "..." },
     "promotions-campaigns": { "campaign_tie_in": "...", "offer_angle": "..." },
-    "revenue-optimisation": { "revenue_question": "..." }
+    "revenue-optimisation": { "revenue_question": "..." },
+    "data-curator":         { "audit_focus": "...", "seasonal_flag": "..." },
+    "customer-journey":     { "journey_stage_focus": "...", "personalisation_angle": "..." }
   }
 }
 ```
