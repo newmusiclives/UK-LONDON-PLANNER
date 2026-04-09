@@ -154,6 +154,7 @@ async function runAgent(agentId, { briefOverride = null } = {}) {
 
   const ms = Date.now() - started;
   logRun(agent, { ok: true, ms, outPath, tokens: result.raw.usage });
+  writeQueueIndex();
   console.log(`  ✓ ${ms}ms → ${path.relative(REPO, outPath)}`);
   return outPath;
 }
@@ -216,6 +217,18 @@ function listQueue() {
   return items.sort((a, b) => b.mtime - a.mtime);
 }
 
+function writeQueueIndex() {
+  const items = listQueue().map((it) => ({
+    rel: it.rel,
+    size: it.size,
+    mtime: it.mtime.toISOString(),
+  }));
+  fs.writeFileSync(
+    path.join(QUEUE_DIR, 'index.json'),
+    JSON.stringify({ generated: new Date().toISOString(), items }, null, 2)
+  );
+}
+
 function approve(relPath) {
   const src = path.isAbsolute(relPath) ? relPath : path.join(QUEUE_DIR, relPath);
   if (!fs.existsSync(src)) throw new Error(`Not found: ${src}`);
@@ -223,6 +236,7 @@ function approve(relPath) {
   const dst = path.join(PUBLISHED_DIR, rel);
   fs.mkdirSync(path.dirname(dst), { recursive: true });
   fs.renameSync(src, dst);
+  writeQueueIndex();
   console.log(`Approved → ${path.relative(REPO, dst)}`);
 }
 

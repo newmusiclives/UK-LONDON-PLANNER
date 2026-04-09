@@ -131,6 +131,7 @@
         <div class="admin-tab" data-tab="hotels">Hotels</div>
         <div class="admin-tab" data-tab="export">Export / Import</div>
         <div class="admin-tab" data-tab="promotions">Promotions</div>
+        <div class="admin-tab" data-tab="ai-staff">🤖 AI Staff</div>
       </div>
 
       <!-- ============================================================ -->
@@ -890,6 +891,42 @@
         </div>
       </div>
 
+      <!-- ============================================================ -->
+      <!-- AI STAFF -->
+      <!-- ============================================================ -->
+      <div class="admin-panel" data-panel="ai-staff">
+        <div class="admin-section">
+          <div class="admin-section__header">
+            <h3>🤖 AI Staff — Marketing Crew</h3>
+            <p style="margin:0.25rem 0 0;color:var(--color-text-secondary);font-size:0.9rem;">9 agents handle blog, newsletter, social, SEO, outreach, partnerships, community, and analytics. Schedules are <strong id="aiStaffScheduleStatus">disabled</strong> until you enable them.</p>
+          </div>
+          <div class="admin-section__body">
+            <div id="aiStaffStatus" style="background:#f8f9fa;border-left:4px solid var(--color-primary);padding:1rem;margin-bottom:1rem;border-radius:4px;font-family:monospace;font-size:0.85rem;">Loading status…</div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));gap:1rem;margin-bottom:1.5rem;" id="aiStaffAgentGrid"></div>
+
+            <div style="border-top:1px solid #e5e7eb;padding-top:1rem;">
+              <h4 style="margin:0 0 0.75rem;">📥 Approval Queue</h4>
+              <p style="color:var(--color-text-secondary);font-size:0.9rem;margin:0 0 1rem;">Drafts produced by agents land here. Approve to move into <code>published/</code> (or push to GHL for newsletter campaigns).</p>
+              <div id="aiStaffQueue" style="background:#fafafa;border:1px solid #e5e7eb;border-radius:6px;padding:1rem;min-height:80px;">
+                <div style="color:#9ca3af;font-style:italic;">Queue is empty. Run an agent to generate drafts.</div>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem;padding:1rem;background:#fff8e1;border-left:4px solid #f59e0b;border-radius:4px;font-size:0.85rem;">
+              <strong>How to use:</strong>
+              <ol style="margin:0.5rem 0 0 1.25rem;padding:0;">
+                <li>Add your <code>ANTHROPIC_API_KEY</code> to <code>.env</code> at the repo root</li>
+                <li>Run <code>node ai-staff/orchestrator.js status</code> to verify config</li>
+                <li>Test a single agent: <code>npm run ai:run editor-in-chief</code></li>
+                <li>Review drafts in <code>ai-staff/queue/</code> or here in this panel</li>
+                <li>When happy, set <code>schedulesEnabled: true</code> in <code>ai-staff/registry.json</code></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -912,6 +949,7 @@
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/promotions.js"></script>
+  <script src="js/ai-staff-admin.js"></script>
   <script>
     const ADMIN_KEY = 'londonPlannerAdmin';
     const SALES_KEY = 'londonPlannerSales';

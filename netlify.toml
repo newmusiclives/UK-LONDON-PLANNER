@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Scheduled functions — DISABLED until owner enables.
+# Each function checks ai-staff/registry.json `schedulesEnabled` before running anything.
+# To enable: set schedulesEnabled=true in registry.json AND uncomment the schedule lines below.
+
+[functions]
+  node_bundler = "esbuild"
+
+# [functions."ai-staff-tick"]
+#   schedule = "0 * * * *"   # hourly tick — orchestrator picks which agents are due
+
+[[redirects]]
+  from = "/api/ai-staff/status"
+  to = "/.netlify/functions/ai-staff-status"
+  status = 200
