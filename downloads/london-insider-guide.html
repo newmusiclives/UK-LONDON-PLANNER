@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The London Insider Guide — UK &amp; London Planner</title>
+  <style>
+    /* ===== BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #1a1a1a;
+      background: #f8f7f4;
+      line-height: 1.65;
+      padding: 0;
+    }
+    .page {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 40px 48px;
+      background: #fff;
+    }
+    h1 { font-size: 2.4rem; line-height: 1.15; margin-bottom: 0.3em; color: #1b2a4a; }
+    h2 { font-size: 1.5rem; color: #1b2a4a; margin: 1.8em 0 0.6em; border-bottom: 2px solid #c8102e; padding-bottom: 0.25em; }
+    h3 { font-size: 1.1rem; color: #2c3e50; margin: 1.2em 0 0.3em; }
+    p { margin-bottom: 0.8em; }
+    ul, ol { margin: 0.5em 0 1em 1.5em; }
+    li { margin-bottom: 0.35em; }
+    a { color: #c8102e; }
+
+    /* ===== COVER ===== */
+    .cover {
+      text-align: center;
+      padding: 80px 20px 60px;
+      border-bottom: 4px solid #c8102e;
+      margin-bottom: 2em;
+    }
+    .cover h1 { font-size: 2.8rem; color: #c8102e; margin-bottom: 0.15em; }
+    .cover .subtitle { font-size: 1.3rem; color: #555; font-style: italic; margin-bottom: 1.2em; }
+    .cover .tagline { font-size: 1rem; color: #777; max-width: 500px; margin: 0 auto; }
+
+    /* ===== SAVE BUTTON ===== */
+    .save-btn {
+      display: block;
+      margin: 0 auto 2em;
+      background: #c8102e;
+      color: #fff;
+      border: none;
+      padding: 14px 36px;
+      font-size: 1.05rem;
+      font-family: inherit;
+      border-radius: 6px;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+    }
+    .save-btn:hover { background: #a00d24; }
+
+    /* ===== TAGS ===== */
+    .tag {
+      display: inline-block;
+      background: #eef2f7;
+      color: #1b2a4a;
+      font-size: 0.78rem;
+      padding: 2px 10px;
+      border-radius: 3px;
+      margin: 2px 3px 2px 0;
+      font-family: -apple-system, Helvetica, Arial, sans-serif;
+    }
+
+    /* ===== CHECKLIST ===== */
+    .checklist { list-style: none; margin-left: 0; padding-left: 0; }
+    .checklist li::before { content: "\2610\00a0"; font-size: 1.1em; }
+
+    /* ===== VENUE CARD ===== */
+    .venue { margin-bottom: 1.2em; padding: 12px 16px; border-left: 3px solid #c8102e; background: #fafafa; }
+    .venue .name { font-weight: bold; color: #1b2a4a; }
+    .venue .meta { font-size: 0.88rem; color: #666; font-family: -apple-system, Helvetica, Arial, sans-serif; }
+    .venue .tip { font-size: 0.88rem; font-style: italic; color: #555; margin-top: 0.3em; }
+
+    /* ===== COMPARISON TABLE ===== */
+    table { width: 100%; border-collapse: collapse; margin: 1em 0 1.5em; font-size: 0.92rem; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background: #1b2a4a; color: #fff; font-family: -apple-system, Helvetica, Arial, sans-serif; font-weight: 600; }
+    tr:nth-child(even) td { background: #f5f5f5; }
+
+    /* ===== NEIGHBOURHOOD GRID ===== */
+    .hood { margin-bottom: 1.2em; }
+    .hood h3 { margin-bottom: 0.15em; }
+
+    /* ===== FOOTER ===== */
+    .guide-footer {
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 2px solid #c8102e;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .guide-footer a { font-weight: bold; }
+
+    /* ===== PAGE BREAKS ===== */
+    .page-break { page-break-before: always; }
+
+    /* ===== PRINT ===== */
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .page { padding: 15mm 18mm; max-width: none; box-shadow: none; }
+      .save-btn { display: none !important; }
+      .cover { padding: 50px 20px 40px; }
+      h2 { break-after: avoid; }
+      .venue, .hood { break-inside: avoid; }
+      table { break-inside: avoid; }
+      a { color: #1a1a1a; text-decoration: none; }
+      .tag { background: #e8e8e8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      th { background: #1b2a4a !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============ COVER ============ -->
+  <div class="cover">
+    <h1>The London Insider Guide</h1>
+    <div class="subtitle">UK &amp; London Planner</div>
+    <div class="tagline">Everything you actually need to know before visiting London &mdash; from packing the right layers to finding the restaurants locals swear by.</div>
+  </div>
+
+  <button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+  <!-- ============ PACKING CHECKLIST ============ -->
+  <h2>Season-by-Season Packing Checklist</h2>
+  <p>London weather is famously changeable. Even in summer, pack a light waterproof. These lists cover what you genuinely need.</p>
+
+  <h3>Spring (March &ndash; May) &middot; 8&ndash;16&deg;C</h3>
+  <ul class="checklist">
+    <li>Light waterproof jacket (showers are frequent)</li>
+    <li>Layerable tops &mdash; mornings are cool, afternoons warm</li>
+    <li>Comfortable walking shoes (waterproof soles ideal)</li>
+    <li>Compact umbrella</li>
+    <li>Sunglasses (April/May sun is deceptively strong)</li>
+    <li>One smart outfit for restaurants or theatre</li>
+  </ul>
+
+  <h3>Summer (June &ndash; August) &middot; 15&ndash;27&deg;C</h3>
+  <ul class="checklist">
+    <li>Breathable clothing &mdash; T-shirts, shorts, light dresses</li>
+    <li>Sun cream (SPF 30+; you will burn on park days)</li>
+    <li>Refillable water bottle (free refills at many cafes)</li>
+    <li>A light jumper for evenings and air-conditioned museums</li>
+    <li>Rain jacket or packable poncho (summer storms happen)</li>
+    <li>Comfortable sandals and walking trainers</li>
+  </ul>
+
+  <h3>Autumn (September &ndash; November) &middot; 6&ndash;18&deg;C</h3>
+  <ul class="checklist">
+    <li>Medium-weight waterproof coat</li>
+    <li>Warm layers: flannel shirts, knit jumpers</li>
+    <li>Scarf (especially late October onward)</li>
+    <li>Sturdy waterproof shoes or boots</li>
+    <li>Compact umbrella (essential)</li>
+    <li>Thermals for late November</li>
+  </ul>
+
+  <h3>Winter (December &ndash; February) &middot; 2&ndash;8&deg;C</h3>
+  <ul class="checklist">
+    <li>Warm, windproof coat (the Thames wind is brutal)</li>
+    <li>Hat, gloves, and a thick scarf</li>
+    <li>Thermal base layers for full days outdoors</li>
+    <li>Waterproof boots with grip</li>
+    <li>Warm socks (two pairs if doing long walks)</li>
+    <li>Hand warmers for Christmas markets and open-air events</li>
+  </ul>
+
+  <!-- ============ MONEY-SAVING SECRETS ============ -->
+  <div class="page-break"></div>
+  <h2>15 Money-Saving Secrets</h2>
+  <p>London can be expensive, but locals know how to cut costs dramatically. Every tip below is real and current.</p>
+  <ol>
+    <li><strong>Free museums:</strong> The British Museum, Natural History Museum, Tate Modern, National Gallery, V&amp;A, Science Museum, and the Imperial War Museum are all permanently free. You could spend a week and never pay an entrance fee.</li>
+    <li><strong>Oyster daily cap:</strong> Use a contactless bank card or Oyster card on the Tube and buses. Fares are automatically capped at a daily maximum (currently &pound;8.10 for Zones 1&ndash;2), so you never overpay.</li>
+    <li><strong>Lunchtime theatre tickets:</strong> The TKTS booth in Leicester Square sells same-day West End tickets at up to 50% off. Arrive when it opens (10:30am Mon&ndash;Sat) for the best selection.</li>
+    <li><strong>Eat at Borough Market at closing time:</strong> Traders start reducing prices from about 3pm on Saturdays. The food is identical &mdash; just cheaper.</li>
+    <li><strong>Free walking tours:</strong> Companies like Strawberry Tours and Free Tours by Foot run tip-based walking tours across all major areas. You only pay what you think it was worth.</li>
+    <li><strong>Supermarket meal deals:</strong> Tesco, Sainsbury's, Boots, and M&amp;S offer lunch meal deals (sandwich + drink + snack) from &pound;3.50&ndash;&pound;5. Genuinely decent food.</li>
+    <li><strong>Off-peak travel:</strong> Tube fares drop significantly after 9:30am on weekdays. If your plans are flexible, avoid the 6:30&ndash;9:30am rush.</li>
+    <li><strong>Thames Clippers with Oyster:</strong> The river bus accepts Oyster/contactless and counts toward your daily cap. It is basically a sightseeing cruise for the price of a bus fare.</li>
+    <li><strong>Free lunchtime concerts:</strong> St Martin-in-the-Fields (Trafalgar Square) hosts free lunchtime recitals on Mondays, Tuesdays, and Fridays. Several other City churches do the same.</li>
+    <li><strong>Tap water is free everywhere:</strong> Restaurants and cafes must provide free tap water by law. No need to buy bottled.</li>
+    <li><strong>Pub lunch specials:</strong> Many pubs offer two-course lunch specials for &pound;10&ndash;&pound;14, especially Monday to Friday. Far cheaper than their evening menus.</li>
+    <li><strong>Skip the London Eye at full price:</strong> Book online in advance for up to 20% off, or visit after 5pm for cheaper "twilight" tickets with better views.</li>
+    <li><strong>Use the bus for sightseeing:</strong> The number 11 bus runs from Liverpool Street through the City, past St Paul's, over Westminster Bridge, and along the South Bank. All the sights, &pound;1.75 flat fare.</li>
+    <li><strong>Pre-theatre dinner menus:</strong> Restaurants in Soho, Covent Garden, and the West End offer two or three-course pre-theatre menus (5&ndash;6:30pm) for &pound;15&ndash;&pound;25 &mdash; the same food at half the evening price.</li>
+    <li><strong>Parks are free (and spectacular):</strong> Hyde Park, Regent's Park, Hampstead Heath, Greenwich Park, and Richmond Park cost nothing. Pack a picnic from a supermarket and spend the afternoon.</li>
+  </ol>
+
+  <!-- ============ NEIGHBOURHOODS ============ -->
+  <div class="page-break"></div>
+  <h2>Neighbourhood Breakdown</h2>
+  <p>London is a city of villages. Each area has its own character. Here are eight you should know.</p>
+
+  <div class="hood">
+    <h3>Soho</h3>
+    <p>London's beating heart of nightlife, theatre, and food. Crammed with restaurants on every corner, live music venues, and the West End's biggest theatres within a few minutes' walk. Vibrant and unapologetically loud after dark.</p>
+    <span class="tag">Best for: Nightlife</span>
+    <span class="tag">Theatre</span>
+    <span class="tag">Dining</span>
+    <span class="tag">LGBTQ+ scene</span>
+  </div>
+
+  <div class="hood">
+    <h3>South Bank &amp; Bankside</h3>
+    <p>The Thames-side cultural corridor stretching from the London Eye to Tower Bridge. Home to the Tate Modern, Shakespeare's Globe, Borough Market, and a continuous riverside walk. Best experienced on foot.</p>
+    <span class="tag">Best for: Culture</span>
+    <span class="tag">Free museums</span>
+    <span class="tag">Riverside walks</span>
+    <span class="tag">Street food</span>
+  </div>
+
+  <div class="hood">
+    <h3>Shoreditch &amp; Spitalfields</h3>
+    <p>East London's creative engine. Street art covers every wall, independent boutiques line Brick Lane, and the food scene ranges from legendary bagel shops to innovative tasting menus. Best on weekends when the markets are buzzing.</p>
+    <span class="tag">Best for: Street art</span>
+    <span class="tag">Markets</span>
+    <span class="tag">Indie food</span>
+    <span class="tag">Coffee</span>
+  </div>
+
+  <div class="hood">
+    <h3>Kensington &amp; South Kensington</h3>
+    <p>London's museum quarter. The Natural History Museum, V&amp;A, and Science Museum sit side by side &mdash; all free. Elegant residential streets, Hyde Park on your doorstep, and Harrods just around the corner.</p>
+    <span class="tag">Best for: Museums</span>
+    <span class="tag">Families</span>
+    <span class="tag">Architecture</span>
+    <span class="tag">Parks</span>
+  </div>
+
+  <div class="hood">
+    <h3>Camden</h3>
+    <p>Loud, colourful, and defiantly alternative. Camden Market is a sprawling labyrinth of food stalls, vintage clothing, and handmade goods. The canal-side pubs and live music venues keep it lively well into the night.</p>
+    <span class="tag">Best for: Markets</span>
+    <span class="tag">Live music</span>
+    <span class="tag">Alternative culture</span>
+    <span class="tag">Street food</span>
+  </div>
+
+  <div class="hood">
+    <h3>Greenwich</h3>
+    <p>A riverside town-within-a-city south of the Thames. Stand on the Prime Meridian line, explore the Cutty Sark, then climb the hill in Greenwich Park for the best panoramic view of the London skyline. Well worth the half-day trip.</p>
+    <span class="tag">Best for: History</span>
+    <span class="tag">Views</span>
+    <span class="tag">Day trip</span>
+    <span class="tag">Maritime heritage</span>
+  </div>
+
+  <div class="hood">
+    <h3>Covent Garden &amp; West End</h3>
+    <p>The tourist centre done right. Covent Garden's piazza hosts street performers and boutique shopping, while the surrounding streets are packed with theatres, restaurants, and some of London's oldest pubs.</p>
+    <span class="tag">Best for: Shopping</span>
+    <span class="tag">Theatre</span>
+    <span class="tag">Street performers</span>
+    <span class="tag">First-timers</span>
+  </div>
+
+  <div class="hood">
+    <h3>Brixton</h3>
+    <p>South London's most vibrant multicultural neighbourhood. Brixton Village market is a covered arcade of incredible Caribbean, African, and Asian food. The music scene is legendary &mdash; David Bowie grew up here. Full of energy and authenticity.</p>
+    <span class="tag">Best for: Food markets</span>
+    <span class="tag">Live music</span>
+    <span class="tag">Multicultural dining</span>
+    <span class="tag">Local vibe</span>
+  </div>
+
+  <!-- ============ LOCAL FAVOURITES ============ -->
+  <div class="page-break"></div>
+  <h2>10 Local-Favourite Restaurants, Pubs &amp; Cafes</h2>
+  <p>Not tourist traps. These are places Londoners actually go &mdash; pulled straight from our venue database.</p>
+
+  <div class="venue">
+    <div class="name">1. Dishoom Shoreditch</div>
+    <div class="meta">Indian &middot; Shoreditch &middot; ~&pound;25/head</div>
+    <p>Bombay-inspired cafe serving outstanding Indian cuisine in a beautifully designed space. Their bacon naan roll at breakfast is legendary.</p>
+    <div class="tip">Tip: No reservations for groups under 6 at dinner &mdash; arrive before 5:30pm or expect a queue. Worth the wait.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">2. Padella</div>
+    <div class="meta">Italian &middot; Bankside (Borough Market) &middot; ~&pound;15/head</div>
+    <p>Handmade pasta dishes at incredibly reasonable prices. The pappardelle with 8-hour beef shin ragu is extraordinary.</p>
+    <div class="tip">Tip: No reservations &mdash; queue early. Right next to Borough Market, so combine the two.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">3. BAO Soho</div>
+    <div class="meta">Taiwanese &middot; Soho &middot; ~&pound;18/head</div>
+    <p>Tiny Taiwanese bun shop serving pillowy gua bao and small plates. A cult favourite with always a queue.</p>
+    <div class="tip">Tip: The classic bao is a must. Try the fried Horlicks ice cream.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">4. Flat Iron</div>
+    <div class="meta">Steakhouse &middot; Soho &middot; ~&pound;16/head</div>
+    <p>Exceptional flat iron steak served with a side salad and unlimited creamy bearnaise sauce. Incredible value.</p>
+    <div class="tip">Tip: Just one thing on the menu &mdash; steak. And it is brilliant. They give you a mini cleaver as a steak knife.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">5. Beigel Bake, Brick Lane</div>
+    <div class="meta">Bagels &middot; Shoreditch &middot; ~&pound;4/head</div>
+    <p>A legendary 24-hour bagel shop serving London since 1974. The salt beef beigel is a London institution.</p>
+    <div class="tip">Tip: Open 24 hours. The perfect post-night-out stop. Cash only.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">6. Rules</div>
+    <div class="meta">Traditional British &middot; Covent Garden &middot; ~&pound;55/head</div>
+    <p>London's oldest restaurant, established in 1798. Traditional British fare including game, pies, and puddings in opulent Edwardian surroundings.</p>
+    <div class="tip">Tip: A quintessentially British experience. The steak and kidney pie is legendary.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">7. The Churchill Arms</div>
+    <div class="meta">Pub &middot; Kensington &middot; ~&pound;6/pint</div>
+    <p>One of London's most photographed pubs, covered in flowers outside and filled with Churchill memorabilia inside. Also serves excellent Thai food.</p>
+    <div class="tip">Tip: The exterior is spectacular in summer. The Thai food at the back is surprisingly good and cheap.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">8. Ye Olde Cheshire Cheese</div>
+    <div class="meta">Historic Pub &middot; City of London &middot; ~&pound;6/pint</div>
+    <p>A historic pub rebuilt in 1667 after the Great Fire. Former haunt of Dickens, Dr. Johnson, and Mark Twain. Atmospheric dark wood and low ceilings.</p>
+    <div class="tip">Tip: Explore all the nooks and levels. The cellar bar dates to the 13th century.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">9. Monmouth Coffee (Borough Market)</div>
+    <div class="meta">Specialty Coffee &middot; Bankside &middot; ~&pound;4</div>
+    <p>Legendary single-origin coffee roaster and one of London's original specialty coffee pioneers. A pilgrimage site for coffee lovers worldwide.</p>
+    <div class="tip">Tip: Expect a queue at weekends but it moves fast. Buy a bag of beans to take home &mdash; they roast on-site.</div>
+  </div>
+
+  <div class="venue">
+    <div class="name">10. The Wolseley</div>
+    <div class="meta">European &middot; St James's &middot; ~&pound;35/head</div>
+    <p>A grand European-style cafe-restaurant in a stunning Art Deco building on Piccadilly. Perfect for a refined breakfast or afternoon tea.</p>
+    <div class="tip">Tip: The breakfast is a London institution. Book ahead or try walking in for counter seats.</div>
+  </div>
+
+  <!-- ============ TRANSPORT CHEAT SHEET ============ -->
+  <div class="page-break"></div>
+  <h2>Transport Cheat Sheet</h2>
+  <p>London has three main ways to pay for public transport. Here is how they compare.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Oyster Card</th>
+        <th>Contactless Bank Card</th>
+        <th>Travelcard (Day/Week)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>How it works</strong></td>
+        <td>Prepaid card; top up with credit</td>
+        <td>Tap your debit/credit card directly</td>
+        <td>Unlimited travel pass for set zones</td>
+      </tr>
+      <tr>
+        <td><strong>Daily cap (Zones 1&ndash;2)</strong></td>
+        <td>&pound;8.10</td>
+        <td>&pound;8.10 (same cap)</td>
+        <td>&pound;16.10 (Anytime) / &pound;8.10 (Off-peak)</td>
+      </tr>
+      <tr>
+        <td><strong>Weekly cap</strong></td>
+        <td>No weekly cap</td>
+        <td>&pound;40.70 (Mon&ndash;Sun auto-cap)</td>
+        <td>&pound;40.70 (7-Day Travelcard)</td>
+      </tr>
+      <tr>
+        <td><strong>Covers</strong></td>
+        <td>Tube, Bus, Overground, DLR, some Rail</td>
+        <td>Same as Oyster</td>
+        <td>Same + National Rail in zones</td>
+      </tr>
+      <tr>
+        <td><strong>Best for</strong></td>
+        <td>Visitors without contactless; kids (child Oyster)</td>
+        <td>Most visitors &mdash; simplest option</td>
+        <td>Heavy users doing 5+ journeys/day for a week</td>
+      </tr>
+      <tr>
+        <td><strong>Where to get it</strong></td>
+        <td>Any Tube station, &pound;7 refundable deposit</td>
+        <td>Already in your wallet</td>
+        <td>Tube stations or online</td>
+      </tr>
+      <tr>
+        <td><strong>Buses</strong></td>
+        <td>&pound;1.75 flat fare</td>
+        <td>&pound;1.75 flat fare</td>
+        <td>Unlimited (included)</td>
+      </tr>
+      <tr>
+        <td><strong>Tip</strong></td>
+        <td>Reclaim your &pound;7 deposit + unused credit at any Tube station when you leave</td>
+        <td>Use ONE card for all journeys so capping works; avoid switching between cards</td>
+        <td>Only worth it if you travel heavily across many zones every day</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Quick Transport Tips</h3>
+  <ul>
+    <li><strong>The Elizabeth Line</strong> is the newest and fastest east-west route. Paddington to Liverpool Street in 17 minutes with no changes.</li>
+    <li><strong>Avoid rush hour</strong> (7:30&ndash;9:30am, 5&ndash;7pm weekdays) if you can. Trains are packed and fares are higher.</li>
+    <li><strong>Bus is cheapest.</strong> At &pound;1.75 per ride (capped at &pound;5.25/day), buses are cheaper than the Tube and you see the city above ground.</li>
+    <li><strong>Citymapper app</strong> is what Londoners actually use for navigation. Download it before you arrive.</li>
+    <li><strong>Walking is underrated.</strong> Central London is much more compact than the Tube map suggests. Covent Garden to the British Museum is 8 minutes on foot, but 12 minutes via the Tube (with the walk to the station).</li>
+    <li><strong>Black cabs</strong> are metered and reliable but expensive. Use only when public transport is not practical (late night, heavy luggage, groups of 4+).</li>
+  </ul>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="guide-footer">
+    <p>Get your free personalised London itinerary at<br>
+    <a href="https://uk-london-planner.netlify.app">uk-london-planner.netlify.app</a></p>
+    <p style="font-size:0.82rem; color:#999; margin-top:0.8em;">&copy; UK &amp; London Planner. Information believed accurate at time of publication. Prices may change.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

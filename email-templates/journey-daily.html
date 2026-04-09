@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day {{custom_field.day_number}} — Your London Plan</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f3f4f6;">
+<tr><td align="center" style="padding:24px 16px;">
+
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;">
+
+  <!-- Header -->
+  <tr>
+    <td style="background-color:#1B2A4A;padding:24px 40px;text-align:center;">
+      <p style="margin:0 0 4px;color:#C9A84C;font-size:14px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">Your London Itinerary</p>
+      <h1 style="margin:0;color:#ffffff;font-size:28px;font-weight:bold;">Day {{custom_field.day_number}}</h1>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:28px 40px;color:#374151;font-size:16px;line-height:1.6;">
+      <p style="margin:0 0 16px;">Good morning, {{contact.first_name}}!</p>
+
+      <p style="margin:0 0 20px;">Your Day {{custom_field.day_number}} plan is ready. Tap below to see your morning, afternoon, and evening activities with directions and tips.</p>
+
+      <!-- CTA -->
+      <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 20px;">
+        <tr>
+          <td style="background-color:#C9A84C;border-radius:6px;">
+            <a href="https://londonandukplanner.com/itinerary#day-{{custom_field.day_number}}" style="display:inline-block;padding:14px 32px;color:#1B2A4A;font-size:16px;font-weight:bold;text-decoration:none;">Open Today's Plan</a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Tip box -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f9fafb;border-radius:6px;border-left:4px solid #C9A84C;">
+        <tr>
+          <td style="padding:16px;color:#374151;font-size:14px;">
+            <strong style="color:#1B2A4A;">Daily tip:</strong> The Tube is busiest 7:30&ndash;9:30am. If you can, start your morning at a nearby cafe and travel after the rush.
+          </td>
+        </tr>
+      </table>
+
+      <p style="margin:20px 0 0;font-size:14px;color:#6b7280;">Have a brilliant day exploring London!</p>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f9fafb;padding:20px 40px;text-align:center;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;">
+      <p style="margin:0 0 8px;">&copy; 2026 London &amp; UK Planner</p>
+      <p style="margin:0;"><a href="{{unsubscribe_link}}" style="color:#9ca3af;text-decoration:underline;">Unsubscribe</a></p>
+    </td>
+  </tr>
+
+</table>
+
+</td></tr>
+</table>
+</body>
+</html>

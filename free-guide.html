@@ -70,9 +70,10 @@
               </form>
               <div id="lm-success" style="display:none;text-align:center;padding:1.5rem 0;">
                 <div style="font-size:2.5rem;margin-bottom:0.5rem;">🎉</div>
-                <h3>Check your inbox!</h3>
-                <p style="color:var(--color-text-muted);font-size:0.9rem;margin-top:0.5rem;">Your guide is on its way. While you wait...</p>
-                <a href="quiz.html" class="btn btn--accent" style="margin-top:1rem;">Take the London Traveller Quiz</a>
+                <h3>Your guide is opening now!</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;margin-top:0.5rem;">Use "Save as PDF" in the guide to keep it forever. While you're here...</p>
+                <a href="downloads/london-insider-guide.html" target="_blank" class="btn btn--primary" style="margin-top:0.75rem;">Open Guide Again</a>
+                <a href="quiz.html" class="btn btn--accent" style="margin-top:0.75rem;">Take the London Traveller Quiz</a>
               </div>
               <p style="text-align:center;font-size:0.75rem;color:var(--color-text-muted);margin-top:1rem;">
                 Join 2,000+ London trip planners. We respect your inbox.
@@ -137,6 +138,11 @@
 
         document.getElementById('lead-magnet-form').style.display = 'none';
         document.getElementById('lm-success').style.display = 'block';
+
+        // Auto-open the guide after a short delay
+        setTimeout(() => {
+          window.open('downloads/london-insider-guide.html', '_blank');
+        }, 1500);
       });
     });
   </script>
