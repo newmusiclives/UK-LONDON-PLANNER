@@ -29,8 +29,47 @@
         </p>
         <a href="itinerary.html" class="btn btn--primary btn--large">View My Itinerary</a>
         <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 2rem;">
-          Redirecting automatically in <span id="countdown">5</span> seconds...
+          Redirecting automatically in <span id="countdown">15</span> seconds...
         </p>
+      </div>
+    </section>
+
+    <!-- Referral Share -->
+    <section class="section" style="padding:2rem 0 3rem;">
+      <div class="container" style="max-width:560px;text-align:center;">
+        <div class="card" style="padding:2rem;">
+          <h3 style="margin-bottom:0.5rem;">Share the Love, Earn Credit</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9rem;margin-bottom:1.5rem;">
+            Know someone else planning a London trip? Share your unique link — they get tips, you get a discount on your next itinerary.
+          </p>
+          <div style="display:flex;gap:8px;margin-bottom:1rem;">
+            <input type="text" id="referral-url" readonly style="flex:1;padding:10px 14px;border:2px solid var(--color-border);border-radius:8px;font-size:0.85rem;font-family:monospace;background:#f8f9fa;" value="">
+            <button class="btn btn--primary" id="copy-referral" style="white-space:nowrap;">Copy Link</button>
+          </div>
+          <div style="display:flex;justify-content:center;gap:1rem;">
+            <a id="share-whatsapp" href="#" target="_blank" rel="noopener" style="font-size:0.85rem;color:var(--color-primary);text-decoration:underline;">WhatsApp</a>
+            <a id="share-email" href="#" style="font-size:0.85rem;color:var(--color-primary);text-decoration:underline;">Email</a>
+            <a id="share-x" href="#" target="_blank" rel="noopener" style="font-size:0.85rem;color:var(--color-primary);text-decoration:underline;">X / Twitter</a>
+          </div>
+          <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:1rem;">Your referral code: <strong id="referral-code"></strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Prompt -->
+    <section class="section" style="padding:0 0 3rem;">
+      <div class="container" style="max-width:560px;text-align:center;">
+        <div class="card" style="padding:2rem;background:linear-gradient(135deg,#fefce8,#fff);">
+          <h3 style="margin-bottom:0.5rem;">Enjoyed Your Trip?</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9rem;margin-bottom:1.5rem;">
+            Your honest review helps other travellers find us and helps us improve. Takes 2 minutes.
+          </p>
+          <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
+            <a href="testimonials.html" class="btn btn--primary">Write a Review</a>
+            <a id="trustpilot-link" href="#" target="_blank" rel="noopener" class="btn btn--outline" style="display:none;">Review on Trustpilot</a>
+            <a id="google-review-link" href="#" target="_blank" rel="noopener" class="btn btn--outline" style="display:none;">Review on Google</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -42,15 +81,47 @@
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/payment.js"></script>
+  <script src="js/analytics.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       UI.init();
-
-      // Process payment success
       Payment.handleSuccess();
 
-      // Countdown and redirect
-      let count = 5;
+      // Referral setup
+      if (typeof Referral !== 'undefined') {
+        const url = Referral.getShareUrl();
+        const code = Referral.generateCode();
+        document.getElementById('referral-url').value = url;
+        document.getElementById('referral-code').textContent = code;
+
+        const msg = encodeURIComponent('I just planned my London trip with this brilliant tool — check it out! ' + url);
+        document.getElementById('share-whatsapp').href = 'https://wa.me/?text=' + msg;
+        document.getElementById('share-email').href = 'mailto:?subject=' + encodeURIComponent('London Trip Planner') + '&body=' + msg;
+        document.getElementById('share-x').href = 'https://x.com/intent/tweet?text=' + msg;
+
+        document.getElementById('copy-referral').addEventListener('click', () => {
+          navigator.clipboard.writeText(url);
+          document.getElementById('copy-referral').textContent = 'Copied!';
+          setTimeout(() => document.getElementById('copy-referral').textContent = 'Copy Link', 2000);
+        });
+      }
+
+      // External review links (set via env-bridge)
+      setTimeout(() => {
+        if (window.__trustpilotUrl) {
+          const tp = document.getElementById('trustpilot-link');
+          tp.href = window.__trustpilotUrl;
+          tp.style.display = '';
+        }
+        if (window.__googleReviewUrl) {
+          const gr = document.getElementById('google-review-link');
+          gr.href = window.__googleReviewUrl;
+          gr.style.display = '';
+        }
+      }, 500);
+
+      // Longer countdown so they see referral + review
+      let count = 15;
       const el = document.getElementById('countdown');
       const timer = setInterval(() => {
         count--;

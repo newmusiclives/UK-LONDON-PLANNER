@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free London Insider Guide — UK & London Planner</title>
+  <meta name="description" content="Download our free London planning guide: packing checklists, money-saving tips, neighbourhood breakdowns, and insider secrets from locals.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main" id="main-content">
+    <section class="section" style="padding:4rem 0;">
+      <div class="container" style="max-width:800px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;" id="lead-magnet-grid">
+
+          <!-- Left: value prop -->
+          <div>
+            <span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:0.8rem;font-weight:600;padding:4px 12px;border-radius:999px;margin-bottom:1rem;">FREE DOWNLOAD</span>
+            <h1 style="font-size:2rem;line-height:1.2;margin-bottom:1rem;" id="lm-headline">The London Insider Guide</h1>
+            <p style="color:var(--color-text-muted);font-size:1.05rem;line-height:1.7;margin-bottom:1.5rem;" id="lm-description">
+              Everything you need to plan the perfect London trip — from a team that's collectively spent 50+ years exploring the city. No fluff, no filler, just the stuff that actually makes your trip better.
+            </p>
+            <ul style="list-style:none;padding:0;margin:0 0 2rem;" id="lm-benefits">
+              <li style="padding:0.5rem 0;display:flex;gap:0.75rem;align-items:start;">
+                <span style="color:var(--color-accent);font-weight:bold;">✓</span>
+                <span>Season-by-season packing checklist (stop Googling "what to wear in London in April")</span>
+              </li>
+              <li style="padding:0.5rem 0;display:flex;gap:0.75rem;align-items:start;">
+                <span style="color:var(--color-accent);font-weight:bold;">✓</span>
+                <span>15 money-saving secrets that most tourists never discover</span>
+              </li>
+              <li style="padding:0.5rem 0;display:flex;gap:0.75rem;align-items:start;">
+                <span style="color:var(--color-accent);font-weight:bold;">✓</span>
+                <span>Neighbourhood breakdown — where to stay based on your travel style</span>
+              </li>
+              <li style="padding:0.5rem 0;display:flex;gap:0.75rem;align-items:start;">
+                <span style="color:var(--color-accent);font-weight:bold;">✓</span>
+                <span>10 restaurants, pubs, and cafes that locals actually go to</span>
+              </li>
+              <li style="padding:0.5rem 0;display:flex;gap:0.75rem;align-items:start;">
+                <span style="color:var(--color-accent);font-weight:bold;">✓</span>
+                <span>Transport cheat sheet — Oyster vs. contactless vs. Travelcard explained in 60 seconds</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: capture form -->
+          <div>
+            <div class="card" style="padding:2rem;border:2px solid var(--color-accent);">
+              <h3 style="text-align:center;margin-bottom:0.5rem;">Get Your Free Guide</h3>
+              <p style="text-align:center;color:var(--color-text-muted);font-size:0.85rem;margin-bottom:1.5rem;">Instant download — no spam, unsubscribe any time</p>
+              <form id="lead-magnet-form">
+                <div style="margin-bottom:1rem;">
+                  <input type="text" id="lm-name" placeholder="First name" style="width:100%;padding:12px 14px;border:2px solid var(--color-border);border-radius:8px;font-size:0.95rem;font-family:inherit;">
+                </div>
+                <div style="margin-bottom:1.5rem;">
+                  <input type="email" id="lm-email" required placeholder="Email address" style="width:100%;padding:12px 14px;border:2px solid var(--color-border);border-radius:8px;font-size:0.95rem;font-family:inherit;">
+                </div>
+                <button type="submit" class="btn btn--primary btn--large btn--full" id="lm-submit">Download Free Guide</button>
+              </form>
+              <div id="lm-success" style="display:none;text-align:center;padding:1.5rem 0;">
+                <div style="font-size:2.5rem;margin-bottom:0.5rem;">🎉</div>
+                <h3>Check your inbox!</h3>
+                <p style="color:var(--color-text-muted);font-size:0.9rem;margin-top:0.5rem;">Your guide is on its way. While you wait...</p>
+                <a href="quiz.html" class="btn btn--accent" style="margin-top:1rem;">Take the London Traveller Quiz</a>
+              </div>
+              <p style="text-align:center;font-size:0.75rem;color:var(--color-text-muted);margin-top:1rem;">
+                Join 2,000+ London trip planners. We respect your inbox.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social proof -->
+        <div style="text-align:center;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border);">
+          <p style="color:var(--color-text-muted);font-size:0.9rem;margin-bottom:1rem;">Trusted by travellers from</p>
+          <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;color:var(--color-text-muted);font-size:0.85rem;">
+            <span>🇺🇸 USA</span>
+            <span>🇦🇺 Australia</span>
+            <span>🇨🇦 Canada</span>
+            <span>🇩🇪 Germany</span>
+            <span>🇫🇷 France</span>
+            <span>🇯🇵 Japan</span>
+            <span>🇧🇷 Brazil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+
+      // Customise via URL params: ?title=...&desc=...&source=...
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('title')) document.getElementById('lm-headline').textContent = params.get('title');
+      if (params.get('desc')) document.getElementById('lm-description').textContent = params.get('desc');
+
+      document.getElementById('lead-magnet-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('lm-email').value;
+        const name = document.getElementById('lm-name').value;
+        const source = params.get('source') || 'lead_magnet';
+        const btn = document.getElementById('lm-submit');
+
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        localStorage.setItem('subscriberEmail', email);
+        if (name) localStorage.setItem('subscriberName', name);
+
+        if (typeof GHL !== 'undefined') {
+          await GHL.captureContact({
+            email, name, source,
+            tags: ['london-planner', 'lead', 'lead-magnet-' + source]
+          });
+        }
+        if (typeof Analytics !== 'undefined') Analytics.emailCapture(source);
+
+        document.getElementById('lead-magnet-form').style.display = 'none';
+        document.getElementById('lm-success').style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>

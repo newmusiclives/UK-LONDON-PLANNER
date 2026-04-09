@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Type of London Traveller Are You? — UK & London Planner</title>
+  <meta name="description" content="Take our quick quiz to discover your London travel personality and get personalised itinerary recommendations based on your style.">
+  <meta property="og:title" content="What Type of London Traveller Are You?">
+  <meta property="og:description" content="Take our 60-second quiz and discover your London personality — Culture Vulture, Foodie Explorer, History Buff, Night Owl, or something else entirely.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .quiz-option { display:block;width:100%;text-align:left;padding:1rem 1.25rem;margin-bottom:0.75rem;border:2px solid var(--color-border);border-radius:var(--radius-md);background:white;cursor:pointer;font-size:0.95rem;font-family:inherit;transition:all 0.2s; }
+    .quiz-option:hover { border-color:var(--color-accent);background:#fefce8;transform:translateX(4px); }
+    .quiz-progress { display:flex;gap:6px;margin-bottom:2rem; }
+    .quiz-progress span { flex:1;height:6px;background:#e5e7eb;border-radius:999px;transition:background 0.3s; }
+    .quiz-progress span.done { background:var(--color-accent); }
+    .quiz-result-card { background:linear-gradient(135deg,var(--color-primary),#2A3F6B);color:white;border-radius:16px;padding:2.5rem;text-align:center; }
+    .quiz-result-card h2 { color:white;margin-bottom:0.5rem; }
+    .quiz-traits { display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin:1.5rem 0; }
+    .quiz-trait { background:rgba(255,255,255,0.15);padding:6px 14px;border-radius:999px;font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main" id="main-content">
+    <section class="section section--dark" style="text-align:center;padding:3rem 0;">
+      <div class="container">
+        <h1 style="color:white;">What Type of London Traveller Are You?</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:540px;margin:0 auto;">Answer 6 quick questions. We'll reveal your London personality and match you with the perfect itinerary.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding:2.5rem 0 4rem;">
+      <div class="container" style="max-width:600px;">
+
+        <!-- Quiz -->
+        <div id="quiz-container">
+          <div class="quiz-progress" id="quiz-progress"></div>
+          <div id="quiz-question"></div>
+        </div>
+
+        <!-- Result (hidden until complete) -->
+        <div id="quiz-result" style="display:none;"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    const QUESTIONS = [
+      {
+        q: "It's your first morning in London. You...",
+        options: [
+          { text: "Head straight to the British Museum before it gets busy", tags: ['culture', 'history'] },
+          { text: "Find the best full English breakfast in the neighbourhood", tags: ['foodie'] },
+          { text: "Wander with no plan — let the city surprise you", tags: ['explorer', 'hidden'] },
+          { text: "Hit a famous market — Borough, Camden, or Portobello", tags: ['foodie', 'markets'] }
+        ]
+      },
+      {
+        q: "Your ideal London evening looks like...",
+        options: [
+          { text: "West End show, then cocktails at a rooftop bar", tags: ['nightlife', 'theatre'] },
+          { text: "Gastropub dinner, then a proper old pub crawl", tags: ['foodie', 'nightlife'] },
+          { text: "Gallery late opening, then dinner in Soho", tags: ['culture', 'foodie'] },
+          { text: "Night walk along the South Bank — lights on the Thames", tags: ['explorer', 'romance'] }
+        ]
+      },
+      {
+        q: "You've got a free afternoon. Where do you go?",
+        options: [
+          { text: "Hampstead Heath for countryside vibes inside the city", tags: ['explorer', 'nature'] },
+          { text: "V&A Museum or Tate Modern — lose yourself in art", tags: ['culture'] },
+          { text: "Shoreditch — street art, vintage shops, flat whites", tags: ['hidden', 'markets'] },
+          { text: "Tower of London — 1000 years of gory history", tags: ['history'] }
+        ]
+      },
+      {
+        q: "When you travel, your budget goes mostly on...",
+        options: [
+          { text: "Food — I'll queue an hour for the right restaurant", tags: ['foodie'] },
+          { text: "Experiences — tours, shows, skip-the-line tickets", tags: ['culture', 'theatre'] },
+          { text: "Accommodation — I want a beautiful place to sleep", tags: ['romance', 'luxury'] },
+          { text: "I'm budget-savvy — free museums, street food, walking", tags: ['explorer', 'budget'] }
+        ]
+      },
+      {
+        q: "Pick a London neighbourhood that calls to you:",
+        options: [
+          { text: "Notting Hill — pastel houses, Portobello Road, bookshops", tags: ['romance', 'markets'] },
+          { text: "Camden — raw, loud, punk, eclectic", tags: ['nightlife', 'hidden'] },
+          { text: "South Bank — river views, culture, street performers", tags: ['culture', 'explorer'] },
+          { text: "Bermondsey — craft beer, Maltby Street Market, locals only", tags: ['foodie', 'hidden'] }
+        ]
+      },
+      {
+        q: "One word that describes how you travel:",
+        options: [
+          { text: "Curious — I read every plaque and ask every local", tags: ['history', 'culture'] },
+          { text: "Hungry — literally and metaphorically", tags: ['foodie'] },
+          { text: "Spontaneous — plans are overrated", tags: ['explorer', 'hidden'] },
+          { text: "Social — I want atmosphere and people", tags: ['nightlife', 'romance'] }
+        ]
+      }
+    ];
+
+    const RESULTS = {
+      culture: {
+        title: "The Culture Vulture",
+        emoji: "🎨",
+        description: "You could spend a week in London's free museums alone. You seek out gallery late nights, architectural walking tours, and know that the best view of St Paul's is from the Tate Modern rooftop. Your itinerary should lean into art, theatre, and the living history around every corner.",
+        traits: ["Museums & galleries", "Theatre & performance", "Architecture", "Literary London"],
+        cta: "Build a culture-packed itinerary",
+        interests: "art,history,theatre,architecture,literary"
+      },
+      foodie: {
+        title: "The Foodie Explorer",
+        emoji: "🍽️",
+        description: "You plan trips around restaurants, not landmarks. Borough Market at 8am, Dishoom for lunch, a tasting menu for dinner — and you'll queue an hour for Padella without complaint. London's food scene is world-class and you intend to prove it.",
+        traits: ["Markets & street food", "Fine dining", "Pub grub", "Coffee culture", "Craft beer"],
+        cta: "Build a foodie itinerary",
+        interests: "food,markets,street-food,coffee,craft-beer,brunch"
+      },
+      history: {
+        title: "The History Buff",
+        emoji: "🏛️",
+        description: "2000 years of history and you want to see all of it. From Roman walls to the Tower's ravens, Churchill's bunker to the spot where the Great Fire started. You read plaques, you take audio guides, and you know that most of London's best stories are free.",
+        traits: ["Royal London", "Dark history", "WWII sites", "Ancient pubs", "Walking tours"],
+        cta: "Build a history-rich itinerary",
+        interests: "history,royals,dark-history,architecture"
+      },
+      nightlife: {
+        title: "The Night Owl",
+        emoji: "🍸",
+        description: "London wakes up at sundown for you. Speakeasy cocktails in Soho, jazz in a Dalston basement, a comedy show in Camden, last drinks at Gordon's Wine Bar. You know the city's best bars and you're not done until the night bus.",
+        traits: ["Cocktail bars", "Live music", "Comedy clubs", "Rooftop bars", "Late-night eats"],
+        cta: "Build a nightlife itinerary",
+        interests: "nightlife,cocktails,music,theatre"
+      },
+      explorer: {
+        title: "The Urban Explorer",
+        emoji: "🗺️",
+        description: "No map, no plan, no problem. You find London's magic in the places tourists don't go — a canal path in Hackney, a wildflower meadow in Peckham, a 17th-century pub in a forgotten alley. You walk 25,000 steps a day and love every one.",
+        traits: ["Hidden gems", "Parks & canals", "Street art", "Local markets", "Off the beaten path"],
+        cta: "Build an explorer's itinerary",
+        interests: "hidden-gems,gardens,markets,photography,sustainable"
+      },
+      hidden: {
+        title: "The Secret London Seeker",
+        emoji: "🔮",
+        description: "You scoff at tourist traps and seek the London that locals whisper about. Secret bars behind unmarked doors, restaurants with no signage, rooftop gardens nobody posts about. You've already been to London — now you want the real London.",
+        traits: ["Speakeasies", "Secret gardens", "Underground events", "Locals-only spots"],
+        cta: "Build a hidden gems itinerary",
+        interests: "hidden-gems,cocktails,markets,instagram"
+      },
+      romance: {
+        title: "The Romantic",
+        emoji: "💕",
+        description: "London in the rain with someone you love. Candlelit dinners in centuries-old restaurants, sunset walks along the South Bank, afternoon tea overlooking Hyde Park. You see beauty in the details and want every moment to feel like a film.",
+        traits: ["Fine dining", "River walks", "Afternoon tea", "Boutique hotels", "Sunset spots"],
+        cta: "Build a romantic itinerary",
+        interests: "romance,food,gardens,photography"
+      }
+    };
+
+    let current = 0;
+    const scores = {};
+
+    function renderQuestion() {
+      const q = QUESTIONS[current];
+      const progress = document.getElementById('quiz-progress');
+      progress.innerHTML = QUESTIONS.map((_, i) =>
+        `<span class="${i < current ? 'done' : i === current ? 'done' : ''}"></span>`
+      ).join('');
+
+      document.getElementById('quiz-question').innerHTML = `
+        <h3 style="margin-bottom:1.5rem;font-size:1.15rem;">${q.q}</h3>
+        ${q.options.map((opt, i) => `
+          <button class="quiz-option" onclick="answer(${i})">${opt.text}</button>
+        `).join('')}
+        <p style="text-align:center;color:var(--color-text-muted);font-size:0.8rem;margin-top:0.5rem;">Question ${current + 1} of ${QUESTIONS.length}</p>
+      `;
+    }
+
+    function answer(optIdx) {
+      const tags = QUESTIONS[current].options[optIdx].tags;
+      tags.forEach(t => { scores[t] = (scores[t] || 0) + 1; });
+      current++;
+
+      if (current < QUESTIONS.length) {
+        renderQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById('quiz-container').style.display = 'none';
+      const resultDiv = document.getElementById('quiz-result');
+      resultDiv.style.display = 'block';
+
+      // Find top personality
+      const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+      const topKey = sorted[0]?.[0] || 'explorer';
+      const result = RESULTS[topKey];
+
+      const wizardUrl = `wizard.html?interests=${encodeURIComponent(result.interests)}`;
+
+      resultDiv.innerHTML = `
+        <div class="quiz-result-card">
+          <div style="font-size:4rem;margin-bottom:0.5rem;">${result.emoji}</div>
+          <h2>You're ${result.title}!</h2>
+          <p style="opacity:0.9;font-size:0.95rem;line-height:1.6;max-width:480px;margin:1rem auto;">${result.description}</p>
+          <div class="quiz-traits">
+            ${result.traits.map(t => `<span class="quiz-trait">${t}</span>`).join('')}
+          </div>
+          <a href="${wizardUrl}" class="btn btn--accent btn--large" style="margin-top:1rem;">${result.cta}</a>
+        </div>
+
+        <div class="card" style="margin-top:2rem;padding:2rem;text-align:center;">
+          <h3 style="margin-bottom:0.5rem;">Get Your Free London Insider Guide</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9rem;margin-bottom:1.5rem;">
+            We'll email you personalised tips for <strong>${result.title.replace('The ', '')}</strong> travellers — hidden spots, money-saving secrets, and a mini packing list.
+          </p>
+          <form id="quiz-capture" style="display:flex;gap:8px;max-width:400px;margin:0 auto;">
+            <input type="email" id="quiz-email" required placeholder="Your email" style="flex:1;padding:10px 14px;border:2px solid var(--color-border);border-radius:8px;font-size:0.9rem;font-family:inherit;">
+            <button type="submit" class="btn btn--primary">Send Tips</button>
+          </form>
+          <p id="quiz-success" style="display:none;color:#16a34a;font-weight:600;margin-top:1rem;">Check your inbox — tips are on the way!</p>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <button onclick="resetQuiz()" style="background:none;border:none;color:var(--color-text-muted);font-size:0.85rem;cursor:pointer;text-decoration:underline;">Retake quiz</button>
+        </div>
+      `;
+
+      // Email capture
+      document.getElementById('quiz-capture').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('quiz-email').value;
+        localStorage.setItem('subscriberEmail', email);
+        if (typeof GHL !== 'undefined') {
+          await GHL.captureContact({
+            email,
+            source: 'quiz',
+            tags: ['quiz-' + topKey, 'london-planner', 'lead'],
+            quiz_result: topKey
+          });
+        }
+        if (typeof Analytics !== 'undefined') Analytics.emailCapture('quiz_' + topKey);
+        document.getElementById('quiz-capture').style.display = 'none';
+        document.getElementById('quiz-success').style.display = 'block';
+      });
+
+      // Track quiz completion
+      if (typeof Analytics !== 'undefined') {
+        if (window.gtag) {
+          gtag('event', 'quiz_complete', { quiz_result: topKey, event_category: 'lead' });
+        }
+      }
+    }
+
+    function resetQuiz() {
+      current = 0;
+      Object.keys(scores).forEach(k => delete scores[k]);
+      document.getElementById('quiz-result').style.display = 'none';
+      document.getElementById('quiz-container').style.display = 'block';
+      renderQuestion();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      renderQuestion();
+    });
+  </script>
+</body>
+</html>
