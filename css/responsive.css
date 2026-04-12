@@ -1,3 +1,20 @@
+/* Compact nav spacing on medium-large screens */
+@media (max-width: 1400px) and (min-width: 1025px) {
+  .header__inner {
+    padding: var(--space-md) var(--space-lg);
+    gap: var(--space-lg);
+  }
+  .header__nav {
+    gap: var(--space-sm);
+  }
+  .header__nav a {
+    font-size: 0.75rem;
+  }
+  .header__logo {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 992px) {
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
@@ -19,18 +36,12 @@
   }
 }
 
-@media (max-width: 768px) {
-  :root {
-    --space-xl: 1.5rem;
-    --space-2xl: 2rem;
-    --space-3xl: 2.5rem;
-    --space-4xl: 3rem;
+/* Switch to mobile hamburger nav at 1024px — too many links to fit inline */
+@media (max-width: 1024px) {
+  .header__inner {
+    gap: var(--space-md);
   }
 
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-
-  /* Header */
   .header__nav {
     position: fixed;
     top: 72px;
@@ -53,6 +64,11 @@
     visibility: visible;
   }
 
+  .header__nav a {
+    font-size: 0.9rem;
+    text-transform: none;
+  }
+
   .header__mobile-toggle {
     display: block;
   }
@@ -60,6 +76,18 @@
   .header__cta {
     margin-left: 0;
   }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 1.5rem;
+    --space-2xl: 2rem;
+    --space-3xl: 2.5rem;
+    --space-4xl: 3rem;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
 
   /* Grids */
   .grid--2,
