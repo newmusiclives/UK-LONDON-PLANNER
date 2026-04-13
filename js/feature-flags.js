@@ -58,6 +58,16 @@ const FeatureFlags = {
     'claude-chat':         { label: 'Claude AI Chat',           category: 'AI Staff',          description: 'Claude API-powered conversational chat with venue knowledge',         enabled: false },
     'real-time-availability': { label: 'Real-Time Availability',category: 'Monetisation',      description: 'Live availability indicators and urgency cues on venue cards',        enabled: true },
 
+    // ── Dream Features ─────────────────────────────────────
+    'ai-concierge':        { label: 'AI Concierge',             category: 'AI Staff',          description: 'Live GPS-aware trip companion with contextual recommendations',     enabled: false },
+    'dynamic-regen':       { label: 'Dynamic Regeneration',     category: 'Core',              description: 'Smart itinerary adjustments for rain, delays, closures, energy',    enabled: false },
+    'ar-guide':            { label: 'AR Walking Guide',         category: 'Engagement',        description: 'Camera-based landmark recognition with history overlays',           enabled: false },
+    'group-trip':          { label: 'Group Trip Planner',       category: 'Engagement',        description: 'Collaborative planning with voting, budget splitting, shared notes', enabled: false },
+    'local-experts':       { label: 'Local Expert Marketplace', category: 'Monetisation',      description: 'Book verified local guides for walks, food tours, supper clubs',    enabled: false },
+    'memory-book':         { label: 'Travel Memory Book',       category: 'Content',           description: 'Post-trip photo diary with notes, ratings, and print/share',        enabled: false },
+    'multi-city':          { label: 'Multi-City Expansion',     category: 'Core',              description: 'Paris, Rome, Barcelona, NYC, Tokyo — cross-city itineraries',       enabled: false },
+    'loyalty':             { label: 'Loyalty & Gamification',   category: 'Engagement',        description: 'Points, badges, tiers, and rewards for engagement',                 enabled: false },
+
     // ── Admin & CRM ──────────────────────────────────────
     'admin-panel':         { label: 'Admin Panel',              category: 'Admin',             description: 'Full admin dashboard with venue management, sales, integrations',    enabled: true },
     'ghl-integration':     { label: 'GoHighLevel CRM',          category: 'Admin',             description: 'Webhook integration for email capture, contacts, purchases',         enabled: false },
