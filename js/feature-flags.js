@@ -48,6 +48,16 @@ const FeatureFlags = {
     'ai-staff':            { label: 'AI Staff Agents',          category: 'AI Staff',          description: '15 Claude agents for content, marketing, analytics, outreach',       enabled: false },
     'ai-staff-admin':      { label: 'AI Staff Admin Panel',     category: 'AI Staff',          description: 'Admin tab for managing agent schedules and approvals',                enabled: true },
 
+    // ── New Features ─────────────────────────────────────
+    'trip-countdown':      { label: 'Trip Countdown & Packing',category: 'Engagement',        description: 'Post-purchase countdown timer, weather-aware packing list, travel doc checklist', enabled: true },
+    'itinerary-share':     { label: 'Itinerary Sharing',       category: 'Engagement',        description: 'Share itinerary via WhatsApp, email, social media with unique link',   enabled: true },
+    'referral-program':    { label: 'Referral Programme',       category: 'Monetisation',      description: 'Give $10, get $10 referral system with unique links and tracking',    enabled: true },
+    'media-hub':           { label: 'Podcast & Video Hub',      category: 'Content',           description: 'Embedded podcast episodes and video guides for London travel',        enabled: true },
+    'offline-pwa':         { label: 'Offline / PWA Mode',       category: 'Core',              description: 'Install as app, offline access to saved itineraries',                 enabled: true },
+    'price-alerts':        { label: 'Price Drop Alerts',        category: 'Monetisation',      description: 'Monitor prices and notify when hotels, flights, attractions drop',    enabled: true },
+    'claude-chat':         { label: 'Claude AI Chat',           category: 'AI Staff',          description: 'Claude API-powered conversational chat with venue knowledge',         enabled: false },
+    'real-time-availability': { label: 'Real-Time Availability',category: 'Monetisation',      description: 'Live availability indicators and urgency cues on venue cards',        enabled: true },
+
     // ── Admin & CRM ──────────────────────────────────────
     'admin-panel':         { label: 'Admin Panel',              category: 'Admin',             description: 'Full admin dashboard with venue management, sales, integrations',    enabled: true },
     'ghl-integration':     { label: 'GoHighLevel CRM',          category: 'Admin',             description: 'Webhook integration for email capture, contacts, purchases',         enabled: false },

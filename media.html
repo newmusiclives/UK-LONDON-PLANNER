@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcasts & Videos — London & UK Planner</title>
+  <meta name="description" content="Listen to London travel podcasts and watch video guides. Hidden gems, food walks, neighbourhood tours, and first-timer tips.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/new-features.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <section class="section" style="text-align:center;padding-top:4rem;">
+      <div class="container">
+        <h1>Podcasts & <span style="color:var(--color-accent);">Videos</span></h1>
+        <div class="divider"></div>
+        <p style="color:var(--color-text-muted);max-width:600px;margin:0 auto 2rem;font-size:1.05rem;">
+          Explore London before you arrive. Listen to neighbourhood deep-dives, watch visual guides, and get insider tips from locals.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div id="media-hub-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/media-hub.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      if (typeof MediaHub !== 'undefined') MediaHub.init('media-hub-container');
+    });
+  </script>
+</body>
+</html>
