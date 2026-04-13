@@ -1,5 +1,5 @@
 /* ============================================================
-   PROMOTIONS MODULE — UK & London Planner Admin Panel
+   PROMOTIONS MODULE — London & UK Planner Admin Panel
    Newsletter generation, blog generation, social media,
    sponsor management, and featured venue tracking.
    ============================================================ */
@@ -326,7 +326,7 @@ const NewsletterBuilder = {
 <td style="background-color:#1B2A4A;padding:32px 30px;text-align:center;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#C9A84C;text-align:center;padding-bottom:4px;letter-spacing:1.5px;text-transform:uppercase;">
-    &#127468;&#127463; UK &amp; London Planner presents
+    &#127468;&#127463; London &amp; UK Planner presents
   </td></tr>
   <tr><td style="font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#ffffff;text-align:center;line-height:1.2;">
     The London Edit
@@ -367,12 +367,12 @@ ${sponsorBottom}
     <strong>Trivia answer:</strong> ${triviaAnswer}${triviaFunFact ? ` &mdash; ${triviaFunFact}` : ''}
   </td></tr>` : ''}
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#999999;text-align:center;line-height:1.6;">
-    You are receiving this because you subscribed to The London Edit by UK &amp; London Planner.<br>
+    You are receiving this because you subscribed to The London Edit by London &amp; UK Planner.<br>
     <a href="{{unsubscribe_url}}" style="color:#C9A84C;text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
     <a href="{{preferences_url}}" style="color:#C9A84C;text-decoration:underline;">Manage Preferences</a>
   </td></tr>
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#666666;text-align:center;padding-top:12px;">
-    &copy; ${new Date().getFullYear()} UK &amp; London Planner. All rights reserved.
+    &copy; ${new Date().getFullYear()} London &amp; UK Planner. All rights reserved.
   </td></tr>
   </table>
 </td>
@@ -888,7 +888,7 @@ const BlogGenerator = {
     return this.generate({
       title,
       slug: `blog-this-week-${c.issueNumber}`,
-      metaDescription: `Issue #${c.issueNumber} of the UK & London Planner weekly: featured attraction, restaurant, pub, expert advice, and London trivia.`,
+      metaDescription: `Issue #${c.issueNumber} of the London & UK Planner weekly: featured attraction, restaurant, pub, expert advice, and London trivia.`,
       bodyHtml: parts.join('\n'),
       datePublished,
       category: 'This Week in London'
@@ -1014,7 +1014,7 @@ const SocialGenerator = {
           content: postText,
           scheduledAt: scheduledDate,
           platforms: platforms || ['facebook', 'instagram'],
-          source: 'UK & London Planner Promotions',
+          source: 'London & UK Planner Promotions',
           timestamp: new Date().toISOString()
         })
       });

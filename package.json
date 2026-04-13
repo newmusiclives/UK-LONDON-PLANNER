@@ -2,7 +2,7 @@
   "name": "uk-london-planner",
   "version": "1.0.0",
   "private": true,
-  "description": "UK & London Planner — static site + AI Staff orchestrator",
+  "description": "London & UK Planner — static site + AI Staff orchestrator",
   "scripts": {
     "ai:status": "node ai-staff/orchestrator.js status",
     "ai:list": "node ai-staff/orchestrator.js list",

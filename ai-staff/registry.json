@@ -3,7 +3,7 @@
   "schedulesEnabled": false,
   "_note": "schedulesEnabled is FALSE by design — owner will enable after manual test. Orchestrator tick() refuses to run agents while this is false. Manual `run <agent>` still works for testing.",
   "site": {
-    "name": "UK & London Planner",
+    "name": "London & UK Planner",
     "url": "https://uk-london-planner.netlify.app",
     "tagline": "Your Perfect London & UK Trip, Curated by Experts"
   },

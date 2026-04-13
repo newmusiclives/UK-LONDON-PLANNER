@@ -1678,7 +1678,7 @@
       fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...selections, source: 'UK & London Planner Admin', timestamp: new Date().toISOString() })
+        body: JSON.stringify({ ...selections, source: 'London & UK Planner Admin', timestamp: new Date().toISOString() })
       }).then(r => {
         if (r.ok) {
           showStatus('Newsletter data sent to GoHighLevel.');
@@ -1779,7 +1779,7 @@
       const title = document.getElementById('blog-title').value || 'blog-post';
       const slug = document.getElementById('blog-slug').value || 'blog-post';
       const meta = document.getElementById('blog-meta').value || '';
-      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${title} — UK & London Planner</title><meta name="description" content="${meta}"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"></head><body><main style="max-width:700px;margin:2rem auto;padding:0 1.5rem;">${content}</main></body></html>`;
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${title} — London & UK Planner</title><meta name="description" content="${meta}"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"></head><body><main style="max-width:700px;margin:2rem auto;padding:0 1.5rem;">${content}</main></body></html>`;
       const blob = new Blob([html], { type: 'text/html' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `${slug}.html`; a.click();
       showStatus(`Blog HTML downloaded: ${slug}.html`);

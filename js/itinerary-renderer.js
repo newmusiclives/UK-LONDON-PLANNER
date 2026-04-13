@@ -722,7 +722,7 @@ function buildPDFContent(itinerary) {
     `).join('')}
 
     <div style="text-align:center; margin-top:30px; padding-top:20px; border-top:2px solid #C9A84C;">
-      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">UK & London Planner</p>
+      <p style="color:#1B2A4A; font-family:Georgia,serif; font-size:12pt;">London & UK Planner</p>
       <p style="color:#888; font-size:9pt;">Enjoy your trip!</p>
     </div>
   `;

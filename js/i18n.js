@@ -1,5 +1,5 @@
 /* ============================================================
-   I18N — Multi-language support for UK & London Planner
+   I18N — Multi-language support for London & UK Planner
    Supports: English (default), Spanish, French, German
    ============================================================ */
 
