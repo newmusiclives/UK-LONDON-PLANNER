@@ -1,0 +1,137 @@
+// ============================================================
+// FEATURE FLAGS — Central toggle system for all optional features
+// Persists to localStorage. Admin UI at features.html.
+// Usage: if (FeatureFlags.isEnabled('chat-assistant')) ChatAssistant.init();
+// ============================================================
+const FeatureFlags = {
+  STORAGE_KEY: 'londonPlannerFeatureFlags',
+
+  // Master registry of all toggleable features
+  // enabled = default state for new installs
+  registry: {
+    // ── Core Experience ──────────────────────────────────
+    'demo-itinerary':      { label: 'Demo Itinerary',          category: 'Core',              description: 'Sample 5-day itinerary on the Demo page',                           enabled: true },
+    'wizard':              { label: 'Trip Wizard',              category: 'Core',              description: '7-step itinerary builder and checkout flow',                         enabled: true },
+    'day-maps':            { label: 'Day Maps',                 category: 'Core',              description: 'Leaflet mini-maps on itinerary and demo pages',                      enabled: true },
+    'currency-selector':   { label: 'Currency Selector',        category: 'Core',              description: 'Multi-currency switcher in the header (USD, GBP, EUR, AUD, CAD)',    enabled: true },
+    'my-trips':            { label: 'My Trips / Accounts',      category: 'Core',              description: 'Saved itineraries and user account system',                          enabled: true },
+
+    // ── Engagement & Conversion ──────────────────────────
+    'chat-assistant':      { label: 'Chat Assistant',           category: 'Engagement',        description: 'AI chat widget with venue recommendations',                          enabled: true },
+    'social-proof':        { label: 'Social Proof Toasts',      category: 'Engagement',        description: 'Simulated real-time activity notifications',                         enabled: true },
+    'exit-intent':         { label: 'Exit-Intent Popup',        category: 'Engagement',        description: 'Email capture popup when user moves to close tab',                   enabled: true },
+    'quiz':                { label: 'Traveller Quiz',           category: 'Engagement',        description: 'What Type of London Traveller Are You? personality quiz',             enabled: true },
+    'free-guide':          { label: 'Free Guide Lead Magnet',   category: 'Engagement',        description: 'Downloadable London Insider Guide PDF capture',                      enabled: true },
+    'reviews':             { label: 'Review System',            category: 'Engagement',        description: 'Venue reviews and star ratings',                                     enabled: true },
+    'testimonials':        { label: 'Testimonials Page',        category: 'Engagement',        description: 'Customer testimonial showcase page',                                 enabled: true },
+
+    // ── Monetisation ─────────────────────────────────────
+    'affiliate-links':     { label: 'Affiliate Links',          category: 'Monetisation',      description: 'GetYourGuide, Booking.com, Viator and 25+ partner links',            enabled: true },
+    'booking-widgets':     { label: 'Booking Widgets',          category: 'Monetisation',      description: 'Embedded hotel and activity search widgets',                         enabled: true },
+    'payment':             { label: 'Payment / Checkout',       category: 'Monetisation',      description: 'Manifest Financial payment processing',                              enabled: true },
+
+    // ── Analytics & Testing ──────────────────────────────
+    'analytics':           { label: 'Google Analytics',         category: 'Analytics',         description: 'GA4 page views, events, and conversion tracking',                    enabled: false },
+    'ab-testing':          { label: 'A/B Testing',              category: 'Analytics',         description: 'Pricing, CTA, and hero headline experiments',                        enabled: false },
+
+    // ── Content & Guides ─────────────────────────────────
+    'blog':                { label: 'Blog / Guides',            category: 'Content',           description: '24 blog posts, neighbourhood guides, monthly guides',                enabled: true },
+    'events-feed':         { label: 'Events Feed',              category: 'Content',           description: '150+ curated London events by month on What\'s On page',              enabled: true },
+    'weather':             { label: 'Weather Integration',      category: 'Content',           description: 'OpenWeatherMap forecasts on itinerary pages',                        enabled: false },
+    'email-templates':     { label: 'Email Templates',          category: 'Content',           description: 'Journey email templates (onboarding, pre-trip, daily, post-trip)',    enabled: true },
+
+    // ── Internationalisation ─────────────────────────────
+    'i18n':                { label: 'Multi-Language',           category: 'Internationalisation', description: 'English, Spanish, French, German translations',                   enabled: true },
+    'language-pages':      { label: 'Language Landing Pages',   category: 'Internationalisation', description: 'Dedicated /es/, /fr/, /de/ landing pages',                       enabled: true },
+
+    // ── AI Staff ─────────────────────────────────────────
+    'ai-staff':            { label: 'AI Staff Agents',          category: 'AI Staff',          description: '15 Claude agents for content, marketing, analytics, outreach',       enabled: false },
+    'ai-staff-admin':      { label: 'AI Staff Admin Panel',     category: 'AI Staff',          description: 'Admin tab for managing agent schedules and approvals',                enabled: true },
+
+    // ── Admin & CRM ──────────────────────────────────────
+    'admin-panel':         { label: 'Admin Panel',              category: 'Admin',             description: 'Full admin dashboard with venue management, sales, integrations',    enabled: true },
+    'ghl-integration':     { label: 'GoHighLevel CRM',          category: 'Admin',             description: 'Webhook integration for email capture, contacts, purchases',         enabled: false },
+    'promotions':          { label: 'Promotions Module',        category: 'Admin',             description: 'Newsletter builder, social media, sponsor management',               enabled: true },
+  },
+
+  /**
+   * Load saved flags from localStorage, merging with registry defaults
+   */
+  _load() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(this.STORAGE_KEY) || '{}');
+      return saved;
+    } catch (e) {
+      return {};
+    }
+  },
+
+  /**
+   * Check if a feature is enabled
+   * @param {string} id — feature key, e.g. 'chat-assistant'
+   * @returns {boolean}
+   */
+  isEnabled(id) {
+    const saved = this._load();
+    if (saved.hasOwnProperty(id)) return saved[id];
+    const reg = this.registry[id];
+    return reg ? reg.enabled : false;
+  },
+
+  /**
+   * Set a feature's enabled state
+   * @param {string} id
+   * @param {boolean} enabled
+   */
+  set(id, enabled) {
+    const saved = this._load();
+    saved[id] = !!enabled;
+    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(saved));
+  },
+
+  /**
+   * Reset a single feature to its default state
+   */
+  reset(id) {
+    const saved = this._load();
+    delete saved[id];
+    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(saved));
+  },
+
+  /**
+   * Reset all features to defaults
+   */
+  resetAll() {
+    localStorage.removeItem(this.STORAGE_KEY);
+  },
+
+  /**
+   * Get all flags with their current states, grouped by category
+   * @returns {Object} { category: [{ id, label, description, enabled, isDefault }] }
+   */
+  getAll() {
+    const saved = this._load();
+    const grouped = {};
+    for (const [id, meta] of Object.entries(this.registry)) {
+      const cat = meta.category;
+      if (!grouped[cat]) grouped[cat] = [];
+      const currentlyEnabled = saved.hasOwnProperty(id) ? saved[id] : meta.enabled;
+      grouped[cat].push({
+        id,
+        label: meta.label,
+        description: meta.description,
+        enabled: currentlyEnabled,
+        isDefault: !saved.hasOwnProperty(id),
+        defaultValue: meta.enabled
+      });
+    }
+    return grouped;
+  },
+
+  /**
+   * Convenience: run a callback only if the feature is enabled
+   */
+  guard(id, fn) {
+    if (this.isEnabled(id)) fn();
+  }
+};

@@ -260,6 +260,10 @@ const DayMap = {
     container.style.marginBottom = '0.5rem';
 
     this.ensureLeaflet(() => {
+      // Prevent "Map container is already initialized" error
+      if (container._leaflet_id) {
+        try { container._leaflet_id = undefined; } catch (e) { /* ignore */ }
+      }
       const m = L.map(container, { scrollWheelZoom: false, zoomControl: true }).setView([51.5074, -0.1278], 13);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap',
@@ -295,8 +299,9 @@ const DayMap = {
         m.setView(coords[0], 14);
       }
 
-      // Fix map size after render
+      // Fix map size after render (multiple passes for reliability)
       setTimeout(() => m.invalidateSize(), 200);
+      setTimeout(() => m.invalidateSize(), 600);
     });
   }
 };

@@ -6,6 +6,7 @@ const Analytics = {
   GA_ID: 'G-XXXXXXXXXX', // Replace with your GA4 Measurement ID
 
   init() {
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('analytics')) return;
     if (this.GA_ID === 'G-XXXXXXXXXX') return; // Skip if not configured
     // Respect cookie consent — only load analytics if user accepted
     if (localStorage.getItem('cookieConsent') === 'essential') return;

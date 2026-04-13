@@ -6,6 +6,7 @@ const ExitIntent = {
   triggered: false,
 
   init() {
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('exit-intent')) return;
     if (sessionStorage.getItem('exitIntentShown')) return;
     if (localStorage.getItem('subscriberEmail')) return;
     if (window.innerWidth < 768) return; // No exit intent on mobile

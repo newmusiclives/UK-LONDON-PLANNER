@@ -23,6 +23,7 @@ const WeatherService = {
   },
 
   async init() {
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('weather')) return;
     // Render weather on itinerary page
     this.renderItineraryWeather();
   },

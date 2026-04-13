@@ -15,6 +15,7 @@ const ChatAssistant = {
 
   async init() {
     if (this._initialized) return;
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('chat-assistant')) return;
     this._initialized = true;
     // Check if lead was previously captured
     try {

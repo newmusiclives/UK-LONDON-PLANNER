@@ -42,6 +42,7 @@ const ABTesting = {
   },
 
   init() {
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('ab-testing')) return;
     this.assignVariants();
     this.applyVariants();
   },

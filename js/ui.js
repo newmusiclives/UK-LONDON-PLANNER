@@ -96,6 +96,8 @@ const UI = {
               <li><a href="faq.html">${_t('footer.faq', 'FAQ')}</a></li>
               <li><a href="privacy.html">${_t('footer.privacyPolicy', 'Privacy Policy')}</a></li>
               <li><a href="terms.html">${_t('footer.termsOfService', 'Terms of Service')}</a></li>
+              <li><a href="admin.html">Admin Panel</a></li>
+              <li><a href="features.html">Feature Flags</a></li>
             </ul>
           </div>
         </div>

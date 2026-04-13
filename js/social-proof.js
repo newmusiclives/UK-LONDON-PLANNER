@@ -19,6 +19,7 @@ const SocialProof = {
   ],
 
   init() {
+    if (typeof FeatureFlags !== 'undefined' && !FeatureFlags.isEnabled('social-proof')) return;
     // Only show on key pages
     const path = window.location.pathname;
     const showPages = ['index.html', 'wizard.html', 'demo.html', 'book-services.html', '/'];
