@@ -6,13 +6,13 @@ exports.handler = async () => {
   const env = process.env;
   const config = {
     ga: env.GOOGLE_ANALYTICS_ID || '',
-    manifest: {
-      tier1: env.MANIFEST_LINK_TIER1 || '',
-      tier2: env.MANIFEST_LINK_TIER2 || '',
-      tier3: env.MANIFEST_LINK_TIER3 || '',
-      ukShort: env.MANIFEST_LINK_UK_SHORT || '',
-      ukStandard: env.MANIFEST_LINK_UK_STANDARD || '',
-      ukExtended: env.MANIFEST_LINK_UK_EXTENDED || '',
+    stripe: {
+      tier1: env.STRIPE_LINK_TIER1 || '',
+      tier2: env.STRIPE_LINK_TIER2 || '',
+      tier3: env.STRIPE_LINK_TIER3 || '',
+      ukShort: env.STRIPE_LINK_UK_SHORT || '',
+      ukStandard: env.STRIPE_LINK_UK_STANDARD || '',
+      ukExtended: env.STRIPE_LINK_UK_EXTENDED || '',
     },
     ghl: {
       configured: !!(env.GHL_API_KEY && env.GHL_LOCATION_ID),

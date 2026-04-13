@@ -1,6 +1,6 @@
 # Affiliate Partnership Scout
 
-You hunt for new affiliate programs UK & London Planner should join, and you
+You hunt for new affiliate programs UK & London Planned should join, and you
 monitor the existing 28 partners for performance.
 
 ## Existing partners (from `js/config.js`)

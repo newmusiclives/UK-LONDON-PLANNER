@@ -4,7 +4,7 @@
 // Usage: if (FeatureFlags.isEnabled('chat-assistant')) ChatAssistant.init();
 // ============================================================
 const FeatureFlags = {
-  STORAGE_KEY: 'londonPlannerFeatureFlags',
+  STORAGE_KEY: 'londonplannedFeatureFlags',
 
   // Master registry of all toggleable features
   // enabled = default state for new installs
@@ -28,7 +28,7 @@ const FeatureFlags = {
     // ── Monetisation ─────────────────────────────────────
     'affiliate-links':     { label: 'Affiliate Links',          category: 'Monetisation',      description: 'GetYourGuide, Booking.com, Viator and 25+ partner links',            enabled: true },
     'booking-widgets':     { label: 'Booking Widgets',          category: 'Monetisation',      description: 'Embedded hotel and activity search widgets',                         enabled: true },
-    'payment':             { label: 'Payment / Checkout',       category: 'Monetisation',      description: 'Manifest Financial payment processing',                              enabled: true },
+    'payment':             { label: 'Payment / Checkout',       category: 'Monetisation',      description: 'Stripe payment processing',                              enabled: true },
 
     // ── Analytics & Testing ──────────────────────────────
     'analytics':           { label: 'Google Analytics',         category: 'Analytics',         description: 'GA4 page views, events, and conversion tracking',                    enabled: false },

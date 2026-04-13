@@ -61,7 +61,7 @@
     lines.push(`<strong>Schedules enabled:</strong> ${reg.schedulesEnabled ? '<span style="color:#16a34a;">✓ yes</span>' : '<span style="color:#dc2626;">✗ no (manual run only)</span>'}`);
     if (statusData) {
       lines.push(`<strong>Anthropic key:</strong> ${statusData.anthropic ? '✓' : '✗'}`);
-      lines.push(`<strong>GHL:</strong> ${statusData.ghl ? '✓' : '✗'}  <strong>Manifest:</strong> ${statusData.manifest ? '✓' : '✗'}`);
+      lines.push(`<strong>GHL:</strong> ${statusData.ghl ? '✓' : '✗'}  <strong>Stripe:</strong> ${statusData.stripe ? '✓' : '✗'}`);
     } else {
       lines.push('<span style="color:#9ca3af;">(Server status unavailable — run <code>npm run ai:status</code> in terminal)</span>');
     }

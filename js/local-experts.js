@@ -37,7 +37,7 @@ const LocalExperts = {
         <div class="le-cta">
           <h4>Are you a local expert?</h4>
           <p>Share your knowledge of London and earn money doing what you love.</p>
-          <button class="btn btn--primary btn--small" onclick="alert('Applications opening soon! Email hello@londonplanner.com')">Apply to Be an Expert</button>
+          <button class="btn btn--primary btn--small" onclick="alert('Applications opening soon! Email hello@londonplanned.com')">Apply to Be an Expert</button>
         </div>
       </div>
     `;

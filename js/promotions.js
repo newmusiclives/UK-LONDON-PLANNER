@@ -1,5 +1,5 @@
 /* ============================================================
-   PROMOTIONS MODULE — London & UK Planner Admin Panel
+   PROMOTIONS MODULE — London Planned Admin Panel
    Newsletter generation, blog generation, social media,
    sponsor management, and featured venue tracking.
    ============================================================ */
@@ -326,7 +326,7 @@ const NewsletterBuilder = {
 <td style="background-color:#1B2A4A;padding:32px 30px;text-align:center;">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#C9A84C;text-align:center;padding-bottom:4px;letter-spacing:1.5px;text-transform:uppercase;">
-    &#127468;&#127463; London &amp; UK Planner presents
+    &#127468;&#127463; London Planned presents
   </td></tr>
   <tr><td style="font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#ffffff;text-align:center;line-height:1.2;">
     The London Edit
@@ -367,12 +367,12 @@ ${sponsorBottom}
     <strong>Trivia answer:</strong> ${triviaAnswer}${triviaFunFact ? ` &mdash; ${triviaFunFact}` : ''}
   </td></tr>` : ''}
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#999999;text-align:center;line-height:1.6;">
-    You are receiving this because you subscribed to The London Edit by London &amp; UK Planner.<br>
+    You are receiving this because you subscribed to The London Edit by London Planned.<br>
     <a href="{{unsubscribe_url}}" style="color:#C9A84C;text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
     <a href="{{preferences_url}}" style="color:#C9A84C;text-decoration:underline;">Manage Preferences</a>
   </td></tr>
   <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#666666;text-align:center;padding-top:12px;">
-    &copy; ${new Date().getFullYear()} London &amp; UK Planner. All rights reserved.
+    &copy; ${new Date().getFullYear()} London Planned. All rights reserved.
   </td></tr>
   </table>
 </td>
@@ -747,13 +747,13 @@ const BlogGenerator = {
       '@type': 'Article',
       headline: c.title,
       description: c.metaDescription,
-      author: { '@type': 'Organization', name: 'London & UK Planner' },
-      publisher: { '@type': 'Organization', name: 'London & UK Planner' },
+      author: { '@type': 'Organization', name: 'London Planned' },
+      publisher: { '@type': 'Organization', name: 'London Planned' },
       datePublished: c.datePublished,
       dateModified: dateModified,
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://londonplanner.com/${c.slug}.html`
+        '@id': `https://londonplanned.com/${c.slug}.html`
       }
     }, null, 4);
 
@@ -762,7 +762,7 @@ const BlogGenerator = {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${this._escHtml(c.title)} &mdash; London &amp; UK Planner</title>
+  <title>${this._escHtml(c.title)} &mdash; London Planned</title>
   <meta name="description" content="${this._escAttr(c.metaDescription)}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -888,7 +888,7 @@ const BlogGenerator = {
     return this.generate({
       title,
       slug: `blog-this-week-${c.issueNumber}`,
-      metaDescription: `Issue #${c.issueNumber} of the London & UK Planner weekly: featured attraction, restaurant, pub, expert advice, and London trivia.`,
+      metaDescription: `Issue #${c.issueNumber} of the London Planned weekly: featured attraction, restaurant, pub, expert advice, and London trivia.`,
       bodyHtml: parts.join('\n'),
       datePublished,
       category: 'This Week in London'
@@ -1014,7 +1014,7 @@ const SocialGenerator = {
           content: postText,
           scheduledAt: scheduledDate,
           platforms: platforms || ['facebook', 'instagram'],
-          source: 'London & UK Planner Promotions',
+          source: 'London Planned Promotions',
           timestamp: new Date().toISOString()
         })
       });

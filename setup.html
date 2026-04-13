@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Setup Wizard — London & UK Planner</title>
+  <title>Setup Wizard — London Planned</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
           <span class="badge" id="badge-ga4" style="background:#FEE2E2;color:#991B1B;">GA4: Not Set</span>
           <span class="badge" id="badge-weather" style="background:#FEE2E2;color:#991B1B;">Weather: Not Set</span>
           <span class="badge" id="badge-ghl" style="background:#FEE2E2;color:#991B1B;">GoHighLevel: Not Set</span>
-          <span class="badge" id="badge-manifest" style="background:#FEE2E2;color:#991B1B;">Payments: Not Set</span>
+          <span class="badge" id="badge-stripe" style="background:#FEE2E2;color:#991B1B;">Payments: Not Set</span>
           <span class="badge" id="badge-affiliates" style="background:#FEE2E2;color:#991B1B;">Affiliates: Not Set</span>
         </div>
 
@@ -101,30 +101,30 @@
           </div>
         </div>
 
-        <!-- Manifest Financial -->
+        <!-- Stripe -->
         <div class="card" style="margin-bottom:1.5rem;">
           <div class="card__body">
             <div style="display:flex;justify-content:space-between;align-items:start;">
               <div>
-                <h3 style="margin-bottom:0.25rem;">4. Manifest Financial Payments</h3>
+                <h3 style="margin-bottom:0.25rem;">4. Stripe Payments</h3>
                 <p style="color:var(--color-text-muted);font-size:0.9rem;">Accept payments for itineraries and services.</p>
               </div>
-              <span style="font-size:1.5rem;" id="icon-manifest">⚪</span>
+              <span style="font-size:1.5rem;" id="icon-stripe">⚪</span>
             </div>
             <div style="margin-top:1rem;display:grid;gap:0.75rem;">
               <div>
                 <label style="font-weight:600;font-size:0.85rem;">Tier 1 ($50) Payment Link</label>
-                <input type="text" id="input-pay-t1" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+                <input type="text" id="input-pay-t1" placeholder="https://buy.stripe.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
               </div>
               <div>
                 <label style="font-weight:600;font-size:0.85rem;">Tier 2 ($75) Payment Link</label>
-                <input type="text" id="input-pay-t2" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+                <input type="text" id="input-pay-t2" placeholder="https://buy.stripe.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
               </div>
               <div>
                 <label style="font-weight:600;font-size:0.85rem;">Tier 3 ($99) Payment Link</label>
-                <input type="text" id="input-pay-t3" placeholder="https://pay.manifestfinancial.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
+                <input type="text" id="input-pay-t3" placeholder="https://buy.stripe.com/..." style="width:100%;padding:0.65rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:0.85rem;">
               </div>
-              <button class="btn btn--primary btn--small" onclick="saveConfig('manifest')" style="justify-self:start;">Save Payment Links</button>
+              <button class="btn btn--primary btn--small" onclick="saveConfig('stripe')" style="justify-self:start;">Save Payment Links</button>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>
   <script>
-    const SETUP_KEY = 'londonPlannerSetup';
+    const SETUP_KEY = 'londonplannedSetup';
 
     function getSetup() {
       try { return JSON.parse(localStorage.getItem(SETUP_KEY)) || {}; } catch { return {}; }
@@ -208,7 +208,7 @@
           setup.ghlEmailWebhook = document.getElementById('input-ghl-email').value.trim();
           setup.ghlContactWebhook = document.getElementById('input-ghl-contact').value.trim();
           break;
-        case 'manifest':
+        case 'stripe':
           setup.payTier1 = document.getElementById('input-pay-t1').value.trim();
           setup.payTier2 = document.getElementById('input-pay-t2').value.trim();
           setup.payTier3 = document.getElementById('input-pay-t3').value.trim();
@@ -244,7 +244,7 @@
       set('badge-ga4', s.ga4); icon('icon-ga4', s.ga4);
       set('badge-weather', s.weather); icon('icon-weather', s.weather);
       set('badge-ghl', s.ghlLocation || s.ghlEmailWebhook); icon('icon-ghl', s.ghlLocation || s.ghlEmailWebhook);
-      set('badge-manifest', s.payTier1); icon('icon-manifest', s.payTier1);
+      set('badge-stripe', s.payTier1); icon('icon-stripe', s.payTier1);
       set('badge-affiliates', s.affGYG || s.affBooking); icon('icon-affiliates', s.affGYG || s.affBooking);
 
       // Fill inputs from saved values

@@ -20,9 +20,9 @@ const UI = {
     header.innerHTML = `
       <a href="#main-content" class="skip-link">Skip to main content</a>
       <div class="header__inner">
-        <a href="index.html" class="header__logo" aria-label="London & UK Planner - Home">
+        <a href="index.html" class="header__logo" aria-label="London Planned - Home">
           <span class="header__logo-icon" aria-hidden="true">🇬🇧</span>
-          London & UK Planner
+          London Planned
         </a>
         <nav class="header__nav" id="main-nav" aria-label="Main navigation" role="navigation">
           <a href="demo.html">${_t('nav.demo', 'Demo')}</a>
@@ -56,7 +56,7 @@ const UI = {
       <div class="container">
         <div class="footer__grid">
           <div>
-            <div class="footer__brand">🇬🇧 London & UK Planner</div>
+            <div class="footer__brand">🇬🇧 London Planned</div>
             <p class="footer__desc">
               ${_t('footer.desc', 'Expertly curated London itineraries tailored to your interests, budget, and travel style. Your perfect London adventure starts here.')}
             </p>
@@ -106,7 +106,7 @@ const UI = {
         <!-- UGC Gallery -->
         <div style="margin-bottom:2rem;text-align:center;">
           <h4 style="color:white;margin-bottom:0.5rem;">${_t('footer.shareYourMoments', 'Share Your London Moments')}</h4>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">${_t('footer.tagUs', 'Tag <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> on Instagram for a chance to be featured')}</p>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:1rem;">${_t('footer.tagUs', 'Tag <strong style="color:var(--color-accent);">#MyLondonPlanned</strong> on Instagram for a chance to be featured')}</p>
           <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:4px;border-radius:var(--radius-md);overflow:hidden;max-width:600px;margin:0 auto;">
             ${['🌉','🎡','🏰','🌳','🍽️','🎭','🌅','🚕','🎪','☕','🎶','🏛️'].map((emoji, i) =>
               '<div style="aspect-ratio:1;background:' + ['#2A3F6B','#1B2A4A','#3A4F7B','#1B2A4A','#2A3F6B','#3A4F7B'][i%6] + ';display:flex;align-items:center;justify-content:center;font-size:1.5rem;opacity:0.6;">' + emoji + '</div>'
@@ -128,7 +128,7 @@ const UI = {
         </div>
 
         <div class="footer__bottom">
-          <span>&copy; ${new Date().getFullYear()} London & UK Planner. All rights reserved.</span>
+          <span>&copy; ${new Date().getFullYear()} London Planned. All rights reserved.</span>
           <p class="footer__disclosure">${CONFIG.affiliate.disclosureText}</p>
         </div>
       </div>

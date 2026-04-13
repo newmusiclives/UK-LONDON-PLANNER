@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
-  <url><loc>https://uk-london-planner.netlify.app/</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/wizard.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/demo.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/book-services.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/my-trips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/whats-on.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/itinerary.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/quiz.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/free-guide.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/testimonials.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/404.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/wizard.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/demo.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/book-services.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/my-trips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/whats-on.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/itinerary.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/quiz.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/free-guide.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/testimonials.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/404.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.1</priority></url>
 
   <!-- Travel Info -->
-  <url><loc>https://uk-london-planner.netlify.app/day-trips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/airport-transfers.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/travel-tips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/getting-around.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/best-time-to-visit.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/day-trips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/airport-transfers.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/travel-tips.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/getting-around.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/best-time-to-visit.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Blog / Guide -->
-  <url><loc>https://uk-london-planner.netlify.app/blog.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-48-hours.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-best-markets.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-budget.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-day-trips-train.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-dog-friendly.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-food-guide.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-historic-pubs.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-instagram-spots.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-kids.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-lgbtq.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-rainy-day.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-romantic.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-rooftop-bars.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-secret-bars.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/blog-solo-travel.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog.html</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-48-hours.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-best-markets.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-budget.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-day-trips-train.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-dog-friendly.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-food-guide.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-historic-pubs.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-instagram-spots.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-kids.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-lgbtq.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-rainy-day.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-romantic.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-rooftop-bars.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-secret-bars.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/blog-solo-travel.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Neighbourhood Guides -->
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhoods.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-soho.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-shoreditch.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-camden.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-south-bank.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-covent-garden.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-bermondsey.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-brixton.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-hampstead.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-islington.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-kensington.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-kings-cross.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-mayfair.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-notting-hill.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-peckham.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/neighbourhood-greenwich.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhoods.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-soho.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-shoreditch.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-camden.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-south-bank.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-covent-garden.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-bermondsey.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-brixton.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-hampstead.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-islington.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-kensington.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-kings-cross.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-mayfair.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-notting-hill.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-peckham.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/neighbourhood-greenwich.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Monthly Guides -->
-  <url><loc>https://uk-london-planner.netlify.app/london-january.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-february.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-march.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-april.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-may.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-june.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-july.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-august.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-september.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-october.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-november.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/london-december.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-january.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-february.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-march.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-april.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-may.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-june.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-july.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-august.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-september.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-october.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-november.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/london-december.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
   <!-- Comparison Pages -->
-  <url><loc>https://uk-london-planner.netlify.app/compare-london-paris.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/compare-oyster-travelcard.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/compare-zones.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/compare-airports.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/compare-passes.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/compare-london-paris.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/compare-oyster-travelcard.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/compare-zones.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/compare-airports.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/compare-passes.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Seasonal Guides -->
-  <url><loc>https://uk-london-planner.netlify.app/christmas-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/new-years-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/summer-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/christmas-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/new-years-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/summer-london.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
   <!-- Legal/Support -->
-  <url><loc>https://uk-london-planner.netlify.app/faq.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/contact.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/privacy.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://uk-london-planner.netlify.app/terms.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/faq.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/contact.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/privacy.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://uk-london-planned.netlify.app/terms.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

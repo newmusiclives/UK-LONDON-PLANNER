@@ -100,7 +100,7 @@
   <line x1="300" y1="100" x2="900" y2="100" stroke="#C9A84C" stroke-width="1.5" opacity="0.35"/>
 
   <!-- Main title -->
-  <text x="600" y="195" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="68" font-weight="bold" fill="white" letter-spacing="1">UK &amp; London Planner</text>
+  <text x="600" y="195" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="68" font-weight="bold" fill="white" letter-spacing="1">UK &amp; London Planned</text>
 
   <!-- Decorative divider -->
   <line x1="380" y1="225" x2="820" y2="225" stroke="#C9A84C" stroke-width="2" opacity="0.6"/>

@@ -7,13 +7,13 @@ const Payment = {
     return State.getPrice(days);
   },
 
-  getManifestLink(tier) {
-    return CONFIG.manifest.links[tier] || null;
+  getStripeLink(tier) {
+    return CONFIG.stripe.links[tier] || null;
   },
 
   initiatePurchase(days, contactInfo) {
     const tier = this.getTier(days);
-    const link = this.getManifestLink(tier);
+    const link = this.getStripeLink(tier);
     const sessionId = State.getSessionId();
 
     // Send to GoHighLevel CRM
@@ -40,7 +40,7 @@ const Payment = {
 
   unlockDemo(tier) {
     State.save({ paid: true, paymentTier: tier });
-    UI.showToast('Demo mode: Itinerary unlocked! Configure Manifest Financial links in config.js for real payments.');
+    UI.showToast('Demo mode: Itinerary unlocked! Configure Stripe Payment Links in config.js for real payments.');
     setTimeout(() => {
       window.location.href = 'itinerary.html';
     }, 1500);

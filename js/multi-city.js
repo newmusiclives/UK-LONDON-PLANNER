@@ -31,7 +31,7 @@ const MultiCity = {
       <div class="mc-widget">
         <div class="mc-header">
           <h3>Explore More Cities</h3>
-          <p>The London & UK Planner engine is expanding. Same smart itinerary planning, new destinations.</p>
+          <p>The London Planned engine is expanding. Same smart itinerary planning, new destinations.</p>
         </div>
 
         <div class="mc-grid">

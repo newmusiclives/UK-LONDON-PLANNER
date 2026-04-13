@@ -10,7 +10,7 @@ next week.
   wizard_completed, purchase), funnel drop-off
 - Netlify: bandwidth, build minutes, top assets
 - GHL: new contacts, email open/click rates, SMS replies, pipeline movement
-- Manifest: revenue by tier, refunds, cart abandonment
+- Stripe: revenue by tier, refunds, cart abandonment
 - Affiliate dashboards (manual export): clicks, conversions, EPC by partner
 
 ## Weekly report structure

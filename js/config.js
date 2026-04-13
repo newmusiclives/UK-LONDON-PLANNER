@@ -1,5 +1,5 @@
 const CONFIG = {
-  siteName: 'London & UK Planner',
+  siteName: 'London Planned',
   siteTagline: 'Your Perfect London & UK Trip, Curated by Experts',
 
   pricing: {
@@ -16,14 +16,15 @@ const CONFIG = {
   },
 
   // ============================================================
-  // MANIFEST FINANCIAL — Payment Processing
-  // Replace these with your actual Manifest Financial payment links
+  // STRIPE — Payment Processing
+  // Replace these with your actual Stripe Payment Links
+  // Create them at https://dashboard.stripe.com/payment-links
   // ============================================================
-  manifest: {
+  stripe: {
     links: {
-      tier1: 'https://pay.manifestfinancial.com/YOUR_TIER1_LINK',
-      tier2: 'https://pay.manifestfinancial.com/YOUR_TIER2_LINK',
-      tier3: 'https://pay.manifestfinancial.com/YOUR_TIER3_LINK',
+      tier1: 'https://buy.stripe.com/YOUR_TIER1_LINK',
+      tier2: 'https://buy.stripe.com/YOUR_TIER2_LINK',
+      tier3: 'https://buy.stripe.com/YOUR_TIER3_LINK',
     }
   },
 
@@ -107,10 +108,10 @@ const CONFIG = {
       standard: { days: [6, 10],  price: 75, label: 'UK Explorer' },
       extended: { days: [11, 21], price: 99, label: 'Grand UK Tour' }
     },
-    manifest: {
-      short:    'https://pay.manifestfinancial.com/YOUR_UK_SHORT_LINK',
-      standard: 'https://pay.manifestfinancial.com/YOUR_UK_STANDARD_LINK',
-      extended: 'https://pay.manifestfinancial.com/YOUR_UK_EXTENDED_LINK'
+    stripe: {
+      short:    'https://buy.stripe.com/YOUR_UK_SHORT_LINK',
+      standard: 'https://buy.stripe.com/YOUR_UK_STANDARD_LINK',
+      extended: 'https://buy.stripe.com/YOUR_UK_EXTENDED_LINK'
     }
   },
 
@@ -224,7 +225,7 @@ const CONFIG = {
 
   // Affiliate tracking
   affiliate: {
-    utmSource: 'londonplanner',
+    utmSource: 'londonplanned',
     utmMedium: 'itinerary',
     disclosureText: 'We may earn a small commission from bookings made through our links, at no extra cost to you.'
   },
@@ -323,7 +324,7 @@ const GHL = {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          source: 'London & UK Planner',
+          source: 'London Planned',
           timestamp: new Date().toISOString()
         })
       });
@@ -339,7 +340,7 @@ const GHL = {
       type: 'email_capture',
       email: formData.email,
       name: formData.name || '',
-      tags: ['london-planner', 'lead'],
+      tags: ['london-planned', 'lead'],
       ...formData
     });
   },
@@ -347,7 +348,7 @@ const GHL = {
   async trackItineraryPurchase(purchaseData) {
     return this.sendToWebhook('itineraryPurchase', {
       type: 'itinerary_purchase',
-      tags: ['london-planner', 'customer', 'itinerary-buyer'],
+      tags: ['london-planned', 'customer', 'itinerary-buyer'],
       ...purchaseData
     });
   },
@@ -355,7 +356,7 @@ const GHL = {
   async submitContactForm(formData) {
     return this.sendToWebhook('contactForm', {
       type: 'contact_form',
-      tags: ['london-planner', 'contact-form'],
+      tags: ['london-planned', 'contact-form'],
       ...formData
     });
   }

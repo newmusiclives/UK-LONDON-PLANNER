@@ -1,6 +1,6 @@
 {
-  "name": "London & UK Planner",
-  "short_name": "London Planner",
+  "name": "London Planned",
+  "short_name": "London Planned",
   "description": "Your Perfect London Trip, Curated by Experts. Personalised itineraries with insider tips.",
   "start_url": "/index.html",
   "display": "standalone",

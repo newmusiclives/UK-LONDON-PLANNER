@@ -13,7 +13,7 @@ const ItineraryShare = {
     const itinerary = typeof State !== 'undefined' ? State.getItinerary() : null;
     const title = itinerary?.title || 'My London Itinerary';
     const days = itinerary?.days?.length || '5';
-    const message = `Check out my ${days}-day London itinerary planned with London & UK Planner!`;
+    const message = `Check out my ${days}-day London itinerary planned with London Planned!`;
 
     container.innerHTML = `
       <div class="is-widget">
@@ -50,7 +50,7 @@ const ItineraryShare = {
             <div class="is-preview__icon">🇬🇧</div>
             <div class="is-preview__info">
               <strong>${title}</strong>
-              <span>${days} days in London — planned with London & UK Planner</span>
+              <span>${days} days in London — planned with London Planned</span>
             </div>
           </div>
         </div>

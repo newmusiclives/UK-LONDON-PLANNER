@@ -36,7 +36,7 @@ const OfflinePWA = {
     banner.id = 'pwa-install-banner';
     banner.style.cssText = 'position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--color-primary,#1B2A4A);color:white;padding:0.75rem 1.25rem;border-radius:12px;display:flex;align-items:center;gap:1rem;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);max-width:90vw;font-size:0.9rem;';
     banner.innerHTML = `
-      <span>📱 Install London & UK Planner for offline access</span>
+      <span>📱 Install London Planned for offline access</span>
       <button id="pwa-install-btn" style="background:var(--color-accent,#C9A84C);color:var(--color-primary,#1B2A4A);border:none;padding:0.5rem 1rem;border-radius:8px;font-weight:700;cursor:pointer;white-space:nowrap;">Install</button>
       <button id="pwa-dismiss-btn" style="background:none;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:1.2rem;padding:0 0.25rem;">&times;</button>
     `;

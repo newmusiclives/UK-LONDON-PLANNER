@@ -1,6 +1,6 @@
 # AI Staff — Marketing, Promotion & Outreach Crew
 
-A 9-agent crew that runs the growth engine for UK & London Planner. Each agent
+A 9-agent crew that runs the growth engine for UK & London Planned. Each agent
 is a Claude prompt + a schedule + an output destination. The orchestrator
 (`orchestrator.js`) reads `registry.json`, runs each agent's prompt against the
 Anthropic API, and writes drafts into `queue/` for human approval (or
@@ -27,7 +27,7 @@ ai-staff/
   README.md              ← this file
   registry.json          ← agent definitions, schedules, output paths
   orchestrator.js        ← Node runner: loads registry, runs agents, writes queue
-  config.js              ← env loader (Anthropic, GHL, Manifest keys)
+  config.js              ← env loader (Anthropic, GHL, Stripe keys)
   agents/                ← one .md prompt file per agent
   queue/                 ← drafts pending human approval
   published/             ← drafts the human approved
@@ -56,7 +56,7 @@ Copy `.env.example` to `.env` at the repo root and fill in:
 
 - `ANTHROPIC_API_KEY` — required, drives every agent
 - `GHL_API_KEY`, `GHL_LOCATION_ID` — for newsletter + CRM push
-- `MANIFEST_*` link IDs — picked up by `js/config.js` automatically
+- `STRIPE_*` link IDs — picked up by `js/config.js` automatically
 
 The orchestrator never logs secrets and never commits `.env`.
 

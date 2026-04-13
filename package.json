@@ -1,8 +1,8 @@
 {
-  "name": "uk-london-planner",
+  "name": "uk-london-planned",
   "version": "1.0.0",
   "private": true,
-  "description": "London & UK Planner — static site + AI Staff orchestrator",
+  "description": "London Planned — static site + AI Staff orchestrator",
   "scripts": {
     "ai:status": "node ai-staff/orchestrator.js status",
     "ai:list": "node ai-staff/orchestrator.js list",

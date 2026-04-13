@@ -3,7 +3,7 @@
 // Stored in localStorage, synced to GoHighLevel via webhook
 // ============================================================
 const Reviews = {
-  STORAGE_KEY: 'londonPlannerReviews',
+  STORAGE_KEY: 'londonplannedReviews',
 
   getAll() {
     return JSON.parse(localStorage.getItem(this.STORAGE_KEY) || '[]');

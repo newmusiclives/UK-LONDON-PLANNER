@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Share Your Experience — London & UK Planner</title>
+  <title>Share Your Experience — London Planned</title>
   <meta name="description" content="Tell us about your London trip! Share your experience and help future travellers plan their perfect London adventure.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,7 +142,7 @@
   <script src="js/analytics.js"></script>
   <script src="js/accounts.js"></script>
   <script>
-    const TESTIMONIALS_KEY = 'londonPlannerTestimonials';
+    const TESTIMONIALS_KEY = 'londonplannedTestimonials';
 
     // Pre-seeded testimonials
     const seedTestimonials = [
@@ -238,7 +238,7 @@
         if (typeof GHL !== 'undefined') {
           await GHL.sendToWebhook('contactForm', {
             type: 'testimonial_submission',
-            tags: ['london-planner', 'testimonial'],
+            tags: ['london-planned', 'testimonial'],
             ...testimonial
           });
         }

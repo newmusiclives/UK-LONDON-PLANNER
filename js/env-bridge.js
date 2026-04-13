@@ -18,15 +18,15 @@
       Analytics.GA_ID = rc.ga;
     }
 
-    // Manifest payment links
-    if (rc.manifest && typeof CONFIG !== 'undefined') {
-      const m = rc.manifest;
-      if (m.tier1) CONFIG.manifest.links.tier1 = m.tier1;
-      if (m.tier2) CONFIG.manifest.links.tier2 = m.tier2;
-      if (m.tier3) CONFIG.manifest.links.tier3 = m.tier3;
-      if (m.ukShort) CONFIG.ukExtension.manifest.short = m.ukShort;
-      if (m.ukStandard) CONFIG.ukExtension.manifest.standard = m.ukStandard;
-      if (m.ukExtended) CONFIG.ukExtension.manifest.extended = m.ukExtended;
+    // Stripe payment links
+    if (rc.stripe && typeof CONFIG !== 'undefined') {
+      const m = rc.stripe;
+      if (m.tier1) CONFIG.stripe.links.tier1 = m.tier1;
+      if (m.tier2) CONFIG.stripe.links.tier2 = m.tier2;
+      if (m.tier3) CONFIG.stripe.links.tier3 = m.tier3;
+      if (m.ukShort) CONFIG.ukExtension.stripe.short = m.ukShort;
+      if (m.ukStandard) CONFIG.ukExtension.stripe.standard = m.ukStandard;
+      if (m.ukExtended) CONFIG.ukExtension.stripe.extended = m.ukExtended;
     }
 
     // GHL webhooks
@@ -77,17 +77,17 @@
   // Apply admin-saved config from localStorage (works without Netlify env vars)
   function applyAdminConfig() {
     try {
-      const saved = JSON.parse(localStorage.getItem('londonPlannerAdmin') || '{}');
+      const saved = JSON.parse(localStorage.getItem('londonplannedAdmin') || '{}');
       if (typeof CONFIG === 'undefined') return;
 
-      // Manifest payment links
-      if (saved.manifest) {
-        if (saved.manifest.tier1) CONFIG.manifest.links.tier1 = saved.manifest.tier1;
-        if (saved.manifest.tier2) CONFIG.manifest.links.tier2 = saved.manifest.tier2;
-        if (saved.manifest.tier3) CONFIG.manifest.links.tier3 = saved.manifest.tier3;
-        if (saved.manifest.ukShort) CONFIG.ukExtension.manifest.short = saved.manifest.ukShort;
-        if (saved.manifest.ukStandard) CONFIG.ukExtension.manifest.standard = saved.manifest.ukStandard;
-        if (saved.manifest.ukExtended) CONFIG.ukExtension.manifest.extended = saved.manifest.ukExtended;
+      // Stripe payment links
+      if (saved.stripe) {
+        if (saved.stripe.tier1) CONFIG.stripe.links.tier1 = saved.stripe.tier1;
+        if (saved.stripe.tier2) CONFIG.stripe.links.tier2 = saved.stripe.tier2;
+        if (saved.stripe.tier3) CONFIG.stripe.links.tier3 = saved.stripe.tier3;
+        if (saved.stripe.ukShort) CONFIG.ukExtension.stripe.short = saved.stripe.ukShort;
+        if (saved.stripe.ukStandard) CONFIG.ukExtension.stripe.standard = saved.stripe.ukStandard;
+        if (saved.stripe.ukExtended) CONFIG.ukExtension.stripe.extended = saved.stripe.ukExtended;
       }
 
       // GHL webhooks

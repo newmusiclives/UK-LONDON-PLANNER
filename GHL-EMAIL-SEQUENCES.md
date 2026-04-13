@@ -21,7 +21,7 @@ Your first 2 days are ready to view, but there are {{custom.remaining_days}} mor
 Unlock your full guide from just $20.
 
 Cheers,
-The London & UK Planner Team
+The London Planned Team
 
 ### Email 2 — 72 hours (if no purchase)
 **Subject:** Still planning your London trip?
@@ -186,5 +186,5 @@ Need a hand turning your itinerary into reality? Our vetted partner services mak
 ## Setup Notes
 - All webhook URLs go in Admin Panel > Integrations > GoHighLevel
 - Use "Contact Tag" triggers in GHL to segment customers
-- Tags used: london-planner, lead, customer, itinerary-buyer
+- Tags used: london-planned, lead, customer, itinerary-buyer
 - Custom fields needed: trip_days, remaining_days, trip_start_date, occasion, group_type

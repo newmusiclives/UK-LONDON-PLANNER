@@ -2,7 +2,7 @@
 // USER ACCOUNTS — Magic Link Auth via GoHighLevel
 // ============================================================
 const Accounts = {
-  STORAGE_KEY: 'londonPlannerUser',
+  STORAGE_KEY: 'londonplannedUser',
 
   isLoggedIn() {
     return !!this.getUser();
@@ -18,7 +18,7 @@ const Accounts = {
       type: 'magic_link_request',
       email,
       returnUrl: window.location.origin + '/account.html',
-      tags: ['london-planner', 'user-account']
+      tags: ['london-planned', 'user-account']
     });
 
     // Store email for verification

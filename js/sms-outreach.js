@@ -7,7 +7,7 @@ const SMSOutreach = {
   STORAGE_KEY: 'smsOutreach',
 
   templates: [
-    { id: 'welcome', name: 'Welcome SMS', trigger: 'email_signup', delay: 'Immediate', message: 'Welcome to London & UK Planner {first_name}! 🇬🇧 Your free London guide is ready: {guide_link}', category: 'onboarding' },
+    { id: 'welcome', name: 'Welcome SMS', trigger: 'email_signup', delay: 'Immediate', message: 'Welcome to London Planned {first_name}! 🇬🇧 Your free London guide is ready: {guide_link}', category: 'onboarding' },
     { id: 'wizard-abandon', name: 'Wizard Abandonment', trigger: 'wizard_abandoned', delay: '2 hours', message: 'Hey {first_name}! Your London trip is still waiting 🗺️ Pick up where you left off and get 10% off: {wizard_link}', category: 'recovery' },
     { id: 'purchase-confirm', name: 'Purchase Confirmation', trigger: 'purchase_complete', delay: 'Immediate', message: 'Your London itinerary is ready! 🎉 View it here: {itinerary_link}. Have an amazing trip {first_name}!', category: 'transactional' },
     { id: 'trip-tomorrow', name: 'Trip Reminder', trigger: 'trip_tomorrow', delay: '9am day before', message: '✈️ London tomorrow {first_name}! Itinerary: {itinerary_link} | Weather: {weather} | Have a brilliant time!', category: 'lifecycle' },

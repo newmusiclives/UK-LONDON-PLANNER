@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Panel — London & UK Planner</title>
+  <title>Admin Panel — London Planned</title>
   <meta name="robots" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -218,7 +218,7 @@
               <thead><tr><th>Date</th><th>Product</th><th>Customer</th><th>Email</th><th>Amount</th><th>Status</th></tr></thead>
               <tbody id="sales-log"></tbody>
             </table>
-            <p id="sales-empty" style="text-align:center;color:var(--color-text-muted);padding:2rem;display:none;">No sales recorded yet. Sales will appear here once payments are processed through Manifest Financial.</p>
+            <p id="sales-empty" style="text-align:center;color:var(--color-text-muted);padding:2rem;display:none;">No sales recorded yet. Sales will appear here once payments are processed through Stripe.</p>
           </div>
         </div>
 
@@ -290,12 +290,12 @@
             <div class="connect-card__status tag-missing" id="ghl-status">Not Connected</div>
           </div>
 
-          <!-- Manifest Financial -->
-          <div class="connect-card" id="manifest-card">
+          <!-- Stripe -->
+          <div class="connect-card" id="stripe-card">
             <div class="connect-card__icon">💳</div>
-            <h4>Manifest Financial</h4>
+            <h4>Stripe</h4>
             <p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.5rem 0;">Payment processing for itineraries and services</p>
-            <div class="connect-card__status tag-missing" id="manifest-status">Not Connected</div>
+            <div class="connect-card__status tag-missing" id="stripe-status">Not Connected</div>
           </div>
 
           <!-- OpenWeatherMap -->
@@ -385,29 +385,29 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- PAYMENTS (Manifest Financial) -->
+      <!-- PAYMENTS (Stripe) -->
       <!-- ============================================================ -->
       <div class="admin-panel" data-panel="payments">
         <div class="admin-section">
-          <div class="admin-section__header"><h3>Manifest Financial Payment Links</h3></div>
+          <div class="admin-section__header"><h3>Stripe Payment Links</h3></div>
           <div class="admin-section__body">
             <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
-              Create Payment Links in your <a href="https://app.manifestfinancial.com" target="_blank" style="color:var(--color-accent);">Manifest Financial Dashboard</a>, then paste them below.
+              Create Payment Links in your <a href="https://dashboard.stripe.com" target="_blank" style="color:var(--color-accent);">Stripe Dashboard</a>, then paste them below.
             </p>
             <h4 style="margin:0 0 0.75rem;font-size:0.95rem;">London Itinerary</h4>
-            <div class="field"><label>Short Stay ($50) <small>1-5 days</small></label><input type="url" id="manifest-tier1" placeholder="https://pay.manifestfinancial.com/..." data-key="tier1"></div>
-            <div class="field"><label>Week Explorer ($75) <small>6-10 days</small></label><input type="url" id="manifest-tier2" placeholder="https://pay.manifestfinancial.com/..." data-key="tier2"></div>
-            <div class="field"><label>Extended Adventure ($99) <small>11-21 days</small></label><input type="url" id="manifest-tier3" placeholder="https://pay.manifestfinancial.com/..." data-key="tier3"></div>
+            <div class="field"><label>Short Stay ($50) <small>1-5 days</small></label><input type="url" id="stripe-tier1" placeholder="https://buy.stripe.com/..." data-key="tier1"></div>
+            <div class="field"><label>Week Explorer ($75) <small>6-10 days</small></label><input type="url" id="stripe-tier2" placeholder="https://buy.stripe.com/..." data-key="tier2"></div>
+            <div class="field"><label>Extended Adventure ($99) <small>11-21 days</small></label><input type="url" id="stripe-tier3" placeholder="https://buy.stripe.com/..." data-key="tier3"></div>
             <h4 style="margin:1.5rem 0 0.75rem;font-size:0.95rem;">UK Extension Add-on</h4>
-            <div class="field"><label>UK Short Break ($50) <small>1-5 days</small></label><input type="url" id="manifest-ukShort" placeholder="https://pay.manifestfinancial.com/..." data-key="ukShort"></div>
-            <div class="field"><label>UK Explorer ($75) <small>6-10 days</small></label><input type="url" id="manifest-ukStandard" placeholder="https://pay.manifestfinancial.com/..." data-key="ukStandard"></div>
-            <div class="field"><label>Grand UK Tour ($99) <small>11-21 days</small></label><input type="url" id="manifest-ukExtended" placeholder="https://pay.manifestfinancial.com/..." data-key="ukExtended"></div>
+            <div class="field"><label>UK Short Break ($50) <small>1-5 days</small></label><input type="url" id="stripe-ukShort" placeholder="https://buy.stripe.com/..." data-key="ukShort"></div>
+            <div class="field"><label>UK Explorer ($75) <small>6-10 days</small></label><input type="url" id="stripe-ukStandard" placeholder="https://buy.stripe.com/..." data-key="ukStandard"></div>
+            <div class="field"><label>Grand UK Tour ($99) <small>11-21 days</small></label><input type="url" id="stripe-ukExtended" placeholder="https://buy.stripe.com/..." data-key="ukExtended"></div>
             <div style="margin-top:1.5rem;display:flex;gap:0.75rem;align-items:center;">
               <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
               <span id="payment-save-status" style="font-size:0.85rem;color:#16a34a;display:none;">Saved and active!</span>
             </div>
             <div style="margin-top:1rem;padding:0.75rem;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:4px;font-size:0.8rem;color:#374151;">
-              <strong>How it works:</strong> Links saved here are stored in your browser and applied site-wide. For production, also add them as Netlify environment variables (MANIFEST_LINK_TIER1, etc.) so they work for all visitors.
+              <strong>How it works:</strong> Links saved here are stored in your browser and applied site-wide. For production, also add them as Netlify environment variables (STRIPE_LINK_TIER1, etc.) so they work for all visitors.
             </div>
           </div>
         </div>
@@ -970,8 +970,8 @@
   <script src="js/affiliate-dashboard.js"></script>
   <script src="js/ab-admin.js"></script>
   <script>
-    const ADMIN_KEY = 'londonPlannerAdmin';
-    const SALES_KEY = 'londonPlannerSales';
+    const ADMIN_KEY = 'londonplannedAdmin';
+    const SALES_KEY = 'londonplannedSales';
     const venueData = {};
     const venueTypes = ['attractions', 'restaurants', 'nightlife', 'entertainment', 'hotels'];
 
@@ -990,7 +990,7 @@
         const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
 
         // Populate fields
-        document.querySelectorAll('[id^="manifest-"]').forEach(i => { i.value = (saved.manifest && saved.manifest[i.dataset.key]) || ''; });
+        document.querySelectorAll('[id^="stripe-"]').forEach(i => { i.value = (saved.stripe && saved.stripe[i.dataset.key]) || ''; });
         document.querySelectorAll('[id^="aff-"]').forEach(i => { i.value = (saved.affiliates && saved.affiliates[i.dataset.key]) || ''; });
 
         // GHL fields
@@ -1098,7 +1098,7 @@
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
       const checks = [
         { name: 'GoHighLevel CRM', ok: saved.ghl?.locationId && saved.ghl?.apiKey, id: 'ghl' },
-        { name: 'Manifest Financial', ok: saved.manifest?.tier1, id: 'manifest' },
+        { name: 'Stripe', ok: saved.stripe?.tier1, id: 'stripe' },
         { name: 'OpenWeatherMap', ok: saved.weather?.apiKey, id: 'weather' }
       ];
 
@@ -1254,7 +1254,7 @@
       if (!saved.ghl?.webhooks?.emailCapture) { showStatus('Please save a webhook URL first.'); return; }
       fetch(saved.ghl.webhooks.emailCapture, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'test', source: 'London & UK Planner Admin', timestamp: new Date().toISOString() })
+        body: JSON.stringify({ type: 'test', source: 'London Planned Admin', timestamp: new Date().toISOString() })
       }).then(r => showStatus(r.ok ? 'Test webhook sent successfully!' : 'Webhook returned error: ' + r.status))
         .catch(e => showStatus('Connection failed: ' + e.message));
     }
@@ -1269,20 +1269,20 @@
 
     function savePaymentLinks() {
       const saved = JSON.parse(localStorage.getItem(ADMIN_KEY) || '{}');
-      saved.manifest = {};
-      document.querySelectorAll('[id^="manifest-"]').forEach(i => {
-        if (i.dataset.key) saved.manifest[i.dataset.key] = i.value.trim();
+      saved.stripe = {};
+      document.querySelectorAll('[id^="stripe-"]').forEach(i => {
+        if (i.dataset.key) saved.stripe[i.dataset.key] = i.value.trim();
       });
       localStorage.setItem(ADMIN_KEY, JSON.stringify(saved));
 
       // Patch CONFIG live so links work immediately across the site
       if (typeof CONFIG !== 'undefined') {
-        if (saved.manifest.tier1) CONFIG.manifest.links.tier1 = saved.manifest.tier1;
-        if (saved.manifest.tier2) CONFIG.manifest.links.tier2 = saved.manifest.tier2;
-        if (saved.manifest.tier3) CONFIG.manifest.links.tier3 = saved.manifest.tier3;
-        if (saved.manifest.ukShort) CONFIG.ukExtension.manifest.short = saved.manifest.ukShort;
-        if (saved.manifest.ukStandard) CONFIG.ukExtension.manifest.standard = saved.manifest.ukStandard;
-        if (saved.manifest.ukExtended) CONFIG.ukExtension.manifest.extended = saved.manifest.ukExtended;
+        if (saved.stripe.tier1) CONFIG.stripe.links.tier1 = saved.stripe.tier1;
+        if (saved.stripe.tier2) CONFIG.stripe.links.tier2 = saved.stripe.tier2;
+        if (saved.stripe.tier3) CONFIG.stripe.links.tier3 = saved.stripe.tier3;
+        if (saved.stripe.ukShort) CONFIG.ukExtension.stripe.short = saved.stripe.ukShort;
+        if (saved.stripe.ukStandard) CONFIG.ukExtension.stripe.standard = saved.stripe.ukStandard;
+        if (saved.stripe.ukExtended) CONFIG.ukExtension.stripe.extended = saved.stripe.ukExtended;
       }
 
       updateIntegrationStatus();
@@ -1400,10 +1400,10 @@
     // ============================================================
     // PROMOTIONS — UI Functions
     // ============================================================
-    const PROMO_KEY = 'londonPlannerPromo';
-    const SPONSORS_KEY = 'londonPlannerSponsors';
-    const FEATURED_HISTORY_KEY = 'londonPlannerFeaturedHistory';
-    const CONTENT_LIBRARY_KEY = 'londonPlannerContentLibrary';
+    const PROMO_KEY = 'londonplannedPromo';
+    const SPONSORS_KEY = 'londonplannedSponsors';
+    const FEATURED_HISTORY_KEY = 'londonplannedFeaturedHistory';
+    const CONTENT_LIBRARY_KEY = 'londonplannedContentLibrary';
 
     function initPromotionsUI() {
       // Populate venue dropdowns from loaded venueData
@@ -1622,7 +1622,7 @@
       const subj = document.getElementById('promo-subject');
       if (parts.length > 0 && !subj.dataset.userEdited) {
         const issue = document.getElementById('promo-issue-number').value;
-        subj.value = `London Planner #${issue}: ${parts.join(', ')} & More`;
+        subj.value = `London Planned #${issue}: ${parts.join(', ')} & More`;
       }
     }
 
@@ -1680,7 +1680,7 @@
       fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...selections, source: 'London & UK Planner Admin', timestamp: new Date().toISOString() })
+        body: JSON.stringify({ ...selections, source: 'London Planned Admin', timestamp: new Date().toISOString() })
       }).then(r => {
         if (r.ok) {
           showStatus('Newsletter data sent to GoHighLevel.');
@@ -1781,7 +1781,7 @@
       const title = document.getElementById('blog-title').value || 'blog-post';
       const slug = document.getElementById('blog-slug').value || 'blog-post';
       const meta = document.getElementById('blog-meta').value || '';
-      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${title} — London & UK Planner</title><meta name="description" content="${meta}"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"></head><body><main style="max-width:700px;margin:2rem auto;padding:0 1.5rem;">${content}</main></body></html>`;
+      const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${title} — London Planned</title><meta name="description" content="${meta}"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"></head><body><main style="max-width:700px;margin:2rem auto;padding:0 1.5rem;">${content}</main></body></html>`;
       const blob = new Blob([html], { type: 'text/html' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `${slug}.html`; a.click();
       showStatus(`Blog HTML downloaded: ${slug}.html`);

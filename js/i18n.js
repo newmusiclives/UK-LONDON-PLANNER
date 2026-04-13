@@ -1,5 +1,5 @@
 /* ============================================================
-   I18N — Multi-language support for London & UK Planner
+   I18N — Multi-language support for London Planned
    Supports: English (default), Spanish, French, German
    ============================================================ */
 
@@ -51,7 +51,7 @@ const I18N = {
       // Footer — description & email capture
       'footer.desc': 'Expertly curated London itineraries tailored to your interests, budget, and travel style. Your perfect London adventure starts here.',
       'footer.shareYourMoments': 'Share Your London Moments',
-      'footer.tagUs': 'Tag <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> on Instagram for a chance to be featured',
+      'footer.tagUs': 'Tag <strong style="color:var(--color-accent);">#MyLondonPlanned</strong> on Instagram for a chance to be featured',
       'footer.galleryComingSoon': 'Photo gallery coming soon — share your photos and we\'ll feature the best ones!',
 
       // Email capture
@@ -253,7 +253,7 @@ const I18N = {
       // Footer — description & email capture
       'footer.desc': 'Itinerarios de Londres seleccionados por expertos, adaptados a tus intereses, presupuesto y estilo de viaje. Tu aventura perfecta en Londres comienza aqui.',
       'footer.shareYourMoments': 'Comparte Tus Momentos en Londres',
-      'footer.tagUs': 'Etiqueta <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> en Instagram para tener la oportunidad de ser destacado',
+      'footer.tagUs': 'Etiqueta <strong style="color:var(--color-accent);">#MyLondonPlanned</strong> en Instagram para tener la oportunidad de ser destacado',
       'footer.galleryComingSoon': 'Galeria de fotos proximamente. Comparte tus fotos y destacaremos las mejores.',
 
       // Email capture
@@ -455,7 +455,7 @@ const I18N = {
       // Footer — description & email capture
       'footer.desc': "Itineraires londoniens selectionnes par des experts, adaptes a vos centres d'interet, budget et style de voyage. Votre aventure londonienne parfaite commence ici.",
       'footer.shareYourMoments': 'Partagez Vos Moments Londoniens',
-      'footer.tagUs': 'Taguez <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> sur Instagram pour avoir une chance d\'etre mis en avant',
+      'footer.tagUs': 'Taguez <strong style="color:var(--color-accent);">#MyLondonPlanned</strong> sur Instagram pour avoir une chance d\'etre mis en avant',
       'footer.galleryComingSoon': 'Galerie photo bientot disponible. Partagez vos photos et nous mettrons en avant les meilleures !',
 
       // Email capture
@@ -657,7 +657,7 @@ const I18N = {
       // Footer — description & email capture
       'footer.desc': 'Von Experten kuratierte London-Reiserouten, abgestimmt auf Ihre Interessen, Ihr Budget und Ihren Reisestil. Ihr perfektes London-Abenteuer beginnt hier.',
       'footer.shareYourMoments': 'Teilen Sie Ihre London-Momente',
-      'footer.tagUs': 'Taggen Sie <strong style="color:var(--color-accent);">#MyLondonPlanner</strong> auf Instagram fur die Chance, vorgestellt zu werden',
+      'footer.tagUs': 'Taggen Sie <strong style="color:var(--color-accent);">#MyLondonPlanned</strong> auf Instagram fur die Chance, vorgestellt zu werden',
       'footer.galleryComingSoon': 'Fotogalerie kommt bald. Teilen Sie Ihre Fotos und wir zeigen die besten!',
 
       // Email capture

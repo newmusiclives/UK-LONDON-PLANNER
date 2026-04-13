@@ -3,7 +3,7 @@
 // localStorage-based venue review system
 // ============================================================
 const ReviewSystem = {
-  STORAGE_KEY: 'londonPlannerReviews',
+  STORAGE_KEY: 'londonplannedReviews',
 
   // Pre-seeded reviews for popular venues
   seedReviews: [

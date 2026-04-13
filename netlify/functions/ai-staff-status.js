@@ -7,7 +7,7 @@ exports.handler = async () => {
   const status = {
     anthropic: !!env.ANTHROPIC_API_KEY,
     ghl: !!(env.GHL_API_KEY && env.GHL_LOCATION_ID),
-    manifest: !!env.MANIFEST_LINK_TIER1,
+    stripe: !!env.STRIPE_LINK_TIER1,
     weather: !!env.OPENWEATHERMAP_API_KEY,
     ga: !!env.GOOGLE_ANALYTICS_ID,
     timestamp: new Date().toISOString(),

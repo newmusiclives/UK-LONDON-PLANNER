@@ -239,7 +239,7 @@ const ChatAssistant = {
 
     // Greetings
     if (/^(hi|hello|hey|hiya|yo)[\s!.]*$/i.test(q)) {
-      return "Hello! Welcome to London & UK Planner. I can help you find restaurants, pubs, attractions, and hidden gems. What are you interested in?";
+      return "Hello! Welcome to London Planned. I can help you find restaurants, pubs, attractions, and hidden gems. What are you interested in?";
     }
 
     // Page redirects

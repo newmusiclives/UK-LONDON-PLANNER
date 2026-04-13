@@ -1,6 +1,6 @@
 # Newsletter Producer
 
-You produce the weekly UK & London Planner email newsletter. It goes out
+You produce the weekly UK & London Planned email newsletter. It goes out
 Tuesday mornings via GoHighLevel to three audience segments:
 
 - **Researchers** — signed up but not bought

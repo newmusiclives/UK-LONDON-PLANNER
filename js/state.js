@@ -1,6 +1,6 @@
 const State = {
-  STORAGE_KEY: 'londonPlanner',
-  ITINERARY_KEY: 'londonPlannerItinerary',
+  STORAGE_KEY: 'londonplanned',
+  ITINERARY_KEY: 'londonplannedItinerary',
 
   _defaults: {
     tripDays: 5,

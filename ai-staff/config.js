@@ -52,17 +52,17 @@ const config = {
       return !!(env.GHL_API_KEY && env.GHL_LOCATION_ID);
     },
   },
-  manifest: {
+  stripe: {
     links: {
-      tier1: () => optional('MANIFEST_LINK_TIER1'),
-      tier2: () => optional('MANIFEST_LINK_TIER2'),
-      tier3: () => optional('MANIFEST_LINK_TIER3'),
-      ukShort: () => optional('MANIFEST_LINK_UK_SHORT'),
-      ukStandard: () => optional('MANIFEST_LINK_UK_STANDARD'),
-      ukExtended: () => optional('MANIFEST_LINK_UK_EXTENDED'),
+      tier1: () => optional('STRIPE_LINK_TIER1'),
+      tier2: () => optional('STRIPE_LINK_TIER2'),
+      tier3: () => optional('STRIPE_LINK_TIER3'),
+      ukShort: () => optional('STRIPE_LINK_UK_SHORT'),
+      ukStandard: () => optional('STRIPE_LINK_UK_STANDARD'),
+      ukExtended: () => optional('STRIPE_LINK_UK_EXTENDED'),
     },
     isConfigured() {
-      return !!env.MANIFEST_LINK_TIER1;
+      return !!env.STRIPE_LINK_TIER1;
     },
   },
   // Safe-to-log status (no secret values)
@@ -70,7 +70,7 @@ const config = {
     return {
       anthropic: !!env.ANTHROPIC_API_KEY,
       ghl: this.ghl.isConfigured(),
-      manifest: this.manifest.isConfigured(),
+      stripe: this.stripe.isConfigured(),
       weather: !!env.OPENWEATHERMAP_API_KEY,
       ga: !!env.GOOGLE_ANALYTICS_ID,
     };

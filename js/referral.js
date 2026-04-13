@@ -107,7 +107,7 @@ const ReferralProgram = {
 
   _getShareUrl() {
     const data = this._getData();
-    return (window.location.origin || 'https://londonplanner.com') + '/?ref=' + data.referralCode;
+    return (window.location.origin || 'https://londonplanned.com') + '/?ref=' + data.referralCode;
   },
 
   _trackShare(channel) {

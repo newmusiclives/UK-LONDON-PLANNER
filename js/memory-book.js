@@ -107,7 +107,7 @@ const MemoryBook = {
         <div class="mb-page mb-back-cover">
           <div class="mb-back-cover__text">
             <p>"Every trip to London is a new chapter in your story."</p>
-            <small>Created with London & UK Planner</small>
+            <small>Created with London Planned</small>
           </div>
         </div>
       </div>
