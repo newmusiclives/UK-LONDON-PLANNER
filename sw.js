@@ -1,4 +1,4 @@
-const CACHE_NAME = 'london-planner-v7';
+const CACHE_NAME = 'london-planner-v8';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -47,6 +47,9 @@ const urlsToCache = [
   '/js/memory-book.js',
   '/js/multi-city.js',
   '/js/loyalty.js',
+  '/js/marketing-engine.js',
+  '/js/social-scheduler.js',
+  '/js/sms-outreach.js',
   '/js/ai-staff-admin.js',
   '/js/affiliate-dashboard.js',
   '/js/ab-admin.js',

@@ -68,6 +68,11 @@ const FeatureFlags = {
     'multi-city':          { label: 'Multi-City Expansion',     category: 'Core',              description: 'Paris, Rome, Barcelona, NYC, Tokyo — cross-city itineraries',       enabled: false },
     'loyalty':             { label: 'Loyalty & Gamification',   category: 'Engagement',        description: 'Points, badges, tiers, and rewards for engagement',                 enabled: false },
 
+    // ── Marketing & Outreach ────────────────────────────────
+    'marketing-engine':    { label: 'Marketing Engine',         category: 'Admin',             description: 'AI-powered lead scoring, campaign calendar, and marketing automation',enabled: true },
+    'social-scheduler':    { label: 'Social Media Scheduler',   category: 'Admin',             description: 'Create, schedule, and track posts across 6 platforms with AI generation', enabled: true },
+    'sms-outreach':        { label: 'SMS Outreach',             category: 'Admin',             description: '10 automated SMS templates for lifecycle, recovery, and promotions', enabled: true },
+
     // ── Admin & CRM ──────────────────────────────────────
     'admin-panel':         { label: 'Admin Panel',              category: 'Admin',             description: 'Full admin dashboard with venue management, sales, integrations',    enabled: true },
     'ghl-integration':     { label: 'GoHighLevel CRM',          category: 'Admin',             description: 'Webhook integration for email capture, contacts, purchases',         enabled: false },

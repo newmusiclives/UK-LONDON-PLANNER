@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Command Centre — London & UK Planner</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/new-features.css">
+  <link rel="stylesheet" href="css/marketing.css">
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <section class="mk-hero">
+    <h1>Marketing <span>Command Centre</span></h1>
+    <p>AI-powered marketing automation: social media, email, SMS, campaigns, and lead intelligence — all in one place.</p>
+  </section>
+
+  <main class="mk-page">
+    <div class="mk-tabs">
+      <div class="mk-tab mk-tab--active" data-tab="dashboard">Dashboard</div>
+      <div class="mk-tab" data-tab="social">Social Media</div>
+      <div class="mk-tab" data-tab="sms">SMS Outreach</div>
+      <div class="mk-tab" data-tab="campaigns">Campaigns</div>
+      <div class="mk-tab" data-tab="leads">Lead Intelligence</div>
+      <div class="mk-tab" data-tab="ai">AI Marketing</div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="mk-panel mk-panel--active" id="panel-dashboard">
+      <div class="mk-dash-grid">
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">Total Leads</div>
+          <div class="mk-dash-card__value" id="mk-leads-count">0</div>
+          <div class="mk-dash-card__change mk-dash-card__change--up">Tracking active</div>
+        </div>
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">Email Subscribers</div>
+          <div class="mk-dash-card__value" id="mk-email-count">0</div>
+          <div class="mk-dash-card__change">Via footer + lead magnets</div>
+        </div>
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">Social Posts Scheduled</div>
+          <div class="mk-dash-card__value" id="mk-social-count">0</div>
+          <div class="mk-dash-card__change">Across 6 platforms</div>
+        </div>
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">SMS Templates</div>
+          <div class="mk-dash-card__value">10</div>
+          <div class="mk-dash-card__change">Automated triggers ready</div>
+        </div>
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">Active Campaigns</div>
+          <div class="mk-dash-card__value" id="mk-campaign-count">0</div>
+          <div class="mk-dash-card__change">Seasonal + evergreen</div>
+        </div>
+        <div class="mk-dash-card">
+          <div class="mk-dash-card__label">AI Agents Active</div>
+          <div class="mk-dash-card__value">6</div>
+          <div class="mk-dash-card__change">Content, social, email, growth, sales, campaigns</div>
+        </div>
+      </div>
+
+      <div class="mk-dash-section">
+        <h3>Marketing Channels</h3>
+        <div class="mk-channel-grid">
+          <div class="mk-channel"><span class="mk-channel__icon">📧</span><strong>Email</strong><span>5 automated sequences</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">📱</span><strong>SMS</strong><span>10 trigger-based templates</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">📸</span><strong>Instagram</strong><span>Carousels, Reels, Stories</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">🎵</span><strong>TikTok</strong><span>Short-form video scripts</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">𝕏</span><strong>X / Twitter</strong><span>Threads & engagement</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">📘</span><strong>Facebook</strong><span>Community posts</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">📌</span><strong>Pinterest</strong><span>Travel inspiration pins</span></div>
+          <div class="mk-channel"><span class="mk-channel__icon">🧵</span><strong>Threads</strong><span>Conversational content</span></div>
+        </div>
+      </div>
+
+      <div class="mk-dash-section">
+        <h3>AI Marketing Agents</h3>
+        <div class="mk-agent-grid">
+          <div class="mk-agent"><strong>Poppy Whitfield</strong><span>Social Media Manager</span><small>3x daily: 9am / 1pm / 6pm</small></div>
+          <div class="mk-agent"><strong>Beatrice Calloway</strong><span>Newsletter Producer</span><small>Weekly: Tuesday 9am</small></div>
+          <div class="mk-agent"><strong>Edith Langley</strong><span>Subscriber Growth</span><small>Weekly: Wednesday 8am</small></div>
+          <div class="mk-agent"><strong>William Drummond</strong><span>Sales & Conversion</span><small>Daily: 9am</small></div>
+          <div class="mk-agent"><strong>Georgina Hartwell</strong><span>Promotions & Campaigns</span><small>Weekly: Tuesday 10am</small></div>
+          <div class="mk-agent"><strong>Arthur Pembridge</strong><span>Customer Journey</span><small>Weekly: Wednesday 10am</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="mk-panel" id="panel-social">
+      <div id="social-scheduler-container"></div>
+    </div>
+
+    <!-- SMS -->
+    <div class="mk-panel" id="panel-sms">
+      <div id="sms-outreach-container"></div>
+    </div>
+
+    <!-- CAMPAIGNS -->
+    <div class="mk-panel" id="panel-campaigns">
+      <h3>Campaign Calendar</h3>
+      <div id="campaign-calendar"></div>
+    </div>
+
+    <!-- LEAD INTELLIGENCE -->
+    <div class="mk-panel" id="panel-leads">
+      <h3>Lead Scoring & Intelligence</h3>
+      <div id="lead-intelligence"></div>
+    </div>
+
+    <!-- AI MARKETING -->
+    <div class="mk-panel" id="panel-ai">
+      <h3>AI Marketing Assistant</h3>
+      <div id="ai-marketing-container"></div>
+    </div>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/marketing-engine.js"></script>
+  <script src="js/social-scheduler.js"></script>
+  <script src="js/sms-outreach.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+
+      // Tab switching
+      document.querySelectorAll('.mk-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.mk-tab').forEach(t => t.classList.remove('mk-tab--active'));
+          document.querySelectorAll('.mk-panel').forEach(p => p.classList.remove('mk-panel--active'));
+          tab.classList.add('mk-tab--active');
+          document.getElementById('panel-' + tab.dataset.tab).classList.add('mk-panel--active');
+
+          // Lazy init panels
+          if (tab.dataset.tab === 'social') SocialScheduler.init('social-scheduler-container');
+          if (tab.dataset.tab === 'sms') SMSOutreach.init('sms-outreach-container');
+          if (tab.dataset.tab === 'campaigns') renderCampaigns();
+          if (tab.dataset.tab === 'leads') renderLeadIntelligence();
+          if (tab.dataset.tab === 'ai') renderAIMarketing();
+        });
+      });
+
+      // Dashboard counts
+      updateDashboard();
+    });
+
+    function updateDashboard() {
+      const meData = JSON.parse(localStorage.getItem('marketingEngine') || '{}');
+      const ssData = JSON.parse(localStorage.getItem('socialScheduler') || '{}');
+      const campaigns = typeof MarketingEngine !== 'undefined' ? MarketingEngine.campaigns : [];
+
+      document.getElementById('mk-leads-count').textContent = meData.leadScore || 0;
+      document.getElementById('mk-social-count').textContent = (ssData.posts || []).length;
+      document.getElementById('mk-campaign-count').textContent = campaigns.filter(c => c.status === 'active').length;
+    }
+
+    function renderCampaigns() {
+      const container = document.getElementById('campaign-calendar');
+      if (!container || container.dataset.loaded) return;
+      container.dataset.loaded = 'true';
+
+      const campaigns = typeof MarketingEngine !== 'undefined' ? MarketingEngine.campaigns : [];
+      const statusColors = { active: '#2ECC71', scheduled: '#3498DB', draft: '#95a5a6', ended: '#E74C3C' };
+
+      container.innerHTML = `
+        <div class="mk-campaigns">
+          ${campaigns.map(c => `
+            <div class="mk-campaign-card" style="border-left:4px solid ${statusColors[c.status] || '#999'}">
+              <div class="mk-campaign-card__header">
+                <strong>${c.name}</strong>
+                <span class="mk-campaign-badge" style="background:${statusColors[c.status]}20;color:${statusColors[c.status]}">${c.status}</span>
+              </div>
+              <div class="mk-campaign-card__dates">${c.startDate} → ${c.endDate}</div>
+              <div class="mk-campaign-card__target">${c.target}</div>
+              <div class="mk-campaign-card__channels">
+                ${c.channels.map(ch => '<span class="mk-campaign-ch">' + ch + '</span>').join('')}
+              </div>
+              ${c.discount ? '<div class="mk-campaign-card__offer">' + c.discount + '</div>' : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderLeadIntelligence() {
+      const container = document.getElementById('lead-intelligence');
+      if (!container || container.dataset.loaded) return;
+      container.dataset.loaded = 'true';
+
+      const meData = JSON.parse(localStorage.getItem('marketingEngine') || '{}');
+      const score = meData.leadScore || 0;
+      const tier = typeof MarketingEngine !== 'undefined' ? MarketingEngine.getLeadTier(score) : { name: 'Cold', action: '' };
+      const history = (meData.leadHistory || []).slice(-15).reverse();
+
+      container.innerHTML = `
+        <div class="mk-leads">
+          <div class="mk-lead-score">
+            <div class="mk-lead-score__num">${score}</div>
+            <div class="mk-lead-score__tier">${tier.name}</div>
+            <div class="mk-lead-score__action">${tier.action}</div>
+          </div>
+
+          <h4>Scoring Rules</h4>
+          <div class="mk-scoring-rules">
+            ${Object.entries(typeof MarketingEngine !== 'undefined' ? MarketingEngine.leadScoring.actions : {}).map(([action, pts]) =>
+              '<div class="mk-scoring-rule"><span>' + action.replace(/_/g, ' ') + '</span><span>+' + pts + ' pts</span></div>'
+            ).join('')}
+          </div>
+
+          <h4>Recent Activity</h4>
+          <div class="mk-lead-history">
+            ${history.length ? history.map(h =>
+              '<div class="mk-history-item"><span>' + h.action.replace(/_/g, ' ') + '</span><span>+' + h.points + '</span><small>' + new Date(h.date).toLocaleString() + '</small></div>'
+            ).join('') : '<p style="color:var(--color-text-muted)">No activity yet. Browse the site to see lead scoring in action.</p>'}
+          </div>
+
+          <h4>Lead Tiers</h4>
+          <div class="mk-tiers">
+            ${(typeof MarketingEngine !== 'undefined' ? MarketingEngine.leadScoring.tiers : []).map(t => `
+              <div class="mk-tier ${score >= t.min ? 'mk-tier--active' : ''}">
+                <strong>${t.name}</strong> (${t.min}-${t.max} pts)
+                <span>${t.action}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAIMarketing() {
+      const container = document.getElementById('ai-marketing-container');
+      if (!container || container.dataset.loaded) return;
+      container.dataset.loaded = 'true';
+
+      const prompts = typeof MarketingEngine !== 'undefined' ? MarketingEngine.aiPrompts : {};
+
+      container.innerHTML = `
+        <div class="mk-ai">
+          <p class="mk-ai__desc">Generate marketing content using AI. These prompts are used by the AI Staff agents and can also be triggered manually.</p>
+
+          <div class="mk-ai-prompts">
+            ${Object.entries(prompts).map(([key, prompt]) => `
+              <div class="mk-ai-prompt">
+                <strong>${key.replace(/_/g, ' ')}</strong>
+                <p>${prompt}</p>
+                <div class="mk-ai-prompt__actions">
+                  <input type="text" placeholder="Topic (e.g. Borough Market)" class="mk-ai-topic" data-key="${key}">
+                  <button class="btn btn--small btn--primary" onclick="generateAIContent('${key}', this)">Generate</button>
+                </div>
+                <div class="mk-ai-output" id="ai-output-${key}"></div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="mk-ai-auto">
+            <h4>Automated AI Marketing</h4>
+            <p>When AI Staff scheduling is enabled, these agents produce content automatically:</p>
+            <ul>
+              <li><strong>Social Media Manager</strong> — 3x daily across 6 platforms</li>
+              <li><strong>Newsletter Producer</strong> — Weekly email with featured content</li>
+              <li><strong>Sales & Conversion</strong> — Daily funnel optimisation and recovery emails</li>
+              <li><strong>Subscriber Growth</strong> — Weekly lead magnet and funnel ideas</li>
+              <li><strong>Promotions & Campaigns</strong> — Seasonal campaign planning</li>
+              <li><strong>Customer Journey</strong> — Lifecycle email sequence management</li>
+            </ul>
+            <p><a href="admin.html" class="btn btn--small">Manage AI Staff in Admin Panel</a></p>
+          </div>
+        </div>
+      `;
+    }
+
+    function generateAIContent(key, btn) {
+      const topic = btn.parentElement.querySelector('.mk-ai-topic')?.value || 'London travel';
+      const output = document.getElementById('ai-output-' + key);
+      if (!output) return;
+      output.innerHTML = '<p style="color:var(--color-text-muted);font-style:italic;">In production, this calls the Claude API with the prompt template and your topic. The AI Staff agents use these prompts on their schedules automatically.</p>';
+    }
+  </script>
+</body>
+</html>
