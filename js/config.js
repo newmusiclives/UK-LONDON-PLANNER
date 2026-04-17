@@ -41,7 +41,11 @@ const CONFIG = {
       itineraryPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_ITINERARY_WEBHOOK',
       contactForm: 'https://services.leadconnectorhq.com/hooks/YOUR_CONTACT_WEBHOOK',
       emailCapture: 'https://services.leadconnectorhq.com/hooks/YOUR_EMAIL_CAPTURE_WEBHOOK',
-      promotionsNewsletter: 'https://services.leadconnectorhq.com/hooks/YOUR_NEWSLETTER_WEBHOOK'
+      promotionsNewsletter: 'https://services.leadconnectorhq.com/hooks/YOUR_NEWSLETTER_WEBHOOK',
+      waitlist: 'https://services.leadconnectorhq.com/hooks/YOUR_WAITLIST_WEBHOOK',
+      giftPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_GIFT_WEBHOOK',
+      partnerLead: 'https://services.leadconnectorhq.com/hooks/YOUR_PARTNER_WEBHOOK',
+      ugcSubmission: 'https://services.leadconnectorhq.com/hooks/YOUR_UGC_WEBHOOK'
     },
     calendarId: 'YOUR_GHL_CALENDAR_ID',
     // Pipeline for tracking customer journey
@@ -359,8 +363,110 @@ const GHL = {
       tags: ['london-planned', 'contact-form'],
       ...formData
     });
+  },
+
+  // ── Growth: Tiered Waitlist ─────────────────────────────
+  async submitWaitlist(data) {
+    // Falls back to emailCapture hook if a dedicated waitlist hook isn't set.
+    const hasDedicated = !!(CONFIG.goHighLevel.webhooks.waitlist &&
+      !CONFIG.goHighLevel.webhooks.waitlist.includes('YOUR_'));
+    const key = hasDedicated ? 'waitlist' : 'emailCapture';
+    return this.sendToWebhook(key, {
+      type: 'waitlist_signup',
+      tags: ['london-planned', 'waitlist', `tier-${data.tier || 0}`,
+             data.referredBy ? 'referred' : 'organic'].filter(Boolean),
+      ...data
+    });
+  },
+
+  // ── Growth: Gift Itinerary ──────────────────────────────
+  async purchaseGift(data) {
+    return this.sendToWebhook('giftPurchase', {
+      type: 'gift_purchase',
+      tags: ['london-planned', 'gift-buyer', `gift-${data.tierId || 'unknown'}`],
+      ...data
+    });
+  },
+
+  // ── Growth: B2B Partner Lead ────────────────────────────
+  async submitPartnerLead(data) {
+    return this.sendToWebhook('partnerLead', {
+      type: 'partner_lead',
+      tags: ['london-planned', 'partner-lead', `partner-type-${data.partnerType || 'other'}`],
+      ...data
+    });
+  },
+
+  // ── Growth: Post-Trip UGC Submission ────────────────────
+  async submitUgc(data) {
+    return this.sendToWebhook('ugcSubmission', {
+      type: 'ugc_submission',
+      tags: ['london-planned', 'ugc', 'post-trip', 'ambassador'],
+      ...data
+    });
   }
 };
+
+// ============================================================
+// SHARE CODES — Generate and parse waitlist / trip-buddy codes
+// Code format: LP-XXXXXX (6 base32 chars, no ambiguous 0/O/1/I)
+// ============================================================
+const ShareCodes = {
+  STORAGE_KEY: 'londonplannedShareCode',
+  REF_STORAGE_KEY: 'londonplannedReferredBy',
+  ALPHABET: 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789',
+
+  generate() {
+    const buf = new Uint8Array(6);
+    (window.crypto || window.msCrypto).getRandomValues(buf);
+    let code = '';
+    for (let i = 0; i < 6; i++) code += this.ALPHABET[buf[i] % this.ALPHABET.length];
+    return `LP-${code}`;
+  },
+
+  // Returns existing code from storage, or generates + persists one.
+  mine() {
+    let code = '';
+    try { code = localStorage.getItem(this.STORAGE_KEY) || ''; } catch (_) {}
+    if (!code) {
+      code = this.generate();
+      try { localStorage.setItem(this.STORAGE_KEY, code); } catch (_) {}
+    }
+    return code;
+  },
+
+  // Capture ?ref=XXX from URL on any page load and remember it for 60 days.
+  captureReferrer() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const ref = params.get('ref');
+      if (ref && /^LP-[A-Z2-9]{6}$/i.test(ref)) {
+        localStorage.setItem(this.REF_STORAGE_KEY, ref.toUpperCase());
+        localStorage.setItem(this.REF_STORAGE_KEY + 'Ts', String(Date.now()));
+      }
+    } catch (_) {}
+  },
+
+  referredBy() {
+    try {
+      const ref = localStorage.getItem(this.REF_STORAGE_KEY);
+      const ts = parseInt(localStorage.getItem(this.REF_STORAGE_KEY + 'Ts') || '0', 10);
+      if (!ref) return '';
+      if (Date.now() - ts > 60 * 24 * 60 * 60 * 1000) return '';
+      return ref;
+    } catch (_) { return ''; }
+  },
+
+  shareUrl(code, path = '/') {
+    const origin = window.location.origin || '';
+    return `${origin}${path}${path.includes('?') ? '&' : '?'}ref=${encodeURIComponent(code)}`;
+  }
+};
+
+// Auto-capture referrer on every page load
+if (typeof window !== 'undefined') {
+  try { ShareCodes.captureReferrer(); } catch (_) {}
+}
 
 // ============================================================
 // CURRENCY CONVERTER

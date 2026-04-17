@@ -77,6 +77,13 @@ const FeatureFlags = {
     'admin-panel':         { label: 'Admin Panel',              category: 'Admin',             description: 'Full admin dashboard with venue management, sales, integrations',    enabled: true },
     'ghl-integration':     { label: 'GoHighLevel CRM',          category: 'Admin',             description: 'Webhook integration for email capture, contacts, purchases',         enabled: false },
     'promotions':          { label: 'Promotions Module',        category: 'Admin',             description: 'Newsletter builder, social media, sponsor management',               enabled: true },
+
+    // ── Growth Engines ────────────────────────────────────
+    'growth-tiered-waitlist': { label: 'Tiered Waitlist',      category: 'Growth',            description: 'Pre-launch viral waitlist — share to unlock 40% off, Insider Bundle, Founding Member, upgrade, free trip',  enabled: true },
+    'growth-trip-buddy':      { label: 'Trip Buddy Referrals',  category: 'Growth',            description: 'Post-purchase share codes — £20 voucher per friend who buys, recipient gets 20% off',                     enabled: false },
+    'growth-gift-itinerary':  { label: 'Gift an Itinerary',     category: 'Growth',            description: 'Buy a London itinerary as a gift with recipient redemption code and scheduled delivery',                enabled: false },
+    'growth-ugc-loop':        { label: 'Post-Trip UGC Loop',    category: 'Growth',            description: 'Post-trip "share your highlights" flow — ambassadors earn £25 per conversion using their promo code',    enabled: false },
+    'growth-b2b-partners':    { label: 'B2B Partner Programme', category: 'Growth',            description: 'Partner landing page for hotels, tour operators, airlines, travel agents — 20% commission, white-label', enabled: false },
   },
 
   /**

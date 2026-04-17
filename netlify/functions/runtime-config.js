@@ -21,6 +21,10 @@ exports.handler = async () => {
         contactForm: env.GHL_WEBHOOK_CONTACT_FORM || '',
         emailCapture: env.GHL_WEBHOOK_EMAIL_CAPTURE || '',
         promotionsNewsletter: env.GHL_WEBHOOK_NEWSLETTER || '',
+        waitlist: env.GHL_WEBHOOK_WAITLIST || '',
+        giftPurchase: env.GHL_WEBHOOK_GIFT || '',
+        partnerLead: env.GHL_WEBHOOK_PARTNER || '',
+        ugcSubmission: env.GHL_WEBHOOK_UGC || '',
       },
     },
     affiliates: {

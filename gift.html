@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift a London Trip — London Planned</title>
+  <meta name="description" content="Give someone a personalised London itinerary as a gift. They get a redemption code, a custom day-by-day plan, and 900+ curated venues. Delivered on the date you choose.">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .gift-hero { background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 50%, #2A3F6B 100%); color: #fff; padding: 4.5rem 0 3rem; text-align: center; }
+    .gift-hero h1 { color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 0.5rem; }
+    .gift-hero h1 span { color: #C9A84C; font-style: italic; }
+    .gift-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 620px; margin: 0 auto; }
+    .gift-form { display: grid; gap: 1.25rem; }
+    .gift-form label { font-weight: 600; display: block; margin-bottom: 0.4rem; font-size: 0.9rem; }
+    .gift-form input, .gift-form select, .gift-form textarea {
+      width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;
+    }
+    .gift-form textarea { min-height: 90px; resize: vertical; }
+    .tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    @media (max-width: 640px) { .tier-grid { grid-template-columns: 1fr; } }
+    .tier-option { position: relative; cursor: pointer; }
+    .tier-option input { position: absolute; opacity: 0; pointer-events: none; }
+    .tier-option__card {
+      border: 2px solid var(--color-border); border-radius: var(--radius-md);
+      padding: 1rem; transition: all 120ms ease; height: 100%;
+    }
+    .tier-option input:checked + .tier-option__card {
+      border-color: #C9A84C; background: rgba(201,168,76,0.06); box-shadow: 0 4px 16px rgba(201,168,76,0.15);
+    }
+    .tier-option__price { font-size: 1.5rem; font-weight: 700; color: #C9A84C; margin: 0.2rem 0; }
+    .tier-option__title { font-weight: 600; margin: 0; }
+    .tier-option__desc { font-size: 0.85rem; color: var(--color-text-muted); margin: 0.3rem 0 0; }
+    .success-card { background: rgba(72, 187, 120, 0.08); border: 2px solid rgba(72, 187, 120, 0.45); border-radius: var(--radius-md); padding: 1.75rem; text-align: center; }
+    .code-display { font-family: ui-monospace, 'SF Mono', monospace; font-size: 1.5rem; font-weight: 700; color: #0f1a30; background: #C9A84C; padding: 0.75rem 1.25rem; border-radius: var(--radius-md); display: inline-block; margin: 0.75rem 0; letter-spacing: 0.08em; }
+    .coming-soon-card { background: var(--color-bg-alt); border: 2px dashed var(--color-border); border-radius: var(--radius-md); padding: 3rem 1.5rem; text-align: center; }
+    .coming-soon-card h2 { margin: 0 0 0.5rem; font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <section class="gift-hero">
+      <div class="container">
+        <h1>Gift a <span>London</span> Trip</h1>
+        <p>Give someone an unforgettable trip to London — a fully personalised, day-by-day itinerary with 900+ curated venues, insider tips, and interactive maps. Redeemable on any launch tier.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <!-- Feature-flag gated -->
+        <div id="gift-body" hidden>
+          <div class="card"><div class="card__body">
+            <h3 style="margin:0 0 0.5rem;">Give a London Itinerary</h3>
+            <p style="color:var(--color-text-muted); margin:0 0 1.75rem;">Pick a tier, tell us where to deliver the gift code, and we'll email your recipient on the date you choose.</p>
+
+            <form id="gift-form" class="gift-form" novalidate>
+
+              <fieldset style="border:none; padding:0; margin:0;">
+                <legend style="font-weight:600; margin-bottom:0.75rem;">Itinerary tier</legend>
+                <div class="tier-grid">
+                  <label class="tier-option">
+                    <input type="radio" name="tier" value="tier1" checked>
+                    <div class="tier-option__card">
+                      <p class="tier-option__title">Short Stay</p>
+                      <p class="tier-option__price">$50</p>
+                      <p class="tier-option__desc">1–5 days in London</p>
+                    </div>
+                  </label>
+                  <label class="tier-option">
+                    <input type="radio" name="tier" value="tier2">
+                    <div class="tier-option__card">
+                      <p class="tier-option__title">Week Explorer</p>
+                      <p class="tier-option__price">$75</p>
+                      <p class="tier-option__desc">6–10 days</p>
+                    </div>
+                  </label>
+                  <label class="tier-option">
+                    <input type="radio" name="tier" value="tier3">
+                    <div class="tier-option__card">
+                      <p class="tier-option__title">Extended</p>
+                      <p class="tier-option__price">$99</p>
+                      <p class="tier-option__desc">11–21 days, UK add-ons</p>
+                    </div>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="gift-buyer-name">Your name</label>
+                  <input id="gift-buyer-name" name="buyerName" type="text" required placeholder="Your name" autocomplete="name">
+                </div>
+                <div>
+                  <label for="gift-buyer-email">Your email</label>
+                  <input id="gift-buyer-email" name="buyerEmail" type="email" required placeholder="you@example.com" autocomplete="email">
+                </div>
+              </div>
+
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="gift-recipient-name">Recipient's name</label>
+                  <input id="gift-recipient-name" name="recipientName" type="text" required placeholder="Who's it for?">
+                </div>
+                <div>
+                  <label for="gift-recipient-email">Recipient's email</label>
+                  <input id="gift-recipient-email" name="recipientEmail" type="email" required placeholder="their@example.com">
+                </div>
+              </div>
+
+              <div>
+                <label for="gift-message">Personal message (optional)</label>
+                <textarea id="gift-message" name="message" placeholder="Happy birthday! Can't wait to hear about your trip…" maxlength="500"></textarea>
+              </div>
+
+              <div>
+                <label for="gift-delivery">Deliver on</label>
+                <input id="gift-delivery" name="deliveryDate" type="date">
+                <p style="font-size:0.8rem; color:var(--color-text-muted); margin:0.35rem 0 0;">Leave blank to deliver immediately.</p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large" id="gift-submit">
+                Buy the Gift
+              </button>
+              <p style="font-size:0.8rem; color:var(--color-text-muted); margin:0.5rem 0 0;">
+                You'll be redirected to secure Stripe checkout after confirming.
+              </p>
+            </form>
+          </div></div>
+
+          <!-- Success state -->
+          <div id="gift-success" class="success-card" style="display:none; margin-top:1.5rem;">
+            <h3 style="margin:0 0 0.5rem;">Gift on its way</h3>
+            <p style="margin:0;">We've emailed you a confirmation. On the delivery date, <strong id="gs-recipient"></strong> will receive:</p>
+            <div class="code-display" id="gs-code">LP-GIFT-XXXXXX</div>
+            <p style="margin:0 0 0; color:var(--color-text-muted); font-size:0.9rem;">They can redeem it at <code>/redeem</code> once we launch. The code is also stored in your account.</p>
+          </div>
+        </div>
+
+        <!-- Feature-flag OFF state -->
+        <div id="gift-coming-soon" class="coming-soon-card" hidden>
+          <h2>Gift an Itinerary — coming soon</h2>
+          <p style="color:var(--color-text-muted); margin:0 0 1.5rem;">Gifting launches alongside the main site. <a href="/" style="color:#C9A84C;">Join the wait list</a> and we'll let you know the moment it's live.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof UI !== 'undefined' && UI.init) UI.init();
+
+      // Feature-flag gate
+      var flagOn = (typeof FeatureFlags !== 'undefined') && FeatureFlags.isEnabled('growth-gift-itinerary');
+      document.getElementById('gift-body').hidden = !flagOn;
+      document.getElementById('gift-coming-soon').hidden = flagOn;
+      if (!flagOn) return;
+
+      var form = document.getElementById('gift-form');
+      var successEl = document.getElementById('gift-success');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var btn = document.getElementById('gift-submit');
+        btn.disabled = true;
+        btn.textContent = 'Processing…';
+
+        var fd = new FormData(form);
+        var tier = fd.get('tier');
+        var tierMap = { tier1: { label: 'Short Stay', price: 50 }, tier2: { label: 'Week Explorer', price: 75 }, tier3: { label: 'Extended', price: 99 } };
+
+        // Generate a redemption code (visible to buyer; GHL workflow emails recipient with the same code).
+        var code = 'LP-GIFT-' + (typeof ShareCodes !== 'undefined' ? ShareCodes.generate().replace('LP-', '') : Math.random().toString(36).slice(2,8).toUpperCase());
+
+        var payload = {
+          tierId: tier,
+          tierLabel: tierMap[tier].label,
+          tierPrice: tierMap[tier].price,
+          buyerName: fd.get('buyerName'),
+          buyerEmail: fd.get('buyerEmail'),
+          recipientName: fd.get('recipientName'),
+          recipientEmail: fd.get('recipientEmail'),
+          message: fd.get('message') || '',
+          deliveryDate: fd.get('deliveryDate') || new Date().toISOString().slice(0, 10),
+          redemptionCode: code,
+          source: 'gift-page'
+        };
+
+        try {
+          if (typeof GHL !== 'undefined' && GHL.purchaseGift) await GHL.purchaseGift(payload);
+
+          // Stripe hand-off would happen here. For now, show the success card and let the user continue.
+          document.getElementById('gs-recipient').textContent = payload.recipientName;
+          document.getElementById('gs-code').textContent = code;
+          successEl.style.display = 'block';
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          btn.textContent = 'Gift Queued';
+        } catch (ex) {
+          btn.disabled = false;
+          btn.textContent = 'Buy the Gift';
+          if (typeof UI !== 'undefined' && UI.showToast) {
+            UI.showToast('Something went wrong. Please try again or email us.');
+          } else {
+            alert('Something went wrong. Please try again.');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

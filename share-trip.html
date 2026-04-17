@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Trip — London Planned Ambassadors</title>
+  <meta name="description" content="Tell us about your London trip. Earn £25 per friend who books using your personal promo code, plus recognition in our Traveller Hall of Fame.">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .share-hero { background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 50%, #2A3F6B 100%); color: #fff; padding: 4.5rem 0 3rem; text-align: center; }
+    .share-hero h1 { color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 0.5rem; }
+    .share-hero h1 span { color: #C9A84C; font-style: italic; }
+    .share-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 620px; margin: 0 auto; }
+    .share-form { display: grid; gap: 1.25rem; }
+    .share-form label { font-weight: 600; display: block; margin-bottom: 0.4rem; font-size: 0.9rem; }
+    .share-form input, .share-form textarea {
+      width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;
+    }
+    .share-form textarea { min-height: 120px; resize: vertical; }
+    .consent { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--color-text-muted); }
+    .consent input { width: auto; flex: 0 0 auto; margin-top: 0.2rem; }
+    .earn-block { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin: 1.5rem 0 2rem; }
+    @media (max-width: 640px) { .earn-block { grid-template-columns: 1fr; } }
+    .earn { background: var(--color-bg-alt); border-radius: var(--radius-md); padding: 1rem; text-align: center; }
+    .earn__num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: #C9A84C; margin: 0; }
+    .earn__label { margin: 0.2rem 0 0; font-size: 0.85rem; color: var(--color-text-muted); }
+    .success-card { background: rgba(72, 187, 120, 0.08); border: 2px solid rgba(72, 187, 120, 0.45); border-radius: var(--radius-md); padding: 1.75rem; text-align: center; }
+    .promo-display { font-family: ui-monospace, 'SF Mono', monospace; font-size: 1.5rem; font-weight: 700; color: #0f1a30; background: #C9A84C; padding: 0.75rem 1.25rem; border-radius: var(--radius-md); display: inline-block; margin: 0.75rem 0; letter-spacing: 0.08em; }
+    .coming-soon-card { background: var(--color-bg-alt); border: 2px dashed var(--color-border); border-radius: var(--radius-md); padding: 3rem 1.5rem; text-align: center; }
+    .coming-soon-card h2 { margin: 0 0 0.5rem; font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <section class="share-hero">
+      <div class="container">
+        <h1>Share your <span>London</span> story</h1>
+        <p>Tell us about your trip and become a London Planned Ambassador. Your personal promo code gives friends 20% off — you earn <strong style="color:#C9A84C">£25</strong> every time someone uses it.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <!-- Feature-flag gated -->
+        <div id="share-body" hidden>
+
+          <div class="earn-block">
+            <div class="earn"><p class="earn__num">£25</p><p class="earn__label">per friend who books with your code</p></div>
+            <div class="earn"><p class="earn__num">20%</p><p class="earn__label">off for everyone you refer</p></div>
+            <div class="earn"><p class="earn__num">∞</p><p class="earn__label">codes never expire, stack them up</p></div>
+          </div>
+
+          <div class="card"><div class="card__body">
+            <h3 style="margin:0 0 0.5rem;">Submit your trip highlights</h3>
+            <p style="color:var(--color-text-muted); margin:0 0 1.75rem;">A photo, a favourite moment, one insider tip you wish you'd known. We'll generate your promo code on submit — you can start sharing today.</p>
+
+            <form id="share-form" class="share-form" novalidate>
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="ug-name">Your name</label>
+                  <input id="ug-name" name="name" type="text" required placeholder="Your name" autocomplete="name">
+                </div>
+                <div>
+                  <label for="ug-email">Email</label>
+                  <input id="ug-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+                </div>
+              </div>
+
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="ug-trip-start">Trip start</label>
+                  <input id="ug-trip-start" name="tripStart" type="date">
+                </div>
+                <div>
+                  <label for="ug-trip-end">Trip end</label>
+                  <input id="ug-trip-end" name="tripEnd" type="date">
+                </div>
+              </div>
+
+              <div>
+                <label for="ug-highlight">Your favourite moment</label>
+                <textarea id="ug-highlight" name="highlight" required maxlength="800" placeholder="The rainy walk along the South Bank, the tiny pub in Soho we found at midnight, the breakfast that changed our day…"></textarea>
+              </div>
+
+              <div>
+                <label for="ug-tip">One insider tip you'd pass on</label>
+                <input id="ug-tip" name="tip" type="text" maxlength="240" placeholder="Book Sky Garden a week ahead — it's free.">
+              </div>
+
+              <div>
+                <label for="ug-photo">Photo link (Instagram, Google Photos, Dropbox)</label>
+                <input id="ug-photo" name="photoUrl" type="url" placeholder="https://…">
+                <p style="font-size:0.8rem; color:var(--color-text-muted); margin:0.35rem 0 0;">Paste a link rather than uploading — keeps things fast and private.</p>
+              </div>
+
+              <label class="consent">
+                <input id="ug-consent" name="consent" type="checkbox" required>
+                <span>I'm happy for London Planned to feature my photo and story in marketing (website, social, email). You can withdraw consent anytime by emailing us.</span>
+              </label>
+
+              <button type="submit" class="btn btn--primary btn--large" id="share-submit">
+                Submit &amp; get my promo code
+              </button>
+            </form>
+          </div></div>
+
+          <!-- Success state -->
+          <div id="share-success" class="success-card" style="display:none; margin-top:1.5rem;">
+            <h3 style="margin:0 0 0.5rem;">You're an Ambassador</h3>
+            <p style="margin:0;">Share this code — your friends get 20% off, you earn £25 per booking:</p>
+            <div class="promo-display" id="share-promo">LOADING</div>
+            <p style="margin:0 0 0; color:var(--color-text-muted); font-size:0.9rem;">We'll email your Ambassador dashboard link. Track earnings in GoHighLevel.</p>
+          </div>
+
+        </div>
+
+        <!-- Feature-flag OFF -->
+        <div id="share-coming-soon" class="coming-soon-card" hidden>
+          <h2>Trip-sharing — coming soon</h2>
+          <p style="color:var(--color-text-muted); margin:0 0 1.5rem;">The Ambassador programme opens after launch. <a href="/" style="color:#C9A84C;">Join the wait list</a> — once you've travelled you'll be invited automatically.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof UI !== 'undefined' && UI.init) UI.init();
+
+      var flagOn = (typeof FeatureFlags !== 'undefined') && FeatureFlags.isEnabled('growth-ugc-loop');
+      document.getElementById('share-body').hidden = !flagOn;
+      document.getElementById('share-coming-soon').hidden = flagOn;
+      if (!flagOn) return;
+
+      var form = document.getElementById('share-form');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var btn = document.getElementById('share-submit');
+        btn.disabled = true;
+        btn.textContent = 'Submitting…';
+
+        var fd = new FormData(form);
+        var name = (fd.get('name') || '').toString().trim();
+
+        // Promo code: first-name + 4 hex (e.g., ALEX3F7B). Uppercase, max 10 chars.
+        var first = (name.split(' ')[0] || 'FRIEND').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 6) || 'FRIEND';
+        var suffix = Math.floor(Math.random() * 0xFFFF).toString(16).toUpperCase().padStart(4, '0');
+        var promo = first + suffix;
+
+        var payload = {
+          name: name,
+          email: fd.get('email'),
+          tripStart: fd.get('tripStart'),
+          tripEnd: fd.get('tripEnd'),
+          highlight: fd.get('highlight'),
+          tip: fd.get('tip') || '',
+          photoUrl: fd.get('photoUrl') || '',
+          consent: !!fd.get('consent'),
+          promoCode: promo,
+          source: 'share-trip-page'
+        };
+
+        try {
+          if (typeof GHL !== 'undefined' && GHL.submitUgc) await GHL.submitUgc(payload);
+          document.getElementById('share-promo').textContent = promo;
+          document.getElementById('share-success').style.display = 'block';
+          document.getElementById('share-success').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          btn.textContent = 'Submitted';
+        } catch (ex) {
+          btn.disabled = false;
+          btn.textContent = 'Submit & get my promo code';
+          if (typeof UI !== 'undefined' && UI.showToast) UI.showToast('Submit failed. Please try again.');
+          else alert('Something went wrong. Please try again.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,1 +1,3 @@
-/* /404.html 404
+# Primary redirect rules live in netlify.toml (coming-soon gate + 404 fallback).
+# Keeping a minimal fallback here in case netlify.toml is missed during a partial deploy.
+/*  /404.html  404

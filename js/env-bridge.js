@@ -36,6 +36,10 @@
       if (w.contactForm) CONFIG.goHighLevel.webhooks.contactForm = w.contactForm;
       if (w.emailCapture) CONFIG.goHighLevel.webhooks.emailCapture = w.emailCapture;
       if (w.promotionsNewsletter) CONFIG.goHighLevel.webhooks.promotionsNewsletter = w.promotionsNewsletter;
+      if (w.waitlist) CONFIG.goHighLevel.webhooks.waitlist = w.waitlist;
+      if (w.giftPurchase) CONFIG.goHighLevel.webhooks.giftPurchase = w.giftPurchase;
+      if (w.partnerLead) CONFIG.goHighLevel.webhooks.partnerLead = w.partnerLead;
+      if (w.ugcSubmission) CONFIG.goHighLevel.webhooks.ugcSubmission = w.ugcSubmission;
     }
 
     // Affiliate IDs

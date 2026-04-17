@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner With London Planned — Hotels, Tours, Airlines, Agents</title>
+  <meta name="description" content="Partner with London Planned. White-labelled itineraries, 20% affiliate commission, and a steady stream of London-bound travellers. Built for hotels, tour operators, airlines, and travel agents.">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .p-hero { background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 50%, #2A3F6B 100%); color: #fff; padding: 4.5rem 0 3rem; text-align: center; }
+    .p-hero h1 { color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 0.5rem; }
+    .p-hero h1 span { color: #C9A84C; font-style: italic; }
+    .p-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 620px; margin: 0 auto; }
+    .p-form { display: grid; gap: 1.25rem; }
+    .p-form label { font-weight: 600; display: block; margin-bottom: 0.4rem; font-size: 0.9rem; }
+    .p-form input, .p-form select, .p-form textarea {
+      width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-border);
+      border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;
+    }
+    .p-form textarea { min-height: 90px; resize: vertical; }
+    .benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0 2.5rem; }
+    @media (max-width: 720px) { .benefits { grid-template-columns: 1fr; } }
+    .benefit { background: var(--color-bg-alt); border-radius: var(--radius-md); padding: 1.25rem; }
+    .benefit h4 { margin: 0 0 0.4rem; font-family: 'Playfair Display', serif; color: #C9A84C; }
+    .benefit p { margin: 0; font-size: 0.92rem; color: var(--color-text-muted); }
+    .success-card { background: rgba(72, 187, 120, 0.08); border: 2px solid rgba(72, 187, 120, 0.45); border-radius: var(--radius-md); padding: 1.75rem; text-align: center; }
+    .coming-soon-card { background: var(--color-bg-alt); border: 2px dashed var(--color-border); border-radius: var(--radius-md); padding: 3rem 1.5rem; text-align: center; }
+    .coming-soon-card h2 { margin: 0 0 0.5rem; font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+
+  <main class="main">
+    <section class="p-hero">
+      <div class="container">
+        <h1>Partner With <span>London Planned</span></h1>
+        <p>A steady stream of London-bound travellers looking for the perfect trip. White-labelled itineraries, <strong style="color:#C9A84C">20% affiliate commission</strong>, and onboarding in under a week.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <!-- Feature-flag gated -->
+        <div id="partners-body" hidden>
+
+          <div class="benefits">
+            <div class="benefit">
+              <h4>20% commission</h4>
+              <p>On every itinerary sold through your channel — flat, transparent, paid monthly via GoHighLevel.</p>
+            </div>
+            <div class="benefit">
+              <h4>White-label option</h4>
+              <p>Your brand on the itinerary PDF and web link. We power it; your customers never leave your ecosystem.</p>
+            </div>
+            <div class="benefit">
+              <h4>Traveller-ready leads</h4>
+              <p>Every buyer is actively planning a London trip. Upsell hotel nights, tours, transfers, Eurostar and airport services.</p>
+            </div>
+          </div>
+
+          <div class="card"><div class="card__body">
+            <h3 style="margin:0 0 0.5rem;">Tell us about your business</h3>
+            <p style="color:var(--color-text-muted); margin:0 0 1.75rem;">A partnerships manager will reply within one working day with integration options and affiliate tracking details.</p>
+
+            <form id="partners-form" class="p-form" novalidate>
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="p-business">Business name</label>
+                  <input id="p-business" name="businessName" type="text" required placeholder="e.g. The Strand Hotel">
+                </div>
+                <div>
+                  <label for="p-website">Website</label>
+                  <input id="p-website" name="website" type="url" placeholder="https://…">
+                </div>
+              </div>
+
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="p-contact-name">Your name</label>
+                  <input id="p-contact-name" name="contactName" type="text" required placeholder="Your name" autocomplete="name">
+                </div>
+                <div>
+                  <label for="p-role">Your role</label>
+                  <input id="p-role" name="role" type="text" placeholder="e.g. Marketing Director">
+                </div>
+              </div>
+
+              <div class="grid grid--2" style="gap:1rem;">
+                <div>
+                  <label for="p-email">Work email</label>
+                  <input id="p-email" name="email" type="email" required placeholder="you@business.com" autocomplete="email">
+                </div>
+                <div>
+                  <label for="p-phone">Phone (optional)</label>
+                  <input id="p-phone" name="phone" type="tel" placeholder="+44 …" autocomplete="tel">
+                </div>
+              </div>
+
+              <div>
+                <label for="p-type">Partner type</label>
+                <select id="p-type" name="partnerType" required>
+                  <option value="">Choose one…</option>
+                  <option value="hotel">Hotel / Short-term rental</option>
+                  <option value="tour-operator">Tour operator</option>
+                  <option value="airline">Airline</option>
+                  <option value="rail">Rail (Eurostar, Trainline)</option>
+                  <option value="travel-agent">Travel agent</option>
+                  <option value="concierge">Concierge / Lifestyle</option>
+                  <option value="school">School / Group travel</option>
+                  <option value="wedding">Honeymoon / Wedding planner</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="p-volume">Approx. London-bound travellers you reach per month</label>
+                <input id="p-volume" name="travellerVolume" type="text" placeholder="e.g. 500">
+              </div>
+
+              <div>
+                <label for="p-notes">Anything else we should know?</label>
+                <textarea id="p-notes" name="notes" placeholder="Integration ideas, specific markets, launch timelines…" maxlength="1000"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large" id="partners-submit">
+                Start the conversation
+              </button>
+            </form>
+          </div></div>
+
+          <!-- Success state -->
+          <div id="partners-success" class="success-card" style="display:none; margin-top:1.5rem;">
+            <h3 style="margin:0 0 0.5rem;">Thanks — we'll be in touch</h3>
+            <p style="margin:0;">A partnerships manager will reply within one working day. In the meantime, feel free to forward our <a href="/" style="color:#C9A84C;">coming-soon page</a> to anyone in your team who'd like to see what we're building.</p>
+          </div>
+
+        </div>
+
+        <!-- Feature-flag OFF -->
+        <div id="partners-coming-soon" class="coming-soon-card" hidden>
+          <h2>Partnerships — opening soon</h2>
+          <p style="color:var(--color-text-muted); margin:0 0 1.5rem;">Our partner programme goes live alongside the main site. Reach out via <a href="contact.html" style="color:#C9A84C;">contact</a> and we'll loop you in as soon as it's open.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof UI !== 'undefined' && UI.init) UI.init();
+
+      var flagOn = (typeof FeatureFlags !== 'undefined') && FeatureFlags.isEnabled('growth-b2b-partners');
+      document.getElementById('partners-body').hidden = !flagOn;
+      document.getElementById('partners-coming-soon').hidden = flagOn;
+      if (!flagOn) return;
+
+      var form = document.getElementById('partners-form');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var btn = document.getElementById('partners-submit');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+
+        var fd = new FormData(form);
+        var payload = {
+          businessName: fd.get('businessName'),
+          website: fd.get('website') || '',
+          contactName: fd.get('contactName'),
+          role: fd.get('role') || '',
+          email: fd.get('email'),
+          phone: fd.get('phone') || '',
+          partnerType: fd.get('partnerType'),
+          travellerVolume: fd.get('travellerVolume') || '',
+          notes: fd.get('notes') || '',
+          name: fd.get('contactName'),
+          source: 'partners-page'
+        };
+
+        try {
+          if (typeof GHL !== 'undefined' && GHL.submitPartnerLead) await GHL.submitPartnerLead(payload);
+          document.getElementById('partners-success').style.display = 'block';
+          document.getElementById('partners-success').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          form.reset();
+          btn.textContent = 'Sent';
+        } catch (ex) {
+          btn.disabled = false;
+          btn.textContent = 'Start the conversation';
+          if (typeof UI !== 'undefined' && UI.showToast) UI.showToast('Submit failed. Please try again or email partnerships@.');
+          else alert('Something went wrong. Please try again.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
