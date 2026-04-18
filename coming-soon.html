@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Planned — Coming Soon</title>
+  <meta name="description" content="London Planned is launching soon. Join the wait list for 40% off launch week, a free Insider's London bundle, and Founding Member status. Refer friends to unlock even more.">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:title" content="London Planned — Coming Soon">
+  <meta property="og:description" content="Personalised London itineraries, crafted by experts. Join the wait list for 40% off launch week, free Insider Bundle, and Founding Member status.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://londonplanned.com">
+  <meta property="og:image" content="https://londonplanned.com/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/coming-soon-london.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <meta name="theme-color" content="#0f1a30">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #fff;
+      background: #0f1a30;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .stage__bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 40%, #2A3F6B 100%);
+      z-index: -3;
+    }
+
+    .stage__img {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/coming-soon-london.jpg');
+      background-size: cover;
+      background-position: center 45%;
+      opacity: 1;
+      z-index: -2;
+      animation: slowPan 40s ease-in-out infinite alternate;
+    }
+
+    @keyframes slowPan {
+      from { transform: scale(1.05) translateX(0); }
+      to   { transform: scale(1.12) translateX(-20px); }
+    }
+
+    .stage__overlay {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      z-index: -1;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem 0.75rem;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: 0.01em;
+    }
+
+    .brand__dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #C9A84C;
+      box-shadow: 0 0 14px rgba(201, 168, 76, 0.8);
+    }
+
+    .topbar__status {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.7);
+    }
+
+    main.hero {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2.25rem 1.5rem 2rem;
+    }
+
+    .hero__content {
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      line-height: 1.1;
+      margin: 0 0 0.65rem;
+      color: #fff;
+    }
+
+    h1 span { color: #C9A84C; font-style: italic; }
+
+    .subtitle {
+      font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+      line-height: 1.45;
+      color: rgba(255,255,255,0.88);
+      max-width: 520px;
+      margin: 0 auto 1rem;
+    }
+
+    .waitlist {
+      background: rgba(15, 26, 48, 0.62);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 1.35rem 1.6rem 1.4rem;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.55);
+      text-align: center;
+    }
+
+    .waitlist__divider {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+      margin: 0 0 1rem;
+    }
+
+    .waitlist__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      color: #C9A84C;
+    }
+
+    .waitlist__copy {
+      margin: 0 0 0.9rem;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+    }
+
+    /* ── Stacked perks teaser ─────────────────────── */
+    .perks {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin: 1rem 0 1.25rem;
+    }
+
+    .perk {
+      position: relative;
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      grid-template-areas:
+        "value label ribbon"
+        "value desc  worth";
+      column-gap: 1.25rem;
+      row-gap: 0.25rem;
+      align-items: center;
+      padding: 0.95rem 1.25rem 0.95rem 1.1rem;
+      background:
+        linear-gradient(90deg, rgba(201,168,76,0.09) 0%, rgba(15,26,48,0.08) 35%, rgba(15,26,48,0.28) 100%),
+        rgba(15, 26, 48, 0.6);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 14px;
+      text-align: left;
+      overflow: hidden;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .perk:hover {
+      transform: translateY(-2px);
+      border-color: rgba(201,168,76,0.65);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    /* Gold left bar (stronger, vertical) */
+    .perk::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0; left: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #F5D884 0%, #E3C26A 50%, #C9A84C 100%);
+      box-shadow: 0 0 14px rgba(227,194,106,0.45);
+    }
+
+    /* Faint corner sheen */
+    .perk::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(227,194,106,0.07) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .perk__value {
+      grid-area: value;
+      justify-self: center;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.1rem, 4.2vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(180deg, #F5D884 0%, #E3C26A 45%, #C9A84C 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.015em;
+      text-shadow: 0 2px 24px rgba(201,168,76,0.25);
+    }
+
+    /* Text-based values ("Free Bonus", "Founder Badge") get a smaller, stacked treatment */
+    .perk__value--text {
+      font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .perk__label {
+      grid-area: label;
+      align-self: end;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+    }
+
+    .perk__desc {
+      grid-area: desc;
+      align-self: start;
+      font-size: 0.83rem;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.82);
+      margin: 0;
+    }
+
+    .perk__desc strong {
+      color: #E3C26A;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .perk__ribbon {
+      grid-area: ribbon;
+      align-self: end;
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #F5D884;
+      background: rgba(201,168,76,0.14);
+      border: 1px solid rgba(201,168,76,0.4);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .perk__worth {
+      grid-area: worth;
+      align-self: start;
+      justify-self: end;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(245,216,132,0.9);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 560px) {
+      .perk {
+        grid-template-columns: 90px 1fr;
+        grid-template-areas:
+          "value ribbon"
+          "value label"
+          "value desc"
+          "value worth";
+        column-gap: 1rem;
+        row-gap: 0.25rem;
+        padding: 1rem 1.1rem;
+      }
+      .perk__ribbon { justify-self: end; align-self: start; font-size: 0.56rem; padding: 0.2rem 0.5rem; }
+      .perk__worth { justify-self: start; }
+      .perk__label { font-size: 0.74rem; }
+      .perk__desc { font-size: 0.82rem; }
+    }
+
+    /* ── Form ─────────────────────── */
+    .field {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom: 0.65rem;
+    }
+
+    .field label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.25rem;
+    }
+
+    .field input {
+      padding: 0.7rem 0.95rem;
+      font-size: 0.98rem;
+      font-family: inherit;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 120ms ease, background 120ms ease;
+    }
+
+    .field input::placeholder { color: rgba(255,255,255,0.45); }
+
+    .field input:focus {
+      border-color: #C9A84C;
+      background: rgba(255,255,255,0.12);
+    }
+
+    .honeypot { position: absolute; left: -5000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.82rem 1.25rem;
+      margin-top: 0.35rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #0f1a30;
+      background: linear-gradient(135deg, #E3C26A 0%, #C9A84C 100%);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(201,168,76,0.35); filter: brightness(1.05); }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    .btn--ghost {
+      background: transparent;
+      color: #C9A84C;
+      border: 1px solid rgba(201,168,76,0.55);
+    }
+    .btn--ghost:hover { background: rgba(201,168,76,0.12); box-shadow: none; }
+
+    .form-note {
+      margin: 0.6rem 0 0;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .error, .success-lite {
+      display: none;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      text-align: left;
+      margin-top: 0.75rem;
+    }
+
+    .error {
+      background: rgba(239, 68, 68, 0.14);
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      color: #fecaca;
+    }
+
+    .success-lite {
+      background: rgba(72, 187, 120, 0.14);
+      border: 1px solid rgba(72, 187, 120, 0.45);
+      color: #c7f5d7;
+    }
+
+    /* ── Post-signup state ─────────────────────── */
+    .post {
+      display: none;
+      text-align: left;
+    }
+    .is-joined .pre { display: none; }
+    .is-joined .post { display: block; }
+
+    .post__headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .post__sub {
+      text-align: center;
+      color: rgba(255,255,255,0.8);
+      margin: 0 0 1.5rem;
+      font-size: 0.98rem;
+    }
+
+    .share-link {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0.25rem 0 1.25rem;
+    }
+    .share-link input {
+      flex: 1;
+      padding: 0.75rem 0.9rem;
+      font-size: 0.95rem;
+      font-family: ui-monospace, 'SF Mono', monospace;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      outline: none;
+    }
+    .share-link button {
+      padding: 0 1rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #C9A84C;
+      color: #0f1a30;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: filter 120ms ease;
+    }
+    .share-link button:hover { filter: brightness(1.1); }
+
+    .share-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .share-buttons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.65rem 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 120ms ease;
+    }
+    .share-buttons a:hover { background: rgba(255,255,255,0.16); }
+
+    .ladder {
+      margin: 1rem 0 0.25rem;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .ladder li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.65rem 0.85rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+    .ladder li.is-current {
+      background: rgba(201,168,76,0.12);
+      border-color: rgba(201,168,76,0.5);
+    }
+    .ladder li.is-unlocked .ladder__dot { background: #48bb78; border-color: #48bb78; }
+    .ladder__dot {
+      flex: 0 0 auto;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .ladder__label { flex: 1; color: rgba(255,255,255,0.9); }
+    .ladder__label strong { color: #C9A84C; font-weight: 600; }
+
+    footer {
+      padding: 1.25rem 2rem 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.3); }
+    footer a:hover { color: #C9A84C; }
+
+    /* ── Referral greeting ─────────────────────── */
+    .ref-banner {
+      display: none;
+      background: rgba(201,168,76,0.14);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: #f4e4bc;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .ref-banner.is-active { display: block; }
+
+    @media (max-width: 520px) {
+      .topbar { padding: 1.25rem 1.25rem; }
+      .topbar__status { display: none; }
+      main.hero { padding: 1.25rem 1rem 3rem; }
+      .waitlist { padding: 1.35rem; border-radius: 14px; }
+      .share-buttons { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .stage__img { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="stage__bg" aria-hidden="true"></div>
+    <div class="stage__img" aria-hidden="true" role="img" aria-label="Tower Bridge, London"></div>
+    <div class="stage__overlay" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand"><span class="brand__dot"></span>London Planned</div>
+      <div class="topbar__status">Launching Soon</div>
+    </header>
+
+    <main class="hero">
+      <div class="hero__content">
+        <div class="waitlist" id="waitlist">
+
+          <!-- PRE-SIGNUP STATE -->
+          <div class="pre">
+            <div class="badge">Coming Soon</div>
+            <h1>Your Perfect <span>London</span> Trip, Planned by Experts</h1>
+
+            <div class="perks" role="list" aria-label="Launch-day perks">
+              <div class="perk" role="listitem">
+                <span class="perk__ribbon">Launch Week</span>
+                <div class="perk__value">40%</div>
+                <div class="perk__label">Off Your Itinerary</div>
+                <p class="perk__desc">Waitlist-only pricing on every tier.</p>
+                <span class="perk__worth">Save up to $40</span>
+              </div>
+              <div class="perk" role="listitem">
+                <span class="perk__ribbon">Limited Edition</span>
+                <div class="perk__value perk__value--text">Free<br>Bonus</div>
+                <div class="perk__label">Insider's London Bundle</div>
+                <p class="perk__desc">Five curated PDFs: hidden gems, money-saving, packing, neighbourhoods, restaurants.</p>
+                <span class="perk__worth">$30 value</span>
+              </div>
+              <div class="perk" role="listitem">
+                <span class="perk__ribbon">Lifetime</span>
+                <div class="perk__value perk__value--text">Founder<br>Badge</div>
+                <div class="perk__label">Founding Member Status</div>
+                <p class="perk__desc">Permanent <strong>15% off</strong> every future itinerary, priority support, early access.</p>
+                <span class="perk__worth">Forever</span>
+              </div>
+            </div>
+
+            <div class="ref-banner" id="ref-banner" role="status"></div>
+
+            <form id="waitlist-form" novalidate>
+              <div class="honeypot" aria-hidden="true">
+                <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+              </div>
+
+              <div class="field">
+                <label for="wl-name">Name</label>
+                <input id="wl-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="wl-email">Email</label>
+                <input id="wl-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+
+              <button type="submit" class="btn" id="wl-submit">Join the Wait List &amp; Lock In My Perks</button>
+              <p class="form-note">No spam. One launch announcement + occasional London tips.</p>
+              <div class="error" id="wl-error" role="alert"></div>
+            </form>
+          </div>
+
+          <!-- POST-SIGNUP STATE -->
+          <div class="post">
+            <div class="badge">You're in</div>
+            <h2 class="post__headline">Welcome, <span id="post-name">traveller</span>.</h2>
+            <p class="post__sub">You've locked in <strong style="color:#C9A84C">40% off launch week</strong>, the <strong style="color:#C9A84C">Insider's London bundle</strong>, and <strong style="color:#C9A84C">Founding Member</strong> status.</p>
+
+            <p class="waitlist__copy" style="text-align:center; margin-bottom:0.5rem;">Share your link — each friend who joins unlocks the next tier:</p>
+
+            <div class="share-link">
+              <input id="share-url" type="text" readonly aria-label="Your share link">
+              <button type="button" id="copy-btn">Copy</button>
+            </div>
+
+            <div class="share-buttons">
+              <a id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+              <a id="share-twitter" href="#" target="_blank" rel="noopener">X / Twitter</a>
+              <a id="share-email" href="#" target="_blank" rel="noopener">Email</a>
+              <a id="share-fb" href="#" target="_blank" rel="noopener">Facebook</a>
+            </div>
+
+            <ul class="ladder" aria-label="Referral perk ladder">
+              <li class="is-current is-unlocked"><div class="ladder__dot">✓</div><div class="ladder__label"><strong>Joined</strong> — 40% off launch week, Insider bundle, Founding Member</div></li>
+              <li data-tier="1"><div class="ladder__dot">1</div><div class="ladder__label"><strong>1 friend joins</strong> — early-bird badge + unreleased "Secret London" PDF</div></li>
+              <li data-tier="3"><div class="ladder__dot">3</div><div class="ladder__label"><strong>3 friends join</strong> — free concierge hour with your itinerary</div></li>
+              <li data-tier="5"><div class="ladder__dot">5</div><div class="ladder__label"><strong>5 friends join</strong> — free upgrade to next itinerary tier</div></li>
+              <li data-tier="10"><div class="ladder__dot">10</div><div class="ladder__label"><strong>10 friends join</strong> — free itinerary of your choice</div></li>
+            </ul>
+
+            <div class="success-lite" id="copy-confirm">Link copied to your clipboard.</div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>© <span id="yr"></span> London Planned</div>
+      <div>
+        Image:
+        <a href="https://commons.wikimedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg" target="_blank" rel="noopener noreferrer">Tower Bridge at twilight</a>
+        ·
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Load site config + GHL client + env bridge (to hydrate webhook URLs) -->
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      // Feature-flag check: if the tiered waitlist is off, still show the page but skip share flow.
+      // (We deliberately don't block the whole page — this is the coming-soon experience.)
+      var TIERED = true;
+      try {
+        if (typeof FeatureFlags !== 'undefined') {
+          TIERED = FeatureFlags.isEnabled('growth-tiered-waitlist');
+        }
+      } catch (_) {}
+
+      var form = document.getElementById('waitlist-form');
+      var wrap = document.getElementById('waitlist');
+      var btn  = document.getElementById('wl-submit');
+      var err  = document.getElementById('wl-error');
+      var refBanner = document.getElementById('ref-banner');
+
+      // Show a greeting if the visitor arrived via a referral link.
+      try {
+        if (typeof ShareCodes !== 'undefined') {
+          var referrer = ShareCodes.referredBy();
+          if (referrer) {
+            refBanner.textContent = 'A friend invited you — join to lock in 40% off and help them unlock the next tier.';
+            refBanner.classList.add('is-active');
+          }
+        }
+      } catch (_) {}
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        err.style.display = 'none';
+
+        var data = new FormData(form);
+        if (data.get('bot-field')) return;
+
+        var name  = (data.get('name')  || '').toString().trim();
+        var email = (data.get('email') || '').toString().trim();
+
+        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          err.textContent = 'Please enter your name and a valid email address.';
+          err.style.display = 'block';
+          return;
+        }
+
+        btn.disabled = true;
+        var original = btn.textContent;
+        btn.textContent = 'Adding you…';
+
+        // Generate (or re-use) this visitor's share code.
+        var shareCode = (typeof ShareCodes !== 'undefined') ? ShareCodes.mine() : '';
+        var referredBy = (typeof ShareCodes !== 'undefined') ? ShareCodes.referredBy() : '';
+
+        var payload = {
+          email: email,
+          name: name,
+          firstName: name.split(' ')[0] || '',
+          lastName: name.split(' ').slice(1).join(' ') || '',
+          shareCode: shareCode,
+          referredBy: referredBy,
+          tier: 0,
+          source: 'waitlist-coming-soon',
+          tieredWaitlistEnabled: TIERED,
+          perks: ['launch-week-40-off', 'insider-bundle', 'founding-member']
+        };
+
+        try {
+          if (typeof GHL !== 'undefined' && typeof GHL.submitWaitlist === 'function') {
+            await GHL.submitWaitlist(payload);
+          } else {
+            // Defensive fallback so the page still "works" if js/config.js failed to load.
+            console.log('Waitlist signup (no GHL client available):', payload);
+          }
+
+          // Flip to post-signup state.
+          try { localStorage.setItem('londonplannedWaitlistName', name); } catch (_) {}
+          try { localStorage.setItem('londonplannedWaitlistEmail', email); } catch (_) {}
+
+          showPost(name, shareCode);
+        } catch (ex) {
+          err.textContent = 'Something went wrong. Please try again in a moment.';
+          err.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = original;
+        }
+      });
+
+      function showPost(name, code) {
+        document.getElementById('post-name').textContent = (name.split(' ')[0] || 'traveller');
+
+        var url = (typeof ShareCodes !== 'undefined')
+          ? ShareCodes.shareUrl(code)
+          : (window.location.origin + '/?ref=' + encodeURIComponent(code));
+
+        document.getElementById('share-url').value = url;
+
+        var msg  = encodeURIComponent("I just joined the London Planned wait list — personalised London itineraries launching soon. Join with my link and we both unlock perks:");
+        var wa   = 'https://wa.me/?text='  + msg + '%20' + encodeURIComponent(url);
+        var tw   = 'https://twitter.com/intent/tweet?text=' + msg + '&url=' + encodeURIComponent(url);
+        var mail = 'mailto:?subject=' + encodeURIComponent('London Planned wait list — join with my link') + '&body=' + msg + '%0A%0A' + encodeURIComponent(url);
+        var fb   = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+
+        document.getElementById('share-whatsapp').href = wa;
+        document.getElementById('share-twitter').href  = tw;
+        document.getElementById('share-email').href    = mail;
+        document.getElementById('share-fb').href       = fb;
+
+        wrap.classList.add('is-joined');
+
+        // Analytics breadcrumb — visible in the browser console even before GA4 is wired up.
+        try { (window.dataLayer = window.dataLayer || []).push({ event: 'waitlist_signup', shareCode: code }); } catch (_) {}
+      }
+
+      // If this browser already joined, skip straight to the post-signup state.
+      try {
+        var storedName = localStorage.getItem('londonplannedWaitlistName');
+        if (storedName && typeof ShareCodes !== 'undefined') {
+          showPost(storedName, ShareCodes.mine());
+        }
+      } catch (_) {}
+
+      // Copy button
+      var copyBtn = document.getElementById('copy-btn');
+      var copyConfirm = document.getElementById('copy-confirm');
+      copyBtn.addEventListener('click', function () {
+        var input = document.getElementById('share-url');
+        input.select();
+        input.setSelectionRange(0, 99999);
+        try {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(input.value);
+          } else {
+            document.execCommand('copy');
+          }
+          copyConfirm.style.display = 'block';
+          setTimeout(function () { copyConfirm.style.display = 'none'; }, 2200);
+        } catch (_) {}
+      });
+    })();
+  </script>
+</body>
+</html>

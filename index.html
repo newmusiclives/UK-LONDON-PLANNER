@@ -3,851 +3,623 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>London Planned — Coming Soon</title>
-  <meta name="description" content="London Planned is launching soon. Join the wait list for 40% off launch week, a free Insider's London bundle, and Founding Member status. Refer friends to unlock even more.">
-  <meta name="robots" content="index,follow">
-
-  <meta property="og:title" content="London Planned — Coming Soon">
-  <meta property="og:description" content="Personalised London itineraries, crafted by experts. Join the wait list for 40% off launch week, free Insider Bundle, and Founding Member status.">
+  <title>London Planned — Your Perfect London Trip, Curated by Experts</title>
+  <meta name="description" content="Create a personalised London itinerary tailored to your interests, budget, and travel style. Day-by-day plans with insider tips, restaurant recommendations, and booking links.">
+  <meta property="og:title" content="London Planned — Personalised Itineraries">
+  <meta property="og:description" content="Create a personalised day-by-day London itinerary with 900+ venues, interactive maps, and insider tips. From $50.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://londonplanned.com">
   <meta property="og:image" content="https://londonplanned.com/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="London Planned">
+  <meta name="twitter:description" content="Personalised London itineraries with 900+ venues and insider tips">
+
+  <link rel="alternate" hreflang="en" href="https://londonplanned.com/">
+  <link rel="alternate" hreflang="es" href="https://londonplanned.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://londonplanned.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://londonplanned.com/de/">
+  <link rel="alternate" hreflang="x-default" href="https://londonplanned.com/">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "London Planned",
+    "description": "Personalised London and UK travel itineraries with 900+ curated venues, interactive maps, and insider tips.",
+    "url": "https://londonplanned.com",
+    "areaServed": { "@type": "Country", "name": "United Kingdom" },
+    "priceRange": "$50-$99",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "London Itineraries",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Short Stay Itinerary (1-5 days)", "price": "50", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Week Explorer Itinerary (6-10 days)", "price": "75", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Extended Adventure (11-21 days)", "price": "99", "priceCurrency": "USD" },
+      ]
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How does the London itinerary builder work?", "acceptedAnswer": { "@type": "Answer", "text": "You answer questions about your trip length, interests, budget, and group. Our engine creates a personalised day-by-day plan from 900+ London venues." }},
+      { "@type": "Question", "name": "Can I preview before paying?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! The first 2 days of your itinerary are always free to preview before purchasing." }},
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="images/coming-soon-london.jpg">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
   <link rel="apple-touch-icon" href="icons/icon-192.svg">
-  <meta name="theme-color" content="#0f1a30">
+  <meta name="theme-color" content="#C9A84C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/new-features.css">
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: #fff;
-      background: #0f1a30;
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .stage {
+    .hero {
       position: relative;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      isolation: isolate;
-    }
-
-    .stage__bg {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 40%, #2A3F6B 100%);
-      z-index: -3;
-    }
-
-    .stage__img {
-      position: absolute;
-      inset: 0;
-      background-image: url('images/coming-soon-london.jpg');
-      background-size: cover;
-      background-position: center 45%;
-      opacity: 1;
-      z-index: -2;
-      animation: slowPan 40s ease-in-out infinite alternate;
-    }
-
-    @keyframes slowPan {
-      from { transform: scale(1.05) translateX(0); }
-      to   { transform: scale(1.12) translateX(-20px); }
-    }
-
-    .stage__overlay {
-      position: absolute;
-      inset: 0;
-      background: transparent;
-      z-index: -1;
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem 0.75rem;
-      gap: 1rem;
-    }
-
-    .brand {
+      min-height: 90vh;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: 1.35rem;
-      letter-spacing: 0.01em;
-    }
-
-    .brand__dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: #C9A84C;
-      box-shadow: 0 0 14px rgba(201, 168, 76, 0.8);
-    }
-
-    .topbar__status {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: rgba(255,255,255,0.7);
-    }
-
-    main.hero {
-      flex: 1;
-      display: flex;
-      align-items: flex-start;
       justify-content: center;
-      padding: 2.25rem 1.5rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #0f1a30 0%, #1B2A4A 40%, #2A3F6B 100%);
+      overflow: hidden;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><text x="50%" y="50%" text-anchor="middle" font-size="300" fill="rgba(201,168,76,0.03)" font-family="serif">LONDON</text></svg>') center/cover no-repeat;
     }
 
     .hero__content {
-      max-width: 720px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 0.35rem 0.9rem;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #C9A84C;
-      background: rgba(201, 168, 76, 0.12);
-      border: 1px solid rgba(201, 168, 76, 0.4);
-      border-radius: 999px;
-      margin-bottom: 0.75rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      line-height: 1.1;
-      margin: 0 0 0.65rem;
-      color: #fff;
-    }
-
-    h1 span { color: #C9A84C; font-style: italic; }
-
-    .subtitle {
-      font-size: clamp(0.92rem, 1.4vw, 1.02rem);
-      line-height: 1.45;
-      color: rgba(255,255,255,0.88);
-      max-width: 520px;
-      margin: 0 auto 1rem;
-    }
-
-    .waitlist {
-      background: rgba(15, 26, 48, 0.62);
-      backdrop-filter: blur(18px) saturate(140%);
-      -webkit-backdrop-filter: blur(18px) saturate(140%);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 16px;
-      padding: 1.35rem 1.6rem 1.4rem;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 25px 70px rgba(0,0,0,0.55);
-      text-align: center;
-    }
-
-    .waitlist__divider {
-      border: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
-      margin: 0 0 1rem;
-    }
-
-    .waitlist__title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 0 0 0.25rem;
-      color: #C9A84C;
-    }
-
-    .waitlist__copy {
-      margin: 0 0 0.9rem;
-      color: rgba(255,255,255,0.75);
-      font-size: 0.88rem;
-    }
-
-    /* ── Stacked perks teaser ─────────────────────── */
-    .perks {
-      display: flex;
-      flex-direction: column;
-      gap: 0.7rem;
-      margin: 1rem 0 1.25rem;
-    }
-
-    .perk {
       position: relative;
-      display: grid;
-      grid-template-columns: 110px 1fr auto;
-      grid-template-areas:
-        "value label ribbon"
-        "value desc  worth";
-      column-gap: 1.25rem;
-      row-gap: 0.25rem;
-      align-items: center;
-      padding: 0.95rem 1.25rem 0.95rem 1.1rem;
-      background:
-        linear-gradient(90deg, rgba(201,168,76,0.09) 0%, rgba(15,26,48,0.08) 35%, rgba(15,26,48,0.28) 100%),
-        rgba(15, 26, 48, 0.6);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: 14px;
-      text-align: left;
-      overflow: hidden;
-      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+      z-index: 1;
+      max-width: 800px;
     }
 
-    .perk:hover {
-      transform: translateY(-2px);
-      border-color: rgba(201,168,76,0.65);
-      box-shadow: 0 14px 36px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-
-    /* Gold left bar (stronger, vertical) */
-    .perk::before {
-      content: '';
-      position: absolute;
-      top: 0; bottom: 0; left: 0;
-      width: 3px;
-      background: linear-gradient(180deg, #F5D884 0%, #E3C26A 50%, #C9A84C 100%);
-      box-shadow: 0 0 14px rgba(227,194,106,0.45);
-    }
-
-    /* Faint corner sheen */
-    .perk::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 60%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(227,194,106,0.07) 0%, transparent 55%);
-      pointer-events: none;
-    }
-
-    .perk__value {
-      grid-area: value;
-      justify-self: center;
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.1rem, 4.2vw, 2.6rem);
-      font-weight: 800;
-      line-height: 1;
-      background: linear-gradient(180deg, #F5D884 0%, #E3C26A 45%, #C9A84C 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      letter-spacing: -0.015em;
-      text-shadow: 0 2px 24px rgba(201,168,76,0.25);
-    }
-
-    /* Text-based values ("Free Bonus", "Founder Badge") get a smaller, stacked treatment */
-    .perk__value--text {
-      font-size: clamp(1.15rem, 2.4vw, 1.45rem);
-      line-height: 1.08;
-      letter-spacing: 0;
-      font-weight: 700;
-    }
-
-    .perk__label {
-      grid-area: label;
-      align-self: end;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: #fff;
-      margin: 0;
-    }
-
-    .perk__desc {
-      grid-area: desc;
-      align-self: start;
-      font-size: 0.83rem;
-      line-height: 1.45;
-      color: rgba(255,255,255,0.82);
-      margin: 0;
-    }
-
-    .perk__desc strong {
-      color: #E3C26A;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .perk__ribbon {
-      grid-area: ribbon;
-      align-self: end;
+    .hero__badge {
       display: inline-block;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #F5D884;
-      background: rgba(201,168,76,0.14);
-      border: 1px solid rgba(201,168,76,0.4);
-      padding: 0.25rem 0.65rem;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-
-    .perk__worth {
-      grid-area: worth;
-      align-self: start;
-      justify-self: end;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(245,216,132,0.9);
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 560px) {
-      .perk {
-        grid-template-columns: 90px 1fr;
-        grid-template-areas:
-          "value ribbon"
-          "value label"
-          "value desc"
-          "value worth";
-        column-gap: 1rem;
-        row-gap: 0.25rem;
-        padding: 1rem 1.1rem;
-      }
-      .perk__ribbon { justify-self: end; align-self: start; font-size: 0.56rem; padding: 0.2rem 0.5rem; }
-      .perk__worth { justify-self: start; }
-      .perk__label { font-size: 0.74rem; }
-      .perk__desc { font-size: 0.82rem; }
-    }
-
-    /* ── Form ─────────────────────── */
-    .field {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      margin-bottom: 0.65rem;
-    }
-
-    .field label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: rgba(255,255,255,0.8);
-      margin-bottom: 0.25rem;
-    }
-
-    .field input {
-      padding: 0.7rem 0.95rem;
-      font-size: 0.98rem;
-      font-family: inherit;
-      color: #fff;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 10px;
-      outline: none;
-      transition: border-color 120ms ease, background 120ms ease;
-    }
-
-    .field input::placeholder { color: rgba(255,255,255,0.45); }
-
-    .field input:focus {
-      border-color: #C9A84C;
-      background: rgba(255,255,255,0.12);
-    }
-
-    .honeypot { position: absolute; left: -5000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      width: 100%;
-      padding: 0.82rem 1.25rem;
-      margin-top: 0.35rem;
-      font-family: inherit;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      color: #0f1a30;
-      background: linear-gradient(135deg, #E3C26A 0%, #C9A84C 100%);
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
-    }
-
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(201,168,76,0.35); filter: brightness(1.05); }
-    .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
-    .btn--ghost {
-      background: transparent;
-      color: #C9A84C;
-      border: 1px solid rgba(201,168,76,0.55);
-    }
-    .btn--ghost:hover { background: rgba(201,168,76,0.12); box-shadow: none; }
-
-    .form-note {
-      margin: 0.6rem 0 0;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.55);
-    }
-
-    .error, .success-lite {
-      display: none;
-      padding: 0.75rem 1rem;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      text-align: left;
-      margin-top: 0.75rem;
-    }
-
-    .error {
-      background: rgba(239, 68, 68, 0.14);
-      border: 1px solid rgba(239, 68, 68, 0.45);
-      color: #fecaca;
-    }
-
-    .success-lite {
-      background: rgba(72, 187, 120, 0.14);
-      border: 1px solid rgba(72, 187, 120, 0.45);
-      color: #c7f5d7;
-    }
-
-    /* ── Post-signup state ─────────────────────── */
-    .post {
-      display: none;
-      text-align: left;
-    }
-    .is-joined .pre { display: none; }
-    .is-joined .post { display: block; }
-
-    .post__headline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin: 0 0 0.5rem;
-      text-align: center;
-      color: #fff;
-    }
-    .post__sub {
-      text-align: center;
-      color: rgba(255,255,255,0.8);
-      margin: 0 0 1.5rem;
-      font-size: 0.98rem;
-    }
-
-    .share-link {
-      display: flex;
-      gap: 0.5rem;
-      margin: 0.25rem 0 1.25rem;
-    }
-    .share-link input {
-      flex: 1;
-      padding: 0.75rem 0.9rem;
-      font-size: 0.95rem;
-      font-family: ui-monospace, 'SF Mono', monospace;
-      color: #fff;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 10px;
-      outline: none;
-    }
-    .share-link button {
-      padding: 0 1rem;
-      border-radius: 10px;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      color: var(--color-accent);
+      padding: 0.4rem 1.25rem;
+      border-radius: var(--radius-full);
       font-size: 0.85rem;
       font-weight: 600;
-      background: #C9A84C;
-      color: #0f1a30;
-      border: none;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: filter 120ms ease;
-    }
-    .share-link button:hover { filter: brightness(1.1); }
-
-    .share-buttons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0.5rem;
       margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
     }
-    .share-buttons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.35rem;
-      padding: 0.65rem 0.5rem;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: #fff;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 10px;
-      text-decoration: none;
-      transition: background 120ms ease;
-    }
-    .share-buttons a:hover { background: rgba(255,255,255,0.16); }
 
-    .ladder {
-      margin: 1rem 0 0.25rem;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
+    .hero h1 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 1.25rem;
+      line-height: 1.1;
     }
-    .ladder li {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      padding: 0.65rem 0.85rem;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 10px;
-      font-size: 0.9rem;
-    }
-    .ladder li.is-current {
-      background: rgba(201,168,76,0.12);
-      border-color: rgba(201,168,76,0.5);
-    }
-    .ladder li.is-unlocked .ladder__dot { background: #48bb78; border-color: #48bb78; }
-    .ladder__dot {
-      flex: 0 0 auto;
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      border: 2px solid rgba(255,255,255,0.3);
-      background: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .ladder__label { flex: 1; color: rgba(255,255,255,0.9); }
-    .ladder__label strong { color: #C9A84C; font-weight: 600; }
 
-    footer {
-      padding: 1.25rem 2rem 1.75rem;
+    .hero h1 span {
+      color: var(--color-accent);
+    }
+
+    .hero__subtitle {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .hero__ctas {
       display: flex;
+      gap: 1rem;
+      justify-content: center;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 0.75rem;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.5);
     }
 
-    footer a { color: rgba(255,255,255,0.7); text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.3); }
-    footer a:hover { color: #C9A84C; }
+    .hero__stats {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
 
-    /* ── Referral greeting ─────────────────────── */
-    .ref-banner {
-      display: none;
-      background: rgba(201,168,76,0.14);
-      border: 1px solid rgba(201,168,76,0.4);
-      color: #f4e4bc;
-      padding: 0.65rem 1rem;
-      border-radius: 10px;
-      font-size: 0.88rem;
-      margin-bottom: 1rem;
+    .hero__stat {
       text-align: center;
     }
-    .ref-banner.is-active { display: block; }
 
-    @media (max-width: 520px) {
-      .topbar { padding: 1.25rem 1.25rem; }
-      .topbar__status { display: none; }
-      main.hero { padding: 1.25rem 1rem 3rem; }
-      .waitlist { padding: 1.35rem; border-radius: 14px; }
-      .share-buttons { grid-template-columns: repeat(2, 1fr); }
+    .hero__stat-num {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-accent);
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .stage__img { animation: none; }
+    .hero__stat-label {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Floating landmarks */
+    .hero__landmarks {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 26, 48, 0.8) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 3rem;
+      padding-bottom: 1.5rem;
+      font-size: 2.5rem;
+      opacity: 0.3;
+    }
+
+    /* How It Works */
+    .step-card {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .step-card__num {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .step-card h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .step-card p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Sample Day Preview */
+    .sample-timeline {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .sample-timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-accent);
+    }
+
+    .sample-item {
+      position: relative;
+      padding: 1rem 0 1rem 1.5rem;
+    }
+
+    .sample-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 1.35rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      border: 2px solid var(--color-surface);
+    }
+
+    .sample-item__time {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+    }
+
+    .sample-item__name {
+      font-weight: 700;
+      color: var(--color-primary);
+      margin: 0.25rem 0;
+    }
+
+    .sample-item__desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .testimonial-card__stars {
+      color: var(--color-accent);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-card__text {
+      font-style: italic;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .testimonial-card__author {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.25rem; }
+      .hero__subtitle { font-size: 1.05rem; }
+      .hero__stats { gap: 1.5rem; }
+      .hero__landmarks { display: none; }
     }
   </style>
 </head>
 <body>
-  <div class="stage">
-    <div class="stage__bg" aria-hidden="true"></div>
-    <div class="stage__img" aria-hidden="true" role="img" aria-label="Tower Bridge, London"></div>
-    <div class="stage__overlay" aria-hidden="true"></div>
+  <header class="header" id="site-header"></header>
 
-    <header class="topbar">
-      <div class="brand"><span class="brand__dot"></span>London Planned</div>
-      <div class="topbar__status">Launching Soon</div>
-    </header>
-
-    <main class="hero">
+  <main class="main" id="main-content" role="main">
+    <!-- Hero -->
+    <section class="hero">
       <div class="hero__content">
-        <div class="waitlist" id="waitlist">
-
-          <!-- PRE-SIGNUP STATE -->
-          <div class="pre">
-            <div class="badge">Coming Soon</div>
-            <h1>Your Perfect <span>London</span> Trip, Planned by Experts</h1>
-
-            <div class="perks" role="list" aria-label="Launch-day perks">
-              <div class="perk" role="listitem">
-                <span class="perk__ribbon">Launch Week</span>
-                <div class="perk__value">40%</div>
-                <div class="perk__label">Off Your Itinerary</div>
-                <p class="perk__desc">Waitlist-only pricing on every tier.</p>
-                <span class="perk__worth">Save up to $40</span>
-              </div>
-              <div class="perk" role="listitem">
-                <span class="perk__ribbon">Limited Edition</span>
-                <div class="perk__value perk__value--text">Free<br>Bonus</div>
-                <div class="perk__label">Insider's London Bundle</div>
-                <p class="perk__desc">Five curated PDFs: hidden gems, money-saving, packing, neighbourhoods, restaurants.</p>
-                <span class="perk__worth">$30 value</span>
-              </div>
-              <div class="perk" role="listitem">
-                <span class="perk__ribbon">Lifetime</span>
-                <div class="perk__value perk__value--text">Founder<br>Badge</div>
-                <div class="perk__label">Founding Member Status</div>
-                <p class="perk__desc">Permanent <strong>15% off</strong> every future itinerary, priority support, early access.</p>
-                <span class="perk__worth">Forever</span>
-              </div>
-            </div>
-
-            <div class="ref-banner" id="ref-banner" role="status"></div>
-
-            <form id="waitlist-form" novalidate>
-              <div class="honeypot" aria-hidden="true">
-                <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
-              </div>
-
-              <div class="field">
-                <label for="wl-name">Name</label>
-                <input id="wl-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
-              </div>
-
-              <div class="field">
-                <label for="wl-email">Email</label>
-                <input id="wl-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-              </div>
-
-              <button type="submit" class="btn" id="wl-submit">Join the Wait List &amp; Lock In My Perks</button>
-              <p class="form-note">No spam. One launch announcement + occasional London tips.</p>
-              <div class="error" id="wl-error" role="alert"></div>
-            </form>
+        <div class="hero__badge" data-i18n="home.badge">Trusted by 2,000+ travellers</div>
+        <h1 data-i18n="home.title">Your Perfect <span>London</span> Trip, Planned by Experts</h1>
+        <p class="hero__subtitle" data-i18n="home.subtitle">
+          Tell us your interests, budget, and travel dates. We'll create a personalised
+          day-by-day itinerary packed with insider tips and hidden gems.
+        </p>
+        <div class="hero__ctas">
+          <a href="wizard.html" class="btn btn--primary btn--large" data-i18n="home.cta">Plan My Trip — From $50</a>
+          <a href="#how-it-works" class="btn btn--outline btn--large" style="border-color: rgba(255,255,255,0.3); color: white;" data-i18n="home.ctaSecondary">See How It Works</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-num">200+</div>
+            <div class="hero__stat-label" data-i18n="home.statAttractions">Attractions</div>
           </div>
-
-          <!-- POST-SIGNUP STATE -->
-          <div class="post">
-            <div class="badge">You're in</div>
-            <h2 class="post__headline">Welcome, <span id="post-name">traveller</span>.</h2>
-            <p class="post__sub">You've locked in <strong style="color:#C9A84C">40% off launch week</strong>, the <strong style="color:#C9A84C">Insider's London bundle</strong>, and <strong style="color:#C9A84C">Founding Member</strong> status.</p>
-
-            <p class="waitlist__copy" style="text-align:center; margin-bottom:0.5rem;">Share your link — each friend who joins unlocks the next tier:</p>
-
-            <div class="share-link">
-              <input id="share-url" type="text" readonly aria-label="Your share link">
-              <button type="button" id="copy-btn">Copy</button>
-            </div>
-
-            <div class="share-buttons">
-              <a id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
-              <a id="share-twitter" href="#" target="_blank" rel="noopener">X / Twitter</a>
-              <a id="share-email" href="#" target="_blank" rel="noopener">Email</a>
-              <a id="share-fb" href="#" target="_blank" rel="noopener">Facebook</a>
-            </div>
-
-            <ul class="ladder" aria-label="Referral perk ladder">
-              <li class="is-current is-unlocked"><div class="ladder__dot">✓</div><div class="ladder__label"><strong>Joined</strong> — 40% off launch week, Insider bundle, Founding Member</div></li>
-              <li data-tier="1"><div class="ladder__dot">1</div><div class="ladder__label"><strong>1 friend joins</strong> — early-bird badge + unreleased "Secret London" PDF</div></li>
-              <li data-tier="3"><div class="ladder__dot">3</div><div class="ladder__label"><strong>3 friends join</strong> — free concierge hour with your itinerary</div></li>
-              <li data-tier="5"><div class="ladder__dot">5</div><div class="ladder__label"><strong>5 friends join</strong> — free upgrade to next itinerary tier</div></li>
-              <li data-tier="10"><div class="ladder__dot">10</div><div class="ladder__label"><strong>10 friends join</strong> — free itinerary of your choice</div></li>
-            </ul>
-
-            <div class="success-lite" id="copy-confirm">Link copied to your clipboard.</div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">200+</div>
+            <div class="hero__stat-label" data-i18n="home.statRestaurants">Restaurants</div>
           </div>
-
+          <div class="hero__stat">
+            <div class="hero__stat-num">300+</div>
+            <div class="hero__stat-label" data-i18n="home.statPubs">Pubs & Bars</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">150+</div>
+            <div class="hero__stat-label" data-i18n="home.statCafes">Cafes</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">50</div>
+            <div class="hero__stat-label" data-i18n="home.statThemes">Day Themes</div>
+          </div>
         </div>
       </div>
-    </main>
-
-    <footer>
-      <div>© <span id="yr"></span> London Planned</div>
-      <div>
-        Image:
-        <a href="https://commons.wikimedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg" target="_blank" rel="noopener noreferrer">Tower Bridge at twilight</a>
-        ·
-        <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+      <div class="hero__landmarks">
+        🏰 🎡 🌉 ⛪ 🏛️ 🗼
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <!-- Load site config + GHL client + env bridge (to hydrate webhook URLs) -->
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="home.howTitle">How It Works</h2>
+          <div class="divider"></div>
+          <p data-i18n="home.howSubtitle">Three simple steps to your dream London itinerary</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="step-card">
+            <div class="step-card__num">1</div>
+            <h3 data-i18n="home.step1Title">Tell Us About You</h3>
+            <p data-i18n="home.step1Desc">Select your trip length, budget range, and interests — from history and food to nightlife and art.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">2</div>
+            <h3 data-i18n="home.step2Title">Get Your Itinerary</h3>
+            <p data-i18n="home.step2Desc">Our engine creates a personalised day-by-day plan with morning, afternoon, and evening activities.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">3</div>
+            <h3 data-i18n="home.step3Title">Explore London</h3>
+            <p data-i18n="home.step3Desc">Unlock your full guide with booking links, insider tips, a downloadable PDF, and money-saving secrets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Itinerary -->
+    <section class="section section--alt" id="sample">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="home.sampleTitle">Sample Day: Royal London & Westminster</h2>
+          <div class="divider"></div>
+          <p data-i18n="home.sampleSubtitle">Here's a taste of what your personalised itinerary looks like</p>
+        </div>
+        <!-- Day Map -->
+        <div id="sample-day-map" style="margin-bottom:1rem;"></div>
+
+        <!-- Travel Directions -->
+        <div id="sample-travel-directions" style="margin-bottom:1.5rem;"></div>
+
+        <div class="sample-timeline">
+          <div class="sample-item">
+            <div class="sample-item__time">09:00 - 12:00 / Morning</div>
+            <div class="sample-item__name">Tower of London</div>
+            <div class="sample-item__desc" data-i18n="home.sampleMorning">Explore nearly 1,000 years of royal history and see the Crown Jewels.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">12:30 - 13:30 / Lunch</div>
+            <div class="sample-item__name">Padella</div>
+            <div class="sample-item__desc" data-i18n="home.sampleLunch">Outstanding handmade pasta at unbeatable prices.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">14:00 - 16:30 / Afternoon</div>
+            <div class="sample-item__name">Westminster Abbey & Houses of Parliament</div>
+            <div class="sample-item__desc" data-i18n="home.sampleAfternoon">Gothic masterpiece and coronation church since 1066.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">18:30 - 20:00 / Dinner</div>
+            <div class="sample-item__name">Rules Restaurant</div>
+            <div class="sample-item__desc" data-i18n="home.sampleDinner">London's oldest restaurant (est. 1798). Traditional British fare in opulent surroundings.</div>
+          </div>
+          <div class="sample-item">
+            <div class="sample-item__time">20:30 - 22:30 / Evening</div>
+            <div class="sample-item__name">Gordon's Wine Bar</div>
+            <div class="sample-item__desc" data-i18n="home.sampleEvening">London's oldest wine bar, hidden in a candlelit cave.</div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="demo.html" class="btn btn--secondary btn--large" data-i18n="home.seeDemo">See Full 5-Day Demo</a>
+          <a href="wizard.html" class="btn btn--primary btn--large" data-i18n="home.createItinerary">Create My Personalised Itinerary</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- UK Extension Upsell -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-header">
+          <h2 style="color:white;" data-i18n="home.ukTitle">Go Beyond London</h2>
+          <div class="divider"></div>
+          <p style="color:rgba(255,255,255,0.7);" data-i18n="home.ukSubtitle">Add extra days to explore the best of the UK — historic cities, stunning coastline, and breathtaking countryside</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;max-width:1100px;margin:0 auto;">
+          <div style="text-align:center;padding:2rem 2.5rem;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.1);min-width:220px;flex:1;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏰</div>
+            <h4 style="color:white;margin-bottom:0.5rem;" data-i18n="home.ukCities">Historic Cities</h4>
+            <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.5;" data-i18n="home.ukCitiesDesc">Edinburgh, Bath, York, Oxford, Cambridge, Liverpool</p>
+          </div>
+          <div style="text-align:center;padding:2rem 2.5rem;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.1);min-width:220px;flex:1;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏖️</div>
+            <h4 style="color:white;margin-bottom:0.5rem;" data-i18n="home.ukCoastal">Coastal Escapes</h4>
+            <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.5;" data-i18n="home.ukCoastalDesc">Cornwall, Brighton, Jurassic Coast, Whitby</p>
+          </div>
+          <div style="text-align:center;padding:2rem 2.5rem;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.1);min-width:220px;flex:1;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🌿</div>
+            <h4 style="color:white;margin-bottom:0.5rem;" data-i18n="home.ukCountryside">Countryside</h4>
+            <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.5;" data-i18n="home.ukCountrysideDesc">Cotswolds, Lake District, Scottish Highlands</p>
+          </div>
+          <div style="text-align:center;padding:2rem 2.5rem;background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.1);min-width:220px;flex:1;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🎭</div>
+            <h4 style="color:white;margin-bottom:0.5rem;" data-i18n="home.ukCultural">Cultural</h4>
+            <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.5;" data-i18n="home.ukCulturalDesc">Stratford-upon-Avon, Stonehenge, Windsor Castle</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem;">
+          <a href="wizard.html" class="btn btn--primary btn--large" style="padding:1.1rem 3rem;" data-i18n="home.ukCta">Plan London + UK Trip</a>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-top:0.75rem;" data-i18n="home.ukPrice">UK extension from $50 extra</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Resources CTA -->
+    <section class="section" style="background:linear-gradient(135deg,#fefce8,#fff);padding:3rem 0;">
+      <div class="container" style="max-width:900px;text-align:center;">
+        <h2 style="margin-bottom:0.5rem;">Not Ready to Buy? Start Free</h2>
+        <p style="color:var(--color-text-muted);margin-bottom:2rem;">Discover your London travel personality or grab our free insider guide — no payment required.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:700px;margin:0 auto;">
+          <a href="quiz.html" class="card" style="padding:2rem;text-decoration:none;text-align:center;border:2px solid var(--color-border);transition:border-color 0.2s;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">🧭</div>
+            <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">What Type of Traveller Are You?</h3>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;">Take our 60-second quiz and get personalised London recommendations.</p>
+          </a>
+          <a href="free-guide.html" class="card" style="padding:2rem;text-decoration:none;text-align:center;border:2px solid var(--color-border);transition:border-color 0.2s;">
+            <div style="font-size:2.5rem;margin-bottom:0.75rem;">📖</div>
+            <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Free London Insider Guide</h3>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;">Packing lists, money-saving secrets, neighbourhood breakdowns, and local tips.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="pricing.title">Simple, Transparent Pricing</h2>
+          <div class="divider"></div>
+          <p data-i18n="pricing.subtitle">Preview 2 days free, then unlock your complete itinerary</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h4>Short Stay</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">1-5 days</p>
+            <div class="price-card__amount">$50</div>
+            <ul class="price-card__features">
+              <li>Up to 5 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+
+          <div class="price-card price-card--featured">
+            <h4>Week Explorer</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">6-10 days</p>
+            <div class="price-card__amount">$75</div>
+            <ul class="price-card__features">
+              <li>Up to 10 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+              <li>Day-trip recommendations</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+
+          <div class="price-card">
+            <h4>Extended Adventure</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">11-21 days</p>
+            <div class="price-card__amount">$99</div>
+            <ul class="price-card__features">
+              <li>Up to 21 days planned</li>
+              <li>Personalised to your interests</li>
+              <li>Restaurant & pub picks</li>
+              <li>Insider tips & secrets</li>
+              <li>Downloadable PDF guide</li>
+              <li>Hidden gems & local favourites</li>
+            </ul>
+            <a href="wizard.html" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Reviews (Dynamic) -->
+    <section class="section section--alt" aria-label="Customer reviews">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="home.reviewsTitle">What Travellers Say</h2>
+          <div class="divider"></div>
+        </div>
+        <div id="reviews-widget"></div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--dark">
+      <div class="container" style="text-align: center;">
+        <h2 style="color: white; font-size: 2.5rem;" data-i18n="home.finalTitle">Ready to Plan Your London Adventure?</h2>
+        <div class="divider"></div>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 500px; margin: 0 auto 2rem;" data-i18n="home.finalSubtitle">
+          Join thousands of travellers who've discovered their perfect London trip with our personalised itineraries.
+        </p>
+        <a href="wizard.html" class="btn btn--primary btn--large" data-i18n="home.finalCta">Start Planning Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
   <script src="js/config.js"></script>
   <script src="js/env-bridge.js"></script>
-
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/accounts.js"></script>
+  <script src="js/day-map.js"></script>
+  <!-- New features -->
+  <script src="js/chat-assistant.js" defer></script>
+  <script src="js/social-proof.js" defer></script>
+  <script src="js/exit-intent.js" defer></script>
+  <script src="js/reviews-system.js" defer></script>
+  <script src="js/ab-testing.js" defer></script>
+  <script src="js/offline-pwa.js" defer></script>
+  <script src="js/availability.js" defer></script>
+  <script src="js/referral.js" defer></script>
+  <script src="js/marketing-engine.js" defer></script>
+  <script src="js/ai-concierge.js" defer></script>
+  <script src="js/ar-guide.js" defer></script>
+  <script src="js/loyalty.js" defer></script>
+  <script src="js/multi-city.js" defer></script>
   <script>
-    (function () {
-      'use strict';
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      Reviews.renderWidget('reviews-widget');
+      Analytics.pageView('/', 'Home');
+      // Initialize new features
+      if (typeof ChatAssistant !== 'undefined') ChatAssistant.init();
+      if (typeof SocialProof !== 'undefined') SocialProof.init();
+      if (typeof ExitIntent !== 'undefined') ExitIntent.init();
 
-      document.getElementById('yr').textContent = new Date().getFullYear();
-
-      // Feature-flag check: if the tiered waitlist is off, still show the page but skip share flow.
-      // (We deliberately don't block the whole page — this is the coming-soon experience.)
-      var TIERED = true;
-      try {
-        if (typeof FeatureFlags !== 'undefined') {
-          TIERED = FeatureFlags.isEnabled('growth-tiered-waitlist');
-        }
-      } catch (_) {}
-
-      var form = document.getElementById('waitlist-form');
-      var wrap = document.getElementById('waitlist');
-      var btn  = document.getElementById('wl-submit');
-      var err  = document.getElementById('wl-error');
-      var refBanner = document.getElementById('ref-banner');
-
-      // Show a greeting if the visitor arrived via a referral link.
-      try {
-        if (typeof ShareCodes !== 'undefined') {
-          var referrer = ShareCodes.referredBy();
-          if (referrer) {
-            refBanner.textContent = 'A friend invited you — join to lock in 40% off and help them unlock the next tier.';
-            refBanner.classList.add('is-active');
-          }
-        }
-      } catch (_) {}
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        err.style.display = 'none';
-
-        var data = new FormData(form);
-        if (data.get('bot-field')) return;
-
-        var name  = (data.get('name')  || '').toString().trim();
-        var email = (data.get('email') || '').toString().trim();
-
-        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          err.textContent = 'Please enter your name and a valid email address.';
-          err.style.display = 'block';
-          return;
-        }
-
-        btn.disabled = true;
-        var original = btn.textContent;
-        btn.textContent = 'Adding you…';
-
-        // Generate (or re-use) this visitor's share code.
-        var shareCode = (typeof ShareCodes !== 'undefined') ? ShareCodes.mine() : '';
-        var referredBy = (typeof ShareCodes !== 'undefined') ? ShareCodes.referredBy() : '';
-
-        var payload = {
-          email: email,
-          name: name,
-          firstName: name.split(' ')[0] || '',
-          lastName: name.split(' ').slice(1).join(' ') || '',
-          shareCode: shareCode,
-          referredBy: referredBy,
-          tier: 0,
-          source: 'waitlist-coming-soon',
-          tieredWaitlistEnabled: TIERED,
-          perks: ['launch-week-40-off', 'insider-bundle', 'founding-member']
-        };
-
-        try {
-          if (typeof GHL !== 'undefined' && typeof GHL.submitWaitlist === 'function') {
-            await GHL.submitWaitlist(payload);
-          } else {
-            // Defensive fallback so the page still "works" if js/config.js failed to load.
-            console.log('Waitlist signup (no GHL client available):', payload);
-          }
-
-          // Flip to post-signup state.
-          try { localStorage.setItem('londonplannedWaitlistName', name); } catch (_) {}
-          try { localStorage.setItem('londonplannedWaitlistEmail', email); } catch (_) {}
-
-          showPost(name, shareCode);
-        } catch (ex) {
-          err.textContent = 'Something went wrong. Please try again in a moment.';
-          err.style.display = 'block';
-          btn.disabled = false;
-          btn.textContent = original;
-        }
-      });
-
-      function showPost(name, code) {
-        document.getElementById('post-name').textContent = (name.split(' ')[0] || 'traveller');
-
-        var url = (typeof ShareCodes !== 'undefined')
-          ? ShareCodes.shareUrl(code)
-          : (window.location.origin + '/?ref=' + encodeURIComponent(code));
-
-        document.getElementById('share-url').value = url;
-
-        var msg  = encodeURIComponent("I just joined the London Planned wait list — personalised London itineraries launching soon. Join with my link and we both unlock perks:");
-        var wa   = 'https://wa.me/?text='  + msg + '%20' + encodeURIComponent(url);
-        var tw   = 'https://twitter.com/intent/tweet?text=' + msg + '&url=' + encodeURIComponent(url);
-        var mail = 'mailto:?subject=' + encodeURIComponent('London Planned wait list — join with my link') + '&body=' + msg + '%0A%0A' + encodeURIComponent(url);
-        var fb   = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
-
-        document.getElementById('share-whatsapp').href = wa;
-        document.getElementById('share-twitter').href  = tw;
-        document.getElementById('share-email').href    = mail;
-        document.getElementById('share-fb').href       = fb;
-
-        wrap.classList.add('is-joined');
-
-        // Analytics breadcrumb — visible in the browser console even before GA4 is wired up.
-        try { (window.dataLayer = window.dataLayer || []).push({ event: 'waitlist_signup', shareCode: code }); } catch (_) {}
+      // Sample day map + travel directions
+      if (typeof DayMap !== 'undefined') {
+        const sampleActivities = [
+          { name: 'Tower of London', neighbourhood: 'Tower Hill', period: 'morning' },
+          { name: 'Padella', neighbourhood: 'London Bridge', period: 'lunch' },
+          { name: 'Westminster Abbey', neighbourhood: 'Westminster', period: 'afternoon' },
+          { name: 'Rules Restaurant', neighbourhood: 'Covent Garden', period: 'evening' },
+          { name: "Gordon's Wine Bar", neighbourhood: 'West End', period: 'evening' }
+        ];
+        DayMap.renderMap('sample-day-map', sampleActivities, { color: '#C9A84C', height: '250px' });
+        const directionsEl = document.getElementById('sample-travel-directions');
+        if (directionsEl) directionsEl.innerHTML = DayMap.renderTravelDirections(sampleActivities);
       }
-
-      // If this browser already joined, skip straight to the post-signup state.
-      try {
-        var storedName = localStorage.getItem('londonplannedWaitlistName');
-        if (storedName && typeof ShareCodes !== 'undefined') {
-          showPost(storedName, ShareCodes.mine());
-        }
-      } catch (_) {}
-
-      // Copy button
-      var copyBtn = document.getElementById('copy-btn');
-      var copyConfirm = document.getElementById('copy-confirm');
-      copyBtn.addEventListener('click', function () {
-        var input = document.getElementById('share-url');
-        input.select();
-        input.setSelectionRange(0, 99999);
-        try {
-          if (navigator.clipboard) {
-            navigator.clipboard.writeText(input.value);
-          } else {
-            document.execCommand('copy');
-          }
-          copyConfirm.style.display = 'block';
-          setTimeout(function () { copyConfirm.style.display = 'none'; }, 2200);
-        } catch (_) {}
-      });
-    })();
+    });
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
   </script>
 </body>
 </html>

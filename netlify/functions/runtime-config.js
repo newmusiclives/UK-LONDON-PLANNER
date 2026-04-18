@@ -60,6 +60,7 @@ exports.handler = async () => {
     },
     trustpilot: env.TRUSTPILOT_BUSINESS_URL || '',
     googleReview: env.GOOGLE_REVIEW_URL || '',
+    launchMode: (env.LAUNCH_MODE || 'coming-soon').toLowerCase(),
   };
   return {
     statusCode: 200,

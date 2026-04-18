@@ -1,6 +1,7 @@
 [build]
   publish = "."
   functions = "netlify/functions"
+  edge_functions = "netlify/edge-functions"
 
 # Scheduled functions — DISABLED until owner enables.
 # Each function checks ai-staff/registry.json `schedulesEnabled` before running anything.
@@ -11,6 +12,14 @@
 
 # [functions."ai-staff-tick"]
 #   schedule = "0 * * * *"   # hourly tick — orchestrator picks which agents are due
+
+# --- Coming-soon gate ---
+# Controlled by the LAUNCH_MODE env var on Netlify.
+#   LAUNCH_MODE=coming-soon (default) → gate active
+#   LAUNCH_MODE=live                  → full site is public
+[[edge_functions]]
+  function = "coming-soon-gate"
+  path = "/*"
 
 # --- API / function proxies ---
 [[redirects]]
@@ -23,65 +32,10 @@
   to = "/.netlify/functions/runtime-config"
   status = 200
 
-# --- COMING-SOON GATE ---
-# To relaunch the full site, delete every rule in this block.
-# Allowed paths pass through (status 200 rewrites to themselves = serve the file).
-
-[[redirects]]
-  from = "/css/*"
-  to = "/css/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/js/*"
-  to = "/js/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/*"
-  to = "/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/icons/*"
-  to = "/icons/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/data/*"
-  to = "/data/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/downloads/*"
-  to = "/downloads/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/admin.html"
-  to = "/admin.html"
-  status = 200
-
-[[redirects]]
-  from = "/admin"
-  to = "/admin.html"
-  status = 200
-
-# Launch pages — each self-gates via its own feature flag.
-# They're allowed through the coming-soon gate so previews/marketing links work.
-[[redirects]]
-  from = "/gift.html"
-  to = "/gift.html"
-  status = 200
-
+# --- Pretty URLs for the launch pages (self-gated by feature flags) ---
 [[redirects]]
   from = "/gift"
   to = "/gift.html"
-  status = 200
-
-[[redirects]]
-  from = "/partners.html"
-  to = "/partners.html"
   status = 200
 
 [[redirects]]
@@ -90,49 +44,19 @@
   status = 200
 
 [[redirects]]
-  from = "/share-trip.html"
-  to = "/share-trip.html"
-  status = 200
-
-[[redirects]]
   from = "/share-trip"
   to = "/share-trip.html"
   status = 200
 
 [[redirects]]
-  from = "/manifest.json"
-  to = "/manifest.json"
+  from = "/coming-soon"
+  to = "/coming-soon.html"
   status = 200
 
 [[redirects]]
-  from = "/sw.js"
-  to = "/sw.js"
+  from = "/admin"
+  to = "/admin.html"
   status = 200
-
-[[redirects]]
-  from = "/robots.txt"
-  to = "/robots.txt"
-  status = 200
-
-[[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
-  status = 200
-
-[[redirects]]
-  from = "/og-image.svg"
-  to = "/og-image.svg"
-  status = 200
-
-# Everything else → the coming-soon page. Force (!) so existing
-# .html files don't bypass the gate via static-file shadowing.
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 302
-  force = true
-
-# --- END COMING-SOON GATE ---
 
 # 404 fallback — must stay last.
 [[redirects]]

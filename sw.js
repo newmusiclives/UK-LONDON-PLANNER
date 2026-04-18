@@ -1,4 +1,4 @@
-const CACHE_NAME = 'london-planned-v9';
+const CACHE_NAME = 'london-planned-v10';
 const urlsToCache = [
   '/',
   '/index.html',
