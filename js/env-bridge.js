@@ -30,7 +30,8 @@
     }
 
     // GHL webhooks
-    if (rc.ghl && rc.ghl.configured && typeof CONFIG !== 'undefined') {
+    // GHL webhooks — patch if URLs present (independent of configured flag)
+  if (rc.ghl && typeof CONFIG !== 'undefined') {
       const w = rc.ghl.webhooks;
       if (w.itineraryPurchase) CONFIG.goHighLevel.webhooks.itineraryPurchase = w.itineraryPurchase;
       if (w.contactForm) CONFIG.goHighLevel.webhooks.contactForm = w.contactForm;
