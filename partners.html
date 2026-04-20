@@ -86,9 +86,16 @@
 
               <div class="grid grid--2" style="gap:1rem;">
                 <div>
-                  <label for="p-contact-name">Your name</label>
-                  <input id="p-contact-name" name="contactName" type="text" required placeholder="Your name" autocomplete="name">
+                  <label for="p-first-name">Your first name</label>
+                  <input id="p-first-name" name="firstName" type="text" required placeholder="First name" autocomplete="given-name">
                 </div>
+                <div>
+                  <label for="p-last-name">Your last name</label>
+                  <input id="p-last-name" name="lastName" type="text" required placeholder="Last name" autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="grid grid--2" style="gap:1rem;">
                 <div>
                   <label for="p-role">Your role</label>
                   <input id="p-role" name="role" type="text" placeholder="e.g. Marketing Director">
@@ -181,24 +188,27 @@
         btn.textContent = 'Sending…';
 
         var fd = new FormData(form);
+        var firstName = (fd.get('firstName') || '').trim();
+        var lastName = (fd.get('lastName') || '').trim();
         var payload = {
           businessName: fd.get('businessName'),
           website: fd.get('website') || '',
-          contactName: fd.get('contactName'),
+          firstName: firstName,
+          lastName: lastName,
           role: fd.get('role') || '',
           email: fd.get('email'),
           phone: fd.get('phone') || '',
           partnerType: fd.get('partnerType'),
           travellerVolume: fd.get('travellerVolume') || '',
           notes: fd.get('notes') || '',
-          name: fd.get('contactName'),
+          name: (firstName + ' ' + lastName).trim(),
           source: 'partners-page'
         };
 
         try {
           if (typeof GHL !== 'undefined' && GHL.submitPartnerLead) await GHL.submitPartnerLead(payload);
           document.getElementById('partners-success').style.display = 'block';
-          document.getElementById('partners-success').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.getElementById('partners-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
           form.reset();
           btn.textContent = 'Sent';
         } catch (ex) {
