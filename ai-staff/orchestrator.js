@@ -50,7 +50,23 @@ function gatherContext() {
     iso_week: getISOWeek(today),
     season: seasonFor(today),
     site: loadRegistry().site,
-    notes: 'Real-time weather/whats-on/GA4/GHL data not yet wired. Use date and season to reason about timeliness.',
+    campaign: {
+      phase: 'pre-launch',
+      launch_mode: 'coming-soon',
+      primary_goal: 'Build a warm waitlist of 10,000 Americans planning a London trip before launch day. Drive K-factor > 0.4 via referral perks.',
+      rules: [
+        'The site is gated: / serves coming-soon.html. Itineraries are NOT yet purchasable — do not pitch paid products, prices, discounts on paid tiers, or "buy now" CTAs.',
+        'Only public pages behind the gate: /, /gift, /partners, /share-trip, /free-guide, /coming-soon. Any link you write must resolve to one of these, the /admin tooling, or an off-site channel (social, blog posts you draft are queue-only until launch).',
+        'The single call-to-action everywhere is: join the waitlist at londonplanned.com and share the personal ref link to climb tiers (tier-1/3/5/10/founding-member).',
+        'Sellable perks are waitlist-exclusive and referral-gated: 40% off launch week, Insider\'s London Bundle PDF pack, Founding Member 15% lifetime, perk tiers unlocked by referrals. These are free to earn; do not frame them as a paid promotion.',
+        'Content is educational / useful / buzz-building — London insider tips, neighbourhood depth, "best time to visit" seasonality. Every piece ends with a waitlist join CTA that includes the {{contact.share_code}} merge field where appropriate.',
+        'Do NOT reference paid tiers ($50 / $75 / $150), "Spring in London itinerary", or Stripe checkout in any output during pre-launch.',
+      ],
+      reference_docs: [
+        'Pre-launch campaign plan is authoritative — see ai-staff/README.md and the Pre-Launch Campaign memory for per-agent assignments, 6-week phase plan, and KPIs.',
+      ],
+    },
+    notes: 'Real-time weather/whats-on/GA4/GHL data not yet wired. Use date and season to reason about timeliness. RESPECT the campaign.rules above — the site is not yet live for paid product sales.',
   };
 }
 
@@ -73,10 +89,18 @@ function getISOWeek(d) {
 // ----- Anthropic API call -----
 function callClaude({ model, system, user }) {
   return new Promise((resolve, reject) => {
+    // Prompt caching: mark the agent's system prompt as cacheable.
+    // Anthropic caches it for ~5 min by default; a second identical run
+    // within that window reads the cache (~10% of the input-token cost).
+    // Useful when tick() runs the same agent close together, and when we
+    // re-run after a tweak during development.
+    const systemBlocks = typeof system === 'string'
+      ? [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }]
+      : system;
     const body = JSON.stringify({
       model,
       max_tokens: 4096,
-      system,
+      system: systemBlocks,
       messages: [{ role: 'user', content: user }],
     });
     const req = https.request(

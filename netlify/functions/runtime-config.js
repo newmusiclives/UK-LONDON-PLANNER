@@ -25,6 +25,7 @@ exports.handler = async () => {
         giftPurchase: env.GHL_WEBHOOK_GIFT || '',
         partnerLead: env.GHL_WEBHOOK_PARTNER || '',
         ugcSubmission: env.GHL_WEBHOOK_UGC || '',
+        wizardSubmission: env.GHL_WEBHOOK_WIZARD || '',
       },
     },
     affiliates: {
