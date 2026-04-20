@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Your $15 credit just unlocked</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f3f4f6;">
+<tr><td align="center" style="padding:24px 16px;">
+
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;">
+
+  <tr><td style="background-color:#1B2A4A;padding:32px 40px;text-align:center;">
+    <h1 style="margin:0;color:#C9A84C;font-size:24px;font-weight:bold;">London Planned</h1>
+  </td></tr>
+
+  <tr><td style="padding:32px 40px;color:#374151;font-size:16px;line-height:1.6;">
+    <p style="margin:0 0 16px;">Hi {{contact.first_name}},</p>
+
+    <h2 style="margin:0 0 16px;color:#1B2A4A;font-size:22px;">Your friend just booked their London trip.</h2>
+
+    <p style="margin:0 0 16px;">And because they came in through your share link, <strong>$15 credit</strong> has landed in your account.</p>
+
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f9fafb;border-left:4px solid #C9A84C;margin:0 0 24px;">
+      <tr><td style="padding:20px 24px;">
+        <p style="margin:0 0 8px;color:#1B2A4A;font-size:14px;font-weight:bold;letter-spacing:0.05em;">YOUR BALANCE</p>
+        <p style="margin:0;color:#1B2A4A;font-size:28px;font-weight:bold;">${{contact.referral_credit_total}}</p>
+        <p style="margin:8px 0 0;color:#6b7280;font-size:14px;">Use on any future itinerary. No expiry.</p>
+      </td></tr>
+    </table>
+
+    <p style="margin:0 0 16px;"><strong>What you can spend it on:</strong></p>
+    <ul style="margin:0 0 24px;padding-left:20px;">
+      <li style="margin-bottom:4px;">Your next London itinerary (solo trip? second visit? returning with family?)</li>
+      <li style="margin-bottom:4px;">Paris Planned or Edinburgh Planned when they open this year</li>
+      <li style="margin-bottom:4px;">A UK Extension add-on for someone else's gift itinerary</li>
+    </ul>
+
+    <p style="margin:0 0 16px;"><strong>Keep referring.</strong> Three friends = $45 credit. Five = $75. Ten = your whole next trip.</p>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 24px;">
+      <tr><td style="background-color:#C9A84C;border-radius:6px;">
+        <a href="https://londonplanned.com/refer/{{contact.share_code}}" style="display:inline-block;padding:14px 32px;color:#1B2A4A;font-size:16px;font-weight:bold;text-decoration:none;">Share Again</a>
+      </td></tr>
+    </table>
+
+    <p style="margin:0;">Thanks for spreading the word,<br>The London Planned Team</p>
+  </td></tr>
+
+  <tr><td style="background-color:#f9fafb;padding:24px 40px;text-align:center;color:#6b7280;font-size:12px;line-height:1.5;">
+    <p style="margin:0 0 8px;">London Planned · londonplanned.com</p>
+    <p style="margin:0;"><a href="{{unsubscribe_link}}" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a></p>
+  </td></tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>

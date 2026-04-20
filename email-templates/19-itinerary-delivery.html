@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your London itinerary is ready</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f3f4f6;">
+<tr><td align="center" style="padding:24px 16px;">
+
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;">
+
+  <tr><td style="background-color:#1B2A4A;padding:32px 40px;text-align:center;">
+    <h1 style="margin:0;color:#C9A84C;font-size:24px;font-weight:bold;">London Planned</h1>
+  </td></tr>
+
+  <tr><td style="padding:32px 40px;color:#374151;font-size:16px;line-height:1.6;">
+    <p style="margin:0 0 16px;">Hi {{contact.first_name}},</p>
+
+    <p style="margin:0 0 16px;">Your <strong>{{contact.trip_length_days}}-day London itinerary</strong> is ready.</p>
+
+    <p style="margin:0 0 8px;">Four things to do right now:</p>
+    <ol style="margin:0 0 24px;padding-left:20px;">
+      <li style="margin-bottom:6px;"><strong>Open your itinerary</strong> and browse each day</li>
+      <li style="margin-bottom:6px;"><strong>Download the PDF</strong> so you have it offline</li>
+      <li style="margin-bottom:6px;"><strong>Check the interactive map</strong> — every activity plotted</li>
+      <li style="margin-bottom:6px;"><strong>Start booking restaurants</strong> — the popular ones fill fast</li>
+    </ol>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 24px;">
+      <tr><td style="background-color:#C9A84C;border-radius:6px;">
+        <a href="https://londonplanned.com/my-trips" style="display:inline-block;padding:14px 32px;color:#1B2A4A;font-size:16px;font-weight:bold;text-decoration:none;">View My Itinerary</a>
+      </td></tr>
+    </table>
+
+    <p style="margin:0 0 16px;">Need any changes? Reply to this email and the team will help. Free edits for life.</p>
+
+    <p style="margin:0;">Have an incredible trip,<br>The London Planned Team</p>
+  </td></tr>
+
+  <tr><td style="background-color:#f9fafb;padding:24px 40px;text-align:center;color:#6b7280;font-size:12px;line-height:1.5;">
+    <p style="margin:0 0 8px;">London Planned · londonplanned.com</p>
+    <p style="margin:0;"><a href="{{unsubscribe_link}}" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a></p>
+  </td></tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>

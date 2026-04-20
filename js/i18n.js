@@ -112,7 +112,7 @@ const I18N = {
       'action.next': 'Next',
 
       // Home page
-      'home.badge': 'Trusted by 2,000+ travellers',
+      'home.badge': 'Trusted by hundreds of travellers',
       'home.title': 'Your Perfect <span>London</span> Trip, Planned by Experts',
       'home.subtitle': 'Tell us your interests, budget, and travel dates. We\'ll create a personalised day-by-day itinerary packed with insider tips and hidden gems.',
       'home.cta': 'Plan My Trip — From $50',
@@ -314,7 +314,7 @@ const I18N = {
       'action.next': 'Siguiente',
 
       // Home page
-      'home.badge': 'Más de 2.000 viajeros confían en nosotros',
+      'home.badge': 'Cientos de viajeros confían en nosotros',
       'home.title': 'Tu viaje perfecto a <span>London</span>, planificado por expertos',
       'home.subtitle': 'Cuéntanos tus intereses, presupuesto y fechas de viaje. Crearemos un itinerario personalizado día a día con consejos exclusivos y joyas ocultas.',
       'home.cta': 'Planificar mi viaje — Desde $50',
@@ -516,7 +516,7 @@ const I18N = {
       'action.next': 'Suivant',
 
       // Home page
-      'home.badge': 'Plus de 2 000 voyageurs nous font confiance',
+      'home.badge': 'Des centaines de voyageurs nous font confiance',
       'home.title': 'Votre voyage parfait à <span>London</span>, planifié par des experts',
       'home.subtitle': 'Dites-nous vos centres d\'intérêt, votre budget et vos dates de voyage. Nous créerons un itinéraire personnalisé jour par jour avec des conseils d\'initiés et des trésors cachés.',
       'home.cta': 'Planifier mon voyage — À partir de $50',
@@ -718,7 +718,7 @@ const I18N = {
       'action.next': 'Weiter',
 
       // Home page
-      'home.badge': 'Über 2.000 Reisende vertrauen uns',
+      'home.badge': 'Hunderte Reisende vertrauen uns',
       'home.title': 'Ihre perfekte <span>London</span>-Reise, von Experten geplant',
       'home.subtitle': 'Teilen Sie uns Ihre Interessen, Ihr Budget und Ihre Reisedaten mit. Wir erstellen einen personalisierten Tag-für-Tag-Reiseplan mit Insidertipps und Geheimtipps.',
       'home.cta': 'Meine Reise planen — Ab $50',

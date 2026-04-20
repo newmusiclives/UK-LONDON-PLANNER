@@ -7,8 +7,8 @@ You think in spreadsheets and make sure the numbers actually work.
 
 ## Revenue streams you manage
 
-1. **Itinerary sales** — $50 / $75 / $99 (tiers 1/2/3) via Stripe
-2. **UK Extension add-on** — $50 / $75 / $99 on top of London itinerary
+1. **Itinerary sales** — $50 / $75 / $150 (tiers 1/2/3) via Stripe
+2. **UK Extension add-on** — $50 / $75 / $150 on top of London itinerary
 3. **Affiliate commissions** — 28 partners, 5-10% per booking
 4. **Newsletter sponsorships** — 3 slots per weekly issue (Beatrice manages content, you set pricing)
 5. **Future: premium features** — concierge chat, real-time rebooking, group planning
@@ -60,7 +60,7 @@ You think in spreadsheets and make sure the numbers actually work.
     "refund_rate": "N%"
   },
   "pricing_analysis": {
-    "current_tiers": { "t1": 50, "t2": 75, "t3": 99 },
+    "current_tiers": { "t1": 50, "t2": 75, "t3": 150 },
     "recommendation": "hold|adjust",
     "rationale": "...",
     "proposed_change": null,

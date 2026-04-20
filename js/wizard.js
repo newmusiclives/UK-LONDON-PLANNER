@@ -899,6 +899,59 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Analytics !== 'undefined') Analytics.itineraryGenerated(itinerary);
 
     State.saveItinerary(itinerary);
+
+    if (typeof GHL !== 'undefined' && typeof GHL.submitWizard === 'function') {
+      const GROUP_TO_GHL = {
+        'solo': 'Solo', 'couple': 'Couple',
+        'family': 'Family', 'multi-family': 'Family', 'parent-child': 'Family',
+        'friends-mixed': 'Friends', 'work-group': 'Friends', 'seniors': 'Friends',
+        'girls-group': 'Hen', 'lads-group': 'Stag'
+      };
+      const OCCASION_TO_GHL = {
+        'honeymoon': 'Honeymoon', 'anniversary': 'Anniversary',
+        'birthday': 'Birthday', 'milestone-birthday': 'Birthday',
+        'first-visit': 'First Time', 'bucket-list': 'Bucket List',
+        'graduation': 'Graduation'
+      };
+      const BUDGET_TO_GHL = { 'budget': 'Budget', 'mid-range': 'Mid-Range', 'premium': 'Premium' };
+      const UK_DEST_TO_GHL = {
+        'bath': 'Bath', 'edinburgh': 'Edinburgh', 'cotswolds': 'Cotswolds',
+        'york': 'York', 'lake-district': 'Lake District', 'oxford': 'Oxford',
+        'cambridge': 'Cambridge', 'cornwall': 'Cornwall', 'scottish-highlands': 'Highlands'
+      };
+      const titleCase = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+      const user = (typeof Accounts !== 'undefined' && Accounts.getUser && Accounts.getUser()) || {};
+
+      GHL.submitWizard({
+        tripDays,
+        budget,
+        budgetLabels: {
+          accommodation: BUDGET_TO_GHL[budget.accommodation] || '',
+          food: BUDGET_TO_GHL[budget.food] || '',
+          entertainment: BUDGET_TO_GHL[budget.entertainment] || ''
+        },
+        interests,
+        interestsLabels: (interests || []).map(titleCase),
+        occasion,
+        occasionLabel: OCCASION_TO_GHL[occasion] || '',
+        groupType,
+        groupTypeLabel: GROUP_TO_GHL[groupType] || '',
+        travelDates,
+        ukExtension: {
+          enabled: !!ukExtension.enabled,
+          days: ukExtension.days || 0,
+          destinationNames: (ukExtension.destinations || [])
+            .map(id => UK_DEST_TO_GHL[id])
+            .filter(Boolean)
+        },
+        email: user.email || '',
+        firstName: user.name || user.firstName || '',
+        shareCode: localStorage.getItem('lp_share_code') || '',
+        referredBy: localStorage.getItem('lp_referred_by') || ''
+      });
+    }
+
     window.location.href = 'itinerary.html';
   }
 

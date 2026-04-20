@@ -10,4 +10,4 @@ Disallow: /email-templates/
 Disallow: /downloads/
 Disallow: /ai-staff/
 
-Sitemap: https://uk-london-planned.netlify.app/sitemap.xml
+Sitemap: https://londonplanned.com/sitemap.xml

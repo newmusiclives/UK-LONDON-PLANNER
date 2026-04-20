@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our London hotel picks (and UK rail tips)</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f3f4f6;">
+<tr><td align="center" style="padding:24px 16px;">
+
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;">
+
+  <tr><td style="background-color:#1B2A4A;padding:32px 40px;text-align:center;">
+    <h1 style="margin:0;color:#C9A84C;font-size:24px;font-weight:bold;">London Planned</h1>
+  </td></tr>
+
+  <tr><td style="padding:32px 40px;color:#374151;font-size:16px;line-height:1.6;">
+    <p style="margin:0 0 16px;">Hi {{contact.first_name}},</p>
+
+    <p style="margin:0 0 16px;">Two more things to tick off — hotel and (if you're extending) UK rail. Both reward booking early.</p>
+
+    <h3 style="margin:24px 0 8px;color:#1B2A4A;font-size:17px;">Hotels — Fitzrovia, Bloomsbury, Marylebone first</h3>
+    <p style="margin:0 0 16px;">You've told us your budget tier is <strong>{{contact.budget_accommodation}}</strong>. Here's where to look:</p>
+    <ul style="margin:0 0 16px;padding-left:20px;">
+      <li style="margin-bottom:4px;"><strong>Budget (£100–£180/night):</strong> Premier Inn, Z Hotels, Travelodge — pick by neighbourhood, not brand.</li>
+      <li style="margin-bottom:4px;"><strong>Mid-range (£180–£320):</strong> The Zetter, The Fielding, The Hoxton — characterful, central, walk to everything.</li>
+      <li style="margin-bottom:4px;"><strong>Premium (£320+):</strong> The Savoy, The Ned, The Connaught, Claridge's — the classics, for a reason.</li>
+    </ul>
+    <p style="margin:0 0 24px;"><a href="https://londonplanned.com/book-services?category=hotels" style="color:#C9A84C;">Browse hotels in your tier →</a></p>
+
+    {{#if contact.beyond_london}}
+    <h3 style="margin:24px 0 8px;color:#1B2A4A;font-size:17px;">UK rail — book now, save a lot</h3>
+    <p style="margin:0 0 16px;">You're extending into the UK — {{contact.uk_destinations}}. UK rail is split into two pricing worlds:</p>
+    <ul style="margin:0 0 16px;padding-left:20px;">
+      <li style="margin-bottom:4px;"><strong>Advance tickets</strong> — released ~12 weeks out, £15–£50 typical. Fixed train, no flexibility.</li>
+      <li style="margin-bottom:4px;"><strong>Anytime tickets</strong> — book on the day, £80–£200 typical. Any train, full flexibility.</li>
+    </ul>
+    <p style="margin:0 0 16px;">If your dates are locked, go Advance. The same London→Edinburgh ticket is £38 booked early, £165 on the day.</p>
+    <p style="margin:0 0 24px;"><a href="https://londonplanned.com/book-services?category=rail" style="color:#C9A84C;">Book UK rail (Trainline) →</a></p>
+    {{/if}}
+
+    <p style="margin:0 0 16px;">That's the full pack — hotels, transfers, insurance, rail. Your itinerary has live booking links for every restaurant and attraction too.</p>
+
+    <p style="margin:0;">Cheers,<br>The London Planned Team</p>
+  </td></tr>
+
+  <tr><td style="background-color:#f9fafb;padding:24px 40px;text-align:center;color:#6b7280;font-size:12px;line-height:1.5;">
+    <p style="margin:0 0 8px;">London Planned · londonplanned.com</p>
+    <p style="margin:0;"><a href="{{unsubscribe_link}}" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a></p>
+  </td></tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>

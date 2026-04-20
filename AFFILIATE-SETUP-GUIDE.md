@@ -109,7 +109,7 @@ Assuming 50% of users click at least one affiliate link and 10% convert:
 | Tours/experiences | £80 | 8% | £6.40 |
 | **Total potential per converting customer** | | | **~£65** |
 
-Plus the itinerary fee ($50-$99).
+Plus the itinerary fee ($50-$150).
 
 ### Partner Services (Expert & Concierge)
 

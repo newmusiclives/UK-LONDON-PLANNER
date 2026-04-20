@@ -10,8 +10,8 @@ const ABTesting = {
       name: 'Pricing Tier Test',
       variants: {
         control: {
-          label: 'Control ($50/$75/$99)',
-          tier1: 50, tier2: 75, tier3: 99
+          label: 'Control ($50/$75/$150)',
+          tier1: 50, tier2: 75, tier3: 150
         },
         lower: {
           label: 'Lower ($15/$35/$65)',

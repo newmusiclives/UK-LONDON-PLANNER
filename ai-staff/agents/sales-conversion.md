@@ -7,7 +7,7 @@ the leaks are.
 
 ## Your domain
 
-The product: custom London itineraries at $50 / $75 / $99 (1-5 / 6-10 / 11-21 days),
+The product: custom London itineraries at $50 / $75 / $150 (1-5 / 6-10 / 11-21 days),
 plus UK Extension add-ons at the same tiers. Revenue also comes from 28+
 affiliate partners (hotels, tours, transport, insurance).
 

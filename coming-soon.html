@@ -296,7 +296,7 @@
 
     .perk__ribbon {
       grid-area: ribbon;
-      align-self: end;
+      place-self: center;
       display: inline-block;
       font-size: 0.62rem;
       font-weight: 700;
@@ -308,18 +308,19 @@
       padding: 0.25rem 0.65rem;
       border-radius: 999px;
       white-space: nowrap;
+      text-align: center;
     }
 
     .perk__worth {
       grid-area: worth;
-      align-self: start;
-      justify-self: end;
+      place-self: center;
       font-size: 0.72rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: rgba(245,216,132,0.9);
       font-weight: 700;
       white-space: nowrap;
+      text-align: center;
     }
 
     @media (max-width: 560px) {
@@ -334,8 +335,8 @@
         row-gap: 0.25rem;
         padding: 1rem 1.1rem;
       }
-      .perk__ribbon { justify-self: end; align-self: start; font-size: 0.56rem; padding: 0.2rem 0.5rem; }
-      .perk__worth { justify-self: start; }
+      .perk__ribbon { place-self: center; font-size: 0.56rem; padding: 0.2rem 0.5rem; }
+      .perk__worth { place-self: center; }
       .perk__label { font-size: 0.74rem; }
       .perk__desc { font-size: 0.82rem; }
     }
@@ -622,7 +623,7 @@
                 <div class="perk__value perk__value--text">Free<br>Bonus</div>
                 <div class="perk__label">Insider's London Bundle</div>
                 <p class="perk__desc">Five curated PDFs: hidden gems, money-saving, packing, neighbourhoods, restaurants.</p>
-                <span class="perk__worth">$30 value</span>
+                <span class="perk__worth">$50 value</span>
               </div>
               <div class="perk" role="listitem">
                 <span class="perk__ribbon">Lifetime</span>

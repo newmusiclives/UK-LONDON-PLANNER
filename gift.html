@@ -91,7 +91,7 @@
                     <input type="radio" name="tier" value="tier3">
                     <div class="tier-option__card">
                       <p class="tier-option__title">Extended</p>
-                      <p class="tier-option__price">$99</p>
+                      <p class="tier-option__price">$150</p>
                       <p class="tier-option__desc">11–21 days, UK add-ons</p>
                     </div>
                   </label>
@@ -187,7 +187,7 @@
 
         var fd = new FormData(form);
         var tier = fd.get('tier');
-        var tierMap = { tier1: { label: 'Short Stay', price: 50 }, tier2: { label: 'Week Explorer', price: 75 }, tier3: { label: 'Extended', price: 99 } };
+        var tierMap = { tier1: { label: 'Short Stay', price: 50 }, tier2: { label: 'Week Explorer', price: 75 }, tier3: { label: 'Extended', price: 150 } };
 
         // Generate a redemption code (visible to buyer; GHL workflow emails recipient with the same code).
         var code = 'LP-GIFT-' + (typeof ShareCodes !== 'undefined' ? ShareCodes.generate().replace('LP-', '') : Math.random().toString(36).slice(2,8).toUpperCase());

@@ -267,7 +267,7 @@
                 <select id="sale-product">
                   <option value="tier1">Short Stay Itinerary ($50)</option>
                   <option value="tier2">Week Explorer Itinerary ($75)</option>
-                  <option value="tier3">Extended Adventure ($99)</option>
+                  <option value="tier3">Extended Adventure ($150)</option>
                   <option value="uk-extension">UK Extension (varies)</option>
                 </select>
               </div>
@@ -348,18 +348,46 @@
               </div>
             </div>
             <h4 style="margin:1.5rem 0 1rem;font-size:0.95rem;">Webhook URLs</h4>
-            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:1rem;">Create inbound webhooks in GHL (Automation > Workflows > Trigger: Inbound Webhook) and paste the URLs below.</p>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:1rem;">Create inbound webhooks in GHL (Automation &gt; Workflows &gt; Trigger: Inbound Webhook) and paste the URLs below.</p>
+
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin:0.5rem 0 0.5rem;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;">Pre-launch</p>
             <div class="field">
-              <label>Email Capture Webhook <small>(footer signup, blog subscribe)</small></label>
+              <label>Waitlist Signup Webhook <small>(coming-soon form → LP - Waitlist Signup)</small></label>
+              <input type="url" id="ghl-webhook-waitlist" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Email Capture Webhook <small>(footer signup, free-guide, blog subscribe)</small></label>
               <input type="url" id="ghl-webhook-email" placeholder="https://services.leadconnectorhq.com/hooks/...">
             </div>
             <div class="field">
-              <label>Itinerary Purchase Webhook <small>(triggered on payment success)</small></label>
+              <label>Newsletter Webhook <small>(3-part newsletter sequence)</small></label>
+              <input type="url" id="ghl-webhook-newsletter" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Partner Lead Webhook <small>(partners.html B2B form)</small></label>
+              <input type="url" id="ghl-webhook-partner" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Contact Form Webhook <small>(AI chat email capture)</small></label>
+              <input type="url" id="ghl-webhook-contact" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin:1rem 0 0.5rem;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;">Post-launch</p>
+            <div class="field">
+              <label>Wizard Submission Webhook <small>(fires on Review step — 21 custom fields payload)</small></label>
+              <input type="url" id="ghl-webhook-wizard" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>Itinerary Purchase Webhook <small>(triggered on Stripe payment success)</small></label>
               <input type="url" id="ghl-webhook-purchase" placeholder="https://services.leadconnectorhq.com/hooks/...">
             </div>
             <div class="field">
-              <label>Contact Form Webhook</label>
-              <input type="url" id="ghl-webhook-contact" placeholder="https://services.leadconnectorhq.com/hooks/...">
+              <label>Gift Purchase Webhook <small>(gift.html checkout)</small></label>
+              <input type="url" id="ghl-webhook-gift" placeholder="https://services.leadconnectorhq.com/hooks/...">
+            </div>
+            <div class="field">
+              <label>UGC Submission Webhook <small>(share-trip.html post-trip content)</small></label>
+              <input type="url" id="ghl-webhook-ugc" placeholder="https://services.leadconnectorhq.com/hooks/...">
             </div>
             <div class="field-row">
               <div class="field">
@@ -409,11 +437,11 @@
             <h4 style="margin:0 0 0.75rem;font-size:0.95rem;">London Itinerary</h4>
             <div class="field"><label>Short Stay ($50) <small>1-5 days</small></label><input type="url" id="stripe-tier1" placeholder="https://buy.stripe.com/..." data-key="tier1"></div>
             <div class="field"><label>Week Explorer ($75) <small>6-10 days</small></label><input type="url" id="stripe-tier2" placeholder="https://buy.stripe.com/..." data-key="tier2"></div>
-            <div class="field"><label>Extended Adventure ($99) <small>11-21 days</small></label><input type="url" id="stripe-tier3" placeholder="https://buy.stripe.com/..." data-key="tier3"></div>
+            <div class="field"><label>Extended Adventure ($150) <small>11-21 days</small></label><input type="url" id="stripe-tier3" placeholder="https://buy.stripe.com/..." data-key="tier3"></div>
             <h4 style="margin:1.5rem 0 0.75rem;font-size:0.95rem;">UK Extension Add-on</h4>
             <div class="field"><label>UK Short Break ($50) <small>1-5 days</small></label><input type="url" id="stripe-ukShort" placeholder="https://buy.stripe.com/..." data-key="ukShort"></div>
             <div class="field"><label>UK Explorer ($75) <small>6-10 days</small></label><input type="url" id="stripe-ukStandard" placeholder="https://buy.stripe.com/..." data-key="ukStandard"></div>
-            <div class="field"><label>Grand UK Tour ($99) <small>11-21 days</small></label><input type="url" id="stripe-ukExtended" placeholder="https://buy.stripe.com/..." data-key="ukExtended"></div>
+            <div class="field"><label>Grand UK Tour ($150) <small>11-21 days</small></label><input type="url" id="stripe-ukExtended" placeholder="https://buy.stripe.com/..." data-key="ukExtended"></div>
             <div style="margin-top:1.5rem;display:flex;gap:0.75rem;align-items:center;">
               <button class="btn btn--primary" onclick="savePaymentLinks()">Save Payment Links</button>
               <span id="payment-save-status" style="font-size:0.85rem;color:#16a34a;display:none;">Saved and active!</span>
@@ -1037,9 +1065,15 @@
         var ghlWebhooks = ghl.webhooks || {};
         if (document.getElementById('ghl-location')) document.getElementById('ghl-location').value = ghl.locationId || '';
         if (document.getElementById('ghl-apikey')) document.getElementById('ghl-apikey').value = ghl.apiKey || '';
+        if (document.getElementById('ghl-webhook-waitlist')) document.getElementById('ghl-webhook-waitlist').value = ghlWebhooks.waitlist || '';
         if (document.getElementById('ghl-webhook-email')) document.getElementById('ghl-webhook-email').value = ghlWebhooks.emailCapture || '';
-        if (document.getElementById('ghl-webhook-purchase')) document.getElementById('ghl-webhook-purchase').value = ghlWebhooks.itineraryPurchase || '';
+        if (document.getElementById('ghl-webhook-newsletter')) document.getElementById('ghl-webhook-newsletter').value = ghlWebhooks.promotionsNewsletter || '';
+        if (document.getElementById('ghl-webhook-partner')) document.getElementById('ghl-webhook-partner').value = ghlWebhooks.partnerLead || '';
         if (document.getElementById('ghl-webhook-contact')) document.getElementById('ghl-webhook-contact').value = ghlWebhooks.contactForm || '';
+        if (document.getElementById('ghl-webhook-wizard')) document.getElementById('ghl-webhook-wizard').value = ghlWebhooks.wizardSubmission || '';
+        if (document.getElementById('ghl-webhook-purchase')) document.getElementById('ghl-webhook-purchase').value = ghlWebhooks.itineraryPurchase || '';
+        if (document.getElementById('ghl-webhook-gift')) document.getElementById('ghl-webhook-gift').value = ghlWebhooks.giftPurchase || '';
+        if (document.getElementById('ghl-webhook-ugc')) document.getElementById('ghl-webhook-ugc').value = ghlWebhooks.ugcSubmission || '';
         if (document.getElementById('ghl-calendar')) document.getElementById('ghl-calendar').value = ghl.calendarId || '';
         if (document.getElementById('ghl-pipeline')) document.getElementById('ghl-pipeline').value = ghl.pipelineId || '';
         if (document.getElementById('weather-apikey')) document.getElementById('weather-apikey').value = (saved.weather && saved.weather.apiKey) || '';
@@ -1276,9 +1310,15 @@
         locationId: document.getElementById('ghl-location').value.trim(),
         apiKey: document.getElementById('ghl-apikey').value.trim(),
         webhooks: {
+          waitlist: document.getElementById('ghl-webhook-waitlist').value.trim(),
           emailCapture: document.getElementById('ghl-webhook-email').value.trim(),
+          promotionsNewsletter: document.getElementById('ghl-webhook-newsletter').value.trim(),
+          partnerLead: document.getElementById('ghl-webhook-partner').value.trim(),
+          contactForm: document.getElementById('ghl-webhook-contact').value.trim(),
+          wizardSubmission: document.getElementById('ghl-webhook-wizard').value.trim(),
           itineraryPurchase: document.getElementById('ghl-webhook-purchase').value.trim(),
-          contactForm: document.getElementById('ghl-webhook-contact').value.trim()
+          giftPurchase: document.getElementById('ghl-webhook-gift').value.trim(),
+          ugcSubmission: document.getElementById('ghl-webhook-ugc').value.trim()
         },
         calendarId: document.getElementById('ghl-calendar').value.trim(),
         pipelineId: document.getElementById('ghl-pipeline').value.trim()

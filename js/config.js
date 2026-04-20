@@ -5,7 +5,7 @@ const CONFIG = {
   pricing: {
     tier1: { label: 'Short Stay', days: [1, 5], price: 50, currency: 'USD' },
     tier2: { label: 'Week Explorer', days: [6, 10], price: 75, currency: 'USD' },
-    tier3: { label: 'Extended Adventure', days: [11, 21], price: 99, currency: 'USD' },
+    tier3: { label: 'Extended Adventure', days: [11, 21], price: 150, currency: 'USD' },
     // Personal guide pricing now handled by affiliate partners (ToursByLocals, WithLocals)
     _personalGuideDeprecated: {
       perDay: 250,
@@ -45,7 +45,8 @@ const CONFIG = {
       waitlist: 'https://services.leadconnectorhq.com/hooks/YOUR_WAITLIST_WEBHOOK',
       giftPurchase: 'https://services.leadconnectorhq.com/hooks/YOUR_GIFT_WEBHOOK',
       partnerLead: 'https://services.leadconnectorhq.com/hooks/YOUR_PARTNER_WEBHOOK',
-      ugcSubmission: 'https://services.leadconnectorhq.com/hooks/YOUR_UGC_WEBHOOK'
+      ugcSubmission: 'https://services.leadconnectorhq.com/hooks/YOUR_UGC_WEBHOOK',
+      wizardSubmission: 'https://services.leadconnectorhq.com/hooks/YOUR_WIZARD_WEBHOOK'
     },
     calendarId: 'YOUR_GHL_CALENDAR_ID',
     // Pipeline for tracking customer journey
@@ -110,7 +111,7 @@ const CONFIG = {
     pricing: {
       short:    { days: [1, 5],   price: 50, label: 'UK Short Break' },
       standard: { days: [6, 10],  price: 75, label: 'UK Explorer' },
-      extended: { days: [11, 21], price: 99, label: 'Grand UK Tour' }
+      extended: { days: [11, 21], price: 150, label: 'Grand UK Tour' }
     },
     stripe: {
       short:    'https://buy.stripe.com/YOUR_UK_SHORT_LINK',
@@ -404,6 +405,51 @@ const GHL = {
       tags: ['london-planned', 'ugc', 'post-trip', 'ambassador'],
       ...data
     });
+  },
+
+  // ── Wizard Submission (pre-purchase) ────────────────────
+  // Fires when a user reaches the Review step and generates an itinerary.
+  // Populates all 21 GHL custom fields so Workflow 11.1 can tag, move the
+  // contact into the Customer Journey pipeline at Prospect, and send the
+  // personalised preview email. Email is taken from a logged-in account if
+  // available — otherwise the webhook lands anonymously and merges on checkout.
+  async submitWizard(payload) {
+    const tripDays = Number(payload.tripDays) || 0;
+    const itineraryTier =
+      tripDays <= 5 ? 'tier-short' :
+      tripDays <= 10 ? 'tier-week' : 'tier-extended';
+
+    const data = {
+      type: 'wizard_submission',
+      tags: [
+        'london-planned', 'post-launch',
+        `group-${payload.groupType || 'unknown'}`,
+        payload.occasion ? `occasion-${payload.occasion}` : null,
+        `budget-${payload.budget?.accommodation || 'mid-range'}`,
+        ...(Array.isArray(payload.interests) ? payload.interests.map(i => `interest-${i}`) : []),
+        payload.ukExtension?.enabled ? 'uk-extension' : null
+      ].filter(Boolean),
+      // Custom field payload — keys match GHL contact.* field keys exactly
+      trip_length_days: tripDays,
+      trip_start: payload.travelDates?.start || '',
+      trip_end: payload.travelDates?.end || '',
+      beyond_london: !!payload.ukExtension?.enabled,
+      uk_destinations: Array.isArray(payload.ukExtension?.destinationNames)
+        ? payload.ukExtension.destinationNames : [],
+      group_type: payload.groupTypeLabel || payload.groupType || '',
+      occasion: payload.occasionLabel || payload.occasion || '',
+      budget_accommodation: payload.budgetLabels?.accommodation || '',
+      budget_food: payload.budgetLabels?.food || '',
+      budget_entertainment: payload.budgetLabels?.entertainment || '',
+      interests: Array.isArray(payload.interestsLabels) ? payload.interestsLabels : [],
+      itinerary_tier: itineraryTier,
+      // Identity — email is best-effort; falls through if not logged in
+      email: payload.email || '',
+      firstName: payload.firstName || '',
+      share_code: payload.shareCode || '',
+      referred_by: payload.referredBy || ''
+    };
+    return this.sendToWebhook('wizardSubmission', data);
   }
 };
 

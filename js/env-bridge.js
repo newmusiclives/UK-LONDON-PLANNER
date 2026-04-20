@@ -41,6 +41,7 @@
       if (w.giftPurchase) CONFIG.goHighLevel.webhooks.giftPurchase = w.giftPurchase;
       if (w.partnerLead) CONFIG.goHighLevel.webhooks.partnerLead = w.partnerLead;
       if (w.ugcSubmission) CONFIG.goHighLevel.webhooks.ugcSubmission = w.ugcSubmission;
+      if (w.wizardSubmission) CONFIG.goHighLevel.webhooks.wizardSubmission = w.wizardSubmission;
     }
 
     // Affiliate IDs
@@ -95,12 +96,18 @@
         if (saved.stripe.ukExtended) CONFIG.ukExtension.stripe.extended = saved.stripe.ukExtended;
       }
 
-      // GHL webhooks
-      if (saved.ghl) {
-        if (saved.ghl.itineraryPurchase) CONFIG.goHighLevel.webhooks.itineraryPurchase = saved.ghl.itineraryPurchase;
-        if (saved.ghl.contactForm) CONFIG.goHighLevel.webhooks.contactForm = saved.ghl.contactForm;
-        if (saved.ghl.emailCapture) CONFIG.goHighLevel.webhooks.emailCapture = saved.ghl.emailCapture;
-        if (saved.ghl.newsletter) CONFIG.goHighLevel.webhooks.promotionsNewsletter = saved.ghl.newsletter;
+      // GHL webhooks — admin.html stores them under saved.ghl.webhooks.{key}
+      const w = saved.ghl && saved.ghl.webhooks;
+      if (w) {
+        if (w.waitlist) CONFIG.goHighLevel.webhooks.waitlist = w.waitlist;
+        if (w.emailCapture) CONFIG.goHighLevel.webhooks.emailCapture = w.emailCapture;
+        if (w.promotionsNewsletter) CONFIG.goHighLevel.webhooks.promotionsNewsletter = w.promotionsNewsletter;
+        if (w.partnerLead) CONFIG.goHighLevel.webhooks.partnerLead = w.partnerLead;
+        if (w.contactForm) CONFIG.goHighLevel.webhooks.contactForm = w.contactForm;
+        if (w.wizardSubmission) CONFIG.goHighLevel.webhooks.wizardSubmission = w.wizardSubmission;
+        if (w.itineraryPurchase) CONFIG.goHighLevel.webhooks.itineraryPurchase = w.itineraryPurchase;
+        if (w.giftPurchase) CONFIG.goHighLevel.webhooks.giftPurchase = w.giftPurchase;
+        if (w.ugcSubmission) CONFIG.goHighLevel.webhooks.ugcSubmission = w.ugcSubmission;
       }
 
       // Affiliate IDs
