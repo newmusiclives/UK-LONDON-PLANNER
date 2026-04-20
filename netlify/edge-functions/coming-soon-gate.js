@@ -17,6 +17,7 @@ const ALLOWED_PATHS = new Set([
   '/gift.html', '/gift',
   '/partners.html', '/partners',
   '/share-trip.html', '/share-trip',
+  '/free-guide.html', '/free-guide',
   '/coming-soon.html', '/coming-soon',
   '/manifest.json', '/sw.js', '/robots.txt', '/sitemap.xml',
   '/og-image.svg', '/favicon.ico', '/favicon.svg'
