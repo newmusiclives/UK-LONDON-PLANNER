@@ -12,6 +12,8 @@ const ALLOWED_PREFIXES = [
 
 const ALLOWED_PATHS = new Set([
   '/admin.html', '/admin',
+  '/features.html', '/features',
+  '/marketing.html', '/marketing',
   '/gift.html', '/gift',
   '/partners.html', '/partners',
   '/share-trip.html', '/share-trip',
