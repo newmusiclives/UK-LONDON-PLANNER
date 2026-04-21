@@ -10,6 +10,10 @@
     "ai:tick": "node ai-staff/orchestrator.js tick",
     "ai:queue": "node ai-staff/orchestrator.js queue",
     "ai:approve": "node ai-staff/orchestrator.js approve",
-    "ai:review": "node ai-staff/review-server.js"
+    "ai:review": "node ai-staff/review-server.js",
+    "ai:publish-blog": "node ai-staff/blog-publisher.js",
+    "ai:publish-blog:status": "node ai-staff/blog-publisher.js status",
+    "ai:publish-blog:force": "node ai-staff/blog-publisher.js force",
+    "ai:publish-blog:dry-run": "node ai-staff/blog-publisher.js dry-run"
   }
 }
