@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical London — 100 Music Pilgrimage Spots | London Planned</title>
+  <meta name="description" content="From Abbey Road Studios to Ronnie Scott's — 100 essential Musical London stops. Historic sites, recording studios, live venues, record shops, festivals, and music pubs across every major genre.">
+  <meta property="og:title" content="Musical London — Abbey Road to Fabric">
+  <meta property="og:description" content="100 essential Musical London stops — every genre, every era, from Handel & Hendrix's shared Mayfair townhouse to the basement clubs that launched Britpop and grime.">
+  <meta property="og:url" content="https://londonplanned.com/musical-london">
+  <link rel="canonical" href="https://londonplanned.com/musical-london">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Musical London",
+    "description": "Historic sites, recording studios, music venues, pubs, festivals, record shops, and music museums across London.",
+    "publisher": { "@type": "Organization", "name": "London Planned" }
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Musical London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:640px;margin:0 auto;">100 essential Musical London stops — every genre, every era. From Abbey Road Studios to the Brixton basements that launched post-punk.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:1rem;" id="type-filters">
+          <button class="chip active" data-type="all">All</button>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem;" id="genre-filters">
+          <button class="chip active" data-genre="all">All genres</button>
+        </div>
+
+        <div class="grid grid--3" id="music-grid">
+          <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">Loading Musical London…</div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+          <h3 style="margin-bottom:1rem;">Build a Music-Focused Itinerary</h3>
+          <p style="color:var(--color-text-muted);margin-bottom:1.5rem;">Pair your trip with the Musical London day-template for a gig-and-landmark thread through every day</p>
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Musical Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    const MUSIC_TYPE_LABELS = {
+      'historic-site': '🏛️ Historic Site',
+      'recording-studio': '🎙️ Recording Studio',
+      'music-venue': '🎤 Music Venue',
+      'music-pub': '🍺 Music Pub',
+      'music-festival': '🎪 Festival',
+      'music-museum': '🏟️ Music Museum',
+      'record-shop': '💿 Record Shop',
+      'music-landmark': '📍 Music Landmark'
+    };
+
+    let allItems = [];
+    let activeType = 'all';
+    let activeGenre = 'all';
+
+    async function load() {
+      try {
+        const res = await fetch('/data/musical-london.json');
+        allItems = await res.json();
+      } catch (err) {
+        console.error('Failed to load musical-london.json', err);
+        document.getElementById('music-grid').innerHTML =
+          '<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">Could not load Musical London. Try refreshing.</div>';
+        return;
+      }
+
+      // Music type chips — from actual musicType values in data
+      const types = [...new Set(allItems.map(i => i.musicType).filter(Boolean))].sort();
+      const typeRow = document.getElementById('type-filters');
+      typeRow.querySelector('[data-type="all"]').addEventListener('click', () => {
+        activeType = 'all';
+        typeRow.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        typeRow.querySelector('[data-type="all"]').classList.add('active');
+        render();
+      });
+      for (const t of types) {
+        const btn = document.createElement('button');
+        btn.className = 'chip';
+        btn.dataset.type = t;
+        btn.textContent = MUSIC_TYPE_LABELS[t] || t;
+        btn.addEventListener('click', () => {
+          activeType = t;
+          typeRow.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          render();
+        });
+        typeRow.appendChild(btn);
+      }
+
+      // Genre chips — flatten + dedupe genre arrays
+      const genres = [...new Set(allItems.flatMap(i => i.genre || []))].sort();
+      const genreRow = document.getElementById('genre-filters');
+      genreRow.querySelector('[data-genre="all"]').addEventListener('click', () => {
+        activeGenre = 'all';
+        genreRow.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        genreRow.querySelector('[data-genre="all"]').classList.add('active');
+        render();
+      });
+      for (const g of genres) {
+        const btn = document.createElement('button');
+        btn.className = 'chip';
+        btn.dataset.genre = g;
+        btn.textContent = g.charAt(0).toUpperCase() + g.slice(1).replace(/-/g, ' ');
+        btn.addEventListener('click', () => {
+          activeGenre = g;
+          genreRow.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          render();
+        });
+        genreRow.appendChild(btn);
+      }
+
+      render();
+    }
+
+    function render() {
+      const items = allItems.filter(i => {
+        if (activeType !== 'all' && i.musicType !== activeType) return false;
+        if (activeGenre !== 'all' && !(i.genre || []).includes(activeGenre)) return false;
+        return true;
+      });
+
+      const grid = document.getElementById('music-grid');
+      if (!items.length) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">No matches. Try a different filter.</div>';
+        return;
+      }
+
+      grid.innerHTML = items.map(i => {
+        const typeLabel = MUSIC_TYPE_LABELS[i.musicType] || i.musicType || '';
+        const cost = i.estimatedCost?.amount === 0 ? 'FREE'
+          : i.estimatedCost ? `£${i.estimatedCost.amount}` : '';
+        const genreChips = (i.genre || []).slice(0, 3).map(g =>
+          `<span style="font-size:0.65rem;background:var(--color-surface-alt,#f5f5f5);padding:0.15rem 0.5rem;border-radius:8px;margin-right:0.25rem;">${g}</span>`
+        ).join('');
+        return `
+          <div class="card">
+            <div class="card__body">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;margin-bottom:0.75rem;">
+                <span class="badge badge--accent" style="font-size:0.7rem;">${typeLabel}</span>
+                ${cost === 'FREE' ? '<span class="badge badge--success" style="font-size:0.7rem;">FREE</span>' : cost ? `<span class="badge" style="font-size:0.7rem;">${cost}</span>` : ''}
+              </div>
+              <h4 style="margin-bottom:0.5rem;">${i.name}</h4>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.5rem;">${i.description}</p>
+              <div style="margin-bottom:0.5rem;">${genreChips}</div>
+              <div style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:0.5rem;">📍 ${i.neighbourhood || ''}</div>
+              ${i.tips ? `<div style="font-size:0.8rem;font-style:italic;color:var(--color-text-muted);padding-top:0.5rem;border-top:1px solid var(--color-border);">💡 ${i.tips}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      load();
+    });
+  </script>
+</body>
+</html>

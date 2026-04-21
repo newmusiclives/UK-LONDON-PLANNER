@@ -1,0 +1,3143 @@
+[
+  {
+    "id": "ml-abbey-road-studios",
+    "name": "Abbey Road Studios",
+    "description": "The most famous recording studio in the world — EMI's St John's Wood studio where The Beatles recorded 11 of their 13 albums, and where Adele, Radiohead, Kanye, and Oasis have also recorded.",
+    "neighbourhood": "St John's Wood",
+    "musicType": "recording-studio",
+    "genre": [
+      "rock",
+      "pop",
+      "classical"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "30m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "3 Abbey Rd, London NW8 9AY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free exterior visit. The Abbey Road Shop next door sells merch — the only way inside the building without being a recording artist."
+  },
+  {
+    "id": "ml-abbey-road-crossing",
+    "name": "Abbey Road Zebra Crossing",
+    "description": "The most famous crossing in the world, photographed for The Beatles' Abbey Road album cover on 8 August 1969. Grade II-listed.",
+    "neighbourhood": "St John's Wood",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "20m",
+    "bestTimeOfDay": [
+      "morning",
+      "afternoon"
+    ],
+    "address": "Abbey Rd, London NW8 9AY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Live-streamed 24/7 by the Abbey Road webcam. Morning is quieter. Do NOT actually stop in the middle — drivers are used to tourists but it's a working road."
+  },
+  {
+    "id": "ml-3-savile-row",
+    "name": "3 Savile Row (Apple Corps Rooftop)",
+    "description": "The rooftop where The Beatles played their final live performance on 30 January 1969 — a 42-minute gig that stopped Savile Row. Site of Apple Corps HQ.",
+    "neighbourhood": "Mayfair",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "3 Savile Row, London W1S 3PB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private office — exterior only. The plaque is subtle, look up at the roof."
+  },
+  {
+    "id": "ml-100-club",
+    "name": "The 100 Club",
+    "description": "Oxford Street basement jazz-and-punk legend since 1942 — hosted the first Sex Pistols' performance of 'Anarchy', plus Muddy Waters, The Rolling Stones, and weekly new bands today.",
+    "neighbourhood": "West End",
+    "musicType": "music-venue",
+    "genre": [
+      "jazz",
+      "punk",
+      "rock",
+      "blues"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "100 Oxford St, London W1D 1LL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saved from closure in 2010 by Paul McCartney's campaign. Cash-friendly bar."
+  },
+  {
+    "id": "ml-marquee-club-site",
+    "name": "Site of the Marquee Club",
+    "description": "The original Marquee Club (Wardour Street, 1964-88) was London's most influential rock venue — The Who, Rolling Stones, Yes, Hendrix residencies. Building replaced but site commemorated.",
+    "neighbourhood": "Soho",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "blues"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "90 Wardour St, London W1F 0TQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Blue plaque at the site. Also 165 Oxford Street (original 1958-64 location) is worth finding."
+  },
+  {
+    "id": "ml-cavendish-square",
+    "name": "Cavendish Square (Amy Winehouse Statue)",
+    "description": "A life-size bronze of Amy Winehouse in Camden's Stables Market — erected in 2014, on what would have been her 31st birthday.",
+    "neighbourhood": "Camden",
+    "musicType": "music-landmark",
+    "genre": [
+      "jazz",
+      "soul",
+      "r-and-b"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Camden Stables Market, London NW1 8AH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Fans leave messages at the plinth. Combine with The Dublin Castle pub where she played."
+  },
+  {
+    "id": "ml-cafe-oto",
+    "name": "Café OTO",
+    "description": "The UK's most important experimental-music venue — Dalston basement where free jazz, drone, improvised, and avant-garde artists play almost nightly.",
+    "neighbourhood": "Dalston",
+    "musicType": "music-venue",
+    "genre": [
+      "experimental",
+      "jazz",
+      "avant-garde"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "art"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "18-22 Ashwin St, London E8 3DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Daytime café, evening gigs. Excellent record/book shop upstairs."
+  },
+  {
+    "id": "ml-vortex-jazz",
+    "name": "The Vortex Jazz Club",
+    "description": "Dalston's 100-seat contemporary-jazz club — Tuesday improv nights, Friday showcases. One of Europe's most respected intimate jazz rooms.",
+    "neighbourhood": "Dalston",
+    "musicType": "music-venue",
+    "genre": [
+      "jazz"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "duration": "2.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "11 Gillett Square, London N16 8AZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free-improv Tuesdays. Excellent sound."
+  },
+  {
+    "id": "ml-jazz-cafe-camden",
+    "name": "Jazz Café Camden",
+    "description": "Camden's 400-cap genre-spanning club — not just jazz; soul, hip-hop, funk, Afrobeat, neo-soul. Early D'Angelo, Kamasi Washington, Little Simz shows.",
+    "neighbourhood": "Camden",
+    "musicType": "music-venue",
+    "genre": [
+      "jazz",
+      "soul",
+      "hip-hop",
+      "funk"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "food"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "5 Parkway, London NW1 7PG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Balcony dining tables book out. Standing is livelier."
+  },
+  {
+    "id": "ml-royal-festival-hall",
+    "name": "Royal Festival Hall",
+    "description": "Festival of Britain's 1951 modernist concert hall — London Philharmonic resident, Philharmonia, and free foyer programmes daily.",
+    "neighbourhood": "South Bank",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "jazz"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Belvedere Rd, London SE1 8XX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free foyer performances most days. Grade I-listed."
+  },
+  {
+    "id": "ml-barbican-hall",
+    "name": "Barbican Hall",
+    "description": "Home of the London Symphony Orchestra and BBC Symphony — 1,943-seat Brutalist concert hall with acoustics designed by Cyril Harris.",
+    "neighbourhood": "City of London",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "contemporary"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "2.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Silk St, London EC2Y 8DS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Under-26 tickets £5-15. Pre-concert talks free with tickets."
+  },
+  {
+    "id": "ml-roundhouse",
+    "name": "The Roundhouse",
+    "description": "Grade II-listed Victorian engine shed turned rock-era venue — hosted Hendrix, The Doors, Pink Floyd, and is now London's premier mid-sized music/circus venue.",
+    "neighbourhood": "Camden",
+    "musicType": "music-venue",
+    "genre": [
+      "rock",
+      "indie",
+      "electronic"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Chalk Farm Rd, London NW1 8EH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Roundhouse Rising emerging-artists festival (September) is a talent-spotter's goldmine."
+  },
+  {
+    "id": "ml-koko-camden",
+    "name": "KOKO Camden",
+    "description": "1900-cap Grade II-listed former theatre — Charlie Chaplin's first performance venue, Rolling Stones filmed 'Rock and Roll Circus' here. Reopened 2022 after fire restoration.",
+    "neighbourhood": "Camden",
+    "musicType": "music-venue",
+    "genre": [
+      "indie",
+      "pop",
+      "rock"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "1A Camden High St, London NW1 7JE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Restored ceiling is spectacular. Rooftop bar for members."
+  },
+  {
+    "id": "ml-hammersmith-apollo",
+    "name": "Eventim Apollo (Hammersmith Odeon)",
+    "description": "5,039-cap Art Deco theatre — where Bowie 'retired' Ziggy Stardust in 1973, where Queen filmed 'A Night at the Opera'. One of London's great atmospheric rooms.",
+    "neighbourhood": "Various",
+    "musicType": "music-venue",
+    "genre": [
+      "rock",
+      "pop",
+      "comedy"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "45 Queen Caroline St, London W6 9QH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Seated-only venue (originally designed for cinema). Stalls middle rows are sweet spot."
+  },
+  {
+    "id": "ml-o2-brixton-academy",
+    "name": "O2 Academy Brixton",
+    "description": "Grade II-listed 4,921-cap Art Deco venue (1929) — generally considered the best mid-sized rock venue in the UK. Springsteen, Dylan, Oasis, Prince all played here.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-venue",
+    "genre": [
+      "rock",
+      "indie",
+      "electronic"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "211 Stockwell Rd, London SW9 9SL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sloped floor means great views from anywhere. Closed 2022-24 after crushing incident — check reopening status."
+  },
+  {
+    "id": "ml-electric-ballroom",
+    "name": "Electric Ballroom Camden",
+    "description": "1,100-cap Camden rock landmark (1938) — Sid Vicious, The Clash, Public Image, U2, Joy Division, and every punk band of note played here.",
+    "neighbourhood": "Camden",
+    "musicType": "music-venue",
+    "genre": [
+      "rock",
+      "punk",
+      "metal"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "184 Camden High St, London NW1 8QP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saturday market runs on-site during the day."
+  },
+  {
+    "id": "ml-troxy",
+    "name": "Troxy",
+    "description": "A 1933 Art Deco cinema turned 3,100-cap concert hall in Limehouse — hosts everything from electronic megastars to opera.",
+    "neighbourhood": "Various",
+    "musicType": "music-venue",
+    "genre": [
+      "electronic",
+      "rock",
+      "classical"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "490 Commercial Rd, London E1 0HX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Chandeliers intact. Opera gala nights worth the ticket."
+  },
+  {
+    "id": "ml-scala-kings-cross",
+    "name": "Scala King's Cross",
+    "description": "A 1920 former cinema turned 1,145-cap nightclub-venue — multi-level, late-license, a London clubbing classic and indie-gig fixture.",
+    "neighbourhood": "King's Cross",
+    "musicType": "music-venue",
+    "genre": [
+      "electronic",
+      "indie",
+      "hip-hop"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "duration": "4h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "275 Pentonville Rd, London N1 9NL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Balcony smoking area is a London institution."
+  },
+  {
+    "id": "ml-lafayette-kings-cross",
+    "name": "Lafayette",
+    "description": "A King's Cross 600-cap venue + restaurant from the Omeara team — high-end sound, balcony dining, refined indie programming.",
+    "neighbourhood": "King's Cross",
+    "musicType": "music-venue",
+    "genre": [
+      "indie",
+      "pop",
+      "electronic"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "food",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "11 Goods Way, London N1C 4PE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dinner-and-show tables book months ahead."
+  },
+  {
+    "id": "ml-earth-hackney",
+    "name": "EartH (Evolutionary Arts Hackney)",
+    "description": "A Grade II-listed 1930s Art Deco cinema turned 2,000-cap venue + restaurant + theatre — experimental programming, genuinely boundary-pushing.",
+    "neighbourhood": "Hackney",
+    "musicType": "music-venue",
+    "genre": [
+      "experimental",
+      "electronic",
+      "indie"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "art"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "11-17 Stoke Newington Rd, London N16 8BH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Multi-space venue — check which room your show's in."
+  },
+  {
+    "id": "ml-london-coliseum",
+    "name": "London Coliseum (English National Opera)",
+    "description": "Frank Matcham's 1904 gilded rococo theatre — home to English National Opera, with the largest theatre capacity in London (2,359).",
+    "neighbourhood": "Covent Garden",
+    "musicType": "music-venue",
+    "genre": [
+      "opera",
+      "classical"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "St Martin's Lane, London WC2N 4ES",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "ENO performs operas in English translation. £10 under-21 tickets."
+  },
+  {
+    "id": "ml-trident-studios",
+    "name": "Trident Studios",
+    "description": "8 St Anne's Court — the Soho studio where Bowie's 'Hunky Dory', Queen's 'Bohemian Rhapsody', Elton John's 'Goodbye Yellow Brick Road', and The Beatles' 'Hey Jude' were recorded.",
+    "neighbourhood": "Soho",
+    "musicType": "recording-studio",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "17 St Anne's Ct, London W1F 0BQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private working studio — exterior only. Plaque commemorates the classic recordings."
+  },
+  {
+    "id": "ml-air-studios",
+    "name": "AIR Studios",
+    "description": "George Martin's Hampstead studio in the former Lyndhurst Hall church — where classical scores for Lord of the Rings, Inception, and Harry Potter were recorded.",
+    "neighbourhood": "Hampstead",
+    "musicType": "recording-studio",
+    "genre": [
+      "orchestral",
+      "film-score",
+      "classical"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Lyndhurst Rd, London NW3 5NG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private studio — exterior only. Occasional open days during Open House weekend."
+  },
+  {
+    "id": "ml-olympic-studios",
+    "name": "Olympic Studios",
+    "description": "A Barnes cinema once home to legendary recording studios — Rolling Stones' 'Sympathy for the Devil', Led Zeppelin II, Hendrix 'Electric Ladyland' recorded here. Now a cinema + café.",
+    "neighbourhood": "Various",
+    "musicType": "recording-studio",
+    "genre": [
+      "rock"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "117-123 Church Rd, London SW13 9HL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Recording plaques throughout the café. Café-cinema combo makes for a great night out."
+  },
+  {
+    "id": "ml-rak-studios",
+    "name": "RAK Studios",
+    "description": "Mickie Most's 1976 studio near Abbey Road — where Kim Wilde, Duran Duran, Bananarama, Adele, Radiohead, and Arctic Monkeys have recorded.",
+    "neighbourhood": "St John's Wood",
+    "musicType": "recording-studio",
+    "genre": [
+      "pop",
+      "rock"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "42-48 Charlbert St, London NW8 7BU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private studio. Walk from Abbey Road — 5 minutes between them."
+  },
+  {
+    "id": "ml-strongroom",
+    "name": "Strongroom Studios",
+    "description": "Shoreditch complex of 14 studios — Spice Girls, Arctic Monkeys, Björk, Gorillaz, Wolf Alice have recorded here. Public bar on-site.",
+    "neighbourhood": "Shoreditch",
+    "musicType": "recording-studio",
+    "genre": [
+      "pop",
+      "indie",
+      "electronic"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "120-124 Curtain Rd, London EC2A 3SQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Strongroom Bar is open to the public — go for a drink, see which acts are in."
+  },
+  {
+    "id": "ml-metropolis-studios",
+    "name": "Metropolis Studios",
+    "description": "Chiswick Power Station turned recording complex — Michael Jackson, Queen, Amy Winehouse, Lady Gaga, Adele all have recorded here.",
+    "neighbourhood": "Chiswick",
+    "musicType": "recording-studio",
+    "genre": [
+      "pop",
+      "rock",
+      "r-and-b"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "The Power House, 70 Chiswick High Rd, London W4 1SY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private studio — exterior visible from the street."
+  },
+  {
+    "id": "ml-eastcote-studios",
+    "name": "Eastcote Studios",
+    "description": "Kilburn recording studio since 1978 — Adele's 21, PJ Harvey, Depeche Mode, The Verve. Quiet, unpretentious, beloved by artists.",
+    "neighbourhood": "Various",
+    "musicType": "recording-studio",
+    "genre": [
+      "rock",
+      "indie",
+      "electronic"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "249 Kilburn Lane, London W10 4BQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Exterior only."
+  },
+  {
+    "id": "ml-denmark-street",
+    "name": "Denmark Street (Tin Pan Alley)",
+    "description": "A tiny Soho street that was the heart of the UK music industry 1960s-90s — Sex Pistols lived at No. 6, Elton John wrote 'Your Song' at No. 20, The Rolling Stones recorded their first demo here.",
+    "neighbourhood": "West End",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop",
+      "punk",
+      "folk"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Denmark St, London WC2H 8LT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Guitar shops still line the street. Bob Marley recorded his first UK sessions here."
+  },
+  {
+    "id": "ml-heddon-street",
+    "name": "Heddon Street (Ziggy Stardust Location)",
+    "description": "The narrow Mayfair alley where Bowie was photographed for the cover of 'The Rise and Fall of Ziggy Stardust and the Spiders from Mars' (1972). Plaque marks the spot.",
+    "neighbourhood": "Mayfair",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "glam"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon",
+      "evening"
+    ],
+    "address": "Heddon St, London W1B 4BE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Now a dining courtyard. Plaque installed 2012. K.West sign was reconstructed."
+  },
+  {
+    "id": "ml-david-bowie-mural",
+    "name": "David Bowie Mural Brixton",
+    "description": "Jimmy C's 2013 Aladdin Sane-era mural opposite Brixton Tube — became an impromptu shrine after Bowie's death in 2016. Now officially protected.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "glam"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "art",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Tunstall Rd, London SW9 8DA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bowie was born in Brixton. Fans still leave flowers and messages."
+  },
+  {
+    "id": "ml-amy-winehouse-camden",
+    "name": "Camden Stables Statue of Amy Winehouse",
+    "description": "A life-size bronze of Amy Winehouse — erected in 2014 on what would have been her 31st birthday, in Camden Stables Market.",
+    "neighbourhood": "Camden",
+    "musicType": "music-landmark",
+    "genre": [
+      "jazz",
+      "soul"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Camden Stables Market, Chalk Farm Rd, London NW1 8AH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pair with The Hawley Arms pub (Chalk Farm Road) — her favourite local."
+  },
+  {
+    "id": "ml-freddie-mercury-house",
+    "name": "Freddie Mercury's House (Garden Lodge)",
+    "description": "Freddie Mercury's Kensington home 1980-91 — a green wall covered with fans' messages since his death. Still privately owned; a pilgrimage site.",
+    "neighbourhood": "Kensington",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "1 Logan Pl, London W8 6QN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Respect neighbours — fans have been messaging the wall since 1991. Don't knock."
+  },
+  {
+    "id": "ml-joe-strummer-subway",
+    "name": "Joe Strummer Mural (Ladbroke Grove)",
+    "description": "Graffiti portrait of The Clash's Joe Strummer on a West London subway wall — a working-class memorial, frequently refreshed by fans.",
+    "neighbourhood": "Various",
+    "musicType": "music-landmark",
+    "genre": [
+      "punk",
+      "rock"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "art",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Portobello Rd area, London W10",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Strummer's Notting Hill roots. Combine with Portobello Road walk."
+  },
+  {
+    "id": "ml-ziggy-stardust-flat",
+    "name": "Haddon Hall, Beckenham (Bowie's Flat)",
+    "description": "The Beckenham flat where David Bowie wrote 'Ziggy Stardust' and 'Hunky Dory' — Grade II-listed detached Victorian, now privately owned. Exterior visit only.",
+    "neighbourhood": "Various",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "glam"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "42 Southend Rd, Beckenham BR3 1SD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "30 min train from Victoria. Blue plaque at the gate."
+  },
+  {
+    "id": "ml-john-lennon-flat",
+    "name": "34 Montagu Square (Lennon/Yoko Flat)",
+    "description": "John Lennon and Yoko Ono's 1968 flat — where they were famously arrested for drugs, and where Ringo Starr, Hendrix, and Paul McCartney also once lived.",
+    "neighbourhood": "Marylebone",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "34 Montagu Square, London W1H 2LJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private flat — blue plaque outside. Hendrix recorded demos here."
+  },
+  {
+    "id": "ml-paul-mccartney-home",
+    "name": "7 Cavendish Avenue (McCartney Home)",
+    "description": "Paul McCartney's St John's Wood home since 1965 — where the final touches to Sgt Pepper's and Abbey Road were done. Still his London residence today.",
+    "neighbourhood": "St John's Wood",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "7 Cavendish Ave, London NW8 9JG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Private residence — respect. Around the corner from Abbey Road."
+  },
+  {
+    "id": "ml-hyde-park-stones",
+    "name": "Hyde Park (Rolling Stones 1969)",
+    "description": "The open-air site of The Rolling Stones' free concert on 5 July 1969 — attended by 250,000, two days after Brian Jones's death. Bob Dylan, Queen, and BST festival have since played here.",
+    "neighbourhood": "Hyde Park",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Hyde Park, London W2 2UH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "BST Hyde Park summer festival holds the same stage tradition."
+  },
+  {
+    "id": "ml-battersea-power-station",
+    "name": "Battersea Power Station (Pink Floyd Album Cover)",
+    "description": "The iconic 1933 power station featured on the cover of Pink Floyd's 1977 album 'Animals' — inflatable pig originally floated over the chimneys.",
+    "neighbourhood": "Battersea",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "prog"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "architecture",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "30m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Battersea Power Station, London SW11 8AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Now a mixed-use development — shops, restaurants, and a viewing lift up one of the chimneys (£15)."
+  },
+  {
+    "id": "ml-rainbow-theatre",
+    "name": "Rainbow Theatre (Finsbury Park)",
+    "description": "Former 1930 Art Deco cinema turned rock venue (1971-82) — Hendrix, The Who, Led Zeppelin, Bob Marley, Pink Floyd all played here. Now a Brazilian Pentecostal church.",
+    "neighbourhood": "Finsbury Park",
+    "musicType": "historic-site",
+    "genre": [
+      "rock"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "232-236 Seven Sisters Rd, London N4 3NX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Exterior Grade II*-listed. Occasional open days."
+  },
+  {
+    "id": "ml-roxy-club",
+    "name": "The Roxy Club Site",
+    "description": "41-43 Neal Street — the Covent Garden venue (1976-78) that hosted the first Sex Pistols gig, The Damned, Generation X, The Clash. A punk Ground Zero.",
+    "neighbourhood": "Covent Garden",
+    "musicType": "historic-site",
+    "genre": [
+      "punk"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "41-43 Neal St, London WC2H 9PJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Now a fashion retailer. Plaque commemorates The Clash's first show."
+  },
+  {
+    "id": "ml-virgin-records",
+    "name": "Virgin Records Original Store",
+    "description": "Richard Branson's original Virgin record shop (1971) — 15-19 South Wharf Road near Paddington. The first retail step before the label.",
+    "neighbourhood": "Marylebone",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Marble Arch area, London W2",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Second flagship at 24 Oxford Street 1976 was equally legendary."
+  },
+  {
+    "id": "ml-rough-trade-west",
+    "name": "Rough Trade West",
+    "description": "The original 1976 Rough Trade in Notting Hill — smaller and more specialist, the root of the Rough Trade label (The Smiths, The Strokes).",
+    "neighbourhood": "Notting Hill",
+    "musicType": "record-shop",
+    "genre": [
+      "indie",
+      "rock",
+      "post-punk"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "130 Talbot Rd, London W11 1JA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Second-hand dig-crate heaven. Portobello Road nearby."
+  },
+  {
+    "id": "ml-sister-ray",
+    "name": "Sister Ray Records",
+    "description": "Soho's longest-serving independent record shop (1987) — broad, knowledgeable, strong on electronic, punk, and alternative.",
+    "neighbourhood": "Soho",
+    "musicType": "record-shop",
+    "genre": [
+      "indie",
+      "rock",
+      "electronic",
+      "punk"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "75 Berwick St, London W1F 8TG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Second-hand section upstairs."
+  },
+  {
+    "id": "ml-sounds-of-universe",
+    "name": "Sounds of the Universe",
+    "description": "Berwick Street specialist record shop — linked to Soul Jazz label, focused on reggae, soul, jazz, funk, and African music.",
+    "neighbourhood": "Soho",
+    "musicType": "record-shop",
+    "genre": [
+      "reggae",
+      "soul",
+      "jazz",
+      "funk",
+      "african"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "7 Broadwick St, London W1F 0DA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Soul Jazz reissues curated on the ground floor."
+  },
+  {
+    "id": "ml-phonica-records",
+    "name": "Phonica Records",
+    "description": "Poland Street specialist in house, techno, disco, and electronica — Europe's most respected DJ record shop.",
+    "neighbourhood": "Soho",
+    "musicType": "record-shop",
+    "genre": [
+      "house",
+      "techno",
+      "disco",
+      "electronic"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "51 Poland St, London W1F 7LZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Listening decks available. Phonica label releases stocked."
+  },
+  {
+    "id": "ml-honest-jons",
+    "name": "Honest Jon's",
+    "description": "Portobello Road specialist since 1974 — reggae, jazz, African, Latin, global music. Damon Albarn's label home; impeccable curation.",
+    "neighbourhood": "Notting Hill",
+    "musicType": "record-shop",
+    "genre": [
+      "reggae",
+      "jazz",
+      "african",
+      "world",
+      "latin"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "278 Portobello Rd, London W10 5TE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saturday market day busiest. Listening decks."
+  },
+  {
+    "id": "ml-reckless-records",
+    "name": "Reckless Records",
+    "description": "Berwick Street's second-hand-focused store since 1984 — rare records, fair prices, a London vinyl-collector's regular haunt.",
+    "neighbourhood": "Soho",
+    "musicType": "record-shop",
+    "genre": [
+      "indie",
+      "rock",
+      "jazz",
+      "electronic"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "30 Berwick St, London W1F 8RH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bring your own unwanted vinyl — they buy."
+  },
+  {
+    "id": "ml-flashback-islington",
+    "name": "Flashback Records",
+    "description": "Three-branch London second-hand specialist (Islington, Crouch End, Shoreditch) — huge stock, strong vintage, frequent bargains.",
+    "neighbourhood": "Islington",
+    "musicType": "record-shop",
+    "genre": [
+      "rock",
+      "jazz",
+      "soul",
+      "funk",
+      "reggae"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "50 Essex Rd, London N1 8LR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Crouch End branch has the best jazz selection; Shoreditch for newer releases."
+  },
+  {
+    "id": "ml-kristina-records",
+    "name": "Kristina Records",
+    "description": "Dalston specialist run by ex-Rough Trade staff — post-punk, electronic, krautrock, jazz. Small, sharp, seriously curated.",
+    "neighbourhood": "Dalston",
+    "musicType": "record-shop",
+    "genre": [
+      "post-punk",
+      "electronic",
+      "krautrock",
+      "jazz"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "44 Stoke Newington Rd, London N16 7XJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tiny — squeeze in past the door."
+  },
+  {
+    "id": "ml-love-vinyl",
+    "name": "Love Vinyl",
+    "description": "Hoxton specialist in house, disco, techno, and soul — a warm DJ-culture shop run by and for crate-diggers.",
+    "neighbourhood": "Hoxton",
+    "musicType": "record-shop",
+    "genre": [
+      "house",
+      "disco",
+      "techno",
+      "soul"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "5 Pearson St, London E2 8JD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "In-store DJ sets Friday evenings."
+  },
+  {
+    "id": "ml-all-ages-camden",
+    "name": "All Ages Records",
+    "description": "Camden Town punk and hardcore specialist since 2003 — the only London shop dedicated to hardcore, DIY, and contemporary punk scenes.",
+    "neighbourhood": "Camden",
+    "musicType": "record-shop",
+    "genre": [
+      "punk",
+      "hardcore",
+      "metal"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "27A Pratt St, London NW1 0BG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Frequent in-store gigs — check calendar."
+  },
+  {
+    "id": "ml-bbc-proms",
+    "name": "BBC Proms",
+    "description": "Eight weeks of world-class classical music at the Royal Albert Hall (July-September) — the largest classical music festival in the world.",
+    "neighbourhood": "Kensington",
+    "musicType": "music-festival",
+    "genre": [
+      "classical"
+    ],
+    "budgetTier": [
+      "budget",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Royal Albert Hall, Kensington Gore, London SW7 2AP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "'Promenading' standing tickets £8 on the day — queue from 11am. Last Night is iconic."
+  },
+  {
+    "id": "ml-london-jazz-festival",
+    "name": "EFG London Jazz Festival",
+    "description": "10-day November festival spanning 60+ venues across London — from Ronnie Scott's to free lunchtime concerts. The biggest UK jazz festival.",
+    "neighbourhood": "Various",
+    "musicType": "music-festival",
+    "genre": [
+      "jazz"
+    ],
+    "budgetTier": [
+      "budget",
+      "premium"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Venues citywide",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free events at Southbank Centre. Mid-November dates."
+  },
+  {
+    "id": "ml-field-day",
+    "name": "Field Day Festival",
+    "description": "One-day electronic-and-indie festival (June) in Brockwell Park — lineups span techno, house, pop, and alternative acts.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-festival",
+    "genre": [
+      "electronic",
+      "indie",
+      "dance"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 80,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Brockwell Park, London SE24",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with Cross the Tracks (following day) for a jazz-soul-funk sister event."
+  },
+  {
+    "id": "ml-cross-the-tracks",
+    "name": "Cross the Tracks Festival",
+    "description": "Brockwell Park's jazz, funk, soul, and reggae festival (late May) — featured Nile Rodgers, Kamasi Washington, Craig Charles.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-festival",
+    "genre": [
+      "jazz",
+      "funk",
+      "soul",
+      "reggae"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Brockwell Park, London SE24",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Family-friendly. Arrive early for sound-system sets."
+  },
+  {
+    "id": "ml-mighty-hoopla",
+    "name": "Mighty Hoopla",
+    "description": "Pop-focused one-day festival (June) in Brockwell Park — a celebration of LGBT+ pop icons and 90s/00s nostalgia.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-festival",
+    "genre": [
+      "pop"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Brockwell Park, London SE24",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Costumes encouraged. Saturdays sell out fast."
+  },
+  {
+    "id": "ml-all-points-east",
+    "name": "All Points East",
+    "description": "Victoria Park's 10-day indie-and-alternative summer festival (May/June) — LCD Soundsystem, The Strokes, Arctic Monkeys have headlined.",
+    "neighbourhood": "Hackney",
+    "musicType": "music-festival",
+    "genre": [
+      "indie",
+      "rock",
+      "electronic"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Victoria Park, London E9",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free 'In the Neighbourhood' Wed-Thu days."
+  },
+  {
+    "id": "ml-wireless-festival",
+    "name": "Wireless Festival",
+    "description": "Europe's biggest urban-music festival (July) — hip-hop, R&B, Afrobeats, rap. Drake, Cardi B, Travis Scott, Stormzy have headlined.",
+    "neighbourhood": "Finsbury Park",
+    "musicType": "music-festival",
+    "genre": [
+      "hip-hop",
+      "r-and-b",
+      "rap",
+      "afrobeats"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 110,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Finsbury Park, London N4",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Three-day passes cheapest."
+  },
+  {
+    "id": "ml-bst-hyde-park",
+    "name": "British Summer Time Hyde Park",
+    "description": "Hyde Park's headline summer concert series (early July) — Springsteen, Billy Joel, Paul McCartney, Adele, and others across two weekends.",
+    "neighbourhood": "Hyde Park",
+    "musicType": "music-festival",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 100,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Hyde Park, London W2",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open House midweek days are free — smaller acts in the park."
+  },
+  {
+    "id": "ml-lovebox",
+    "name": "Lovebox Festival",
+    "description": "Gunnersbury Park's electronic/hip-hop festival (mid-July) — Chase & Status, Frank Ocean, Solange, Skepta have headlined.",
+    "neighbourhood": "Various",
+    "musicType": "music-festival",
+    "genre": [
+      "electronic",
+      "hip-hop",
+      "pop"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Gunnersbury Park, London W3",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sister festival Citadel (family-friendly) runs the following day."
+  },
+  {
+    "id": "ml-meltdown",
+    "name": "Meltdown Festival",
+    "description": "Southbank Centre's annual curated festival (late May-June) — past curators Bowie, Morrissey, Björk, Robert Smith, Patti Smith, Grace Jones.",
+    "neighbourhood": "South Bank",
+    "musicType": "music-festival",
+    "genre": [
+      "rock",
+      "experimental",
+      "classical"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "art"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "duration": "2.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Southbank Centre, Belvedere Rd, London SE1 8XX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Who curates changes annually — an indicator of that year's programme."
+  },
+  {
+    "id": "ml-city-splash",
+    "name": "City Splash Festival",
+    "description": "Reggae and Caribbean music festival (late May) — sound systems, live acts, family-friendly, Brixton's own celebration.",
+    "neighbourhood": "Various",
+    "musicType": "music-festival",
+    "genre": [
+      "reggae",
+      "caribbean",
+      "soca"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "festival"
+    ],
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
+    "duration": "8h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Crystal Palace Park, London SE19",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Family-friendly. Sound-system rigs are the draw."
+  },
+  {
+    "id": "ml-notting-hill-sound-systems",
+    "name": "Notting Hill Carnival Sound Systems",
+    "description": "Europe's biggest street festival (late August bank holiday) — 35+ static sound systems pumping reggae, dub, soca, dancehall across two days.",
+    "neighbourhood": "Notting Hill",
+    "musicType": "music-festival",
+    "genre": [
+      "reggae",
+      "dub",
+      "soca",
+      "dancehall",
+      "afrobeat"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "festival"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "6h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Notting Hill streets, London W11",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday is family-focused; Monday is the big parade. Channel One, King Tubby's Hi-Fi, Aba Shanti-I are legendary rigs."
+  },
+  {
+    "id": "ml-south-west-four",
+    "name": "South West Four",
+    "description": "Clapham Common's annual dance-music festival (late August bank holiday) — trance, techno, house, drum & bass.",
+    "neighbourhood": "Clapham",
+    "musicType": "music-festival",
+    "genre": [
+      "electronic",
+      "trance",
+      "drum-and-bass",
+      "house"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 90,
+      "currency": "GBP"
+    },
+    "duration": "10h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Clapham Common, London SW4",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Weekend tickets. Bank-holiday Monday."
+  },
+  {
+    "id": "ml-st-martins-lunchtime",
+    "name": "St Martin-in-the-Fields Lunchtime Concerts",
+    "description": "Free classical concerts Monday, Tuesday, and Friday at 1pm — 45 minutes in Gibbs's 1726 neoclassical church.",
+    "neighbourhood": "Westminster",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "chamber"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Trafalgar Square, London WC2N 4JJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free, suggested donation. Evening candlelit concerts (£15-30) also excellent."
+  },
+  {
+    "id": "ml-st-pauls-evensong",
+    "name": "Evensong at St Paul's Cathedral",
+    "description": "Daily (except Wednesday) 17:00 sung Evensong — the St Paul's Cathedral Choir, in the Wren dome, with acoustics that transform the experience.",
+    "neighbourhood": "City of London",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "choral",
+      "sacred"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "St Paul's Churchyard, London EC4M 8AD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free (no cathedral entry fee for Evensong). One of London's great musical rituals."
+  },
+  {
+    "id": "ml-westminster-abbey-evensong",
+    "name": "Evensong at Westminster Abbey",
+    "description": "Weekday Evensong (17:00) at Westminster Abbey — the Abbey Choir, polyphony at its most exquisite, free with no Abbey entry fee.",
+    "neighbourhood": "Westminster",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "choral",
+      "sacred"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "20 Deans Yd, London SW1P 3PA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Arrive 16:40. Sit in the quire stalls if allowed."
+  },
+  {
+    "id": "ml-st-johns-smith",
+    "name": "St John's Smith Square",
+    "description": "Thomas Archer's 1728 English Baroque church turned classical-music venue — superb acoustics for chamber, choral, and early music.",
+    "neighbourhood": "Westminster",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "chamber",
+      "early-music"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Smith Square, London SW1P 3HA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Also known as 'Queen Anne's footstool' for its four-corner towers."
+  },
+  {
+    "id": "ml-milton-court",
+    "name": "Milton Court Concert Hall",
+    "description": "Guildhall School of Music's 608-seat purpose-built concert hall next to the Barbican — student performances are often world-class and cheap.",
+    "neighbourhood": "City of London",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "chamber",
+      "opera"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "1 Milton St, London EC2Y 9BH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Student concerts often free — check website."
+  },
+  {
+    "id": "ml-royal-academy-music-museum",
+    "name": "Royal Academy of Music Museum",
+    "description": "Britain's oldest music conservatoire (1822) — free museum of historic instruments, manuscripts, and recordings by Menuhin, Elton John, and more.",
+    "neighbourhood": "Marylebone",
+    "musicType": "music-museum",
+    "genre": [
+      "classical"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "art"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Marylebone Rd, London NW1 5HT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free. Student recitals also free — check website."
+  },
+  {
+    "id": "ml-royal-college-museum",
+    "name": "Royal College of Music Museum",
+    "description": "Royal College of Music's free museum — 800 instruments from 15th century to present, including the world's oldest surviving guitar (1567).",
+    "neighbourhood": "South Kensington",
+    "musicType": "music-museum",
+    "genre": [
+      "classical",
+      "folk"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Prince Consort Rd, London SW7 2BS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free. Student recitals also frequently free."
+  },
+  {
+    "id": "ml-horniman-instruments",
+    "name": "Horniman Museum Music Gallery",
+    "description": "One of the UK's finest collections of musical instruments — 1,300 instruments from 6 continents, with interactive listening posts.",
+    "neighbourhood": "Various",
+    "musicType": "music-museum",
+    "genre": [
+      "world",
+      "classical",
+      "folk"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "family",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "100 London Rd, London SE23 3PQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free. Family-friendly interactive stations."
+  },
+  {
+    "id": "ml-va-theatre-performance",
+    "name": "V&A Theatre & Performance Collection",
+    "description": "The V&A's free permanent gallery dedicated to UK performing arts — iconic Bowie, Elton, Kate Bush costumes, Swinging 60s memorabilia.",
+    "neighbourhood": "South Kensington",
+    "musicType": "music-museum",
+    "genre": [
+      "rock",
+      "pop",
+      "theatre"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "art"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Cromwell Rd, London SW7 2RL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free. Includes the ceremonial Olivier Award and music-industry archives."
+  },
+  {
+    "id": "ml-british-library-sound",
+    "name": "British Library Sound Archive",
+    "description": "The UK's national sound archive — 7 million recordings, with public 'Sounds' listening booths inside the library, free to use.",
+    "neighbourhood": "King's Cross",
+    "musicType": "music-museum",
+    "genre": [
+      "classical",
+      "folk",
+      "rock",
+      "speech"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "music",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "96 Euston Rd, London NW1 2DB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free to use. Book a listening booth at the information desk."
+  },
+  {
+    "id": "ml-beatles-store-baker",
+    "name": "The Beatles Store",
+    "description": "Baker Street's official Beatles memorabilia store — walls of rare photographs, limited vinyl, replica instruments, the biggest Beatles retail in London.",
+    "neighbourhood": "Marylebone",
+    "musicType": "music-museum",
+    "genre": [
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "231-233 Baker St, London NW1 6XE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free to browse. Combine with Sherlock Holmes Museum next door."
+  },
+  {
+    "id": "ml-fender-london",
+    "name": "Fender London",
+    "description": "Fender Europe's flagship store and try-out showroom — more Fender guitars than anywhere else in Europe, live amps to play through.",
+    "neighbourhood": "West End",
+    "musicType": "music-museum",
+    "genre": [
+      "rock",
+      "blues",
+      "indie"
+    ],
+    "budgetTier": [
+      "budget",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "1h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Tottenham Ct Rd area, London W1T",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free to try any guitar — bring your own picks."
+  },
+  {
+    "id": "ml-george-tavern",
+    "name": "The George Tavern",
+    "description": "A 17th-century Stepney pub with a 180-cap basement venue — Amy Winehouse played here; experimental and indie programming today.",
+    "neighbourhood": "Various",
+    "musicType": "music-pub",
+    "genre": [
+      "indie",
+      "experimental",
+      "folk"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "373 Commercial Rd, London E1 0LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Save-the-George campaign saved it from demolition. Support the venue."
+  },
+  {
+    "id": "ml-hope-anchor",
+    "name": "The Hope & Anchor",
+    "description": "Islington's pub-rock shrine since 1975 — Joy Division, U2, The Specials, Madness all played here early in their careers.",
+    "neighbourhood": "Islington",
+    "musicType": "music-pub",
+    "genre": [
+      "rock",
+      "pub-rock",
+      "punk"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "207 Upper St, London N1 1BZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Basement venue, 70-cap. Gigs most nights."
+  },
+  {
+    "id": "ml-drumsheds",
+    "name": "Drumsheds (Printworks successor)",
+    "description": "A vast Tottenham ex-industrial venue — Broadwick Live's successor to Printworks, with 15,000+ capacity electronic events.",
+    "neighbourhood": "Various",
+    "musicType": "music-venue",
+    "genre": [
+      "electronic",
+      "techno",
+      "house"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "nightlife",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "6h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Meridian Water, London N17",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Meridian Water station. Check event calendar."
+  },
+  {
+    "id": "ml-dublin-castle-memorial",
+    "name": "Denmark Street Heritage Walk",
+    "description": "Self-guided walk along Tin Pan Alley — pointing out the flats, offices, and shops of Elton John, David Bowie, Sex Pistols, The Rolling Stones.",
+    "neighbourhood": "West End",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop",
+      "punk",
+      "folk"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Denmark St, London WC2H 8LT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Plaques along the street. No. 6 was Sex Pistols' flat; No. 20 where Elton John wrote Your Song."
+  },
+  {
+    "id": "ml-london-jazz-school",
+    "name": "Trinity Laban Conservatoire",
+    "description": "Daniel Libeskind's Laban Building in Deptford — the UK's biggest contemporary dance and music conservatoire. Student concerts are often free.",
+    "neighbourhood": "Deptford",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "jazz",
+      "contemporary"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Creekside, London SE8 3DZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Student showcases frequently free. Blackheath Halls is associated."
+  },
+  {
+    "id": "ml-magic-circle-music",
+    "name": "Regent Street Cinema Silent Film Concerts",
+    "description": "The cinema where the Lumière brothers first screened to the UK public (1896) — regular silent-film-with-live-orchestra concerts.",
+    "neighbourhood": "West End",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "film-score"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "309 Regent St, London W1B 2UW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Only cinema in London still projecting 35mm regularly."
+  },
+  {
+    "id": "ml-carnaby-street",
+    "name": "Carnaby Street (Swinging 60s)",
+    "description": "The heart of Swinging London — where The Who, The Small Faces, and the Mod scene converged. Original boutiques mostly gone but plaques mark the history.",
+    "neighbourhood": "Soho",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "mod",
+      "pop"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "shopping",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "30m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Carnaby St, London W1F",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Christmas lights installation famously music-themed each year."
+  },
+  {
+    "id": "ml-apple-boutique",
+    "name": "Apple Boutique Site (94 Baker St)",
+    "description": "The Beatles' short-lived 1967 psychedelic clothing boutique — original murals painted by Dutch collective The Fool; closed after 7 months.",
+    "neighbourhood": "Marylebone",
+    "musicType": "historic-site",
+    "genre": [
+      "rock",
+      "pop",
+      "psychedelic"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "10m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "94 Baker St, London W1U 6TQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Now a different shop — plaque outside."
+  },
+  {
+    "id": "ml-bolan-tree",
+    "name": "Marc Bolan's Tree",
+    "description": "The tree in Barnes where Marc Bolan (T. Rex) died in a car crash on 16 September 1977 — now a bronze-plaqued shrine.",
+    "neighbourhood": "Various",
+    "musicType": "music-landmark",
+    "genre": [
+      "rock",
+      "glam"
+    ],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "15m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Queen's Ride, Barnes, London SW13",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Fans still leave tributes. Anniversary vigils draw crowds."
+  },
+  {
+    "id": "ml-handel-hendrix",
+    "name": "Handel & Hendrix in London",
+    "description": "Two legendary musicians 200 years apart lived in adjoining Mayfair houses — Handel at No. 25 (1723-1759), Hendrix at No. 23 (1968-69). Both preserved as museum homes.",
+    "neighbourhood": "Mayfair",
+    "musicType": "music-museum",
+    "genre": [
+      "classical",
+      "rock",
+      "blues"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "literary",
+      "music"
+    ],
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "duration": "1.5h",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "25 Brook St, London W1K 4HB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Hendrix's flat restored to 1969 — his guitars, album collection, and ashtrays exactly where he left them."
+  },
+  {
+    "id": "ml-ronnie-scotts",
+    "name": "Ronnie Scott's Jazz Club",
+    "description": "London's most legendary jazz club, open since 1959 — Miles Davis, Ella Fitzgerald, Chet Baker and countless giants have played this Frith Street basement.",
+    "neighbourhood": "Soho",
+    "musicType": "music-venue",
+    "genre": [
+      "jazz"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "food"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "47 Frith St, London W1D 4HT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Late show (11:30pm) cheaper than main show. Dinner tables best for view."
+  },
+  {
+    "id": "ml-royal-albert-hall",
+    "name": "Royal Albert Hall",
+    "description": "Victorian domed concert hall (1871) — home of the BBC Proms, site of Hendrix's 1969 gig, Cream's farewell, Adele's live album, and countless classical landmarks.",
+    "neighbourhood": "Kensington",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "rock",
+      "pop"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Kensington Gore, London SW7 2AP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Proms standing tickets £8 on the day. Daytime tours £18."
+  },
+  {
+    "id": "ml-wigmore-hall",
+    "name": "Wigmore Hall",
+    "description": "One of the world's finest chamber-music recital halls (1901) — 552 seats under a painted cupola, Arts and Crafts decor, legendary acoustics.",
+    "neighbourhood": "Marylebone",
+    "musicType": "music-venue",
+    "genre": [
+      "classical",
+      "chamber"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "architecture"
+    ],
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "36 Wigmore St, London W1U 2BP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday coffee concerts £20 — best value in classical London."
+  },
+  {
+    "id": "ml-union-chapel",
+    "name": "Union Chapel",
+    "description": "Working 1877 Gothic chapel that doubles as London's most beautiful 900-cap music venue — stained glass, pews, extraordinary acoustics.",
+    "neighbourhood": "Islington",
+    "musicType": "music-venue",
+    "genre": [
+      "folk",
+      "classical",
+      "indie",
+      "singer-songwriter"
+    ],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "2.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "19b Compton Terrace, London N1 2UN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pew seating — arrive early for front rows. Daytime Sanctuary Series is free."
+  },
+  {
+    "id": "ml-dublin-castle",
+    "name": "The Dublin Castle",
+    "description": "Camden pub where Madness broke through and where Amy Winehouse later held court — 180-cap back room still hosts nightly new-band gigs.",
+    "neighbourhood": "Camden",
+    "musicType": "music-pub",
+    "genre": [
+      "indie",
+      "ska",
+      "rock"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "94 Parkway, London NW1 7AN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cash-only. Gigs nightly £5-10."
+  },
+  {
+    "id": "ml-windmill-brixton",
+    "name": "Windmill Brixton",
+    "description": "Tiny 80-cap Brixton pub-venue that launched Fat White Family, shame, Black Country New Road — incubator of London's post-punk revival.",
+    "neighbourhood": "Brixton",
+    "musicType": "music-pub",
+    "genre": [
+      "post-punk",
+      "indie",
+      "experimental"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "22 Blenheim Gardens, London SW2 5BZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cash-friendly. Frequent sell-outs — arrive early."
+  },
+  {
+    "id": "ml-good-mixer",
+    "name": "The Good Mixer",
+    "description": "Camden's Britpop shrine — Blur, Oasis, Pulp, Elastica all drank here in the 1990s. Unchanged pub, jukebox, pool table.",
+    "neighbourhood": "Camden",
+    "musicType": "music-pub",
+    "genre": [
+      "indie",
+      "britpop"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "duration": "1.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "30 Inverness St, London NW1 7HJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Famous Blur–Oasis rivalry nearly came to blows here."
+  },
+  {
+    "id": "ml-wiltons-music-hall",
+    "name": "Wilton's Music Hall",
+    "description": "The world's oldest surviving grand music hall (1858) — 350-cap, deliberately un-restored. Folk, cabaret, chamber music, theatre.",
+    "neighbourhood": "Wapping",
+    "musicType": "music-venue",
+    "genre": [
+      "folk",
+      "cabaret",
+      "chamber",
+      "jazz"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "duration": "2.5h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "1 Grace's Alley, London E1 8JB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Mahogany Bar open without a ticket. Victorian time capsule."
+  },
+  {
+    "id": "ml-hawley-arms",
+    "name": "The Hawley Arms",
+    "description": "Camden pub where Amy Winehouse, Kate Moss, Pete Doherty held court mid-2000s — beer garden, Sunday roasts, music-trivia nights.",
+    "neighbourhood": "Camden",
+    "musicType": "music-pub",
+    "genre": [
+      "indie",
+      "rock"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "nightlife"
+    ],
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "2 Castlehaven Rd, London NW1 8QU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Amy-themed photo wall upstairs. Burned down 2008, rebuilt."
+  },
+  {
+    "id": "ml-royal-opera-house",
+    "name": "Royal Opera House",
+    "description": "Covent Garden's 2,256-seat opera house — world-class Royal Opera and Royal Ballet, with the spectacular glass Floral Hall bar.",
+    "neighbourhood": "Covent Garden",
+    "musicType": "music-venue",
+    "genre": [
+      "opera",
+      "ballet",
+      "classical"
+    ],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 55,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Bow St, London WC2E 9DD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Day-seats from £10 — queue from 10am. Tours offered daily."
+  },
+  {
+    "id": "ml-shepherds-bush-empire",
+    "name": "O2 Shepherd's Bush Empire",
+    "description": "Frank Matcham's 1903 music hall turned 2,000-cap rock venue — intimate for its size, acoustically warm, beloved by artists and fans.",
+    "neighbourhood": "Various",
+    "musicType": "music-venue",
+    "genre": [
+      "rock",
+      "indie",
+      "pop"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "architecture",
+      "history"
+    ],
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "duration": "3h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "Shepherd's Bush Green, London W12 8TT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Upper circle has best sight-lines."
+  },
+  {
+    "id": "ml-rough-trade-east",
+    "name": "Rough Trade East",
+    "description": "Brick Lane's indie record shop-and-venue — in-store gigs from Arctic Monkeys to Florence + The Machine; a London music-fan institution.",
+    "neighbourhood": "Spitalfields",
+    "musicType": "record-shop",
+    "genre": [
+      "indie",
+      "rock",
+      "electronic"
+    ],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "shopping"
+    ],
+    "estimatedCost": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "duration": "45m",
+    "bestTimeOfDay": [
+      "afternoon"
+    ],
+    "address": "Dray Walk, 91 Brick Ln, London E1 6QL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Daily free in-store performances — schedule on their website."
+  },
+  {
+    "id": "ml-troubadour",
+    "name": "The Troubadour",
+    "description": "1954 Earl's Court coffee-house venue — Bob Dylan's first UK gig (1962), Hendrix open-mic nights, still programming folk and singer-songwriter.",
+    "neighbourhood": "Kensington",
+    "musicType": "music-venue",
+    "genre": [
+      "folk",
+      "singer-songwriter",
+      "acoustic"
+    ],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "history",
+      "food"
+    ],
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "duration": "2h",
+    "bestTimeOfDay": [
+      "evening"
+    ],
+    "address": "263-267 Old Brompton Rd, London SW5 9JA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Upstairs café, downstairs venue. Open-mic Wednesdays."
+  }
+]

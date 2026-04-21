@@ -4124,5 +4124,48 @@
         "time": "20:30 - 22:00"
       }
     ]
+  },
+  {
+    "id": "musical-london-day",
+    "name": "Musical London Pilgrimage",
+    "primaryTags": [
+      "music",
+      "history",
+      "photography"
+    ],
+    "preferredNeighbourhoods": [
+      "St John's Wood",
+      "Soho",
+      "Camden",
+      "Mayfair"
+    ],
+    "premium": true,
+    "slots": [
+      {
+        "period": "morning",
+        "type": "attraction",
+        "time": "09:30 - 12:00"
+      },
+      {
+        "period": "lunch",
+        "type": "restaurant",
+        "time": "12:30 - 13:30"
+      },
+      {
+        "period": "afternoon",
+        "type": "attraction",
+        "time": "14:00 - 17:00"
+      },
+      {
+        "period": "dinner",
+        "type": "restaurant",
+        "time": "18:30 - 20:00"
+      },
+      {
+        "period": "evening",
+        "type": "nightlife",
+        "time": "20:30 - 23:30"
+      }
+    ]
   }
 ]
