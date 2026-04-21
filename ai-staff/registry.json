@@ -206,7 +206,7 @@
       "outputFormat": "json",
       "autoPublish": false,
       "humanGated": false,
-      "description": "Audits 900+ venue database for closures, price changes, missing data; suggests new venues weekly."
+      "description": "Audits 2,000+ venue database for closures, price changes, missing data; suggests new venues weekly."
     },
     {
       "id": "customer-journey",

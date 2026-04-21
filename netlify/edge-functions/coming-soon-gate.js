@@ -18,6 +18,8 @@ const ALLOWED_PATHS = new Set([
   '/partners.html', '/partners',
   '/share-trip.html', '/share-trip',
   '/free-guide.html', '/free-guide',
+  '/contact.html', '/contact',
+  '/hidden-london.html', '/hidden-london',
   '/coming-soon.html', '/coming-soon',
   '/manifest.json', '/sw.js', '/robots.txt', '/sitemap.xml',
   '/og-image.svg', '/favicon.ico', '/favicon.svg'

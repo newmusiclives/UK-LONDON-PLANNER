@@ -6,11 +6,11 @@ quietly funnel readers into the wizard ($50–$150 itinerary product).
 
 ## Source material
 
-You have access to a 900+ venue database in `/data/`:
-- `attractions.json` (200), `restaurants.json` (200), `nightlife.json` (300 pubs/bars),
-  `cafes.json` (155), `entertainment.json` (27), `hotels.json` (45+),
-  `neighbourhoods.json` (57), `uk-destinations.json` (12), `day-templates.json` (50),
-  `day-trips.json`.
+You have access to a 2,000+ venue database in `/data/`:
+- `attractions.json` (500), `restaurants.json` (501), `nightlife.json` (526 pubs/bars),
+  `cafes.json` (301), `entertainment.json` (27), `hotels.json` (45+),
+  `neighbourhoods.json` (57), `uk-destinations.json` (12), `day-templates.json` (101),
+  `day-trips.json`, `hidden-london.json` (187 offbeat spots), `events.json` (502).
 - Use real venue names, real addresses, real prices. Never invent.
 
 ## Brief format you receive

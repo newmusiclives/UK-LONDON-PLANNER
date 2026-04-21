@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden London — 187 Secret Spots Locals Know About | London Planned</title>
+  <meta name="description" content="Discover London's hidden gems — secret gardens, forgotten churches, subterranean wonders, quirky museums, and 180+ places most visitors never see.">
+  <meta property="og:title" content="Hidden London — Secret Spots Locals Know About">
+  <meta property="og:description" content="187 genuinely hidden corners of London — ghost signs, underground rivers, secret gardens, tiny museums, and the quirks most guidebooks miss.">
+  <meta property="og:url" content="https://londonplanned.com/hidden-london">
+  <link rel="canonical" href="https://londonplanned.com/hidden-london">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Hidden London",
+    "description": "Secret spots, hidden gems, and lesser-known places across London.",
+    "publisher": { "@type": "Organization", "name": "London Planned" }
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="site-header"></header>
+  <main class="main" id="main-content">
+    <section class="section section--dark" style="text-align:center;padding:4rem 0;">
+      <div class="container">
+        <h1 style="color:white;">Hidden London</h1>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.8);max-width:640px;margin:0 auto;">187 secret spots locals know about — ghost signs, forgotten churches, underground rivers, quirky museums, tiny alleys, and the London corners most guidebooks miss.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem;" id="type-filters">
+          <button class="chip active" data-type="all">All</button>
+        </div>
+
+        <div class="grid grid--3" id="hidden-grid">
+          <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">Loading hidden gems…</div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+          <h3 style="margin-bottom:1rem;">Build a Trip Around These Places</h3>
+          <p style="color:var(--color-text-muted);margin-bottom:1.5rem;">Our itinerary builder weaves in the offbeat alongside the classics</p>
+          <a href="wizard.html" class="btn btn--primary btn--large">Plan My Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/env-bridge.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/feature-flags.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    const DISCOVERY_LABELS = {
+      'quirky-museum': '🏛️ Quirky Museum',
+      'hidden-garden': '🌿 Hidden Garden',
+      'hidden-alley': '🚪 Hidden Alley',
+      'secret-church': '⛪ Secret Church',
+      'street-art': '🎨 Street Art',
+      'ghost-sign': '🪧 Ghost Sign',
+      'underground': '⬇️ Underground',
+      'architectural-gem': '🏢 Architectural Gem',
+      'historic-oddity': '🕰️ Historic Oddity',
+      'urban-oddity': '✨ Urban Oddity',
+      'hidden-memorial': '🕯️ Hidden Memorial',
+      'hidden-statue': '🗿 Hidden Statue',
+      'free-viewpoint': '👁️ Free Viewpoint',
+      'forgotten-industry': '⚙️ Forgotten Industry',
+      'hidden-gem': '💎 Hidden Gem',
+      'immersive': '🎭 Immersive',
+      'time-capsule': '📦 Time Capsule',
+      'trail': '🚶 Trail',
+      'ruins': '🏚️ Ruins'
+    };
+
+    let allItems = [];
+    let activeType = 'all';
+
+    async function load() {
+      try {
+        const res = await fetch('/data/hidden-london.json');
+        allItems = await res.json();
+      } catch (err) {
+        console.error('Failed to load hidden-london.json', err);
+        document.getElementById('hidden-grid').innerHTML =
+          '<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">Could not load hidden gems. Try refreshing.</div>';
+        return;
+      }
+
+      // Build type filter chips from discoveryType values present in the data
+      const types = [...new Set(allItems.map(i => i.discoveryType).filter(Boolean))].sort();
+      const filterRow = document.getElementById('type-filters');
+      for (const t of types) {
+        const label = DISCOVERY_LABELS[t] || t;
+        const btn = document.createElement('button');
+        btn.className = 'chip';
+        btn.dataset.type = t;
+        btn.textContent = label;
+        btn.addEventListener('click', () => {
+          activeType = t;
+          document.querySelectorAll('#type-filters .chip').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          render();
+        });
+        filterRow.appendChild(btn);
+      }
+
+      // Wire "All" chip
+      filterRow.querySelector('[data-type="all"]').addEventListener('click', () => {
+        activeType = 'all';
+        document.querySelectorAll('#type-filters .chip').forEach(c => c.classList.remove('active'));
+        filterRow.querySelector('[data-type="all"]').classList.add('active');
+        render();
+      });
+
+      render();
+    }
+
+    function render() {
+      const items = activeType === 'all'
+        ? allItems
+        : allItems.filter(i => i.discoveryType === activeType);
+
+      const grid = document.getElementById('hidden-grid');
+      if (!items.length) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--color-text-muted);">No matches. Try a different filter.</div>';
+        return;
+      }
+
+      grid.innerHTML = items.map(i => {
+        const typeLabel = DISCOVERY_LABELS[i.discoveryType] || i.discoveryType || '';
+        const cost = i.estimatedCost?.amount === 0 ? 'FREE'
+          : i.estimatedCost ? `£${i.estimatedCost.amount}` : '';
+        return `
+          <div class="card">
+            <div class="card__body">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;margin-bottom:0.75rem;">
+                <span class="badge badge--accent" style="font-size:0.7rem;">${typeLabel}</span>
+                ${cost === 'FREE' ? '<span class="badge badge--success" style="font-size:0.7rem;">FREE</span>' : cost ? `<span class="badge" style="font-size:0.7rem;">${cost}</span>` : ''}
+              </div>
+              <h4 style="margin-bottom:0.5rem;">${i.name}</h4>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:0.75rem;">${i.description}</p>
+              <div style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:0.5rem;">📍 ${i.neighbourhood || ''}</div>
+              ${i.tips ? `<div style="font-size:0.8rem;font-style:italic;color:var(--color-text-muted);padding-top:0.5rem;border-top:1px solid var(--color-border);">💡 ${i.tips}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      UI.init();
+      load();
+    });
+  </script>
+</body>
+</html>
