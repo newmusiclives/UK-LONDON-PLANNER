@@ -1,0 +1,5022 @@
+[
+  {
+    "name": "London International Mime Festival",
+    "month": 0,
+    "dateRange": "Mid-January",
+    "venue": "Various venues",
+    "neighbourhood": "West End",
+    "description": "World-class visual theatre, mime, and puppetry performances across London.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Lumiere London",
+    "month": 0,
+    "dateRange": "Late January",
+    "venue": "Various locations",
+    "neighbourhood": "West End",
+    "description": "A spectacular free light festival transforming London landmarks with immersive installations.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "January Sales",
+    "month": 0,
+    "dateRange": "All January",
+    "venue": "Oxford Street, Regent Street, Westfield",
+    "neighbourhood": "West End",
+    "description": "Major sales across all London shops with up to 70% off at top retailers.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "London Short Film Festival",
+    "month": 0,
+    "dateRange": "Mid-January",
+    "venue": "ICA & various cinemas",
+    "neighbourhood": "St James's",
+    "description": "Showcasing the best new short films from around the world.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Chinese New Year Preparations",
+    "month": 0,
+    "dateRange": "Late January",
+    "venue": "Chinatown",
+    "neighbourhood": "Soho",
+    "description": "Chinatown begins decorating for the upcoming Chinese New Year celebrations.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Chinese New Year Celebrations",
+    "month": 1,
+    "dateRange": "Late Jan/Early Feb",
+    "venue": "Trafalgar Square & Chinatown",
+    "neighbourhood": "Soho",
+    "description": "The largest Chinese New Year celebrations outside Asia. Dragon dances, performances, and incredible food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Six Nations Rugby",
+    "month": 1,
+    "dateRange": "Feb-March weekends",
+    "venue": "Twickenham Stadium",
+    "neighbourhood": "Richmond",
+    "description": "England home matches in the Six Nations Championship. Electric atmosphere.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "London Fashion Week",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "One of the Big Four fashion weeks. Some shows and exhibitions open to public.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Valentine's Day Events",
+    "month": 1,
+    "dateRange": "14 February",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Special dinners, shows, and romantic experiences across London. Book well ahead.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Pancake Day Races",
+    "month": 1,
+    "dateRange": "Shrove Tuesday",
+    "venue": "Various locations",
+    "neighbourhood": "Various",
+    "description": "Traditional pancake races across London including the famous Great Spitalfields Pancake Race.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "St Patrick's Day Parade",
+    "month": 2,
+    "dateRange": "17 March weekend",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Parade, live music, dancing, and Irish food stalls celebrating St Patrick's Day.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Head of the River Race",
+    "month": 2,
+    "dateRange": "Mid-March",
+    "venue": "Thames, Mortlake to Putney",
+    "neighbourhood": "Various",
+    "description": "Over 400 crews race along the Thames. Great to watch from the riverbank.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Kew Orchid Festival",
+    "month": 2,
+    "dateRange": "Feb-March",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Spectacular orchid displays in the Princess of Wales Conservatory.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Oxford & Cambridge Boat Race",
+    "month": 2,
+    "dateRange": "Late March/Early April",
+    "venue": "Thames, Putney to Mortlake",
+    "neighbourhood": "Various",
+    "description": "The historic university boat race. Free to watch from the riverbanks and bridges.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "London Coffee Festival",
+    "month": 2,
+    "dateRange": "Late March",
+    "venue": "Old Truman Brewery",
+    "neighbourhood": "Shoreditch",
+    "description": "Hundreds of coffee brands, tastings, latte art, and barista workshops.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Marathon",
+    "month": 3,
+    "dateRange": "Late April",
+    "venue": "Greenwich to The Mall",
+    "neighbourhood": "Various",
+    "description": "One of the world's greatest marathons. Amazing atmosphere for spectators along the route.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Easter Events",
+    "month": 3,
+    "dateRange": "Easter weekend",
+    "venue": "Various parks and venues",
+    "neighbourhood": "Various",
+    "description": "Egg hunts, spring festivals, and special family events at major attractions.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Shakespeare's Globe Season Opens",
+    "month": 3,
+    "dateRange": "Mid-April",
+    "venue": "Shakespeare's Globe",
+    "neighbourhood": "Bankside",
+    "description": "The outdoor theatre season begins. Standing tickets from £5 — one of London's best cultural bargains.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "London Games Festival",
+    "month": 3,
+    "dateRange": "Early April",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "Gaming events, tournaments, and exhibitions across London.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Vaisakhi Festival",
+    "month": 3,
+    "dateRange": "Mid-April",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Celebrating Sikh new year with music, dance, and free food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Chelsea Flower Show",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Royal Hospital Chelsea",
+    "neighbourhood": "Chelsea",
+    "description": "The world's most prestigious flower show. RHS members get priority, public days sell out fast.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Underbelly Festival",
+    "month": 4,
+    "dateRange": "May-September",
+    "venue": "Cavernmouth, South Bank",
+    "neighbourhood": "South Bank",
+    "description": "Free entry venue with circus, comedy, cabaret, and street food all summer.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Night Tales",
+    "month": 4,
+    "dateRange": "May-September",
+    "venue": "Various locations",
+    "neighbourhood": "Shoreditch",
+    "description": "Open-air street food, cocktails, DJs, and mini golf in East London.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Museums at Night",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Various museums",
+    "neighbourhood": "Various",
+    "description": "Special late-night openings at museums and galleries across London.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "London Craft Beer Festival",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Tobacco Dock",
+    "neighbourhood": "Wapping",
+    "description": "Over 100 independent breweries pouring their best. Live music and street food.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Trooping the Colour",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Horse Guards Parade",
+    "neighbourhood": "Westminster",
+    "description": "The King's official birthday celebration. Spectacular military ceremony and RAF flypast.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Taste of London",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Regent's Park",
+    "neighbourhood": "Marylebone",
+    "description": "London's top restaurants serve taster dishes. Celebrity chef demos and foodie masterclasses.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Pride in London",
+    "month": 5,
+    "dateRange": "Late June",
+    "venue": "Central London parade",
+    "neighbourhood": "Various",
+    "description": "One of the biggest Pride events in Europe. Parade, live stages, and celebrations across the city.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Royal Ascot",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Ascot Racecourse",
+    "neighbourhood": "Berkshire (day trip)",
+    "description": "The most glamorous event in the racing calendar. Amazing hats and exciting racing.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Open Air Theatre Season",
+    "month": 5,
+    "dateRange": "June-September",
+    "venue": "Regent's Park Open Air Theatre",
+    "neighbourhood": "Marylebone",
+    "description": "World-class productions under the stars. Bring a picnic and a blanket.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Wimbledon Championships",
+    "month": 6,
+    "dateRange": "Early-Mid July",
+    "venue": "All England Club",
+    "neighbourhood": "Wimbledon",
+    "description": "The most prestigious tennis tournament in the world. Queue for day tickets or watch on the big screen.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "BBC Proms",
+    "month": 6,
+    "dateRange": "July-September",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "8 weeks of world-class classical music. Promenading (standing) tickets from £8 on the day.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "British Summer Time Hyde Park",
+    "month": 6,
+    "dateRange": "Early July",
+    "venue": "Hyde Park",
+    "neighbourhood": "Hyde Park",
+    "description": "Major outdoor concerts in Hyde Park featuring world-famous headliners.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Lovebox Festival",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Gunnersbury Park",
+    "neighbourhood": "Chiswick",
+    "description": "Popular music festival with electronic, hip-hop, and pop acts.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Somerset House Summer Series",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Somerset House",
+    "neighbourhood": "Covent Garden",
+    "description": "Live music in the stunning courtyard of Somerset House.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Notting Hill Carnival",
+    "month": 7,
+    "dateRange": "Late August bank holiday",
+    "venue": "Notting Hill streets",
+    "neighbourhood": "Notting Hill",
+    "description": "Europe's biggest street festival. Caribbean music, spectacular costumes, and incredible food. 2 million attendees.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "All Points East",
+    "month": 7,
+    "dateRange": "Mid-August",
+    "venue": "Victoria Park",
+    "neighbourhood": "Hackney",
+    "description": "Major music festival in East London with big-name headliners and emerging artists.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Film4 Summer Screen",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Somerset House",
+    "neighbourhood": "Covent Garden",
+    "description": "Open-air cinema in the courtyard of Somerset House. Classic and new films.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "South West Four Festival",
+    "month": 7,
+    "dateRange": "Late August",
+    "venue": "Clapham Common",
+    "neighbourhood": "Clapham",
+    "description": "Electronic dance music festival on the August bank holiday weekend.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Kids Week",
+    "month": 7,
+    "dateRange": "All August",
+    "venue": "West End theatres",
+    "neighbourhood": "West End",
+    "description": "Free theatre tickets for children when accompanied by a paying adult. Book early!",
+    "category": "Family",
+    "free": true
+  },
+  {
+    "name": "London Design Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "V&A Museum & various",
+    "neighbourhood": "Kensington",
+    "description": "Installations, exhibitions, and events celebrating design across the city.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Open House London",
+    "month": 8,
+    "dateRange": "Mid-September weekend",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Over 800 buildings open their doors for free — see inside landmarks, private homes, and hidden spaces.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Totally Thames",
+    "month": 8,
+    "dateRange": "All September",
+    "venue": "Along the Thames",
+    "neighbourhood": "Various",
+    "description": "A month of arts, cultural, and river events along the Thames. Many free.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Fashion Week",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "September edition of London Fashion Week with public-facing events and exhibitions.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Great River Race",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Thames",
+    "neighbourhood": "Various",
+    "description": "Over 300 boats race along the Thames in traditional craft. Free to watch from bridges.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Frieze London",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Regent's Park",
+    "neighbourhood": "Marylebone",
+    "description": "One of the world's leading contemporary art fairs. Major galleries, installations, and talks.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "BFI London Film Festival",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "BFI Southbank & various",
+    "neighbourhood": "South Bank",
+    "description": "World premieres, Q&As with directors, and the best new films from around the globe.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Halloween Events",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "London Dungeons, Hampton Court, various",
+    "neighbourhood": "Various",
+    "description": "Scare attractions, ghost tours, pumpkin carving, and themed events across London.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Restaurant Festival",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "Special menus, food tours, and culinary events at London's best restaurants.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Diwali on Trafalgar Square",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "The biggest Diwali celebrations outside India. Dance, music, food, and fireworks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Bonfire Night",
+    "month": 10,
+    "dateRange": "5 November (and surrounding days)",
+    "venue": "Various parks",
+    "neighbourhood": "Various",
+    "description": "Fireworks displays across London. Alexandra Palace and Battersea Park have the biggest shows.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Lord Mayor's Show",
+    "month": 10,
+    "dateRange": "Mid-November Saturday",
+    "venue": "City of London to Westminster",
+    "neighbourhood": "City of London",
+    "description": "800-year-old procession through the City. Floats, marching bands, and evening fireworks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Christmas Lights Switch-On",
+    "month": 10,
+    "dateRange": "Mid-November",
+    "venue": "Oxford Street, Regent Street, Carnaby",
+    "neighbourhood": "West End",
+    "description": "The famous Christmas lights get switched on with celebrity appearances and performances.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Jazz Festival",
+    "month": 10,
+    "dateRange": "Mid-November",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "10 days of world-class jazz across London. From free gigs to headline shows.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Remembrance Sunday",
+    "month": 10,
+    "dateRange": "2nd Sunday November",
+    "venue": "Cenotaph, Whitehall",
+    "neighbourhood": "Westminster",
+    "description": "Moving ceremony honoring fallen soldiers. The nation falls silent at 11am.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Winter Wonderland",
+    "month": 11,
+    "dateRange": "Late Nov - Early Jan",
+    "venue": "Hyde Park",
+    "neighbourhood": "Hyde Park",
+    "description": "London's biggest Christmas event. Ice skating, rides, markets, circus, and festive food. Free entry.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Christmas Markets",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Southbank, Leicester Square, Greenwich, Borough",
+    "neighbourhood": "Various",
+    "description": "Festive markets across London selling gifts, mulled wine, and seasonal food.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Ice Skating Rinks",
+    "month": 11,
+    "dateRange": "Nov-January",
+    "venue": "Natural History Museum, Somerset House, Tower of London",
+    "neighbourhood": "Various",
+    "description": "Iconic outdoor ice rinks at stunning London landmarks. Book in advance.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Pantomime Season",
+    "month": 11,
+    "dateRange": "December",
+    "venue": "Theatres across London",
+    "neighbourhood": "Various",
+    "description": "Oh yes it is! Traditional British panto at theatres everywhere. Great family fun.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "NYE Fireworks",
+    "month": 11,
+    "dateRange": "31 December",
+    "venue": "London Eye, South Bank",
+    "neighbourhood": "South Bank",
+    "description": "London's spectacular New Year's Eve fireworks. Ticketed viewing areas sell out months ahead.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "New Year's Day Parade",
+    "month": 0,
+    "dateRange": "1 January",
+    "venue": "Piccadilly to Parliament Square",
+    "neighbourhood": "Westminster",
+    "description": "One of the world's biggest NYD parades — 8,000+ performers, cheerleaders, marching bands parade through central London.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Russian Winter Festival",
+    "month": 0,
+    "dateRange": "Early January",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Russian Orthodox Christmas celebrations with traditional music, dance, and food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Twelfth Night Celebrations",
+    "month": 0,
+    "dateRange": "Early January",
+    "venue": "Bankside",
+    "neighbourhood": "Bankside",
+    "description": "Traditional wassailing with the Holly Man, Thames shore procession, mumming plays outside Shakespeare's Globe.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Art Fair",
+    "month": 0,
+    "dateRange": "Mid-January",
+    "venue": "Business Design Centre, Islington",
+    "neighbourhood": "Islington",
+    "description": "Established London art fair showcasing modern British and contemporary art from 130+ galleries.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Burns Night",
+    "month": 0,
+    "dateRange": "25 January",
+    "venue": "Various Scottish pubs and restaurants",
+    "neighbourhood": "Various",
+    "description": "Celebration of Scotland's national poet with haggis, whisky, and recitations of Burns's poetry.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Winter Lights Festival",
+    "month": 0,
+    "dateRange": "Mid-January",
+    "venue": "Canary Wharf",
+    "neighbourhood": "Canary Wharf",
+    "description": "Canary Wharf lights up with immersive interactive light-art installations across 10 days.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Great British Beer Festival Winter",
+    "month": 0,
+    "dateRange": "Late January",
+    "venue": "Olympia London",
+    "neighbourhood": "Various",
+    "description": "CAMRA's winter beer festival — 800+ real ales, ciders and perries from across the UK.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Vegan January Food Festival",
+    "month": 0,
+    "dateRange": "Late January",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "Month-long celebration of vegan cuisine — special menus, pop-ups, cooking classes.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "British Ice Skating Championships",
+    "month": 0,
+    "dateRange": "Late January",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "The British national figure-skating and ice-dance championships.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Holocaust Memorial Day",
+    "month": 0,
+    "dateRange": "27 January",
+    "venue": "Jewish Museum & various venues",
+    "neighbourhood": "Various",
+    "description": "Public remembrance day with ceremonies, exhibitions, and survivor testimonies across London.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "LGBT+ History Month Opens",
+    "month": 1,
+    "dateRange": "1 February",
+    "venue": "Various museums & venues",
+    "neighbourhood": "Various",
+    "description": "Month-long programme of LGBT+ history talks, film screenings, and exhibitions across the capital.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Dickens Day",
+    "month": 1,
+    "dateRange": "Early February",
+    "venue": "Charles Dickens Museum & Bloomsbury",
+    "neighbourhood": "Bloomsbury",
+    "description": "Celebration of Dickens's birthday (7 Feb) with readings, Victorian street performers, and tours.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Lunar New Year Celebrations",
+    "month": 1,
+    "dateRange": "Late Jan/Early Feb",
+    "venue": "Chinatown & Trafalgar Square",
+    "neighbourhood": "Soho",
+    "description": "Europe's largest Lunar New Year celebration — dragon dances, parades, lion dances, fireworks, street food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "BAFTA Awards",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Royal Festival Hall",
+    "neighbourhood": "South Bank",
+    "description": "The British Academy Film Awards — red carpet on South Bank, public can watch arrivals.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Six Nations Rugby — England at Twickenham",
+    "month": 1,
+    "dateRange": "Feb-March weekends",
+    "venue": "Twickenham Stadium",
+    "neighbourhood": "Richmond",
+    "description": "England home matches in the Six Nations Championship. Electric atmosphere in west London's rugby capital.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "London Beer Week",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Pubs citywide",
+    "neighbourhood": "Various",
+    "description": "Craft beer week across London — tap takeovers, brewery tours, tastings at 200+ venues.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Raindance Film Festival",
+    "month": 1,
+    "dateRange": "Early February",
+    "venue": "Various cinemas",
+    "neighbourhood": "Various",
+    "description": "The UK's largest independent film festival.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Kinoteka Polish Film Festival",
+    "month": 1,
+    "dateRange": "Late February",
+    "venue": "BFI Southbank",
+    "neighbourhood": "South Bank",
+    "description": "Annual showcase of Polish cinema with premieres and retrospectives.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "London Classic Car Show",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Excel London",
+    "neighbourhood": "Various",
+    "description": "Hundreds of classic cars on display, celebrity interviews, hands-on experiences.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Chelsea Art Antiques Fair",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Chelsea Old Town Hall",
+    "neighbourhood": "Chelsea",
+    "description": "A tightly curated antique fair with 20+ top dealers in a historic venue.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Crufts Dog Show",
+    "month": 2,
+    "dateRange": "Early March",
+    "venue": "NEC Birmingham (major exodus from London)",
+    "neighbourhood": "Various",
+    "description": "The world's biggest dog show — London dog-owners make the trip, big TV audience.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "International Women's Day",
+    "month": 2,
+    "dateRange": "8 March",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Marches, rallies, talks, and celebratory events across London.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Rake's Lane Fair",
+    "month": 2,
+    "dateRange": "Mid-March",
+    "venue": "Fitzrovia",
+    "neighbourhood": "West End",
+    "description": "A revived medieval street fair with food, crafts, and traditional entertainment.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "St Patrick's Festival",
+    "month": 2,
+    "dateRange": "17 March week",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "A full week of Irish music, dance, film, and food culminating in the Sunday parade.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Book Fair",
+    "month": 2,
+    "dateRange": "Mid-March",
+    "venue": "Olympia",
+    "neighbourhood": "Various",
+    "description": "Three-day publishing trade fair — author talks, book signings, industry events.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Spring Equinox at Stonehenge",
+    "month": 2,
+    "dateRange": "20 March",
+    "venue": "Stonehenge (day trip)",
+    "neighbourhood": "Various",
+    "description": "Free sunrise access to the Stonehenge stone circle for the spring equinox.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Mothering Sunday",
+    "month": 2,
+    "dateRange": "Fourth Sunday of Lent",
+    "venue": "Restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "UK Mother's Day — most restaurants run special menus, Tea at The Ritz books up months ahead.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Advertising Week Europe",
+    "month": 2,
+    "dateRange": "Late March",
+    "venue": "Picturehouse Central",
+    "neighbourhood": "Soho",
+    "description": "A week of creative-industry events, panels, and celebrity appearances.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Comic Con London Spring",
+    "month": 2,
+    "dateRange": "Late March",
+    "venue": "Olympia London",
+    "neighbourhood": "Various",
+    "description": "Comic Con's spring edition — cosplay, signing sessions, pop-culture panels.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Canary Wharf Spring Flowers",
+    "month": 2,
+    "dateRange": "Late March",
+    "venue": "Canary Wharf",
+    "neighbourhood": "Canary Wharf",
+    "description": "Spring garden displays throughout Canary Wharf estate — free to browse.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Good Friday at Trafalgar Square",
+    "month": 3,
+    "dateRange": "Good Friday",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "A free open-air dramatisation of the Passion of the Christ, attracting 25,000+ spectators.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Easter Saturday at the London Eye",
+    "month": 3,
+    "dateRange": "Easter Saturday",
+    "venue": "South Bank",
+    "neighbourhood": "South Bank",
+    "description": "Easter family events along South Bank — free activities and egg hunts.",
+    "category": "Family",
+    "free": true
+  },
+  {
+    "name": "Easter at Kew Gardens",
+    "month": 3,
+    "dateRange": "Easter weekend",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Spring Egg Hunt across the gardens plus orchid festival.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Passover Celebrations",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Jewish Museum, Stamford Hill",
+    "neighbourhood": "Various",
+    "description": "Public Passover events and Seder-cooking classes across London's Jewish communities.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "FA Cup Semi-Finals",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Wembley Stadium",
+    "neighbourhood": "Wembley",
+    "description": "FA Cup semi-final matches — two of the biggest football days in the English calendar.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "London Marathon Mini-Race",
+    "month": 3,
+    "dateRange": "Same day as main marathon",
+    "venue": "Blackheath to Buckingham Palace",
+    "neighbourhood": "Various",
+    "description": "Children's 1-mile and 3km races held alongside the main London Marathon route.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Covent Garden May Fayre",
+    "month": 4,
+    "dateRange": "Second Sunday in May",
+    "venue": "St Paul's Church, Covent Garden",
+    "neighbourhood": "Covent Garden",
+    "description": "Puppet-making workshops, Punch and Judy shows, a procession — Britain's longest-running Punch and Judy festival.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Handmade in Britain",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Chelsea Old Town Hall",
+    "neighbourhood": "Chelsea",
+    "description": "Curated British craft fair showing 150+ makers of ceramics, textiles, jewellery.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "London Craft Week",
+    "month": 4,
+    "dateRange": "Early May",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "A week of open studios, master classes, and exhibitions across London's craft scene.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Cinco de Mayo Mexico Week",
+    "month": 4,
+    "dateRange": "Early May",
+    "venue": "Mexican restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "Special Mexican menus, tequila tastings, live mariachi across London's Mexican scene.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Wine Week",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Wine bars citywide",
+    "neighbourhood": "Various",
+    "description": "A week of wine-tasting events, £7 flights, masterclasses across 200+ bars.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Chelsea Fringe",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Alternative gardening festival running alongside Chelsea Flower Show — 500+ events, many free.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Ludgate Hill Street Party",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Ludgate Hill",
+    "neighbourhood": "City of London",
+    "description": "Annual closed-off-for-traffic food-and-drink street party.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Eurovision Street Parties",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Pubs citywide",
+    "neighbourhood": "Various",
+    "description": "Eurovision Song Contest viewing parties at dozens of London pubs and clubs.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Rugby Premiership Final",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Twickenham",
+    "neighbourhood": "Richmond",
+    "description": "The climax of the English rugby season — 80,000 fans at Twickenham.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Streatham Food Festival",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Streatham",
+    "neighbourhood": "Various",
+    "description": "South London's biggest street-food festival — 40+ vendors, live music.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "London Fertility Week",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Public talks and exhibitions around fertility, IVF, and family-building.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "The Luna Cinema Starts",
+    "month": 5,
+    "dateRange": "Early June",
+    "venue": "Various parks",
+    "neighbourhood": "Various",
+    "description": "Open-air cinema season kicks off — films screened in Kew Gardens, Hampton Court, Kensington Palace.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Hackney Carnival",
+    "month": 5,
+    "dateRange": "Early September — date varies",
+    "venue": "Ridley Road area",
+    "neighbourhood": "Hackney",
+    "description": "Family-friendly street carnival with Caribbean, Asian, and African parades through Hackney.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Meltdown Festival",
+    "month": 5,
+    "dateRange": "Late May-Early June",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "Annual curator-led music festival — past curators: David Bowie, Morrissey, Björk.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Hampton Court Flower Show",
+    "month": 5,
+    "dateRange": "Early July",
+    "venue": "Hampton Court Palace",
+    "neighbourhood": "Hampton Court",
+    "description": "RHS's largest flower show — held in the grounds of Henry VIII's palace.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "West End Live",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Free outdoor showcase of West End musicals — cast performances, meet-and-greets.",
+    "category": "Theatre",
+    "free": true
+  },
+  {
+    "name": "Spitalfields Music Festival",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Christ Church Spitalfields & various",
+    "neighbourhood": "Spitalfields",
+    "description": "Two-week classical music festival in atmospheric East End venues.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "London Sports Writing Festival",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Two-day celebration of sports journalism and writing — panels, interviews, awards.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Royal Academy Summer Exhibition Opens",
+    "month": 5,
+    "dateRange": "Early June",
+    "venue": "Royal Academy",
+    "neighbourhood": "Mayfair",
+    "description": "The world's longest-running open-submission art exhibition — runs June to August.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Windrush Day",
+    "month": 5,
+    "dateRange": "22 June",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Free public commemorations of the 1948 Windrush Generation — music, food, and community events.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Armed Forces Day",
+    "month": 5,
+    "dateRange": "Late June",
+    "venue": "Horse Guards Parade",
+    "neighbourhood": "Westminster",
+    "description": "Public tribute to the UK Armed Forces — military parades, flypasts.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Greenwich+Docklands International Festival",
+    "month": 5,
+    "dateRange": "Late June",
+    "venue": "Greenwich & Royal Docks",
+    "neighbourhood": "Greenwich",
+    "description": "Spectacular outdoor arts festival — large-scale free street theatre across 3 weeks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Refugee Week",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "A week of arts, cultural, and educational events celebrating refugees' contributions.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Pride Parade London",
+    "month": 5,
+    "dateRange": "Late June/Early July",
+    "venue": "Central London parade route",
+    "neighbourhood": "Various",
+    "description": "One of the world's biggest Pride parades — 1.5+ million attendees, parade, live stages, celebrations.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Wireless Festival",
+    "month": 6,
+    "dateRange": "Early July",
+    "venue": "Finsbury Park",
+    "neighbourhood": "Finsbury Park",
+    "description": "Three-day hip-hop, R&B, and pop festival — huge names, 50,000 attendees daily.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Henley Royal Regatta",
+    "month": 6,
+    "dateRange": "Early July",
+    "venue": "Henley-on-Thames (day trip)",
+    "neighbourhood": "Various",
+    "description": "Five days of world-class rowing — dress code, Pimm's, boater-hat tradition.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Wimbledon Queue Culture",
+    "month": 6,
+    "dateRange": "Early-Mid July",
+    "venue": "Wimbledon Park",
+    "neighbourhood": "Wimbledon",
+    "description": "The Wimbledon Queue — 1,500+ people queue overnight for same-day ground tickets.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "RideLondon Cycling",
+    "month": 6,
+    "dateRange": "Late July/Early August",
+    "venue": "Various London roads",
+    "neighbourhood": "Various",
+    "description": "Free-to-watch professional cycling race and mass-participation rides through London.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "BBC Proms Opening Weekend",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "First Night of the BBC Proms — 8 weeks of classical music begins.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Goodwood Festival of Speed",
+    "month": 6,
+    "dateRange": "Early July",
+    "venue": "Goodwood (day trip)",
+    "neighbourhood": "Various",
+    "description": "Legendary motoring festival — Formula 1 hillclimb, classic cars.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Henley Festival",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Henley-on-Thames",
+    "neighbourhood": "Various",
+    "description": "Black-tie music-and-arts festival on the Thames — Bryan Ferry, Sam Smith headliners in recent years.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Regent's Canal Festival",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Regent's Canal",
+    "neighbourhood": "Various",
+    "description": "Free two-day festival along the canal — boat trips, music, street food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Greek Summer Festival",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Greenwich",
+    "neighbourhood": "Greenwich",
+    "description": "Celebration of Greek culture — food, music, dance, church services.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Latitude Festival",
+    "month": 6,
+    "dateRange": "Mid-July",
+    "venue": "Henham Park (day trip)",
+    "neighbourhood": "Various",
+    "description": "Literary, arts, and music festival in Suffolk — London's creative class travel.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Open Air Shakespeare at Regent's Park",
+    "month": 6,
+    "dateRange": "All July",
+    "venue": "Regent's Park Open Air Theatre",
+    "neighbourhood": "Marylebone",
+    "description": "Annual Shakespeare production under the stars — bring a blanket.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Street Food Festival Chiswick",
+    "month": 6,
+    "dateRange": "Late July",
+    "venue": "Chiswick House",
+    "neighbourhood": "Chiswick",
+    "description": "Annual weekend street-food celebration in the grounds of Chiswick House.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Cricket T20 Finals",
+    "month": 7,
+    "dateRange": "Late August",
+    "venue": "Edgbaston (major London draw)",
+    "neighbourhood": "Various",
+    "description": "T20 Blast Finals Day — London crowds travel to Birmingham for the day.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Notting Hill Carnival Kids' Day",
+    "month": 7,
+    "dateRange": "Late August Sunday",
+    "venue": "Notting Hill",
+    "neighbourhood": "Notting Hill",
+    "description": "Family-friendly Sunday preceding the main Monday parade.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Great British Beer Festival",
+    "month": 7,
+    "dateRange": "Early August",
+    "venue": "Olympia London",
+    "neighbourhood": "Various",
+    "description": "CAMRA's flagship 5-day beer festival — 1,000+ cask ales from across the UK.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Standon Calling",
+    "month": 7,
+    "dateRange": "Late July",
+    "venue": "Hertfordshire (day trip)",
+    "neighbourhood": "Various",
+    "description": "Family-friendly music-and-film festival on London's edge.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Bristol Balloon Fiesta",
+    "month": 7,
+    "dateRange": "Early August",
+    "venue": "Bristol (day trip)",
+    "neighbourhood": "Various",
+    "description": "Europe's biggest hot air balloon festival — a London expat favourite.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Reading Festival",
+    "month": 7,
+    "dateRange": "Late August",
+    "venue": "Reading (day trip)",
+    "neighbourhood": "Various",
+    "description": "The UK's biggest rock festival — attracts London music fans for bank holiday weekend.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Eid al-Adha Celebrations",
+    "month": 7,
+    "dateRange": "Variable",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Public Eid celebrations with food, performances, and community gathering.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "The Proms Last Night",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "The Last Night of the Proms — patriotic climax with Rule Britannia and Jerusalem. Free screenings in parks.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Vegan Foods Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "Celebrating vegan food with pop-ups, workshops, and chef demonstrations.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Open House Weekend",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "The UK's largest architecture festival — 800+ buildings open for free, usually-private.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Thames Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Various Thames locations",
+    "neighbourhood": "Various",
+    "description": "Month-long arts festival on and along the Thames — many events free.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Ride London Classique",
+    "month": 8,
+    "dateRange": "Late May",
+    "venue": "Central London",
+    "neighbourhood": "Various",
+    "description": "Professional women's cycling race through central London.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Roundhouse Rising",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "The Roundhouse",
+    "neighbourhood": "Camden",
+    "description": "New-artist festival at the Roundhouse — emerging musicians, workshops, talks.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "London Games Week",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Celebration of London's gaming industry — talks, tournaments, exhibitions.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Deptford Film Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Deptford",
+    "neighbourhood": "Deptford",
+    "description": "South-East London community film festival — independent cinema in local venues.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "European Heritage Open Days",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Free access to historic buildings and sites across London — many rarely open.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Alchemy Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "Celebration of South Asian arts and culture — free performances, workshops, talks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Oyster Festival",
+    "month": 8,
+    "dateRange": "Early September",
+    "venue": "Whitstable (day trip)",
+    "neighbourhood": "Various",
+    "description": "Kent's oyster festival — London foodies travel for the 10-day feast.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Autumn Equinox at Stonehenge",
+    "month": 8,
+    "dateRange": "22-23 September",
+    "venue": "Stonehenge (day trip)",
+    "neighbourhood": "Various",
+    "description": "Free sunrise access for the autumn equinox — a London pagan tradition.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Cocktail Week",
+    "month": 9,
+    "dateRange": "Early October",
+    "venue": "Bars citywide",
+    "neighbourhood": "Various",
+    "description": "A week of £7 cocktails, masterclasses, and tastings at 250+ London bars.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Roundhouse Rising Finals",
+    "month": 9,
+    "dateRange": "Early October",
+    "venue": "The Roundhouse",
+    "neighbourhood": "Camden",
+    "description": "The final of the emerging-artist competition — discover tomorrow's stars.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "London Design Biennale",
+    "month": 9,
+    "dateRange": "Mid-September",
+    "venue": "Somerset House",
+    "neighbourhood": "Covent Garden",
+    "description": "International design showcase — installations from 40+ nations.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Hackney Restaurant Week",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Hackney restaurants",
+    "neighbourhood": "Hackney",
+    "description": "Special £25 three-course menus across Hackney's best restaurants.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Literature Festival",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "10-day literature festival with big-name authors, poetry slams, public talks.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Frieze Masters",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Regent's Park",
+    "neighbourhood": "Marylebone",
+    "description": "The older-sister art fair to Frieze London — 6,000 years of art across one tent.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Black History Month Opens",
+    "month": 9,
+    "dateRange": "1 October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Month-long programme of events celebrating Black British history across galleries, libraries, and museums.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Film Festival Awards",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Royal Festival Hall",
+    "neighbourhood": "South Bank",
+    "description": "The closing-night gala and awards ceremony for the BFI London Film Festival.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "London Restaurant Week",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "Special prix-fixe menus across 200+ London restaurants — £20 lunch, £35 dinner.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Electric Forest",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Epping Forest",
+    "neighbourhood": "Various",
+    "description": "Three-day immersive lights festival in ancient woodland.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Diwali Mela Alexandra Palace",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "One of Europe's biggest Diwali celebrations — 15,000+ attendees, music, dance, food.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Greater London Beer Festival",
+    "month": 10,
+    "dateRange": "Early November",
+    "venue": "Battersea Arts Centre",
+    "neighbourhood": "Battersea",
+    "description": "A specialty beer festival focused on London breweries — 150+ taps.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Fireworks Displays Citywide",
+    "month": 10,
+    "dateRange": "5 November (& weekends)",
+    "venue": "Battersea, Alexandra Palace, Crystal Palace",
+    "neighbourhood": "Various",
+    "description": "Major fireworks displays across the city — the biggest are ticketed; many parks free.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Tower of London Poppies",
+    "month": 10,
+    "dateRange": "Early November",
+    "venue": "Tower of London",
+    "neighbourhood": "Tower Hill",
+    "description": "Each year the Tower is marked with poppies for Remembrance — 888,246 at the famous 2014 installation.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Christmas Lights Along The Strand",
+    "month": 10,
+    "dateRange": "Mid-November",
+    "venue": "Strand & Oxford Street",
+    "neighbourhood": "Westminster",
+    "description": "Covent Garden, Carnaby, and Oxford Street Christmas lights switch on within days of each other.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Cabaret Awards",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Hippodrome Casino",
+    "neighbourhood": "West End",
+    "description": "Annual awards ceremony for the best cabaret, burlesque, and drag.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Thanksgiving Dinners",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "American restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "American-themed Thanksgiving dinners at London's US expat haunts — Balthazar, Big Easy, Jackson Boxer.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Black Friday Sales",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Oxford Street, Regent Street, Westfield",
+    "neighbourhood": "West End",
+    "description": "The UK's biggest shopping day — massive sales at high street and luxury retailers.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "London Independent Film Festival",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Various cinemas",
+    "neighbourhood": "Various",
+    "description": "Independent film showcases across London's indie cinemas.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "British Ice Skating Open",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "International figure-skating competition.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Advent Begins",
+    "month": 11,
+    "dateRange": "First Sunday of December",
+    "venue": "Various churches",
+    "neighbourhood": "Various",
+    "description": "Advent services at Westminster Abbey, St Paul's, and parish churches citywide.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Carols by Candlelight Royal Albert Hall",
+    "month": 11,
+    "dateRange": "Mid-December",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "Evening of carols by candlelight with the Royal Philharmonic — a West London tradition.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Christmas at Kew",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Evening light trail through Kew Gardens with illuminated trees, fire gardens, festive food.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Hyde Park Winter Wonderland",
+    "month": 11,
+    "dateRange": "Late Nov-Early Jan",
+    "venue": "Hyde Park",
+    "neighbourhood": "Hyde Park",
+    "description": "Europe's biggest Christmas funfair — ice skating, rides, markets, circus, ice sculptures. Free entry.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "St Nicholas Day",
+    "month": 11,
+    "dateRange": "6 December",
+    "venue": "St Nicholas's churches",
+    "neighbourhood": "Various",
+    "description": "Traditional pre-Christmas saint's day — St Nicholas Cole Abbey and others hold special services.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Boxing Day Fox Hunt Meet",
+    "month": 11,
+    "dateRange": "26 December",
+    "venue": "Various locations",
+    "neighbourhood": "Various",
+    "description": "Traditional Boxing Day hunt meets — controversial; opponents protest.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Big Ben New Year Chimes",
+    "month": 11,
+    "dateRange": "31 December midnight",
+    "venue": "Westminster",
+    "neighbourhood": "Westminster",
+    "description": "Big Ben rings in the New Year — viewing ticketed at South Bank; free listening points citywide.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Twelfth Night Holly-Man Ceremony",
+    "month": 11,
+    "dateRange": "5-6 January",
+    "venue": "Bankside",
+    "neighbourhood": "Bankside",
+    "description": "A Lions Part Society theatrical procession — wassailing, mumming, a pagan-fused celebration.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Irish Rugby at Brentford",
+    "month": 0,
+    "dateRange": "Season matches",
+    "venue": "Gtech Community Stadium",
+    "neighbourhood": "Various",
+    "description": "London Irish rugby home matches — Premiership rugby in West London.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Saracens Home Games",
+    "month": 0,
+    "dateRange": "Premiership matches",
+    "venue": "StoneX Stadium",
+    "neighbourhood": "Various",
+    "description": "Saracens rugby home matches in North London.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Harlequins at The Stoop",
+    "month": 0,
+    "dateRange": "Premiership matches",
+    "venue": "Twickenham Stoop",
+    "neighbourhood": "Richmond",
+    "description": "Harlequins rugby home matches — one of London's biggest and most welcoming rugby clubs.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Premiership Football — Emirates",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "Emirates Stadium",
+    "neighbourhood": "Various",
+    "description": "Arsenal home matches.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Premiership Football — Stamford Bridge",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "Stamford Bridge",
+    "neighbourhood": "Fulham",
+    "description": "Chelsea home matches.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Premiership Football — Tottenham Hotspur Stadium",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "Tottenham Hotspur Stadium",
+    "neighbourhood": "Various",
+    "description": "Spurs home matches at the most advanced stadium in Europe.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Premiership Football — London Stadium",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "London Stadium",
+    "neighbourhood": "Stratford",
+    "description": "West Ham home matches at the Olympic Stadium.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Cricket Season at Lord's",
+    "month": 4,
+    "dateRange": "May-September",
+    "venue": "Lord's Cricket Ground",
+    "neighbourhood": "St John's Wood",
+    "description": "County and international cricket at the 'Home of Cricket'.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Cricket Season at The Oval",
+    "month": 4,
+    "dateRange": "May-September",
+    "venue": "Kennington Oval",
+    "neighbourhood": "Various",
+    "description": "Surrey CCC home matches and England internationals.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "NFL at Tottenham",
+    "month": 8,
+    "dateRange": "October",
+    "venue": "Tottenham Hotspur Stadium",
+    "neighbourhood": "Various",
+    "description": "Annual NFL games at the purpose-built pitch under Tottenham's football pitch.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "London Wasps Rugby",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Wasps' London home matches — check current ground status.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "London Lions Basketball",
+    "month": 0,
+    "dateRange": "Throughout season",
+    "venue": "Copper Box Arena",
+    "neighbourhood": "Stratford",
+    "description": "London Lions' home basketball games — EuroCup and BBL Championship.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Climate March Annual",
+    "month": 2,
+    "dateRange": "Late March",
+    "venue": "Central London",
+    "neighbourhood": "Various",
+    "description": "Annual Climate Justice rally — a quarter-million marchers in recent years.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "King's Cross Summer Screens",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Granary Square",
+    "neighbourhood": "King's Cross",
+    "description": "Outdoor big-screen sports and film broadcasts in Granary Square.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Secret Cinema Pop-Ups",
+    "month": 5,
+    "dateRange": "Summer-Autumn",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Secret Cinema immersive film-and-theatre experiences — themed locations.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "London Open Jazz",
+    "month": 4,
+    "dateRange": "Late June",
+    "venue": "Jazz venues citywide",
+    "neighbourhood": "Various",
+    "description": "London's citywide jazz festival — 100+ free and ticketed gigs.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Women's Sport Week",
+    "month": 1,
+    "dateRange": "Late February",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Celebrating women in sport — tastings, tournaments, and panels.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Father's Day Celebrations",
+    "month": 5,
+    "dateRange": "Third Sunday June",
+    "venue": "Restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "UK Father's Day — special menus at many restaurants, brewery tours.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Walking Festival",
+    "month": 4,
+    "dateRange": "June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "A week of guided historical, nature, and art walks across London.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Music in Parks",
+    "month": 5,
+    "dateRange": "July-August",
+    "venue": "Various parks",
+    "neighbourhood": "Various",
+    "description": "Free outdoor orchestra concerts in Regent's Park, Greenwich Park, Holland Park.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Picnic in the Park",
+    "month": 5,
+    "dateRange": "Summer",
+    "venue": "Hyde Park",
+    "neighbourhood": "Hyde Park",
+    "description": "Concert series on the Hyde Park bandstand — free mostly.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Chelsea Old Town Fair",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Chelsea Old Town Hall",
+    "neighbourhood": "Chelsea",
+    "description": "Historic community fair with traditional games, handicrafts, and food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Spitalfields Charity Cook Off",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Old Spitalfields Market",
+    "neighbourhood": "Spitalfields",
+    "description": "Annual charity cook-off with chefs from the area.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Artisan's Fair Borough",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Borough Market",
+    "neighbourhood": "London Bridge",
+    "description": "Specialist Borough Market artisan food fair — micro-producers, niche cheeses.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Sourdough Bread Baking Fair",
+    "month": 0,
+    "dateRange": "January-February",
+    "venue": "Borough Market",
+    "neighbourhood": "London Bridge",
+    "description": "A fair of small-scale sourdough bakers — demos, tastings.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Chestnut Season",
+    "month": 10,
+    "dateRange": "November-December",
+    "venue": "Street vendors citywide",
+    "neighbourhood": "Various",
+    "description": "Roast chestnut barrows arrive on street corners — a quintessential London winter.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Holly and Ivy Carol Service",
+    "month": 11,
+    "dateRange": "Early December",
+    "venue": "St Paul's Cathedral",
+    "neighbourhood": "City of London",
+    "description": "Traditional carol service at St Paul's with choir and lessons.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Advent Calendars Windows",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Many London streets host 'Window Advent' — each day reveals a new decorated window.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Moroccan Food Week",
+    "month": 4,
+    "dateRange": "Late April",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Celebration of Moroccan cuisine across London restaurants — tagines, pastilla, sweet pastries.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Tequila and Mezcal Week",
+    "month": 3,
+    "dateRange": "Late April",
+    "venue": "Mexican bars citywide",
+    "neighbourhood": "Various",
+    "description": "Week-long tequila-and-mezcal tasting events across London's Mexican bars.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Whisky Show London",
+    "month": 9,
+    "dateRange": "Early October",
+    "venue": "Old Billingsgate",
+    "neighbourhood": "Various",
+    "description": "The UK's biggest whisky show — 350+ whiskies to taste.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Gin Fair Notting Hill",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Westbourne Park",
+    "neighbourhood": "Notting Hill",
+    "description": "Notting Hill's celebration of gin — 50+ distillers on display.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Meet the Brewers Tap Takeover",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "BrewDog Shoreditch",
+    "neighbourhood": "Shoreditch",
+    "description": "Monthly tap takeovers by brewery visitors — meet the brewers, taste the range.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Gyle Street Food",
+    "month": 6,
+    "dateRange": "Summer weekends",
+    "venue": "Various pop-ups",
+    "neighbourhood": "Various",
+    "description": "Street-food pop-ups across London — locations change weekly.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Ice Cream Festival Greenwich",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Greenwich Park",
+    "neighbourhood": "Greenwich",
+    "description": "Family-focused ice cream festival — 40+ artisan gelatos and ice creams.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Design Week Islington",
+    "month": 2,
+    "dateRange": "March",
+    "venue": "Camden Passage",
+    "neighbourhood": "Islington",
+    "description": "Islington's independent design-and-craft festival.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Stoke Newington Literary Festival",
+    "month": 4,
+    "dateRange": "Early June",
+    "venue": "Stoke Newington",
+    "neighbourhood": "Various",
+    "description": "North London's literary festival — author talks, readings, book stalls.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Wandsworth Arts Fringe",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "South-West London",
+    "neighbourhood": "Various",
+    "description": "Three weeks of pop-up art, music, and theatre across Wandsworth.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Clapham Common Summer Series",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Clapham Common",
+    "neighbourhood": "Clapham",
+    "description": "Big-name concerts and festivals on Clapham Common.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Kew Gardens Easter Egg Hunt",
+    "month": 3,
+    "dateRange": "Easter weekend",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Family-focused Easter egg hunt across the 300-acre gardens.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Natural History Museum After-Dark",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "Natural History Museum",
+    "neighbourhood": "South Kensington",
+    "description": "Adults-only evening museum openings — drinks, live music, late-night access.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Science Museum Lates",
+    "month": 0,
+    "dateRange": "Last Wednesday",
+    "venue": "Science Museum",
+    "neighbourhood": "South Kensington",
+    "description": "Monthly adults-only late opening — 6:45-10pm, bars, live shows, workshops.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "V&A Friday Late",
+    "month": 0,
+    "dateRange": "Last Friday",
+    "venue": "V&A Museum",
+    "neighbourhood": "South Kensington",
+    "description": "Monthly Friday-night V&A opening — bars, DJs, talks, guided tours.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Tate Modern Uniqlo Tate Lates",
+    "month": 0,
+    "dateRange": "Last Friday",
+    "venue": "Tate Modern",
+    "neighbourhood": "Bankside",
+    "description": "Monthly late evening openings at Tate Modern with DJs and special programmes.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Wellcome Collection Lates",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "Wellcome Collection",
+    "neighbourhood": "Bloomsbury",
+    "description": "Adults-only evening events with talks, performances, drinks.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "The World Cup Watching",
+    "month": 10,
+    "dateRange": "Every 4 years November-December",
+    "venue": "Pubs citywide",
+    "neighbourhood": "Various",
+    "description": "When England plays — every pub in London packs out. Big screens, fan zones.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Euro Football Watching",
+    "month": 5,
+    "dateRange": "Every 4 years June-July",
+    "venue": "Pubs citywide",
+    "neighbourhood": "Various",
+    "description": "European Championship football — fan zones in Trafalgar Square and citywide.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Twelfth Night Play Cycle",
+    "month": 0,
+    "dateRange": "Early January",
+    "venue": "Shakespeare's Globe",
+    "neighbourhood": "Bankside",
+    "description": "Traditional Twelfth Night revels at The Globe — mummers, wassailing, winter theatre.",
+    "category": "Theatre",
+    "free": true
+  },
+  {
+    "name": "Big Bus Company Snow Globe",
+    "month": 0,
+    "dateRange": "Throughout January",
+    "venue": "Tower Hill",
+    "neighbourhood": "Tower Hill",
+    "description": "A giant human-sized snow globe photo-op near Tower Bridge.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Book Club Day",
+    "month": 0,
+    "dateRange": "Early January",
+    "venue": "Various bookshops",
+    "neighbourhood": "Various",
+    "description": "Bookshop-hosted new-year reading recommendations and author signings.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Veganuary Start",
+    "month": 0,
+    "dateRange": "1 January",
+    "venue": "Vegan restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "Month-long Veganuary campaign — many restaurants run vegan menus.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Dry January Pub Offers",
+    "month": 0,
+    "dateRange": "Throughout January",
+    "venue": "Pubs citywide",
+    "neighbourhood": "Various",
+    "description": "Alcohol-free beers, mocktails, and January wellness offers at London pubs.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Candlemas at Westminster Abbey",
+    "month": 1,
+    "dateRange": "2 February",
+    "venue": "Westminster Abbey",
+    "neighbourhood": "Westminster",
+    "description": "A candle-lit service commemorating the presentation of Christ in the Temple.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Waterstones Piccadilly Reading Event",
+    "month": 1,
+    "dateRange": "Rotating",
+    "venue": "Waterstones Piccadilly",
+    "neighbourhood": "Piccadilly",
+    "description": "Monthly author-reading events at Europe's biggest bookshop.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Haroon Mirza Lightmap",
+    "month": 1,
+    "dateRange": "Early February",
+    "venue": "Somerset House",
+    "neighbourhood": "Covent Garden",
+    "description": "New media and light art festival at Somerset House.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Valentine's Silent Disco",
+    "month": 1,
+    "dateRange": "14 February",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Valentine's Day silent disco events — headphones at Southbank, Tower Bridge, and East London.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Year of the Ox/Tiger/Rabbit",
+    "month": 1,
+    "dateRange": "Late January/February",
+    "venue": "Chinatown",
+    "neighbourhood": "Soho",
+    "description": "Chinese zodiac celebrations in Chinatown — lucky draws, zodiac-themed food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Imbolc Pagan Festival",
+    "month": 1,
+    "dateRange": "1-2 February",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Pagan celebrations marking the end of winter — small London rituals and feasts.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Shrove Tuesday Pancake Race Spitalfields",
+    "month": 1,
+    "dateRange": "Shrove Tuesday",
+    "venue": "Dray Walk",
+    "neighbourhood": "Spitalfields",
+    "description": "The Great Spitalfields Pancake Race — teams of four in costume, raising money for charity.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Fashion Scout Weekend",
+    "month": 1,
+    "dateRange": "London Fashion Week",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Alternative catwalk shows for up-and-coming designers during Fashion Week.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "RAD Patent Thaw",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "Royal Academy of Dance",
+    "neighbourhood": "Battersea",
+    "description": "Annual ballet school showcase — emerging dance talent.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Purim Celebrations",
+    "month": 2,
+    "dateRange": "March (variable)",
+    "venue": "Stamford Hill & Hendon",
+    "neighbourhood": "Various",
+    "description": "Jewish festival of Purim — costumes, Hamantaschen pastries, community parties.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Ramadan Iftar Menus",
+    "month": 2,
+    "dateRange": "Variable (6-week period)",
+    "venue": "Halal restaurants citywide",
+    "neighbourhood": "Various",
+    "description": "Special iftar menus at restaurants in Whitechapel, Finsbury Park, and Edgware Road.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "World Book Day",
+    "month": 2,
+    "dateRange": "First Thursday March",
+    "venue": "Schools and bookshops",
+    "neighbourhood": "Various",
+    "description": "UK schools' World Book Day — dress-as-a-character, family bookshop events.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "International Women's Day Conferences",
+    "month": 2,
+    "dateRange": "8 March",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Business-focused IWD conferences and panels across central London.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Shambala Sessions",
+    "month": 2,
+    "dateRange": "March",
+    "venue": "Various basement venues",
+    "neighbourhood": "Various",
+    "description": "Independent electronic-music parties in East London warehouses.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Primrose Hill Sunrise Gatherings",
+    "month": 2,
+    "dateRange": "Spring equinox",
+    "venue": "Primrose Hill",
+    "neighbourhood": "Camden",
+    "description": "Sunrise ceremonies and picnic gatherings to mark spring.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Aviation Show",
+    "month": 2,
+    "dateRange": "Mid-March",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Industry-and-public aviation expo.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Spring Half Marathon",
+    "month": 3,
+    "dateRange": "Early April",
+    "venue": "Hackney Marshes",
+    "neighbourhood": "Hackney",
+    "description": "13-mile race through East London's parks — precursor to the London Marathon.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Canterbury Tales Pilgrimage",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Southwark to Canterbury",
+    "neighbourhood": "London Bridge",
+    "description": "Annual re-enactment pilgrimage on Chaucer's route — starts in Southwark.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Songkran Thai New Year",
+    "month": 3,
+    "dateRange": "13-15 April",
+    "venue": "Various Thai restaurants",
+    "neighbourhood": "Various",
+    "description": "Thai new year — water-throwing, traditional food at London's Thai restaurants.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Stop-Motion Animation Festival",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Rich Mix",
+    "neighbourhood": "Shoreditch",
+    "description": "Showcase of stop-motion animation — screenings, workshops, and masterclasses.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Ribbon Walking Tours",
+    "month": 3,
+    "dateRange": "Spring",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Self-guided architecture walks following coloured-ribbon trails.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Royal Photographic Society Awards",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "National Portrait Gallery",
+    "neighbourhood": "West End",
+    "description": "Annual RPS awards — public talks about the winning images.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Beer and Pint Hackney",
+    "month": 3,
+    "dateRange": "Spring",
+    "venue": "Hackney Wick",
+    "neighbourhood": "Hackney",
+    "description": "Hackney's craft-beer-and-pub-crawl festival celebrating local brewers.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Wigmore Hall Spring Concerts",
+    "month": 3,
+    "dateRange": "Spring",
+    "venue": "Wigmore Hall",
+    "neighbourhood": "Marylebone",
+    "description": "Spring concert series at London's beloved chamber-music hall.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "May Day Celebrations",
+    "month": 4,
+    "dateRange": "1 May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Working-class May Day parades and rallies — Trafalgar Square main hub.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Dagenham May Queen",
+    "month": 4,
+    "dateRange": "Early May",
+    "venue": "Dagenham",
+    "neighbourhood": "Various",
+    "description": "Traditional East-End May-Queen crowning ceremony.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Hammersmith Riverside Festival",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Hammersmith Riverside",
+    "neighbourhood": "Various",
+    "description": "Annual riverside food-and-music festival.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Muswell Hill Food Festival",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Muswell Hill Broadway",
+    "neighbourhood": "Various",
+    "description": "A day of food stalls from Muswell Hill restaurants.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Battersea Park Festival",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Battersea Park",
+    "neighbourhood": "Battersea",
+    "description": "Family-focused park festival — music, food, bouncy castles, live entertainment.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Frigate Days on Thames",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Tower Bridge",
+    "neighbourhood": "Tower Hill",
+    "description": "Royal Navy frigate visits with open-deck public tours.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Vegan Beer Festival",
+    "month": 4,
+    "dateRange": "Mid-May",
+    "venue": "Hackney",
+    "neighbourhood": "Hackney",
+    "description": "Vegan-focused beer festival — 100+ vegan-friendly brews.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Street Food Trucks Canary Wharf",
+    "month": 4,
+    "dateRange": "Weekly summer",
+    "venue": "Canary Wharf",
+    "neighbourhood": "Canary Wharf",
+    "description": "Weekly rotating street-food trucks in Canary Wharf squares.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Architecture Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Month-long festival celebrating London's architecture — walks, tours, talks.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Open Garden Squares Weekend",
+    "month": 5,
+    "dateRange": "Mid-June",
+    "venue": "200+ London gardens",
+    "neighbourhood": "Various",
+    "description": "Two-day weekend access to private London garden squares — one ticket covers all.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Film Festival Summer Preview",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "BFI Southbank",
+    "neighbourhood": "South Bank",
+    "description": "Preview screenings of autumn festival films.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Festival of Ideas",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Kings Place",
+    "neighbourhood": "King's Cross",
+    "description": "Intellectual festival — lectures, panels, debates.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Hampstead Garden Suburb Open",
+    "month": 5,
+    "dateRange": "Late June",
+    "venue": "Hampstead Garden Suburb",
+    "neighbourhood": "Various",
+    "description": "Open-house tour of one of the world's earliest garden suburbs.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Soho Ghost Tour",
+    "month": 5,
+    "dateRange": "Weekly",
+    "venue": "Soho streets",
+    "neighbourhood": "Soho",
+    "description": "Twilight guided tours of Soho's haunted history — Mary Shelley, Karl Marx, plague pits.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Greenwich Comedy Festival",
+    "month": 5,
+    "dateRange": "July",
+    "venue": "Old Royal Naval College",
+    "neighbourhood": "Greenwich",
+    "description": "Outdoor comedy festival beneath the Old Royal Naval College.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Made of Sand Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Folkestone (day trip)",
+    "neighbourhood": "Various",
+    "description": "Alt-arts festival on the Kent coast — London creatives flock.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Queer British Art Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Tate Britain",
+    "neighbourhood": "Westminster",
+    "description": "Specialist LGBT+ art programme at Tate Britain.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Lord's Test Match",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Lord's Cricket Ground",
+    "neighbourhood": "St John's Wood",
+    "description": "A five-day Test Match at Lord's — usually England vs visiting touring side.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "All England Lawn Tennis Club Open",
+    "month": 6,
+    "dateRange": "Last 2 weeks June/first week July",
+    "venue": "All England Club",
+    "neighbourhood": "Wimbledon",
+    "description": "The main Wimbledon fortnight — from first Monday to second Sunday.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Pride in London Club Nights",
+    "month": 6,
+    "dateRange": "Pride week",
+    "venue": "Heaven, Circa, Royal Vauxhall",
+    "neighbourhood": "Various",
+    "description": "Official Pride club nights at London's LGBT+ venues.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Shoreditch Street Food Thursdays",
+    "month": 6,
+    "dateRange": "Summer",
+    "venue": "Various",
+    "neighbourhood": "Shoreditch",
+    "description": "Weekly Thursday street-food pop-ups along Shoreditch streets.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Hampstead Heath Fun Fair",
+    "month": 6,
+    "dateRange": "Early July",
+    "venue": "Hampstead Heath",
+    "neighbourhood": "Hampstead",
+    "description": "Traditional bank-holiday fun fair on Hampstead Heath.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Mayfield Music Festival",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Mayfield Depot",
+    "neighbourhood": "Various",
+    "description": "Two-day music festival in a disused Victorian railway depot.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Westminster Bach Choir",
+    "month": 6,
+    "dateRange": "Summer concerts",
+    "venue": "St Martin-in-the-Fields",
+    "neighbourhood": "Westminster",
+    "description": "The Westminster Bach Choir summer concerts — free lunchtime performances.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Summer Nights at Kenwood",
+    "month": 6,
+    "dateRange": "June-August",
+    "venue": "Kenwood House",
+    "neighbourhood": "Hampstead",
+    "description": "Open-air classical music concerts on the Kenwood lakeside lawn.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Kensington Palace Summer Events",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Kensington Palace",
+    "neighbourhood": "Kensington",
+    "description": "Summer palace events — Diana exhibitions, afternoon tea on the lawn.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Latin Food Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Finsbury Park",
+    "neighbourhood": "Finsbury Park",
+    "description": "Celebration of Latin American food — street food, salsa dancing.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "MCM London Comic Con",
+    "month": 7,
+    "dateRange": "Late August",
+    "venue": "Excel London",
+    "neighbourhood": "Various",
+    "description": "The summer Comic Con at Excel — cosplay, signings, gaming.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Afro Caribbean Hair Expo",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Excel London",
+    "neighbourhood": "Various",
+    "description": "Largest Black hair and beauty expo in the UK.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Bridge Festival",
+    "month": 7,
+    "dateRange": "Early August",
+    "venue": "London Bridge",
+    "neighbourhood": "London Bridge",
+    "description": "Celebration of the area's medieval past — music, food, procession.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Brick Lane Beigel Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Brick Lane",
+    "neighbourhood": "Spitalfields",
+    "description": "Celebration of East End beigel heritage — both Beigel Bake shops feature.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Chinatown Mid-Autumn Festival",
+    "month": 7,
+    "dateRange": "September",
+    "venue": "Chinatown",
+    "neighbourhood": "Soho",
+    "description": "Chinese Mid-Autumn mooncake festival with lanterns and performances.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Horniman Museum Summer Days",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Horniman Museum",
+    "neighbourhood": "Various",
+    "description": "Family-focused summer-holiday activities at the Horniman.",
+    "category": "Family",
+    "free": true
+  },
+  {
+    "name": "Urban Running Festival",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Regent's Canal",
+    "neighbourhood": "Various",
+    "description": "Annual urban 10k run along the Regent's Canal.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Walthamstow Garden Party",
+    "month": 8,
+    "dateRange": "Mid-September",
+    "venue": "Lloyd Park",
+    "neighbourhood": "Various",
+    "description": "Annual arts-and-music weekend in Walthamstow's Lloyd Park.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Rosh Hashanah Services",
+    "month": 8,
+    "dateRange": "September (variable)",
+    "venue": "Various synagogues",
+    "neighbourhood": "Various",
+    "description": "Jewish new year services at Bevis Marks, West End synagogues.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Yom Kippur Services",
+    "month": 8,
+    "dateRange": "September (variable)",
+    "venue": "Various synagogues",
+    "neighbourhood": "Various",
+    "description": "Jewish Day of Atonement — reflective services, business-closure impact.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Turner Prize Exhibition",
+    "month": 8,
+    "dateRange": "September-January",
+    "venue": "Rotating gallery",
+    "neighbourhood": "Various",
+    "description": "The UK's biggest contemporary art prize — shortlisted artists exhibit.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Covent Garden Apple Day",
+    "month": 9,
+    "dateRange": "21 October",
+    "venue": "Covent Garden",
+    "neighbourhood": "Covent Garden",
+    "description": "Celebration of British apples — tasting, cider, traditional games.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "October Art Trail",
+    "month": 9,
+    "dateRange": "Mid-October",
+    "venue": "Shoreditch",
+    "neighbourhood": "Shoreditch",
+    "description": "Shoreditch's open-studio artist trail — 50+ studios open for public visits.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Burgh House Autumn Fair",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Burgh House",
+    "neighbourhood": "Hampstead",
+    "description": "Hampstead's Queen Anne house hosts an autumn antiques-and-craft fair.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Clerkenwell Festival",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Clerkenwell",
+    "neighbourhood": "Clerkenwell",
+    "description": "Design-led festival featuring Clerkenwell's architecture studios, shops, and artisans.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Harvest Festival at St Pancras",
+    "month": 9,
+    "dateRange": "Early October",
+    "venue": "St Pancras Old Church",
+    "neighbourhood": "King's Cross",
+    "description": "Traditional harvest festival service at one of London's oldest churches.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Diwali Feast Night",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Dishoom, Kricket, Gymkhana",
+    "neighbourhood": "Various",
+    "description": "Diwali special menus at London's best Indian restaurants.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Samhain / Halloween London",
+    "month": 9,
+    "dateRange": "31 October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Halloween celebrations — London Dungeon, Ghost Bus Tour, Tower of London ghost tours.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Goth Picnic",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Highgate Cemetery",
+    "neighbourhood": "Hampstead",
+    "description": "Annual gothic gathering at Highgate Cemetery for a Halloween picnic.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Diwali at Victoria & Albert",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "V&A Museum",
+    "neighbourhood": "South Kensington",
+    "description": "Special Diwali evening opening with live South Asian music and dance.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Big Pumpkin Patch",
+    "month": 9,
+    "dateRange": "October weekends",
+    "venue": "Various farms",
+    "neighbourhood": "Various",
+    "description": "Pumpkin picking at farms on London's edge — Crockford Bridge, Parsonage Farm.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "November Apple Festival",
+    "month": 10,
+    "dateRange": "Early November",
+    "venue": "Borough Market",
+    "neighbourhood": "London Bridge",
+    "description": "Borough Market's annual apple festival — 40+ heritage apple varieties.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "The Cenotaph Remembrance Parade",
+    "month": 10,
+    "dateRange": "Second Sunday November",
+    "venue": "Whitehall",
+    "neighbourhood": "Westminster",
+    "description": "National Remembrance Sunday parade and two-minute silence at the Cenotaph.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Hogmanay Preparations",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Scotch Piper pub and others",
+    "neighbourhood": "Various",
+    "description": "London's Scottish community prepares for Hogmanay — whisky tastings, haggis dinners.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Thanksgiving at Claridge's",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Claridge's",
+    "neighbourhood": "Mayfair",
+    "description": "Claridge's annual American Thanksgiving dinner — traditional turkey trolley.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Santa at Harrods",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Harrods",
+    "neighbourhood": "Kensington",
+    "description": "Harrods's famous Santa's Grotto — advance booking essential.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Santa at Hamleys",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Hamleys Regent Street",
+    "neighbourhood": "West End",
+    "description": "Hamleys' 100-year-old Santa's Grotto.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Hampstead Xmas Fair",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Hampstead Heath",
+    "neighbourhood": "Hampstead",
+    "description": "Traditional Hampstead Christmas Fair — craft stalls, German food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Kingston Christmas Parade",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Kingston upon Thames",
+    "neighbourhood": "Various",
+    "description": "Festive parade through Kingston town centre.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Greenwich Christmas Fair",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Old Royal Naval College",
+    "neighbourhood": "Greenwich",
+    "description": "Traditional Greenwich Christmas Market on Christmas past grounds.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Borough Market Christmas",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Borough Market",
+    "neighbourhood": "London Bridge",
+    "description": "Borough Market's festive season — mulled wine stands, Christmas puddings, game meat.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Columbia Road Christmas Trees",
+    "month": 11,
+    "dateRange": "Early December Sundays",
+    "venue": "Columbia Road",
+    "neighbourhood": "Shoreditch",
+    "description": "Columbia Road's Christmas tree sale — live trees, wreaths, mulled wine.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Spitalfields Christmas Market",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Old Spitalfields Market",
+    "neighbourhood": "Spitalfields",
+    "description": "Spitalfields' festive market — craft, gifts, warm food.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "St Christopher's Place Christmas",
+    "month": 11,
+    "dateRange": "Early December",
+    "venue": "St Christopher's Place",
+    "neighbourhood": "West End",
+    "description": "Christmas carols and gift stalls in a charming West End alley.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "West End Late Night Shopping",
+    "month": 11,
+    "dateRange": "All December",
+    "venue": "Oxford Street, Regent Street",
+    "neighbourhood": "West End",
+    "description": "Extended late-opening hours at Christmas — many stores open until 10pm.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Carol Singing at Trafalgar Square",
+    "month": 11,
+    "dateRange": "December",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Free carol singing with the Norwegian Christmas tree — a London tradition since 1947.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Regent's Park Christmas Day Swim",
+    "month": 11,
+    "dateRange": "Christmas Day",
+    "venue": "Serpentine",
+    "neighbourhood": "Hyde Park",
+    "description": "Annual 100m Christmas Day race — Serpentine Swimming Club members only.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Peter Pan Cup",
+    "month": 11,
+    "dateRange": "Christmas Day",
+    "venue": "Serpentine",
+    "neighbourhood": "Hyde Park",
+    "description": "The Peter Pan Cup — 100-yard race for Serpentine Swimming Club members at Christmas.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Boxing Day Football",
+    "month": 11,
+    "dateRange": "26 December",
+    "venue": "Various stadia",
+    "neighbourhood": "Various",
+    "description": "The beloved Boxing Day football fixture list — a British tradition.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Ice Skate at Canary Wharf",
+    "month": 10,
+    "dateRange": "Nov-January",
+    "venue": "Canary Wharf Ice Rink",
+    "neighbourhood": "Canary Wharf",
+    "description": "Outdoor ice rink at Canary Wharf — overlooks the water.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Ice Skate at Hampton Court",
+    "month": 10,
+    "dateRange": "Nov-January",
+    "venue": "Hampton Court Palace",
+    "neighbourhood": "Hampton Court",
+    "description": "Outdoor ice rink against the Tudor palace backdrop.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Ice Skate at Queen's Gardens",
+    "month": 10,
+    "dateRange": "Nov-January",
+    "venue": "Queen's House Greenwich",
+    "neighbourhood": "Greenwich",
+    "description": "Smaller ice rink beside the National Maritime Museum.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Hogmanay London",
+    "month": 11,
+    "dateRange": "31 December",
+    "venue": "The Caledonian Club",
+    "neighbourhood": "Mayfair",
+    "description": "London's Scottish community's New Year ceilidh and feast.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Mumming Play at St Paul's",
+    "month": 0,
+    "dateRange": "January",
+    "venue": "St Paul's Cathedral",
+    "neighbourhood": "City of London",
+    "description": "Medieval-style mumming performance at St Paul's around Twelfth Night.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "RAC British Gastronomy Awards",
+    "month": 1,
+    "dateRange": "February",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Annual British food awards — top restaurants receive honours.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Cook & Butler Country Pub Awards",
+    "month": 2,
+    "dateRange": "March",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Annual best-country-pub-in-London awards — in a themed evening.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "London Art Biennale",
+    "month": 5,
+    "dateRange": "May-November biennial",
+    "venue": "Various galleries",
+    "neighbourhood": "Various",
+    "description": "Bi-annual art biennale across London galleries and public spaces.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Hammersmith Apollo Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Eventim Apollo",
+    "neighbourhood": "Various",
+    "description": "Major concerts at the Hammersmith Apollo — a 5,000-cap classic venue.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "O2 Arena Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "O2 Arena",
+    "neighbourhood": "Greenwich",
+    "description": "World's busiest music venue — Taylor Swift, Billie Eilish, Pink — weekly concerts.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Roundhouse Shows",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "The Roundhouse",
+    "neighbourhood": "Camden",
+    "description": "Indie, rock, comedy, and circus shows at Camden's historic Roundhouse.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Wembley Arena Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "OVO Arena Wembley",
+    "neighbourhood": "Wembley",
+    "description": "Major concerts at the 12,500-cap OVO Arena Wembley.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Alexandra Palace Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "Big-name concerts at the 10,000-cap Ally Pally.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Barbican Classical Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Barbican Hall",
+    "neighbourhood": "City of London",
+    "description": "Barbican Hall — resident home of the London Symphony Orchestra and BBC Symphony.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Royal Festival Hall Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Royal Festival Hall",
+    "neighbourhood": "South Bank",
+    "description": "Royal Philharmonic and Philharmonia concerts at the Festival Hall.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Southbank Centre Free Friday",
+    "month": 0,
+    "dateRange": "First Friday",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "Monthly free Friday evening event at the Southbank Centre.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "British Museum Lunchtime Tours",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "British Museum",
+    "neighbourhood": "Bloomsbury",
+    "description": "Free 45-minute tours of gallery highlights at the British Museum.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "National Gallery Sainsbury Wing",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "National Gallery",
+    "neighbourhood": "Westminster",
+    "description": "Reopened Sainsbury Wing exhibitions — special Italian Renaissance displays.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Tate Modern Turbine Hall",
+    "month": 0,
+    "dateRange": "Rotating installations",
+    "venue": "Tate Modern",
+    "neighbourhood": "Bankside",
+    "description": "Annual large-scale Turbine Hall commissions by world-famous artists.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Open Air Yoga in Regent's Park",
+    "month": 5,
+    "dateRange": "June-August",
+    "venue": "Regent's Park",
+    "neighbourhood": "Marylebone",
+    "description": "Free outdoor yoga classes at the bandstand — Saturday mornings.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Nights at the Museums",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "V&A, Tate, BM",
+    "neighbourhood": "Various",
+    "description": "Extended evening openings at major museums for Museums Night.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Meditation Sessions at Buddhist Centre",
+    "month": 0,
+    "dateRange": "Twice weekly",
+    "venue": "London Buddhist Centre",
+    "neighbourhood": "Bethnal Green",
+    "description": "Free drop-in meditation classes at the Buddhist Centre.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Quakers Meetings",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Quaker Meeting House Euston",
+    "neighbourhood": "Various",
+    "description": "Weekly silent meetings — everyone welcome, no faith required.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Sunday Services at Westminster Abbey",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Westminster Abbey",
+    "neighbourhood": "Westminster",
+    "description": "Free Sunday services at Westminster Abbey — includes Choral Evensong.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Evensong at St Paul's",
+    "month": 0,
+    "dateRange": "Daily",
+    "venue": "St Paul's Cathedral",
+    "neighbourhood": "City of London",
+    "description": "Free evening Evensong with the St Paul's Choir — one of London's musical jewels.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Lunchtime Concerts at St Martin-in-the-Fields",
+    "month": 0,
+    "dateRange": "Mon, Tue, Fri",
+    "venue": "St Martin-in-the-Fields",
+    "neighbourhood": "Westminster",
+    "description": "Free lunchtime classical concerts — an hour of world-class music.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Lunchtime Concerts at St Lawrence Jewry",
+    "month": 0,
+    "dateRange": "Mon, Tue",
+    "venue": "St Lawrence Jewry",
+    "neighbourhood": "City of London",
+    "description": "Free 45-minute piano and organ recitals at the Guildhall church.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Lunchtime Concerts at St Mary-le-Bow",
+    "month": 0,
+    "dateRange": "Thu",
+    "venue": "St Mary-le-Bow",
+    "neighbourhood": "City of London",
+    "description": "Free Thursday lunchtime concerts — £5-10 suggested donation.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "Royal Philharmonic Family Concerts",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "Family-friendly classical concerts — introductory programme.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "London Mozart Players",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Cadogan Hall",
+    "neighbourhood": "Chelsea",
+    "description": "Concerts by the UK's oldest chamber orchestra.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Academy of Ancient Music",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Wigmore Hall",
+    "neighbourhood": "Marylebone",
+    "description": "Period-instrument baroque concerts at Wigmore Hall.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "English National Opera",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "London Coliseum",
+    "neighbourhood": "Covent Garden",
+    "description": "English-language opera at the London Coliseum — £10-100 tickets.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Royal Opera House Performances",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Royal Opera House",
+    "neighbourhood": "Covent Garden",
+    "description": "World-class opera and ballet in the Royal Opera House — season runs autumn-summer.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Royal Ballet Season",
+    "month": 0,
+    "dateRange": "Autumn-Summer",
+    "venue": "Royal Opera House",
+    "neighbourhood": "Covent Garden",
+    "description": "The Royal Ballet's annual season — Nutcracker at Christmas is iconic.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Sadler's Wells Dance Season",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Sadler's Wells",
+    "neighbourhood": "Clerkenwell",
+    "description": "World-leading dance programme — contemporary, ballet, flamenco, hip-hop.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Duke of York's Picturehouse Lates",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Duke of York's Picturehouse",
+    "neighbourhood": "Brighton (day trip)",
+    "description": "Cult film lates at one of Britain's oldest continuously-operating cinemas.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Late Night at the Barbican",
+    "month": 0,
+    "dateRange": "Monthly",
+    "venue": "Barbican Centre",
+    "neighbourhood": "City of London",
+    "description": "Monthly Barbican Late — live music, DJs, art installations.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "ICA Cinema Programme",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "ICA",
+    "neighbourhood": "St James's",
+    "description": "The Institute of Contemporary Arts' cutting-edge film programme.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Art After Dark at National Gallery",
+    "month": 0,
+    "dateRange": "Monthly",
+    "venue": "National Gallery",
+    "neighbourhood": "Westminster",
+    "description": "Monthly late-night Gallery opening — bars, talks, music.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Kids Week Theatre",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "West End theatres",
+    "neighbourhood": "West End",
+    "description": "Kids eat-free plus child-goes-free schemes at most West End shows during August.",
+    "category": "Family",
+    "free": true
+  },
+  {
+    "name": "London Zoo After Dark",
+    "month": 5,
+    "dateRange": "June-August",
+    "venue": "London Zoo",
+    "neighbourhood": "Marylebone",
+    "description": "Adults-only evening zoo visits with cocktails and behind-the-scenes access.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Kew Orchids Festival",
+    "month": 1,
+    "dateRange": "February-March",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Annual orchid displays in the Princess of Wales Conservatory.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "RHS Autumn Garden Show",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "RHS Wisley",
+    "neighbourhood": "Various",
+    "description": "Autumn garden show at RHS Wisley — seasonal plants, landscapes, food.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Christmas at Kenwood",
+    "month": 11,
+    "dateRange": "December",
+    "venue": "Kenwood House",
+    "neighbourhood": "Hampstead",
+    "description": "Kenwood's festive programme — candle-lit carols, winter walks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Holiday Lights at St Pancras",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "St Pancras Station",
+    "neighbourhood": "King's Cross",
+    "description": "Annual giant illuminated Christmas tree at the Grand Station.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Lovelight at Southbank",
+    "month": 10,
+    "dateRange": "November-December",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "Seasonal light installations along the South Bank.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Christmas Tree at Trafalgar Square",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "The annual Norwegian-donated Christmas tree lights up — a London tradition since 1947.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Canary Wharf Winter Lights",
+    "month": 10,
+    "dateRange": "January",
+    "venue": "Canary Wharf",
+    "neighbourhood": "Canary Wharf",
+    "description": "10 days of light-art installations across Canary Wharf — free to visit.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Bank Christmas Light Switch-on",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Bank of England",
+    "neighbourhood": "City of London",
+    "description": "The City's Christmas lights get their own switch-on ceremony.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Summer Bank Holiday Events",
+    "month": 7,
+    "dateRange": "Late August",
+    "venue": "Parks citywide",
+    "neighbourhood": "Various",
+    "description": "Summer bank holiday Monday — many free park events and fêtes.",
+    "category": "Family",
+    "free": true
+  },
+  {
+    "name": "Christmas Day at Sky Garden",
+    "month": 11,
+    "dateRange": "25 December",
+    "venue": "Sky Garden",
+    "neighbourhood": "City of London",
+    "description": "One of the few restaurants open on Christmas Day — book months ahead.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Christmas Day Swim at Serpentine",
+    "month": 11,
+    "dateRange": "25 December",
+    "venue": "Serpentine Lido",
+    "neighbourhood": "Hyde Park",
+    "description": "The Peter Pan Cup 100-yard Christmas Day swim — for club members.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Christmas Day Walking Tours",
+    "month": 11,
+    "dateRange": "25 December",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Christmas Day guided walking tours — one of the few activities open.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Boxing Day Test Match",
+    "month": 11,
+    "dateRange": "26 December",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Boxing Day cricket test matches — major England winter tours.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Boxing Day Sales",
+    "month": 11,
+    "dateRange": "26 December",
+    "venue": "Oxford Street, Westfield",
+    "neighbourhood": "Various",
+    "description": "Biggest shopping day of the year — up to 80% off at major retailers.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Queen's Speech at Parliament",
+    "month": 10,
+    "dateRange": "November",
+    "venue": "Houses of Parliament",
+    "neighbourhood": "Westminster",
+    "description": "The King's Speech at the State Opening of Parliament — historic pageantry, public can watch the procession.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Ceremony of the Keys",
+    "month": 0,
+    "dateRange": "Nightly",
+    "venue": "Tower of London",
+    "neighbourhood": "Tower Hill",
+    "description": "Nightly 700-year-old ceremony to secure the Tower. Tickets from the Tower — free.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Changing of the Horse Guard",
+    "month": 0,
+    "dateRange": "Daily",
+    "venue": "Horse Guards Parade",
+    "neighbourhood": "Westminster",
+    "description": "11am daily ceremonial changing of the mounted guard at Horse Guards — free to watch.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Changing of the Guard",
+    "month": 0,
+    "dateRange": "Daily",
+    "venue": "Buckingham Palace",
+    "neighbourhood": "Westminster",
+    "description": "11am Changing of the Guard at Buckingham Palace — days vary, check schedule.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Marathon Week Events",
+    "month": 3,
+    "dateRange": "London Marathon week",
+    "venue": "Various London locations",
+    "neighbourhood": "Various",
+    "description": "Meet-the-Runners, carb-loading events, runners' expo at Excel London.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Pancake Race Inner Temple",
+    "month": 1,
+    "dateRange": "Shrove Tuesday",
+    "venue": "Inner Temple",
+    "neighbourhood": "City of London",
+    "description": "Barristers and their clerks race with pancakes — a tradition dating to 1634.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Hat Fair Covent Garden",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Covent Garden",
+    "neighbourhood": "Covent Garden",
+    "description": "Street performers' festival — jugglers, acrobats, clowns on Covent Garden piazza.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Oxford Street Summer Festival",
+    "month": 5,
+    "dateRange": "July",
+    "venue": "Oxford Street",
+    "neighbourhood": "West End",
+    "description": "Pedestrianised Oxford Street summer weekends with entertainment and street food.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Brent Christmas Market",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Brent Cross",
+    "neighbourhood": "Various",
+    "description": "Large North London Christmas market with global food stalls.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Wembley Christmas Market",
+    "month": 10,
+    "dateRange": "Late November",
+    "venue": "Wembley Park",
+    "neighbourhood": "Wembley",
+    "description": "Wembley's seasonal German-style Christmas market with ice rink.",
+    "category": "Markets",
+    "free": true
+  },
+  {
+    "name": "Goose Fair (Nottingham — LDN Expats)",
+    "month": 9,
+    "dateRange": "Early October",
+    "venue": "Nottingham day trip",
+    "neighbourhood": "Various",
+    "description": "One of Britain's oldest fairs — London expats travel.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Apple Day",
+    "month": 9,
+    "dateRange": "21 October",
+    "venue": "Wisley, Borough Market",
+    "neighbourhood": "Various",
+    "description": "Celebration of British apples — tasting, cider press, apple-based food.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Blessing of the Fleet",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Thames",
+    "neighbourhood": "Various",
+    "description": "Ancient ceremony of blessing the Thames working boats — held on the river.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Doggett's Coat & Badge Race",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Thames Chelsea to Chelsea Embankment",
+    "neighbourhood": "Chelsea",
+    "description": "The world's oldest boat race (1715) — Watermen's apprentices compete.",
+    "category": "Sport",
+    "free": true
+  },
+  {
+    "name": "Pearly Kings & Queens Harvest Festival",
+    "month": 8,
+    "dateRange": "First Sunday October",
+    "venue": "St Martin-in-the-Fields",
+    "neighbourhood": "Westminster",
+    "description": "Costermonger tradition — Pearly families in their mother-of-pearl-covered suits parade.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Harvest Supper at Ploughman's",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "City Livery Halls",
+    "neighbourhood": "City of London",
+    "description": "Traditional London Livery harvest suppers — public Halls sometimes open.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Whit Friday Brass Band Contests",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Across Greater Manchester (major draw)",
+    "neighbourhood": "Various",
+    "description": "London brass-band enthusiasts travel for the Whit Friday competitions.",
+    "category": "Music",
+    "free": true
+  },
+  {
+    "name": "The Great Gorilla Run",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Central London",
+    "neighbourhood": "Various",
+    "description": "Fundraiser fun run in gorilla suits from London Bridge to Southwark.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Red Nose Day",
+    "month": 2,
+    "dateRange": "Mid-March",
+    "venue": "Everywhere",
+    "neighbourhood": "Various",
+    "description": "UK-wide Comic Relief charity day — London is command central for TV broadcasts.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Children in Need",
+    "month": 10,
+    "dateRange": "Mid-November",
+    "venue": "BBC Broadcasting House",
+    "neighbourhood": "West End",
+    "description": "BBC's major annual charity telethon — Pudsey Bear everywhere.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Movember Events",
+    "month": 10,
+    "dateRange": "Throughout November",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Men's health charity events — pubs run moustache parties and fundraisers.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Earth Day London",
+    "month": 3,
+    "dateRange": "22 April",
+    "venue": "Hyde Park",
+    "neighbourhood": "Hyde Park",
+    "description": "Environmental awareness events and speakers on Earth Day.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Plastic Free July",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Across London",
+    "neighbourhood": "Various",
+    "description": "Sustainability campaign — zero-waste supermarkets and workshops.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "World Oceans Day",
+    "month": 5,
+    "dateRange": "8 June",
+    "venue": "National Maritime Museum",
+    "neighbourhood": "Greenwich",
+    "description": "Marine conservation focus with exhibits and talks.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "World Book Night",
+    "month": 3,
+    "dateRange": "23 April",
+    "venue": "Bookshops citywide",
+    "neighbourhood": "Various",
+    "description": "Free book giveaways across London to promote reading.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Hay Festival (London Sessions)",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London events programmed by Hay Festival during the Hay Book Festival period.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Edinburgh Fringe Preview Week",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Soho Theatre, Battersea Arts Centre",
+    "neighbourhood": "Various",
+    "description": "Edinburgh Fringe previews at London comedy venues — cheap tickets for shows heading to Edinburgh.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Dave's Leicester Comedy Festival",
+    "month": 1,
+    "dateRange": "February",
+    "venue": "Leicester (day trip)",
+    "neighbourhood": "Various",
+    "description": "The UK's biggest comedy festival — London comedians travel for it.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Soho Theatre Late-Night Comedy",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Soho Theatre",
+    "neighbourhood": "Soho",
+    "description": "Late-night stand-up comedy at Soho Theatre — £10-15, cult following.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Top Secret Comedy Club",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Top Secret Comedy Club",
+    "neighbourhood": "Covent Garden",
+    "description": "Top-name stand-ups in a Covent Garden basement — 'free' entry (tip bucket).",
+    "category": "Theatre",
+    "free": true
+  },
+  {
+    "name": "99 Club Leicester Square",
+    "month": 0,
+    "dateRange": "Nightly",
+    "venue": "Leicester Square",
+    "neighbourhood": "West End",
+    "description": "Nightly stand-up comedy shows at various central venues.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Kill for a Seat",
+    "month": 0,
+    "dateRange": "Sunday",
+    "venue": "Backyard Comedy Club",
+    "neighbourhood": "Bethnal Green",
+    "description": "Sunday night cult comedy showcase — £5 in Bethnal Green.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Hot Water Comedy Club",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Touring comedy night with up-and-coming talent.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "BBC Recording Tickets",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Various BBC studios",
+    "neighbourhood": "Various",
+    "description": "Apply online for free BBC TV show recordings — QI, HIGNFY, Graham Norton.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Live from the National",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Cinemas citywide",
+    "neighbourhood": "Various",
+    "description": "NT Live broadcasts of West End productions to cinemas on selected nights.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "RSC Live",
+    "month": 0,
+    "dateRange": "Throughout year",
+    "venue": "Cinemas citywide",
+    "neighbourhood": "Various",
+    "description": "Royal Shakespeare Company live broadcasts from Stratford-upon-Avon.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Glyndebourne at Cinema",
+    "month": 4,
+    "dateRange": "June-July",
+    "venue": "Cinemas citywide",
+    "neighbourhood": "Various",
+    "description": "Glyndebourne Opera live broadcasts to London cinemas.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Royal Opera House Cinema",
+    "month": 0,
+    "dateRange": "Selected nights",
+    "venue": "Cinemas citywide",
+    "neighbourhood": "Various",
+    "description": "Royal Opera live broadcasts — a way to see ROH productions for £15-25.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "Fake Ghosts Jack the Ripper Walk",
+    "month": 0,
+    "dateRange": "Nightly",
+    "venue": "Tower Hill to Whitechapel",
+    "neighbourhood": "Whitechapel",
+    "description": "Guided walking tours of Jack the Ripper's East End sites — a macabre London classic.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Ghost Bus Tour",
+    "month": 0,
+    "dateRange": "Nightly",
+    "venue": "Northumberland Avenue",
+    "neighbourhood": "Westminster",
+    "description": "A comedic-horror tour aboard a decommissioned 1960s Routemaster bus.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Routemaster Heritage Route",
+    "month": 0,
+    "dateRange": "Daily",
+    "venue": "Route 15H",
+    "neighbourhood": "Various",
+    "description": "Ride a classic Routemaster bus on route 15H — Trafalgar Square to Tower Hill.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "London Transport Museum Steam Open Day",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "London Transport Museum",
+    "neighbourhood": "Covent Garden",
+    "description": "Heritage steam locomotive open days at the museum.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "National Rail Museum Day",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London steam rail events — visits from heritage trains to London terminals.",
+    "category": "Family",
+    "free": false
+  },
+  {
+    "name": "Wild Life Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Brighton (day trip)",
+    "neighbourhood": "Various",
+    "description": "Electronic-music festival on Brighton beach — London youth travel.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "End Of The Road Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Dorset (day trip)",
+    "neighbourhood": "Various",
+    "description": "Indie music festival — known for its quirky programming.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Wilderness Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Oxfordshire",
+    "neighbourhood": "Various",
+    "description": "Oxfordshire arts-music-food festival — London creative crowd.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Shambala Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Northamptonshire",
+    "neighbourhood": "Various",
+    "description": "Alt festival — no sponsorship, no corporate brands.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Green Man Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Wales",
+    "neighbourhood": "Various",
+    "description": "Welsh folk-and-indie festival — London music journalists' favourite.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Bestival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Isle of Wight",
+    "neighbourhood": "Various",
+    "description": "Major late-summer Isle of Wight festival.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Mighty Hoopla",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Brockwell Park",
+    "neighbourhood": "Brixton",
+    "description": "One-day London pop-music festival — a celebration of LGBT+ pop icons.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Field Day Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Brockwell Park",
+    "neighbourhood": "Brixton",
+    "description": "Brockwell Park electronic festival — indie-dance lineup.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Cross the Tracks",
+    "month": 5,
+    "dateRange": "Late May",
+    "venue": "Brockwell Park",
+    "neighbourhood": "Brixton",
+    "description": "Funk, soul, and jazz festival in Brockwell Park.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "City Splash",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Crystal Palace Park",
+    "neighbourhood": "Various",
+    "description": "Reggae and Caribbean music festival.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Black Deer Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Eridge Park",
+    "neighbourhood": "Various",
+    "description": "Americana and country music festival — London country-music fans travel.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Sounds of the Underground",
+    "month": 0,
+    "dateRange": "Rotating",
+    "venue": "Various venues",
+    "neighbourhood": "Various",
+    "description": "London underground music scene — experimental, improvised, left-field gigs.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Boom Battle Bar Tournaments",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Multiple locations",
+    "neighbourhood": "Various",
+    "description": "Axe-throwing tournaments and shuffleboard — London's competitive-socialising boom.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Flight Club Mini-Golf",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "Multiple locations",
+    "neighbourhood": "Various",
+    "description": "Augmented-reality darts tournaments — a London bar-sport.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Swingers Crazy Golf",
+    "month": 0,
+    "dateRange": "Weekly",
+    "venue": "West End, City",
+    "neighbourhood": "Various",
+    "description": "Indoor crazy-golf bars — a bachelor/bachelorette party favourite.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Ally Pally Darts",
+    "month": 10,
+    "dateRange": "November",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "Annual PDC Grand Slam of Darts — a Northern sporting pilgrimage to London.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "World Darts Championship",
+    "month": 11,
+    "dateRange": "Christmas/New Year",
+    "venue": "Alexandra Palace",
+    "neighbourhood": "Various",
+    "description": "The big event — 16-day PDC World Darts Championship at Alexandra Palace.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Boat Show Excel",
+    "month": 0,
+    "dateRange": "January",
+    "venue": "Excel London",
+    "neighbourhood": "Various",
+    "description": "London International Boat Show — yachts, motorboats, marine kit.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Chocolate Show",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Olympia",
+    "neighbourhood": "Various",
+    "description": "Chocolate festival with 150+ artisan chocolatiers.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Cake International",
+    "month": 10,
+    "dateRange": "November",
+    "venue": "NEC Birmingham",
+    "neighbourhood": "Various",
+    "description": "Britain's biggest cake decorating show — London cake fans travel.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Caribbean Food Week",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "A week of Caribbean food events around London's Caribbean restaurants.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Vegan Festival",
+    "month": 1,
+    "dateRange": "February",
+    "venue": "Kensington Olympia",
+    "neighbourhood": "Various",
+    "description": "UK's biggest vegan trade show — 250+ vendors.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Coffee and Cake Festival",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Old Truman Brewery",
+    "neighbourhood": "Shoreditch",
+    "description": "Specialty coffee, bakery, and tea festival.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Tea Week UK",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "UK Tea Week — events and tastings at London's teahouses.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Gin Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Kensington Olympia",
+    "neighbourhood": "Various",
+    "description": "London's big annual gin festival — 100+ distillers pouring.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Cocktail Week Awards",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Bar Awards celebration at London's cocktail week.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "World Curry Festival",
+    "month": 5,
+    "dateRange": "July",
+    "venue": "Brick Lane",
+    "neighbourhood": "Spitalfields",
+    "description": "London-only curry festival focused on Brick Lane.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Bagel Festival London",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Brick Lane",
+    "neighbourhood": "Spitalfields",
+    "description": "East End bagel heritage celebrated with pop-ups and food stalls.",
+    "category": "Food",
+    "free": true
+  },
+  {
+    "name": "Sausage Fest",
+    "month": 3,
+    "dateRange": "Late April",
+    "venue": "Borough Market",
+    "neighbourhood": "London Bridge",
+    "description": "British butcher's celebration of sausages — tastings and meet-the-maker.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "National Oyster Day",
+    "month": 7,
+    "dateRange": "5 August",
+    "venue": "Seafood restaurants",
+    "neighbourhood": "Various",
+    "description": "Oyster specials at Wright Brothers, J Sheekey, Bentley's.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Pride of Britain Awards",
+    "month": 9,
+    "dateRange": "Late October",
+    "venue": "Grosvenor House Hotel",
+    "neighbourhood": "Mayfair",
+    "description": "UK's most popular awards — celebrating everyday heroes.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Brit Awards",
+    "month": 1,
+    "dateRange": "Mid-February",
+    "venue": "O2 Arena",
+    "neighbourhood": "Greenwich",
+    "description": "UK's biggest music awards — red-carpet arrivals watchable by public.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Olivier Awards",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Royal Albert Hall",
+    "neighbourhood": "Kensington",
+    "description": "UK theatre's biggest awards — Olivier Awards red-carpet at Albert Hall.",
+    "category": "Theatre",
+    "free": false
+  },
+  {
+    "name": "GQ Men of the Year",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Royal Opera House",
+    "neighbourhood": "Covent Garden",
+    "description": "Annual GQ magazine awards — major celebrity red carpet.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Vogue Fashion Fund",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "British Vogue's fashion design competition.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Booker Prize Announcement",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Guildhall",
+    "neighbourhood": "City of London",
+    "description": "Britain's biggest literary prize — public announcement in the Guildhall.",
+    "category": "Art",
+    "free": true
+  },
+  {
+    "name": "Turner Prize Awards",
+    "month": 11,
+    "dateRange": "December",
+    "venue": "Tate Britain",
+    "neighbourhood": "Westminster",
+    "description": "UK's biggest contemporary art prize — televised award ceremony.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "RIBA Stirling Prize",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Britain's top architecture prize — tours of the shortlisted buildings.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Amadeus Awards",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Royal Opera House",
+    "neighbourhood": "Covent Garden",
+    "description": "International music industry awards.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "AAM Awards",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Music Awards ceremony — artists' mechanics of music.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "Pride of London Football Awards",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London football awards — ceremony for the six main London clubs.",
+    "category": "Sport",
+    "free": false
+  },
+  {
+    "name": "Chelsea Flower Show Gala",
+    "month": 4,
+    "dateRange": "Late May",
+    "venue": "Royal Hospital Chelsea",
+    "neighbourhood": "Chelsea",
+    "description": "Charity gala on the first evening of the Chelsea Flower Show — a Mayfair set fundraiser.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "London Mela",
+    "month": 6,
+    "dateRange": "Late August",
+    "venue": "Gunnersbury Park",
+    "neighbourhood": "Various",
+    "description": "Europe's biggest South Asian festival — music, food, dance. Free.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Carnival's Children's Day",
+    "month": 7,
+    "dateRange": "August Bank Holiday Sunday",
+    "venue": "Notting Hill",
+    "neighbourhood": "Notting Hill",
+    "description": "The family-friendly Sunday of Notting Hill Carnival — before Monday's main parade.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Hackney Carnival Parade",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Ridley Road area",
+    "neighbourhood": "Hackney",
+    "description": "A smaller, family-friendly East London carnival with Caribbean, Asian, African parades.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "African Caribbean Awareness Month",
+    "month": 9,
+    "dateRange": "Throughout October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Month of events celebrating African Caribbean heritage.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Pangea Caribbean Festival",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Victoria Park",
+    "neighbourhood": "Hackney",
+    "description": "Caribbean and African food and music festival.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Uganda High Commission Festival",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Ugandan community celebrates Ugandan Independence Day.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Ethiopian Millennium Gala",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Various Ethiopian restaurants",
+    "neighbourhood": "Various",
+    "description": "Ethiopian new year celebrations (September) in London's Ethiopian community.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Nigerian Independence Day",
+    "month": 9,
+    "dateRange": "1 October",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Celebrations across London's Nigerian community.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Ghana Independence Day",
+    "month": 2,
+    "dateRange": "6 March",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Ghanaian community marks Ghana's independence.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Kenya Independence Day",
+    "month": 11,
+    "dateRange": "12 December",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Kenyan community celebrates Kenyan independence.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Polish Independence Day",
+    "month": 10,
+    "dateRange": "11 November",
+    "venue": "Hammersmith",
+    "neighbourhood": "Various",
+    "description": "London's Polish community celebrates Polish independence.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Ukrainian Independence Day",
+    "month": 7,
+    "dateRange": "24 August",
+    "venue": "Holland Park",
+    "neighbourhood": "Kensington",
+    "description": "Ukrainian community gathering and cultural events in Holland Park.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Russian Cultural Days",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Pushkin House",
+    "neighbourhood": "Bloomsbury",
+    "description": "Russian cultural festival and film screenings at Pushkin House.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Brazilian Carnival London",
+    "month": 1,
+    "dateRange": "February",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Brazilian community celebrates Carnival with samba schools.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Colombian Independence Day",
+    "month": 6,
+    "dateRange": "20 July",
+    "venue": "Elephant & Castle",
+    "neighbourhood": "Elephant & Castle",
+    "description": "London's biggest Colombian celebration at 'Little Colombia'.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Mexican Day of the Dead",
+    "month": 10,
+    "dateRange": "1-2 November",
+    "venue": "Various Mexican restaurants",
+    "neighbourhood": "Various",
+    "description": "Día de los Muertos celebrations — altars, papel picado, Mexican food.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Basque Pintxos Festival",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Various Spanish restaurants",
+    "neighbourhood": "Various",
+    "description": "Basque food and wine festival across London's Spanish restaurants.",
+    "category": "Food",
+    "free": false
+  },
+  {
+    "name": "Portuguese Food Festival",
+    "month": 4,
+    "dateRange": "May",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Portuguese community celebrates with pastéis de nata and Port.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Greek Orthodox Easter",
+    "month": 3,
+    "dateRange": "Greek Orthodox Easter date",
+    "venue": "Greek Orthodox Cathedral",
+    "neighbourhood": "Bayswater",
+    "description": "Greek Easter celebrations at St Sophia Cathedral and Greek restaurants.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Italian Festa",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Italian Church Clerkenwell",
+    "neighbourhood": "Clerkenwell",
+    "description": "Italian community's annual festival at St Peter's Italian Church.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Polska Rock on the Thames",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Riverside",
+    "neighbourhood": "Various",
+    "description": "Polish rock music festival on the riverside.",
+    "category": "Music",
+    "free": false
+  },
+  {
+    "name": "French Film Festival",
+    "month": 10,
+    "dateRange": "November",
+    "venue": "Cine Lumiere",
+    "neighbourhood": "Kensington",
+    "description": "Annual French film festival at Institut Francais.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "German Film Festival",
+    "month": 9,
+    "dateRange": "October",
+    "venue": "Regent Street Cinema",
+    "neighbourhood": "West End",
+    "description": "London's German film festival — 30+ films screened.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Japanese Cherry Blossoms Walk",
+    "month": 3,
+    "dateRange": "Mid-April",
+    "venue": "Kew Gardens",
+    "neighbourhood": "Kew",
+    "description": "Cherry blossom viewing (Hanami) at Kew Gardens.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Hanami in Holland Park",
+    "month": 3,
+    "dateRange": "Mid-April",
+    "venue": "Holland Park",
+    "neighbourhood": "Kensington",
+    "description": "Free Japanese cherry blossom viewing in Kyoto Garden.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Japanese Matsuri",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Japanese cultural festival — taiko drums, ikebana, kimono dressing.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Korean Cultural Festival",
+    "month": 7,
+    "dateRange": "August",
+    "venue": "Kensington",
+    "neighbourhood": "Kensington",
+    "description": "Korean food, K-pop dance classes, Taekwondo demonstrations.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Mid-Autumn Moon Festival",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Chinatown",
+    "neighbourhood": "Soho",
+    "description": "Chinese Mid-Autumn Festival — mooncakes, lanterns, dragon dances.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Qingming Festival",
+    "month": 3,
+    "dateRange": "April",
+    "venue": "Chinese cemeteries",
+    "neighbourhood": "Various",
+    "description": "Chinese tomb-sweeping festival honouring ancestors.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Vietnamese New Year Tet",
+    "month": 1,
+    "dateRange": "February",
+    "venue": "Kingsland Road",
+    "neighbourhood": "Hoxton",
+    "description": "London's biggest Vietnamese Tet celebrations along 'Pho Mile'.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Thai New Year Songkran Water Fight",
+    "month": 3,
+    "dateRange": "13-15 April",
+    "venue": "Sukhumvit",
+    "neighbourhood": "West End",
+    "description": "Thai new year water-throwing at London's Thai restaurants.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Indian Summer Festival",
+    "month": 4,
+    "dateRange": "June",
+    "venue": "Southbank Centre",
+    "neighbourhood": "South Bank",
+    "description": "Free festival of South Asian music, dance, and food at Southbank Centre.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Bangladeshi Independence Day",
+    "month": 2,
+    "dateRange": "26 March",
+    "venue": "Brick Lane",
+    "neighbourhood": "Spitalfields",
+    "description": "Bangladeshi independence celebrations on Brick Lane.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Sri Lankan Independence Day",
+    "month": 1,
+    "dateRange": "4 February",
+    "venue": "Tooting",
+    "neighbourhood": "Various",
+    "description": "London's Sri Lankan community gathering in Tooting.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Iranian Nowruz",
+    "month": 2,
+    "dateRange": "Spring Equinox",
+    "venue": "Trafalgar Square",
+    "neighbourhood": "Westminster",
+    "description": "Iranian new year celebrations with haft-seen table, music, and dance.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Iraqi Heritage Day",
+    "month": 5,
+    "dateRange": "June",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "London's Iraqi community cultural day.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Syrian Arts Festival",
+    "month": 6,
+    "dateRange": "July",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Syrian arts and music festival raising awareness of Syrian culture.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Lebanese Festival London",
+    "month": 8,
+    "dateRange": "September",
+    "venue": "Various Lebanese restaurants",
+    "neighbourhood": "Various",
+    "description": "Lebanese food and music festival across Edgware Road restaurants.",
+    "category": "Festival",
+    "free": false
+  },
+  {
+    "name": "Palestinian Solidarity Events",
+    "month": 4,
+    "dateRange": "Ongoing",
+    "venue": "Various",
+    "neighbourhood": "Various",
+    "description": "Palestinian cultural events and rallies.",
+    "category": "Festival",
+    "free": true
+  },
+  {
+    "name": "Jewish Film Festival",
+    "month": 10,
+    "dateRange": "November",
+    "venue": "JW3",
+    "neighbourhood": "Hampstead",
+    "description": "UK Jewish Film Festival — 60+ films at JW3 and other venues.",
+    "category": "Art",
+    "free": false
+  },
+  {
+    "name": "Purim Adloyada",
+    "month": 2,
+    "dateRange": "March",
+    "venue": "Stamford Hill",
+    "neighbourhood": "Various",
+    "description": "Jewish Purim festival parade and costume parties.",
+    "category": "Festival",
+    "free": true
+  }
+]

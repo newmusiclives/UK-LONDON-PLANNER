@@ -6835,5 +6835,5029 @@
     "affiliateUrl": "",
     "affiliateLabel": "",
     "tips": "On trendy Bermondsey Street with plenty of other bars nearby. Good craft beer selection and pub food."
+  },
+  {
+    "id": "beaufort-bar-savoy",
+    "name": "The Beaufort Bar at The Savoy",
+    "description": "The Savoy's black-and-gold jewel-box cocktail bar — theatrical, midnight-moody, with live jazz on Fridays.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 24,
+      "currency": "GBP"
+    },
+    "address": "Strand, London WC2R 0EZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book for live jazz nights."
+  },
+  {
+    "id": "artesian",
+    "name": "Artesian at The Langham",
+    "description": "A legendary cocktail bar in one of London's oldest grand hotels — a former 'World's Best Bar' that keeps the creative bar high.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 24,
+      "currency": "GBP"
+    },
+    "address": "1c Portland Pl, London W1B 1JA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dress code: smart. Non-residents welcome."
+  },
+  {
+    "id": "claridges-bar",
+    "name": "Claridge's Bar",
+    "description": "Art Deco cocktail bar inside Claridge's — the cocktail list is ultra-classical, the company glamorous, the atmosphere unbeatable.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "49 Brook St, London W1K 4HR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Books up — come early. The Fumoir is a more intimate alternative."
+  },
+  {
+    "id": "fumoir-claridges",
+    "name": "The Fumoir at Claridge's",
+    "description": "Claridge's tiny Art Deco speakeasy-esque bar — leather armchairs, inlaid lacquerwork, an intimate hideaway.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "49 Brook St, London W1K 4HR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Only 26 seats. No reservations."
+  },
+  {
+    "id": "29cocktail",
+    "name": "29 Cocktail Bar",
+    "description": "A miniature Mayfair bar in the Hakkasan group — moodily lit, Asian-inflected cocktails, secretive feel.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "17 Berkeley St, London W1J 6QB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Hakkasan Mayfair's cocktail lounge — accepts walk-ins."
+  },
+  {
+    "id": "swift-borough",
+    "name": "Swift Borough",
+    "description": "The Borough branch of the Soho whisky bar — upstairs cocktails, downstairs 200+ whiskies.",
+    "neighbourhood": "London Bridge",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "85 Borough High St, London SE1 1NH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Downstairs whisky-only. Cocktail menu upstairs stronger on classics."
+  },
+  {
+    "id": "satan-s-whiskers",
+    "name": "Satan's Whiskers",
+    "description": "Bethnal Green cocktail bar with a daily-changing menu written on the wall — a neighbourhood classic with serious drinks.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "343 Cambridge Heath Rd, London E2 9RA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in. Hip-hop soundtrack."
+  },
+  {
+    "id": "lyaness-seacontainers",
+    "name": "Lyaness at Sea Containers",
+    "description": "Ryan Chetiyawardana (Mr Lyan) at Sea Containers London — a showpiece of proprietary 'ingredients'.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "20 Upper Ground, London SE1 9PD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tasting menu £60. Thames views."
+  },
+  {
+    "id": "the-whiskey-exchange-bar",
+    "name": "The Whisky Exchange — Fitz's Lounge",
+    "description": "Above the Covent Garden whisky shop — tasting sessions, masterclasses, and one of London's largest back-bar whisky selections.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "2 Bedford St, London WC2E 9HH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Masterclasses by appointment."
+  },
+  {
+    "id": "milroys-whisky",
+    "name": "Milroy's of Soho",
+    "description": "London's oldest whisky shop (1964) — the upstairs shop and the basement speakeasy-bar The Vault, 100+ drams.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "3 Greek St, London W1D 4NX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The Vault basement accessed via a 'secret' bookcase door."
+  },
+  {
+    "id": "black-rock",
+    "name": "Black Rock",
+    "description": "A whisky-only bar on Christopher Street — flights of expressions, a 150-year-old tree running through the bar.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "9 Christopher St, London EC2A 2BS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tasting flights £25+."
+  },
+  {
+    "id": "mahiki-mayfair",
+    "name": "Mahiki",
+    "description": "Mayfair Tiki-basement classic — a favourite of Prince Harry in the noughties, still going with rum buckets and carnival cocktails.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "1 Dover St, London W1S 4LD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dress smart-casual. Door policy firm after 10pm."
+  },
+  {
+    "id": "laki-kane",
+    "name": "Laki Kane",
+    "description": "A tropical tiki bar with live hula — three levels, rum classes, a fully immersive Hawaiian experience in Islington.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "144 Upper St, London N1 1QY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Rum-masterclass is a lovely evening."
+  },
+  {
+    "id": "little-mercies",
+    "name": "Little Mercies",
+    "description": "Crouch End's new-wave cocktail bar — ingredient-led drinks, vegan-focused menu, dark and intimate.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "3 Broadway Parade, London N8 9DE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book ahead — tiny room."
+  },
+  {
+    "id": "rock-rose-notting",
+    "name": "Tonkotsu Selfie",
+    "description": "Pioneering London rum bar — rare rum expressions, daiquiri-centric menu, in a tiny Fitzrovia space.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "Berwick Street, Soho, London W1",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Small and popular — book ahead."
+  },
+  {
+    "id": "soma-fitzrovia",
+    "name": "Soma",
+    "description": "A Fitzrovia cocktail bar with a no-technology policy — phones encouraged to be silenced, menu built around Indian ingredients.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "1-2 Rathbone Pl, London W1T 1HA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in friendly pre-8pm."
+  },
+  {
+    "id": "prospect-of-whitby",
+    "name": "The Prospect of Whitby",
+    "description": "London's oldest riverside pub (1520) in Wapping — flagstone floors, a hanging gallows in the courtyard, Dickensian charm.",
+    "neighbourhood": "Wapping",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "57 Wapping Wall, London E1W 3SH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The hangman's noose in the beer garden is grim fun."
+  },
+  {
+    "id": "town-of-ramsgate",
+    "name": "The Town of Ramsgate",
+    "description": "A 500-year-old Wapping pub with a tidal Thames stair — Captain Bligh drank here the night before Mutiny on the Bounty.",
+    "neighbourhood": "Wapping",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "62 Wapping High St, London E1W 2PN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk the Wapping Old Stairs at low tide."
+  },
+  {
+    "id": "dove-hammersmith",
+    "name": "The Dove Hammersmith",
+    "description": "A 17th-century Thames-side pub with the smallest bar in the UK and a rose-covered riverside terrace.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "19 Upper Mall, London W6 9TA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Watch the Oxford-Cambridge boat race from here."
+  },
+  {
+    "id": "the-old-ship",
+    "name": "The Old Ship W6",
+    "description": "A 16th-century Thames pub in Hammersmith — with river terraces and a real-feel village atmosphere.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "25 Upper Mall, London W6 9TD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "One of the best Thames Path stops."
+  },
+  {
+    "id": "the-white-cross",
+    "name": "The White Cross",
+    "description": "Richmond's riverside pub — famously floods at high tide; locals watch the drinkers wade out.",
+    "neighbourhood": "Richmond",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "Water Ln, Richmond TW9 1TH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Watch tide tables — flood at high tide is a photo-op."
+  },
+  {
+    "id": "jerusalem-tavern",
+    "name": "The Jerusalem Tavern",
+    "description": "A Clerkenwell gem (1720) — St Peter's Brewery's tiny tap, feels like a time capsule.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "55 Britton St, London EC1M 5UQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tiny — squeeze onto a bench or stand in the alley."
+  },
+  {
+    "id": "the-harp",
+    "name": "The Harp",
+    "description": "Covent Garden's real-ale classic — a narrow room of 20+ cask ales and craft beers, a two-time CAMRA National Pub of the Year.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "47 Chandos Pl, London WC2N 4HS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pork pies and Scotch eggs on the bar."
+  },
+  {
+    "id": "princess-louise",
+    "name": "The Princess Louise",
+    "description": "An astonishing 1872 Victorian gin palace in Holborn — etched mirrors, ornate tilework, and a horseshoe bar.",
+    "neighbourhood": "Bloomsbury",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "208 High Holborn, London WC1V 7EP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cheapest pub in central London — Sam Smith's prices. Gorgeous."
+  },
+  {
+    "id": "cittie-of-yorke",
+    "name": "The Cittie of Yorke",
+    "description": "A huge 15th-century-style pub on Chancery Lane — cathedral-like main hall, wine vats behind the bar, Samuel Smith's ales.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "22 High Holborn, London WC1V 6BN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dark snugs along the wall are beloved by barristers."
+  },
+  {
+    "id": "the-lamb",
+    "name": "The Lamb Bloomsbury",
+    "description": "A Bloomsbury stained-glass Victorian — etched glass snob-screens on the bar, Dickens mentioned it in 'Barnaby Rudge'.",
+    "neighbourhood": "Bloomsbury",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "literary"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "94 Lambs Conduit St, London WC1N 3LZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "One of the few remaining pubs with snob-screens intact."
+  },
+  {
+    "id": "the-red-lion-stjames",
+    "name": "The Red Lion St James's",
+    "description": "A magnificent 1871 Victorian gin palace in Mayfair — bevelled mirrors, ornate plasterwork, ornate lamps.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "2 Duke of York St, London SW1Y 6JP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Stained-glass windows worth a close look."
+  },
+  {
+    "id": "the-salisbury",
+    "name": "The Salisbury",
+    "description": "A gorgeous Victorian Theatre-District pub with brass oil lamps, cut-glass mirrors, and rich red velvet.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "90 St Martin's Ln, London WC2N 4AP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "A 10-minute wait for a seat in peak hours."
+  },
+  {
+    "id": "the-guinea",
+    "name": "The Guinea Grill",
+    "description": "Mayfair's Georgian chop-house pub — a 1423 licensing date, a pie-shop at the back, Mayfair-elite clientele.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "30 Bruton Pl, London W1J 6NL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Beef-and-kidney pie at the back counter is a London classic."
+  },
+  {
+    "id": "the-star-tavern",
+    "name": "The Star Tavern",
+    "description": "Belgravia pub, hidden in a mews — the Great Train Robbers reputedly planned their 1963 heist in a private room upstairs.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "6 Belgrave Mews W, London SW1X 8HT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book a table for Sunday roast."
+  },
+  {
+    "id": "the-coach-horses",
+    "name": "The Coach & Horses Soho",
+    "description": "Jeffrey Bernard's legendary Soho pub — a literary boozer now transformed (gentrified) but still a Soho landmark.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "literary"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "29 Greek St, London W1D 5DH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Drinks on Saturdays feature the 'Private Eye' lunch."
+  },
+  {
+    "id": "the-golden-lion-stjames",
+    "name": "The Golden Lion St James's",
+    "description": "Opposite Christie's in St James's — an 1899 Victorian with a preserved upstairs and gold-leaf bar.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "25 King St, London SW1Y 6QY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Upstairs is quieter — ask if open."
+  },
+  {
+    "id": "the-dog-fox",
+    "name": "The Dog House",
+    "description": "A Kennington craft-beer pub — 20+ taps, friendly neighbourhood feel, a good refuge after the Imperial War Museum.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "293 Kennington Rd, London SE11 6BY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Strong changing cask selection."
+  },
+  {
+    "id": "the-bank-craft",
+    "name": "BrewDog Waterloo",
+    "description": "A cavernous craft-beer cathedral in a vault under Waterloo Station — BrewDog's largest UK bar, 60+ taps.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "Leake St Arches, London SE1 7NN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with Leake Street graffiti tunnel outside."
+  },
+  {
+    "id": "five-points-brewery",
+    "name": "Five Points Brewing Co Taproom",
+    "description": "Hackney brewery's taproom and shop — 15+ taps, industrial setting, frequent brewery tours.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "Arch 375, Mentmore Terrace, London E8 3PH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Second taproom at Big Penny Social in Walthamstow."
+  },
+  {
+    "id": "kernel-brewery",
+    "name": "The Kernel Brewery Taproom",
+    "description": "Bermondsey's legendary brewery taproom — open Saturday only, part of the 'Bermondsey Beer Mile'.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "Arch 11, Dockley Rd Industrial Estate, London SE16 3SF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open Saturdays only 9-4pm. The Beer Mile is a full-day affair."
+  },
+  {
+    "id": "fourpure-brewery",
+    "name": "Fourpure Brewing",
+    "description": "Bermondsey Beer Mile stop — modern-industrial taproom with 20+ taps.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "22 Bermondsey Trading Estate, Rotherhithe New Rd, London SE16 3LL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Weekends only for the taproom."
+  },
+  {
+    "id": "anspach-hobday",
+    "name": "Anspach & Hobday",
+    "description": "A Bermondsey Beer Mile brewery and taproom — 16+ rotating taps, outdoor space, very community-feel.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "118 Druid St, London SE1 2HH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open Thu-Sun with live events most weekends."
+  },
+  {
+    "id": "moor-beer",
+    "name": "Moor Beer Vaults",
+    "description": "Bermondsey taproom of this Bristol-born brewery — natural, unfiltered ales in an industrial rail arch.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "Arch 84 Enid St, London SE16 3RA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open Wed-Sun."
+  },
+  {
+    "id": "cloudwater-taproom",
+    "name": "Cloudwater Taproom",
+    "description": "Manchester-born craft brewery's Bermondsey outpost — rotating rare releases, a serious IPA specialist.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "Unit 2, 24-28 Rich Industrial Estate, London SE15 1BS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open Thu-Sun only. Check current location."
+  },
+  {
+    "id": "fox-roof-bar",
+    "name": "Fox at Saint John's Hotel",
+    "description": "Haymarket hotel rooftop bar with outdoor terrace views toward Piccadilly — fairly-priced cocktails, quiet atmosphere.",
+    "neighbourhood": "St James's",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "1 Suffolk Pl, London SW1Y 4HX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book ahead for rooftop."
+  },
+  {
+    "id": "radio-rooftop",
+    "name": "Radio Rooftop at ME London",
+    "description": "10th-floor Covent Garden rooftop bar — wraparound Thames-to-West-End views, DJ weekends.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "336-337 Strand, London WC2R 1HA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book a window table for sunset."
+  },
+  {
+    "id": "bar-elba",
+    "name": "Bar Elba",
+    "description": "Waterloo's summer-only rooftop bar — Art Deco-themed, DJ nights, a sleek view over the South Bank.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "The Sidings, 5 Leake St, London SE1 7NN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Indoor in winter. Book Fri/Sat."
+  },
+  {
+    "id": "queen-of-hoxton-rooftop",
+    "name": "Queen of Hoxton Rooftop",
+    "description": "A changing-themed rooftop bar — tipi in winter, garden in summer, always with big-screen sports, DJ nights, and street food.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "1 Curtain Rd, London EC2A 3JX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free before 7pm most nights."
+  },
+  {
+    "id": "netil-360",
+    "name": "Netil 360",
+    "description": "Hackney rooftop bar above Netil Market — panoramic East-London skyline, sunset DJs, casual atmosphere.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "1 Westgate St, London E8 3RL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Fridays and weekends only. Entry from Netil Market."
+  },
+  {
+    "id": "dalston-roofpark",
+    "name": "Dalston Roof Park",
+    "description": "Summer-only rooftop with cinema screenings, DJs, and street food — multicoloured seating, East London sunset views.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "Bootstrap Building, Ashwin St, London E8 3DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book for rooftop cinema. Summer only."
+  },
+  {
+    "id": "the-culpeper-rooftop",
+    "name": "The Culpeper Rooftop Garden",
+    "description": "An 1850s Spitalfields pub with a rooftop herb-garden bar — kitchen growing its own vegetables, seasonal cocktails.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "40 Commercial St, London E1 6LP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Summer only. Tiny — arrive early."
+  },
+  {
+    "id": "london-cocktail-club",
+    "name": "London Cocktail Club",
+    "description": "Six-branch chain of laid-back cocktail bars — proper drinks, loud music, bargain-bin pricing (£6 happy hour).",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "Great Tower St, London EC3R 5AR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Happy hour £6 cocktails 5-7pm."
+  },
+  {
+    "id": "the-brig-pop-up",
+    "name": "Be At One",
+    "description": "UK-wide cocktail bar chain with multiple London branches — buzzing, affordable, 2-for-1 happy hours.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "82-84 Shoreditch High St, London E1 6JL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Happy hour 5-7pm daily."
+  },
+  {
+    "id": "simmons-kings-cross",
+    "name": "Simmons Bar King's Cross",
+    "description": "Quirky-themed cocktail bar — kitsch decor, big table service, cocktails in teapots. A lively-hen-party favourite.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "82-84 Caledonian Rd, London N1 9DN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Good pre-club spot."
+  },
+  {
+    "id": "cahoots-kingly",
+    "name": "Cahoots",
+    "description": "A 1940s WWII-themed basement-in-a-Tube-carriage bar — dress-up encouraged, vintage cocktails and air raid sirens.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "13 Kingly Ct, London W1B 5PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Smart-casual dress-up strongly encouraged. Book well ahead."
+  },
+  {
+    "id": "mr-foggs-gin-parlour",
+    "name": "Mr Fogg's Gin Parlour",
+    "description": "Covent Garden Mr Fogg's branch with 200+ gins — the theme is Phileas Fogg's aunt's drawing room.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "1 New Row, London WC2N 4EA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gin flights £24. Victorian dress-up nights."
+  },
+  {
+    "id": "mr-foggs-house-of-botanicals",
+    "name": "Mr Fogg's House of Botanicals",
+    "description": "Victoria-themed bar in Fitzrovia — tropical flora, cocktails based on plants, live entertainment.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "gardens"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "80 Newman St, London W1T 3EU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Afternoon tea with cocktails a speciality."
+  },
+  {
+    "id": "the-bletchley",
+    "name": "The Bletchley",
+    "description": "A WW2-Bletchley-Park-themed cocktail bar — you're given a codebreaker assignment, and your cocktails arrive in coded glasses.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "205-209 Kings Rd, London SW3 5ED",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book the 'Junior Cipher Clerk' or 'Senior Cipher Clerk' experience."
+  },
+  {
+    "id": "hawksmoor-guildhall",
+    "name": "Hawksmoor Guildhall Bar",
+    "description": "City chop-house bar of Hawksmoor Guildhall — classic cocktails, a good whisky list, and pre-dinner ease.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "10 Basinghall St, London EC2V 5BQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bar accepts walk-ins. Dining room bookable."
+  },
+  {
+    "id": "chiltern-firehouse-bar",
+    "name": "Chiltern Firehouse Bar",
+    "description": "The members' and guests' bar at Chiltern Firehouse — exclusive, celeb-heavy, beautifully crafted drinks.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "1 Chiltern St, London W1U 7PA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Non-guests must book via the restaurant."
+  },
+  {
+    "id": "sketch-east-bar",
+    "name": "The East Bar at Sketch",
+    "description": "Sketch's David Shrigley-designed toilet pods and east-bar alter ego — Instagram-mad, genuinely creative.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "art"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "9 Conduit St, London W1S 2XG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Photogenic toilets — yes, really."
+  },
+  {
+    "id": "ceru-temple",
+    "name": "BYOC",
+    "description": "'Bring Your Own Cocktail' — a Kingsbridge 'prohibition-era' members' bar where you bring spirits and they mix.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "31 Bedford St, London WC2E 9EB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Ticket price (£40pp) covers the service; bring your own bottle."
+  },
+  {
+    "id": "the-distillery-portobello",
+    "name": "The Distillery Portobello Road",
+    "description": "Hotel-with-a-gin-distillery on Portobello Road — gin bar, gin library, and gin masterclasses on the same four-storey site.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "186 Portobello Rd, London W11 1LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gin masterclass £125 includes gin-making."
+  },
+  {
+    "id": "ginstitute",
+    "name": "The Ginstitute",
+    "description": "Portobello Road gin school — spend 3 hours distilling your own gin to take home. Part of The Distillery.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 125,
+      "currency": "GBP"
+    },
+    "address": "186 Portobello Rd, London W11 1LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "3-hour masterclass. Leave with a 70cl bottle of your gin."
+  },
+  {
+    "id": "beefeater-gin-distillery",
+    "name": "Beefeater Gin Distillery Tour",
+    "description": "The Kennington distillery where Beefeater has been made since 1958 — working still, museum, tasting bar.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "family"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "20 Montford Pl, London SE11 5DE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tour includes tastings — book ahead."
+  },
+  {
+    "id": "sipsmith-distillery",
+    "name": "Sipsmith Distillery Tour",
+    "description": "Chiswick-based Sipsmith — London's first new gin distillery in 200 years when it opened in 2009. Working copper stills on show.",
+    "neighbourhood": "Chiswick",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "83 Cranbrook Rd, London W4 2LJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tour includes 5 g&t tastings. Weekends book ahead."
+  },
+  {
+    "id": "bimber-distillery",
+    "name": "Bimber Distillery",
+    "description": "Acton single-malt whisky distillery — London's only whisky distillery. Tours include serious tastings.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "56 Sunbeam Rd, London NW10 6JQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tour + tasting £40. Whisky-lovers' pilgrimage."
+  },
+  {
+    "id": "east-london-liquor",
+    "name": "East London Liquor Company",
+    "description": "Bow Wharf's gin, vodka, and whisky distillery — working stills, bar, and restaurant in one place.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "221 Grove Rd, London E3 5SN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tours and tastings bookable. Restaurant open Wed-Sun."
+  },
+  {
+    "id": "printworks",
+    "name": "Printworks Legacy (reopening Drumsheds)",
+    "description": "The former printing plant that became one of London's biggest clubs — now reincarnated at Drumsheds in Tottenham.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "Drumsheds, Tottenham, London N17",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Meridian Water station. Check Drumsheds website for events."
+  },
+  {
+    "id": "fold",
+    "name": "FOLD",
+    "description": "East London underground techno club — cavernous Canning Town warehouse, serious sound system.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "Rayleigh Rd, London E16 2BX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Community-feel, member-led. ID and booking ahead."
+  },
+  {
+    "id": "the-cause",
+    "name": "The Cause",
+    "description": "East London's community-driven club with a rotating DJ roster — formerly a garage complex, now a multi-floor venue.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "Located at Drumsheds",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pay-what-you-can nights support local charities."
+  },
+  {
+    "id": "the-lighthouse",
+    "name": "Lighthouse",
+    "description": "Battersea's roof-terrace club-bar — summer garden, sunset views, DJ nights into the early hours.",
+    "neighbourhood": "Battersea",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "photography"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "Battersea Power Station, London SW11 8AL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Booking essential. Summer terrace."
+  },
+  {
+    "id": "oval-space",
+    "name": "Oval Space",
+    "description": "A Bethnal Green warehouse turned club — floor-to-ceiling windows framing the gasholders, eclectic booking policy.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "architecture"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "The Oval, 29-32 The Oval, London E2 9DT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Events run most weekends."
+  },
+  {
+    "id": "annabels",
+    "name": "Annabel's",
+    "description": "The world-famous Mayfair private members' club — old-school glamour, opulent interiors, non-members can attend selected events.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "address": "46 Berkeley Square, London W1J 5AT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Members or member's guests only."
+  },
+  {
+    "id": "moda",
+    "name": "Moda",
+    "description": "A Mayfair club nestled in the Hotel Café Royal — a chic alternative to the Mayfair big-hitters.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "68 Regent St, London W1B 4DY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dress code enforced."
+  },
+  {
+    "id": "heaven-club",
+    "name": "Heaven",
+    "description": "London's iconic gay nightclub since 1979 — under Charing Cross station arches, three dancefloors, hosting G-A-Y nights.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "Villiers St, London WC2N 6NG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saturdays are G-A-Y nights — biggest crowd."
+  },
+  {
+    "id": "vault-festival",
+    "name": "The Two Brewers Clapham",
+    "description": "Clapham's legendary gay cabaret pub since 1980 — live drag shows, a lively club upstairs.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "theatre"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "114 Clapham High St, London SW4 7UJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Drag bingo Thursdays. Cabaret most nights."
+  },
+  {
+    "id": "the-royal-vauxhall",
+    "name": "Royal Vauxhall Tavern",
+    "description": "South London's oldest gay pub (1863) — Grade II-listed, a Lily Savage (Paul O'Grady) landmark.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "theatre"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "372 Kennington Lane, London SE11 5HY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday cabaret. Drag nights Thursday-Saturday."
+  },
+  {
+    "id": "vauxhall-colosseum",
+    "name": "Eagle London",
+    "description": "Vauxhall gay pub and club — a much-loved leather/bear scene, weekend DJ nights, Sunday afternoon drinks.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "349 Kennington Lane, London SE11 5QY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sundays 'Horse Meat Disco' is legendary."
+  },
+  {
+    "id": "lab-soho",
+    "name": "LAB Bar",
+    "description": "Soho's original cocktail training ground (1996) — drinks menu is an index of modern cocktail history.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "12 Old Compton St, London W1D 4TQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Late-night crowd. Upstairs quieter."
+  },
+  {
+    "id": "side-car-bar",
+    "name": "Sidecar",
+    "description": "Haggerston cocktail bar from the Happiness Forgets team — classic drinks, small-plates food.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "19-21 Kingsland Rd, London E2 8AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in-friendly. Bar seats and a few tables."
+  },
+  {
+    "id": "bar-pepito",
+    "name": "Bar Pepito",
+    "description": "A tiny sherry and cured-meat bar in King's Cross, run by the Camino group — 20 sherries by the glass, tapas.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "3 Varnishers Yard, London N1 9FD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sherry flights. The iberico-ham flatbread is a snack classic."
+  },
+  {
+    "id": "gordons-wine",
+    "name": "Gordon's Wine Bar",
+    "description": "London's oldest wine bar (1890) — candle-lit vaults in a basement under Villiers Street, 100+ wines by the glass, cheese boards.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "47 Villiers St, London WC2N 6NE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Arrive before 5pm for a candle-lit seat. No reservations."
+  },
+  {
+    "id": "vinoteca",
+    "name": "Vinoteca",
+    "description": "A modern wine bar and restaurant in multiple locations — huge wine list priced at retail +£10 corkage.",
+    "neighbourhood": "Farringdon",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "7 St John St, London EC1M 4AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Buy a wine retail and drink it in for £10 corkage."
+  },
+  {
+    "id": "terroirs",
+    "name": "Terroirs",
+    "description": "Charing Cross's natural-wine pioneer (2008) — a warm, lived-in wine bar with a French-leaning bistro menu.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 35,
+      "currency": "GBP"
+    },
+    "address": "5 William IV St, London WC2N 4DW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pre-theatre menu excellent."
+  },
+  {
+    "id": "the-remedy-wine",
+    "name": "The Remedy",
+    "description": "A tiny Fitzrovia wine bar and kitchen — chalked-up specials, natural-leaning list, short menu.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "124 Cleveland St, London W1T 6PG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tiny — arrive at opening 5pm."
+  },
+  {
+    "id": "the-old-spike-roastery",
+    "name": "Peckham's Wine Bar (Brixton Wine Bar)",
+    "description": "Peckham's hyper-local wine bar — natural, organic, biodynamic wines with sourdough-forward small plates.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "25 Bellenden Rd, London SE15 4QT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book ahead. Tiny room, serious wine."
+  },
+  {
+    "id": "charlie-big-potatoes",
+    "name": "Shrub & Shutter",
+    "description": "Brixton cocktail bar with house-made shrubs, sodas, and syrups — ingredient-led cocktails, neighbourhood feel.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "336 Coldharbour Lane, London SW9 8QH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Ingredient-led menu changes often."
+  },
+  {
+    "id": "hootananny",
+    "name": "Hootananny",
+    "description": "Brixton reggae-and-live-music bar — free entry most nights, ska and dub DJs Friday and Saturday.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "95 Effra Rd, London SW2 1DF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Monday evening open-mic night."
+  },
+  {
+    "id": "brixton-jamm",
+    "name": "Brixton Jamm",
+    "description": "Brixton's long-standing music venue — all-nighter clubs, live gigs, soundsystems on Akerman Road.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "261 Brixton Rd, London SW9 6LH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check listings — very eclectic programming."
+  },
+  {
+    "id": "passing-clouds",
+    "name": "Passing Clouds (closed) — Pickle Factory",
+    "description": "The Pickle Factory — Hackney's tiny-intimate dance club with house and disco nights, perfect sound system.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "13-14 The Oval, London E2 9DT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Friday and Saturday only. 150-cap."
+  },
+  {
+    "id": "ace-hotel-bar",
+    "name": "Lounge Bohemia",
+    "description": "A Shoreditch secret-buzzer-only cocktail bar — no dress code but book far ahead, slow-drink philosophy, strict no-suits policy.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "1e Great Eastern St, London EC2A 3EJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Reservations only. No one over 35 allowed apparently."
+  },
+  {
+    "id": "black-book-bar",
+    "name": "Black Book Bar",
+    "description": "A Soho literary cocktail bar — menu inspired by famous novels, with drinks like The Great Gatsby and The Shining.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "literary"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "24 Brewer St, London W1F 0SS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Request-the-bartender cocktails ('make me something based on my favourite author')."
+  },
+  {
+    "id": "bloody-mary-bar",
+    "name": "12:51 by James Cochran",
+    "description": "Islington cocktail bar and kitchen — chef-led drinks, impeccable Afro-Caribbean-influenced small plates.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "107 Upper St, London N1 1QN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tasting menu is the move."
+  },
+  {
+    "id": "blue-posts-kings",
+    "name": "The Blue Posts Kingly Court",
+    "description": "A 16th-century coaching inn rebuilt as a three-floor pub-and-restaurant complex in Kingly Court — rooftop, basement, and Palomar team food.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "22 Kingly St, London W1B 5QB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Rooftop cocktail bar on top; pub in the middle; restaurant in the basement."
+  },
+  {
+    "id": "the-griffin-shoreditch",
+    "name": "Griffin",
+    "description": "The Shoreditch pub that's been there before, during, and after gentrification — working-class East End cornerstone.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "93 Leonard St, London EC2A 4RD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pool table and no frills. Pre-club pint classic."
+  },
+  {
+    "id": "queens-head-piccadilly",
+    "name": "The Queen's Head Piccadilly",
+    "description": "A sliver of a pub on Denman Street — one of Soho's oldest Tudor-beamed survivors, now a lovely neighbourhood local.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "15 Denman St, London W1D 7HN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Strong selection of ales — often with a cask guest."
+  },
+  {
+    "id": "brewdog-outpost",
+    "name": "Mother Kelly's",
+    "description": "Bethnal Green railway-arch craft-beer bar — 23 taps, American-leaning selection, Italian-American food menu.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "251 Paradise Row, London E2 9LE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Family-friendly during day, lively late."
+  },
+  {
+    "id": "the-princess-of-wales",
+    "name": "The Princess of Wales",
+    "description": "A Highbury Georgian pub — beautifully preserved, a beer garden, strong Sunday-lunch-forward following.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "146 Liverpool Rd, London N1 1LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book for Sunday roast."
+  },
+  {
+    "id": "the-kings-head-earls",
+    "name": "The Earl of Essex",
+    "description": "Islington's craft-beer pub — 18 rotating taps, sharp beer knowledge, and a stained-glass Victorian interior.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "25 Danbury St, London N1 8LE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Excellent cider list too."
+  },
+  {
+    "id": "the-pineapple",
+    "name": "The Pineapple Kentish Town",
+    "description": "A quirky Kentish Town community pub — saved from closure in 2002 by its regulars, now a local institution.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "51 Leverton St, London NW5 2NX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Grade II-listed. Thai food at the back."
+  },
+  {
+    "id": "hole-in-the-wall",
+    "name": "Hole in the Wall",
+    "description": "Waterloo railway-arch pub — loud, cheap, a grime-free survivor of old-Waterloo charm. Arch 5 under the platforms.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "5 Mepham St, London SE1 8SQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Trains thunder overhead."
+  },
+  {
+    "id": "the-prospect-brighton",
+    "name": "Beer Merchants Tap",
+    "description": "Hackney Wick taproom of the UK's biggest craft-beer importer — 24 rotating taps, Belgian-heavy, plus a bottle shop.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "99 Wallis Rd, London E9 5LN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Knowledgeable staff. Excellent Belgian selection."
+  },
+  {
+    "id": "the-scarsdale",
+    "name": "The Scarsdale Tavern",
+    "description": "A pretty corner pub on Edwardes Square, Kensington — wisteria-covered in summer, log fire in winter.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "23a Edwardes Sq, London W8 6HE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The pub's corner of Edwardes Square is one of London's most photogenic."
+  },
+  {
+    "id": "the-cross-keys",
+    "name": "The Cross Keys Chelsea",
+    "description": "Chelsea's oldest pub (1712) — Whistler, Turner and Dylan Thomas drank here; now a sharp gastropub.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "1 Lawrence St, London SW3 5NB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday roast is a Chelsea institution."
+  },
+  {
+    "id": "the-antelope",
+    "name": "The Antelope",
+    "description": "A 1780s Belgravia tucked-away pub — unreformed, small, with a flawless pint and deep sporting culture.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "sport"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "22 Eaton Terrace, London SW1W 8EZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Match days busy with rugby fans."
+  },
+  {
+    "id": "the-cow",
+    "name": "The Cow",
+    "description": "Tom Conran's Notting Hill gastropub — Guinness, oysters, and Dublin-style character since 1998.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "89 Westbourne Park Rd, London W2 5QH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Oysters and a pint of Guinness is the order. Dining room upstairs."
+  },
+  {
+    "id": "the-ginger-pig-mayfair",
+    "name": "The Audley",
+    "description": "Artist Damien Hirst-owned Mayfair pub — 19th-century-grand, restored with his art dotted throughout.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "art"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "41-43 Mount St, London W1K 2RX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "First-floor Mount Street restaurant needs booking."
+  },
+  {
+    "id": "the-horse-and-groom-belgravia",
+    "name": "The Horse & Groom",
+    "description": "A gorgeously preserved Belgravia mews pub — flower boxes, a tiny back bar, a village feel.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "7 Groom Pl, London SW1X 7BA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Mews-tucked — easily missed. Look for the flowerboxes."
+  },
+  {
+    "id": "the-eagle-waterloo",
+    "name": "The Windmill Mayfair",
+    "description": "A 1729 Mayfair pub famous for its pies — chef-owned by Michael O'Hare, generous pies since 1729.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "6-8 Mill St, London W1S 1RZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book upstairs for a table if eating."
+  },
+  {
+    "id": "the-harp-tottenham",
+    "name": "The Harp Tottenham",
+    "description": "Craft beer and cider in a Tottenham Court Road Victorian pub — narrow room, 8 rotating cask ales.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "85 Tottenham Ct Rd, London W1T 4TQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Ploughman's board a nice snack."
+  },
+  {
+    "id": "the-bricklayers-arms",
+    "name": "The Bricklayer's Arms",
+    "description": "An old-school Putney pub — a haunt of rowers during Boat Race week, ale-first, free juke-box.",
+    "neighbourhood": "Putney",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "sport"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "32 Waterman St, London SW15 1DD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Riverside, short walk from Putney Bridge."
+  },
+  {
+    "id": "the-southampton-arms",
+    "name": "The Southampton Arms",
+    "description": "Kentish Town community ale-and-cider pub — 18 taps, coal fire, a dog-friendly atmosphere.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "139 Highgate Rd, London NW5 1LE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pork pies the staple snack."
+  },
+  {
+    "id": "the-kings-arms-lambeth",
+    "name": "The King's Arms Waterloo",
+    "description": "Cosy Waterloo pub on Roupell Street — unchanged since 1890, terraced Georgian street setting.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "25 Roupell St, London SE1 8TB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Thai food at the back. Street is a Dickensian film-location favourite."
+  },
+  {
+    "id": "the-euston-tap",
+    "name": "The Euston Tap",
+    "description": "Twin gatehouses either side of Euston Road turned craft-beer pubs — 40+ taps between the two West and East lodges.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "architecture"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "190 Euston Rd, London NW1 2EF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Inside spiral staircase to the upstairs tasting room."
+  },
+  {
+    "id": "the-parcel-yard",
+    "name": "The Parcel Yard",
+    "description": "King's Cross Station's grand Victorian pub above the platforms — Fuller's pies and ales, a quieter commuter retreat.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "King's Cross Station, London N1 9AP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Full restaurant inside — great for pre-train food."
+  },
+  {
+    "id": "the-betjeman-arms",
+    "name": "The Betjeman Arms",
+    "description": "St Pancras Station's elegant first-floor pub — named for the poet who saved St Pancras, statue of him watches over diners.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "literary",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "Unit 53, St Pancras Station, London N1C 4QL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gets busy pre-Eurostar."
+  },
+  {
+    "id": "simmons-euston",
+    "name": "Simmons Euston",
+    "description": "Quirky-themed cocktail bar in Euston — teapot cocktails, bright decor, a strong hen-party crowd.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "286 Pentonville Rd, London N1 9NR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Group deals good value."
+  },
+  {
+    "id": "la-bodega-negra",
+    "name": "La Bodega Negra",
+    "description": "Mexican restaurant and basement bar in Soho — taqueria upstairs, late-night cocktail bar downstairs accessed via a 'sex shop' front.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "16 Moor St, London W1D 5NH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The 'Adult Shop' front is a tongue-in-cheek disguise — don't be deterred."
+  },
+  {
+    "id": "la-bodega-negra-cafe",
+    "name": "La Bodega Negra Café",
+    "description": "The brighter upstairs of La Bodega Negra — Mexican small-plates and margaritas, street-level on Moor Street.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "9 Old Compton St, London W1D 5JF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in-friendly café upstairs."
+  },
+  {
+    "id": "ceviche-soho",
+    "name": "Ceviche",
+    "description": "Martin Morales's lively Pisco-and-ceviche bar in Soho — Peruvian street food and Pisco sours.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "17 Frith St, London W1D 4RG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pisco flights. Happy hour 5-7pm."
+  },
+  {
+    "id": "casita-andina",
+    "name": "Casita Andina",
+    "description": "Soho Andean restaurant-bar — tapas-style Peruvian small plates and cocktails, a sister to Andina.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 28,
+      "currency": "GBP"
+    },
+    "address": "31 Great Windmill St, London W1D 7LP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Downstairs Pisco bar opens late."
+  },
+  {
+    "id": "peyotito",
+    "name": "Peyote",
+    "description": "Cooper & Eve's Notting Hill Mexican spot — the hacienda-chic elder sister to the Peyotito spin-off.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "13 Cork St, London W1S 3NS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tequila tasting flights available."
+  },
+  {
+    "id": "ojo-rojo",
+    "name": "Ojo Rojo",
+    "description": "A Fitzrovia Mexican mezcaleria — tacos, mezcal flights, sharp-drinks bar.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "14 Margaret St, London W1W 8RN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Mezcal tasting flights."
+  },
+  {
+    "id": "nopalito",
+    "name": "Cantina Laredo",
+    "description": "Seven Dials Mexican — tableside-made guacamole, enchiladas, and the best margaritas in Covent Garden.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "10 Upper St Martin's Ln, London WC2H 9FB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bottomless brunch weekends."
+  },
+  {
+    "id": "drawers-of-spoons",
+    "name": "Ermal's Cocktail Club",
+    "description": "Fitzrovia cocktail pop-up — former Experimental Cocktail Club bartender, natural-wine forward cocktails.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "West End, London W1",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check Instagram for current location and events."
+  },
+  {
+    "id": "barts-hidden",
+    "name": "Barts",
+    "description": "Chelsea speakeasy behind an 'apartment block' door — 1920s theme, ring a bell, and the door opens.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "87 Sloane Ave, London SW3 3DX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dress up strongly encouraged."
+  },
+  {
+    "id": "seedless",
+    "name": "The Blind Pig",
+    "description": "Social Eating House's upstairs speakeasy — 1930s-themed low-lit Soho cocktail bar, classic-cocktail-forward.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "58 Poland St, London W1F 7NR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Booking recommended — smaller room."
+  },
+  {
+    "id": "kol-mezcaleria",
+    "name": "KOL Mezcaleria",
+    "description": "The basement mezcaleria of Michelin-starred KOL — 100+ agave spirits, Mexican street snacks.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "9 Seymour St, London W1H 7BA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in-friendly downstairs. Dining room above is Michelin-starred."
+  },
+  {
+    "id": "hankys-sky-garden",
+    "name": "Savage Garden at Double Tree Tower Hill",
+    "description": "12th-floor rooftop bar — views of Tower Bridge, the Shard, and the City. Indoor and outdoor terraces.",
+    "neighbourhood": "Tower Hill",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "7 Pepys St, London EC3N 4AF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book ahead for terrace."
+  },
+  {
+    "id": "madison-roof",
+    "name": "Madison",
+    "description": "Roof-terrace restaurant-bar beside St Paul's Cathedral — the cathedral is the view, gin-and-tonic trolley the drink.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography",
+      "architecture"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "One New Change, London EC4M 9AF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The best close-up view of St Paul's dome in London."
+  },
+  {
+    "id": "rumpus-room",
+    "name": "Rumpus Room",
+    "description": "Mondrian Hotel's riverside rooftop — a cocktail bar with Thames-to-Tate Modern views.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "20 Upper Ground, London SE1 9PD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book for sunset on Friday/Saturday."
+  },
+  {
+    "id": "aqua-spirit",
+    "name": "Aqua Spirit",
+    "description": "Aqua Shard at the top of Regent Street — a glamorous bar atop the Regent Street Hong Kong building.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "30 Argyll St, London W1F 7TL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Aqua Nueva for seating; Aqua Kyoto upstairs."
+  },
+  {
+    "id": "jin-bo-law",
+    "name": "Jin Bo Law",
+    "description": "Dorsett City Hotel's 14th-floor rooftop cocktail bar — Asian-inspired menu, sweeping City views.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "9 Aldgate High St, London EC3N 1AH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Indoor-outdoor terrace."
+  },
+  {
+    "id": "the-french-pub",
+    "name": "The French Pub",
+    "description": "A tiny Fitzrovia wine bar — French-only list, no bottles over £40, an insider's secret.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "20 Cleveland St, London W1T 6PN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No cocktails. Just wine."
+  },
+  {
+    "id": "remedy-wine-bar",
+    "name": "Remedy Wine Bar",
+    "description": "Fitzrovia natural-wine bar — chalked-up daily specials, a six-counter-seat room.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "124 Cleveland St, London W1T 6PG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book — just 12 seats."
+  },
+  {
+    "id": "mother-flipper",
+    "name": "Peckham Cellars",
+    "description": "Peckham wine bar and shop — Tomasz Wasiuk's biodynamic wine list, small plates, walk-in-friendly.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "125 Queens Rd, London SE15 2EZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Retail shop at the front."
+  },
+  {
+    "id": "planque-wine",
+    "name": "P. Franco",
+    "description": "A Clapton wine shop-bar — buy a bottle at retail and drink it in, with a rotating guest chef.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "107 Lower Clapton Rd, London E5 0NP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in. 25 seats max."
+  },
+  {
+    "id": "top-cuvee",
+    "name": "Top Cuvée",
+    "description": "Highbury wine shop-bar — retail+£10 corkage, natural-wine list, lo-fi café vibe.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "177b Blackstock Rd, London N5 2LL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book in advance — small space."
+  },
+  {
+    "id": "levant",
+    "name": "Levant",
+    "description": "A Marylebone basement Middle Eastern restaurant and cocktail bar — belly dancers nightly, hubbly-bubbly pipes.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "76 Wigmore St, London W1U 2SJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Belly dancing from 8pm Fri-Sat."
+  },
+  {
+    "id": "kazbar",
+    "name": "Kazbar Clapham",
+    "description": "North-African-themed late-night bar — mezze, belly dancing, shisha terrace.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "50 Clapham High St, London SW4 7UL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open late — 3am weekends."
+  },
+  {
+    "id": "nandos-brixton",
+    "name": "Elephant Westbourne Park",
+    "description": "Westbourne Park pub with a leafy garden — cask ale, weekly quiz, neighbourhood feel.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "96 Elgin Crescent, London W11 2JD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Tuesdays pub quiz popular."
+  },
+  {
+    "id": "the-harwood-arms-bar",
+    "name": "The Harwood Arms Bar",
+    "description": "Ground-floor bar of the Michelin-starred Harwood Arms pub — walk-in for cask ales while you wait.",
+    "neighbourhood": "Fulham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "Walham Grove, London SW6 1QP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "No reservations in the bar."
+  },
+  {
+    "id": "the-jugged-hare",
+    "name": "The Jugged Hare",
+    "description": "A City gastropub specialising in game — taxidermy on the walls, game-forward menu, a favourite of Barbican-goers.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "49 Chiswell St, London EC1Y 4SA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Seasonal game menu."
+  },
+  {
+    "id": "the-clerk-well",
+    "name": "The Clerk & Well",
+    "description": "A Clerkenwell Green boutique-gastropub — craft beers, Sunday roast, a lovely little beer garden.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "156 Clerkenwell Rd, London EC1R 5DU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Garden in summer — a rare Clerkenwell find."
+  },
+  {
+    "id": "the-hand-in-hand",
+    "name": "The Hand in Hand Wimbledon",
+    "description": "A charming Wimbledon Common pub — low-ceilinged, dog-friendly, a local-first feel.",
+    "neighbourhood": "Wimbledon",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "6 Crooked Billet, London SW19 4RQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with a Wimbledon Common walk."
+  },
+  {
+    "id": "the-fox-and-hounds",
+    "name": "The Fox & Hounds Chelsea",
+    "description": "A local-feeling Chelsea pub on Passmore Street — beer garden, big-screen sports, a neighbourhood refuge.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "sport"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "29 Passmore St, London SW1W 8HR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Football and rugby on weekends."
+  },
+  {
+    "id": "the-crobar",
+    "name": "The Crobar",
+    "description": "A legendary Soho rock-and-metal dive bar — metal on the jukebox, late nights, strong pours.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "17 Manette St, London W1D 4AS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cash-only. Open very late."
+  },
+  {
+    "id": "the-toucan",
+    "name": "The Toucan",
+    "description": "Soho's tiny Irish pub — Guinness, Jameson, and an unreformed dive-bar vibe near Tottenham Court Road.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "19 Carlisle St, London W1D 3BY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Standing-room-only at peak times."
+  },
+  {
+    "id": "the-olde-mitre",
+    "name": "Ye Olde Mitre",
+    "description": "A 1546 Ely-Place pub hidden down an alley — Queen Elizabeth I reputedly danced around its cherry tree.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "1 Ely Ct, London EC1N 6SJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Access via narrow Ely Place alley. Closed weekends."
+  },
+  {
+    "id": "blackfriar",
+    "name": "The Blackfriar",
+    "description": "An Art Nouveau confection (1905) — mosaic friezes, bronze sculptures of friars, marble interiors. Opposite Blackfriars station.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "174 Queen Victoria St, London EC4V 4EG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Stand at the bar just to study the mosaics."
+  },
+  {
+    "id": "viaduct-tavern",
+    "name": "The Viaduct Tavern",
+    "description": "A 1869 Victorian gin palace opposite the Old Bailey — gilded mirrors, etched glass, and old Newgate Prison cells in the basement.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "126 Newgate St, London EC1A 7AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Ask to see the Newgate Prison cells downstairs."
+  },
+  {
+    "id": "counting-house",
+    "name": "The Counting House",
+    "description": "A former City banking hall turned Fuller's pub — high ceilings, marble columns, chandeliers, and pies.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "50 Cornhill, London EC3V 3PD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Quiet on weekends — City-weekday buzz."
+  },
+  {
+    "id": "hamilton-hall",
+    "name": "Hamilton Hall",
+    "description": "A grand Wetherspoon's housed in the old Great Eastern Hotel ballroom — ornate plasterwork, gilded chandeliers.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "Unit 32, Liverpool St, London EC2M 7PY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Remarkable interior at Wetherspoon's prices."
+  },
+  {
+    "id": "the-crown-and-sceptre",
+    "name": "Crown & Sceptre",
+    "description": "A decent Walthamstow pub with a beer garden — a genuine neighbourhood local.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "86 Hoe St, London E17 4PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walthamstow Central close."
+  },
+  {
+    "id": "carpenters-arms",
+    "name": "The Carpenter's Arms",
+    "description": "A Cheshire Street corner pub — famously bought by the Kray twins for their mother in 1966; now a normal, lovely pub.",
+    "neighbourhood": "Bethnal Green",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "73 Cheshire St, London E2 6EG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walls lined with Kray-related memorabilia."
+  },
+  {
+    "id": "cross-kiss",
+    "name": "The Cross Kings",
+    "description": "A King's Cross traditional pub — unreformed, pool table, late-night crowd after parties.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "126 York Way, London N1 0AX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open late on weekends."
+  },
+  {
+    "id": "bear-and-rag",
+    "name": "The Betsey Trotwood",
+    "description": "A Farringdon Victorian pub and live-music venue — basement gigs with a singer-songwriter focus.",
+    "neighbourhood": "Farringdon",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "56 Farringdon Rd, London EC1R 3BL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gigs most nights — £5-10."
+  },
+  {
+    "id": "the-castle-farringdon",
+    "name": "The Castle",
+    "description": "Clerkenwell Victorian pub — the only pub in Britain licensed as a pawnbrokers (you can, in theory, pawn your drink deposit)",
+    "neighbourhood": "Farringdon",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "34 Cowcross St, London EC1M 6DB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Three golden balls on the sign — the pawnbroker symbol."
+  },
+  {
+    "id": "the-three-compasses",
+    "name": "The Three Compasses",
+    "description": "A Hornsey Victorian pub — decent beer garden, live music, a North-London institution.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "60 High St, London N8 7NX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Friday blues nights popular."
+  },
+  {
+    "id": "nightjar-carnaby",
+    "name": "Nightjar Carnaby",
+    "description": "A more accessible Carnaby outpost of Shoreditch's Nightjar — live jazz most nights, lavish 1920s-style cocktails.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "61-63 Beak St, London W1F 9SL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Live music 8pm onwards."
+  },
+  {
+    "id": "pizza-express-jazz-club",
+    "name": "Pizza Express Jazz Club Soho",
+    "description": "A surprising jazz venue in the basement of a pizzeria — major US jazz artists play here regularly.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "food"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "10 Dean St, London W1D 3RW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Dinner + gig recommended — the pizza is the byproduct."
+  },
+  {
+    "id": "roundhouse-late",
+    "name": "Roundhouse",
+    "description": "Camden's Grade II-listed circular engine shed turned arts venue — big-hitting gigs, comedy, and circus.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "theatre",
+      "architecture"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "Chalk Farm Rd, London NW1 8EH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Studio theatre hosts smaller shows."
+  },
+  {
+    "id": "barfly",
+    "name": "The Lexington Live",
+    "description": "Angel's live-music upstairs room — 200 capacity, alt/indie/punk lineups, a London-band-incubator.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "96-98 Pentonville Rd, London N1 9JB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gigs most nights. Free after-party."
+  },
+  {
+    "id": "the-garage",
+    "name": "The Garage",
+    "description": "Highbury & Islington's 600-cap indie/punk/rock venue — sweaty, sticky, a rite of passage.",
+    "neighbourhood": "Islington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "20-22 Highbury Corner, London N5 1RD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The smaller Garage Upstairs hosts new acts."
+  },
+  {
+    "id": "electric-ballroom",
+    "name": "Electric Ballroom",
+    "description": "Camden's 1,100-cap live-music venue — a punk-era classic, still programmes rock, metal, and indie.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "184 Camden High St, London NW1 8QP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saturday market also runs on-site."
+  },
+  {
+    "id": "the-dublin-castle",
+    "name": "The Dublin Castle",
+    "description": "Camden's tiny Madness-breakthrough pub — 180-cap back room, indie gigs most nights, a London music-history spot.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "94 Parkway, London NW1 7AN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cash-only. Gigs nightly."
+  },
+  {
+    "id": "windmill-brixton",
+    "name": "Windmill Brixton",
+    "description": "Tiny Brixton pub-and-venue — launching pad for Fat White Family, shame, Black Country New Road, a cult room for new guitar bands.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "22 Blenheim Gardens, London SW2 5BZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "80-cap. Gigs nightly. Cash-only."
+  },
+  {
+    "id": "shacklewell-arms",
+    "name": "The Shacklewell Arms",
+    "description": "Dalston's cult live-music pub — indie, punk, queer club nights. 250-cap back room.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "71 Shacklewell Lane, London E8 2EB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gigs most nights — check Resident Advisor."
+  },
+  {
+    "id": "moth-club",
+    "name": "MOTH Club",
+    "description": "Hackney Central club in a former British Legion hall — gold-glitter ceiling, cheap drinks, cult live gigs and DJ nights.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "Old Trades Hall, Valette St, London E9 6NU",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The gold-glitter ceiling is an Instagram favourite."
+  },
+  {
+    "id": "rich-mix-shoreditch",
+    "name": "Rich Mix",
+    "description": "Shoreditch's community-led cinema-and-music venue — three cinema screens, a live-music studio, and a bar.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "art"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "35-47 Bethnal Green Rd, London E1 6LA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Weekly world-music nights and South Asian cinema."
+  },
+  {
+    "id": "cafe-oto-dalston",
+    "name": "Café OTO Dalston",
+    "description": "The UK's leading experimental-music venue — gigs most nights, a daytime café, a brilliantly curated programme.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "art"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "18-22 Ashwin St, London E8 3DL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Café by day; gigs from 7:30pm."
+  },
+  {
+    "id": "wigmore-hall",
+    "name": "Wigmore Hall",
+    "description": "A recital hall on Wigmore Street — one of the best chamber music venues in the world, with renowned acoustics and a 552-seat ceiling fresco.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "36 Wigmore St, London W1U 2BP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday morning coffee concerts £20 are the bargain."
+  },
+  {
+    "id": "kings-place",
+    "name": "Kings Place",
+    "description": "A purpose-built classical-and-jazz music venue at King's Cross — two halls, brilliant acoustics, rigorous programming.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "90 York Way, London N1 9AG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Hall One for chamber; Hall Two for jazz."
+  },
+  {
+    "id": "cadogan-hall",
+    "name": "Cadogan Hall",
+    "description": "Former Christian Science church turned chamber-and-jazz hall — 900-seat, the English Chamber Orchestra's home.",
+    "neighbourhood": "Chelsea",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "architecture"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "5 Sloane Terrace, London SW1X 9DQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Saturday morning jazz breakfasts £15 with pastries included."
+  },
+  {
+    "id": "clapham-grand",
+    "name": "Clapham Grand",
+    "description": "A Victorian theatre turned music venue — 1,500-cap, classic indie and pop shows, a grand stepped auditorium.",
+    "neighbourhood": "Clapham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "address": "21-25 St John's Hill, London SW11 1TT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Cabaret and bingo nights between gigs."
+  },
+  {
+    "id": "shepherds-bush-empire",
+    "name": "O2 Shepherd's Bush Empire",
+    "description": "A 2,000-cap historic Shepherd's Bush music venue — original 1903 Frank Matcham music hall.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history",
+      "architecture"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "Shepherd's Bush Green, London W12 8TT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Balcony seats the quietest view."
+  },
+  {
+    "id": "alexandra-palace-theatre",
+    "name": "Alexandra Palace Theatre",
+    "description": "An 1875 Victorian theatre restored within Ally Pally — intimate wooden auditorium, 1,300-cap, gigs and events.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history",
+      "architecture"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 22,
+      "currency": "GBP"
+    },
+    "address": "Alexandra Palace Way, London N22 7AY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Separate from the big Ally Pally arena — smaller, more atmospheric."
+  },
+  {
+    "id": "paradise-by-way",
+    "name": "Paradise by Way of Kensal Green",
+    "description": "Kensal Green's gothic-glam pub-and-gig-venue — antiques, taxidermy, and a lively stage in the back room.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "19 Kilburn Lane, London W10 4AE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday roast extraordinary."
+  },
+  {
+    "id": "mucky-pub",
+    "name": "The Drayton Arms",
+    "description": "Kensington theatre-pub — 70-seat fringe theatre upstairs, gastropub downstairs.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "theatre",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "153 Old Brompton Rd, London SW5 0LJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check theatre listings for fringe shows."
+  },
+  {
+    "id": "lauderdale-pub",
+    "name": "Lauderdale House Café",
+    "description": "Highgate's 16th-century house with a garden-café — Lauderdale also hosts evening jazz and cabaret.",
+    "neighbourhood": "Hampstead",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "Highgate Hill, London N6 5HG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check programme for Friday evening cabaret."
+  },
+  {
+    "id": "the-boogaloo-highgate",
+    "name": "The Boogaloo",
+    "description": "A Highgate rock-and-roll pub with a free-for-all jukebox — Shane MacGowan's favourite, cult live music nights.",
+    "neighbourhood": "Hampstead",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "312 Archway Rd, London N6 5AT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pogues song of the week plays on Fridays."
+  },
+  {
+    "id": "the-lock-tavern",
+    "name": "The Lock Tavern",
+    "description": "Camden's music-industry-favourite pub — two DJs every weekend, a terrace with canal view.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "35 Chalk Farm Rd, London NW1 8AJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Roof terrace in summer essential."
+  },
+  {
+    "id": "the-good-mixer",
+    "name": "The Good Mixer",
+    "description": "Camden's Britpop shrine — Blur, Oasis, Pulp all drank here in the 1990s, now a friendly community local.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "30 Inverness St, London NW1 7HJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Pub-rock jukebox. Unreformed."
+  },
+  {
+    "id": "the-albany",
+    "name": "The Albany",
+    "description": "A Deptford Grade II-listed theatre, music, and community venue — a 500-cap auditorium with diverse programming.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "theatre"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "Douglas Way, London SE8 4AG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free weekly community nights."
+  },
+  {
+    "id": "the-social",
+    "name": "The Social",
+    "description": "Heavenly Recordings' pub-and-club off Oxford Street — cult indie gigs, spoken word, and a strong jukebox.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "literary"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "5 Little Portland St, London W1W 7JD",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Heavenly Social DJ nights are legendary."
+  },
+  {
+    "id": "the-grapes-limehouse-bar",
+    "name": "The Booking Office 1869",
+    "description": "The St Pancras Renaissance Hotel's grand bar — 29-metre-long bar under a Gothic vaulted ceiling.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "Euston Rd, London NW1 2AR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "The only way to experience the St Pancras interior without being a guest."
+  },
+  {
+    "id": "aqua-kyoto",
+    "name": "Aqua Kyoto",
+    "description": "Regent Street rooftop Japanese — sushi, robata, and a cocktail bar with St James's views.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "30 Argyll St, London W1F 7TL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bar accepts walk-ins; restaurant bookable."
+  },
+  {
+    "id": "aqua-nueva",
+    "name": "Aqua Nueva",
+    "description": "Regent Street Spanish rooftop — tapas, sangria, skyline terrace.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 16,
+      "currency": "GBP"
+    },
+    "address": "30 Argyll St, London W1F 7TL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Siblings Aqua Spirit (cocktails) and Aqua Kyoto (Japanese) share the rooftop."
+  },
+  {
+    "id": "paradise-soho",
+    "name": "Paradise Soho",
+    "description": "Sri Lankan bar-and-restaurant on Rupert Street — arrack cocktails, serious Sri Lankan curries, a buzzing crowd.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "61 Rupert St, London W1D 7PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Arrack flights available."
+  },
+  {
+    "id": "los-mochis",
+    "name": "Los Mochis",
+    "description": "Notting Hill Mexican-Japanese fusion — sushi, tacos, mezcal cocktails, club DJs late nights.",
+    "neighbourhood": "Notting Hill",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "music"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "2-4 Farmer St, London W8 7SN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Broadgate sister has rooftop skyline views."
+  },
+  {
+    "id": "phoenix-garden",
+    "name": "The Phoenix Club",
+    "description": "Cavendish Square private members' club with late licence — 3am on weekends.",
+    "neighbourhood": "West End",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "club",
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
+    "address": "1 Cavendish Square, London W1G 0LB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Members or member's guests only. Annual membership required."
+  },
+  {
+    "id": "pub-shoreditch-pedlers",
+    "name": "Pedlers",
+    "description": "Peckham bar-restaurant-club — Rye Lane late-night hang with DJs, natural wine, street food.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "58 Peckham Rye, London SE15 4JR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Open late weekends; DJ from 10pm Fridays."
+  },
+  {
+    "id": "aubaine-mayfair",
+    "name": "Aubaine",
+    "description": "French brasserie chain — locations across Mayfair, Selfridges, and Marylebone. Reliable pit-stop while shopping.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "260-262 Brompton Rd, London SW3 2AS",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Terrace seats in warmer months."
+  },
+  {
+    "id": "bar-americano-mayfair",
+    "name": "Bar Americano",
+    "description": "Tiny stand-up-only cocktail bar in Mayfair — six seats, a classic Italian aperitivo menu.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "244 Piccadilly, London W1J 9DA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in: if a seat's free, it's yours."
+  },
+  {
+    "id": "bread-ahead-bakery-bar",
+    "name": "Wine at 74",
+    "description": "A Borough Market wine bar run by Corney & Barrow — 100+ wines by glass in a lovely Victorian dining room.",
+    "neighbourhood": "London Bridge",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "74 Borough High St, London SE1 1LJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Wine-pairing tastings on selected evenings."
+  },
+  {
+    "id": "ember-shoreditch",
+    "name": "Pitt Cue Co",
+    "description": "American-smokehouse restaurant-bar in a City arch — bourbon, cocktails, rib-heavy menu.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "1 The Avenue, Devonshire Sq, London EC2M 4YP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bourbon flight a highlight."
+  },
+  {
+    "id": "oriole-seasonal",
+    "name": "Nine Lives Bar",
+    "description": "Tropicana-themed cocktail bar in London Bridge — house rum distillery upstairs, tiki cocktails downstairs.",
+    "neighbourhood": "London Bridge",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "8 Holyrood St, London SE1 2EL",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Distillery tours on Saturdays."
+  },
+  {
+    "id": "lamb-tavern-leadenhall",
+    "name": "Lamb Tavern Leadenhall",
+    "description": "A Leadenhall Market Victorian pub (1780) — old mahogany, etched glass, and a City crowd after work.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "architecture"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "10-12 Leadenhall Market, London EC3V 1LR",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Closed weekends."
+  },
+  {
+    "id": "nags-head-covent",
+    "name": "Nag's Head Covent Garden",
+    "description": "McMullen's tiny pub tucked behind Covent Garden — unreformed, tile-bar, a theatre district gem.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "10 James St, London WC2E 8BT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Fish and chips their specialty."
+  },
+  {
+    "id": "marylebone-speakeasy",
+    "name": "The Luggage Room",
+    "description": "A Marylebone Georgian-themed speakeasy — discreet entrance, 1920s cocktails, live jazz on weekends.",
+    "neighbourhood": "Marylebone",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "1 Duke St, London W1U 1JH",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Inside London Marriott Grosvenor Square."
+  },
+  {
+    "id": "nutbourne-battersea",
+    "name": "Nutbourne",
+    "description": "A Battersea wine bar-restaurant — English wines from the family's own Nutbourne vineyard, modern British cooking.",
+    "neighbourhood": "Battersea",
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "address": "29 Ransomes Walk, London SW11 4NP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "English wine flight £18."
+  },
+  {
+    "id": "pantechnicon-terrace",
+    "name": "Pantechnicon",
+    "description": "Belgravia Japanese-Scandinavian fusion — a sunlit rooftop bar, top-floor cocktail terrace, and Eldr restaurant on ground floor.",
+    "neighbourhood": "Kensington",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "architecture"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "19 Motcomb St, London SW1X 8LB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Rooftop indoor-outdoor terrace books up."
+  },
+  {
+    "id": "rotunda-kings-cross",
+    "name": "Rotunda Bar King's Cross",
+    "description": "The Rotunda bar at Kings Place — riverside terrace overlooking Battlebridge Basin, ideal before a Kings Place concert.",
+    "neighbourhood": "King's Cross",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "bar",
+    "estimatedCost": {
+      "amount": 10,
+      "currency": "GBP"
+    },
+    "address": "90 York Way, London N1 9AG",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunset terrace in summer."
+  },
+  {
+    "id": "the-spread-eagle",
+    "name": "The Spread Eagle Camden",
+    "description": "A large Camden pub with a Victorian exterior — live rock music at the back room, ordinary pub up front.",
+    "neighbourhood": "Camden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "141 Albert St, London NW1 7NB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check listings for comedy nights."
+  },
+  {
+    "id": "crown-greenwich",
+    "name": "The Crown Greenwich",
+    "description": "A traditional pub a block from Greenwich Market — cask ales and Fuller's London Pride, a proper neighbourhood local.",
+    "neighbourhood": "Greenwich",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "25 Royal Hill, London SE10 8RT",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Combine with Greenwich Park walk."
+  },
+  {
+    "id": "old-brewery",
+    "name": "The Old Brewery Greenwich",
+    "description": "A working microbrewery and pub in the Old Royal Naval College — Meantime Brewing's on-site microbrewery.",
+    "neighbourhood": "Greenwich",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "Pepys Building, Old Royal Naval College, London SE10 9LW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Free brewery tours by appointment."
+  },
+  {
+    "id": "coach-and-horses",
+    "name": "Coach & Horses Bruton Street",
+    "description": "Mayfair Bruton Street pub dating to 1744 — wood-panelled, atmospheric, a rare gem on Mayfair's art-dealer street.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "5 Bruton St, London W1J 6PW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Gets busy at 5pm with City-to-Mayfair crowd."
+  },
+  {
+    "id": "holborn-dining-room",
+    "name": "Scarfes Bar at Rosewood London",
+    "description": "The cocktail bar at the Rosewood London — Gerald Scarfe-illustrated walls, live jazz, whisky tastings.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "music",
+      "art"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 18,
+      "currency": "GBP"
+    },
+    "address": "252 High Holborn, London WC1V 7EN",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Live jazz Fri/Sat."
+  },
+  {
+    "id": "artesian-hotel-bar",
+    "name": "Lyle Bar at Lyle's",
+    "description": "Upstairs bar of Michelin-starred Lyle's — natural wines, fermented kombuchas, creative non-alcoholic cocktails.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "Tea Building, 56 Shoreditch High St, London E1 6JJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in-friendly bar."
+  },
+  {
+    "id": "peg-bar-hackney",
+    "name": "Bar Brosé",
+    "description": "Covent Garden basement wine-bar — £22 'rosé all day' menu, natural-wine forward list.",
+    "neighbourhood": "Covent Garden",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "Covent Garden, London WC2",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Bottomless rosé £35 weekends."
+  },
+  {
+    "id": "fittleworth-bar",
+    "name": "Discount Suit Company",
+    "description": "Liverpool Street basement — originally a suit-warehouse turned speakeasy, with curious décor and serious cocktails.",
+    "neighbourhood": "Spitalfields",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 14,
+      "currency": "GBP"
+    },
+    "address": "29a Wentworth St, London E1 7TB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in if space; discreet 'DSC' sign."
+  },
+  {
+    "id": "lab-e20",
+    "name": "Lab E20",
+    "description": "Westfield Stratford City cocktail bar — rotating residencies, buzzing after-shopping destination.",
+    "neighbourhood": "Stratford",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "101 The Street, London E20 1EJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Happy hour 5-7pm."
+  },
+  {
+    "id": "nook-soho",
+    "name": "The Lucky Pig",
+    "description": "A tiny Piccadilly speakeasy — just 30 seats, and a whisky-forward menu. Discreet entrance.",
+    "neighbourhood": "Soho",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "374 Oxford St, London W1C 1JY",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Follow the sign for 'Oxford Circus Underground' — the bar is behind."
+  },
+  {
+    "id": "marksman-bethnal",
+    "name": "The Marksman",
+    "description": "Hackney Road gastropub — 19th-century exterior, Michelin Bib Gourmand-approved cooking, pub at its finest.",
+    "neighbourhood": "Hackney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "254 Hackney Rd, London E2 7SJ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book for restaurant. Walk-in for bar."
+  },
+  {
+    "id": "the-duke-of-sussex",
+    "name": "The Duke of Sussex",
+    "description": "Chiswick gastropub with a year-round garden — Spanish-leaning menu, seasonal tapas, a sharp wine list.",
+    "neighbourhood": "Chiswick",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "75 S Parade, London W4 5LF",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Garden in summer."
+  },
+  {
+    "id": "the-draft-house",
+    "name": "Draft House",
+    "description": "A beer-pub chain focused on craft beer — rotating casks, tasting flights, American-style food.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "8 Cheshire St, London E2 6ED",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Multiple branches. Good for introducing craft to the beer-curious."
+  },
+  {
+    "id": "pub-drafts-london-bridge",
+    "name": "The Bridge House",
+    "description": "A London-Bridge-adjacent pub — 17th-century building, unreformed since the Georgians, a cornerstone.",
+    " neighbourhood": "London Bridge",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "218 Tower Bridge Rd, London SE1 2UP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday roast is a South-London classic."
+  },
+  {
+    "id": "the-camberwell-foot",
+    "name": "The Crown & Anchor Brixton",
+    "description": "Brixton's craft-beer community pub — 20+ taps, regular events, a strong local following.",
+    "neighbourhood": "Brixton",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 7,
+      "currency": "GBP"
+    },
+    "address": "246 Brixton Rd, London SW9 6AQ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Quiz nights Tuesdays."
+  },
+  {
+    "id": "the-bell-aldgate",
+    "name": "The Bell Aldgate",
+    "description": "An Aldgate pub above the East End's oldest crossroads — history meets budget pints, near the former city gate.",
+    "neighbourhood": "City of London",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 5,
+      "currency": "GBP"
+    },
+    "address": "50 Middlesex St, London E1 7EX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Close to Brick Lane."
+  },
+  {
+    "id": "butlers-wharf",
+    "name": "Butler's Wharf Chop House",
+    "description": "A riverside D&D pub-restaurant with Tower Bridge views — British menu, pub downstairs, terrace dining upstairs.",
+    "neighbourhood": "Bermondsey",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "36e Shad Thames, London SE1 2YE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Terrace for Tower Bridge sunset."
+  },
+  {
+    "id": "the-anchor-thames",
+    "name": "The Anchor & Hope Kingsland",
+    "description": "Waterloo gastropub (distinct from The Anchor Bankside) — no-reservations, daily-changing menu, a cornerstone of the London dining scene.",
+    "neighbourhood": "South Bank",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 30,
+      "currency": "GBP"
+    },
+    "address": "36 The Cut, London SE1 8LP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Queue for dinner; Sunday lunch seating 2pm bookable."
+  },
+  {
+    "id": "the-old-fox",
+    "name": "Fox & Anchor",
+    "description": "A Smithfield pub open from 7am for 'market breakfasts' — traditional pub, serious breakfasts with ale on the side.",
+    "neighbourhood": "Clerkenwell",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "115 Charterhouse St, London EC1M 6AA",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "'City Boy' breakfast: bacon, eggs, black pudding, half pint of Guinness."
+  },
+  {
+    "id": "the-lockhouse",
+    "name": "The Lockhouse",
+    "description": "A converted East End lock-keeper's cottage turned pub — tiny, photogenic, riverside.",
+    "neighbourhood": "Various",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography",
+      "history"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "Lea Valley, London E9",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Check exact location online — area developing."
+  },
+  {
+    "id": "the-dog-and-wardrobe",
+    "name": "The Dog & Wardrobe",
+    "description": "A Dalston pub — unreformed, community-first, great cask ale selection.",
+    "neighbourhood": "Dalston",
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 6,
+      "currency": "GBP"
+    },
+    "address": "131 Kingsland High St, London E8 2PB",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Local feel, quiz Tuesdays."
+  },
+  {
+    "id": "the-prince-of-wales",
+    "name": "The Prince of Wales Putney",
+    "description": "Putney's riverside Fuller's pub — Boat-Race viewing point, large terrace, pie-and-pint menu.",
+    "neighbourhood": "Putney",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "sport",
+      "photography"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "26 Upper Richmond Rd, London SW15 2RX",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Boat Race day (late March/early April) a London ritual."
+  },
+  {
+    "id": "the-elm",
+    "name": "The Elms",
+    "description": "A Dulwich pub — wood-floored, dog-friendly, real fire in winter.",
+    "neighbourhood": "Dulwich",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "pub",
+    "estimatedCost": {
+      "amount": 8,
+      "currency": "GBP"
+    },
+    "address": "6 Lordship Lane, London SE22 8EW",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Sunday roast."
+  },
+  {
+    "id": "paradise-peckham",
+    "name": "Peckham Palms",
+    "description": "A roof-terrace bar at the Aylesham Centre — summer-only, Caribbean-spirit cocktails, a Peckham weekend hit.",
+    "neighbourhood": "Peckham",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "photography"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "12 Rye Lane, London SE15 4RZ",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Summer only. Tickets for some events."
+  },
+  {
+    "id": "corkage-kings-cross",
+    "name": "Native at Browns",
+    "description": "Browns Hotel's tiny natural-wine and seasonal-food bar — low-ceilinged, candle-lit, honest cooking.",
+    "neighbourhood": "Mayfair",
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "nightlife",
+      "food"
+    ],
+    "type": "wine-bar",
+    "estimatedCost": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "address": "Albemarle St, London W1S 4BP",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Book ahead — tiny."
+  },
+  {
+    "id": "the-worship",
+    "name": "Happiness Forgets Worship Street",
+    "description": "The Worship Street sibling to Happiness Forgets — similar minimalism, different crowd.",
+    "neighbourhood": "Shoreditch",
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife"
+    ],
+    "type": "cocktail-bar",
+    "estimatedCost": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "address": "8 Worship St, London EC2A 2BE",
+    "affiliateUrl": "",
+    "affiliateLabel": "",
+    "tips": "Walk-in-friendly first hour."
   }
 ]

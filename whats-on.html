@@ -89,8 +89,10 @@
   <script src="js/events-feed.js"></script>
   <script src="js/chat-assistant.js" defer></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
       UI.init();
+
+      await EventsFeed.load();
 
       let currentMonth = new Date().getMonth();
       let currentCategory = 'all';
