@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Staff — Draft Review</title>
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --gold: #C9A84C;
+    --bg: #f3f4f6;
+    --card: #ffffff;
+    --text: #374151;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --green: #16a34a;
+    --red: #dc2626;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; color:var(--text); font-size:14px; line-height:1.5; }
+  header { background:var(--navy); color:#fff; padding:1rem 1.5rem; display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--gold); }
+  header h1 { margin:0; color:var(--gold); font-size:1.15rem; font-weight:700; }
+  header .count { font-size:0.85rem; opacity:0.85; }
+  main { display:grid; grid-template-columns:360px 1fr; gap:0; min-height:calc(100vh - 60px); }
+  .list { background:var(--card); border-right:1px solid var(--border); overflow-y:auto; max-height:calc(100vh - 60px); }
+  .filter-bar { padding:0.75rem; border-bottom:1px solid var(--border); background:#fafafa; position:sticky; top:0; z-index:1; }
+  .filter-bar select, .filter-bar button { padding:0.4rem 0.6rem; border:1px solid var(--border); border-radius:4px; font-size:0.85rem; background:#fff; cursor:pointer; margin-right:0.3rem; }
+  .draft { padding:0.85rem 1rem; border-bottom:1px solid var(--border); cursor:pointer; transition:background 0.12s; }
+  .draft:hover { background:#fafafa; }
+  .draft.active { background:#eef2ff; border-left:3px solid var(--navy); padding-left:calc(1rem - 3px); }
+  .draft__agent { font-weight:600; color:var(--navy); font-size:0.9rem; }
+  .draft__badge { display:inline-block; background:rgba(201,168,76,0.15); color:#8a6d22; font-size:0.65rem; padding:0.1rem 0.45rem; border-radius:3px; margin-left:0.4rem; letter-spacing:0.05em; text-transform:uppercase; font-weight:700; }
+  .draft__meta { font-size:0.75rem; color:var(--muted); margin-top:0.2rem; }
+  .empty { padding:2rem 1rem; text-align:center; color:var(--muted); font-size:0.9rem; }
+  .viewer { display:flex; flex-direction:column; height:calc(100vh - 60px); }
+  .viewer__toolbar { padding:0.9rem 1.25rem; background:#fff; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+  .viewer__title { font-weight:600; color:var(--navy); font-size:0.95rem; }
+  .viewer__title small { color:var(--muted); font-weight:400; margin-left:0.5rem; font-size:0.8rem; }
+  .viewer__body { flex:1; overflow:auto; padding:1.5rem 2rem; background:#fafafa; }
+  .viewer__body pre { background:#fff; border:1px solid var(--border); border-radius:6px; padding:1.25rem; white-space:pre-wrap; word-break:break-word; font-family:'Menlo','Monaco',monospace; font-size:0.85rem; line-height:1.55; margin:0; }
+  .viewer__body iframe { width:100%; height:100%; min-height:70vh; border:1px solid var(--border); border-radius:6px; background:#fff; }
+  .btn { padding:0.55rem 1.1rem; border-radius:5px; border:none; cursor:pointer; font-weight:600; font-size:0.85rem; letter-spacing:0.02em; }
+  .btn--approve { background:var(--green); color:#fff; }
+  .btn--approve:hover { background:#15803d; }
+  .btn--reject { background:#fff; color:var(--red); border:1px solid var(--red); }
+  .btn--reject:hover { background:#fef2f2; }
+  .btn[disabled] { opacity:0.5; cursor:not-allowed; }
+  .placeholder { display:flex; align-items:center; justify-content:center; height:100%; color:var(--muted); font-size:0.95rem; text-align:center; padding:2rem; }
+  .toast { position:fixed; bottom:1.5rem; right:1.5rem; background:var(--navy); color:#fff; padding:0.85rem 1.25rem; border-radius:6px; font-size:0.88rem; box-shadow:0 4px 20px rgba(0,0,0,0.15); opacity:0; transform:translateY(10px); transition:all 0.25s; z-index:10; }
+  .toast.show { opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🗂 AI Staff — Draft Review</h1>
+  <div class="count" id="count">0 drafts</div>
+</header>
+
+<main>
+  <aside class="list">
+    <div class="filter-bar">
+      <select id="filter-agent">
+        <option value="">All agents</option>
+      </select>
+      <select id="filter-gated">
+        <option value="">All drafts</option>
+        <option value="gated">Human-gated only</option>
+      </select>
+      <button id="refresh">Refresh</button>
+    </div>
+    <div id="draft-list"></div>
+  </aside>
+
+  <section class="viewer">
+    <div class="viewer__toolbar" id="toolbar" style="display:none;">
+      <div class="viewer__title" id="viewer-title"></div>
+      <div>
+        <button class="btn btn--reject" id="btn-reject">Reject</button>
+        <button class="btn btn--approve" id="btn-approve">Approve</button>
+      </div>
+    </div>
+    <div class="viewer__body" id="viewer-body">
+      <div class="placeholder">Pick a draft on the left to review.</div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  let drafts = [];
+  let agents = [];
+  let current = null;
+
+  async function api(path, opts = {}) {
+    const res = await fetch(path, opts);
+    if (!res.ok) throw new Error((await res.json()).error || res.status);
+    return res.json();
+  }
+
+  function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2200);
+  }
+
+  async function loadAll() {
+    try {
+      const [{ agents: a }, { drafts: d }] = await Promise.all([
+        api('/api/agents'),
+        api('/api/drafts'),
+      ]);
+      agents = a;
+      drafts = d;
+      renderAgentFilter();
+      renderList();
+    } catch (e) {
+      toast('Load failed: ' + e.message);
+    }
+  }
+
+  function renderAgentFilter() {
+    const sel = document.getElementById('filter-agent');
+    const used = new Set(drafts.map((d) => d.agentId));
+    const relevant = agents.filter((a) => used.has(a.id));
+    sel.innerHTML = '<option value="">All agents</option>' +
+      relevant.map((a) => `<option value="${a.id}">${a.name} ${a.humanGated ? '🔒' : ''}</option>`).join('');
+  }
+
+  function renderList() {
+    const agentFilter = document.getElementById('filter-agent').value;
+    const gatedFilter = document.getElementById('filter-gated').value;
+    const list = document.getElementById('draft-list');
+    let filtered = drafts;
+    if (agentFilter) filtered = filtered.filter((d) => d.agentId === agentFilter);
+    if (gatedFilter === 'gated') filtered = filtered.filter((d) => d.humanGated);
+
+    document.getElementById('count').textContent = filtered.length + ' draft' + (filtered.length === 1 ? '' : 's');
+
+    if (filtered.length === 0) {
+      list.innerHTML = '<div class="empty">No drafts in queue.<br><small>Run agents with <code>npm run ai:run &lt;id&gt;</code></small></div>';
+      return;
+    }
+
+    list.innerHTML = filtered.map((d) => `
+      <div class="draft" data-rel="${encodeURIComponent(d.rel)}">
+        <div class="draft__agent">
+          ${escape(d.agentName)}
+          ${d.humanGated ? '<span class="draft__badge">Gated</span>' : ''}
+        </div>
+        <div class="draft__meta">${formatDate(d.mtime)} · ${formatBytes(d.size)} · ${escape(d.subdir)}</div>
+      </div>
+    `).join('');
+
+    list.querySelectorAll('.draft').forEach((el) => {
+      el.addEventListener('click', () => {
+        const rel = decodeURIComponent(el.dataset.rel);
+        loadDraft(rel, el);
+      });
+    });
+  }
+
+  async function loadDraft(rel, el) {
+    document.querySelectorAll('.draft.active').forEach((x) => x.classList.remove('active'));
+    if (el) el.classList.add('active');
+    current = rel;
+    try {
+      const { content } = await api('/api/drafts/' + encodeURIComponent(rel));
+      const ext = rel.split('.').pop().toLowerCase();
+      document.getElementById('toolbar').style.display = 'flex';
+      document.getElementById('viewer-title').innerHTML = escape(rel) + ' <small>' + formatBytes(content.length) + '</small>';
+      const body = document.getElementById('viewer-body');
+      if (ext === 'html') {
+        // Render HTML blog posts in an iframe so they show as the reader will see them.
+        const srcdoc = content;
+        body.innerHTML = '<iframe sandbox="" srcdoc=""></iframe>';
+        body.querySelector('iframe').srcdoc = srcdoc;
+      } else {
+        body.innerHTML = '<pre></pre>';
+        body.querySelector('pre').textContent = content;
+      }
+    } catch (e) {
+      toast('Load failed: ' + e.message);
+    }
+  }
+
+  async function decide(action) {
+    if (!current) return;
+    try {
+      const { newPath } = await api('/api/' + action, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ rel: current }),
+      });
+      toast((action === 'approve' ? 'Approved' : 'Rejected') + ' → ' + newPath);
+      current = null;
+      document.getElementById('toolbar').style.display = 'none';
+      document.getElementById('viewer-body').innerHTML = '<div class="placeholder">Pick a draft on the left to review.</div>';
+      await loadAll();
+    } catch (e) {
+      toast('Action failed: ' + e.message);
+    }
+  }
+
+  function escape(s) { return String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+  function formatBytes(n) { if (n < 1024) return n + ' B'; if (n < 1024*1024) return (n/1024).toFixed(1) + ' KB'; return (n/1024/1024).toFixed(1) + ' MB'; }
+  function formatDate(iso) { const d = new Date(iso); return d.toLocaleString(); }
+
+  document.getElementById('refresh').addEventListener('click', loadAll);
+  document.getElementById('filter-agent').addEventListener('change', renderList);
+  document.getElementById('filter-gated').addEventListener('change', renderList);
+  document.getElementById('btn-approve').addEventListener('click', () => decide('approve'));
+  document.getElementById('btn-reject').addEventListener('click', () => decide('reject'));
+
+  loadAll();
+</script>
+
+</body>
+</html>

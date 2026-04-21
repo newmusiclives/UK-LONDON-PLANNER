@@ -9,6 +9,7 @@
     "ai:run": "node ai-staff/orchestrator.js run",
     "ai:tick": "node ai-staff/orchestrator.js tick",
     "ai:queue": "node ai-staff/orchestrator.js queue",
-    "ai:approve": "node ai-staff/orchestrator.js approve"
+    "ai:approve": "node ai-staff/orchestrator.js approve",
+    "ai:review": "node ai-staff/review-server.js"
   }
 }
