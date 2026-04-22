@@ -47,19 +47,9 @@ Ran locally against live GHL: submit → get returned correct itinerary JSON + m
 
 Ordered by dependency. Do 1, 2, 3 first — nothing else works without them.
 
-### 1. Add Netlify env var `GHL_PRIVATE_TOKEN` — 2 min
+### 1. ✅ DONE — `GHL_PRIVATE_TOKEN` already in Netlify env (confirmed 2026-04-22)
 
-The new functions need your PIT to talk to GHL. Your existing env var is `GHL_API_KEY` (legacy); the new functions use `GHL_PRIVATE_TOKEN`.
-
-- Netlify dashboard → **Site configuration → Environment variables → Add a variable**
-- **Key:** `GHL_PRIVATE_TOKEN`
-- **Value:** (your `pit-...` token — same one in your `~/.zshrc`)
-- **Scope:** All deploys
-- Save → **Deploys → Trigger deploy → Clear cache and deploy site** (env vars load at cold start)
-
-### 2. Verify product prices render correctly — 2 min
-
-Open **Payments → Products** in GHL. For each of the 6 products, the price should display as $50 / $75 / $150. If any show 100× too high (e.g. $5,000), click the price and edit the amount to match (drop three zeros).
+### 2. ✅ DONE — Product prices verified at $50/$75/$150 in GHL UI (confirmed 2026-04-22). GHL Products API `amount` field is in cents.
 
 ### 3. Create Stripe Payment Links for each product — 15 min
 
