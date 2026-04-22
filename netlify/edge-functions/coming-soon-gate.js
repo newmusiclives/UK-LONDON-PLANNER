@@ -4,9 +4,9 @@
 //   LAUNCH_MODE=live                   → pass through; full site is public.
 //
 // Admin preview bypass:
-//   Visit any page with ?preview=<PREVIEW_TOKEN> to set a cookie that bypasses
-//   the gate for 7 days. Use ?preview=clear to revoke. Token comes from the
-//   PREVIEW_TOKEN env var on Netlify.
+//   Visit any page with ?preview=<PREVIEW_TOKEN> to set a session cookie that
+//   bypasses the gate until the browser closes. Use ?preview=clear to revoke.
+//   Token comes from the PREVIEW_TOKEN env var on Netlify.
 //
 // To launch the site: set LAUNCH_MODE=live in Netlify env vars and redeploy.
 
@@ -32,7 +32,6 @@ const ALLOWED_PATHS = new Set([
 ]);
 
 const PREVIEW_COOKIE = 'lp_preview';
-const PREVIEW_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
 
 function readCookie(request, name) {
   const header = request.headers.get('cookie') || '';
@@ -64,7 +63,7 @@ export default async (request, context) => {
       return new Response(null, { status: 302, headers });
     }
     if (previewToken && previewParam === previewToken) {
-      headers.append('Set-Cookie', `${PREVIEW_COOKIE}=${encodeURIComponent(previewToken)}; Path=/; Max-Age=${PREVIEW_MAX_AGE}; SameSite=Lax; Secure; HttpOnly`);
+      headers.append('Set-Cookie', `${PREVIEW_COOKIE}=${encodeURIComponent(previewToken)}; Path=/; SameSite=Lax; Secure; HttpOnly`);
       return new Response(null, { status: 302, headers });
     }
     // Bad token → fall through to normal gate behaviour (no cookie set).
