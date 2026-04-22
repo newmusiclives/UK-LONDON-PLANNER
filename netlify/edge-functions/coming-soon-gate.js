@@ -26,6 +26,7 @@ const ALLOWED_PATHS = new Set([
   '/contact.html', '/contact',
   '/hidden-london.html', '/hidden-london',
   '/musical-london.html', '/musical-london',
+  '/musical-london-trip.html', '/musical-london-trip',
   '/coming-soon.html', '/coming-soon',
   '/manifest.json', '/sw.js', '/robots.txt', '/sitemap.xml',
   '/og-image.svg', '/favicon.ico', '/favicon.svg'

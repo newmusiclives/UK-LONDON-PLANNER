@@ -58,6 +58,11 @@
   to = "/admin.html"
   status = 200
 
+[[redirects]]
+  from = "/musical-london-trip"
+  to = "/musical-london-trip.html"
+  status = 200
+
 # 404 fallback — must stay last.
 [[redirects]]
   from = "/*"
