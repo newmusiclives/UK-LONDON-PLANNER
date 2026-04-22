@@ -3,6 +3,11 @@
 //                                        everything except the allowlist 302s to /.
 //   LAUNCH_MODE=live                   → pass through; full site is public.
 //
+// Admin preview bypass:
+//   Visit any page with ?preview=<PREVIEW_TOKEN> to set a cookie that bypasses
+//   the gate for 7 days. Use ?preview=clear to revoke. Token comes from the
+//   PREVIEW_TOKEN env var on Netlify.
+//
 // To launch the site: set LAUNCH_MODE=live in Netlify env vars and redeploy.
 
 const ALLOWED_PREFIXES = [
@@ -26,6 +31,18 @@ const ALLOWED_PATHS = new Set([
   '/og-image.svg', '/favicon.ico', '/favicon.svg'
 ]);
 
+const PREVIEW_COOKIE = 'lp_preview';
+const PREVIEW_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
+
+function readCookie(request, name) {
+  const header = request.headers.get('cookie') || '';
+  for (const part of header.split(';')) {
+    const [k, ...v] = part.trim().split('=');
+    if (k === name) return decodeURIComponent(v.join('='));
+  }
+  return null;
+}
+
 export default async (request, context) => {
   const mode = (Netlify.env.get('LAUNCH_MODE') || 'coming-soon').toLowerCase();
 
@@ -33,6 +50,30 @@ export default async (request, context) => {
 
   const url = new URL(request.url);
   const path = url.pathname;
+  const previewToken = Netlify.env.get('PREVIEW_TOKEN') || '';
+  const previewParam = url.searchParams.get('preview');
+
+  // Handle preview query param: set cookie, strip param, redirect.
+  if (previewParam !== null) {
+    const clean = new URL(url.toString());
+    clean.searchParams.delete('preview');
+    const headers = new Headers({ Location: clean.toString() });
+
+    if (previewParam === 'clear') {
+      headers.append('Set-Cookie', `${PREVIEW_COOKIE}=; Path=/; Max-Age=0; SameSite=Lax; Secure; HttpOnly`);
+      return new Response(null, { status: 302, headers });
+    }
+    if (previewToken && previewParam === previewToken) {
+      headers.append('Set-Cookie', `${PREVIEW_COOKIE}=${encodeURIComponent(previewToken)}; Path=/; Max-Age=${PREVIEW_MAX_AGE}; SameSite=Lax; Secure; HttpOnly`);
+      return new Response(null, { status: 302, headers });
+    }
+    // Bad token → fall through to normal gate behaviour (no cookie set).
+  }
+
+  // Cookie-based bypass.
+  if (previewToken && readCookie(request, PREVIEW_COOKIE) === previewToken) {
+    return;
+  }
 
   if (ALLOWED_PREFIXES.some((p) => path.startsWith(p))) return;
   if (ALLOWED_PATHS.has(path)) return;
