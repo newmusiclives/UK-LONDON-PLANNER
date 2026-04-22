@@ -24,6 +24,7 @@ const ALLOWED_PATHS = new Set([
   '/share-trip.html', '/share-trip',
   '/free-guide.html', '/free-guide',
   '/contact.html', '/contact',
+  '/faq.html', '/faq',
   '/hidden-london.html', '/hidden-london',
   '/musical-london.html', '/musical-london',
   '/musical-london-trip.html', '/musical-london-trip',
