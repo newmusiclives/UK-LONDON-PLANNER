@@ -47,15 +47,20 @@
             <form id="contact-form" style="display:grid;gap:1.25rem;">
               <div class="grid grid--2" style="gap:1rem;">
                 <div>
-                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Name</label>
-                  <input type="text" id="contact-name" required placeholder="Your name"
+                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">First name</label>
+                  <input type="text" id="contact-first-name" required placeholder="First name" autocomplete="given-name"
                     style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
                 </div>
                 <div>
-                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Email</label>
-                  <input type="email" id="contact-email" required placeholder="you@example.com"
+                  <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Last name</label>
+                  <input type="text" id="contact-last-name" required placeholder="Last name" autocomplete="family-name"
                     style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
                 </div>
+              </div>
+              <div>
+                <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Email</label>
+                <input type="email" id="contact-email" required placeholder="you@example.com"
+                  style="width:100%;padding:0.75rem 1rem;border:2px solid var(--color-border);border-radius:var(--radius-md);font-size:1rem;">
               </div>
               <div>
                 <label style="font-weight:600;display:block;margin-bottom:0.5rem;">Phone (optional)</label>
@@ -98,8 +103,12 @@
         btn.disabled = true;
         btn.textContent = 'Sending...';
 
+        const firstName = document.getElementById('contact-first-name').value.trim();
+        const lastName = document.getElementById('contact-last-name').value.trim();
         const formData = {
-          name: document.getElementById('contact-name').value,
+          firstName,
+          lastName,
+          name: `${firstName} ${lastName}`.trim(),
           email: document.getElementById('contact-email').value,
           phone: document.getElementById('contact-phone').value,
           subject: document.getElementById('contact-subject').value,
