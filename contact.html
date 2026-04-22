@@ -83,6 +83,19 @@
               </div>
               <button type="submit" class="btn btn--primary btn--large btn--full">Send Message</button>
             </form>
+
+            <div id="contact-success" style="display:none;text-align:center;padding:1rem 0;">
+              <div style="font-size:3rem;margin-bottom:1rem;">✉️</div>
+              <h3 style="margin:0 0 0.75rem;">Message received — thank you</h3>
+              <p style="color:var(--color-text-muted);margin:0 0 1.5rem;">A real person will reply to you within <strong>24 hours</strong> (often a lot sooner). We've sent a confirmation to your inbox — check your spam folder if it doesn't appear shortly.</p>
+              <p style="margin:0 0 0.75rem;font-weight:600;">While you're waiting:</p>
+              <ul style="list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:0.5rem;text-align:left;max-width:24rem;margin-left:auto;margin-right:auto;">
+                <li>→ <a href="/faq" style="color:#C9A84C;text-decoration:none;">Browse the FAQ</a> — common questions answered</li>
+                <li>→ <a href="/hidden-london" style="color:#C9A84C;text-decoration:none;">Peek at Hidden London</a> — 187 off-the-beaten-path spots</li>
+                <li>→ <a href="/musical-london" style="color:#C9A84C;text-decoration:none;">Explore Musical London</a> — 100 music pilgrimage stops</li>
+              </ul>
+              <button type="button" id="contact-send-another" class="btn btn--outline">Send another message</button>
+            </div>
           </div>
         </div>
       </div>
@@ -117,20 +130,29 @@
 
         const result = await GHL.submitContactForm(formData);
 
-        if (result.demo) {
-          btn.textContent = 'Message Saved';
-          UI.showToast('Contact form submitted — email delivery will be live soon. Your message has been logged.');
-        } else if (result.success) {
-          btn.textContent = 'Message Sent!';
-          UI.showToast('Thanks! We\'ll get back to you within 24 hours.');
+        if (result.success || result.demo) {
+          if (result.demo) UI.showToast('Contact form submitted — email delivery will be live soon. Your message has been logged.');
+          e.target.reset();
+          e.target.style.display = 'none';
+          const successEl = document.getElementById('contact-success');
+          successEl.style.display = 'block';
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
           btn.textContent = 'Send Failed';
           UI.showToast('Something went wrong. Please try again or email us directly.');
           btn.disabled = false;
-          return;
+          setTimeout(() => { btn.textContent = 'Send Message'; }, 3000);
         }
-        e.target.reset();
-        setTimeout(() => { btn.disabled = false; btn.textContent = 'Send Message'; }, 3000);
+      });
+
+      document.getElementById('contact-send-another').addEventListener('click', () => {
+        document.getElementById('contact-success').style.display = 'none';
+        const form = document.getElementById('contact-form');
+        form.style.display = 'grid';
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
     });
   </script>
