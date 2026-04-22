@@ -1,7 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   UI.init();
 
-  const state = State.get();
+  const params = new URLSearchParams(window.location.search);
+  const token = params.get('token');
+
+  // If a token is present, hydrate from the server (overrides localStorage).
+  // This is how paid customers and email recipients reach their saved itinerary.
+  let serverMeta = null;
+  if (token) {
+    try {
+      const res = await fetch(`/api/get-itinerary?token=${encodeURIComponent(token)}`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.itinerary) {
+          State.saveItinerary(data.itinerary);
+          serverMeta = data.meta || {};
+          if (serverMeta.paid) State.save({ paid: true });
+        }
+      }
+    } catch (e) {
+      console.warn('itinerary token fetch failed:', e);
+    }
+  }
+
   const itinerary = State.getItinerary();
 
   if (!itinerary) {
@@ -21,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const price = State.getPrice(itinerary.tripDays);
 
   renderItinerary(itinerary, isPaid, price);
+
+  // If we have an itinerary but no token (i.e. this was just generated locally),
+  // offer to save it server-side so it can be emailed / shared / survives cache clear.
+  if (!token && !isPaid && typeof ItineraryDelivery !== 'undefined') {
+    ItineraryDelivery.mountSaveCta(itinerary);
+  }
 });
 
 function renderItinerary(itinerary, isPaid, price) {

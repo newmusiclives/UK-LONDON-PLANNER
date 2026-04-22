@@ -16,6 +16,12 @@ const Payment = {
     const link = this.getStripeLink(tier);
     const sessionId = State.getSessionId();
 
+    // Prefer the itinerary token (= GHL contact id) if present in the URL —
+    // the Stripe → GHL webhook will pass it through as client_reference_id,
+    // letting the purchase-delivery workflow identify the exact contact.
+    const urlToken = new URLSearchParams(window.location.search).get('token');
+    const clientRef = urlToken || sessionId;
+
     // Send to GoHighLevel CRM
     if (contactInfo) {
       GHL.trackItineraryPurchase({
@@ -25,13 +31,14 @@ const Payment = {
         tier,
         days,
         price: this.getPrice(days),
-        sessionId
+        sessionId,
+        itineraryToken: urlToken || null
       });
     }
 
     if (link && !link.includes('YOUR_')) {
       const separator = link.includes('?') ? '&' : '?';
-      window.location.href = `${link}${separator}client_reference_id=${sessionId}`;
+      window.location.href = `${link}${separator}client_reference_id=${clientRef}`;
     } else {
       // Demo mode
       this.unlockDemo(tier);

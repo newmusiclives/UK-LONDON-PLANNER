@@ -32,6 +32,16 @@
   to = "/.netlify/functions/runtime-config"
   status = 200
 
+[[redirects]]
+  from = "/api/submit-itinerary"
+  to = "/.netlify/functions/submit-itinerary"
+  status = 200
+
+[[redirects]]
+  from = "/api/get-itinerary"
+  to = "/.netlify/functions/get-itinerary"
+  status = 200
+
 # --- Pretty URLs for the launch pages (self-gated by feature flags) ---
 [[redirects]]
   from = "/gift"
