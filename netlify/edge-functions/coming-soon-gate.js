@@ -12,7 +12,8 @@
 
 const ALLOWED_PREFIXES = [
   '/css/', '/js/', '/images/', '/icons/', '/fonts/', '/data/', '/downloads/',
-  '/api/', '/.netlify/'
+  '/api/', '/.netlify/',
+  '/blog/'
 ];
 
 const ALLOWED_PATHS = new Set([
