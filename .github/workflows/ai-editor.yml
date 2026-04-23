@@ -79,7 +79,7 @@ jobs:
             --arg run_url "$RUN_URL" \
             --arg date "$TODAY" \
             '{subject:$subject, body:$body, agent:$agent, agent_name:$agent_name, status:$status, file:$file, preview:$preview, run_url:$run_url, date:$date}' \
-            | curl -sS -X POST "$GHL_WEBHOOK_AI_NOTIFY" \
+            | curl -sS -X POST "$(printf '%s' "$GHL_WEBHOOK_AI_NOTIFY" | tr -d '[:space:]')" \
                 -H "Content-Type: application/json" \
                 --data-binary @-
 
