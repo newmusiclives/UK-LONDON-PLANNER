@@ -63,6 +63,7 @@ function renderItinerary(itinerary, isPaid, price) {
   }).join(', ');
 
   const totalCost = itinerary.days.reduce((sum, d) => sum + (d.dailyCost || 0), 0);
+  const previewDays = itinerary.tripDays < 5 ? 1 : 2;
 
   main.innerHTML = `
     <div class="itinerary-page">
@@ -87,7 +88,7 @@ function renderItinerary(itinerary, isPaid, price) {
       ` : `
         <div style="background:linear-gradient(135deg, #059669 0%, #047857 100%);border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
           <div>
-            <h4 style="color:white;margin:0 0 0.25rem;">🎉 Free Preview — First 2 Days Unlocked</h4>
+            <h4 style="color:white;margin:0 0 0.25rem;">🎉 Free Preview — First ${previewDays === 1 ? 'Day' : '2 Days'} Unlocked</h4>
             <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin:0;">Browse your personalised itinerary below. Love it? Unlock all ${itinerary.tripDays} days for just $${price}.</p>
           </div>
           <button class="btn btn--primary" onclick="document.getElementById('purchase-section')?.scrollIntoView({behavior:'smooth'})">
@@ -136,7 +137,7 @@ function renderItinerary(itinerary, isPaid, price) {
       <!-- Day Cards -->
       <div id="days-container">
         ${itinerary.days.map((day, index) => {
-          const locked = !isPaid && index >= 2;
+          const locked = !isPaid && index >= previewDays;
           return renderDayCard(day, locked, itinerary.hotel?.neighbourhood);
         }).join('')}
       </div>
