@@ -1,0 +1,88 @@
+name: AI Staff — Editor-in-Chief
+
+# Margaret Thornbury drafts the daily editorial brief for the next content cycle.
+# Runs weekdays at 11:00 MST / 18:00 UTC. Commits the brief to the repo so the
+# local review UI picks it up, then pings the GHL notification webhook.
+
+on:
+  schedule:
+    - cron: '0 18 * * 1-5'  # Mon–Fri, 18:00 UTC (11:00 MST)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GHL_WEBHOOK_AI_NOTIFY: ${{ secrets.GHL_WEBHOOK_AI_NOTIFY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure git
+        run: |
+          git config user.name "london-planned-bot"
+          git config user.email "bot@londonplanned.com"
+
+      - name: Run Margaret (editor-in-chief)
+        id: margaret
+        continue-on-error: true
+        run: npm run ai:run editor-in-chief
+
+      - name: Commit brief
+        if: steps.margaret.outcome == 'success'
+        run: |
+          git add ai-staff/queue/plans/ ai-staff/queue/index.json ai-staff/logs/ || true
+          if git diff --cached --quiet; then
+            echo "No new brief to commit."
+            exit 0
+          fi
+          git commit -m "ai: margaret brief $(date -u +%Y-%m-%d)"
+          git push origin main
+
+      - name: Notify via GHL webhook
+        if: always()
+        run: |
+          STATUS="${{ steps.margaret.outcome }}"
+          FILE=$(ls -t ai-staff/queue/plans/*.md 2>/dev/null | head -n1 || true)
+          THREAD=""
+          if [ -n "$FILE" ]; then
+            THREAD=$(grep -m1 '"thread":' "$FILE" | sed 's/.*"thread": *"\([^"]*\)".*/\1/' || true)
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "$STATUS" = "success" ]; then
+            SUBJECT="Margaret's brief for $TODAY is ready"
+            BODY=$(printf 'Thread: %s\n\nReview + approve before 16:00 MST (23:00 UTC) when Oliver + Poppy run off your approved brief.\n\nStatus: success' "${THREAD:-(parse failed)}")
+          else
+            SUBJECT="Margaret's brief FAILED for $TODAY"
+            BODY="Margaret's editor-in-chief run failed. Check the GitHub Actions logs linked below."
+          fi
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --arg body "$BODY" \
+            --arg agent "editor-in-chief" \
+            --arg agent_name "Margaret Thornbury" \
+            --arg status "$STATUS" \
+            --arg file "$(basename "${FILE:-}")" \
+            --arg preview "${THREAD:-}" \
+            --arg run_url "$RUN_URL" \
+            --arg date "$TODAY" \
+            '{subject:$subject, body:$body, agent:$agent, agent_name:$agent_name, status:$status, file:$file, preview:$preview, run_url:$run_url, date:$date}' \
+            | curl -sS -X POST "$GHL_WEBHOOK_AI_NOTIFY" \
+                -H "Content-Type: application/json" \
+                --data-binary @-
+
+      - name: Fail the job if Margaret errored
+        if: steps.margaret.outcome == 'failure'
+        run: exit 1

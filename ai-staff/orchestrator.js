@@ -41,21 +41,31 @@ function loadAgentPrompt(agent) {
 }
 
 // Load the most recent editor-in-chief brief so downstream agents can align
-// their output with the day's thread. Returns null if no brief exists.
+// their output with the day's thread. Checks both queue/plans/ and
+// published/plans/ — approving a brief in the review UI shouldn't break
+// chaining. Returns null if no brief exists anywhere.
 function loadLatestEditorBrief() {
-  const plansDir = path.join(QUEUE_DIR, 'plans');
-  if (!fs.existsSync(plansDir)) return null;
-  const files = fs.readdirSync(plansDir)
-    .filter((f) => f.endsWith('__editor-in-chief.md'))
-    .sort()
-    .reverse();
-  if (!files.length) return null;
-  const raw = fs.readFileSync(path.join(plansDir, files[0]), 'utf8');
+  const candidates = [
+    path.join(QUEUE_DIR, 'plans'),
+    path.join(PUBLISHED_DIR, 'plans'),
+  ];
+  const all = [];
+  for (const dir of candidates) {
+    if (!fs.existsSync(dir)) continue;
+    for (const f of fs.readdirSync(dir)) {
+      if (f.endsWith('__editor-in-chief.md')) all.push({ dir, f });
+    }
+  }
+  if (!all.length) return null;
+  // Filenames start with ISO timestamp — alpha sort gives chronological order.
+  all.sort((a, b) => b.f.localeCompare(a.f));
+  const pick = all[0];
+  const raw = fs.readFileSync(path.join(pick.dir, pick.f), 'utf8');
   const fenceMatch = raw.match(/```json\s*\n([\s\S]*?)\n```/);
   const jsonText = fenceMatch ? fenceMatch[1] : raw.trim();
   let brief = null;
   try { brief = JSON.parse(jsonText); } catch { /* keep brief null */ }
-  return { raw, brief, file: files[0] };
+  return { raw, brief, file: pick.f };
 }
 
 function gatherContext() {

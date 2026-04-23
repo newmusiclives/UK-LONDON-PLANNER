@@ -1,0 +1,100 @@
+name: AI Staff — Downstream (Oliver + Poppy)
+
+# Runs after Margaret's brief has been approved. Oliver writes the blog post,
+# Poppy writes the multi-slot social. Weekdays at 16:00 MST / 23:00 UTC.
+# Commits drafts to the repo and pings the GHL notification webhook.
+
+on:
+  schedule:
+    - cron: '0 23 * * 1-5'  # Mon–Fri, 23:00 UTC (16:00 MST)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GHL_WEBHOOK_AI_NOTIFY: ${{ secrets.GHL_WEBHOOK_AI_NOTIFY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure git
+        run: |
+          git config user.name "london-planned-bot"
+          git config user.email "bot@londonplanned.com"
+
+      - name: Run Oliver (content-writer)
+        id: oliver
+        continue-on-error: true
+        run: npm run ai:run content-writer
+
+      - name: Run Poppy (social-media-manager)
+        id: poppy
+        continue-on-error: true
+        run: npm run ai:run social-media-manager
+
+      - name: Commit drafts
+        run: |
+          git add ai-staff/queue/ ai-staff/logs/ || true
+          if git diff --cached --quiet; then
+            echo "No new drafts to commit."
+            exit 0
+          fi
+          git commit -m "ai: oliver+poppy drafts $(date -u +%Y-%m-%d)"
+          git push origin main
+
+      - name: Notify via GHL webhook
+        if: always()
+        run: |
+          OLIVER="${{ steps.oliver.outcome }}"
+          POPPY="${{ steps.poppy.outcome }}"
+          BLOG_FILE=$(ls -t ai-staff/queue/blog/*.html 2>/dev/null | head -n1 || true)
+          SOCIAL_FILE=$(ls -t ai-staff/queue/social/*.json 2>/dev/null | head -n1 || true)
+          BLOG_TITLE=""
+          if [ -n "$BLOG_FILE" ]; then
+            BLOG_TITLE=$(grep -m1 '<title>' "$BLOG_FILE" | sed 's/.*<title>\(.*\)<\/title>.*/\1/' || true)
+          fi
+          SOCIAL_THREAD=""
+          if [ -n "$SOCIAL_FILE" ]; then
+            SOCIAL_THREAD=$(grep -m1 '"thread":' "$SOCIAL_FILE" | sed 's/.*"thread": *"\([^"]*\)".*/\1/' || true)
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "$OLIVER" = "success" ] && [ "$POPPY" = "success" ]; then
+            STATUS="success"
+            SUBJECT="Oliver + Poppy drafts ready for $TODAY"
+            BODY=$(printf 'Blog: %s\nSocial thread: %s\n\nReview at http://localhost:4242 and approve blog posts for auto-publish. Paste Poppy social into GHL Social Planner.' "${BLOG_TITLE:-(no title)}" "${SOCIAL_THREAD:-(no thread)}")
+          else
+            STATUS="failure"
+            SUBJECT="Downstream AI run had errors on $TODAY"
+            BODY=$(printf 'Oliver outcome: %s\nPoppy outcome: %s\n\nCheck the GitHub Actions run logs.' "$OLIVER" "$POPPY")
+          fi
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --arg body "$BODY" \
+            --arg agent "downstream" \
+            --arg agent_name "Oliver Finch + Poppy Whitfield" \
+            --arg status "$STATUS" \
+            --arg file "$(basename "${BLOG_FILE:-}")" \
+            --arg preview "${BLOG_TITLE:-}" \
+            --arg run_url "$RUN_URL" \
+            --arg date "$TODAY" \
+            '{subject:$subject, body:$body, agent:$agent, agent_name:$agent_name, status:$status, file:$file, preview:$preview, run_url:$run_url, date:$date}' \
+            | curl -sS -X POST "$GHL_WEBHOOK_AI_NOTIFY" \
+                -H "Content-Type: application/json" \
+                --data-binary @-
+
+      - name: Fail the job if either agent errored
+        if: steps.oliver.outcome == 'failure' || steps.poppy.outcome == 'failure'
+        run: exit 1
