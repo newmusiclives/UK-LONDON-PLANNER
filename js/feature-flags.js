@@ -31,7 +31,7 @@ const FeatureFlags = {
     'payment':             { label: 'Payment / Checkout',       category: 'Monetisation',      description: 'Stripe payment processing',                              enabled: true },
 
     // ── Analytics & Testing ──────────────────────────────
-    'analytics':           { label: 'Google Analytics',         category: 'Analytics',         description: 'GA4 page views, events, and conversion tracking',                    enabled: false },
+    'analytics':           { label: 'Google Analytics',         category: 'Analytics',         description: 'GA4 page views, events, and conversion tracking',                    enabled: true },
     'ab-testing':          { label: 'A/B Testing',              category: 'Analytics',         description: 'Pricing, CTA, and hero headline experiments',                        enabled: false },
 
     // ── Content & Guides ─────────────────────────────────
