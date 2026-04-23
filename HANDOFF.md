@@ -51,25 +51,11 @@ Ordered by dependency. Do 1, 2, 3 first — nothing else works without them.
 
 ### 2. ✅ DONE — Product prices verified at $50/$75/$150 in GHL UI (confirmed 2026-04-22). GHL Products API `amount` field is in cents.
 
-### 3. Create Stripe Payment Links for each product — 15 min
+### 3. ✅ DONE — 6 GHL Payment Links generated + Netlify env vars set (2026-04-22)
 
-GHL has Stripe connected, so each product in GHL should auto-create a matching Stripe product. You now need Payment Links:
+All 6 payment-link URLs pasted into Netlify as `STRIPE_LINK_TIER1/2/3/UK_SHORT/UK_STANDARD/UK_EXTENDED` via CLI. `payment.js` patched (commit `d56d805`) to use GHL prefill params (`?email=`, `?first_name=`) instead of Stripe's `client_reference_id`.
 
-- In GHL: **Payments → Products → click a product → Payment Link** section → generate.
-- OR in Stripe: **Products → find matching product → Payment Links → Create**.
-- Enable **"Client reference ID"** (critical — passes the itinerary token through to the success page and GHL webhook).
-- Success URL: `https://londonplanned.com/success.html?session_id={CHECKOUT_SESSION_ID}`
-- Cancel URL: `https://londonplanned.com/cancel.html`
-
-Paste the 6 URLs into Netlify env vars:
-- `STRIPE_LINK_TIER1` (Short Stay)
-- `STRIPE_LINK_TIER2` (Week Explorer)
-- `STRIPE_LINK_TIER3` (Extended)
-- `STRIPE_LINK_UK_SHORT`
-- `STRIPE_LINK_UK_STANDARD`
-- `STRIPE_LINK_UK_EXTENDED`
-
-Redeploy Netlify (clear cache).
+These are GHL-hosted links (`links.lightworkdigital.com/payment-link/...`), so purchases fire GHL's native "Order Form Submitted" trigger directly on the Purchase Delivery workflow you'll build in Step 4 — no Stripe webhook plumbing needed.
 
 ### 4. Build the "LP — Purchase Delivery" workflow in GHL — 15 min
 
