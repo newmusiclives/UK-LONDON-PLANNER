@@ -1,0 +1,55 @@
+name: Blog Auto-Publish
+
+# Human approves in the local review UI (moves queue/blog → published/blog).
+# This workflow drains published/blog one post at a time on a daily schedule,
+# respecting the 1-2 day randomised cadence built into blog-publisher.js.
+
+on:
+  schedule:
+    # Daily at 09:00 UTC (10:00 BST). Workflow only commits if
+    # blog-publisher.js deems a post "due" — otherwise it's a no-op.
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force publish now (bypass 1-2 day cadence)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Default GITHUB_TOKEN is used for the push; persist-credentials:true
+          # is the default but we're being explicit so the `git push` inside
+          # blog-publisher.js inherits auth.
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure git identity
+        run: |
+          git config user.name "london-planned-bot"
+          git config user.email "bot@londonplanned.com"
+
+      - name: Publish next approved post
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            npm run ai:publish-blog:force
+          else
+            npm run ai:publish-blog
+          fi

@@ -40,6 +40,24 @@ function loadAgentPrompt(agent) {
   return fs.readFileSync(p, 'utf8');
 }
 
+// Load the most recent editor-in-chief brief so downstream agents can align
+// their output with the day's thread. Returns null if no brief exists.
+function loadLatestEditorBrief() {
+  const plansDir = path.join(QUEUE_DIR, 'plans');
+  if (!fs.existsSync(plansDir)) return null;
+  const files = fs.readdirSync(plansDir)
+    .filter((f) => f.endsWith('__editor-in-chief.md'))
+    .sort()
+    .reverse();
+  if (!files.length) return null;
+  const raw = fs.readFileSync(path.join(plansDir, files[0]), 'utf8');
+  const fenceMatch = raw.match(/```json\s*\n([\s\S]*?)\n```/);
+  const jsonText = fenceMatch ? fenceMatch[1] : raw.trim();
+  let brief = null;
+  try { brief = JSON.parse(jsonText); } catch { /* keep brief null */ }
+  return { raw, brief, file: files[0] };
+}
+
 function gatherContext() {
   // Lightweight context bundle every agent receives. Real wiring (weather, GA4)
   // happens after credentials are added — until then we send the basics.
@@ -147,11 +165,49 @@ async function runAgent(agentId, { briefOverride = null } = {}) {
   const ctx = gatherContext();
   const model = reg.model[agent.model] || reg.model.default;
 
+  // Chain Margaret's daily brief into every downstream agent so they all
+  // rally around the same thread. Editor-in-chief obviously doesn't read
+  // its own prior brief.
+  let dailyBriefSection = '';
+  if (agent.id !== 'editor-in-chief') {
+    const editorBrief = loadLatestEditorBrief();
+    if (editorBrief) {
+      const myBrief = editorBrief.brief?.briefs?.[agent.id] ?? null;
+      const lines = [
+        `\n## Today's editorial brief (from the Editor-in-Chief)`,
+        `The Editor-in-Chief has set today's thread. Align your output with this thread. Respect the kill_list — do NOT cover anything on it. If no specific brief exists for your role, still honour the day's thread.`,
+      ];
+      if (editorBrief.brief) {
+        lines.push(`\n**Today's thread:** ${editorBrief.brief.thread || '(not set)'}`);
+        lines.push(`\n**Rationale:** ${editorBrief.brief.rationale || '(not set)'}`);
+        if (Array.isArray(editorBrief.brief.kill_list)) {
+          lines.push(`\n**Kill list (do NOT do):**`);
+          for (const k of editorBrief.brief.kill_list) lines.push(`- ${k}`);
+        }
+        if (myBrief) {
+          lines.push(`\n**Your specific brief for today:**`);
+          lines.push('```json');
+          lines.push(JSON.stringify(myBrief, null, 2));
+          lines.push('```');
+        } else {
+          lines.push(`\n(No specific brief for your role today — follow the thread at your own discretion.)`);
+        }
+      } else {
+        lines.push(`\n(Could not parse editor brief as JSON — raw file follows)`);
+        lines.push('```');
+        lines.push(editorBrief.raw.slice(0, 4000));
+        lines.push('```');
+      }
+      dailyBriefSection = lines.join('\n');
+    }
+  }
+
   const userMessage = [
     `## Today's context`,
     '```json',
     JSON.stringify(ctx, null, 2),
     '```',
+    dailyBriefSection,
     briefOverride ? `\n## Brief override\n${briefOverride}` : '',
     `\nProduce your output now, following the format rules in your role spec.`,
   ].join('\n');

@@ -39,7 +39,7 @@ today.
   "briefs": {
     "content-writer":       { "topic": "...", "angle": "...", "target_keyword": "...", "cta": "..." },
     "newsletter-producer":  { "subject_line_options": ["...","...","..."], "lead_story": "..." },
-    "social-media-manager": { "hook": "...", "platforms": ["instagram","tiktok","x","threads"], "asset_hint": "..." },
+    "social-media-manager": { "hook": "...", "platforms": ["instagram","facebook","pinterest","threads","bluesky"], "asset_hint": "..." },
     "seo-strategist":       { "focus": "...", "competitor_to_check": "..." },
     "outreach-pr":          { "prospect_type": "...", "angle": "..." },
     "affiliate-scout":      { "category_to_explore": "..." },
@@ -63,3 +63,15 @@ today.
 - Keep briefs short — one or two sentences each. The other agents are smart;
   brief them, don't script them.
 - Reject your own first idea once. Your second idea is usually sharper.
+
+## Currently connected social platforms (as of 2026-04-23)
+
+Only these are wired up to GHL Social Planner. When briefing `social-media-manager`, restrict the `platforms` array to this set — anything else gets thrown away.
+
+- **instagram** (Business account, linked to FB Page)
+- **facebook** (Page)
+- **pinterest** (Business account)
+- **threads** (linked to IG)
+- **bluesky**
+
+**Do NOT include:** `tiktok`, `linkedin`, `youtube`, `x`/`twitter`, `googlebusinessprofile`. TikTok/LinkedIn/YouTube are deliberately skipped. X was dropped from GHL when Twitter locked down its API. GBP is deferred to Phase 5.
