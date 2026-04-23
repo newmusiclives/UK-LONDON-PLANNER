@@ -47,7 +47,23 @@ Ran locally against live GHL: submit → get returned correct itinerary JSON + m
 
 Ordered by dependency. Do 1, 2, 3 first — nothing else works without them.
 
-### 1. ✅ DONE — `GHL_PRIVATE_TOKEN` already in Netlify env (confirmed 2026-04-22)
+### 1. ⚠️ PARTIAL — `GHL_PRIVATE_TOKEN` in Netlify, but it's the WRONG token
+
+The Netlify env has `GHL_PRIVATE_TOKEN = pit-085c2a2d-3043-40ec-9a14-e687a2389d1e`. When the deployed `submit-itinerary` function tried to upsert a contact, GHL returned:
+
+> `The token does not have access to this location.`
+
+The token in your local `~/.zshrc` (`pit-5b6e5829...`) DOES have access (I've been using it all evening to create products, custom fields, etc.). You need to sync them.
+
+**Fix — easiest:**
+```bash
+netlify env:set GHL_PRIVATE_TOKEN "$GHL_PRIVATE_TOKEN" --context production
+netlify deploy --prod --dir=.
+```
+
+Or via Netlify UI: Site configuration → Environment variables → edit `GHL_PRIVATE_TOKEN` → paste your local token value → save → Deploys → Clear cache and deploy.
+
+This was the cause of the "Couldn't save right now" error on the /itinerary page last night.
 
 ### 2. ✅ DONE — Product prices verified at $50/$75/$150 in GHL UI (confirmed 2026-04-22). GHL Products API `amount` field is in cents.
 
@@ -98,9 +114,15 @@ In GHL: **Marketing → Social Planner → Connect Account** for each.
 
 ### 7. Smoke test end-to-end — 10 min
 
-Once steps 1-4 are done:
+**Prereq:** use the preview bypass — open `https://londonplanned.com/?preview=backstage-2026` in an incognito window FIRST. That sets a session cookie so the coming-soon gate lets you reach `/wizard` and `/itinerary`. Without it you'll just bounce back to the waitlist page.
 
-1. Open https://londonplanned.com/wizard in private mode
+**Test card:** GHL payment links run on your live Stripe, so there's no free test card. Two options:
+  - **Real $50 to yourself** — cheapest option ($1.75 Stripe fee, then self-refund). Only takes one purchase to prove the whole flow.
+  - **Trigger the workflow manually** — in GHL Automation → the Purchase Delivery workflow → click **"Test Workflow"** (top-right) → pick a contact → fires all actions including the delivery email. Skips Stripe entirely but proves the email/tag/notification actions work.
+
+Full flow below assumes you're doing a real purchase:
+
+1. Open https://londonplanned.com/?preview=backstage-2026 in private mode, then navigate to /wizard
 2. Fill the wizard with 3-day London, any preferences
 3. Hit "Generate Itinerary" → lands on `/itinerary.html`
 4. Use the **Save card** at the top: enter your email, submit
