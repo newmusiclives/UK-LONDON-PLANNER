@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (data.itinerary) {
           State.saveItinerary(data.itinerary);
           serverMeta = data.meta || {};
-          if (serverMeta.paid) State.save({ paid: true });
+          const stateUpdate = {};
+          if (serverMeta.paid) stateUpdate.paid = true;
+          if (serverMeta.email) stateUpdate.email = serverMeta.email;
+          if (serverMeta.firstName) stateUpdate.firstName = serverMeta.firstName;
+          if (Object.keys(stateUpdate).length) State.save(stateUpdate);
         }
       }
     } catch (e) {

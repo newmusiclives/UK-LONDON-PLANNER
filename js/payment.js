@@ -16,18 +16,22 @@ const Payment = {
     const link = this.getStripeLink(tier);
     const sessionId = State.getSessionId();
 
-    // Prefer the itinerary token (= GHL contact id) if present in the URL —
-    // the Stripe → GHL webhook will pass it through as client_reference_id,
-    // letting the purchase-delivery workflow identify the exact contact.
+    // Pull saved contact info from State (set by itinerary-renderer when the
+    // page loaded via ?token=) so we can prefill the GHL checkout form. Keeps
+    // the buyer on the same contact as the wizard submission by email match.
+    const state = State.get();
+    const email = (contactInfo && contactInfo.email) || state.email || '';
+    const firstName = (contactInfo && contactInfo.firstName) ||
+                      (contactInfo && contactInfo.name) ||
+                      state.firstName || '';
     const urlToken = new URLSearchParams(window.location.search).get('token');
-    const clientRef = urlToken || sessionId;
 
-    // Send to GoHighLevel CRM
-    if (contactInfo) {
+    // Send to GoHighLevel CRM tracking (best-effort, don't block redirect)
+    if (contactInfo || email) {
       GHL.trackItineraryPurchase({
-        email: contactInfo.email,
-        name: contactInfo.name,
-        phone: contactInfo.phone || '',
+        email,
+        name: firstName,
+        phone: (contactInfo && contactInfo.phone) || '',
         tier,
         days,
         price: this.getPrice(days),
@@ -37,8 +41,16 @@ const Payment = {
     }
 
     if (link && !link.includes('YOUR_')) {
+      // GHL hosted payment links (links.lightworkdigital.com / *.msgsndr.com)
+      // accept ?email, ?first_name, ?last_name for prefill. Append if we have
+      // them. client_reference_id is a Stripe-native param and is ignored by
+      // GHL payment pages — omitted.
+      const params = new URLSearchParams();
+      if (email) params.set('email', email);
+      if (firstName) params.set('first_name', firstName);
+      const qs = params.toString();
       const separator = link.includes('?') ? '&' : '?';
-      window.location.href = `${link}${separator}client_reference_id=${clientRef}`;
+      window.location.href = qs ? `${link}${separator}${qs}` : link;
     } else {
       // Demo mode
       this.unlockDemo(tier);

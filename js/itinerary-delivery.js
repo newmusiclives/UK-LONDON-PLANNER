@@ -87,6 +87,12 @@ const ItineraryDelivery = (() => {
         url.searchParams.set('token', data.token);
         history.replaceState({}, '', url.toString());
 
+        // Save email + firstName to state so the purchase click can prefill
+        // the GHL checkout form and keep contact matching reliable.
+        if (typeof State !== 'undefined' && State.save) {
+          State.save({ email, firstName, lastName });
+        }
+
         btn.textContent = 'Saved ✓';
         status.innerHTML = '<span style="color:#059669;">Itinerary saved. We\'ve also emailed you a link — check your inbox.</span>';
 
