@@ -80,11 +80,13 @@ export default async (request, context) => {
   if (ALLOWED_PATHS.has(path)) return;
 
   if (path === '/' || path === '/index.html') {
-    return fetch(new URL('/coming-soon.html', request.url));
+    // Rewrite (not redirect) so the URL stays at "/". Netlify edge functions
+    // support returning a URL object for internal rewrite; the earlier
+    // fetch(new URL(...)) pattern regressed on the edge runtime and 502'd.
+    return context.rewrite(new URL('/coming-soon.html', request.url));
   }
 
-  const target = new URL('/', request.url);
-  return Response.redirect(target, 302);
+  return Response.redirect(new URL('/coming-soon', request.url), 302);
 };
 
 export const config = {
