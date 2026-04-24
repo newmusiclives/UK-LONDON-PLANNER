@@ -372,12 +372,25 @@ const GHL = {
     const hasDedicated = !!(CONFIG.goHighLevel.webhooks.waitlist &&
       !CONFIG.goHighLevel.webhooks.waitlist.includes('YOUR_'));
     const key = hasDedicated ? 'waitlist' : 'emailCapture';
-    return this.sendToWebhook(key, {
+    const result = await this.sendToWebhook(key, {
       type: 'waitlist_signup',
       tags: ['london-planned', 'waitlist', `tier-${data.tier || 0}`,
              data.referredBy ? 'referred' : 'organic'].filter(Boolean),
       ...data
     });
+    // Fire-and-forget referrer increment. GHL workflows can't bump another
+    // contact's counter, so the increment lives in a Netlify function.
+    // Failure here must not block the signup — swallow errors.
+    if (data.referredBy) {
+      try {
+        fetch('/.netlify/functions/increment-referrer', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ referredBy: data.referredBy })
+        }).catch(() => {});
+      } catch (_) {}
+    }
+    return result;
   },
 
   // ── Growth: Gift Itinerary ──────────────────────────────
