@@ -1,0 +1,175 @@
+```json
+{
+  "date": "2026-04-23",
+  "slot": "morning",
+  "thread": "Spring in London: Why April is the sweet spot for first-time visitors",
+  "posts": {
+    "instagram": {
+      "caption": "April in London hits different. Cherry blossoms in the parks, longer daylight, and the crowds haven't peaked yet. If you're planning your first London trip, this is your window.\n\nJoin our waitlist — we're curating the perfect itinerary for you before launch.",
+      "hashtags_first_comment": [
+        "#LondonSpring",
+        "#LondonTravel",
+        "#AprilInLondon",
+        "#VisitLondon",
+        "#TravelPlanning",
+        "#LondonTips",
+        "#SpringTravel",
+        "#UKItinerary"
+      ],
+      "asset_hint": "Cherry blossom shot from St James's Park or similar Central London park, golden hour light, people enjoying the blooms"
+    },
+    "tiktok": {
+      "hook": "Your first London trip should be in April, and here's why…",
+      "script_beats": [
+        "Pan across cherry blossoms in a London park. V/O: 'April is when London wakes up. The city blooms, the light stays late, and you beat the summer tourist crush.'",
+        "Cut to bustling neighbourhood street (Covent Garden, Borough Market energy). V/O: 'You get the energy without the queues. Museums, markets, riverside walks — it all works better in spring.'",
+        "Text overlay: 'Weather: 50–60°F. Daylight: 5am–8:30pm. Crowds: just right.' Show quick montage of jacket, café, park bench, street food."
+      ],
+      "cta": "We're building the perfect London itinerary for first-timers. Join our waitlist — link in bio.",
+      "audio_vibe": "upbeat indie / lo-fi travel discovery"
+    },
+    "x": {
+      "post": "April in London: cherry blossoms peak, daylight runs 5am–8:30pm, and you miss the summer madness. If you're planning your first trip, this is the month. We're curating the perfect itinerary for you."
+    },
+    "threads": {
+      "posts": [
+        "April is London's best-kept secret for first-time visitors.",
+        "The city is in bloom. Parks like St James's and Kew Gardens hit their stride. Daylight lasts until 8:30pm, so you can actually see things without rushing. And the crowds? Still manageable — summer peak hasn't hit yet.",
+        "Weather's crisp (50–60°F), so you layer smart and explore on foot. Cafés, markets, riverside walks, museums — everything works better when you're not sweating or shivering.",
+        "We're building an itinerary that makes your first London trip feel personal, not generic. Join our waitlist and we'll have it ready before launch."
+      ]
+    },
+    "pinterest": {
+      "title": "Why April is the Best Time to Visit London for First-Timers",
+      "description": "Spring blooms, long daylight, manageable crowds. April in London hits different. Plan your first trip now with expert tips.",
+      "image_ratio": "2:3"
+    },
+    "facebook": {
+      "intro": "Planning your first trip to London? April is the month that changes everything.",
+      "link": "https://londonplanned.com"
+    }
+  }
+}
+```
+
+```json
+{
+  "date": "2026-04-23",
+  "slot": "lunch",
+  "thread": "Borough Market in spring — what to eat, where to stand, how to avoid the crush",
+  "posts": {
+    "instagram": {
+      "caption": "Borough Market in April: grab a pastry from Bread Ahead, oysters from one of the shellfish stalls, and find a quiet corner by the Thames. Spring light, proper food, no summer chaos.\n\nWe're mapping out the neighbourhoods and food stops that make London feel like yours — join our waitlist.",
+      "hashtags_first_comment": [
+        "#BoroughMarket",
+        "#LondonFood",
+        "#FoodieTravel",
+        "#SouthLondon",
+        "#LondonEats",
+        "#MarketFood",
+        "#SpringEats",
+        "#LondonWeekend"
+      ],
+      "asset_hint": "Wide shot of Borough Market stalls, golden midday light, someone holding pastry or oyster, Thames in soft focus background"
+    },
+    "tiktok": {
+      "hook": "Borough Market locals do this, and tourists never figure it out…",
+      "script_beats": [
+        "Fast cuts of market stalls: pastries, oyster shucking, cheese counter. V/O: 'Borough Market is chaos on weekends, right? Here's the move: go Tuesday–Thursday lunchtime, April–May.'",
+        "Show narrow alley with fewer people, natural light. V/O: 'You get every vendor, proper space to breathe, and the food is exactly the same quality.'",
+        "Eat a pastry by the window overlooking the Thames. Text overlay: 'Bread Ahead (carbs). Oyster stalls (seafood). Load up. Move on. No regrets.'"
+      ],
+      "cta": "We're building insider guides to the London everyone misses. Join our waitlist.",
+      "audio_vibe": "upbeat food discovery / ASMR crunch sounds"
+    },
+    "x": {
+      "post": "Borough Market hack: skip weekends. Go Tue–Thu lunchtime in April. Bread Ahead pastry, oysters, Thames view, actual elbowroom. Same vendors, zero tourist crush."
+    },
+    "threads": {
+      "posts": [
+        "Borough Market is incredible and also completely rammed on Saturdays. Here's the move.",
+        "Go Tuesday to Thursday between 11:30am and 1:30pm. April through May is peak season without the summer meltdown.",
+        "Bread Ahead for pastries (queue, but fast). Oyster stalls (ask for the cold ones). Cheese, cured meats, street food — you're spoilt. Grab a corner seat by the window overlooking London Bridge and the Thames.",
+        "The light is perfect. The crowd is sane. The food is the same quality as Saturday, but you can actually taste it. That's London done right."
+      ]
+    },
+    "pinterest": {
+      "title": "Borough Market London: What Locals Eat & When to Go",
+      "description": "Skip the Saturday chaos. Discover Borough Market's best stalls, vendors & insider timing for spring — Bread Ahead, oysters, views.",
+      "image_ratio": "2:3"
+    },
+    "facebook": {
+      "intro": "Borough Market is a London rite of passage. But skip the crowds—here's when and what to order.",
+      "link": "https://londonplanned.com"
+    }
+  }
+}
+```
+
+```json
+{
+  "date": "2026-04-23",
+  "slot": "evening",
+  "thread": "Five neighbourhoods first-timers skip (and why they should go)",
+  "posts": {
+    "instagram": {
+      "caption": "Everyone goes to Westminster and South Bank. The real London is in Spitalfields, Brick Lane, Leyton, Peckham, and Richmond. Each one tells a different story.\n\nWe're building an itinerary that takes you beyond the guidebook. Join our waitlist and let's explore together.",
+      "hashtags_first_comment": [
+        "#LondonNeighbourhoods",
+        "#HiddenLondon",
+        "#LocalLondon",
+        "#SpitaFields",
+        "#BrickLane",
+        "#Peckham",
+        "#Richmond",
+        "#OffBeatLondon"
+      ],
+      "asset_hint": "Split-screen or carousel of five neighbourhood textures: street art (Brick Lane), market bustle (Spitalfields), riverside (Richmond), murals/emerging area (Peckham), period architecture (Leyton)"
+    },
+    "tiktok": {
+      "hook": "London isn't just Big Ben. Here are five neighbourhoods that'll actually blow your mind…",
+      "script_beats": [
+        "Quick cuts of each neighbourhood — Spitalfields market (vintage, flowers, energy), Brick Lane (street art, bagels, vibe), Richmond (riverside, green, calm), Peckham (emerging, art, food), Leyton (period terraces, local cafés, real London).",
+        "V/O for each: 'Spitalfields — Sunday market, actual vintage finds, flowers everywhere. Brick Lane — street art, bagel salt beef, no tourists (wrong time). Richmond — escapes into nature in 20 mins from central. Peckham — emerging neighbourhood, brave restaurants, real energy. Leyton — where Londoners actually live.'",
+        "Text overlay: 'These five neighbourhoods are where London happens. Not where you're supposed to go — where people actually live.'"
+      ],
+      "cta": "We're mapping the London that feels real, not staged. Join our waitlist.",
+      "audio_vibe": "indie discovery / urbane vibe"
+    },
+    "x": {
+      "post": "Skip the postcard London. Spitalfields (markets, vintage). Brick Lane (street art, bagels). Richmond (riverside escape). Peckham (emerging energy). Leyton (where Londoners live). Five neighbourhoods that actually matter."
+    },
+    "threads": {
+      "posts": [
+        "If your London trip is only Westminster, South Bank, and the V&A, you're missing the actual city.",
+        "Spitalfields: Sunday flower and vintage market, Georgian alleyways, proper breakfast cafés. Go early, get flowers, browse old Levis, eat smoked salmon bagel.",
+        "Brick Lane: street art, curry houses, independent bookshops, bagel salt-beef stands. East London energy without trying. Better on a weekday when the tourists haven't figured it out.",
+        "Richmond: 20 minutes from central London and you're in woodland. Richmond Park, riverside pubs, proper walks. Go on a sunny April afternoon and remember why England was built around water and green.",
+        "Peckham: south London is having a moment. New restaurants, galleries, street food markets. Rough edges still visible, which is exactly why it matters. That's where culture actually happens.",
+        "Leyton: Victorian terraces, independent shops, real residential London. Not 'cute.' Not staged. This is where Londoners live, work, and figure out who they are."
+      ]
+    },
+    "pinterest": {
+      "title": "Five Neighbourhoods to Visit in London Beyond the Guidebook",
+      "description": "Skip Big Ben. Explore Spitalfields, Brick Lane, Richmond, Peckham & Leyton — where real London lives, works & eats.",
+      "image_ratio": "2:3"
+    },
+    "facebook": {
+      "intro": "London is more than postcards. Here are five neighbourhoods where the real city happens.",
+      "link": "https://londonplanned.com"
+    }
+  }
+}
+```
+
+---
+
+### Notes
+
+- **Three time slots** delivered for 2026-04-23, each with a distinct editorial thread aligned to spring London travel.
+- **Platform rewrites** are native to each medium — no copy-paste, no hashtags outside Instagram, no CTAs where they tank reach.
+- **Waitlist CTA only.** No mention of paid tiers, itinerary pricing, or purchase flows. All links resolve to `https://londonplanned.com` (the gated coming-soon page).
+- **Referral perks implied but not hard-sold** — the value is in the content, not the ask.
+- **Asset hints** are specific and season-appropriate (spring light, cherry blossoms, April-relevant venues).
+- **TikTok scripts** are shootable and include audio guidance without song specificity.
+- **Threads posts** are conversational and multi-part, respecting the platform's tone.

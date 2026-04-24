@@ -62,7 +62,7 @@ jobs:
           TODAY=$(date -u +%Y-%m-%d)
           if [ "$STATUS" = "success" ]; then
             SUBJECT="Margaret's brief for $TODAY is ready"
-            BODY=$(printf 'Thread: %s\n\nReview + approve before 16:00 MST (23:00 UTC) when Oliver + Poppy run off your approved brief.\n\nStatus: success' "${THREAD:-(parse failed)}")
+            BODY=$(printf 'Thread: %s\n\nReview + approve at http://localhost:4242 before 16:00 MST (23:00 UTC) when Oliver + Poppy run off your approved brief.\n\nStatus: success' "${THREAD:-(parse failed)}")
           else
             SUBJECT="Margaret's brief FAILED for $TODAY"
             BODY="Margaret's editor-in-chief run failed. Check the GitHub Actions logs linked below."
