@@ -18,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname);
 const REPO = path.resolve(__dirname, '..');
@@ -78,6 +79,36 @@ function moveFile(rel, targetDir) {
   fs.mkdirSync(path.dirname(dst), { recursive: true });
   fs.renameSync(src, dst);
   return path.relative(REPO, dst);
+}
+
+// Commits the staged move to origin/main so the downstream GH Action runner
+// (fresh checkout) sees the decision. Returns { committed, pushed, error }.
+// Best-effort — if anything fails (no network, auth, merge conflict), logs
+// the error but does not roll back the file move.
+function gitCommitAndPush(relFromRepo, action) {
+  const run = (args) =>
+    execFileSync('git', args, { cwd: REPO, stdio: ['ignore', 'pipe', 'pipe'] })
+      .toString()
+      .trim();
+  try {
+    run(['add', 'ai-staff/queue/', 'ai-staff/published/', 'ai-staff/rejected/']);
+    // Nothing staged? Probably a no-op (file was already moved in a previous
+    // failed attempt). Don't create an empty commit.
+    try {
+      run(['diff', '--cached', '--quiet']);
+      return { committed: false, pushed: false, error: 'no staged changes' };
+    } catch {
+      // non-zero exit from diff --quiet means there ARE staged changes — good.
+    }
+    const msg = `ai: ${action} ${relFromRepo}`;
+    run(['commit', '-m', msg]);
+    run(['push', 'origin', 'main']);
+    return { committed: true, pushed: true };
+  } catch (e) {
+    const detail = e.stderr?.toString?.() || e.stdout?.toString?.() || e.message;
+    console.error(`[review-server] git ${action} failed:`, detail);
+    return { committed: false, pushed: false, error: detail };
+  }
 }
 
 function send(res, status, body, headers = {}) {
@@ -142,14 +173,16 @@ const server = http.createServer(async (req, res) => {
       const { rel } = await readJsonBody(req);
       if (!rel) return send(res, 400, { error: 'rel required' });
       const newPath = moveFile(rel, PUBLISHED_DIR);
-      return send(res, 200, { ok: true, newPath });
+      const git = gitCommitAndPush(newPath, 'approve');
+      return send(res, 200, { ok: true, newPath, git });
     }
 
     if (req.method === 'POST' && url.pathname === '/api/reject') {
       const { rel } = await readJsonBody(req);
       if (!rel) return send(res, 400, { error: 'rel required' });
       const newPath = moveFile(rel, REJECTED_DIR);
-      return send(res, 200, { ok: true, newPath });
+      const git = gitCommitAndPush(newPath, 'reject');
+      return send(res, 200, { ok: true, newPath, git });
     }
 
     if (req.method === 'GET' && url.pathname === '/api/agents') {
