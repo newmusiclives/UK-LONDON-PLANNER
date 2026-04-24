@@ -91,7 +91,10 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       UI.init();
-      Payment.handleSuccess();
+      const purchaseInfo = Payment.handleSuccess();
+      if (purchaseInfo && typeof Analytics !== 'undefined') {
+        Analytics.purchase(purchaseInfo.tier, purchaseInfo.price);
+      }
 
       // Referral setup
       if (typeof Referral !== 'undefined') {

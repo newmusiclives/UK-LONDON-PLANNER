@@ -95,6 +95,36 @@ const Analytics = {
     gtag('event', 'email_capture', { event_category: 'lead', source: source });
   },
 
+  // Gift purchase
+  giftPurchase(tierId, amount, currency = 'USD') {
+    if (!window.gtag) return;
+    gtag('event', 'gift_purchase', {
+      event_category: 'revenue',
+      transaction_id: 'gift_' + Date.now(),
+      value: amount || 0,
+      currency: currency,
+      items: [{ item_name: tierId || 'gift', price: amount || 0 }]
+    });
+  },
+
+  // Partner / B2B lead
+  partnerLead(partnerType) {
+    if (!window.gtag) return;
+    gtag('event', 'partner_lead', {
+      event_category: 'lead',
+      partner_type: partnerType || 'unknown'
+    });
+  },
+
+  // Post-trip UGC submission
+  ugcSubmission(hasPhoto) {
+    if (!window.gtag) return;
+    gtag('event', 'ugc_submission', {
+      event_category: 'engagement',
+      has_photo: !!hasPhoto
+    });
+  },
+
   // Share
   share(method) {
     if (!window.gtag) return;

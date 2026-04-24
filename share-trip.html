@@ -183,6 +183,9 @@
 
         try {
           if (typeof GHL !== 'undefined' && GHL.submitUgc) await GHL.submitUgc(payload);
+          if (typeof Analytics !== 'undefined' && Analytics.ugcSubmission) {
+            Analytics.ugcSubmission(!!payload.photoUrl);
+          }
           document.getElementById('share-promo').textContent = promo;
           document.getElementById('share-success').style.display = 'block';
           document.getElementById('share-success').scrollIntoView({ behavior: 'smooth', block: 'start' });

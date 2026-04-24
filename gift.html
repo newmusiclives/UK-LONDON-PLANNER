@@ -208,6 +208,9 @@
 
         try {
           if (typeof GHL !== 'undefined' && GHL.purchaseGift) await GHL.purchaseGift(payload);
+          if (typeof Analytics !== 'undefined' && Analytics.giftPurchase) {
+            Analytics.giftPurchase(tier, tierMap[tier].price);
+          }
 
           // Stripe hand-off would happen here. For now, show the success card and let the user continue.
           document.getElementById('gs-recipient').textContent = payload.recipientName;

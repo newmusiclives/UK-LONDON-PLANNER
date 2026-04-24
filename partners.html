@@ -197,6 +197,9 @@
 
         try {
           if (typeof GHL !== 'undefined' && GHL.submitPartnerLead) await GHL.submitPartnerLead(payload);
+          if (typeof Analytics !== 'undefined' && Analytics.partnerLead) {
+            Analytics.partnerLead(payload.partnerType);
+          }
           document.getElementById('partners-success').style.display = 'block';
           document.getElementById('partners-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
           form.reset();
