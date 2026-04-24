@@ -1112,6 +1112,28 @@
           setIfEmpty('ghl-webhook-purchase', w.itineraryPurchase);
           setIfEmpty('ghl-webhook-gift', w.giftPurchase);
           setIfEmpty('ghl-webhook-ugc', w.ugcSubmission);
+          // Affiliate IDs — HTML field id → runtime-config affiliate key
+          const a = rc.affiliates || {};
+          const affMap = {
+            'aff-gyg': 'getYourGuide', 'aff-viator': 'viator',
+            'aff-klook': 'klook', 'aff-tiqets': 'tiqets',
+            'aff-gocity': 'goCity', 'aff-musement': 'musement',
+            'aff-headout': 'headout', 'aff-tripadvisor': 'tripadvisor',
+            'aff-booking': 'booking', 'aff-expedia': 'expedia',
+            'aff-hostelworld': 'hostelworld', 'aff-trainline': 'trainline',
+            'aff-omio': 'omio', 'aff-eurostar': 'eurostar',
+            'aff-skyscanner': 'skyscanner', 'aff-rentalcars': 'rentalcars',
+            'aff-opentable': 'openTable', 'aff-thefork': 'theFork',
+            'aff-todaytix': 'todayTix', 'aff-ltd': 'londonTheatreDirect',
+            'aff-amazon': 'amazonUK', 'aff-worldnomads': 'worldNomads',
+            'aff-safetywing': 'safetyWing', 'aff-wise': 'wise',
+            'aff-revolut': 'revolut', 'aff-airalo': 'airalo',
+            'aff-withlocals': 'withLocals', 'aff-toursbylocals': 'toursByLocals',
+            'aff-contexttravel': 'contextTravel',
+          };
+          for (const [fieldId, affKey] of Object.entries(affMap)) {
+            setIfEmpty(fieldId, a[affKey]);
+          }
         }
       } catch(e) { console.warn('runtime-config hydration skipped:', e); }
 
