@@ -261,7 +261,28 @@ const AffiliateLinks = {
     const tag = (u, param, val) => val && !val.includes('YOUR_') ? `${u}${sep(u)}${param}=${val}&${utm}` : `${u}${sep(u)}${utm}`;
 
     switch (provider) {
-      case 'getyourguide': return tag(baseUrl, 'partner_id', ids.getYourGuide);
+      case 'getyourguide': {
+        // GYG direct URLs only resolve when the last path segment carries an
+        // activity ID (-t######) or a location code (-l######). Most curated
+        // URLs in our venue data are slug-only (e.g. /london-l57/tower-of-
+        // london-tickets) and 404 / bounce to search. Detect and route slug-
+        // only URLs through GYG's search endpoint with the slug as the query
+        // — always lands on relevant activities, still carries partner_id.
+        const clean = baseUrl.replace(/\?.*$/, '').replace(/\/$/, '');
+        const isDeepLink = /-[tl]\d+$/.test(clean);
+        if (isDeepLink) return tag(baseUrl, 'partner_id', ids.getYourGuide);
+        let query = '';
+        try {
+          const u = new URL(baseUrl);
+          const segs = u.pathname.split('/').filter(Boolean);
+          const last = segs[segs.length - 1] || '';
+          query = last.replace(/-/g, ' ').trim();
+        } catch {}
+        if (!query) query = 'London';
+        const pid = ids.getYourGuide && !ids.getYourGuide.includes('YOUR_')
+          ? `&partner_id=${ids.getYourGuide}` : '';
+        return `https://www.getyourguide.com/s/?q=${encodeURIComponent(query)}${pid}&${utm}`;
+      }
       case 'booking': return tag(baseUrl, 'aid', ids.booking);
       case 'viator': return tag(baseUrl, 'pid', ids.viator);
       case 'todaytix': return tag(baseUrl, 'ref', ids.todayTix);
