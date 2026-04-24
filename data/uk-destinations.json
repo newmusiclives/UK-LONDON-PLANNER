@@ -18,14 +18,14 @@
         "name": "Roman Baths",
         "description": "Remarkably preserved 2,000-year-old Roman bathing complex.",
         "cost": 28,
-        "affiliateUrl": "https://www.getyourguide.com/bath-l226/roman-baths-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/bath-l517/bath-roman-baths-entry-ticket-t628894/",
         "affiliateProvider": "getyourguide"
       },
       {
         "name": "Thermae Bath Spa",
         "description": "Britain's only natural thermal spa. Rooftop pool with city views.",
         "cost": 42,
-        "affiliateUrl": "https://www.getyourguide.com/bath-l226/thermae-bath-spa",
+        "affiliateUrl": "https://www.getyourguide.com/thermae-bath-spa-l115427/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -121,7 +121,7 @@
         "name": "Edinburgh Castle",
         "description": "Iconic fortress dominating the city skyline from Castle Rock.",
         "cost": 19.5,
-        "affiliateUrl": "https://www.getyourguide.com/edinburgh-l44/edinburgh-castle-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/edinburgh-castle-l2592/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -254,7 +254,7 @@
         "name": "Blenheim Palace",
         "description": "Birthplace of Winston Churchill. Magnificent baroque palace with stunning gardens.",
         "cost": 32,
-        "affiliateUrl": "https://www.getyourguide.com/cotswolds-l99/blenheim-palace-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/oxford-l441/blenheim-palace-admission-ticket-t161670/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -329,7 +329,7 @@
         "name": "York Minster",
         "description": "The largest Gothic cathedral in Northern Europe. Stunning stained glass and climb the tower for views.",
         "cost": 16,
-        "affiliateUrl": "https://www.getyourguide.com/york-l227/york-minster-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/york-minster-l88790/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -432,7 +432,7 @@
         "name": "Lake Windermere Cruise",
         "description": "A scenic cruise on England's longest lake. Stunning mountain backdrop.",
         "cost": 12,
-        "affiliateUrl": "https://www.getyourguide.com/lake-district-l99/windermere-cruise",
+        "affiliateUrl": "https://www.getyourguide.com/windermere-l958/windermere-red-cruise-sail-between-bowness-and-ambleside-t177891/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -535,14 +535,14 @@
         "name": "Bodleian Library & Divinity School",
         "description": "One of Europe's oldest libraries. The Divinity School was used as the Hogwarts infirmary.",
         "cost": 16,
-        "affiliateUrl": "https://www.getyourguide.com/oxford-l228/bodleian-library-tour",
+        "affiliateUrl": "https://www.getyourguide.com/oxford-l441/oxford-harry-potter-film-sites-tour-t70566/",
         "affiliateProvider": "getyourguide"
       },
       {
         "name": "Christ Church College",
         "description": "The Great Hall inspired the Hogwarts dining hall. Lewis Carroll was a fellow here.",
         "cost": 18,
-        "affiliateUrl": "https://www.getyourguide.com/oxford-l228/christ-church-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/christ-church-oxford-l113242/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -723,7 +723,7 @@
         "name": "Eden Project",
         "description": "Giant biomes housing the world's largest indoor rainforest. Architecture as spectacular as the plants.",
         "cost": 32,
-        "affiliateUrl": "https://www.getyourguide.com/cornwall-l99/eden-project-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/cornwall-l1681/cornwall-eden-project-admission-ticket-t711727/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -820,14 +820,14 @@
         "name": "The Beatles Story",
         "description": "The world's largest permanent Beatles exhibition at the Albert Dock.",
         "cost": 18,
-        "affiliateUrl": "https://www.getyourguide.com/liverpool-l230/beatles-story-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/liverpool-l210/the-beatles-story-t46440/",
         "affiliateProvider": "getyourguide"
       },
       {
         "name": "Anfield Stadium Tour (Liverpool FC)",
         "description": "Walk through the tunnel touching the 'This Is Anfield' sign. One of football's most legendary grounds.",
         "cost": 25,
-        "affiliateUrl": "https://www.getyourguide.com/liverpool-l230/anfield-stadium-tour",
+        "affiliateUrl": "https://www.getyourguide.com/liverpool-l210/the-new-lfc-stadium-tour-t144276/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1019,7 +1019,7 @@
         "name": "Shakespeare's Birthplace",
         "description": "The house where Shakespeare was born in 1564. Beautifully preserved with costumed guides.",
         "cost": 22,
-        "affiliateUrl": "https://www.getyourguide.com/stratford-l99/shakespeares-birthplace-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/stratford-upon-avon-l448/stratford-upon-avon-shakespeare-s-birthplace-t133098/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1105,7 +1105,7 @@
         "name": "Loch Ness",
         "description": "The legendary loch famous for its mythical monster. The ruins of Urquhart Castle on the shore are dramatic.",
         "cost": 12,
-        "affiliateUrl": "https://www.getyourguide.com/scotland-l99/loch-ness-tour",
+        "affiliateUrl": "https://www.getyourguide.com/loch-ness-l1886/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1208,7 +1208,7 @@
         "name": "Old Trafford Stadium Tour (Manchester United)",
         "description": "Go behind the scenes at the Theatre of Dreams. Walk through the tunnel and sit in the dugout.",
         "cost": 28,
-        "affiliateUrl": "https://www.getyourguide.com/manchester-l232/old-trafford-tour",
+        "affiliateUrl": "https://www.getyourguide.com/manchester-l1128/manchester-united-museum-and-stadium-tour-t169225/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1312,7 +1312,7 @@
         "name": "Cardiff Castle",
         "description": "A Norman keep, Roman fort, and lavish Victorian Gothic interiors all in one extraordinary site in the city centre.",
         "cost": 14,
-        "affiliateUrl": "https://www.getyourguide.com/cardiff-l233/cardiff-castle-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/cardiff-castle-l91098/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1415,7 +1415,7 @@
         "name": "Titanic Belfast",
         "description": "A world-class museum on the site where RMS Titanic was built. Nine interactive galleries telling the full story.",
         "cost": 24,
-        "affiliateUrl": "https://www.getyourguide.com/belfast-l234/titanic-belfast-tickets",
+        "affiliateUrl": "https://www.getyourguide.com/titanic-belfast-l5133/belfast-the-titanic-experience-with-ss-nomadic-visit-t61578/",
         "affiliateProvider": "getyourguide"
       },
       {
@@ -1436,7 +1436,7 @@
         "name": "Giant's Causeway Day Trip",
         "description": "40,000 interlocking basalt columns on the Antrim Coast. A UNESCO World Heritage Site about 1.5 hours from Belfast.",
         "cost": 15,
-        "affiliateUrl": "https://www.getyourguide.com/belfast-l234/giants-causeway-day-tour",
+        "affiliateUrl": "https://www.getyourguide.com/belfast-l442/giants-causeway-day-tour-from-belfast-t45335/",
         "affiliateProvider": "getyourguide"
       },
       {

@@ -1784,9 +1784,10 @@
       "morning"
     ],
     "address": "Stonehenge, Salisbury SP4 7DE (coach tours depart from central London)",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/stonehenge-day-trip-from-london",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/stonehenge-express-sightseeing-tour-t619/",
     "affiliateLabel": "Book Stonehenge Day Trip",
-    "tips": "Book a combined Stonehenge and Bath tour for the best value. The visitor centre exhibition is excellent. Inner circle access tours are available at dawn and dusk for an extra fee."
+    "tips": "Book a combined Stonehenge and Bath tour for the best value. The visitor centre exhibition is excellent. Inner circle access tours are available at dawn and dusk for an extra fee.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "tate-britain",
@@ -1869,9 +1870,10 @@
       "morning"
     ],
     "address": "Outer Circle, Regent's Park, London NW1 4RY",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-zoo-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/skip-the-line-london-zoo-t19136/",
     "affiliateLabel": "Book Zoo Entry Tickets",
-    "tips": "Book online for significantly cheaper tickets. The Land of the Lions and Gorilla Kingdom are highlights. Feeding times add extra excitement."
+    "tips": "Book online for significantly cheaper tickets. The Land of the Lions and Gorilla Kingdom are highlights. Feeding times add extra excitement.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "brick-lane",
@@ -1928,9 +1930,10 @@
       "afternoon"
     ],
     "address": "Kensington Gardens, London W8 4PX",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/kensington-palace-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/kensington-palace-90-minute-sightseeing-tour-t21251/",
     "affiliateLabel": "Book Palace Entry Tickets",
-    "tips": "The Sunken Garden outside the palace is beautiful and free to visit. Combined well with a walk through Kensington Gardens and Hyde Park."
+    "tips": "The Sunken Garden outside the palace is beautiful and free to visit. Combined well with a walk through Kensington Gardens and Hyde Park.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "wembley-stadium-tour",
@@ -1955,9 +1958,10 @@
       "afternoon"
     ],
     "address": "Wembley Stadium, London HA9 0WS",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/wembley-stadium-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/guided-wembley-stadium-tour-t12486/",
     "affiliateLabel": "Book Stadium Tour",
-    "tips": "Tours run daily but check for event-day closures. The walk up Olympic Way (Wembley Way) towards the arch is iconic."
+    "tips": "Tours run daily but check for event-day closures. The walk up Olympic Way (Wembley Way) towards the arch is iconic.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "the-oval-cricket",

@@ -66,9 +66,10 @@
       "currency": "GBP"
     },
     "address": "Westminster Pier, London SW1A 2JH",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-dinner-cruise",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/the-london-showboat-dinner-dance-cruise-t5275/",
     "affiliateLabel": "Book Dinner Cruise",
-    "tips": "Perfect for a special occasion. Book a window table. The views of Parliament and Tower Bridge lit up at night are stunning."
+    "tips": "Perfect for a special occasion. Book a window table. The views of Parliament and Tower Bridge lit up at night are stunning.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "premier-league-football",
@@ -160,9 +161,10 @@
       "currency": "GBP"
     },
     "address": "Westminster Pier, London SW1A 2JH",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-speedboat",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-river-thames-speedboat-rib-tour-t53075/",
     "affiliateLabel": "Book Speedboat Experience",
-    "tips": "Hold on tight! You will get splashed. Incredibly fun for all ages."
+    "tips": "Hold on tight! You will get splashed. Incredibly fun for all ages.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "wimbledon-tour",
@@ -251,9 +253,10 @@
       "currency": "GBP"
     },
     "address": "Wembley Stadium, London HA9 0WS",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/wembley-stadium-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/guided-wembley-stadium-tour-t12486/",
     "affiliateLabel": "Book Stadium Tour",
-    "tips": "Great for football fans of all ages. Check if any concerts or events are on during your visit."
+    "tips": "Great for football fans of all ages. Check if any concerts or events are on during your visit.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "electric-cinema",
@@ -1096,9 +1099,10 @@
       "currency": "GBP"
     },
     "address": "Westminster Pier, London SW1A 2JH",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-lunch-cruise",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/lunch-cruise-on-the-thames-t26664/",
     "affiliateLabel": "Book Lunch Cruise",
-    "tips": "More affordable than the dinner cruise and the views are arguably better in daylight. Runs year-round."
+    "tips": "More affordable than the dinner cruise and the views are arguably better in daylight. Runs year-round.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "thames-afternoon-tea-cruise",
@@ -1121,9 +1125,10 @@
       "currency": "GBP"
     },
     "address": "Tower Pier, London EC3N 4DT",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-afternoon-tea-cruise",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-lunch-cruise-t22633/",
     "affiliateLabel": "Book Tea Cruise",
-    "tips": "A lovely alternative to hotel afternoon teas. The views add magic. Booking essential on weekends."
+    "tips": "A lovely alternative to hotel afternoon teas. The views add magic. Booking essential on weekends.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "ghost-tour-london",
@@ -1167,9 +1172,10 @@
       "currency": "GBP"
     },
     "address": "Aldgate East Station, London E1 7PT",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/jack-the-ripper-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/jack-the-ripper-tour-t25875/",
     "affiliateLabel": "Book Ripper Tour",
-    "tips": "Evening tours are much more atmospheric. Many companies run this tour — look for ones with published historians as guides."
+    "tips": "Evening tours are much more atmospheric. Many companies run this tour — look for ones with published historians as guides.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "harry-potter-walking-tour",
@@ -1191,9 +1197,10 @@
       "currency": "GBP"
     },
     "address": "London Bridge Station, London SE1 9SP",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/harry-potter-walking-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/magical-london-harry-potter-guided-walking-tour-t174648/",
     "affiliateLabel": "Book Potter Tour",
-    "tips": "Different from the Warner Bros Studio Tour. This covers actual London filming locations. Platform 9 3/4 at King's Cross is the highlight."
+    "tips": "Different from the Warner Bros Studio Tour. This covers actual London filming locations. Platform 9 3/4 at King's Cross is the highlight.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "beatles-walking-tour",
@@ -1214,9 +1221,10 @@
       "currency": "GBP"
     },
     "address": "Tottenham Court Road Station, London W1T",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/beatles-walking-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/the-beatles-london-walking-tour-t44653/",
     "affiliateLabel": "Book Beatles Tour",
-    "tips": "Recreate the iconic Abbey Road crossing photo. The tour covers Soho, Marylebone, and St John's Wood. Essential for music lovers."
+    "tips": "Recreate the iconic Abbey Road crossing photo. The tour covers Soho, Marylebone, and St John's Wood. Essential for music lovers.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "street-art-tour-shoreditch",
@@ -1285,9 +1293,10 @@
       "currency": "GBP"
     },
     "address": "Marylebone Rd, London NW1 5LR",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/madame-tussauds",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-madame-tussauds-london-t174429/",
     "affiliateLabel": "Book Tickets",
-    "tips": "Book online in advance for big savings over walk-up prices. First thing in the morning or late afternoon is least crowded."
+    "tips": "Book online in advance for big savings over walk-up prices. First thing in the morning or late afternoon is least crowded.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "the-view-from-the-shard",
@@ -1548,9 +1557,10 @@
       "currency": "GBP"
     },
     "address": "Westminster Millennium Pier, London SW1A 2JH",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-jet",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-boat-trip-waterway-london-adventure-t16670/",
     "affiliateLabel": "Book Thames Jet",
-    "tips": "Longer and faster than the RIB speedboat. You will get very wet in the front. Waterproof jackets provided."
+    "tips": "Longer and faster than the RIB speedboat. You will get very wet in the front. Waterproof jackets provided.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "london-food-tour",
