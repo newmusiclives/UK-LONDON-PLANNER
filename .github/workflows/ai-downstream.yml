@@ -1,12 +1,13 @@
 name: AI Staff — Downstream (Oliver + Poppy)
 
 # Runs after Margaret's brief has been approved. Oliver writes the blog post,
-# Poppy writes the multi-slot social. Weekdays at 16:00 MST / 23:00 UTC.
+# Poppy writes the multi-slot social. Sun–Fri at 16:00 MST / 23:00 UTC, chaining
+# off the same day's Margaret brief.
 # Commits drafts to the repo and pings the GHL notification webhook.
 
 on:
   schedule:
-    - cron: '0 23 * * 1-5'  # Mon–Fri, 23:00 UTC (16:00 MST)
+    - cron: '0 23 * * 0-5'  # Sun–Fri, 23:00 UTC (16:00 MST)
   workflow_dispatch: {}
 
 permissions:

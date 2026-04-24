@@ -1,12 +1,14 @@
 name: AI Staff — Editor-in-Chief
 
 # Margaret Thornbury drafts the daily editorial brief for the next content cycle.
-# Runs weekdays at 11:00 MST / 18:00 UTC. Commits the brief to the repo so the
-# local review UI picks it up, then pings the GHL notification webhook.
+# Runs Sun–Fri at 11:00 MST / 18:00 UTC. Sun run targets Mon; Fri run targets Sat.
+# No Sat run (so nothing targets Sun directly — queue depth covers the gap).
+# Commits the brief to the repo so the local review UI picks it up, then pings
+# the GHL notification webhook.
 
 on:
   schedule:
-    - cron: '0 18 * * 1-5'  # Mon–Fri, 18:00 UTC (11:00 MST)
+    - cron: '0 18 * * 0-5'  # Sun–Fri, 18:00 UTC (11:00 MST)
   workflow_dispatch: {}
 
 permissions:
