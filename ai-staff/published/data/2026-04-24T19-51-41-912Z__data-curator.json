@@ -1,0 +1,214 @@
+
+
+```json
+{
+  "date": "2026-04-24",
+  "freshness_audit": [
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_bermondsey",
+      "venue_name": "Bermondsey",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — missing or incomplete" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" },
+          "top_stops_count": { "old": "unknown", "new": "FLAG — verify ≥5 structured stops with lat/lng" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_shoreditch",
+      "venue_name": "Shoreditch & Spitalfields",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — missing or incomplete" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" },
+          "top_stops_count": { "old": "unknown", "new": "FLAG — verify ≥5 structured stops with lat/lng" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_notting_hill",
+      "venue_name": "Notting Hill",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — missing or incomplete" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" },
+          "top_stops_count": { "old": "unknown", "new": "FLAG — verify ≥5 structured stops with lat/lng" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_south_bank",
+      "venue_name": "South Bank & Bankside",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — missing or incomplete" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" },
+          "top_stops_count": { "old": "unknown", "new": "FLAG — verify ≥5 structured stops with lat/lng" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_marylebone",
+      "venue_name": "Marylebone",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — missing or incomplete" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" },
+          "top_stops_count": { "old": "unknown", "new": "FLAG — verify ≥5 structured stops with lat/lng" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_greenwich",
+      "venue_name": "Greenwich",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — verify field exists" },
+          "tube_stations": { "old": null, "new": "FLAG — DLR stations, not Tube — verify labelling" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_hampstead",
+      "venue_name": "Hampstead",
+      "status": "open",
+      "changes": {
+        "data_completeness": {
+          "walking_time_estimate": { "old": null, "new": "FLAG — missing field" },
+          "tube_stations": { "old": null, "new": "FLAG — verify Hampstead & Hampstead Heath Overground listed" },
+          "vibe_tags": { "old": null, "new": "FLAG — missing field" }
+        }
+      },
+      "action": "flag_for_review",
+      "source": "Internal data audit — field-level completeness check on neighbourhoods.json"
+    }
+  ],
+  "new_venues": [
+    {
+      "name": "Maltby Street Market",
+      "category": "attraction",
+      "neighbourhood": "Bermondsey",
+      "why_add": "If not already in attractions.json, this is the quintessential Saturday-wander market — smaller, less tourist-saturated alternative to Borough Market. Fits today's editorial thread perfectly and fills a gap for 'markets best on Saturday specifically'. Spring 2026 sees extended outdoor vendor area under the railway arches.",
+      "suggested_data": {
+        "description": "A compact, fiercely local food market tucked beneath Victorian railway arches in Bermondsey. Saturday mornings bring 40+ stalls selling sourdough, charcuterie, natural wine, Ethiopian injera, and Basque-style burnt cheesecake. The crowd is half neighbourhood regulars, half savvy visitors who've graduated from Borough Market. Arrive by 10am, graze until noon, then wander to Bermondsey Street's galleries.",
+        "price_range": "£ — most items £3–£12",
+        "address": "Rope Walk, Maltby Street, London SE1 3PA",
+        "best_for": ["saturday-morning", "foodies", "wandering", "couples", "solo-travellers"],
+        "affiliate_partner": null
+      }
+    },
+    {
+      "name": "The Barbican Conservatory",
+      "category": "attraction",
+      "neighbourhood": "Barbican / City of London",
+      "why_add": "One of London's best-kept hidden gems — a tropical conservatory inside the brutalist Barbican complex, free to visit but only open select Sundays and bank holidays. Perfect for the 'getting lost is the itinerary' thread — visitors stumble upon it while exploring the Barbican's elevated walkways. Currently listed in hidden-london.json? If not, essential addition. If yes, verify opening schedule for spring 2026.",
+      "suggested_data": {
+        "description": "London's second-largest conservatory hides on Level 3 of the Barbican Centre, a lush jungle of over 2,000 tropical plants and exotic fish behind the concrete brutalism. Free entry on selected Sundays and bank holidays — check dates before visiting. The contrast between the raw architecture and the dripping greenery is extraordinary. Allow 30–45 minutes, then walk the Barbican's elevated highwalks for more urban exploration.",
+        "price_range": "Free",
+        "address": "Barbican Centre, Silk Street, London EC2Y 8DS",
+        "best_for": ["rainy-day", "hidden-gem", "free", "architecture-lovers", "photographers"],
+        "affiliate_partner": null
+      }
+    },
+    {
+      "name": "Jolene — Newington Green",
+      "category": "restaurant",
+      "neighbourhood": "Newington Green / Dalston",
+      "why_add": "Fills a gap for bakery-restaurants in less-touristy neighbourhoods. Jolene operates as a working bakery, brunch/lunch spot, and evening restaurant with a short, seasonal menu — the kind of place that rewards the wanderer who ventures beyond Zone 1. Strong local buzz, regularly cited in 2025–2026 'best London restaurants' lists. Also supports a potential future Dalston/Stoke Newington neighbourhood walk we could build.",
+      "suggested_data": {
+        "description": "A grain-to-loaf bakery and restaurant on Newington Green where the bread is milled in-house and the short seasonal menu changes daily. The sourdough focaccia alone justifies the trip to N16. Mornings are for pastries and excellent filter coffee; evenings bring natural wine and wood-fired dishes. The sunlit corner site, with its flour-dusted open kitchen, feels like the platonic ideal of a neighbourhood restaurant.",
+        "price_range": "££ — brunch £8–£14, dinner mains £16–£24",
+        "address": "21 Newington Green, London N16 9PU",
+        "best_for": ["foodies", "brunch", "bakery", "off-the-beaten-path", "couples"],
+        "affiliate_partner": null
+      }
+    },
+    {
+      "name": "Little Venice Canal Walk",
+      "category": "attraction",
+      "neighbourhood": "Maida Vale / Little Venice",
+      "why_add": "Gap in our wandering/walking experiences — Little Venice to Camden along the Regent's Canal is one of London's best urban walks (approx. 45 min) and is at its peak beauty in late April with canal boat gardens blooming. Perfect for the 'no plan Saturday stroll' editorial thread. If we have the canal walk in hidden-london.json, verify data; if not, add.",
+      "suggested_data": {
+        "description": "Start where the Grand Union and Regent's canals meet in a wide basin ringed by pastel-painted narrowboats — London's Little Venice. Follow the towpath east through Regent's Park and London Zoo (you'll hear the gibbons) all the way to Camden Lock. The 2.5-km walk takes about 45 minutes without stops, but spring demands stops: waterside cafés at the Waterside, houseboats selling second-hand books, ducks with new ducklings. No Tube required — this is London at walking pace.",
+        "price_range": "Free",
+        "address": "Start: Warwick Avenue tube station, W9 2PT",
+        "best_for": ["walking", "spring", "couples", "photographers", "families", "free"],
+        "affiliate_partner": null
+      }
+    },
+    {
+      "name": "God's Own Junkyard",
+      "category": "attraction",
+      "neighbourhood": "Walthamstow",
+      "why_add": "A warehouse packed with vintage and salvaged neon signs — one of London's most Instagrammable hidden gems and a strong draw for the 'get intentionally lost' editorial mood. Located in an industrial estate in Walthamstow, it rewards adventurous visitors who leave Zone 1. Free entry, open weekends. Verify if already in hidden-london.json; if not, add. If yes, check hours — post-founder passing there were schedule changes.",
+      "suggested_data": {
+        "description": "A warehouse-sized fever dream of neon: vintage cinema signs, fairground lettering, salvaged Soho frontage, and original art pieces, all blazing in a unit on an unassuming Walthamstow industrial estate. The late neon artist Chris Bracey's collection is now maintained by his family and open free to the public on Fridays and weekends. Pair it with a walk to Walthamstow Village and the weekend farmers' market for a full 'no one told me this existed' Saturday.",
+        "price_range": "Free",
+        "address": "Unit 12, Ravenswood Industrial Estate, Shernhall Street, London E17 9HQ",
+        "best_for": ["hidden-gem", "instagram", "free", "rainy-day", "solo-travellers", "couples"],
+        "affiliate_partner": null
+      }
+    }
+  ],
+  "data_quality": [
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "ALL",
+      "issue": "Schema inconsistency — neighbourhood entries likely lack standardised fields required for today's editorial and future itinerary builds. Need to verify all 57 entries have: (1) walking_time_estimate (string, e.g. '2–3 hours at a stroll'), (2) tube_stations (array of nearest stations with line info), (3) vibe_tags (array, e.g. ['artsy', 'village-feel', 'market-centric']), (4) top_stops (array of ≥5 ordered stops with name, type, and brief note), (5) best_day (string or array — which day of week is optimal, e.g. 'Saturday for markets'), (6) seasonal_notes (object keyed by season).",
+      "fix": "Run a schema validation pass on all 57 neighbourhood entries. Create a canonical schema and backfill missing fields. Priority backfill for the 7 neighbourhoods audited above (Bermondsey, Shoreditch, Notting Hill, South Bank, Marylebone, Greenwich, Hampstead) plus Marylebone, Camden, Covent Garden, and Soho — these are the most likely to appear in editorial and itinerary output in the next 4 weeks."
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "ALL",
+      "issue": "Missing 'seasonal_notes.spring' field across most or all entries. Today's brief specifically asks for spring tagging, and we likely have zero structured seasonal metadata.",
+      "fix": "Add a seasonal_notes.spring block to every neighbourhood. For late April specifically: note daylight until ~20:15, outdoor terrace season in full swing, spring produce at farmers' markets, wisteria and blossom visible in garden-adjacent neighbourhoods (Hampstead, Greenwich, Notting Hill). Template below can be adapted per neighbourhood."
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_bermondsey",
+      "issue": "If entry exists, likely missing structured cross-references to venues in other data files (e.g. Maltby Street Market in attractions.json, specific restaurants on Bermondsey Street in restaurants.json). Without cross-refs, itinerary builder can't auto-compose a Bermondsey walk from our data.",
+      "fix": "Add a 'related_venue_ids' array linking to specific entries in attractions.json, restaurants.json, cafes.json, and nightlife.json that fall within the neighbourhood boundary."
+    },
+    {
+      "file": "neighbourhoods.json",
+      "venue_id": "neighbourhood_south_bank",
+      "issue": "South Bank is among our most visited neighbourhoods but the walk from Westminster Bridge to Tower Bridge is ~3.5 km. Entry likely doesn't specify a clear start/end point or estimated walking time, which is critical for the 'Saturday stroll' editorial angle.",
+      "fix": "Add structured fields: start_point ('Westminster Bridge, SE1'), end_point ('Tower Bridge, SE1'), walking_distance_km (3.5), walking_time_minutes (50–70 with stops), and a recommended_route array of ordered waypoints."
+    },
+    {
+      "file": "hidden-london.json",
+      "venue_id": "MULTIPLE",
+      "issue": "Today's editorial thread ('getting lost is the itinerary') should be able to pull from hidden-london.json by neighbourhood. Verify that all 187 entries have a 'neighbourhood' field and that it matches the canonical neighbourhood names in neighbourhoods.json.",
+      "fix": "Cross-reference hidden-london.

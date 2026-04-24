@@ -1,15 +1,15 @@
 {
-  "generated": "2026-04-24T14:34:22.066Z",
+  "generated": "2026-04-24T19:51:41.919Z",
   "items": [
     {
-      "rel": "plans/2026-04-24T14-34-22-065Z__editor-in-chief.md",
-      "size": 7492,
-      "mtime": "2026-04-24T14:34:22.065Z"
+      "rel": "data/2026-04-24T19-51-41-912Z__data-curator.json",
+      "size": 14668,
+      "mtime": "2026-04-24T19:51:41.913Z"
     },
     {
       "rel": "index.json",
-      "size": 61,
-      "mtime": "2026-04-24T14:33:26.228Z"
+      "size": 304,
+      "mtime": "2026-04-24T14:34:35.306Z"
     }
   ]
 }
