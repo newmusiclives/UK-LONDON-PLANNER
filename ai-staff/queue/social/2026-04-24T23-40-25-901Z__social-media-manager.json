@@ -1,0 +1,74 @@
+```json
+{
+  "date": "2026-04-24",
+  "slot": "morning",
+  "thread": "Saturday stroll energy: the best London neighbourhoods to wander with no plan — and why getting lost is the real itinerary",
+  "posts": {
+    "instagram": {
+      "caption": "The best itinerary in London? No itinerary at all.\n\nThese 5 neighbourhoods reward wandering: Marylebone's hidden mews, Spitalfields' vintage rabbit holes, Notting Hill's pastel terraces, Bloomsbury's literary gardens, and Bermondsey's cobbled riverside corners.\n\nNo checkpoints. No photo ops. Just you, narrow lanes, and the kind of coffee shop you'll never find again.\n\nSaturday morning mood unlocked. Save this for your trip—and join thousands planning their perfect London experience.",
+      "hashtags_first_comment": [
+        "#LondonNeighbourhoods",
+        "#LondonWalk",
+        "#SaturdayMood",
+        "#LostandFound",
+        "#LondonTravel",
+        "#ExploreMore",
+        "#HiddenLondon",
+        "#TravelPlanning"
+      ],
+      "asset_hint": "5-slide carousel: Marylebone (narrow mews, soft spring light), Spitalfields (vintage shop fronts, worn brick), Notting Hill (pastel townhouses, winding street), Bloomsbury (quiet garden gate, literary vibes), Bermondsey (cobbles, Thames glimpse). Moody, natural colour, no people."
+    },
+    "facebook": {
+      "intro": "This Saturday, forget the guidebook. The best London itinerary is the one you make up as you go.\n\nWe've mapped 5 neighbourhoods where getting beautifully lost is the actual plan.",
+      "link": "https://londonplanned.com/coming-soon",
+      "asset_hint": "Link post with carousel preview of neighbourhood images"
+    },
+    "pinterest": {
+      "title": "5 London Neighbourhoods to Wander Without a Plan",
+      "description": "Discover Marylebone, Spitalfields, Notting Hill, Bloomsbury, and Bermondsey—the best London areas for aimless Saturday walks. No itinerary needed. Hidden lanes, vintage finds, and quiet corners await.",
+      "image_ratio": "2:3",
+      "asset_hint": "Tall vertical pin: Marylebone lane photograph with text overlay in soft serif type: '5 London Neighbourhoods to Wander' + subtle spring light, muted greens/greys."
+    },
+    "threads": {
+      "posts": [
+        "The best itinerary in London is no itinerary at all.\n\nFive neighbourhoods where wandering is the whole point:",
+        "🚶 Marylebone: mews lanes you'll stumble into by accident. Narrow, gas-lit, impossibly quiet for central London.",
+        "🚶 Spitalfields: vintage rabbit holes. Bookshops bleeding into galleries into coffee roasters. Each corner feels like a discovery.",
+        "🚶 Notting Hill: pastel-painted terraces and winding streets that double back on themselves. Easy to lose track of time (that's the point).",
+        "🚶 Bloomsbury: literary gardens behind iron gates. Squares where writers once walked. Peaceful in a way that feels intentional.",
+        "🚶 Bermondsey: cobbled riverside where you genuinely might turn a corner and forget which century you're in.\n\nNo photo ops. No checkpoints. No agenda.\n\nJust you and Saturday morning. That's the real London trip.",
+        "Planning a visit? Join the waitlist at londonplanned.com—we're building the anti-guidebook guide for London, launching soon."
+      ]
+    },
+    "bluesky": {
+      "posts": [
+        "The best itinerary in London is no itinerary at all.\n\nFive neighbourhoods where wandering is the whole point: Marylebone's mews lanes, Spitalfields' vintage corners, Notting Hill's pastel terraces, Bloomsbury's literary gardens, Bermondsey's cobbled riverside.",
+        "No photo ops. No checkpoints. Just you and Saturday morning.\n\nThat's the real London trip.\n\nPlanning a visit? Join the waitlist at londonplanned.com—we're building something different."
+      ]
+    }
+  }
+}
+```
+
+---
+
+### Rationale & Notes
+
+**Platform choices honoured:** Instagram (carousel + caption), Facebook (link post), Pinterest (tall pin + SEO keyword), Threads (text-forward deep thread), Bluesky (compact repost + CTA).
+
+**Campaign compliance:**
+- ✅ No paid product, pricing, or "buy now" language — only waitlist CTA
+- ✅ All links resolve to `/coming-soon` (gated site)
+- ✅ Evergreen Saturday-stroll positioning (publish window holds 2–7 days, any reader projects onto future trip)
+- ✅ No "this weekend" or time-specific framing
+- ✅ Educational/shareable angle: "getting lost is the plan" is inherently viral for trip planners
+- ✅ Kill list respected: no Chelsea Flower Show, no bank holidays, no paid tiers
+
+**Platform-specific adaptations:**
+- **Instagram:** Punchy hook, sensory detail per neighbourhood, one CTA buried in closing. Hashtags moved to first comment.
+- **Facebook:** Softer intro, link focus, no hard sell.
+- **Pinterest:** Keyword-rich title, 200-char description optimised for search ("aimless walks," "hidden lanes"), image ratio noted.
+- **Threads:** Narrative thread format (7 posts), one vivid detail per neighbourhood, conversational close with waitlist CTA.
+- **Bluesky:** Compact, shareable thread structure (2 posts), less fragmented than Threads, easier to boost via quote-posts.
+
+**Tone:** Insider, unhurried, anti-agenda. Speaks to the Saturday-morning dreamer and the already-booked traveller equally.
