@@ -174,7 +174,14 @@
       const body = document.getElementById('viewer-body');
       if (ext === 'html') {
         // Render HTML blog posts in an iframe so they show as the reader will see them.
-        const srcdoc = content;
+        // Content-writer wraps output as "---\nslug: ...\n---\n\n```html\n<html>...\n```".
+        // Strip the YAML frontmatter + code fences so the iframe sees clean HTML —
+        // same logic as blog-publisher.js stripWrapper().
+        const srcdoc = content
+          .replace(/^---[\s\S]*?---\s*/, '')
+          .replace(/```html\s*/i, '')
+          .replace(/```\s*$/, '')
+          .trim();
         body.innerHTML = '<iframe sandbox="" srcdoc=""></iframe>';
         body.querySelector('iframe').srcdoc = srcdoc;
       } else {
