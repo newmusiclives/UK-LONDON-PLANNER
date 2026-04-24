@@ -5,9 +5,9 @@
 .env
 .env.local
 
-# AI Staff runtime artefacts (queue/published/logs are local-only)
-ai-staff/queue/
-ai-staff/published/
+# AI Staff runtime artefacts
+# queue/ and published/ are tracked — downstream GH Action runs do a fresh
+# checkout and need the latest brief + drafts committed to find them.
 ai-staff/logs/
 ai-staff/node_modules/
 
