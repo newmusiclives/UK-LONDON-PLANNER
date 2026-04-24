@@ -309,6 +309,32 @@ const AffiliateLinks = {
 
   auto(url) {
     return this.build(url, this.detect(url));
+  },
+
+  // True iff the affiliate ID for this provider is populated (non-empty,
+  // non-placeholder). Use to gate visibility of affiliate CTAs so we don't
+  // show "Book now" links for programs we haven't been approved on yet.
+  // Unknown / generic providers return false — callers decide whether to
+  // still show a non-affiliate link.
+  isApproved(provider) {
+    if (!provider || provider === 'unknown') return false;
+    const keyMap = {
+      getyourguide: 'getYourGuide', booking: 'booking', viator: 'viator',
+      todaytix: 'todayTix', opentable: 'openTable', klook: 'klook',
+      tiqets: 'tiqets', trainline: 'trainline', expedia: 'expedia',
+      hostelworld: 'hostelworld', skyscanner: 'skyscanner', amazon: 'amazonUK',
+      tripadvisor: 'tripadvisor', musement: 'musement', headout: 'headout',
+      eurostar: 'eurostar', omio: 'omio', rentalcars: 'rentalcars',
+      thefork: 'theFork', londontheatredirect: 'londonTheatreDirect',
+      worldnomads: 'worldNomads', safetywing: 'safetyWing', wise: 'wise',
+      airalo: 'airalo', withlocals: 'withLocals',
+      toursbylocals: 'toursByLocals', contexttravel: 'contextTravel',
+      gocity: 'goCity',
+    };
+    const key = keyMap[provider.toLowerCase()];
+    if (!key) return false;
+    const val = (CONFIG.affiliateIds || {})[key];
+    return !!(val && !val.includes('YOUR_'));
   }
 };
 

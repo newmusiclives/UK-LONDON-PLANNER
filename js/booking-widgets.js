@@ -9,6 +9,12 @@ const BookingWidgets = {
     const container = document.getElementById(containerId);
     if (!container) return;
 
+    // Hide entirely until we're approved for this affiliate program.
+    if (typeof AffiliateLinks !== 'undefined' && !AffiliateLinks.isApproved('getyourguide')) {
+      container.innerHTML = '';
+      return;
+    }
+
     const partnerId = CONFIG.affiliateIds?.getYourGuide || '';
     const hasPartner = partnerId && !partnerId.includes('YOUR_');
 
@@ -47,6 +53,11 @@ const BookingWidgets = {
   renderHotelWidget(containerId, city = 'London') {
     const container = document.getElementById(containerId);
     if (!container) return;
+
+    if (typeof AffiliateLinks !== 'undefined' && !AffiliateLinks.isApproved('booking')) {
+      container.innerHTML = '';
+      return;
+    }
 
     container.innerHTML = `
       <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
@@ -94,6 +105,11 @@ const BookingWidgets = {
     const container = document.getElementById(containerId);
     if (!container) return;
 
+    if (typeof AffiliateLinks !== 'undefined' && !AffiliateLinks.isApproved('skyscanner')) {
+      container.innerHTML = '';
+      return;
+    }
+
     container.innerHTML = `
       <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
         <h4 style="margin-bottom:0.75rem;">✈️ Find Cheap Flights to London</h4>
@@ -118,6 +134,11 @@ const BookingWidgets = {
   renderInlineBooking(activity) {
     if (!activity.affiliateUrl) return '';
     const provider = typeof AffiliateLinks !== 'undefined' ? AffiliateLinks.detect(activity.affiliateUrl) : 'unknown';
+    // Suppress CTAs for affiliate programs we're not approved on. Unknown/generic
+    // URLs (provider === 'unknown') still render — they're treated as non-affiliate.
+    if (provider !== 'unknown' && typeof AffiliateLinks !== 'undefined' && !AffiliateLinks.isApproved(provider)) {
+      return '';
+    }
     return `
       <div class="activity__cta">
         <a href="${typeof AffiliateLinks !== 'undefined' ? AffiliateLinks.auto(activity.affiliateUrl) : activity.affiliateUrl}"
