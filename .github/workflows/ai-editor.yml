@@ -22,27 +22,47 @@ jobs:
       GHL_WEBHOOK_AI_NOTIFY: ${{ secrets.GHL_WEBHOOK_AI_NOTIFY }}
 
     steps:
+      # Explicit skip list for one-off disabled dates. Scheduled runs on these
+      # UTC dates exit early without firing Margaret. Manual workflow_dispatch
+      # always runs regardless. Edit SKIP_DATES (comma-separated YYYY-MM-DD) to
+      # add or remove — no need to disable/enable the workflow via `gh`.
+      - name: Skip-date guard
+        id: skip
+        run: |
+          SKIP_DATES="2026-04-24"
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "${{ github.event_name }}" = "schedule" ] && echo ",$SKIP_DATES," | grep -q ",$TODAY,"; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "::warning::Skipping $TODAY — in SKIP_DATES guard list"
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.skip.outputs.skip != 'true'
         with:
           persist-credentials: true
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
+        if: steps.skip.outputs.skip != 'true'
         with:
           node-version: '20'
 
       - name: Configure git
+        if: steps.skip.outputs.skip != 'true'
         run: |
           git config user.name "london-planned-bot"
           git config user.email "bot@londonplanned.com"
 
       - name: Run Margaret (editor-in-chief)
         id: margaret
+        if: steps.skip.outputs.skip != 'true'
         continue-on-error: true
         run: npm run ai:run editor-in-chief
 
       - name: Commit brief
-        if: steps.margaret.outcome == 'success'
+        if: steps.skip.outputs.skip != 'true' && steps.margaret.outcome == 'success'
         run: |
           git add ai-staff/queue/plans/ ai-staff/queue/index.json ai-staff/logs/ || true
           if git diff --cached --quiet; then
@@ -53,7 +73,7 @@ jobs:
           git push origin main
 
       - name: Notify via GHL webhook
-        if: always()
+        if: always() && steps.skip.outputs.skip != 'true'
         run: |
           STATUS="${{ steps.margaret.outcome }}"
           FILE=$(ls -t ai-staff/queue/plans/*.md 2>/dev/null | head -n1 || true)
@@ -86,5 +106,5 @@ jobs:
                 --data-binary @-
 
       - name: Fail the job if Margaret errored
-        if: steps.margaret.outcome == 'failure'
+        if: steps.skip.outputs.skip != 'true' && steps.margaret.outcome == 'failure'
         run: exit 1
