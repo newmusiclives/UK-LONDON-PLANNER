@@ -23,9 +23,10 @@
       "morning"
     ],
     "address": "Tower of London, London EC3N 4AB",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-of-london-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/tower-of-london-l2708/london-tower-of-london-and-crown-jewels-exhibition-ticket-t21253/",
     "affiliateLabel": "Book Skip-the-Line Tickets",
-    "tips": "Arrive at opening (9am) to see the Crown Jewels before the crowds."
+    "tips": "Arrive at opening (9am) to see the Crown Jewels before the crowds.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "british-museum",
@@ -54,9 +55,10 @@
       "afternoon"
     ],
     "address": "Great Russell St, London WC1B 3DG",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/british-museum-guided-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-british-museum-guided-tour-t58279/",
     "affiliateLabel": "Book Guided Tour",
-    "tips": "The Rosetta Stone and Egyptian mummies are the star attractions. Consider a guided tour to make the most of your visit."
+    "tips": "The Rosetta Stone and Egyptian mummies are the star attractions. Consider a guided tour to make the most of your visit.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "buckingham-palace",
@@ -83,9 +85,10 @@
       "morning"
     ],
     "address": "Buckingham Palace, London SW1A 1AA",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/buckingham-palace-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/entrance-ticket-the-state-rooms-buckingham-palace-t53844/",
     "affiliateLabel": "Book Palace Tour (Summer)",
-    "tips": "Changing of the Guard happens at 11am (check schedule as it varies seasonally). Arrive 45 mins early for a good spot."
+    "tips": "Changing of the Guard happens at 11am (check schedule as it varies seasonally). Arrive 45 mins early for a good spot.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "westminster-abbey",
@@ -112,9 +115,10 @@
       "afternoon"
     ],
     "address": "20 Deans Yd, London SW1P 3PA",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/westminster-abbey-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/westminster-abbey-l2710/london-westminster-abbey-entrance-ticket-t399163/",
     "affiliateLabel": "Book Entry Tickets",
-    "tips": "Visit Poets' Corner to see memorials to Shakespeare, Dickens, and Austen."
+    "tips": "Visit Poets' Corner to see memorials to Shakespeare, Dickens, and Austen.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "natural-history-museum",
@@ -170,9 +174,10 @@
       "afternoon"
     ],
     "address": "Bankside, London SE1 9TG",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/tate-modern-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-tate-modern-tour-with-art-expert-t494927/",
     "affiliateLabel": "Book Guided Art Tour",
-    "tips": "Free permanent collection. The viewing platform on level 10 offers stunning panoramic views of the city."
+    "tips": "Free permanent collection. The viewing platform on level 10 offers stunning panoramic views of the city.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "tower-bridge",
@@ -199,9 +204,10 @@
       "afternoon"
     ],
     "address": "Tower Bridge Rd, London SE1 2UP",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-bridge-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-bridge-entry-ticket-t439425/",
     "affiliateLabel": "Book Entry Tickets",
-    "tips": "The glass floor walkway is not for the faint-hearted! Check the bridge lift times on the website."
+    "tips": "The glass floor walkway is not for the faint-hearted! Check the bridge lift times on the website.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "london-eye",
@@ -227,9 +233,10 @@
       "evening"
     ],
     "address": "Riverside Building, County Hall, London SE1 7PB",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-eye-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/the-london-eye-l2711/coca-cola-london-eye-standard-or-fast-track-admission-t170451/",
     "affiliateLabel": "Book Fast-Track Tickets",
-    "tips": "Book online for cheaper tickets. Sunset rides offer the most spectacular views. Consider the champagne experience for a romantic treat."
+    "tips": "Book online for cheaper tickets. Sunset rides offer the most spectacular views. Consider the champagne experience for a romantic treat.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "st-pauls-cathedral",
@@ -254,9 +261,10 @@
       "morning"
     ],
     "address": "St Paul's Churchyard, London EC4M 8AD",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/st-pauls-cathedral-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/skip-the-line-st-paul-s-cathedral-with-discounted-admission-t19600/",
     "affiliateLabel": "Book Entry Tickets",
-    "tips": "Test the Whispering Gallery's acoustics - whisper against the wall and someone on the opposite side can hear you."
+    "tips": "Test the Whispering Gallery's acoustics - whisper against the wall and someone on the opposite side can hear you.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "v-and-a-museum",
@@ -311,9 +319,10 @@
       "morning"
     ],
     "address": "Hampton Court Palace, East Molesey KT8 9AU",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/hampton-court-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/hampton-court-palace-and-gardens-entrance-ticket-t21254/",
     "affiliateLabel": "Book Priority Tickets",
-    "tips": "A full-day excursion. The maze is great fun. Take the train from Waterloo - it's a scenic 35-minute ride."
+    "tips": "A full-day excursion. The maze is great fun. Take the train from Waterloo - it's a scenic 35-minute ride.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "kew-gardens",
@@ -340,9 +349,10 @@
       "afternoon"
     ],
     "address": "Royal Botanic Gardens, Kew, Richmond TW9 3AE",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/kew-gardens-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/kew-gardens-l5161/london-kew-gardens-admission-ticket-t34660/",
     "affiliateLabel": "Book Entry Tickets",
-    "tips": "The Treetop Walkway offers great views. The Palm House is unmissable. Allow at least half a day."
+    "tips": "The Treetop Walkway offers great views. The Palm House is unmissable. Allow at least half a day.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "houses-of-parliament",
@@ -368,9 +378,10 @@
       "afternoon"
     ],
     "address": "Houses of Parliament, London SW1A 0AA",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/houses-of-parliament-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-houses-of-parliament-westminster-abbey-guided-tour-t137789/",
     "affiliateLabel": "Book Guided Tour",
-    "tips": "Audio tours available on Saturdays and during recess. The view of Big Ben from Westminster Bridge is iconic for photos."
+    "tips": "Audio tours available on Saturdays and during recess. The view of Big Ben from Westminster Bridge is iconic for photos.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "national-gallery",
@@ -397,9 +408,10 @@
       "afternoon"
     ],
     "address": "Trafalgar Square, London WC2N 5DN",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/national-gallery-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-official-national-gallery-highlights-guided-tour-t415465/",
     "affiliateLabel": "Book Expert-Led Tour",
-    "tips": "Free entry. Start in the Sainsbury Wing for chronological order. The Sunflowers by Van Gogh is a must-see."
+    "tips": "Free entry. Start in the Sainsbury Wing for chronological order. The Sunflowers by Van Gogh is a must-see.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "greenwich",
@@ -427,9 +439,10 @@
       "afternoon"
     ],
     "address": "Greenwich, London SE10",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/greenwich-tour",
+    "affiliateUrl": "https://www.getyourguide.com/royal-observatory-greenwich-l4365/royal-observatory-greenwich-prime-meridian-entrance-ticket-t98226/",
     "affiliateLabel": "Book Thames Clipper + Observatory",
-    "tips": "Take the Thames Clipper from central London for a scenic river trip. The Cutty Sark is worth a visit too."
+    "tips": "Take the Thames Clipper from central London for a scenic river trip. The Cutty Sark is worth a visit too.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "hyde-park",
@@ -515,9 +528,10 @@
       "afternoon"
     ],
     "address": "21 New Globe Walk, London SE1 9DT",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/shakespeares-globe-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-shakespeare-s-globe-theatre-guided-tour-t705292/",
     "affiliateLabel": "Book Tour & Exhibition",
-    "tips": "Standing 'groundling' tickets for performances cost just £5! The guided tour is excellent even without a show."
+    "tips": "Standing 'groundling' tickets for performances cost just £5! The guided tour is excellent even without a show.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "borough-market",
@@ -544,9 +558,10 @@
       "afternoon"
     ],
     "address": "8 Southwark St, London SE1 1TL",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/borough-market-food-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-borough-market-food-tour-with-6-authentic-tastings-t67794/",
     "affiliateLabel": "Book Food Tasting Tour",
-    "tips": "Go hungry! Open Wed-Sat. Friday lunchtimes are lively but less crowded than Saturdays."
+    "tips": "Go hungry! Open Wed-Sat. Friday lunchtimes are lively but less crowded than Saturdays.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "warner-bros-harry-potter",
@@ -571,9 +586,10 @@
       "morning"
     ],
     "address": "Studio Tour Drive, Leavesden WD25 7LR",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/harry-potter-studio-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/warner-bros-studio-tour-london-the-making-of-harry-potter-t31392/",
     "affiliateLabel": "Book Tickets + Transport",
-    "tips": "Book well in advance - tickets sell out weeks ahead. Allow a full day. The Butterbeer is a must-try!"
+    "tips": "Book well in advance - tickets sell out weeks ahead. Allow a full day. The Butterbeer is a must-try!",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "churchill-war-rooms",
@@ -596,9 +612,10 @@
       "afternoon"
     ],
     "address": "Clive Steps, King Charles St, London SW1A 2AQ",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/churchill-war-rooms-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/churchill-war-rooms-admission-ticketaudio-guide-t861747/",
     "affiliateLabel": "Book Priority Entry",
-    "tips": "The Churchill Museum section is fascinating. Audio guide included in the ticket price."
+    "tips": "The Churchill Museum section is fascinating. Audio guide included in the ticket price.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "south-bank-walk",
@@ -683,9 +700,10 @@
       "afternoon"
     ],
     "address": "Shoreditch, London E1",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/shoreditch-street-art-tour",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/london-shoreditch-street-art-walking-tour-t628680/",
     "affiliateLabel": "Book Guided Street Art Walk",
-    "tips": "Art changes frequently so there's always something new. Brick Lane is nearby for an incredible curry."
+    "tips": "Art changes frequently so there's always something new. Brick Lane is nearby for an incredible curry.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "sky-garden",
@@ -853,9 +871,10 @@
       "evening"
     ],
     "address": "32 London Bridge St, London SE1 9SG",
-    "affiliateUrl": "https://www.getyourguide.com/london-l57/the-shard-tickets",
+    "affiliateUrl": "https://www.getyourguide.com/london-l57/the-view-from-the-shard-experience-t24625/",
     "affiliateLabel": "Book Viewing Platform Tickets",
-    "tips": "Sunset tickets are more expensive but worth every penny. The open-air platform on floor 72 is exhilarating."
+    "tips": "Sunset tickets are more expensive but worth every penny. The open-air platform on floor 72 is exhilarating.",
+    "affiliateProvider": "getyourguide"
   },
   {
     "id": "imperial-war-museum",
