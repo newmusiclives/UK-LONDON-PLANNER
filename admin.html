@@ -1079,6 +1079,42 @@
         if (document.getElementById('weather-apikey')) document.getElementById('weather-apikey').value = (saved.weather && saved.weather.apiKey) || '';
       } catch(e) { console.error('Field population failed:', e); }
 
+      // Fill any empty fields from live Netlify env vars (runtime-config).
+      // localStorage remains the override for local experiments; this just
+      // removes the "blank admin page" illusion when env vars are the source
+      // of truth in production.
+      try {
+        const rc = await fetch('/.netlify/functions/runtime-config').then(r => r.ok ? r.json() : null).catch(() => null);
+        if (rc) {
+          const setIfEmpty = (id, value) => {
+            const el = document.getElementById(id);
+            if (el && !el.value && value) {
+              el.value = value;
+              el.dataset.fromEnv = '1';
+              el.title = 'Value from Netlify env var (read-only view — edit via Netlify dashboard)';
+              el.style.background = 'rgba(59,130,246,0.06)';
+            }
+          };
+          const s = rc.stripe || {};
+          setIfEmpty('stripe-tier1', s.tier1);
+          setIfEmpty('stripe-tier2', s.tier2);
+          setIfEmpty('stripe-tier3', s.tier3);
+          setIfEmpty('stripe-ukShort', s.ukShort);
+          setIfEmpty('stripe-ukStandard', s.ukStandard);
+          setIfEmpty('stripe-ukExtended', s.ukExtended);
+          const w = (rc.ghl && rc.ghl.webhooks) || {};
+          setIfEmpty('ghl-webhook-waitlist', w.waitlist);
+          setIfEmpty('ghl-webhook-email', w.emailCapture);
+          setIfEmpty('ghl-webhook-newsletter', w.promotionsNewsletter);
+          setIfEmpty('ghl-webhook-partner', w.partnerLead);
+          setIfEmpty('ghl-webhook-contact', w.contactForm);
+          setIfEmpty('ghl-webhook-wizard', w.wizardSubmission);
+          setIfEmpty('ghl-webhook-purchase', w.itineraryPurchase);
+          setIfEmpty('ghl-webhook-gift', w.giftPurchase);
+          setIfEmpty('ghl-webhook-ugc', w.ugcSubmission);
+        }
+      } catch(e) { console.warn('runtime-config hydration skipped:', e); }
+
       try { for (const type of venueTypes) renderVenueList(type); } catch(e) { console.error('renderVenueList failed:', e); }
       try { renderStats(); } catch(e) { console.error('renderStats failed:', e); }
       try { renderDashboard(); } catch(e) { console.error('renderDashboard failed:', e); }
