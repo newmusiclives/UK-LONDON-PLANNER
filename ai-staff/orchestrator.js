@@ -72,9 +72,17 @@ function gatherContext() {
   // Lightweight context bundle every agent receives. Real wiring (weather, GA4)
   // happens after credentials are added — until then we send the basics.
   const today = new Date();
+  // target_date = tomorrow (London date). Margaret plans for this date, not today.
+  // Paul runs Margaret on MST mornings when London is already ~7h into its day;
+  // the pipeline then adds 0–7 days of publish lag. Planning a day ahead keeps
+  // briefs aligned with what readers will see, not what Margaret sees at gen time.
+  const targetDate = new Date(today);
+  targetDate.setUTCDate(targetDate.getUTCDate() + 1);
   return {
     date: today.toISOString().slice(0, 10),
     day_of_week: today.toLocaleDateString('en-GB', { weekday: 'long' }),
+    target_date: targetDate.toISOString().slice(0, 10),
+    target_day_of_week: targetDate.toLocaleDateString('en-GB', { weekday: 'long' }),
     iso_week: getISOWeek(today),
     season: seasonFor(today),
     site: loadRegistry().site,

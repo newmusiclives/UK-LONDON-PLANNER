@@ -1,0 +1,65 @@
+```json
+{
+  "date": "2026-04-23",
+  "slot": "morning",
+  "thread": "St George's Day: England's national day, under-celebrated even by locals. Perfect insider angle for Americans planning UK trips — cultural depth they can't Google easily. Tie to spring vibes, visual hooks (flags, pubs, Morris dancing), and brand promise: 'things only insiders know.'",
+  "posts": {
+    "instagram": {
+      "caption": "Today is St George's Day — England's national day that most English people will mark by doing absolutely nothing.\n\nBut if you're planning a London trip, here's your insider cheat sheet. Swipe to discover the six most absurdly English traditions you can actually experience in the city. 🏴",
+      "hashtags_first_comment": [
+        "#LondonInsider",
+        "#StGeorgesDay",
+        "#EnglishTraditions",
+        "#LondonTravel",
+        "#UKTrip",
+        "#HiddenLondon",
+        "#TravelTips",
+        "#CulturalTravel"
+      ],
+      "asset_hint": "Carousel: 6-slide 'Absurdly English Things to Do in London' — (1) pub garden with hanging baskets, (2) iconic red phone box, (3) cream tea spread, (4) Changing of the Guard ceremony, (5) queue at a shop, (6) final slide CTA: 'Join the waitlist at londonplanned.com — unlock insider London knowledge before launch.'"
+    },
+    "facebook": {
+      "intro": "St George's Day is England's hidden gem of a national day — and it's the perfect lens to understand what makes London tick. Most visitors miss these six quintessentially English moments entirely. We've mapped them for you.",
+      "link": "https://londonplanned.com/coming-soon"
+    },
+    "pinterest": {
+      "title": "6 Absurdly English Traditions to Experience in London",
+      "description": "St George's Day reveals England's quirkiest cultural gems. From pub gardens to red phone boxes, cream tea rituals to the Changing of the Guard — discover the insider traditions that make London unmissably English. Join our waitlist for curated trip planning.",
+      "image_ratio": "2:3"
+    },
+    "threads": {
+      "posts": [
+        "Today is St George's Day — England's national day. And honestly? Most English people will mark it by doing absolutely nothing.",
+        "But this is your golden ticket. St George's Day reveals the six things that are so fundamentally English that most American visitors completely miss them.\n\nPub gardens with hanging baskets. Red phone boxes. The ritual of cream tea. Queuing (yes, really). The Changing of the Guard. And apologising for things that aren't your fault.",
+        "These aren't tourist traps. They're how London actually works — the cultural code that makes the city tick. Want to plan a trip that feels authentically London, not just tick-box sightseeing? Join our waitlist at londonplanned.com and we'll share the insider knowledge before launch. 🏴"
+      ]
+    },
+    "bluesky": {
+      "post": "St George's Day is here — England's most under-celebrated national day. Most locals won't do a thing. But if you're planning a London trip, this is your insider cheat sheet to six absurdly English traditions that reveal how the city actually works. londonplanned.com 🏴"
+    }
+  }
+}
+```
+
+---
+
+### Notes on this output:
+
+1. **Platform-specific rewrites**: Each caption is distinct. Instagram is punchy and carousel-focused; Facebook is link-contextual; Threads is conversational and three-beat; Bluesky is snappy and standalone.
+
+2. **Kill-list compliance**: 
+   - No paid product mentions, prices, or "buy now" CTAs ✓
+   - No "Spring in London itinerary" phrasing ✓
+   - No shallow greeting-card tone; all substance-led ✓
+   - No nationalist angle; kept cultural, warm, inclusive for Americans ✓
+   - Only approved links (londonplanned.com to /coming-soon) ✓
+
+3. **Campaign alignment**: 
+   - Single CTA: waitlist join at londonplanned.com ✓
+   - Educational/useful angle: insider knowledge, cultural depth ✓
+   - Buzz-building via St George's Day timeliness ✓
+   - K-factor play: Threads and Instagram encourage sharing; personal ref link opportunity via {{contact.share_code}} in email follow-up ✓
+
+4. **Asset hint**: Carousel structure provided; final slide reserves space for waitlist CTA (merge field can be injected in design or email nurture).
+
+5. **Note**: No X (Twitter) output because the brief specifies these five platforms only; Bluesky included per modern social stack expectations.
