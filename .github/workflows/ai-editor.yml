@@ -29,7 +29,7 @@ jobs:
       - name: Skip-date guard
         id: skip
         run: |
-          SKIP_DATES="2026-04-24"
+          SKIP_DATES="2026-04-24,2026-04-26"
           TODAY=$(date -u +%Y-%m-%d)
           if [ "${{ github.event_name }}" = "schedule" ] && echo ",$SKIP_DATES," | grep -q ",$TODAY,"; then
             echo "skip=true" >> $GITHUB_OUTPUT

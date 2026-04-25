@@ -1,6 +1,6 @@
 # Affiliate Program Setup Guide
 
-**Last updated:** 2026-04-24
+**Last updated:** 2026-04-25
 
 ## How approval controls visibility
 
@@ -33,18 +33,29 @@ save, and Netlify redeploys automatically. No code changes needed.
 |---|---|---|
 | OpenTable | opentable.com/affiliates | $1–2 per seated diner |
 | TodayTix | emailed partnerships@todaytix.com | West End theatre, 5–8% |
+| Klook | affiliate.klook.com/home | Applied 2026-04-25. Direct program. ~2 working day approval. Drop `AFFILIATE_KLOOK` into Netlify when ID arrives. |
 
-### 📝 To apply (in priority order)
+### 📝 To apply (in priority order — verified 2026-04-25)
 
-| # | Program | What | Commission | Sign-up |
-|---|---|---|---|---|
-| 1 | Klook | Attractions, transport | up to 5% | affiliate.klook.com |
-| 2 | Tiqets | Museum tickets | 6% | tiqets.com/affiliates |
-| 3 | Go City | Multi-attraction passes | 6–10% | gocity.com/affiliates |
-| 4 | Trainline | UK rail tickets | up to 2% | trainline.com/affiliates |
-| 5 | WithLocals | Private local experiences | 5–8% | withlocals.com/partners (via Impact.com) |
-| 6 | ToursByLocals | Private guides | ~8% | toursbylocals.com/affiliates |
-| 7 | Context Travel | Expert-led tours | ~10% | via CJ Affiliate — search "Context Travel" |
+| # | Program | Sign-up URL | Network | Commission | Notes |
+|---|---|---|---|---|---|
+| 1 | **Context Travel** | https://explore.contexttravel.com/affiliate-home | Direct (Tipalti payouts) | 10% flat | Open application, easy approval. Payout = month after service date. |
+| 2 | **Tiqets** | https://www.tiqets.com/en/partner-program/sign-up-form/ | Direct (Awin alt — merchant 12428) | ~5–8% gross-margin share | Direct form preferred over Awin. **Pre-launch risk** — see note below. |
+| 3 | **Trainline** | https://join.partnerize.com/trainline/en | **Partnerize** (mandatory) | Variable CPA per ticket (~20% on premium); 30-day cookie | Was Awin historically; now Partnerize only. **Pre-launch risk.** |
+| 4 | **Go City** | https://signup.partnerize.com/signup/en/gocity | **Partnerize** (mandatory) | 6% content / 3% coupon; 90-day cookie; AOV ~$350 | Same Partnerize account as Trainline. Standard track — influencer track has 20k+ follower prereq. |
+| 5 | **WithLocals** | https://www.withlocals.com/info/partners/ → apply via Awin | **Awin** (advertiser 37836) | 10%; 30-day cookie; AOV $200+ | Awin account = ~$5 refundable deposit. Manual approval 1–2 weeks. **Pre-launch risk.** |
+| 6 | **ToursByLocals** | https://www.toursbylocals.com/become-a-travel-agency | Direct (no public affiliate program) | 5% base → 10% after $7,500/yr | Travel-agency partnership, not a real affiliate program. Manual back-and-forth expected. Last priority. |
+
+✅ **Klook applied 2026-04-25** — moved to "waiting on approval" above.
+
+#### Pre-launch reviewer risk
+
+Tiqets, Trainline, and WithLocals reviewers will visit londonplanned.com to evaluate. While the coming-soon gate is up, a waitlist page alone may trigger "no published content" rejections. Two options:
+
+1. **Send reviewers a preview URL** with the bypass token: `https://londonplanned.com/?preview=<PREVIEW_TOKEN>` (sets the `lp_preview` cookie for the session — see `netlify/edge-functions/coming-soon-gate.js:55-78`).
+2. **Defer those three** until after the 2026-05-08 launch when `LAUNCH_MODE=live`.
+
+Klook, Context Travel, and Go City are documented as more tolerant of pre-launch sites — apply those Monday regardless.
 
 ---
 

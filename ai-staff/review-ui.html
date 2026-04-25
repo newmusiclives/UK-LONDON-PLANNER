@@ -48,6 +48,35 @@
   .placeholder { display:flex; align-items:center; justify-content:center; height:100%; color:var(--muted); font-size:0.95rem; text-align:center; padding:2rem; }
   .toast { position:fixed; bottom:1.5rem; right:1.5rem; background:var(--navy); color:#fff; padding:0.85rem 1.25rem; border-radius:6px; font-size:0.88rem; box-shadow:0 4px 20px rgba(0,0,0,0.15); opacity:0; transform:translateY(10px); transition:all 0.25s; z-index:10; }
   .toast.show { opacity:1; transform:translateY(0); }
+
+  /* Editorial brief layout */
+  .brief { max-width:880px; margin:0 auto; }
+  .brief__header { background:var(--navy); color:#fff; padding:1.5rem 1.75rem; border-radius:8px 8px 0 0; border-bottom:3px solid var(--gold); }
+  .brief__date { color:var(--gold); font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem; }
+  .brief__thread { margin:0; font-size:1.35rem; line-height:1.35; color:#fff; font-weight:700; }
+  .brief__section { background:#fff; border:1px solid var(--border); border-top:none; padding:1.25rem 1.75rem; }
+  .brief__section:last-child { border-radius:0 0 8px 8px; }
+  .brief__section h3 { margin:0 0 0.75rem; color:var(--navy); font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase; font-weight:700; }
+  .brief__section p { margin:0; line-height:1.6; }
+  .brief__killlist { background:#fef2f2; border-color:#fecaca; }
+  .brief__killlist h3 { color:var(--red); }
+  .brief__killlist ul { margin:0; padding-left:1.25rem; }
+  .brief__killlist li { color:#7f1d1d; line-height:1.55; margin-bottom:0.3rem; }
+  .brief__note { background:#fefce8; border-color:#fde68a; }
+  .brief__note h3 { color:#854d0e; }
+  .brief-card { border:1px solid var(--border); border-radius:6px; margin-bottom:0.6rem; background:#fafafa; }
+  .brief-card[open] { background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+  .brief-card summary { padding:0.75rem 1rem; cursor:pointer; font-weight:600; color:var(--navy); list-style:none; display:flex; align-items:center; justify-content:space-between; }
+  .brief-card summary::-webkit-details-marker { display:none; }
+  .brief-card summary::before { content:'▸'; margin-right:0.5rem; color:var(--gold); transition:transform 0.15s; display:inline-block; }
+  .brief-card[open] summary::before { transform:rotate(90deg); }
+  .brief-card__id { font-weight:400; color:var(--muted); font-size:0.78rem; font-family:'Menlo',monospace; }
+  .brief-card dl { margin:0; padding:0.25rem 1rem 1rem 1rem; display:grid; grid-template-columns:max-content 1fr; gap:0.5rem 1rem; }
+  .brief-card dt { font-weight:600; color:var(--navy); font-size:0.82rem; padding-top:0.15rem; }
+  .brief-card dd { margin:0; line-height:1.55; }
+  .brief-card dd ul { margin:0; padding-left:1.1rem; }
+  .brief-card dd li { margin-bottom:0.2rem; }
+  .brief-sub { padding:0 !important; background:#f9fafb; border-radius:4px; padding:0.5rem 0.75rem !important; margin-top:0.25rem !important; grid-column:1 / -1; }
 </style>
 </head>
 <body>
@@ -162,6 +191,62 @@
     });
   }
 
+  function renderEditorBrief(content) {
+    const fence = content.match(/```json\s*\n([\s\S]*?)\n```/);
+    if (!fence) return null;
+    let json;
+    try { json = JSON.parse(fence[1]); } catch { return null; }
+
+    const agentName = (id) => {
+      const a = agents.find((x) => x.id === id);
+      return a ? a.name : id;
+    };
+
+    const renderValue = (val) => {
+      if (Array.isArray(val)) {
+        return `<ul>${val.map((v) => `<li>${escape(String(v))}</li>`).join('')}</ul>`;
+      }
+      if (val && typeof val === 'object') {
+        return `<dl class="brief-sub">${Object.entries(val).map(([k, v]) => renderField(k, v)).join('')}</dl>`;
+      }
+      return escape(String(val ?? ''));
+    };
+    const renderField = (key, val) => `<dt>${escape(humanise(key))}</dt><dd>${renderValue(val)}</dd>`;
+    const humanise = (s) => s.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+    const briefs = json.briefs || {};
+    const briefCards = Object.entries(briefs).map(([id, body]) => `
+      <details class="brief-card" open>
+        <summary>
+          <span>${escape(agentName(id))}</span>
+          <span class="brief-card__id">${escape(id)}</span>
+        </summary>
+        <dl>${Object.entries(body).map(([k, v]) => renderField(k, v)).join('')}</dl>
+      </details>
+    `).join('');
+
+    return `
+      <article class="brief">
+        <header class="brief__header">
+          <div class="brief__date">For ${escape(json.date || '(no date)')}</div>
+          <h2 class="brief__thread">${escape(json.thread || '')}</h2>
+        </header>
+        ${json.rationale ? `<section class="brief__section"><h3>Rationale</h3><p>${escape(json.rationale)}</p></section>` : ''}
+        ${Array.isArray(json.kill_list) && json.kill_list.length ? `
+          <section class="brief__section brief__killlist">
+            <h3>Kill list — do NOT do</h3>
+            <ul>${json.kill_list.map((k) => `<li>${escape(k)}</li>`).join('')}</ul>
+          </section>` : ''}
+        ${json.campaign_kickoff_note ? `<section class="brief__section brief__note"><h3>Campaign note</h3><p>${escape(json.campaign_kickoff_note)}</p></section>` : ''}
+        ${Object.keys(briefs).length ? `
+          <section class="brief__section">
+            <h3>Per-agent briefs (${Object.keys(briefs).length})</h3>
+            ${briefCards}
+          </section>` : ''}
+      </article>
+    `;
+  }
+
   async function loadDraft(rel, el) {
     document.querySelectorAll('.draft.active').forEach((x) => x.classList.remove('active'));
     if (el) el.classList.add('active');
@@ -172,6 +257,7 @@
       document.getElementById('toolbar').style.display = 'flex';
       document.getElementById('viewer-title').innerHTML = escape(rel) + ' <small>' + formatBytes(content.length) + '</small>';
       const body = document.getElementById('viewer-body');
+      const isEditorBrief = /__editor-in-chief\.md$/.test(rel);
       if (ext === 'html') {
         // Render HTML blog posts in an iframe so they show as the reader will see them.
         // Content-writer wraps output as "---\nslug: ...\n---\n\n```html\n<html>...\n```".
@@ -184,6 +270,15 @@
           .trim();
         body.innerHTML = '<iframe sandbox="" srcdoc=""></iframe>';
         body.querySelector('iframe').srcdoc = srcdoc;
+      } else if (isEditorBrief) {
+        const html = renderEditorBrief(content);
+        if (html) {
+          body.innerHTML = html;
+        } else {
+          // JSON parse failed — fall back to raw view rather than showing nothing.
+          body.innerHTML = '<pre></pre>';
+          body.querySelector('pre').textContent = content;
+        }
       } else {
         body.innerHTML = '<pre></pre>';
         body.querySelector('pre').textContent = content;
