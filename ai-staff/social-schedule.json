@@ -1,0 +1,34 @@
+{
+  "_note": "Per-platform posting cadence used when a social-media-manager draft is approved in the review UI. See social-publisher.js. Set enabled:false for platforms that need media until carousel/pin assets are wired in.",
+  "userId": "69e4e9b1e77cf36803019863",
+  "slot_time_utc": "14:00",
+  "platforms": {
+    "facebook": {
+      "accountId": "69ea716adaac253e22fb20b6_15PtxwoCpKZwf1QxFOX6_1117972548056136_page",
+      "days": ["Mon", "Wed", "Fri"],
+      "enabled": true
+    },
+    "threads": {
+      "accountId": "69ea817c9ba8d3f1c02ac403_15PtxwoCpKZwf1QxFOX6_26395139380184997_profile",
+      "days": ["Mon", "Wed", "Fri"],
+      "enabled": true
+    },
+    "bluesky": {
+      "accountId": "69ea82ea88d4d5174b19227b_15PtxwoCpKZwf1QxFOX6_did:plc:e2ym45t6vn2rvwwn2zgsdopc_profile",
+      "days": ["Tue", "Thu"],
+      "enabled": true
+    },
+    "instagram": {
+      "accountId": "69ea718e1fc8ae717595f363_15PtxwoCpKZwf1QxFOX6_17841429686218814",
+      "days": ["Mon", "Wed", "Fri"],
+      "enabled": false,
+      "_disabled_reason": "Requires media (carousel images). Flip enabled:true once carousel creative is wired into the social-publisher media field."
+    },
+    "pinterest": {
+      "accountId": "69ea7116d5ada32331440cee_15PtxwoCpKZwf1QxFOX6_1125548269280625866_profile",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "enabled": false,
+      "_disabled_reason": "Requires media (pin image). Flip enabled:true once pin creative is wired into the social-publisher media field."
+    }
+  }
+}

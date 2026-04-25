@@ -173,8 +173,18 @@ const server = http.createServer(async (req, res) => {
       const { rel } = await readJsonBody(req);
       if (!rel) return send(res, 400, { error: 'rel required' });
       const newPath = moveFile(rel, PUBLISHED_DIR);
+      // Best-effort: schedule social posts in GHL when a Poppy draft is approved.
+      // No-op for non-social files. GHL failures don't block the approval flow.
+      let social = null;
+      try {
+        const { publishSocial } = require('./social-publisher');
+        social = await publishSocial(path.join(PUBLISHED_DIR, rel));
+      } catch (e) {
+        console.error('[review-server] social publish failed:', e.message);
+        social = { error: e.message };
+      }
       const git = gitCommitAndPush(newPath, 'approve');
-      return send(res, 200, { ok: true, newPath, git });
+      return send(res, 200, { ok: true, newPath, git, social });
     }
 
     if (req.method === 'POST' && url.pathname === '/api/reject') {

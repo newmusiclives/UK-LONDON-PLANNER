@@ -361,12 +361,23 @@
   async function decide(action) {
     if (!current) return;
     try {
-      const { newPath } = await api('/api/' + action, {
+      const { newPath, social } = await api('/api/' + action, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ rel: current }),
       });
-      toast((action === 'approve' ? 'Approved' : 'Rejected') + ' → ' + newPath);
+      let msg = (action === 'approve' ? 'Approved' : 'Rejected') + ' → ' + newPath;
+      if (Array.isArray(social)) {
+        const scheduled = social.filter((s) => s.posted).length;
+        const errored = social.filter((s) => s.error).length;
+        const skipped = social.filter((s) => s.skipped).length;
+        if (scheduled || errored) {
+          msg += ` · GHL: ${scheduled} scheduled` + (errored ? `, ${errored} errored` : '') + (skipped ? `, ${skipped} skipped` : '');
+        }
+      } else if (social && social.error) {
+        msg += ' · GHL error: ' + social.error;
+      }
+      toast(msg);
       current = null;
       document.getElementById('toolbar').style.display = 'none';
       document.getElementById('viewer-body').innerHTML = '<div class="placeholder">Pick a draft on the left to review.</div>';
