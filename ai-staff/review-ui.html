@@ -93,6 +93,27 @@
   .social-rationale { background:#f9fafb; border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; padding:1rem 1.5rem; font-size:0.88rem; color:var(--muted); }
   .social-rationale h4 { margin:0 0 0.5rem; color:var(--navy); font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; }
   .social-rationale pre { background:none; border:none; padding:0; margin:0; font-family:inherit; white-space:pre-wrap; font-size:inherit; line-height:1.55; }
+
+  /* View tabs (Drafts / Scheduled queue) */
+  .tabs { display:flex; border-bottom:1px solid var(--border); background:#fff; }
+  .tab { flex:1; padding:0.65rem; background:#fff; border:none; cursor:pointer; font-size:0.85rem; font-weight:600; color:var(--muted); border-bottom:2px solid transparent; transition:all 0.12s; }
+  .tab:hover { background:#fafafa; color:var(--navy); }
+  .tab.active { color:var(--navy); border-bottom-color:var(--gold); }
+  .tab .badge { display:inline-block; min-width:20px; padding:0 6px; margin-left:0.3rem; background:var(--gold); color:#fff; font-size:0.7rem; border-radius:10px; font-weight:700; }
+
+  /* Scheduled queue list */
+  .queue-day { padding:0.6rem 1rem 0.3rem; background:#f9fafb; border-bottom:1px solid var(--border); font-size:0.75rem; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; font-weight:700; position:sticky; top:0; }
+  .queue-item { padding:0.75rem 1rem; border-bottom:1px solid var(--border); }
+  .queue-item__head { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.3rem; }
+  .queue-item__platform { font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:700; color:#fff; padding:0.1rem 0.5rem; border-radius:3px; background:#666; }
+  .queue-item__platform.facebook { background:#1877F2; }
+  .queue-item__platform.instagram { background:#E4405F; }
+  .queue-item__platform.threads, .queue-item__platform.tiktok { background:#1f2937; }
+  .queue-item__platform.bluesky, .queue-item__platform.twitter { background:#0085FF; }
+  .queue-item__platform.pinterest { background:#E60023; }
+  .queue-item__platform.linkedin { background:#0A66C2; }
+  .queue-item__time { font-size:0.75rem; color:var(--muted); }
+  .queue-item__summary { font-size:0.83rem; line-height:1.45; color:var(--text); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
 </style>
 </head>
 <body>
@@ -104,7 +125,11 @@
 
 <main>
   <aside class="list">
-    <div class="filter-bar">
+    <div class="tabs">
+      <button class="tab active" data-view="drafts">Drafts <span class="badge" id="drafts-badge">0</span></button>
+      <button class="tab" data-view="scheduled">Scheduled <span class="badge" id="scheduled-badge">0</span></button>
+    </div>
+    <div class="filter-bar" id="drafts-filters">
       <select id="filter-agent">
         <option value="">All agents</option>
       </select>
@@ -114,7 +139,12 @@
       </select>
       <button id="refresh">Refresh</button>
     </div>
+    <div class="filter-bar" id="scheduled-filters" style="display:none;">
+      <button id="refresh-scheduled">Refresh queue</button>
+      <span style="font-size:0.8rem; color:var(--muted); margin-left:0.4rem;">Next 21 days</span>
+    </div>
     <div id="draft-list"></div>
+    <div id="queue-list" style="display:none;"></div>
   </aside>
 
   <section class="viewer">
@@ -396,6 +426,72 @@
   document.getElementById('filter-gated').addEventListener('change', renderList);
   document.getElementById('btn-approve').addEventListener('click', () => decide('approve'));
   document.getElementById('btn-reject').addEventListener('click', () => decide('reject'));
+
+  // -------- Scheduled-queue view --------
+  let scheduled = [];
+  function switchView(view) {
+    document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.dataset.view === view));
+    const isDrafts = view === 'drafts';
+    document.getElementById('drafts-filters').style.display = isDrafts ? '' : 'none';
+    document.getElementById('scheduled-filters').style.display = isDrafts ? 'none' : '';
+    document.getElementById('draft-list').style.display = isDrafts ? '' : 'none';
+    document.getElementById('queue-list').style.display = isDrafts ? 'none' : '';
+    document.getElementById('count').textContent = isDrafts
+      ? drafts.length + ' draft' + (drafts.length === 1 ? '' : 's')
+      : scheduled.length + ' scheduled';
+    if (!isDrafts && scheduled.length === 0) loadScheduled();
+  }
+  async function loadScheduled() {
+    try {
+      const list = document.getElementById('queue-list');
+      list.innerHTML = '<div class="empty">Loading scheduled queue from GHL…</div>';
+      const { posts } = await api('/api/scheduled-posts');
+      scheduled = posts || [];
+      document.getElementById('scheduled-badge').textContent = scheduled.length;
+      renderQueue();
+    } catch (e) {
+      document.getElementById('queue-list').innerHTML = '<div class="empty">Queue load failed: ' + escape(e.message) + '</div>';
+    }
+  }
+  function renderQueue() {
+    const list = document.getElementById('queue-list');
+    document.getElementById('count').textContent = scheduled.length + ' scheduled';
+    if (!scheduled.length) {
+      list.innerHTML = '<div class="empty">No scheduled posts in the next 21 days.</div>';
+      return;
+    }
+    const byDay = {};
+    for (const p of scheduled) {
+      const day = (p.scheduleDate || '').slice(0, 10);
+      (byDay[day] = byDay[day] || []).push(p);
+    }
+    const dayOrder = Object.keys(byDay).sort();
+    list.innerHTML = dayOrder.map((day) => {
+      const date = new Date(day + 'T00:00:00Z');
+      const label = date.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
+      const items = byDay[day].map((p) => {
+        const time = p.scheduleDate ? new Date(p.scheduleDate).toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }) : '—';
+        return `<div class="queue-item">
+          <div class="queue-item__head">
+            <span class="queue-item__platform ${escape(p.platform)}">${escape(p.platform)}</span>
+            <span class="queue-item__time">${escape(time)}</span>
+          </div>
+          <div class="queue-item__summary">${escape((p.summary || '').slice(0, 200))}</div>
+        </div>`;
+      }).join('');
+      return `<div class="queue-day">${escape(label)} · ${byDay[day].length}</div>${items}`;
+    }).join('');
+  }
+  document.querySelectorAll('.tab').forEach((t) => {
+    t.addEventListener('click', () => switchView(t.dataset.view));
+  });
+  document.getElementById('refresh-scheduled').addEventListener('click', loadScheduled);
+  // Update drafts badge whenever the draft list re-renders.
+  const _origRenderList = renderList;
+  renderList = function () {
+    _origRenderList.apply(this, arguments);
+    document.getElementById('drafts-badge').textContent = drafts.length;
+  };
 
   loadAll();
 </script>

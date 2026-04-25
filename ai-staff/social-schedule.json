@@ -1,7 +1,8 @@
 {
-  "_note": "Per-platform posting cadence used when a social-media-manager draft is approved in the review UI. See social-publisher.js. Set enabled:false for platforms that need media until carousel/pin assets are wired in.",
+  "_note": "Per-platform posting cadence used when a social-media-manager draft is approved in the review UI. See social-publisher.js. `media` is an array of public-URL strings (relative to baseUrl) used for IG/Pinterest payloads. The first entry on Pinterest is the pin; the full list on Instagram is the carousel.",
   "userId": "69e4e9b1e77cf36803019863",
   "slot_time_utc": "14:00",
+  "baseUrl": "https://londonplanned.com",
   "platforms": {
     "facebook": {
       "accountId": "69ea716adaac253e22fb20b6_15PtxwoCpKZwf1QxFOX6_1117972548056136_page",
@@ -22,13 +23,23 @@
       "accountId": "69ea718e1fc8ae717595f363_15PtxwoCpKZwf1QxFOX6_17841429686218814",
       "days": ["Mon", "Wed", "Fri"],
       "enabled": false,
-      "_disabled_reason": "Requires media (carousel images). Flip enabled:true once carousel creative is wired into the social-publisher media field."
+      "media": [
+        "/images/social/instagram/01-marylebone.png",
+        "/images/social/instagram/02-spitalfields.png",
+        "/images/social/instagram/03-notting-hill.png",
+        "/images/social/instagram/04-bloomsbury.png",
+        "/images/social/instagram/05-bermondsey.png"
+      ],
+      "_disabled_reason": "Defaulting off until owner confirms typography placeholder is the right creative direction. Flip enabled:true to start posting these on Mon/Wed/Fri 14:00 UTC."
     },
     "pinterest": {
       "accountId": "69ea7116d5ada32331440cee_15PtxwoCpKZwf1QxFOX6_1125548269280625866_profile",
       "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       "enabled": false,
-      "_disabled_reason": "Requires media (pin image). Flip enabled:true once pin creative is wired into the social-publisher media field."
+      "media": [
+        "/images/social/pinterest/5-london-neighbourhoods-pin.png"
+      ],
+      "_disabled_reason": "Defaulting off until owner confirms typography placeholder is the right creative direction. Flip enabled:true to start daily 14:00 UTC pinning."
     }
   }
 }

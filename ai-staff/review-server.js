@@ -195,6 +195,16 @@ const server = http.createServer(async (req, res) => {
       return send(res, 200, { ok: true, newPath, git });
     }
 
+    if (req.method === 'GET' && url.pathname === '/api/scheduled-posts') {
+      try {
+        const { getScheduledQueue } = require('./social-publisher');
+        const posts = await getScheduledQueue();
+        return send(res, 200, { posts });
+      } catch (e) {
+        return send(res, 500, { error: e.message });
+      }
+    }
+
     if (req.method === 'GET' && url.pathname === '/api/agents') {
       const reg = loadRegistry();
       return send(res, 200, {

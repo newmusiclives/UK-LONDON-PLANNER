@@ -216,6 +216,16 @@ async function publishSocial(filePath) {
     };
     if (followUpComment) payload.followUpComment = followUpComment;
 
+    // Attach media URLs for platforms that need images (IG carousel, Pinterest pin).
+    // Resolved to absolute URLs via the schedule's baseUrl so GHL can fetch them.
+    if (Array.isArray(cfg.media) && cfg.media.length) {
+      const base = (sched.baseUrl || '').replace(/\/$/, '');
+      payload.media = cfg.media.map((p) => ({
+        url: p.startsWith('http') ? p : base + (p.startsWith('/') ? p : '/' + p),
+        type: 'image',
+      }));
+    }
+
     try {
       const res = await ghlPost(`/social-media-posting/${locationId}/posts`, payload);
       const id = res?.results?.post?._id;
@@ -232,4 +242,53 @@ async function publishSocial(filePath) {
   return results;
 }
 
-module.exports = { publishSocial };
+// Read-only: pull all status=scheduled posts across the accounts listed in
+// social-schedule.json, in the next 21 days. Used by the review UI's
+// "Scheduled queue" tab so the owner can see what's lined up without
+// switching to the GHL UI.
+async function getScheduledQueue() {
+  const sched = loadSchedule();
+  const locationId = process.env.GHL_LOCATION_ID;
+  if (!locationId) throw new Error('GHL_LOCATION_ID not set');
+
+  const accountToPlatform = {};
+  for (const [platform, cfg] of Object.entries(sched.platforms || {})) {
+    if (cfg && cfg.accountId) accountToPlatform[cfg.accountId] = platform;
+  }
+
+  const all = [];
+  for (const accountId of Object.keys(accountToPlatform)) {
+    try {
+      const from = new Date().toISOString();
+      const to = new Date(Date.now() + 21 * 86400000).toISOString();
+      const json = await ghlPost(`/social-media-posting/${locationId}/posts/list`, {
+        accounts: accountId,
+        type: 'scheduled',
+        postType: 'post',
+        fromDate: from,
+        toDate: to,
+        skip: '0',
+        limit: '100',
+        includeUsers: 'false',
+      });
+      const posts = json?.posts || json?.results?.posts || json?.data?.posts || [];
+      for (const p of posts) {
+        all.push({
+          id: p._id || p.id || null,
+          platform: accountToPlatform[accountId] || 'unknown',
+          accountId,
+          scheduleDate: p.scheduleDate || p.displayDate || null,
+          summary: p.summary || '',
+          status: p.status || 'scheduled',
+        });
+      }
+    } catch (e) {
+      // Skip silently — the UI tolerates partial results.
+      console.warn(`[social-publisher] queue fetch failed for ${accountId}:`, e.message);
+    }
+  }
+  all.sort((a, b) => (a.scheduleDate || '').localeCompare(b.scheduleDate || ''));
+  return all;
+}
+
+module.exports = { publishSocial, getScheduledQueue };

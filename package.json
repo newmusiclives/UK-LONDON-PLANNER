@@ -14,6 +14,10 @@
     "ai:publish-blog": "node ai-staff/blog-publisher.js",
     "ai:publish-blog:status": "node ai-staff/blog-publisher.js status",
     "ai:publish-blog:force": "node ai-staff/blog-publisher.js force",
-    "ai:publish-blog:dry-run": "node ai-staff/blog-publisher.js dry-run"
+    "ai:publish-blog:dry-run": "node ai-staff/blog-publisher.js dry-run",
+    "convert:social": "node scripts/svg-to-png.js"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
   }
 }
