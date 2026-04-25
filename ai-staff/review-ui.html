@@ -77,6 +77,22 @@
   .brief-card dd ul { margin:0; padding-left:1.1rem; }
   .brief-card dd li { margin-bottom:0.2rem; }
   .brief-sub { padding:0 !important; background:#f9fafb; border-radius:4px; padding:0.5rem 0.75rem !important; margin-top:0.25rem !important; grid-column:1 / -1; }
+
+  /* Social-media-manager layout (Poppy) */
+  .social { max-width:880px; margin:0 auto; }
+  .social-platform { background:#fff; border:1px solid var(--border); border-top:none; padding:1rem 1.5rem 1.25rem; }
+  .social-platform:last-child { border-radius:0 0 8px 8px; }
+  .social-platform__name { margin:0 0 0.85rem; font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:700; color:#fff; background:var(--platform-color, #666); display:inline-block; padding:0.25rem 0.7rem; border-radius:3px; }
+  .social-field { margin-bottom:0.85rem; }
+  .social-field:last-child { margin-bottom:0; }
+  .social-field__label { font-size:0.7rem; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; font-weight:700; margin-bottom:0.25rem; }
+  .social-field__value { background:#fafafa; border:1px solid var(--border); border-radius:4px; padding:0.65rem 0.85rem; line-height:1.55; white-space:pre-wrap; font-size:0.9rem; }
+  .social-field__item { padding:0.35rem 0; border-bottom:1px dashed #e5e7eb; }
+  .social-field__item:last-child { border-bottom:none; }
+  .social-field__value:has(.social-field__item) { padding:0 0.85rem; }
+  .social-rationale { background:#f9fafb; border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; padding:1rem 1.5rem; font-size:0.88rem; color:var(--muted); }
+  .social-rationale h4 { margin:0 0 0.5rem; color:var(--navy); font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; }
+  .social-rationale pre { background:none; border:none; padding:0; margin:0; font-family:inherit; white-space:pre-wrap; font-size:inherit; line-height:1.55; }
 </style>
 </head>
 <body>
@@ -191,6 +207,54 @@
     });
   }
 
+  function renderSocial(content) {
+    const fence = content.match(/```json\s*\n([\s\S]*?)\n```/);
+    if (!fence) return null;
+    let json;
+    try { json = JSON.parse(fence[1]); } catch { return null; }
+    const posts = json.posts || {};
+    const platformColors = {
+      instagram: '#E4405F', facebook: '#1877F2', pinterest: '#E60023',
+      threads: '#1f2937', bluesky: '#0085FF', tiktok: '#1f2937',
+      twitter: '#1DA1F2', linkedin: '#0A66C2',
+    };
+    const renderPlatformBody = (body) => Object.entries(body).map(([key, val]) => {
+      let valHtml;
+      if (Array.isArray(val)) {
+        valHtml = val.map((v) => `<div class="social-field__item">${escape(typeof v === 'string' ? v : JSON.stringify(v))}</div>`).join('');
+      } else if (val && typeof val === 'object') {
+        valHtml = `<pre>${escape(JSON.stringify(val, null, 2))}</pre>`;
+      } else {
+        valHtml = escape(String(val ?? ''));
+      }
+      return `<div class="social-field">
+        <div class="social-field__label">${escape(key.replace(/_/g, ' '))}</div>
+        <div class="social-field__value">${valHtml}</div>
+      </div>`;
+    }).join('');
+
+    const platformsHtml = Object.entries(posts).map(([p, body]) => `
+      <section class="social-platform" style="--platform-color: ${platformColors[p] || '#666'}">
+        <h3 class="social-platform__name">${escape(p)}</h3>
+        ${renderPlatformBody(body)}
+      </section>
+    `).join('');
+
+    // Anything after the JSON fence is the rationale prose Oliver/Poppy include.
+    const afterFence = content.slice(content.indexOf(fence[0]) + fence[0].length).trim();
+
+    return `
+      <article class="social">
+        <header class="brief__header">
+          <div class="brief__date">${escape(json.date || '(no date)')}${json.slot ? ' · ' + escape(json.slot) : ''}</div>
+          <h2 class="brief__thread">${escape(json.thread || '')}</h2>
+        </header>
+        ${platformsHtml}
+        ${afterFence ? `<div class="social-rationale"><h4>Rationale &amp; notes</h4><pre>${escape(afterFence)}</pre></div>` : ''}
+      </article>
+    `;
+  }
+
   function renderEditorBrief(content) {
     const fence = content.match(/```json\s*\n([\s\S]*?)\n```/);
     if (!fence) return null;
@@ -258,16 +322,15 @@
       document.getElementById('viewer-title').innerHTML = escape(rel) + ' <small>' + formatBytes(content.length) + '</small>';
       const body = document.getElementById('viewer-body');
       const isEditorBrief = /__editor-in-chief\.md$/.test(rel);
+      const isSocial = /__social-media-manager\.json$/.test(rel);
       if (ext === 'html') {
-        // Render HTML blog posts in an iframe so they show as the reader will see them.
-        // Content-writer wraps output as "---\nslug: ...\n---\n\n```html\n<html>...\n```".
-        // Strip the YAML frontmatter + code fences so the iframe sees clean HTML —
-        // same logic as blog-publisher.js stripWrapper().
-        const srcdoc = content
-          .replace(/^---[\s\S]*?---\s*/, '')
-          .replace(/```html\s*/i, '')
-          .replace(/```\s*$/, '')
-          .trim();
+        // Oliver wraps output as "```yaml\n---frontmatter---\n```\n\n```html\n<html>...```".
+        // Pull out just the contents of the html fence — robust against either
+        // raw ---frontmatter--- at start OR a separate ```yaml fence.
+        const htmlMatch = content.match(/```html\s*\n([\s\S]*?)\n```/);
+        const srcdoc = htmlMatch
+          ? htmlMatch[1].trim()
+          : content.replace(/^---[\s\S]*?---\s*/, '').replace(/```\w*\s*/g, '').replace(/```\s*$/, '').trim();
         body.innerHTML = '<iframe sandbox="" srcdoc=""></iframe>';
         body.querySelector('iframe').srcdoc = srcdoc;
       } else if (isEditorBrief) {
@@ -275,7 +338,14 @@
         if (html) {
           body.innerHTML = html;
         } else {
-          // JSON parse failed — fall back to raw view rather than showing nothing.
+          body.innerHTML = '<pre></pre>';
+          body.querySelector('pre').textContent = content;
+        }
+      } else if (isSocial) {
+        const html = renderSocial(content);
+        if (html) {
+          body.innerHTML = html;
+        } else {
           body.innerHTML = '<pre></pre>';
           body.querySelector('pre').textContent = content;
         }
