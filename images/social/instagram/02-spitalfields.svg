@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1080" height="1080" fill="#FAF7F0"/>
+  <rect x="0" y="0" width="1080" height="12" fill="#1B2A4A"/>
+  <line x1="80" y1="200" x2="180" y2="200" stroke="#C9A84C" stroke-width="3"/>
+  <text x="80" y="262" font-size="30" font-weight="700" letter-spacing="6" fill="#C9A84C">02 · SPITALFIELDS</text>
+  <text x="80" y="540" font-size="78" font-weight="700" fill="#1B2A4A">Vintage rabbit</text>
+  <text x="80" y="640" font-size="78" font-weight="700" fill="#1B2A4A">holes. Each corner</text>
+  <text x="80" y="740" font-size="78" font-weight="700" fill="#1B2A4A">a discovery.</text>
+  <text x="80" y="900" font-size="30" fill="#1B2A4A" opacity="0.75">Bookshops bleeding into galleries into coffee roasters.</text>
+  <text x="80" y="1020" font-size="22" fill="#C9A84C" letter-spacing="5">LONDON PLANNED  ·  @londonplanned</text>
+</svg>

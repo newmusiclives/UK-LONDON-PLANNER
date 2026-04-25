@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1000" height="1500" fill="#FAF7F0"/>
+  <rect x="0" y="0" width="1000" height="20" fill="#1B2A4A"/>
+  <text x="500" y="180" text-anchor="middle" font-size="26" font-weight="700" letter-spacing="8" fill="#C9A84C">LONDON PLANNED · GUIDE 01</text>
+  <line x1="450" y1="220" x2="550" y2="220" stroke="#C9A84C" stroke-width="3"/>
+  <text x="500" y="370" text-anchor="middle" font-size="84" font-weight="700" fill="#1B2A4A">5 London</text>
+  <text x="500" y="470" text-anchor="middle" font-size="84" font-weight="700" fill="#1B2A4A">neighbourhoods</text>
+  <text x="500" y="570" text-anchor="middle" font-size="84" font-weight="700" fill="#1B2A4A">to wander</text>
+  <text x="500" y="630" text-anchor="middle" font-size="42" font-weight="400" font-style="italic" fill="#1B2A4A" opacity="0.7">without a plan</text>
+  <line x1="200" y1="720" x2="800" y2="720" stroke="#C9A84C" stroke-width="2" opacity="0.4"/>
+  <g font-size="36" fill="#1B2A4A" text-anchor="middle">
+    <text x="500" y="800">Marylebone&#8201;&#8201;·&#8201;&#8201;mews lanes</text>
+    <text x="500" y="870">Spitalfields&#8201;&#8201;·&#8201;&#8201;vintage rabbit holes</text>
+    <text x="500" y="940">Notting Hill&#8201;&#8201;·&#8201;&#8201;pastel terraces</text>
+    <text x="500" y="1010">Bloomsbury&#8201;&#8201;·&#8201;&#8201;literary gardens</text>
+    <text x="500" y="1080">Bermondsey&#8201;&#8201;·&#8201;&#8201;cobbled riverside</text>
+  </g>
+  <line x1="200" y1="1180" x2="800" y2="1180" stroke="#C9A84C" stroke-width="2" opacity="0.4"/>
+  <text x="500" y="1280" text-anchor="middle" font-size="40" font-weight="400" font-style="italic" fill="#1B2A4A">No checkpoints. Just a slow morning.</text>
+  <text x="500" y="1420" text-anchor="middle" font-size="28" letter-spacing="6" fill="#C9A84C">LONDONPLANNED.COM</text>
+</svg>

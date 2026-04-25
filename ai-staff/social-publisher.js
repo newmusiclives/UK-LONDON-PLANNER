@@ -60,18 +60,52 @@ function ghlPost(reqPath, body) {
   });
 }
 
-// Walk forward from `fromUtcMs` until we hit a day in `days` at slot_time_utc.
-// Cap at 14 days so a misconfigured schedule fails fast instead of looping.
-function nextSlot({ slot_time_utc, days }, fromUtcMs) {
+// Fetch already-scheduled posts on a given account for the next 21 days so
+// we don't double-book a slot. Best-effort — failure returns [] and we
+// schedule unconditionally rather than block the approval.
+async function getOccupiedSlots(locationId, accountId) {
+  try {
+    const from = new Date().toISOString();
+    const to = new Date(Date.now() + 21 * 86400000).toISOString();
+    const json = await ghlPost(`/social-media-posting/${locationId}/posts/list`, {
+      accounts: accountId,
+      type: 'scheduled',
+      postType: 'post',
+      fromDate: from,
+      toDate: to,
+      skip: '0',
+      limit: '100',
+      includeUsers: 'false',
+    });
+    const posts = json?.posts || json?.results?.posts || json?.data?.posts || [];
+    return posts
+      .map((p) => p.scheduleDate || p.displayDate || p.publishedAt)
+      .filter(Boolean)
+      .map((d) => new Date(d).getTime())
+      .filter((t) => Number.isFinite(t));
+  } catch (e) {
+    console.warn(`[social-publisher] occupied-slots fetch failed for ${accountId}:`, e.message);
+    return [];
+  }
+}
+
+// 30-min buffer either side of an existing scheduled post counts as occupied.
+const SLOT_BUFFER_MS = 30 * 60 * 1000;
+
+// Walk forward from `fromUtcMs` until we hit a day in `days` at slot_time_utc
+// that isn't within ±30min of an already-scheduled GHL post. Cap at 28 days
+// so a misconfigured schedule (or a fully booked queue) fails fast.
+function nextSlot({ slot_time_utc, days }, fromUtcMs, occupiedMs = []) {
   const [hh, mm] = slot_time_utc.split(':').map(Number);
   const allowed = new Set(days.map((d) => DAY_TO_NUM[d]));
-  for (let offset = 1; offset <= 14; offset++) {
+  const isOccupied = (t) => occupiedMs.some((o) => Math.abs(o - t) < SLOT_BUFFER_MS);
+  for (let offset = 1; offset <= 28; offset++) {
     const d = new Date(fromUtcMs);
     d.setUTCDate(d.getUTCDate() + offset);
     d.setUTCHours(hh, mm, 0, 0);
-    if (allowed.has(d.getUTCDay())) return d;
+    if (allowed.has(d.getUTCDay()) && !isOccupied(d.getTime())) return d;
   }
-  throw new Error(`No slot in 14d for days ${JSON.stringify(days)}`);
+  throw new Error(`No free slot in 28d for days ${JSON.stringify(days)}`);
 }
 
 // Each platform's draft body has a different shape. Flatten to a single
@@ -131,6 +165,7 @@ async function publishSocial(filePath) {
   const posts = data.posts || {};
   const results = [];
   let cursor = Date.now();
+  const occupiedByAccount = {};
 
   for (const [platform, body] of Object.entries(posts)) {
     const cfg = sched.platforms?.[platform];
@@ -143,15 +178,27 @@ async function publishSocial(filePath) {
       continue;
     }
 
+    // Fetch occupied slots once per accountId. Treat as best-effort — a fetch
+    // failure leaves occupied=[] and we proceed without dedup.
+    if (!occupiedByAccount[cfg.accountId]) {
+      occupiedByAccount[cfg.accountId] = await getOccupiedSlots(locationId, cfg.accountId);
+    }
+
     let slot;
     try {
-      slot = nextSlot({ slot_time_utc: sched.slot_time_utc, days: cfg.days }, cursor);
+      slot = nextSlot(
+        { slot_time_utc: sched.slot_time_utc, days: cfg.days },
+        cursor,
+        occupiedByAccount[cfg.accountId]
+      );
     } catch (e) {
       results.push({ platform, error: e.message });
       continue;
     }
     // Stagger across platforms so two channels don't fire on the exact same minute.
     cursor = slot.getTime() + 60_000;
+    // Add this slot to occupied so subsequent platforms on the same account skip it.
+    occupiedByAccount[cfg.accountId].push(slot.getTime());
 
     const { summary, followUpComment } = flattenPlatformBody(platform, body);
     if (!summary) {
