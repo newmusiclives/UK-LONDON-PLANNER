@@ -1,0 +1,74 @@
+```json
+{
+  "date": "2026-04-27",
+  "slot": "morning",
+  "thread": "London has three weathers and one solution: knowing your refuges. 6 places locals duck into when the rain, heat, or crowds turn.",
+  "posts": {
+    "instagram": {
+      "caption": "London has three weathers. Locals know six refuges.\n\nRain, heat, or the wrong crowd—every visitor needs these corners. We've mapped them.",
+      "hashtags_first_comment": [
+        "#LondonTrip",
+        "#LondonInsider",
+        "#LondonTips",
+        "#LocalsKnow",
+        "#RainyDayLondon",
+        "#HiddenLondon"
+      ],
+      "asset_hint": "Carousel (7 slides): Cover slide with rainy window or stone arch detail + text 'London has 3 weathers. Locals know 6 refuges.' Slides 2–7: One refuge per slide. Vertical photo of the actual spot (corner, bench, doorway, reading room detail). Two-line caption per slide: refuge name + specific location descriptor (e.g. 'The Reading Room at the British Library — Euston's quiet sanctuary'). First comment includes: 'Save this for your London trip — these are the corners locals duck into. Which refuge is YOUR refuge? Drop yours below — collecting these for a follow-up.'"
+    },
+    "pinterest": {
+      "title": "Where to Escape London Rain: 6 Hidden Refuge Spots",
+      "description": "Six corners where Londoners duck when rain hits, heat peaks, or crowds close in. Insider refuges for every London weather. Save for your trip—these are the spots locals actually know.",
+      "image_ratio": "2:3"
+    },
+    "facebook": {
+      "intro": "Every London visitor needs to know this: six places locals retreat to when the weather turns or the crowds press in. We've mapped the refuges.",
+      "link": "https://londonplanned.com"
+    },
+    "threads": {
+      "posts": [
+        "London has three weathers: grey, too warm, and too many people. Locals have a system. They know six refuges—corners to duck into.\n\nDay 3 of our London Moments series. Read on.",
+        "Refuge #1: The Reading Rooms. When rain hammers the pavement, the British Library's public reading room is silence and high ceilings. No ticket needed to sit in the entry hall. Euston, but feels like a secret.",
+        "Refuge #2: The Turbine Hall corner at Tate Modern. Heat peaks? The industrial cool of Bankside, plus the space swallows crowds whole. You can stand still for an hour and no one notices.",
+        "Refuge #3: The Portico at Somerset House. Rain-covered, full of London geometry, rarely photographed. The corner near the east colonnade is where you disappear.",
+        "Refuge #4: Leadenhall Market's stone arcade. Medieval alleys that do one job: shield you. Rain, heat, or chaos—the City keeps its corners tight and tucked.",
+        "Refuge #5: The Courtyard at the V&A's east wing. Locals don't sit with the crowds in the main court. They fold into the smaller yard. Quieter light, fewer eyes.",
+        "Refuge #6: The Library at the Athenaeum. Members only—but the principle holds. Find your refuge. Know where locals actually go when London's three weathers turn.\n\nJoin the waitlist at londonplanned.com. Your London trip, curated by insiders who know the refuges.",
+        "Which refuge is *your* refuge? Tell us—we're collecting London's quiet corners for what comes next."
+      ]
+    },
+    "bluesky": {
+      "posts": [
+        "London has three weathers: grey, too warm, and too many people. Locals have a system. They know six refuges—corners to duck into.\n\nThread →",
+        "Refuge #1: The Reading Rooms at the British Library. When rain hammers down, this public hall is silence and high ceilings. Euston, but feels like a secret.",
+        "Refuge #2: The Turbine Hall corner at Tate Modern. When heat peaks, the industrial cool of Bankside swallows crowds whole. You can stand still for an hour and disappear.",
+        "Refuge #3: The Portico at Somerset House. Rain-covered, full of London geometry. The east colonnade corner is where you vanish.",
+        "Refuge #4: Leadenhall Market's stone arcade. Medieval alleys that do one job: shield you from rain, heat, or chaos. City keeps its corners tight.",
+        "Refuge #5: The V&A's east courtyard. Locals don't sit with crowds in the main court. Fold into the smaller yard instead. Quieter light.",
+        "Refuge #6: The Library at the Athenaeum. Members only—but you get the idea. Find where locals actually go when London's weathers turn.\n\nJoin the waitlist at londonplanned.com. Your London trip, curated by insiders who know the refuges."
+      ]
+    }
+  }
+}
+```
+
+---
+
+## Production notes
+
+**Instagram carousel strategy:** The cover slide establishes the hook visually (rainy window or stone arch detail), then each refuge gets its own slide with a tight location descriptor. The first comment serves as both a save prompt and a CTA for user-generated follow-up—this builds community without hard selling.
+
+**Pinterest optimisation:** Tall vertical pin (2:3) with keyword-rich title that ranks for "escape" + "rain" + "London" + "spots." Description is scannable and includes the emotional hook ("heat peaks, crowds close in") to drive click-through.
+
+**Threads + Bluesky structure:** Text-thread format, one refuge per post, natural conversational flow. The final post links back to londonplanned.com and reinforces the waitlist CTA. Bluesky mirrors Threads but compressed slightly for the platform's pace.
+
+**Facebook link share:** Minimal intro, lets the platform's carousel preview do the work (if available). Link resolves to the coming-soon page, which is gated but whitelisted.
+
+**Compliance check:**
+- ✅ No "today/this week/tonight" framing
+- ✅ No paid product mentions, prices, or tiers
+- ✅ No generic "best pubs" SEO bait
+- ✅ British Museum/V&A framed as insider utility, not primary picks
+- ✅ All links route to londonplanned.com (public gated page)
+- ✅ Waitlist CTA positioned as the single call-to-action
+- ✅ Educational/useful content (London insider knowledge, evergreen, shareable)
