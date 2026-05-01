@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We'll Never Send You to a Hot Spring That Doesn't Exist | LondonPlanned</title>
+  <meta name="description" content="A travel company just routed tourists to a fake hot spring invented by AI. It's the founding reason LondonPlanned exists. Every itinerary on this site is verified by a human who's actually been there." />
+  <meta property="og:title" content="We'll Never Send You to a Hot Spring That Doesn't Exist" />
+  <meta property="og:description" content="A travel company routed dozens of tourists to a fake geothermal wonder in the Tasmanian wilderness. The culprit? Unreviewed AI content. Here's why that matters for London travel." />
+  <meta property="og:type" content="article" />
+  <meta name="author" content="LondonPlanned" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-mid: #4a4a46;
+      --ink-light: #8a8a84;
+      --ink-faint: #d4d2ca;
+      --paper: #faf9f5;
+      --paper-mid: #f0efe9;
+      --accent: #2c2c28;
+      --rule: #d4d2ca;
+      --max-width: 700px;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header / Nav strip ── */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      padding: 1.1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .site-logo span {
+      font-weight: 400;
+      font-style: italic;
+      color: var(--ink-mid);
+    }
+
+    .site-nav {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    /* ── Article layout ── */
+    article {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* ── Kicker ── */
+    .kicker {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1.1rem;
+    }
+
+    /* ── Headline ── */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ── Deck ── */
+    .deck {
+      font-size: 1.15rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-mid);
+      margin-bottom: 2rem;
+      border-left: 3px solid var(--rule);
+      padding-left: 1.25rem;
+    }
+
+    /* ── Byline ── */
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 2.75rem;
+    }
+
+    .byline .author {
+      font-weight: 500;
+      color: var(--ink-mid);
+    }
+
+    .byline .dot { color: var(--ink-faint); }
+
+    /* ── Body copy ── */
+    .body-copy p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    .body-copy p:first-of-type::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.72;
+      margin: 0.12rem 0.12rem 0 0;
+      color: var(--ink);
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 3rem 0 0.85rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* ── Stats row ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 2.25rem 0 0.5rem;
+    }
+
+    .stat-card {
+      background: var(--paper-mid);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 1.1rem 1rem;
+      text-align: center;
+    }
+
+    .stat-card .num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .stat-card .lbl {
+      font-size: 0.7rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    .stat-source {
+      font-size: 0.72rem;
+      color: var(--ink-light);
+      margin-bottom: 1.75rem;
+      padding-left: 2px;
+    }
+
+    /* ── Pull quote ── */
+    blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--ink);
+      margin: 2.75rem 0;
+      padding: 1.5rem 1.75rem;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    blockquote cite {
+      display: block;
+      font-style: normal;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-top: 0.85rem;
+    }
+
+    /* ── Editorial pledge box ── */
+    .pledge {
+      background: var(--paper-mid);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--ink);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+      margin: 2.75rem 0;
+    }
+
+    .pledge .pledge-label {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.6rem;
+    }
+
+    .pledge p {
+      font-size: 0.95rem !important;
+      line-height: 1.7 !important;
+      color: var(--ink-mid) !important;
+      margin: 0 !important;
+    }
+
+    .pledge p::first-letter {
+      font-family: inherit !important;
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      float: none !important;
+    }
+
+    /* ── Divider ── */
+    .rule {
+      width: 48px;
+      height: 2px;
+      background: var(--rule);
+      margin: 3rem 0;
+    }
+
+    /* ── Tags ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 2.5rem;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 20px;
+      color: var(--ink-mid);
+      background: transparent;
+      text-decoration: none;
+    }
+
+    .tag:hover { background: var(--paper-mid); }
+
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    .site-footer a {
+      color: var(--ink-mid);
+      text-decoration: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      article { padding: 2.5rem 1.25rem 4rem; }
+      .stats-row { grid-template-columns: 1fr; }
+      .site-header { padding: 1rem 1.25rem; }
+      .site-nav { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="/">London<span>Planned</span></a>
+    <nav class="site-nav">Itineraries &nbsp;·&nbsp; Neighbourhoods &nbsp;·&nbsp; About</nav>
+  </header>
+
+  <article>
+
+    <p class="kicker">On trust, technology &amp; travel</p>
+
+    <h1>We'll Never Send You to a Hot Spring<br><em>That Doesn't Exist</em></h1>
+
+    <p class="deck">A travel company in Australia just accidentally routed dozens of tourists to a fake geothermal wonder in the Tasmanian wilderness. The culprit? Unreviewed AI content. The lesson? It's the founding reason LondonPlanned exists.</p>
+
+    <div class="byline">
+      <span class="author">LondonPlanned</span>
+      <span class="dot">·</span>
+      <span>May 2026</span>
+      <span class="dot">·</span>
+      <span>5 min read</span>
+    </div>
+
+    <div class="body-copy">
+
+      <p>In January 2026, a group of 24 tourists detoured across remote northeast Tasmania in pursuit of Weldborough Hot Springs — a "tranquil haven rich in therapeutic minerals," according to the travel website they'd trusted. They arrived to find a freezing river, a bewildered hotel owner, and absolutely no hot springs. Not then. Not ever. The springs had been invented, wholesale, by an AI content generator. The tour company's owner later told the Australian Broadcasting Corporation: "Our AI has messed up completely."</p>
+
+      <p>It's almost funny. Until you picture those 24 people in their hire cars, having spent hours on Tasmanian backroads on the strength of a confident, beautifully written, entirely fabricated recommendation.</p>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="num">90%</span>
+          <span class="lbl">of AI itineraries contain errors</span>
+        </div>
+        <div class="stat-card">
+          <span class="num">37%</span>
+          <span class="lbl">of tourists now use AI for travel advice</span>
+        </div>
+        <div class="stat-card">
+          <span class="num">89%</span>
+          <span class="lbl">trust AI more than travel bloggers</span>
+        </div>
+      </div>
+      <p class="stat-source">* Sources: Southern Cross University / Booking.com 2025 survey</p>
+
+      <blockquote>
+        "Tourists trust AI more than review sites. And 90% of itineraries that AI generates have mistakes in them."
+        <cite>— Anne Hardy, Adjunct Professor in Tourism, Southern Cross University</cite>
+      </blockquote>
+
+      <h2>The quiet epidemic of confident wrongness</h2>
+
+      <p>The Weldborough incident isn't a freak accident — it's a symptom. AI writing tools are extraordinarily good at producing travel content that reads with authority. Flowing prose, vivid descriptors, sensible-sounding recommendations. The problem is that generative AI doesn't verify. It pattern-matches. It produces the kind of text that would exist if the thing were real — which, for a place like Weldborough, is a near-perfect impersonation of genuine knowledge.</p>
+
+      <p>London is a different kind of problem. Unlike remote Tasmanian wilderness, London is so thoroughly documented that AI can produce plausible-sounding itineraries without obvious fabrications. But plausible isn't the same as right. The pub that was wonderful is now a chain gastropub. The "hidden" market stall has had a TripAdvisor queue since 2019. The jazz bar closes on Tuesdays. None of that makes it into the algorithm.</p>
+
+      <h2>Why LondonPlanned was built differently</h2>
+
+      <p>Every itinerary on this site is written by a human who has actually been there — recently, not theoretically. We verify opening hours. We note the things that don't photograph well but are worth your time anyway. We tell you which days to avoid and which corners are worth the detour. We have opinions, because opinions require accountability.</p>
+
+      <p>We use technology — yes, including AI tools — to help us work efficiently. But nothing leaves this site unverified by a person who'd stake their credibility on it. That's not a noble sacrifice. It's the minimum standard for a site that asks you to trust us with your time in one of the world's great cities.</p>
+
+      <div class="pledge">
+        <p class="pledge-label">Our editorial standard</p>
+        <p>Every location, venue, and experience featured on LondonPlanned has been personally verified. If something closes, changes, or disappoints — we want to know. Every itinerary carries the name of the person who verified it.</p>
+      </div>
+
+      <h2>The thing AI gets wrong about London specifically</h2>
+
+      <p>London's best experiences resist easy summarisation. The railway arch in Bermondsey where the best record dealer in the city sets up on Saturday mornings. The Soho pub that hasn't changed since 1974 and has no incentive to. The exact right time to visit Maltby Street Market before it's overrun. These aren't secrets — they're just the kind of texture that comes from knowing a place, not processing it.</p>
+
+      <p>That's the London we're building here. Specific. Verified. Argued over by people who care. No therapeutic mineral springs that don't exist. No itinerary filler. No hot springs in the Weld River.</p>
+
+      <p>Just London, as it actually is.</p>
+
+    </div><!-- /body-copy -->
+
+    <div class="rule"></div>
+
+    <div class="tags">
+      <a class="tag" href="#">AI in travel</a>
+      <a class="tag" href="#">Editorial standards</a>
+      <a class="tag" href="#">London itineraries</a>
+      <a class="tag" href="#">Travel trust</a>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <a href="/">LondonPlanned.com</a> &nbsp;·&nbsp; Human-verified London itineraries
+  </footer>
+
+</body>
+</html>
