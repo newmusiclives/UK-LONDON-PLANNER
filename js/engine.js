@@ -143,6 +143,17 @@ const Engine = {
     return selected;
   },
 
+  // Verification gate — never include a listing that's been confirmed closed.
+  // Per the listings-verification system (data/*.json verification block):
+  //   status === 'closed' is set when a reviewer marks closed in /admin/listings,
+  //   businessStatus === 'CLOSED_PERMANENTLY' is what Google Places returns and
+  //   what the mark-closed action mirrors. Either one gates the listing out.
+  isClosed(item) {
+    const v = item && item.verification;
+    if (!v) return false;
+    return v.status === 'closed' || v.businessStatus === 'CLOSED_PERMANENTLY';
+  },
+
   pickItem(type, interests, budget, preferredNeighbourhoods, used, existingActivities, period) {
     let pool;
     let budgetCategory;
@@ -160,12 +171,13 @@ const Engine = {
 
     let candidates = pool.filter(item => {
       if (used.has(item.id)) return false;
+      if (this.isClosed(item)) return false;
       if (item.budgetTier && !item.budgetTier.includes(budgetTier)) return false;
       return true;
     });
 
     if (candidates.length === 0) {
-      candidates = pool.filter(item => !used.has(item.id));
+      candidates = pool.filter(item => !used.has(item.id) && !this.isClosed(item));
     }
     if (candidates.length === 0) return null;
 
