@@ -23,7 +23,19 @@
       "single-origin filter",
       "flat white",
       "coffee beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "monmouth-coffee-covent-garden",
@@ -49,7 +61,19 @@
       "single-origin filter",
       "espresso",
       "banana bread"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "origin-coffee-shoreditch",
@@ -76,7 +100,19 @@
       "single-origin espresso",
       "flat white",
       "pour-over"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "prufrock-coffee",
@@ -102,7 +138,19 @@
       "filter coffee",
       "espresso",
       "brewing classes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "workshop-coffee-clerkenwell",
@@ -128,7 +176,19 @@
       "filter coffee",
       "flat white",
       "light roast espresso"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ozone-coffee-shoreditch",
@@ -155,7 +215,19 @@
       "flat white",
       "corn fritters",
       "brunch plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rosslyn-coffee",
@@ -181,7 +253,19 @@
       "flat white",
       "batch brew",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "watchhouse-bermondsey",
@@ -208,7 +292,19 @@
       "flat white",
       "house-baked pastries",
       "sourdough toast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "watchhouse-tower-bridge",
@@ -235,7 +331,19 @@
       "flat white",
       "pastries",
       "sourdough sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "watchhouse-spitalfields",
@@ -261,7 +369,19 @@
       "flat white",
       "cinnamon buns",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "climpson-sons",
@@ -288,7 +408,19 @@
       "espresso",
       "filter coffee",
       "coffee beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "allpress-espresso-shoreditch",
@@ -316,7 +448,19 @@
       "flat white",
       "espresso",
       "house blend"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "square-mile-roasters-cafe",
@@ -342,7 +486,19 @@
       "espresso",
       "filter coffee",
       "Red Brick blend"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dark-arts-coffee",
@@ -369,7 +525,19 @@
       "dark roast espresso",
       "cold brew",
       "coffee beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "assembly-coffee",
@@ -396,7 +564,19 @@
       "single-origin espresso",
       "filter coffee",
       "oat milk flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "store-street-espresso",
@@ -422,7 +602,19 @@
       "espresso",
       "flat white",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kaffeine",
@@ -448,7 +640,19 @@
       "flat white",
       "savoury muffins",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tab-x-tab",
@@ -475,7 +679,19 @@
       "flat white",
       "matcha latte",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "caravan-kings-cross",
@@ -502,7 +718,19 @@
       "house-roasted coffee",
       "brunch plates",
       "globally-inspired food"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "caravan-bankside",
@@ -528,7 +756,19 @@
       "house-roasted coffee",
       "shakshuka",
       "corn bread"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-attendant-fitzrovia",
@@ -556,7 +796,19 @@
       "flat white",
       "toasties",
       "specialty filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "notes-coffee-trafalgar-square",
@@ -582,7 +834,19 @@
       "espresso",
       "filter coffee",
       "natural wine"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "vagabond-coffee-highbury",
@@ -609,7 +873,19 @@
       "espresso",
       "filter coffee",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kiss-the-hippo-fitzrovia",
@@ -635,7 +911,19 @@
       "flat white",
       "oat milk latte",
       "single-origin filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "grind-shoreditch",
@@ -662,7 +950,19 @@
       "flat white",
       "espresso martini",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "grind-covent-garden",
@@ -689,7 +989,19 @@
       "flat white",
       "pastries",
       "iced latte"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "black-sheep-coffee-soho",
@@ -716,7 +1028,19 @@
       "Robusta espresso",
       "cold brew",
       "iced latte"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "department-of-coffee",
@@ -743,7 +1067,19 @@
       "flat white",
       "espresso",
       "iced coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "curators-coffee-studio",
@@ -770,7 +1106,19 @@
       "espresso",
       "filter coffee",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "timberyard-soho",
@@ -797,7 +1145,19 @@
       "flat white",
       "sandwiches",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "catalyst-cafe",
@@ -823,7 +1183,19 @@
       "flat white",
       "sourdough toast",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "campbell-syme",
@@ -849,7 +1221,19 @@
       "pour-over",
       "flat white",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "association-coffee",
@@ -875,7 +1259,19 @@
       "espresso",
       "batch brew",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "redemption-roasters",
@@ -901,7 +1297,19 @@
       "flat white",
       "single-origin espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "trade-coffee-shoreditch",
@@ -928,7 +1336,19 @@
       "flat white",
       "batch brew",
       "toasties"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rosslyn-coffee-st-pauls",
@@ -954,7 +1374,19 @@
       "flat white",
       "espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fuckoffee-bermondsey",
@@ -981,7 +1413,19 @@
       "espresso",
       "flat white",
       "americano"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "omotesando-koffee",
@@ -1008,7 +1452,19 @@
       "pour-over",
       "iced koffee",
       "Japanese pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wc-clapham",
@@ -1037,7 +1493,19 @@
       "flat white",
       "espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "curve-coffee-marylebone",
@@ -1064,7 +1532,19 @@
       "espresso",
       "flat white",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bread-ahead-borough",
@@ -1092,7 +1572,19 @@
       "doughnuts",
       "sourdough bread",
       "croissants"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bread-ahead-chelsea",
@@ -1119,7 +1611,19 @@
       "doughnuts",
       "sourdough",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "gails-bakery-hampstead",
@@ -1145,7 +1649,19 @@
       "cinnamon buns",
       "sourdough",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "gails-bakery-chelsea",
@@ -1171,7 +1687,19 @@
       "sourdough bread",
       "pastries",
       "brunch plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "gails-bakery-bloomsbury",
@@ -1197,7 +1725,19 @@
       "pastries",
       "sandwiches",
       "sourdough"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ole-and-steen-kings-cross",
@@ -1223,7 +1763,19 @@
       "cinnamon social bread",
       "Danish pastries",
       "rye bread"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "violet-cakes",
@@ -1250,7 +1802,19 @@
       "cupcakes",
       "layer cakes",
       "seasonal pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "konditor",
@@ -1276,7 +1840,19 @@
       "celebration cakes",
       "brownies",
       "German pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fabrique-shoreditch",
@@ -1303,7 +1879,19 @@
       "cardamom buns",
       "cinnamon buns",
       "sourdough"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dominique-ansel-london",
@@ -1330,7 +1918,19 @@
       "cronuts",
       "frozen s'mores",
       "cookie shots"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "jolene-newington-green",
@@ -1356,7 +1956,19 @@
       "sourdough",
       "morning buns",
       "wood-fired pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pophams-bakery-islington",
@@ -1382,7 +1994,19 @@
       "filled croissants",
       "focaccia",
       "seasonal pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "e5-bakehouse",
@@ -1408,7 +2032,19 @@
       "organic sourdough",
       "pastries",
       "brunch plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dusty-knuckle",
@@ -1435,7 +2071,19 @@
       "focaccia sandwiches",
       "sourdough",
       "pizza"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "st-john-bakery-bermondsey",
@@ -1461,7 +2109,19 @@
       "custard doughnuts",
       "Eccles cakes",
       "madeleines"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "buns-from-home",
@@ -1488,7 +2148,19 @@
       "cinnamon buns",
       "seasonal specials",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crosstown-doughnuts-soho",
@@ -1515,7 +2187,19 @@
       "sourdough doughnuts",
       "vegan doughnuts",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "paul-bakery-covent-garden",
@@ -1541,7 +2225,19 @@
       "croissants",
       "pain au chocolat",
       "tarte au citron"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "flor-bakery",
@@ -1567,7 +2263,19 @@
       "croissants",
       "sourdough",
       "crème fraiche doughnuts"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-wolseley",
@@ -1595,7 +2303,19 @@
       "full English breakfast",
       "eggs Benedict",
       "Viennoiserie"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dishoom-breakfast-kings-cross",
@@ -1621,7 +2341,19 @@
       "bacon naan roll",
       "masala chai",
       "keema per eedu"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-breakfast-club-soho",
@@ -1647,7 +2379,19 @@
       "pancake stacks",
       "full English",
       "huevos rancheros"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-breakfast-club-spitalfields",
@@ -1674,7 +2418,19 @@
       "pancakes",
       "eggs Benedict",
       "brunch cocktails"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "egg-break",
@@ -1701,7 +2457,19 @@
       "Turkish eggs",
       "shakshuka",
       "eggs royale"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "where-the-pancakes-are",
@@ -1727,7 +2495,19 @@
       "Dutch pancakes",
       "American pancakes",
       "savoury pancakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lantana-fitzrovia",
@@ -1753,7 +2533,19 @@
       "corn fritters",
       "smashed avocado",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "granger-co-notting-hill",
@@ -1779,7 +2571,19 @@
       "ricotta hotcakes",
       "scrambled eggs",
       "acai bowl"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "farm-girl-notting-hill",
@@ -1806,7 +2610,19 @@
       "rose latte",
       "smoothie bowls",
       "avocado toast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bills-covent-garden",
@@ -1832,7 +2648,19 @@
       "eggs Benedict",
       "pancakes",
       "full English"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-good-egg-stoke-newington",
@@ -1858,7 +2686,19 @@
       "challah French toast",
       "shakshuka",
       "hummus plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "sunday-islington",
@@ -1884,7 +2724,19 @@
       "seasonal brunch",
       "pastries",
       "poached eggs"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bourne-hollingsworth-buildings",
@@ -1912,7 +2764,19 @@
       "bottomless brunch",
       "shakshuka",
       "pancakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "brother-marcus-balham",
@@ -1938,7 +2802,19 @@
       "Turkish eggs",
       "halloumi fries",
       "sharing platters"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "good-and-proper-tea",
@@ -1965,7 +2841,19 @@
       "loose-leaf tea",
       "tea flights",
       "scones"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "daisy-green-marylebone",
@@ -1991,7 +2879,19 @@
       "sweetcorn fritters",
       "smashed avocado",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-haberdashery",
@@ -2019,7 +2919,19 @@
       "full English",
       "eggs royale",
       "banana pancakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "friends-of-ours-hoxton",
@@ -2046,7 +2958,19 @@
       "brunch plates",
       "flat white",
       "acai bowls"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "megan-chelsea",
@@ -2073,7 +2997,19 @@
       "shakshuka",
       "pancakes",
       "Mediterranean plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "no-197-chiswick",
@@ -2100,7 +3036,19 @@
       "eggs Benedict",
       "avocado toast",
       "pancakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fortnum-mason-tea-salon",
@@ -2128,7 +3076,19 @@
       "afternoon tea",
       "finger sandwiches",
       "scones with clotted cream"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-orangery-kensington",
@@ -2156,7 +3116,19 @@
       "afternoon tea",
       "scones",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tea-at-claridges",
@@ -2184,7 +3156,19 @@
       "afternoon tea",
       "champagne tea",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "biscuiteers-notting-hill",
@@ -2212,7 +3196,19 @@
       "hand-iced biscuits",
       "icing classes",
       "afternoon tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "sketch-tea-gallery",
@@ -2240,7 +3236,19 @@
       "afternoon tea",
       "David Shrigley art",
       "champagne"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fan-museum-tea-room",
@@ -2268,7 +3276,19 @@
       "cream tea",
       "homemade cakes",
       "loose-leaf tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "yumchaa-soho",
@@ -2294,7 +3314,19 @@
       "loose-leaf tea",
       "chai",
       "herbal infusions"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "postcard-teas",
@@ -2320,7 +3352,19 @@
       "single-estate tea",
       "Japanese green tea",
       "rare oolongs"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "t2-tea-shoreditch",
@@ -2348,7 +3392,19 @@
       "chai",
       "fruit infusions",
       "matcha"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lanka-tea-room",
@@ -2375,7 +3431,19 @@
       "Ceylon tea",
       "Sri Lankan snacks",
       "milk tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tea-at-the-ritz",
@@ -2403,7 +3471,19 @@
       "afternoon tea",
       "finger sandwiches",
       "scones"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tea-at-the-lanesborough",
@@ -2431,7 +3511,19 @@
       "afternoon tea",
       "tea sommelier",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kensington-palace-pavilion",
@@ -2458,7 +3550,19 @@
       "afternoon tea",
       "cream tea",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "peggy-porschen",
@@ -2485,7 +3589,19 @@
       "cupcakes",
       "layer cakes",
       "celebration cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "farm-girl-chelsea",
@@ -2512,7 +3628,19 @@
       "charcoal latte",
       "smoothie bowls",
       "avocado toast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "elan-cafe-knightsbridge",
@@ -2539,7 +3667,19 @@
       "elaborate cakes",
       "rose latte",
       "flower wall photos"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "saint-aymes",
@@ -2567,7 +3707,19 @@
       "unicorn hot chocolate",
       "Nutella drinks",
       "waffles"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "palm-vaults-hackney",
@@ -2594,7 +3746,19 @@
       "pink latte",
       "vegan cakes",
       "smoothie bowls"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "feya-cafe-oxford-circus",
@@ -2621,7 +3785,19 @@
       "floral lattes",
       "macarons",
       "afternoon tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-ivy-chelsea-garden",
@@ -2649,7 +3825,19 @@
       "afternoon tea",
       "brunch",
       "cocktails"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pink-zebra",
@@ -2677,7 +3865,19 @@
       "cocktails",
       "afternoon tea",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "foyles-cafe",
@@ -2705,7 +3905,19 @@
       "coffee",
       "cakes",
       "light lunches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "daunt-books-cafe-marylebone",
@@ -2733,7 +3945,19 @@
       "coffee",
       "hot chocolate",
       "browsing"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "waterstones-piccadilly-cafe",
@@ -2760,7 +3984,19 @@
       "coffee",
       "wine",
       "light bites"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-review-bookshop-cafe",
@@ -2788,7 +4024,19 @@
       "coffee",
       "cake",
       "literary events"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "libreria-shoreditch",
@@ -2817,7 +4065,19 @@
       "coffee",
       "reading space",
       "literary events"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pages-of-hackney",
@@ -2844,7 +4104,19 @@
       "coffee",
       "books",
       "community events"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "word-on-the-water",
@@ -2872,7 +4144,19 @@
       "coffee",
       "second-hand books",
       "live music"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "persephone-books-cafe",
@@ -2899,7 +4183,19 @@
       "tea",
       "cake",
       "literary browsing"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "look-mum-no-hands",
@@ -2928,7 +4224,19 @@
       "coffee",
       "craft beer",
       "bike repairs"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-book-club-shoreditch",
@@ -2957,7 +4265,19 @@
       "coffee",
       "cocktails",
       "events"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ziferblat-old-street",
@@ -2986,7 +4306,19 @@
       "unlimited coffee",
       "unlimited snacks",
       "co-working space"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "second-home-cafe",
@@ -3013,7 +4345,19 @@
       "coffee",
       "light lunches",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-fleet-street-press",
@@ -3041,7 +4385,19 @@
       "flat white",
       "batch brew",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "shoreditch-grind",
@@ -3068,7 +4424,19 @@
       "flat white",
       "espresso martini",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "brunswick-east-dalston",
@@ -3095,7 +4463,19 @@
       "flat white",
       "brunch plates",
       "smoothies"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "towpath-cafe",
@@ -3123,7 +4503,19 @@
       "seasonal cooking",
       "canal-side seating",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pavilion-cafe-victoria-park",
@@ -3151,7 +4543,19 @@
       "brunch",
       "coffee",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "greenwich-market-coffee",
@@ -3177,7 +4581,19 @@
       "espresso",
       "flat white",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "federation-coffee-brixton",
@@ -3203,7 +4619,19 @@
       "espresso",
       "flat white",
       "toasties"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "brick-lane-beigel-bake",
@@ -3230,7 +4658,19 @@
       "salt beef beigels",
       "cheesecake",
       "challah bread"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "peckham-levels-coffee",
@@ -3258,7 +4698,19 @@
       "specialty coffee",
       "street food",
       "creative space"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "old-spike-peckham",
@@ -3285,7 +4737,19 @@
       "house-roasted coffee",
       "flat white",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lardo-hackney",
@@ -3311,7 +4775,19 @@
       "coffee",
       "pizza",
       "Italian pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "koya-ko-broadway-market",
@@ -3337,7 +4813,19 @@
       "udon noodles",
       "onigiri",
       "Japanese breakfast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "press-coffee-battersea",
@@ -3364,7 +4852,19 @@
       "flat white",
       "espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "campos-coffee-vauxhall",
@@ -3390,7 +4890,19 @@
       "espresso",
       "flat white",
       "cold brew"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "st-david-coffee-house",
@@ -3416,7 +4928,19 @@
       "coffee",
       "pastries",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-counter-cafe",
@@ -3444,7 +4968,19 @@
       "homemade cakes",
       "coffee",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "coffee-works-project-angel",
@@ -3471,7 +5007,19 @@
       "espresso",
       "filter coffee",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "black-cab-coffee",
@@ -3499,7 +5047,19 @@
       "espresso",
       "flat white",
       "takeaway coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-particular-deptford",
@@ -3526,7 +5086,19 @@
       "seasonal brunch",
       "specialty coffee",
       "homemade cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "browns-of-brockley",
@@ -3552,7 +5124,19 @@
       "flat white",
       "espresso",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "brickwood-coffee-clapham",
@@ -3578,7 +5162,19 @@
       "flat white",
       "banana bread",
       "brunch plates"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ginger-and-white-hampstead",
@@ -3604,7 +5200,19 @@
       "flat white",
       "toasties",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "half-cup-fulham",
@@ -3630,7 +5238,19 @@
       "flat white",
       "avocado toast",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "maison-bertaux",
@@ -3658,7 +5278,19 @@
       "French pastries",
       "eclairs",
       "fruit tarts"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "laduree-covent-garden",
@@ -3685,7 +5317,19 @@
       "macarons",
       "pastries",
       "hot chocolate"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "angelina-london",
@@ -3712,7 +5356,19 @@
       "hot chocolate",
       "mont blanc",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "maitre-choux-south-kensington",
@@ -3739,7 +5395,19 @@
       "eclairs",
       "choux buns",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kova-patisserie-soho",
@@ -3766,7 +5434,19 @@
       "matcha pastries",
       "millefeuille",
       "yuzu cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cutter-squidge",
@@ -3793,7 +5473,19 @@
       "biskies",
       "afternoon tea",
       "seasonal cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "camden-coffee-shop",
@@ -3819,7 +5511,19 @@
       "espresso",
       "flat white",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lantana-camden",
@@ -3845,7 +5549,19 @@
       "corn fritters",
       "shakshuka",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bill-or-beak-battersea",
@@ -3871,7 +5587,19 @@
       "flat white",
       "brunch plates",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pophams-bakery-hackney",
@@ -3897,7 +5625,19 @@
       "filled croissants",
       "sourdough",
       "seasonal pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "house-of-hackney-cafe",
@@ -3924,7 +5664,19 @@
       "oat latte",
       "pastries",
       "light bites"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "campania-gastronomia-bethnal-green",
@@ -3950,7 +5702,19 @@
       "Italian coffee",
       "cannoli",
       "deli sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "monocle-cafe-marylebone",
@@ -3977,7 +5741,19 @@
       "flat white",
       "okonomiyaki",
       "Japanese-inspired dishes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-oto-dalston",
@@ -4004,7 +5780,19 @@
       "coffee",
       "cakes",
       "live experimental music"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-gentlemen-baristas",
@@ -4030,7 +5818,19 @@
       "flat white",
       "espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "flat-cap-coffee-south-bank",
@@ -4056,7 +5856,19 @@
       "flat white",
       "espresso",
       "takeaway coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "arlo-co-fulham",
@@ -4082,7 +5894,19 @@
       "flat white",
       "brunch plates",
       "smoothies"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "barge-house-south-bank",
@@ -4109,7 +5933,19 @@
       "coffee",
       "brunch",
       "cocktails"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "greenberry-cafe-primrose-hill",
@@ -4135,7 +5971,19 @@
       "flat white",
       "shakshuka",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "melrose-morgan-primrose-hill",
@@ -4161,7 +6009,19 @@
       "deli sandwiches",
       "seasonal salads",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "workshop-clerkenwell",
@@ -4188,7 +6048,19 @@
       "single-origin espresso",
       "filter",
       "pour-over"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "workshop-marylebone",
@@ -4214,7 +6086,19 @@
       "flat white",
       "cold brew",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "workshop-fitzrovia",
@@ -4240,7 +6124,19 @@
       "espresso",
       "filter",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "allpress-shoreditch",
@@ -4267,7 +6163,19 @@
       "flat white",
       "long black",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "allpress-dalston",
@@ -4293,7 +6201,19 @@
       "espresso",
       "beans",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "climpsons-and-sons",
@@ -4319,7 +6239,19 @@
       "flat white",
       "cold brew",
       "beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "counter-notting",
@@ -4345,7 +6277,19 @@
       "hot chocolate",
       "flat white",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kaffeine-tottenham",
@@ -4371,7 +6315,19 @@
       "flat white",
       "filter",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kaffeine-eastcastle",
@@ -4397,7 +6353,19 @@
       "flat white",
       "salad",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fernandez-wells",
@@ -4423,7 +6391,19 @@
       "sandwiches",
       "espresso",
       "wine"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fernandez-wells-somerset",
@@ -4449,7 +6429,19 @@
       "cakes",
       "sandwiches",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "granger-clerkenwell",
@@ -4475,7 +6467,19 @@
       "brunch",
       "ricotta hotcakes",
       "matcha"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "granger-notting",
@@ -4501,7 +6505,19 @@
       "brunch",
       "ricotta hotcakes",
       "matcha"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-breakfast-club",
@@ -4527,7 +6543,19 @@
       "pancakes",
       "full english",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hally-nuts",
@@ -4553,7 +6581,19 @@
       "brunch",
       "avocado toast",
       "acai bowls"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "farm-girl",
@@ -4580,7 +6620,19 @@
       "brunch",
       "rose latte",
       "avocado toast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "farm-girl-fitzrovia",
@@ -4607,7 +6659,19 @@
       "brunch",
       "rose latte",
       "matcha"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lanark-coffee",
@@ -4633,7 +6697,19 @@
       "flat white",
       "banana bread",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rapha-clubhouse",
@@ -4660,7 +6736,19 @@
       "flat white",
       "pastries",
       "live cycling"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pophams-bakery",
@@ -4687,7 +6775,19 @@
       "croissants",
       "danishes",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pophams-fields",
@@ -4714,7 +6814,19 @@
       "croissants",
       "pasta",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bread-ahead",
@@ -4740,7 +6852,19 @@
       "doughnuts",
       "sourdough",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dominique-ansel-bakery",
@@ -4766,7 +6890,19 @@
       "cronut",
       "DKA",
       "s'mores"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "maitre-choux",
@@ -4793,7 +6929,19 @@
       "eclairs",
       "choux",
       "religieuses"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bageriet",
@@ -4820,7 +6968,19 @@
       "cardamom buns",
       "kanelbullar",
       "prinsesstårta"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "nordic-bakery",
@@ -4847,7 +7007,19 @@
       "cinnamon rolls",
       "open sandwiches",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "nordic-bakery-marylebone",
@@ -4874,7 +7046,19 @@
       "cinnamon rolls",
       "rye bread",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "gail-s-bakery",
@@ -4901,7 +7085,19 @@
       "sourdough",
       "almond croissant",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ole-steen",
@@ -4927,7 +7123,19 @@
       "cinnamon social",
       "pastries",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "jolene-bakery",
@@ -4954,7 +7162,19 @@
       "sourdough",
       "pastries",
       "brioche"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "little-bread-pedlar",
@@ -4981,7 +7201,19 @@
       "sourdough",
       "focaccia",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "honestburgers-breakfast",
@@ -5007,7 +7239,19 @@
       "rare teas",
       "tasting flights",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rare-tea-cellar",
@@ -5033,7 +7277,19 @@
       "single-estate teas",
       "workshops",
       "tastings"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "mariage-freres",
@@ -5060,7 +7316,19 @@
       "french tea",
       "afternoon tea",
       "tea tasting"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "sketch-gallery-tea",
@@ -5087,7 +7355,19 @@
       "afternoon tea",
       "macarons",
       "art"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dishoom-shoreditch-breakfast",
@@ -5113,7 +7393,19 @@
       "bacon naan",
       "house chai",
       "akuri"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "milk-beyond",
@@ -5139,7 +7431,19 @@
       "ricotta hotcakes",
       "avocado toast",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "mamos",
@@ -5165,7 +7469,19 @@
       "brunch",
       "pancakes",
       "vegan"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "esters-stoke-newington",
@@ -5191,7 +7507,19 @@
       "tartines",
       "eggs benedict",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ottos-coffee-stokey",
@@ -5217,7 +7545,19 @@
       "shakshuka",
       "laffa",
       "mezze"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-good-egg-soho",
@@ -5243,7 +7583,19 @@
       "shakshuka",
       "laffa",
       "turkish eggs"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hackney-coffee-co",
@@ -5270,7 +7622,19 @@
       "flat white",
       "grilled cheese",
       "vinyl"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "notes-coffee-trafalgar",
@@ -5297,7 +7661,19 @@
       "flat white",
       "lunch",
       "wine by night"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "notes-coffee-paddington",
@@ -5324,7 +7700,19 @@
       "flat white",
       "espresso",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "timberyard-seven-dials",
@@ -5351,7 +7739,19 @@
       "flat white",
       "avocado toast",
       "lunch salads"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "flat-white-soho",
@@ -5378,7 +7778,19 @@
       "flat white",
       "long black",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "coffee-plant",
@@ -5405,7 +7817,19 @@
       "fair-trade coffee",
       "flat white",
       "beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fortitude-bakehouse",
@@ -5431,7 +7855,19 @@
       "sourdough",
       "pastries",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "black-bear-burrito",
@@ -5457,7 +7893,19 @@
       "shakshuka",
       "avocado toast",
       "french toast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "balthazar-boulangerie",
@@ -5484,7 +7932,19 @@
       "croissants",
       "pain au chocolat",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pret-fleet",
@@ -5510,7 +7970,19 @@
       "brunch",
       "cornbread",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "department-cafe",
@@ -5536,7 +8008,19 @@
       "flat white",
       "filter",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "brew-lab-covent",
@@ -5562,7 +8046,19 @@
       "filter",
       "pour-over",
       "brewing classes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dose-espresso",
@@ -5588,7 +8084,19 @@
       "espresso",
       "flat white",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "dose-charterhouse",
@@ -5614,7 +8122,19 @@
       "flat white",
       "pastries",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tapped-tottenham",
@@ -5640,7 +8160,19 @@
       "single-origin",
       "matcha",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "attendant",
@@ -5668,7 +8200,19 @@
       "flat white",
       "breakfast",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "grind-holborn",
@@ -5694,7 +8238,19 @@
       "flat white",
       "brunch",
       "cocktails"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bao-london-cafe",
@@ -5720,7 +8276,19 @@
       "bao",
       "matcha",
       "rice bowls"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "soho-coffee",
@@ -5746,7 +8314,19 @@
       "flat white",
       "filter",
       "social enterprise"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "caffe-forum",
@@ -5773,7 +8353,19 @@
       "espresso",
       "cappuccino",
       "panini"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "algerian-coffee",
@@ -5800,7 +8392,19 @@
       "beans",
       "filter",
       "espresso"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "twinings-shop",
@@ -5827,7 +8431,19 @@
       "english breakfast",
       "earl grey",
       "tasting bar"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cutter-and-squidge",
@@ -5854,7 +8470,19 @@
       "biskies",
       "rainbow cakes",
       "afternoon tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rasa",
@@ -5881,7 +8509,19 @@
       "chocolate cakes",
       "hot chocolate",
       "afternoon tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hummingbird-bakery",
@@ -5908,7 +8548,19 @@
       "red velvet",
       "brownies",
       "banoffee pie"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crosstown-doughnuts",
@@ -5934,7 +8586,19 @@
       "doughnuts",
       "coffee",
       "vegan options"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kova-patisserie",
@@ -5961,7 +8625,19 @@
       "matcha",
       "mochi",
       "mille-feuille"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-zenon",
@@ -5988,7 +8664,19 @@
       "sandwiches",
       "flat white",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "soane-nursery",
@@ -6016,7 +8704,19 @@
       "cakes",
       "sandwiches",
       "tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "british-library-cafe",
@@ -6043,7 +8743,19 @@
       "sandwiches",
       "cakes",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-wallace",
@@ -6070,7 +8782,19 @@
       "afternoon tea",
       "lunch",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-in-the-crypt",
@@ -6098,7 +8822,19 @@
       "english stew",
       "cakes",
       "soups"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bourne-hollingsworth",
@@ -6125,7 +8861,19 @@
       "brunch",
       "cocktails",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "regency-cafe",
@@ -6152,7 +8900,19 @@
       "full english",
       "bubble and squeak",
       "tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pellicci",
@@ -6179,7 +8939,19 @@
       "fry-ups",
       "pasta",
       "english breakfast"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "norman-s-cafe",
@@ -6205,7 +8977,19 @@
       "full english",
       "bread and butter pudding",
       "tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "river-cottage-canteen",
@@ -6231,7 +9015,19 @@
       "seasonal",
       "sustainable",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "peggy-porschen-chelsea",
@@ -6258,7 +9054,19 @@
       "cupcakes",
       "cakes",
       "afternoon tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lanesborough-afternoon",
@@ -6285,7 +9093,19 @@
       "afternoon tea",
       "cream tea",
       "royal warrant"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-in-park",
@@ -6312,7 +9132,19 @@
       "sandwiches",
       "cakes",
       "takeaway"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pavilion-cafe-victoria",
@@ -6339,7 +9171,19 @@
       "full english",
       "cakes",
       "tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pavilion-cafe-highbury",
@@ -6366,7 +9210,19 @@
       "sandwiches",
       "cakes",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-lago-battersea",
@@ -6393,7 +9249,19 @@
       "sandwiches",
       "cakes",
       "tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kiosk-cafe-holland",
@@ -6420,7 +9288,19 @@
       "sandwiches",
       "cakes",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "primrose-bakery",
@@ -6447,7 +9327,19 @@
       "cupcakes",
       "brownies",
       "birthday cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "choccywoccy-soho",
@@ -6474,7 +9366,19 @@
       "pie and mash",
       "jellied eels",
       "liquor"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tea-palace",
@@ -6501,7 +9405,19 @@
       "afternoon tea",
       "champagne tea",
       "rare teas"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-murano-bermondsey",
@@ -6527,7 +9443,19 @@
       "pasta",
       "antipasti",
       "espresso"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-delaunay-counter",
@@ -6553,7 +9481,19 @@
       "viennese pastries",
       "coffee",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "prufrock-chancery",
@@ -6580,7 +9520,19 @@
       "espresso",
       "filter",
       "brewing classes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "square-mile-shoreditch",
@@ -6606,7 +9558,19 @@
       "single-origin",
       "beans",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "story-coffee",
@@ -6632,7 +9596,19 @@
       "flat white",
       "borek",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "reeves-and-sutch",
@@ -6658,7 +9634,19 @@
       "sourdough",
       "croissants",
       "laminated pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "jolly-good-sandwich",
@@ -6684,7 +9672,19 @@
       "british pies",
       "mash",
       "gravy"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-dalston-jawbone",
@@ -6710,7 +9710,19 @@
       "brunch",
       "sandwiches",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "climpsons-arch",
@@ -6736,7 +9748,19 @@
       "flat white",
       "wood-fire pizza",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-riding-house",
@@ -6762,7 +9786,19 @@
       "brunch",
       "pancakes",
       "crab burger"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ozone-hackney",
@@ -6788,7 +9824,19 @@
       "brunch",
       "flat white",
       "beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "damson-duck",
@@ -6814,7 +9862,19 @@
       "brunch",
       "crumpets",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-modern-pantry",
@@ -6840,7 +9900,19 @@
       "brunch",
       "sugar-cured omelette",
       "fusion"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "duddells-london",
@@ -6866,7 +9938,19 @@
       "dim sum",
       "bottomless brunch",
       "cantonese"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "afternoon-tea-palm-court",
@@ -6894,7 +9978,19 @@
       "afternoon tea",
       "royal warrant",
       "champagne"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fashion-cafe-selfridges",
@@ -6921,7 +10017,19 @@
       "lunch",
       "afternoon tea",
       "cocktails"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "selfridges-food-hall",
@@ -6950,7 +10058,19 @@
       "global food counters",
       "wine",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fortnum-tea-parlour",
@@ -6977,7 +10097,19 @@
       "afternoon tea",
       "scones",
       "loose-leaf tea"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-royal-tea",
@@ -7005,7 +10137,19 @@
       "afternoon tea",
       "champagne tea",
       "literary"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kew-orangery",
@@ -7032,7 +10176,19 @@
       "afternoon tea",
       "lunch",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "park-cafe-richmond",
@@ -7059,7 +10215,19 @@
       "afternoon tea",
       "scones",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-roasters-bank",
@@ -7085,7 +10253,19 @@
       "flat white",
       "filter",
       "beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pharmacy-brixton",
@@ -7111,7 +10291,19 @@
       "flat white",
       "espresso",
       "filter"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bread-ahead-wembley",
@@ -7138,7 +10330,19 @@
       "doughnuts",
       "sourdough",
       "classes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-curator-pub",
@@ -7164,7 +10368,19 @@
       "breakfast",
       "cakes",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hoxton-hotel-lobby",
@@ -7190,7 +10406,19 @@
       "coffee",
       "pastries",
       "coworking"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "host-cafe",
@@ -7218,7 +10446,19 @@
       "flat white",
       "pastries",
       "church setting"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lover-of-coffee",
@@ -7245,7 +10485,19 @@
       "flat white",
       "pastries",
       "beans"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "workshop-coffee-barfly",
@@ -7273,7 +10525,19 @@
       "cocktails",
       "coffee",
       "views"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cafe-design-museum",
@@ -7300,7 +10564,19 @@
       "sandwiches",
       "salads",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pavilion-cafe-dalston",
@@ -7328,7 +10604,19 @@
       "brunch",
       "coffee",
       "family"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pipes-and-gates",
@@ -7354,7 +10642,19 @@
       "pizza al taglio",
       "focaccia",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "roastery-lane",
@@ -7380,7 +10680,19 @@
       "flat white",
       "filter",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "koya-ko",
@@ -7406,7 +10718,19 @@
       "udon",
       "sandwiches",
       "miso"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crystal-palace-cafe",
@@ -7433,7 +10757,19 @@
       "tea",
       "sandwiches",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "roku-kaiseki",
@@ -7459,7 +10795,19 @@
       "wagyu sando",
       "rice bowls",
       "matcha"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "caravan-covent",
@@ -7485,7 +10833,19 @@
       "brunch",
       "cornbread",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crossrail-place-cafe",
@@ -7511,7 +10871,19 @@
       "pasta",
       "pizza",
       "espresso"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "clerkenwell-ccs",
@@ -7537,7 +10909,19 @@
       "espresso",
       "macchiato",
       "cornetti"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pergola-popups",
@@ -7564,7 +10948,19 @@
       "flat white",
       "cakes",
       "canal seating"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "spitalfields-pantry",
@@ -7591,7 +10987,19 @@
       "sandwiches",
       "cakes",
       "coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "st-james-park-cafe",
@@ -7618,7 +11026,19 @@
       "sandwiches",
       "cakes",
       "lake views"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "serpentine-bar-kitchen",
@@ -7645,7 +11065,19 @@
       "sandwiches",
       "cakes",
       "terrace seating"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-vaults-hackney",
@@ -7672,7 +11104,19 @@
       "organic salads",
       "cakes",
       "brunch"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "black-cat-cafe",
@@ -7698,7 +11142,19 @@
       "vegan",
       "curry",
       "daily specials"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "fhior",
@@ -7724,7 +11180,19 @@
       "cardamom buns",
       "smorgas",
       "filter coffee"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hummingbird-soho",
@@ -7751,7 +11219,19 @@
       "cupcakes",
       "red velvet",
       "brownies"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "choccywoccy-brighton",
@@ -7778,7 +11258,19 @@
       "chocolate cakes",
       "brownies",
       "hot chocolate"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hayward-cafe",
@@ -7804,7 +11296,19 @@
       "brunch",
       "cornbread",
       "flat white"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "paul-patisserie",
@@ -7830,7 +11334,19 @@
       "baguettes",
       "croissants",
       "sandwiches"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pret-originals",
@@ -7857,7 +11373,19 @@
       "sandwiches",
       "salads",
       "soup"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pret-flagship",
@@ -7883,7 +11411,19 @@
       "bowls",
       "breakfast pots",
       "wraps"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wahaca-soho",
@@ -7910,7 +11450,19 @@
       "tacos",
       "burritos",
       "margaritas"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pho-kings",
@@ -7936,7 +11488,19 @@
       "pho",
       "summer rolls",
       "banh mi"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ottolenghi-notting-hill",
@@ -7962,7 +11526,19 @@
       "salads",
       "cakes",
       "takeaway"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ottolenghi-spitalfields",
@@ -7988,7 +11564,19 @@
       "mezze",
       "salads",
       "cakes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ember-bakery",
@@ -8015,7 +11603,19 @@
       "sourdough",
       "sandwiches",
       "pastries"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "snowflake-gelato",
@@ -8041,6 +11641,18 @@
       "gelato",
       "sorbet",
       "crepes"
-    ]
+    ],
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   }
 ]

@@ -23,7 +23,19 @@
     "address": "Unit 12, Ravenswood Industrial Estate, London E17 9HQ",
     "tips": "Open Fri-Sun only. The Rolling Scones Café inside serves tea and cake.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=God's%20Own%20Junkyard%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-viktor-wynd",
@@ -51,7 +63,19 @@
     "address": "11 Mare St, London E8 4RP",
     "tips": "Combined museum-plus-cocktail tickets available. Tuesday nights feature taxidermy workshops.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Last%20Tuesday%20Society%20(Viktor%20Wynd%20Museum)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-crossrail-cave",
@@ -78,7 +102,19 @@
     "address": "Belvedere Rd, London SE2 9AQ",
     "tips": "Steaming days are special — book ahead. Abbey Wood Elizabeth Line station.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Crossness%20Pumping%20Station%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-leake-street",
@@ -104,7 +140,19 @@
     "address": "Leake St, London SE1 7NN",
     "tips": "Street-food vendors and bars inside the arches. Artists often at work on Saturdays.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Leake%20Street%20Graffiti%20Tunnel%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-crystal-palace-subway",
@@ -131,7 +179,19 @@
     "address": "Crystal Palace Parade, London SE19 1UF",
     "tips": "Open select heritage days only — including Open House London.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Crystal%20Palace%20Subway%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-severndroog",
@@ -158,7 +218,19 @@
     "address": "Castle Wood, London SE18 3RT",
     "tips": "Open first Sunday of the month and heritage days. Woolwich is nearest station.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Severndroog%20Castle%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-dunstan-east",
@@ -185,7 +257,19 @@
     "address": "St Dunstan's Hill, London EC3R 5DD",
     "tips": "Free. Quiet on weekends. Photogenic in any season.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Dunstan%20in%20the%20East%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-pickering-place",
@@ -211,7 +295,19 @@
     "address": "Pickering Pl, London SW1A 1EG",
     "tips": "Access through the narrow passage beside Berry Bros & Rudd wine merchants.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Pickering%20Place%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-goodwin-court",
@@ -238,7 +334,19 @@
     "address": "Goodwin's Ct, London WC2N 4LL",
     "tips": "Best photographed at dusk when the gas lamps come on.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Goodwin's%20Court%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-brydges-place",
@@ -264,7 +372,19 @@
     "address": "Brydges Pl, London WC2N 4HP",
     "tips": "You may need to go sideways.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Brydges%20Place%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-crosby-square",
@@ -290,7 +410,19 @@
     "address": "Chiswell St area, London EC1",
     "tips": "Street art moves — check current locations online before visiting.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Crosby%20Square%20Banksy%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-red-phone-box-row",
@@ -316,7 +448,19 @@
     "address": "Broad Ct, London WC2B 5QZ",
     "tips": "Opposite the Royal Opera House stage door — often spotted by dancers.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Red%20Phone%20Box%20Row%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-cabman-shelters",
@@ -341,7 +485,19 @@
     "address": "Kensington Rd, London SW7 1LA",
     "tips": "For use by licensed cabbies only — but you can admire from outside.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Cabmen's%20Shelter%20Kensington%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-parakeet-spot",
@@ -367,7 +523,19 @@
     "address": "Kensington Gardens, London W2",
     "tips": "Bring apples or seeds — they'll land on your hand.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Green%20Parakeet%20Spotting%2C%20Kensington%20Gardens%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-boundary-stones",
@@ -392,7 +560,19 @@
     "address": "Various outer London locations",
     "tips": "Check the 'Coal Tax Posts' website for the current locations.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Coal%20Tax%20Posts%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-seven-noses",
@@ -418,7 +598,19 @@
     "address": "Various locations, Soho",
     "tips": "Treasure-hunt clues on 'Secret London' blog.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Seven%20Noses%20of%20Soho%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-cleopatra-needle",
@@ -444,7 +636,19 @@
     "address": "Victoria Embankment, London WC2N 6PB",
     "tips": "Look for the WWI shrapnel scars on the nearby sphinxes.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cleopatra's%20Needle%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-walkie-talkie-burns",
@@ -470,7 +674,19 @@
     "address": "Eastcheap, London EC3M",
     "tips": "Sunscreens were added to fix the death-ray effect.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Walkie%20Talkie%20Scorch%20Mark%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-roman-mithraeum",
@@ -496,7 +712,19 @@
     "address": "12 Walbrook, London EC4N 8AA",
     "tips": "Free but book ahead — timed entry. Allow time for the contemporary art exhibition upstairs.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Mithraeum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-london-stone",
@@ -521,7 +749,19 @@
     "address": "111 Cannon St, London EC4N 5AR",
     "tips": "Visible 24 hours through the grille. Shakespeare mentioned it in Henry VI.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Stone%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-roman-bath",
@@ -546,7 +786,19 @@
     "address": "5 Strand Ln, London WC2R 2NA",
     "tips": "Opens rarely — check National Trust website. Mentioned in Dickens's 'David Copperfield'.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Roman%20Bath%20Strand%20Lane%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-tower-hill-wall",
@@ -572,7 +824,19 @@
     "address": "Cooper's Row, London EC3N 2RE",
     "tips": "Free, public, 24/7. Best seen in natural light.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Roman%20City%20Wall%20at%20Tower%20Hill%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-ethelburga",
@@ -598,7 +862,19 @@
     "address": "78 Bishopsgate, London EC2N 4AG",
     "tips": "Free. Tuesday-Thursday 12-4pm. Garden tent out back.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Ethelburga's%20Centre%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-olave",
@@ -625,7 +901,19 @@
     "address": "8 Hart St, London EC3R 7NB",
     "tips": "Free. Don't miss Pepys's memorial to his wife inside.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Olave%20Hart%20Street%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-postman-park",
@@ -651,7 +939,19 @@
     "address": "King Edward St, London EC1A 7BT",
     "tips": "Read every tile — each is a story. The park is a named 'Magnificent Seven' hidden garden.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Watts%20Memorial%2C%20Postman's%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-dennis-severs",
@@ -677,7 +977,19 @@
     "address": "18 Folgate St, London E1 6BX",
     "tips": "Silent tour only. No phones. Candle-lit evenings (£20) are magical.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Dennis%20Severs'%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-18-stafford",
@@ -704,7 +1016,19 @@
     "address": "18 Stafford Terrace, London W8 7BH",
     "tips": "Wednesday-Sunday. Timed entry.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=18%20Stafford%20Terrace%20(Sambourne%20House)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-charterhouse",
@@ -730,7 +1054,19 @@
     "address": "Charterhouse Square, London EC1M 6AN",
     "tips": "Guided tour only — book weeks ahead. Chapel free to visit.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Charterhouse%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-two-temple-place",
@@ -757,7 +1093,19 @@
     "address": "2 Temple Pl, London WC2R 3BD",
     "tips": "Only open Jan-April when hosting exhibitions. Free entry.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Two%20Temple%20Place%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-leighton-house",
@@ -784,7 +1132,19 @@
     "address": "12 Holland Park Rd, London W14 8LZ",
     "tips": "Arab Hall is the show-stopper. Closed Tuesdays.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Leighton%20House%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-18-folgate",
@@ -810,7 +1170,19 @@
     "address": "18 Folgate St, London E1 6BX",
     "tips": "Tickets Mondays/Wednesdays. Silence strictly enforced.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Dennis%20Severs'%20Silent%20Night%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-mail-rail",
@@ -836,7 +1208,19 @@
     "address": "15-20 Phoenix Pl, London WC1X 0DA",
     "tips": "Book Mail Rail tickets ahead. Entry includes the museum above.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Postal%20Museum%20Mail%20Rail%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-hidden-london-tours",
@@ -862,7 +1246,19 @@
     "address": "Various disused stations",
     "tips": "Book 3 months ahead — sell out within an hour.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Hidden%20London%20Underground%20Tours%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-brunel-museum",
@@ -889,7 +1285,19 @@
     "address": "Railway Ave, London SE16 4LF",
     "tips": "Rotherhithe Overground. Shaft concerts and tours monthly.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Brunel%20Museum%20%26%20Thames%20Tunnel%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-wapping-hydraulic",
@@ -915,7 +1323,19 @@
     "address": "Wapping Wall, London E1W 3SF",
     "tips": "Exterior visible anytime. Occasionally open for events.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wapping%20Hydraulic%20Power%20Station%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-london-hide",
@@ -941,7 +1361,19 @@
     "address": "Morden Hall Park, Morden SM4 5JD",
     "tips": "National Trust. Free entry.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Watermill%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-camley-st",
@@ -967,7 +1399,19 @@
     "address": "12 Camley St, London N1C 4PW",
     "tips": "London Wildlife Trust. Community-built. Free.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Camley%20Street%20Natural%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-phoenix-garden",
@@ -992,7 +1436,19 @@
     "address": "21 Stacey St, London WC2H 8DG",
     "tips": "Tucked away off Stacey Street — easily missed.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Phoenix%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-kyoto-garden",
@@ -1017,7 +1473,19 @@
     "address": "Ilchester Pl, London W8 6LU",
     "tips": "Quietest on weekday mornings.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Kyoto%20Garden%20Holland%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-barbican-conservatory",
@@ -1043,7 +1511,19 @@
     "address": "Silk St, London EC2Y 8DS",
     "tips": "Typically Sundays/bank holidays only. Free.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Barbican%20Conservatory%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-pergola-hampstead",
@@ -1069,7 +1549,19 @@
     "address": "The Pergola, London NW3 7EX",
     "tips": "Free. Accessed via Jack Straw's Castle pub.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Hill%20Garden%20and%20Pergola%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-chelsea-physic-garden",
@@ -1095,7 +1587,19 @@
     "address": "66 Royal Hospital Rd, London SW3 4HS",
     "tips": "Closed winters (Nov-Feb).",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Chelsea%20Physic%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-garden-museum",
@@ -1122,7 +1626,19 @@
     "address": "5 Lambeth Palace Rd, London SE1 7LB",
     "tips": "Café in the former churchyard is lovely.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Garden%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-pergola-on-roof",
@@ -1149,7 +1665,19 @@
     "address": "Crossrail Pl, London E14 5AR",
     "tips": "Free. Access from Canary Wharf Crossrail station.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Crossrail%20Place%20Roof%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-gods-house",
@@ -1175,7 +1703,19 @@
     "address": "Southampton (day-trip destination)",
     "tips": "1.5h train from Waterloo.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=God's%20House%20Tower%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-pancras-statue",
@@ -1202,7 +1742,19 @@
     "address": "St Pancras Station, London N1C 4QL",
     "tips": "Near Platform 1. Below the roof he celebrated.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=John%20Betjeman%20Statue%2C%20St%20Pancras%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-paddington-bear-statue",
@@ -1229,7 +1781,19 @@
     "address": "Paddington Station, London W2 1HB",
     "tips": "Free. Near the 'Platform 1 help point'.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Paddington%20Bear%20Statue%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-peter-pan-statue",
@@ -1256,7 +1820,19 @@
     "address": "Kensington Gardens, London W2",
     "tips": "Kids can climb on parts of the plinth.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Peter%20Pan%20Statue%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-goodwins-ghost",
@@ -1282,7 +1858,19 @@
     "address": "Victoria Embankment, London WC2N 6PB",
     "tips": "Date of 4 September 1917 bombing is marked.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sphinxes%20at%20Cleopatra's%20Needle%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-newton-statue-bl",
@@ -1308,7 +1896,19 @@
     "address": "96 Euston Rd, London NW1 2DB",
     "tips": "Free. Courtyard of the British Library.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Isaac%20Newton%20Statue%20at%20British%20Library%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-fighter-boys",
@@ -1334,7 +1934,19 @@
     "address": "Victoria Embankment, London SW1A 2JH",
     "tips": "Free. Lit dramatically at night.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Battle%20of%20Britain%20Memorial%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-ss-mendi-memorial",
@@ -1360,7 +1972,19 @@
     "address": "South Bank, London SE1",
     "tips": "Check Southwark Council website for current location.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Memorial%20to%20the%20Sinking%20of%20the%20SS%20Mendi%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-conscientious-objectors",
@@ -1386,7 +2010,19 @@
     "address": "Tavistock Square, London WC1H 9JH",
     "tips": "Also: Gandhi statue in the same square.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Conscientious%20Objectors'%20Stone%2C%20Tavistock%20Square%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-seven-7-memorial",
@@ -1412,7 +2048,19 @@
     "address": "Hyde Park, London W2 2UH",
     "tips": "Near Lovers' Walk. Bronze plaque lists all 52 names.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=7%2F7%20Bombing%20Memorial%2C%20Hyde%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-sarah-parker",
@@ -1437,7 +2085,19 @@
     "address": "13 Lincoln's Inn Fields, London WC2A 3BP",
     "tips": "Hyde Park south side.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sarah%20Parker%20Remond%20Memorial%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-unknown-london-sign",
@@ -1463,7 +2123,19 @@
     "address": "Procter St, London WC1V",
     "tips": "London Ghost Signs blog catalogues dozens more.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Holborn%20Ghost%20Sign%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-ghost-signs-spit",
@@ -1489,7 +2161,19 @@
     "address": "Fournier St, London E1",
     "tips": "Self-guided walk on London Ghost Signs blog.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Spitalfields%20Ghost%20Signs%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-ghost-signs-shoreditch",
@@ -1515,7 +2199,19 @@
     "address": "Redchurch St, London E2",
     "tips": "Combine with the Brick Lane street-art walk.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Shoreditch%20Ghost%20Signs%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-hatton-ghost",
@@ -1541,7 +2237,19 @@
     "address": "Leather Ln, London EC1N",
     "tips": "Free, visible anytime.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Leather%20Lane%20Ghost%20Sign%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-pancras-gothic",
@@ -1568,7 +2276,19 @@
     "address": "Euston Rd, London NW1 2AR",
     "tips": "Buy a drink at the Booking Office Bar for interior access.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Pancras%20Renaissance%20Hotel%20Interior%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-finsbury-estate",
@@ -1594,7 +2314,19 @@
     "address": "Rowley Way, London NW8 0SN",
     "tips": "Respect residents — no interior access.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Alexandra%20Road%20Estate%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-trellick-tower",
@@ -1621,7 +2353,19 @@
     "address": "5 Golborne Rd, London W10 5PL",
     "tips": "Free to view exterior. Combine with Portobello Road Market.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Trellick%20Tower%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-strawberry-hill",
@@ -1647,7 +2391,19 @@
     "address": "268 Waldegrave Rd, Twickenham TW1 4ST",
     "tips": "Closed Mon-Tue. Strawberry Hill station adjacent.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Strawberry%20Hill%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-red-house",
@@ -1674,7 +2430,19 @@
     "address": "Red House Lane, Bexleyheath DA6 8JF",
     "tips": "National Trust. Book guided tour to see murals.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Red%20House%20(William%20Morris)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-2-willow",
@@ -1701,7 +2469,19 @@
     "address": "2 Willow Rd, London NW3 1TH",
     "tips": "National Trust. Small tours only — book ahead.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=2%20Willow%20Road%20(Goldfinger%20House)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-fan-museum",
@@ -1727,7 +2507,19 @@
     "address": "12 Crooms Hill, London SE10 8ER",
     "tips": "Afternoon tea in the Orangery £30 weekends.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Fan%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-clockmakers",
@@ -1753,7 +2545,19 @@
     "address": "Guildhall, Aldermanbury, London EC2V 7HH",
     "tips": "Free. Combine with the Roman amphitheatre remains in the basement.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Clockmakers'%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-hunterian",
@@ -1779,7 +2583,19 @@
     "address": "Royal College of Surgeons, 38-43 Lincoln's Inn Fields, London WC2A 3PE",
     "tips": "Free but book ahead. Not for the squeamish.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Hunterian%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-sir-john-soanes",
@@ -1806,7 +2622,19 @@
     "address": "13 Lincoln's Inn Fields, London WC2A 3BP",
     "tips": "Free. Candle-lit tours first Tuesday of the month.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sir%20John%20Soane's%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-cartoon",
@@ -1832,7 +2660,19 @@
     "address": "63 Wells St, London W1A 3AE",
     "tips": "Walking tours around Soho available.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cartoon%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-petrie",
@@ -1858,7 +2698,19 @@
     "address": "Malet Pl, London WC1E 6BT",
     "tips": "Free. Torches provided — the room is dimly lit.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Petrie%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-grant-zoology",
@@ -1885,7 +2737,19 @@
     "address": "Rockefeller Building, 21 University St, London WC1E 6DE",
     "tips": "Free. Closed Sundays.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Grant%20Museum%20of%20Zoology%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-wellcome",
@@ -1912,7 +2776,19 @@
     "address": "183 Euston Rd, London NW1 2BE",
     "tips": "Free. Reading Room upstairs is a gorgeous public library.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wellcome%20Collection%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-florence-nightingale",
@@ -1940,7 +2816,19 @@
     "address": "St Thomas' Hospital, 2 Lambeth Palace Rd, London SE1 7EW",
     "tips": "Combine with a Thames-side walk past Parliament.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Florence%20Nightingale%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-old-operating-theatre",
@@ -1965,7 +2853,19 @@
     "address": "9a St Thomas St, London SE1 9RY",
     "tips": "Climb 52 steps up a spiral staircase — not for the mobility-impaired.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Old%20Operating%20Theatre%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-magic-circle",
@@ -1991,7 +2891,19 @@
     "address": "12 Stephenson Way, London NW1 2HD",
     "tips": "Some tours include live magic.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Magic%20Circle%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-museum-of-brands",
@@ -2018,7 +2930,19 @@
     "address": "111-117 Lancaster Rd, London W11 1QT",
     "tips": "Combine with Portobello Road Market.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Museum%20of%20Brands%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-vagina-museum",
@@ -2044,7 +2968,19 @@
     "address": "Poyser Street, London E2 9RF",
     "tips": "Free, donations welcome.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Vagina%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-cinema-museum",
@@ -2070,7 +3006,19 @@
     "address": "2 Dugard Way, London SE11 4TH",
     "tips": "Access by guided tour only.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cinema%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-ragged-school",
@@ -2096,7 +3044,19 @@
     "address": "46-50 Copperfield Rd, London E3 4RR",
     "tips": "Free. Monthly 'Victorian lesson' days for kids.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Ragged%20School%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-twinings-museum",
@@ -2122,7 +3082,19 @@
     "address": "216 Strand, London WC2R 1AP",
     "tips": "Free. Tasting bar at the front.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Twinings%20Shop%20%26%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-silver-vaults",
@@ -2148,7 +3120,19 @@
     "address": "53-64 Chancery Lane, London WC2A 1QS",
     "tips": "Closed Sundays. Free to wander.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Silver%20Vaults%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-foundling-museum",
@@ -2174,7 +3158,19 @@
     "address": "40 Brunswick Sq, London WC1N 1AZ",
     "tips": "Haunting and beautiful.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Foundling%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-bank-england",
@@ -2200,7 +3196,19 @@
     "address": "Bartholomew Ln, London EC2R 8AH",
     "tips": "Free. Mon-Fri only. Photo ID required to enter.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Bank%20of%20England%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-faraday",
@@ -2226,7 +3234,19 @@
     "address": "21 Albemarle St, London W1S 4BS",
     "tips": "Free. Tuesday 1pm demonstrations are free.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Faraday%20Museum%20at%20the%20Royal%20Institution%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-benjamin-franklin",
@@ -2254,7 +3274,19 @@
     "address": "36 Craven St, London WC2N 5NF",
     "tips": "Tour books up — reserve ahead.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Benjamin%20Franklin%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-dr-johnson",
@@ -2280,7 +3312,19 @@
     "address": "17 Gough Square, London EC4A 3DE",
     "tips": "Statue of his cat Hodge outside.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Dr%20Johnson's%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-handel-hendrix",
@@ -2307,7 +3351,19 @@
     "address": "25 Brook St, London W1K 4HB",
     "tips": "Hendrix's flat preserved as in 1969.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Handel%20%26%20Hendrix%20in%20London%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-freud-museum",
@@ -2334,7 +3390,19 @@
     "address": "20 Maresfield Gardens, London NW3 5SX",
     "tips": "Closed Mon-Tue.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Freud%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-keats-house",
@@ -2361,7 +3429,19 @@
     "address": "10 Keats Grove, London NW3 2RR",
     "tips": "Free admission last Sunday of each month.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Keats%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-dickens-house",
@@ -2387,7 +3467,19 @@
     "address": "48 Doughty St, London WC1N 2LX",
     "tips": "Combine with a walk along Dickens's favoured alleys.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Charles%20Dickens%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-sherlock",
@@ -2413,7 +3505,19 @@
     "address": "221b Baker St, London NW1 6XE",
     "tips": "Queues weekend mornings.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sherlock%20Holmes%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-red-hall-bank",
@@ -2439,7 +3543,19 @@
     "address": "Gracechurch St, London EC3V 1LR",
     "tips": "Look up at the corners of the arcade.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Leadenhall%20Market%20Green%20Dragon%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-clerk-well",
@@ -2465,7 +3581,19 @@
     "address": "14-16 Farringdon Rd, London EC1R 3AU",
     "tips": "Look through the window — free to view.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Clerkenwell%20Well%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-gherkin-dragon",
@@ -2490,7 +3618,19 @@
     "address": "30 St Mary Axe, London EC3A 8BF",
     "tips": "Binoculars help.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Gherkin's%20Secret%20Pigeons%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-rolling-bridge",
@@ -2516,7 +3656,19 @@
     "address": "Paddington Basin, London W2 1AF",
     "tips": "Check Merchant Square website for current schedule.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Rolling%20Bridge%2C%20Paddington%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-whirling-shed",
@@ -2542,7 +3694,19 @@
     "address": "174 Queen Victoria St, London EC4V 4EG",
     "tips": "Stand at the bar with a drink — study the mosaics.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Blackfriar%20Interior%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-viaduct-cells",
@@ -2567,7 +3731,19 @@
     "address": "126 Newgate St, London EC1A 7AA",
     "tips": "Ask the bartender. Tours free with a drink.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Viaduct%20Tavern%20Newgate%20Cells%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-thameslink",
@@ -2593,7 +3769,19 @@
     "address": "St Pancras Station, London N1C 4QL",
     "tips": "Free. Look from the upper-level walkway.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Pancras%20Ghost%20Platform%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-platform-10-90",
@@ -2619,7 +3807,19 @@
     "address": "King's Cross Station, London N1 9AP",
     "tips": "Walk through Coal Drops Yard to see the arches.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Platform%2010.90%20(Between%20Worlds)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-camden-catacombs",
@@ -2644,7 +3844,19 @@
     "address": "Camden Lock Market, London NW1 8AF",
     "tips": "Currently not publicly accessible — check Camden Market tours.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Camden%20Catacombs%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-stratford-jubilee",
@@ -2669,7 +3881,19 @@
     "address": "Stratford Station, London E15",
     "tips": "Used only for overflow concerts at the Olympic Park.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Stratford's%20Hidden%20Jubilee%20Line%20Station%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-glass-swimming-pool",
@@ -2695,7 +3919,19 @@
     "address": "Embassy Gardens, London SW11",
     "tips": "Look from the park below. Residents only in-pool access.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Embassy%20Gardens%20Sky%20Pool%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-floating-pocket",
@@ -2721,7 +3957,19 @@
     "address": "Paddington Basin, London W2 1AF",
     "tips": "Check Merchant Square website for current status.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Floating%20Pocket%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-jurassic-park",
@@ -2748,7 +3996,19 @@
     "address": "Crystal Palace Park, London SE20 8DT",
     "tips": "Free. Owners dined inside an unfinished iguanodon in 1853.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Crystal%20Palace%20Park%20Dinosaurs%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-line-sculpture",
@@ -2775,7 +4035,19 @@
     "address": "North Greenwich to Stratford",
     "tips": "Download the Line app for self-guided tour.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Line%20Sculpture%20Walk%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-wilton-music-hall",
@@ -2802,7 +4074,19 @@
     "address": "1 Grace's Alley, London E1 8JB",
     "tips": "The Mahogany Bar accepts walk-ins even without a show.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wilton's%20Music%20Hall%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-wilton-ghosts",
@@ -2830,7 +4114,19 @@
     "address": "1 Grace's Alley, London E1 8JB",
     "tips": "Drink by gas-lamp. Ideal pre-theatre stop.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wilton's%20Music%20Hall%20Mahogany%20Bar%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-grenadier-pub",
@@ -2856,7 +4152,19 @@
     "address": "18 Wilton Row, London SW1X 7NR",
     "tips": "Bring cash for the ceiling tradition.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Grenadier%20(Haunted%20Pub)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-mary-le-bone",
@@ -2883,7 +4191,19 @@
     "address": "Marylebone Lane, London W1U",
     "tips": "Free. The original course of the Tyburn river.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Marylebone%20Lane%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-cecil-court",
@@ -2910,7 +4230,19 @@
     "address": "Cecil Ct, London WC2N 4EZ",
     "tips": "Mozart lived at number 9 in 1764.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cecil%20Court%20(Booksellers'%20Row)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-neal-yard",
@@ -2936,7 +4268,19 @@
     "address": "Neal's Yard, London WC2H 9DP",
     "tips": "Monmouth Coffee just outside.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Neal's%20Yard%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-shad-thames",
@@ -2963,7 +4307,19 @@
     "address": "Shad Thames, London SE1 2YD",
     "tips": "A David Lean film location.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Shad%20Thames%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-amen-court",
@@ -2989,7 +4345,19 @@
     "address": "Amen Ct, London EC4M 7BU",
     "tips": "Combine with St Paul's Cathedral.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Amen%20Court%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-portsoken-alley",
@@ -3016,7 +4384,19 @@
     "address": "Wine Office Ct, London EC4A 2BU",
     "tips": "Walk through to the pub.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wine%20Office%20Court%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-passing-alley",
@@ -3042,7 +4422,19 @@
     "address": "Passing Alley, London EC1M",
     "tips": "Free. Walk through to St John Street.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Passing%20Alley%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-lincoln-inn-archway",
@@ -3069,7 +4461,19 @@
     "address": "Lincoln's Inn, London WC2A 3TL",
     "tips": "Chapel free midday Mon-Fri.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Lincoln's%20Inn%20Old%20Hall%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-middle-temple-hall",
@@ -3096,7 +4500,19 @@
     "address": "Middle Temple Ln, London EC4Y 9AT",
     "tips": "Free, limited hours. Gardens open weekday lunchtimes.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Middle%20Temple%20Hall%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-banqueting-house",
@@ -3122,7 +4538,19 @@
     "address": "Whitehall, London SW1A 2ER",
     "tips": "Rubens ceiling panels are the masterpiece.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Banqueting%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-old-operating",
@@ -3148,7 +4576,19 @@
     "address": "Romney Rd, London SE10 9NF",
     "tips": "Free. Famous Tulip Stair the first cantilevered spiral.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Queens%20House%20Greenwich%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-whipchapel-bell",
@@ -3174,7 +4614,19 @@
     "address": "32-34 Whitechapel Rd, London E1 1DY",
     "tips": "Exterior visible — building now redeveloped.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Whitechapel%20Bell%20Foundry%20Site%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-jewel-tower",
@@ -3200,7 +4652,19 @@
     "address": "Abingdon St, London SW1P 3JX",
     "tips": "English Heritage. Often missed beside Parliament.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Jewel%20Tower%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-two-temple",
@@ -3227,7 +4691,19 @@
     "address": "2 Temple Pl, London WC2R 3BD",
     "tips": "Check if current exhibition is running.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Two%20Temple%20Place%20Mansion%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-kenwood-house",
@@ -3254,7 +4730,19 @@
     "address": "Hampstead Ln, London NW3 7JR",
     "tips": "Free. English Heritage. Lakeside walks after.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Kenwood%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-eltham-palace",
@@ -3280,7 +4768,19 @@
     "address": "Court Yard, Eltham SE9 5QE",
     "tips": "English Heritage. Station at Mottingham.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Eltham%20Palace%20Art%20Deco%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-chiswick-house",
@@ -3307,7 +4807,19 @@
     "address": "Burlington Lane, London W4 2RP",
     "tips": "Grounds free; house ticketed.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Chiswick%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-kew-palace",
@@ -3333,7 +4845,19 @@
     "address": "Kew Gardens, Kew, London TW9 3AB",
     "tips": "Requires Kew Gardens ticket.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Kew%20Palace%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-osterley-park",
@@ -3360,7 +4884,19 @@
     "address": "Jersey Rd, Isleworth TW7 4RB",
     "tips": "National Trust. Piccadilly Line to Osterley.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Osterley%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-syon-house",
@@ -3387,7 +4923,19 @@
     "address": "Syon Park, London TW8 8JF",
     "tips": "Closed in winter.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Syon%20House%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-capel-manor",
@@ -3413,7 +4961,19 @@
     "address": "Bullsmoor Ln, London EN1 4RQ",
     "tips": "Combine with Myddelton House Gardens nearby.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Capel%20Manor%20Gardens%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-myddelton-house",
@@ -3439,7 +4999,19 @@
     "address": "Bulls Cross, Enfield EN2 9HG",
     "tips": "LVL volunteers lead tours.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Myddelton%20House%20Gardens%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-walthamstow-wet",
@@ -3465,7 +5037,19 @@
     "address": "2 Forest Rd, London N17 9NH",
     "tips": "Free. Engine House has a café.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Walthamstow%20Wetlands%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-rainham-marshes",
@@ -3491,7 +5075,19 @@
     "address": "New Tank Hill Rd, Rainham RM13 9BG",
     "tips": "Nearest Rainham station.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=RSPB%20Rainham%20Marshes%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-ruislip-lido",
@@ -3517,7 +5113,19 @@
     "address": "Reservoir Rd, Ruislip HA4 7TY",
     "tips": "Free parking. Miniature railway weekends only.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Ruislip%20Lido%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-thames-barrier",
@@ -3544,7 +5152,19 @@
     "address": "1 Unity Way, London SE18 5NJ",
     "tips": "Test days (when gates raised) quarterly — witnessing it is thrilling.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Thames%20Barrier%20Learning%20Centre%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-billingsgate",
@@ -3570,7 +5190,19 @@
     "address": "Trafalgar Way, London E14 5ST",
     "tips": "Free entry for public after 6am.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Billingsgate%20Market%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-smithfield",
@@ -3596,7 +5228,19 @@
     "address": "Grand Ave, London EC1A 9PS",
     "tips": "Best before 7am. Closing permanently 2027.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Smithfield%20Market%20at%20Dawn%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-new-covent-garden",
@@ -3622,7 +5266,19 @@
     "address": "New Covent Garden Market, London SW8 5EE",
     "tips": "Public access to flower market from 6am.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=New%20Covent%20Garden%20Market%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-columbia-road-sunday",
@@ -3649,7 +5305,19 @@
     "address": "Columbia Rd, London E2 7RW",
     "tips": "Arrive 9am to beat crowds. Best flowers sold at start.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Columbia%20Road%20Flower%20Market%20(Sunday)%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-salter-statue",
@@ -3675,7 +5343,19 @@
     "address": "4 Fore Street, London EC2Y 5DE",
     "tips": "Check Livery Hall open-days list.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Salter's%20Hall%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-drapers-gardens",
@@ -3702,7 +5382,19 @@
     "address": "Throgmorton Ave, London EC2N 2DQ",
     "tips": "Open House London weekend only.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Drapers'%20Hall%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-open-house",
@@ -3729,7 +5421,19 @@
     "address": "Across London",
     "tips": "Check Open House website in August for sign-up.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Open%20House%20London%20Weekend%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-boat-tour",
@@ -3755,7 +5459,19 @@
     "address": "Various",
     "tips": "Download the 'Lost Rivers' free walking guide.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Lost%20Rivers%20Tour%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-oxo-tower-view",
@@ -3781,7 +5497,19 @@
     "address": "Oxo Tower Wharf, Bargehouse St, London SE1 9PH",
     "tips": "Free. Lift to the 8th floor.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Oxo%20Tower%20Viewing%20Gallery%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-garden-at-120",
@@ -3808,7 +5536,19 @@
     "address": "120 Fenchurch St, London EC3M 5BA",
     "tips": "Free, no booking. Weekdays 10-6:30pm.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Garden%20at%20120%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-horizon-22",
@@ -3834,7 +5574,19 @@
     "address": "22 Bishopsgate, London EC2N 4BQ",
     "tips": "Free but book ahead — releases 2 weeks in advance.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Horizon%2022%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-tate-modern-view",
@@ -3862,7 +5614,19 @@
     "address": "Bankside, London SE1 9TG",
     "tips": "Free. Sunset over St Paul's is spectacular.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Tate%20Modern%20Level%2010%20Viewing%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-oxo-tower-bar",
@@ -3889,7 +5653,19 @@
     "address": "20 Fenchurch St, London EC3M 3BY",
     "tips": "Free but book ahead.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sky%20Garden%20at%20Sky%20Pod%20Bar%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-the-monument",
@@ -3915,7 +5691,19 @@
     "address": "Fish Street Hill, London EC3R 8AH",
     "tips": "Receive certificate at the bottom.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Monument%20Climb%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-st-pauls-dome",
@@ -3941,7 +5729,19 @@
     "address": "St Paul's Churchyard, London EC4M 8AD",
     "tips": "Continue to Stone Gallery (378 steps) and Golden Gallery (528 steps).",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Paul's%20Whispering%20Gallery%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-secret-garden-flat",
@@ -3967,7 +5767,19 @@
     "address": "40 Floral St, London WC2E 9DG",
     "tips": "Rarely open — check Open House London.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=40%20Floral%20Street%20Roof%20Garden%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-pavilion-on-stilts",
@@ -3993,7 +5805,19 @@
     "address": "Queens Yard, White Post Ln, London E9 5EN",
     "tips": "Tasting menu only. Book weeks ahead.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=SILO%20Zero-Waste%20Restaurant%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-stamford-brook",
@@ -4019,7 +5843,19 @@
     "address": "Chiswick, London W4",
     "tips": "Exterior only — private residence.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Grove%20House%20Chiswick%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-swimming-holes",
@@ -4046,7 +5882,19 @@
     "address": "Tooting Bec Rd, London SW16 1RU",
     "tips": "90m unheated — refreshing.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Tooting%20Bec%20Common%20Wild%20Swimming%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-egham-cemetery",
@@ -4073,7 +5921,19 @@
     "address": "Swain's Lane, London N6 6PJ",
     "tips": "West side requires a guided tour.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Highgate%20Cemetery%20East%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-postal-rail",
@@ -4099,7 +5959,19 @@
     "address": "15-20 Phoenix Pl, London WC1X 0DA",
     "tips": "Book Mail Rail ride ahead.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Postal%20Museum%20Mail%20Rail%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-grand-union-canal",
@@ -4126,7 +5998,19 @@
     "address": "Little Venice to Camden",
     "tips": "London Waterbus is the classic operator.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Grand%20Union%20Canal%20Boat%20Trip%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-kew-thames",
@@ -4152,7 +6036,19 @@
     "address": "Marble Hill Park, London TW1",
     "tips": "Cash only. Seasonal — Easter-October.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Hammerton's%20Ferry%20Hampton%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-boat-club",
@@ -4178,7 +6074,19 @@
     "address": "Connaught Village, London W2 2EN",
     "tips": "Best photographed at dusk.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Paddington%20Hackney%20Carriage%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-hidden-cinema",
@@ -4204,7 +6112,19 @@
     "address": "93-95 Mile End Rd, London E1 4UJ",
     "tips": "Ask staff — usually accommodating.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Genesis%20Cinema%20Projection%20Room%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-greenwich-foot",
@@ -4230,7 +6150,19 @@
     "address": "Cutty Sark Gardens, London SE10 9HT",
     "tips": "Free. Open 24/7. Lifts mostly work.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Greenwich%20Foot%20Tunnel%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-woolwich-tunnel",
@@ -4256,7 +6188,19 @@
     "address": "Woolwich, London SE18",
     "tips": "Free. 24/7. Combine with the Thames Barrier.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Woolwich%20Foot%20Tunnel%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-old-royal-naval",
@@ -4283,7 +6227,19 @@
     "address": "Old Royal Naval College, London SE10 9NN",
     "tips": "Torch app lets you see ceiling details.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Old%20Royal%20Naval%20College%20Painted%20Hall%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-horniman-anthropology",
@@ -4310,7 +6266,19 @@
     "address": "100 London Rd, London SE23 3PQ",
     "tips": "Free. Gardens free.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Horniman%20Museum%20Anthropology%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-mayflower-steps",
@@ -4336,7 +6304,19 @@
     "address": "117 Rotherhithe St, London SE16 4NF",
     "tips": "Walk out on the jetty — free access.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Mayflower%20Pub%20Steps%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-docklands-museum",
@@ -4363,7 +6343,19 @@
     "address": "No 1 Warehouse, West India Quay, London E14 4AL",
     "tips": "'Sailortown' immersive reconstruction is memorable.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Museum%20of%20London%20Docklands%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-river-police",
@@ -4388,7 +6380,19 @@
     "address": "Wapping High St, London E1W 2NE",
     "tips": "Book ahead — visits by appointment.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Thames%20River%20Police%20Museum%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-whitechapel-library",
@@ -4415,7 +6419,19 @@
     "address": "77-82 Whitechapel High St, London E1 7QX",
     "tips": "Now Whitechapel Idea Store — visit the rooftop garden.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Whitechapel%20Library%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-rivoli-ballroom",
@@ -4442,7 +6458,19 @@
     "address": "350 Brockley Rd, London SE4 2BY",
     "tips": "Swing dance nights Saturdays. Films too.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Rivoli%20Ballroom%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-abney-park",
@@ -4468,7 +6496,19 @@
     "address": "215 Stoke Newington High St, London N16 0LH",
     "tips": "One of the 'Magnificent Seven' cemeteries.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Abney%20Park%20Cemetery%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-brompton-catacombs",
@@ -4495,7 +6535,19 @@
     "address": "Fulham Rd, London SW10 9UG",
     "tips": "Emmeline Pankhurst is buried here.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Brompton%20Cemetery%20Catacombs%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-london-review-cake",
@@ -4520,7 +6572,19 @@
     "address": "14-16 Bury Pl, London WC1A 2JL",
     "tips": "Opens 10am Mon-Sat.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Cake%20Shop%20at%20the%20London%20Review%20Bookshop%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-mithraeum-bloomberg",
@@ -4546,7 +6610,19 @@
     "address": "Bloomberg Arcade, London EC4N 8AR",
     "tips": "Combine with the London Mithraeum below.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Bloomberg%20Arcade%20Bucket%20of%20Flowers%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-crane-buckingham",
@@ -4572,7 +6648,19 @@
     "address": "South Dock, London E14",
     "tips": "Free. Walk along the Docklands.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Queen%20Victoria's%20Crane%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-gig-under-river",
@@ -4598,7 +6686,19 @@
     "address": "Rotherhithe railway arches",
     "tips": "Check Resident Advisor for current events.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Riff%20Raff%20at%20Rising%20Sun%20Collective%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-swinging-sixties",
@@ -4625,7 +6725,19 @@
     "address": "Park Row, London SE10 9NW",
     "tips": "Check current whitebait menu availability.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Trafalgar%20Tavern%20Whitebait%20Suppers%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-french-resistance",
@@ -4650,7 +6762,19 @@
     "address": "4 Carlton Gardens, London SW1Y 5AD",
     "tips": "Free. Exterior only — still in use as an office.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=De%20Gaulle's%20Office%2C%20Carlton%20Gardens%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-old-curiosity-shop",
@@ -4677,7 +6801,19 @@
     "address": "13-14 Portsmouth St, London WC2A 2ES",
     "tips": "Currently a shoe boutique.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Old%20Curiosity%20Shop%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-pagoda-battersea",
@@ -4703,7 +6839,19 @@
     "address": "Battersea Park, London SW11 4NJ",
     "tips": "Free. Walk around for four different Buddha statues.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Buddhist%20Peace%20Pagoda%2C%20Battersea%20Park%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-diana-memorial",
@@ -4729,7 +6877,19 @@
     "address": "West Carriage Drive, London W2 2UH",
     "tips": "Kids can paddle. Lifeguards in summer.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Diana%20Memorial%20Fountain%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-national-covid",
@@ -4755,7 +6915,19 @@
     "address": "Albert Embankment, London SE1 7TP",
     "tips": "Opposite Parliament. Volunteers still maintain.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=National%20Covid%20Memorial%20Wall%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-stevie-smith",
@@ -4781,7 +6953,19 @@
     "address": "1 Avondale Rd, London N13 4DN",
     "tips": "Exterior only — walk through Grovelands Park.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Stevie%20Smith's%20Palmers%20Green%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-sloane-rangers",
@@ -4807,7 +6991,19 @@
     "address": "Sloane Square, London SW1W 8AX",
     "tips": "Free. The Royal Court Theatre opposite.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Sloane%20Square%20Fountain%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-roof-garden-kensington",
@@ -4834,7 +7030,19 @@
     "address": "99 Kensington High St, London W8 5SA",
     "tips": "Currently closed. Check website for reopening news.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Kensington%20Roof%20Gardens%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-church-stephen",
@@ -4860,7 +7068,19 @@
     "address": "39 Walbrook, London EC4N 8BN",
     "tips": "Henry Moore stone altar divides visitors.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Stephen%20Walbrook%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-church-benet",
@@ -4886,7 +7106,19 @@
     "address": "Queen Victoria St, London EC4V 4DS",
     "tips": "Open Mon-Thu 1-3pm.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Benet%20Paul's%20Wharf%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hl-church-st-james",
@@ -4912,6 +7144,18 @@
     "address": "Garlick Hill, London EC4V 2AF",
     "tips": "Open Mon-Fri lunchtimes.",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20James%20Garlickhythe%20London",
-    "affiliateLabel": "Find Tours & Tickets"
+    "affiliateLabel": "Find Tours & Tickets",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   }
 ]

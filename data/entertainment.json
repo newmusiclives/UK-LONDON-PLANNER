@@ -21,7 +21,19 @@
     "address": "Shaftesbury Avenue, London WC2",
     "affiliateUrl": "https://www.todaytix.com/london",
     "affiliateLabel": "Find Show Tickets",
-    "tips": "Check the TKTS booth in Leicester Square for same-day discounts up to 50% off. Matinees are usually cheaper."
+    "tips": "Check the TKTS booth in Leicester Square for same-day discounts up to 50% off. Matinees are usually cheaper.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "immersive-experience",
@@ -45,7 +57,19 @@
     "address": "Various locations",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Check what's currently running. Punchdrunk, Secret Cinema, and The War of the Worlds are legendary producers."
+    "tips": "Check what's currently running. Punchdrunk, Secret Cinema, and The War of the Worlds are legendary producers.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-dinner-cruise",
@@ -69,7 +93,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/the-london-showboat-dinner-dance-cruise-t5275/",
     "affiliateLabel": "Book Dinner Cruise",
     "tips": "Perfect for a special occasion. Book a window table. The views of Parliament and Tower Bridge lit up at night are stunning.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "premier-league-football",
@@ -92,7 +128,19 @@
     "address": "Various stadiums across London",
     "affiliateUrl": "https://www.stubhub.co.uk/premier-league-tickets",
     "affiliateLabel": "Find Match Tickets",
-    "tips": "Arsenal, Chelsea, Tottenham, and West Ham are the main clubs. Stadium tours available on non-match days."
+    "tips": "Arsenal, Chelsea, Tottenham, and West Ham are the main clubs. Stadium tours available on non-match days.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "afternoon-tea",
@@ -116,7 +164,19 @@
     "address": "Various luxury hotels",
     "affiliateUrl": "https://www.afternoonteadelivery.co.uk/london",
     "affiliateLabel": "Book Afternoon Tea",
-    "tips": "Top picks: The Ritz, Claridge's, The Savoy, Sketch. Book well ahead. Smart casual dress code."
+    "tips": "Top picks: The Ritz, Claridge's, The Savoy, Sketch. Book well ahead. Smart casual dress code.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "comedy-store",
@@ -139,7 +199,19 @@
     "address": "1a Oxendon St, London SW1Y 4EE",
     "affiliateUrl": "https://www.thecomedystore.co.uk",
     "affiliateLabel": "Book Comedy Tickets",
-    "tips": "The Comedy Store Players improv show (Wed & Sun) is the best value comedy in London."
+    "tips": "The Comedy Store Players improv show (Wed & Sun) is the best value comedy in London.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-speedboat",
@@ -164,7 +236,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/london-river-thames-speedboat-rib-tour-t53075/",
     "affiliateLabel": "Book Speedboat Experience",
     "tips": "Hold on tight! You will get splashed. Incredibly fun for all ages.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wimbledon-tour",
@@ -186,7 +270,19 @@
     "address": "Church Rd, Wimbledon, London SW19 5AE",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/wimbledon-tour",
     "affiliateLabel": "Book Tour Tickets",
-    "tips": "Available year-round except during the Championships. The 360° cinema experience of Centre Court is brilliant."
+    "tips": "Available year-round except during the Championships. The 360° cinema experience of Centre Court is brilliant.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-walking-tour",
@@ -211,7 +307,19 @@
     "address": "Various starting points",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/walking-tours",
     "affiliateLabel": "Browse Walking Tours",
-    "tips": "Free walking tours operate on a tips basis. The Jack the Ripper tours in Whitechapel at night are atmospheric."
+    "tips": "Free walking tours operate on a tips basis. The Jack the Ripper tours in Whitechapel at night are atmospheric.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "spa-experience",
@@ -233,7 +341,19 @@
     "address": "2 Robert St, London WC2N 6BH",
     "affiliateUrl": "https://beaire.com/en/aire-ancient-baths-london",
     "affiliateLabel": "Book Bath Experience",
-    "tips": "Incredibly relaxing and romantic. The building itself is beautiful. Book the wine bath for a special treat."
+    "tips": "Incredibly relaxing and romantic. The building itself is beautiful. Book the wine bath for a special treat.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wembley-stadium-tour",
@@ -256,7 +376,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/guided-wembley-stadium-tour-t12486/",
     "affiliateLabel": "Book Stadium Tour",
     "tips": "Great for football fans of all ages. Check if any concerts or events are on during your visit.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "electric-cinema",
@@ -279,7 +411,19 @@
     "address": "191 Portobello Rd, London W11 2ED",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Book the double beds in the front row for the ultimate date night. Cocktails and snacks delivered to your seat."
+    "tips": "Book the double beds in the front row for the ultimate date night. Cocktails and snacks delivered to your seat.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hampstead-heath-swim",
@@ -302,7 +446,19 @@
     "address": "Hampstead Heath, London NW5",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Open year-round! The mixed pond has the best views. Combine with a walk on the Heath. Cold but invigorating."
+    "tips": "Open year-round! The mixed pond has the best views. Combine with a walk on the Heath. Cold but invigorating.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "arsenal-stadium-tour",
@@ -324,7 +480,19 @@
     "address": "Hornsey Rd, London N7 7AJ",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/arsenal-stadium-tour",
     "affiliateLabel": "Book Stadium Tour",
-    "tips": "The self-guided tour includes the museum with incredible memorabilia. Great for any football fan."
+    "tips": "The self-guided tour includes the museum with incredible memorabilia. Great for any football fan.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "chelsea-stadium-tour",
@@ -346,7 +514,19 @@
     "address": "Fulham Rd, London SW6 1HS",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/chelsea-stadium-tour",
     "affiliateLabel": "Book Stadium Tour",
-    "tips": "The museum section covers Chelsea's entire history. Check if a match is on during your visit."
+    "tips": "The museum section covers Chelsea's entire history. Check if a match is on during your visit.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lords-cricket",
@@ -368,7 +548,19 @@
     "address": "St John's Wood Rd, London NW8 8QN",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/lords-cricket-tour",
     "affiliateLabel": "Book Tour",
-    "tips": "The museum and the Long Room are the highlights. Combine with Abbey Road studios nearby."
+    "tips": "The museum and the Long Room are the highlights. Combine with Abbey Road studios nearby.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "escape-room",
@@ -392,7 +584,19 @@
     "address": "Various locations",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Top picks: The Crystal Maze LIVE, Escape Hunt, clueQuest. Book ahead — popular for groups and celebrations."
+    "tips": "Top picks: The Crystal Maze LIVE, Escape Hunt, clueQuest. Book ahead — popular for groups and celebrations.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cocktail-making-class",
@@ -417,7 +621,19 @@
     "address": "Various venues across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "TT Liquor and London Cocktail Club are top picks. Amazing for hen parties, birthdays, and group celebrations."
+    "tips": "TT Liquor and London Cocktail Club are top picks. Amazing for hen parties, birthdays, and group celebrations.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "drag-brunch",
@@ -442,7 +658,19 @@
     "address": "Various venues",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Hugely popular for hen parties and birthdays. Book well in advance. You will be pulled into the show!"
+    "tips": "Hugely popular for hen parties and birthdays. Book well in advance. You will be pulled into the show!",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "go-karting",
@@ -466,7 +694,19 @@
     "address": "Various locations across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "The Tower Bridge and Bermondsey tracks are the best. Grand Prix packages available for groups."
+    "tips": "The Tower Bridge and Bermondsey tracks are the best. Grand Prix packages available for groups.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "life-drawing",
@@ -490,7 +730,19 @@
     "address": "Various venues",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Hen Life Drawing is the most popular for groups. No experience needed — it's about fun, not talent!"
+    "tips": "Hen Life Drawing is the most popular for groups. No experience needed — it's about fun, not talent!",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pottery-class",
@@ -514,7 +766,19 @@
     "address": "Various studios across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Turning Earth and ClayMotion are top picks. Your creation gets fired and posted to you. Book ahead."
+    "tips": "Turning Earth and ClayMotion are top picks. Your creation gets fired and posted to you. Book ahead.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "axe-throwing",
@@ -538,7 +802,19 @@
     "address": "Various locations",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Whistle Punks is the top venue. Instructors teach you — no experience needed. Perfect for stag dos."
+    "tips": "Whistle Punks is the top venue. Instructors teach you — no experience needed. Perfect for stag dos.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-hot-tub",
@@ -564,7 +840,19 @@
     "address": "West India Quay, London E14",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Bring swimwear and a sense of adventure. You can BYO drinks. Fits up to 7 people — perfect for groups."
+    "tips": "Bring swimwear and a sense of adventure. You can BYO drinks. Fits up to 7 people — perfect for groups.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-helicopter-tour",
@@ -588,7 +876,19 @@
     "address": "The London Heliport, Battersea SW11",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/helicopter-tour",
     "affiliateLabel": "Book Helicopter Tour",
-    "tips": "Perfect for proposals, anniversaries, and milestone birthdays. 12-15 minute flights. Book well in advance."
+    "tips": "Perfect for proposals, anniversaries, and milestone birthdays. 12-15 minute flights. Book well in advance.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "karaoke-lucky-voice",
@@ -613,7 +913,19 @@
     "address": "52 Poland St, London W1F 7NQ",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Private rooms so no public embarrassment! The cocktails are great. Perfect for birthdays and celebrations."
+    "tips": "Private rooms so no public embarrassment! The cocktails are great. Perfect for birthdays and celebrations.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "gin-distillery-tour",
@@ -638,7 +950,19 @@
     "address": "Various distilleries across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Sipsmith, Beefeater, and Bermondsey's Jensen's are top picks. The 'make your own bottle' experiences are brilliant group activities."
+    "tips": "Sipsmith, Beefeater, and Bermondsey's Jensen's are top picks. The 'make your own bottle' experiences are brilliant group activities.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wicked-west-end",
@@ -662,7 +986,19 @@
     "address": "Apollo Victoria Theatre, 17 Wilton Rd, London SW1V 1LG",
     "affiliateUrl": "https://www.todaytix.com/london/shows/wicked",
     "affiliateLabel": "Find Wicked Tickets",
-    "tips": "Running since 2006 and still selling out. Try the lottery for discounted front-row seats. Stalls offer the best views."
+    "tips": "Running since 2006 and still selling out. Try the lottery for discounted front-row seats. Stalls offer the best views.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hamilton-west-end",
@@ -685,7 +1021,19 @@
     "address": "Victoria Palace Theatre, Victoria St, London SW1E 5EA",
     "affiliateUrl": "https://www.todaytix.com/london/shows/hamilton",
     "affiliateLabel": "Find Hamilton Tickets",
-    "tips": "Enter the daily lottery for a chance at tickets. The Victoria Palace Theatre was beautifully restored for this show."
+    "tips": "Enter the daily lottery for a chance at tickets. The Victoria Palace Theatre was beautifully restored for this show.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lion-king-west-end",
@@ -708,7 +1056,19 @@
     "address": "Lyceum Theatre, 21 Wellington St, London WC2E 7RQ",
     "affiliateUrl": "https://www.todaytix.com/london/shows/the-lion-king",
     "affiliateLabel": "Find Lion King Tickets",
-    "tips": "The opening Circle of Life number alone is worth the ticket price. Best viewed from the dress circle for full puppet effect."
+    "tips": "The opening Circle of Life number alone is worth the ticket price. Best viewed from the dress circle for full puppet effect.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "phantom-of-the-opera",
@@ -731,7 +1091,19 @@
     "address": "His Majesty's Theatre, Haymarket, London SW1Y 4QR",
     "affiliateUrl": "https://www.todaytix.com/london/shows/phantom-of-the-opera",
     "affiliateLabel": "Find Phantom Tickets",
-    "tips": "The theatre itself is stunning. Stalls seats give the best experience of the chandelier scene. A true London classic."
+    "tips": "The theatre itself is stunning. Stalls seats give the best experience of the chandelier scene. A true London classic.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "les-miserables",
@@ -755,7 +1127,19 @@
     "address": "Sondheim Theatre, 51 Shaftesbury Ave, London W1D 6BA",
     "affiliateUrl": "https://www.todaytix.com/london/shows/les-miserables",
     "affiliateLabel": "Find Les Mis Tickets",
-    "tips": "The new staging since 2019 is spectacular. Do not leave before the full company finale. Tissues recommended."
+    "tips": "The new staging since 2019 is spectacular. Do not leave before the full company finale. Tissues recommended.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "matilda-the-musical",
@@ -777,7 +1161,19 @@
     "address": "Cambridge Theatre, Earlham St, London WC2H 9HU",
     "affiliateUrl": "https://www.todaytix.com/london/shows/matilda",
     "affiliateLabel": "Find Matilda Tickets",
-    "tips": "Perfect for families but adults love it too. The child performers are extraordinary. Stalls centre for best views."
+    "tips": "Perfect for families but adults love it too. The child performers are extraordinary. Stalls centre for best views.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "back-to-the-future-musical",
@@ -801,7 +1197,19 @@
     "address": "Adelphi Theatre, 409-412 Strand, London WC2R 0NS",
     "affiliateUrl": "https://www.todaytix.com/london/shows/back-to-the-future",
     "affiliateLabel": "Find Tickets",
-    "tips": "The DeLorean on stage is incredible. Great for nostalgia fans. The Adelphi Theatre has excellent sightlines."
+    "tips": "The DeLorean on stage is incredible. Great for nostalgia fans. The Adelphi Theatre has excellent sightlines.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "moulin-rouge-musical",
@@ -825,7 +1233,19 @@
     "address": "Piccadilly Theatre, 16 Denman St, London W1D 7DY",
     "affiliateUrl": "https://www.todaytix.com/london/shows/moulin-rouge",
     "affiliateLabel": "Find Moulin Rouge Tickets",
-    "tips": "The theatre transformation is astonishing. Dress circle gives the full visual impact. A sensory overload in the best way."
+    "tips": "The theatre transformation is astonishing. Dress circle gives the full visual impact. A sensory overload in the best way.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crystal-maze-live",
@@ -849,7 +1269,19 @@
     "address": "22 Shaftesbury Ave, London W1D 7EH",
     "affiliateUrl": "https://www.the-crystal-maze.com",
     "affiliateLabel": "Book Crystal Maze",
-    "tips": "Teams of 8 are ideal. Wear comfortable clothing. The Crystal Dome finale is just as chaotic as on TV."
+    "tips": "Teams of 8 are ideal. Wear comfortable clothing. The Crystal Dome finale is just as chaotic as on TV.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "war-of-the-worlds-immersive",
@@ -872,7 +1304,19 @@
     "address": "56 Leadenhall St, London EC3A 2BJ",
     "affiliateUrl": "https://www.thewaroftheworldsimmersive.com",
     "affiliateLabel": "Book Experience",
-    "tips": "The VR sections are genuinely thrilling. Cocktail bar included. Allow about 2 hours for the full experience."
+    "tips": "The VR sections are genuinely thrilling. Cocktail bar included. Allow about 2 hours for the full experience.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "monopoly-lifesized",
@@ -895,7 +1339,19 @@
     "address": "213 Tottenham Court Rd, London W1T 7PS",
     "affiliateUrl": "https://www.monopolylifesized.com",
     "affiliateLabel": "Book Monopoly",
-    "tips": "Great for families and competitive friend groups. The challenges are physical and mental. Allow 90 minutes."
+    "tips": "Great for families and competitive friend groups. The challenges are physical and mental. Allow 90 minutes.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tottenham-stadium-tour",
@@ -918,7 +1374,19 @@
     "address": "782 High Rd, London N17 0BX",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/tottenham-stadium-tour",
     "affiliateLabel": "Book Stadium Tour",
-    "tips": "The Sky Walk across the roof is a separate ticketed experience for thrill-seekers. Newest Premier League stadium in London."
+    "tips": "The Sky Walk across the roof is a separate ticketed experience for thrill-seekers. Newest Premier League stadium in London.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "twickenham-rugby-tour",
@@ -940,7 +1408,19 @@
     "address": "200 Whitton Rd, Twickenham TW2 7BA",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/twickenham-rugby-tour",
     "affiliateLabel": "Book Rugby Tour",
-    "tips": "The museum covers the full history of rugby. Match day experiences are incredible if you can get tickets."
+    "tips": "The museum covers the full history of rugby. Match day experiences are incredible if you can get tickets.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-oval-cricket",
@@ -962,7 +1442,19 @@
     "address": "Kennington Oval, London SE11 5SS",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/the-oval-cricket-tour",
     "affiliateLabel": "Book Cricket Tour",
-    "tips": "Test match cricket at The Oval is a quintessentially English summer experience. The atmosphere on day five is electric."
+    "tips": "Test match cricket at The Oval is a quintessentially English summer experience. The atmosphere on day five is electric.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "qpr-match-day",
@@ -984,7 +1476,19 @@
     "address": "Loftus Rd, London W12 7PJ",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "One of London's most atmospheric small grounds. Tickets much easier to get than Premier League clubs. Genuine local experience."
+    "tips": "One of London's most atmospheric small grounds. Tickets much easier to get than Premier League clubs. Genuine local experience.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "crystal-palace-match",
@@ -1006,7 +1510,19 @@
     "address": "Selhurst Park, Whitehorse Ln, London SE25 6PU",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "The Holmesdale Fanatics create incredible atmosphere. More accessible tickets than the Big Six clubs. A proper football experience."
+    "tips": "The Holmesdale Fanatics create incredible atmosphere. More accessible tickets than the Big Six clubs. A proper football experience.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "cooking-class-borough",
@@ -1030,7 +1546,19 @@
     "address": "8 Southwark St, London SE1 1TL",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/cooking-class",
     "affiliateLabel": "Book Cooking Class",
-    "tips": "Browse the market before class and source your own ingredients. Bread Ahead bakery school does excellent bread and pastry classes."
+    "tips": "Browse the market before class and source your own ingredients. Bread Ahead bakery school does excellent bread and pastry classes.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bread-ahead-baking",
@@ -1053,7 +1581,19 @@
     "address": "Borough Market, Cathedral St, London SE1 9DE",
     "affiliateUrl": "https://www.breadahead.com/classes",
     "affiliateLabel": "Book Baking Class",
-    "tips": "The doughnut class is the most popular. You take home everything you bake. Book well in advance — they sell out fast."
+    "tips": "The doughnut class is the most popular. You take home everything you bake. Book well in advance — they sell out fast.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wine-tasting-experience",
@@ -1077,7 +1617,19 @@
     "address": "Various locations across London",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Vinopolis under the railway arches and Gordon's Wine Bar are atmospheric choices. WSET courses for serious learners."
+    "tips": "Vinopolis under the railway arches and Gordon's Wine Bar are atmospheric choices. WSET courses for serious learners.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-lunch-cruise",
@@ -1102,7 +1654,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/lunch-cruise-on-the-thames-t26664/",
     "affiliateLabel": "Book Lunch Cruise",
     "tips": "More affordable than the dinner cruise and the views are arguably better in daylight. Runs year-round.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-afternoon-tea-cruise",
@@ -1128,7 +1692,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-lunch-cruise-t22633/",
     "affiliateLabel": "Book Tea Cruise",
     "tips": "A lovely alternative to hotel afternoon teas. The views add magic. Booking essential on weekends.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ghost-tour-london",
@@ -1151,7 +1727,19 @@
     "address": "Bank Station, London EC3V 3LA",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/ghost-tour",
     "affiliateLabel": "Book Ghost Tour",
-    "tips": "Best on dark winter evenings. The City of London has the most atmospheric ghost stories. Not suitable for young children."
+    "tips": "Best on dark winter evenings. The City of London has the most atmospheric ghost stories. Not suitable for young children.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "jack-the-ripper-tour",
@@ -1175,7 +1763,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/jack-the-ripper-tour-t25875/",
     "affiliateLabel": "Book Ripper Tour",
     "tips": "Evening tours are much more atmospheric. Many companies run this tour — look for ones with published historians as guides.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "harry-potter-walking-tour",
@@ -1200,7 +1800,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/magical-london-harry-potter-guided-walking-tour-t174648/",
     "affiliateLabel": "Book Potter Tour",
     "tips": "Different from the Warner Bros Studio Tour. This covers actual London filming locations. Platform 9 3/4 at King's Cross is the highlight.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "beatles-walking-tour",
@@ -1224,7 +1836,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/the-beatles-london-walking-tour-t44653/",
     "affiliateLabel": "Book Beatles Tour",
     "tips": "Recreate the iconic Abbey Road crossing photo. The tour covers Soho, Marylebone, and St John's Wood. Essential for music lovers.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "street-art-tour-shoreditch",
@@ -1249,7 +1873,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/london-shoreditch-street-art-walking-tour-t628680/",
     "affiliateLabel": "Book Street Art Tour",
     "tips": "The art changes constantly so every tour is different. Great for photography. Some tours let you try spray painting yourself.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-eye-night",
@@ -1273,7 +1909,19 @@
     "address": "Riverside Building, County Hall, London SE1 7PB",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/london-eye",
     "affiliateLabel": "Book London Eye",
-    "tips": "Night rides are more magical than daytime. Book a Champagne Experience for an extra-special occasion. Skip-the-line tickets save time."
+    "tips": "Night rides are more magical than daytime. Book a Champagne Experience for an extra-special occasion. Skip-the-line tickets save time.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "madame-tussauds",
@@ -1296,7 +1944,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/london-madame-tussauds-london-t174429/",
     "affiliateLabel": "Book Tickets",
     "tips": "Book online in advance for big savings over walk-up prices. First thing in the morning or late afternoon is least crowded.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-view-from-the-shard",
@@ -1321,7 +1981,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/the-view-from-the-shard-experience-t24625/",
     "affiliateLabel": "Book Shard Tickets",
     "tips": "Sunset tickets are most popular — book well ahead. The open-air observation deck on level 72 is exhilarating.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "up-at-the-o2",
@@ -1344,7 +2016,19 @@
     "address": "Peninsula Square, London SE10 0DX",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/up-at-the-o2",
     "affiliateLabel": "Book O2 Climb",
-    "tips": "Sunset and twilight climbs are the most spectacular. You are harnessed in so it is safe but still thrilling. Wear flat shoes."
+    "tips": "Sunset and twilight climbs are the most spectacular. You are harnessed in so it is safe but still thrilling. Wear flat shoes.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ik-ea-thames-zip-line",
@@ -1366,7 +2050,19 @@
     "address": "Edmund Halley Way, London SE10 0FR",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Book in advance as slots go fast in summer. The ride is short but the thrill is real. Combine with Up at The O2."
+    "tips": "Book in advance as slots go fast in summer. The ride is short but the thrill is real. Combine with Up at The O2.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bungee-jump-london",
@@ -1390,7 +2086,19 @@
     "address": "Peninsula Square, London SE10 0DX",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Video and photos available to purchase. Minimum age 14. Walk-ins sometimes available but book ahead to guarantee your slot."
+    "tips": "Video and photos available to purchase. Minimum age 14. Walk-ins sometimes available but book ahead to guarantee your slot.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rock-climbing-castle",
@@ -1414,7 +2122,19 @@
     "address": "Green Lanes, London N4 2HA",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "The building itself is incredible. Beginner sessions available. One of London's most unique sports venues."
+    "tips": "The building itself is incredible. Beginner sessions available. One of London's most unique sports venues.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "indoor-surfing-london",
@@ -1437,7 +2157,19 @@
     "address": "Various locations",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "No experience needed — instructors guide you. Swimwear provided if needed. Surprisingly tiring but incredibly fun."
+    "tips": "No experience needed — instructors guide you. Swimwear provided if needed. Surprisingly tiring but incredibly fun.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "trampoline-park",
@@ -1462,7 +2194,19 @@
     "address": "Westfields Rd, London W3 0AP",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Grip socks required (can buy there). Off-peak sessions are cheaper. Great for kids' parties and rainy days."
+    "tips": "Grip socks required (can buy there). Off-peak sessions are cheaper. Great for kids' parties and rainy days.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "tower-bridge-exhibition",
@@ -1487,7 +2231,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/tower-bridge-entry-ticket-t439425/",
     "affiliateLabel": "Book Bridge Tickets",
     "tips": "The glass floor walkway is thrilling. Check the bridge lift times on the website and visit to see it open.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kew-gardens-visit",
@@ -1512,7 +2268,19 @@
     "affiliateUrl": "https://www.getyourguide.com/kew-gardens-l5161/london-kew-gardens-admission-ticket-t34660/",
     "affiliateLabel": "Book Kew Tickets",
     "tips": "The Palm House and Temperate House are architectural marvels. The Treetop Walkway gives aerial views. Allow a full day.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "jazz-ronnie-scotts",
@@ -1536,7 +2304,19 @@
     "address": "47 Frith St, London W1D 4HT",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Late shows are cheaper than main shows. The atmosphere is intimate and special. Book dinner to get the best tables."
+    "tips": "Late shows are cheaper than main shows. The atmosphere is intimate and special. Book dinner to get the best tables.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "thames-jet-experience",
@@ -1560,7 +2340,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/thames-boat-trip-waterway-london-adventure-t16670/",
     "affiliateLabel": "Book Thames Jet",
     "tips": "Longer and faster than the RIB speedboat. You will get very wet in the front. Waterproof jackets provided.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-food-tour",
@@ -1583,7 +2375,19 @@
     "address": "Various starting points",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/food-tour",
     "affiliateLabel": "Book Food Tour",
-    "tips": "Come hungry! The Borough Market tour is the most popular. East End tours cover incredible multicultural food. Secret Food Tours is well-rated."
+    "tips": "Come hungry! The Borough Market tour is the most popular. East End tours cover incredible multicultural food. Secret Food Tours is well-rated.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pub-history-tour",
@@ -1606,7 +2410,19 @@
     "address": "Monument Station, London EC3R 8AH",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/pub-tour",
     "affiliateLabel": "Book Pub Tour",
-    "tips": "Pubs dating back to the 1600s with incredible tales. Ye Olde Cheshire Cheese and The Lamb and Flag are highlights."
+    "tips": "Pubs dating back to the 1600s with incredible tales. Ye Olde Cheshire Cheese and The Lamb and Flag are highlights.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hampton-court-palace",
@@ -1630,7 +2446,19 @@
     "affiliateUrl": "https://www.getyourguide.com/london-l57/hampton-court-palace-and-gardens-entrance-ticket-t21254/",
     "affiliateLabel": "Book Palace Tickets",
     "tips": "The maze is a must-do. The Tudor kitchens are fascinating. Take the river boat from Westminster for a scenic journey.",
-    "affiliateProvider": "getyourguide"
+    "affiliateProvider": "getyourguide",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "west-ham-match",
@@ -1652,7 +2480,19 @@
     "address": "London Stadium, Queen Elizabeth Olympic Park, London E20 2ST",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "The Olympic Park area has lots to do before the match. More available tickets than Arsenal or Chelsea. Accessible by DLR and tube."
+    "tips": "The Olympic Park area has lots to do before the match. More available tickets than Arsenal or Chelsea. Accessible by DLR and tube.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "somerset-house-events",
@@ -1675,7 +2515,19 @@
     "address": "Strand, London WC2R 1LA",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Check what is currently showing. Summer live music series and winter ice rink are highlights. The courtyard fountains are iconic."
+    "tips": "Check what is currently showing. Summer live music series and winter ice rink are highlights. The courtyard fountains are iconic.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "greenwich-boat-tour",
@@ -1699,7 +2551,19 @@
     "address": "Greenwich Pier, King William Walk, London SE10 9HT",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/greenwich-tour",
     "affiliateLabel": "Book Greenwich Tour",
-    "tips": "Use a Thames Clipper with Oyster/contactless for cheap river travel. The view from the Royal Observatory is outstanding."
+    "tips": "Use a Thames Clipper with Oyster/contactless for cheap river travel. The view from the Royal Observatory is outstanding.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "standup-comedy-soho",
@@ -1722,7 +2586,19 @@
     "address": "Various Soho venues",
     "affiliateUrl": "",
     "affiliateLabel": "",
-    "tips": "Top of the Spots, Soho Theatre, and 99 Club are great choices. Many clubs offer free or cheap early shows."
+    "tips": "Top of the Spots, Soho Theatre, and 99 Club are great choices. Many clubs offer free or cheap early shows.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "night-bus-tour",
@@ -1745,7 +2621,19 @@
     "address": "Grosvenor Gardens, London SW1W 0DH",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/night-bus-tour",
     "affiliateLabel": "Book Night Tour",
-    "tips": "Sit on the top deck for the best views. Wrap up warm even in summer. Runs rain or shine — it is magical in any weather."
+    "tips": "Sit on the top deck for the best views. Wrap up warm even in summer. Runs rain or shine — it is magical in any weather.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "london-dungeon",
@@ -1768,6 +2656,18 @@
     "address": "Riverside Building, County Hall, London SE1 7PB",
     "affiliateUrl": "https://www.getyourguide.com/london-l57/london-dungeon",
     "affiliateLabel": "Book Dungeon Tickets",
-    "tips": "Not suitable for very young children. Book online for significant savings. The drop ride at the end is a surprise."
+    "tips": "Not suitable for very young children. Book online for significant savings. The drop ride at the end is a surprise.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   }
 ]

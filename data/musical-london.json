@@ -29,7 +29,19 @@
     "address": "3 Abbey Rd, London NW8 9AY",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Abbey%20Road%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free exterior visit. The Abbey Road Shop next door sells merch — the only way inside the building without being a recording artist."
+    "tips": "Free exterior visit. The Abbey Road Shop next door sells merch — the only way inside the building without being a recording artist.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-abbey-road-crossing",
@@ -60,7 +72,19 @@
     "address": "Abbey Rd, London NW8 9AY",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Abbey%20Road%20Zebra%20Crossing%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Live-streamed 24/7 by the Abbey Road webcam. Morning is quieter. Do NOT actually stop in the middle — drivers are used to tourists but it's a working road."
+    "tips": "Live-streamed 24/7 by the Abbey Road webcam. Morning is quieter. Do NOT actually stop in the middle — drivers are used to tourists but it's a working road.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-3-savile-row",
@@ -90,7 +114,19 @@
     "address": "3 Savile Row, London W1S 3PB",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=3%20Savile%20Row%20(Apple%20Corps%20Rooftop)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private office — exterior only. The plaque is subtle, look up at the roof."
+    "tips": "Private office — exterior only. The plaque is subtle, look up at the roof.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-100-club",
@@ -122,7 +158,19 @@
     "address": "100 Oxford St, London W1D 1LL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20100%20Club%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Saved from closure in 2010 by Paul McCartney's campaign. Cash-friendly bar."
+    "tips": "Saved from closure in 2010 by Paul McCartney's campaign. Cash-friendly bar.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-marquee-club-site",
@@ -151,7 +199,19 @@
     "address": "90 Wardour St, London W1F 0TQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Site%20of%20the%20Marquee%20Club%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Blue plaque at the site. Also 165 Oxford Street (original 1958-64 location) is worth finding."
+    "tips": "Blue plaque at the site. Also 165 Oxford Street (original 1958-64 location) is worth finding.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-cavendish-square",
@@ -182,7 +242,19 @@
     "address": "Camden Stables Market, London NW1 8AH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cavendish%20Square%20(Amy%20Winehouse%20Statue)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Fans leave messages at the plinth. Combine with The Dublin Castle pub where she played."
+    "tips": "Fans leave messages at the plinth. Combine with The Dublin Castle pub where she played.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-cafe-oto",
@@ -213,7 +285,19 @@
     "address": "18-22 Ashwin St, London E8 3DL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Caf%C3%A9%20OTO%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Daytime café, evening gigs. Excellent record/book shop upstairs."
+    "tips": "Daytime café, evening gigs. Excellent record/book shop upstairs.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-vortex-jazz",
@@ -241,7 +325,19 @@
     "address": "11 Gillett Square, London N16 8AZ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Vortex%20Jazz%20Club%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free-improv Tuesdays. Excellent sound."
+    "tips": "Free-improv Tuesdays. Excellent sound.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-jazz-cafe-camden",
@@ -273,7 +369,19 @@
     "address": "5 Parkway, London NW1 7PG",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Jazz%20Caf%C3%A9%20Camden%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Balcony dining tables book out. Standing is livelier."
+    "tips": "Balcony dining tables book out. Standing is livelier.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-royal-festival-hall",
@@ -305,7 +413,19 @@
     "address": "Belvedere Rd, London SE1 8XX",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Royal%20Festival%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free foyer performances most days. Grade I-listed."
+    "tips": "Free foyer performances most days. Grade I-listed.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-barbican-hall",
@@ -336,7 +456,19 @@
     "address": "Silk St, London EC2Y 8DS",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Barbican%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Under-26 tickets £5-15. Pre-concert talks free with tickets."
+    "tips": "Under-26 tickets £5-15. Pre-concert talks free with tickets.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-roundhouse",
@@ -369,7 +501,19 @@
     "address": "Chalk Farm Rd, London NW1 8EH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Roundhouse%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "The Roundhouse Rising emerging-artists festival (September) is a talent-spotter's goldmine."
+    "tips": "The Roundhouse Rising emerging-artists festival (September) is a talent-spotter's goldmine.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-koko-camden",
@@ -402,7 +546,19 @@
     "address": "1A Camden High St, London NW1 7JE",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=KOKO%20Camden%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Restored ceiling is spectacular. Rooftop bar for members."
+    "tips": "Restored ceiling is spectacular. Rooftop bar for members.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-hammersmith-apollo",
@@ -435,7 +591,19 @@
     "address": "45 Queen Caroline St, London W6 9QH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Eventim%20Apollo%20(Hammersmith%20Odeon)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Seated-only venue (originally designed for cinema). Stalls middle rows are sweet spot."
+    "tips": "Seated-only venue (originally designed for cinema). Stalls middle rows are sweet spot.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-o2-brixton-academy",
@@ -468,7 +636,19 @@
     "address": "211 Stockwell Rd, London SW9 9SL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=O2%20Academy%20Brixton%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Sloped floor means great views from anywhere. Closed 2022-24 after crushing incident — check reopening status."
+    "tips": "Sloped floor means great views from anywhere. Closed 2022-24 after crushing incident — check reopening status.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-electric-ballroom",
@@ -499,7 +679,19 @@
     "address": "184 Camden High St, London NW1 8QP",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Electric%20Ballroom%20Camden%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Saturday market runs on-site during the day."
+    "tips": "Saturday market runs on-site during the day.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-troxy",
@@ -532,7 +724,19 @@
     "address": "490 Commercial Rd, London E1 0HX",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Troxy%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Chandeliers intact. Opera gala nights worth the ticket."
+    "tips": "Chandeliers intact. Opera gala nights worth the ticket.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-scala-kings-cross",
@@ -563,7 +767,19 @@
     "address": "275 Pentonville Rd, London N1 9NL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Scala%20King's%20Cross%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Balcony smoking area is a London institution."
+    "tips": "Balcony smoking area is a London institution.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-lafayette-kings-cross",
@@ -596,7 +812,19 @@
     "address": "11 Goods Way, London N1C 4PE",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Lafayette%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Dinner-and-show tables book months ahead."
+    "tips": "Dinner-and-show tables book months ahead.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-earth-hackney",
@@ -628,7 +856,19 @@
     "address": "11-17 Stoke Newington Rd, London N16 8BH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=EartH%20(Evolutionary%20Arts%20Hackney)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Multi-space venue — check which room your show's in."
+    "tips": "Multi-space venue — check which room your show's in.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-london-coliseum",
@@ -659,7 +899,19 @@
     "address": "St Martin's Lane, London WC2N 4ES",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=London%20Coliseum%20(English%20National%20Opera)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "ENO performs operas in English translation. £10 under-21 tickets."
+    "tips": "ENO performs operas in English translation. £10 under-21 tickets.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-trident-studios",
@@ -689,7 +941,19 @@
     "address": "17 St Anne's Ct, London W1F 0BQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Trident%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private working studio — exterior only. Plaque commemorates the classic recordings."
+    "tips": "Private working studio — exterior only. Plaque commemorates the classic recordings.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-air-studios",
@@ -721,7 +985,19 @@
     "address": "Lyndhurst Rd, London NW3 5NG",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=AIR%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private studio — exterior only. Occasional open days during Open House weekend."
+    "tips": "Private studio — exterior only. Occasional open days during Open House weekend.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-olympic-studios",
@@ -750,7 +1026,19 @@
     "address": "117-123 Church Rd, London SW13 9HL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Olympic%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Recording plaques throughout the café. Café-cinema combo makes for a great night out."
+    "tips": "Recording plaques throughout the café. Café-cinema combo makes for a great night out.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-rak-studios",
@@ -780,7 +1068,19 @@
     "address": "42-48 Charlbert St, London NW8 7BU",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=RAK%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private studio. Walk from Abbey Road — 5 minutes between them."
+    "tips": "Private studio. Walk from Abbey Road — 5 minutes between them.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-strongroom",
@@ -813,7 +1113,19 @@
     "address": "120-124 Curtain Rd, London EC2A 3SQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Strongroom%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Strongroom Bar is open to the public — go for a drink, see which acts are in."
+    "tips": "Strongroom Bar is open to the public — go for a drink, see which acts are in.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-metropolis-studios",
@@ -844,7 +1156,19 @@
     "address": "The Power House, 70 Chiswick High Rd, London W4 1SY",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Metropolis%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private studio — exterior visible from the street."
+    "tips": "Private studio — exterior visible from the street.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-eastcote-studios",
@@ -875,7 +1199,19 @@
     "address": "249 Kilburn Lane, London W10 4BQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Eastcote%20Studios%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Exterior only."
+    "tips": "Exterior only.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-denmark-street",
@@ -908,7 +1244,19 @@
     "address": "Denmark St, London WC2H 8LT",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Denmark%20Street%20(Tin%20Pan%20Alley)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Guitar shops still line the street. Bob Marley recorded his first UK sessions here."
+    "tips": "Guitar shops still line the street. Bob Marley recorded his first UK sessions here.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-heddon-street",
@@ -939,7 +1287,19 @@
     "address": "Heddon St, London W1B 4BE",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Heddon%20Street%20(Ziggy%20Stardust%20Location)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Now a dining courtyard. Plaque installed 2012. K.West sign was reconstructed."
+    "tips": "Now a dining courtyard. Plaque installed 2012. K.West sign was reconstructed.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-david-bowie-mural",
@@ -970,7 +1330,19 @@
     "address": "Tunstall Rd, London SW9 8DA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=David%20Bowie%20Mural%20Brixton%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Bowie was born in Brixton. Fans still leave flowers and messages."
+    "tips": "Bowie was born in Brixton. Fans still leave flowers and messages.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-amy-winehouse-camden",
@@ -1000,7 +1372,19 @@
     "address": "Camden Stables Market, Chalk Farm Rd, London NW1 8AH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Camden%20Stables%20Statue%20of%20Amy%20Winehouse%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Pair with The Hawley Arms pub (Chalk Farm Road) — her favourite local."
+    "tips": "Pair with The Hawley Arms pub (Chalk Farm Road) — her favourite local.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-freddie-mercury-house",
@@ -1029,7 +1413,19 @@
     "address": "1 Logan Pl, London W8 6QN",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Freddie%20Mercury's%20House%20(Garden%20Lodge)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Respect neighbours — fans have been messaging the wall since 1991. Don't knock."
+    "tips": "Respect neighbours — fans have been messaging the wall since 1991. Don't knock.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-joe-strummer-subway",
@@ -1060,7 +1456,19 @@
     "address": "Portobello Rd area, London W10",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Joe%20Strummer%20Mural%20(Ladbroke%20Grove)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Strummer's Notting Hill roots. Combine with Portobello Road walk."
+    "tips": "Strummer's Notting Hill roots. Combine with Portobello Road walk.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-ziggy-stardust-flat",
@@ -1090,7 +1498,19 @@
     "address": "42 Southend Rd, Beckenham BR3 1SD",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Haddon%20Hall%2C%20Beckenham%20(Bowie's%20Flat)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "30 min train from Victoria. Blue plaque at the gate."
+    "tips": "30 min train from Victoria. Blue plaque at the gate.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-john-lennon-flat",
@@ -1120,7 +1540,19 @@
     "address": "34 Montagu Square, London W1H 2LJ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=34%20Montagu%20Square%20(Lennon%2FYoko%20Flat)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private flat — blue plaque outside. Hendrix recorded demos here."
+    "tips": "Private flat — blue plaque outside. Hendrix recorded demos here.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-paul-mccartney-home",
@@ -1150,7 +1582,19 @@
     "address": "7 Cavendish Ave, London NW8 9JG",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=7%20Cavendish%20Avenue%20(McCartney%20Home)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Private residence — respect. Around the corner from Abbey Road."
+    "tips": "Private residence — respect. Around the corner from Abbey Road.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-hyde-park-stones",
@@ -1179,7 +1623,19 @@
     "address": "Hyde Park, London W2 2UH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Hyde%20Park%20(Rolling%20Stones%201969)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "BST Hyde Park summer festival holds the same stage tradition."
+    "tips": "BST Hyde Park summer festival holds the same stage tradition.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-battersea-power-station",
@@ -1210,7 +1666,19 @@
     "address": "Battersea Power Station, London SW11 8AL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Battersea%20Power%20Station%20(Pink%20Floyd%20Album%20Cover)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Now a mixed-use development — shops, restaurants, and a viewing lift up one of the chimneys (£15)."
+    "tips": "Now a mixed-use development — shops, restaurants, and a viewing lift up one of the chimneys (£15).",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-rainbow-theatre",
@@ -1239,7 +1707,19 @@
     "address": "232-236 Seven Sisters Rd, London N4 3NX",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Rainbow%20Theatre%20(Finsbury%20Park)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Exterior Grade II*-listed. Occasional open days."
+    "tips": "Exterior Grade II*-listed. Occasional open days.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-roxy-club",
@@ -1267,7 +1747,19 @@
     "address": "41-43 Neal St, London WC2H 9PJ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Roxy%20Club%20Site%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Now a fashion retailer. Plaque commemorates The Clash's first show."
+    "tips": "Now a fashion retailer. Plaque commemorates The Clash's first show.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-virgin-records",
@@ -1296,7 +1788,19 @@
     "address": "Marble Arch area, London W2",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Virgin%20Records%20Original%20Store%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Second flagship at 24 Oxford Street 1976 was equally legendary."
+    "tips": "Second flagship at 24 Oxford Street 1976 was equally legendary.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-rough-trade-west",
@@ -1329,7 +1833,19 @@
     "address": "130 Talbot Rd, London W11 1JA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Rough%20Trade%20West%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Second-hand dig-crate heaven. Portobello Road nearby."
+    "tips": "Second-hand dig-crate heaven. Portobello Road nearby.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-sister-ray",
@@ -1362,7 +1878,19 @@
     "address": "75 Berwick St, London W1F 8TG",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sister%20Ray%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Second-hand section upstairs."
+    "tips": "Second-hand section upstairs.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-sounds-of-universe",
@@ -1396,7 +1924,19 @@
     "address": "7 Broadwick St, London W1F 0DA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Sounds%20of%20the%20Universe%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Soul Jazz reissues curated on the ground floor."
+    "tips": "Soul Jazz reissues curated on the ground floor.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-phonica-records",
@@ -1429,7 +1969,19 @@
     "address": "51 Poland St, London W1F 7LZ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Phonica%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Listening decks available. Phonica label releases stocked."
+    "tips": "Listening decks available. Phonica label releases stocked.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-honest-jons",
@@ -1464,7 +2016,19 @@
     "address": "278 Portobello Rd, London W10 5TE",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Honest%20Jon's%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Saturday market day busiest. Listening decks."
+    "tips": "Saturday market day busiest. Listening decks.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-reckless-records",
@@ -1497,7 +2061,19 @@
     "address": "30 Berwick St, London W1F 8RH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Reckless%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Bring your own unwanted vinyl — they buy."
+    "tips": "Bring your own unwanted vinyl — they buy.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-flashback-islington",
@@ -1531,7 +2107,19 @@
     "address": "50 Essex Rd, London N1 8LR",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Flashback%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Crouch End branch has the best jazz selection; Shoreditch for newer releases."
+    "tips": "Crouch End branch has the best jazz selection; Shoreditch for newer releases.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-kristina-records",
@@ -1564,7 +2152,19 @@
     "address": "44 Stoke Newington Rd, London N16 7XJ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Kristina%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Tiny — squeeze in past the door."
+    "tips": "Tiny — squeeze in past the door.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-love-vinyl",
@@ -1597,7 +2197,19 @@
     "address": "5 Pearson St, London E2 8JD",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Love%20Vinyl%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "In-store DJ sets Friday evenings."
+    "tips": "In-store DJ sets Friday evenings.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-all-ages-camden",
@@ -1629,7 +2241,19 @@
     "address": "27A Pratt St, London NW1 0BG",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=All%20Ages%20Records%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Frequent in-store gigs — check calendar."
+    "tips": "Frequent in-store gigs — check calendar.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-bbc-proms",
@@ -1659,7 +2283,19 @@
     "address": "Royal Albert Hall, Kensington Gore, London SW7 2AP",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=BBC%20Proms%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "'Promenading' standing tickets £8 on the day — queue from 11am. Last Night is iconic."
+    "tips": "'Promenading' standing tickets £8 on the day — queue from 11am. Last Night is iconic.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-london-jazz-festival",
@@ -1688,7 +2324,19 @@
     "address": "Venues citywide",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=EFG%20London%20Jazz%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free events at Southbank Centre. Mid-November dates."
+    "tips": "Free events at Southbank Centre. Mid-November dates.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-field-day",
@@ -1719,7 +2367,19 @@
     "address": "Brockwell Park, London SE24",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Field%20Day%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Combine with Cross the Tracks (following day) for a jazz-soul-funk sister event."
+    "tips": "Combine with Cross the Tracks (following day) for a jazz-soul-funk sister event.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-cross-the-tracks",
@@ -1750,7 +2410,19 @@
     "address": "Brockwell Park, London SE24",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Cross%20the%20Tracks%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Family-friendly. Arrive early for sound-system sets."
+    "tips": "Family-friendly. Arrive early for sound-system sets.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-mighty-hoopla",
@@ -1779,7 +2451,19 @@
     "address": "Brockwell Park, London SE24",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Mighty%20Hoopla%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Costumes encouraged. Saturdays sell out fast."
+    "tips": "Costumes encouraged. Saturdays sell out fast.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-all-points-east",
@@ -1809,7 +2493,19 @@
     "address": "Victoria Park, London E9",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=All%20Points%20East%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free 'In the Neighbourhood' Wed-Thu days."
+    "tips": "Free 'In the Neighbourhood' Wed-Thu days.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-wireless-festival",
@@ -1840,7 +2536,19 @@
     "address": "Finsbury Park, London N4",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wireless%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Three-day passes cheapest."
+    "tips": "Three-day passes cheapest.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-bst-hyde-park",
@@ -1870,7 +2578,19 @@
     "address": "Hyde Park, London W2",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=British%20Summer%20Time%20Hyde%20Park%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Open House midweek days are free — smaller acts in the park."
+    "tips": "Open House midweek days are free — smaller acts in the park.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-lovebox",
@@ -1900,7 +2620,19 @@
     "address": "Gunnersbury Park, London W3",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Lovebox%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Sister festival Citadel (family-friendly) runs the following day."
+    "tips": "Sister festival Citadel (family-friendly) runs the following day.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-meltdown",
@@ -1932,7 +2664,19 @@
     "address": "Southbank Centre, Belvedere Rd, London SE1 8XX",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Meltdown%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Who curates changes annually — an indicator of that year's programme."
+    "tips": "Who curates changes annually — an indicator of that year's programme.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-city-splash",
@@ -1963,7 +2707,19 @@
     "address": "Crystal Palace Park, London SE19",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=City%20Splash%20Festival%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Family-friendly. Sound-system rigs are the draw."
+    "tips": "Family-friendly. Sound-system rigs are the draw.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-notting-hill-sound-systems",
@@ -1996,7 +2752,19 @@
     "address": "Notting Hill streets, London W11",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Notting%20Hill%20Carnival%20Sound%20Systems%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Sunday is family-focused; Monday is the big parade. Channel One, King Tubby's Hi-Fi, Aba Shanti-I are legendary rigs."
+    "tips": "Sunday is family-focused; Monday is the big parade. Channel One, King Tubby's Hi-Fi, Aba Shanti-I are legendary rigs.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-south-west-four",
@@ -2028,7 +2796,19 @@
     "address": "Clapham Common, London SW4",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=South%20West%20Four%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Weekend tickets. Bank-holiday Monday."
+    "tips": "Weekend tickets. Bank-holiday Monday.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-st-martins-lunchtime",
@@ -2059,7 +2839,19 @@
     "address": "Trafalgar Square, London WC2N 4JJ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20Martin-in-the-Fields%20Lunchtime%20Concerts%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free, suggested donation. Evening candlelit concerts (£15-30) also excellent."
+    "tips": "Free, suggested donation. Evening candlelit concerts (£15-30) also excellent.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-st-pauls-evensong",
@@ -2091,7 +2883,19 @@
     "address": "St Paul's Churchyard, London EC4M 8AD",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Evensong%20at%20St%20Paul's%20Cathedral%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free (no cathedral entry fee for Evensong). One of London's great musical rituals."
+    "tips": "Free (no cathedral entry fee for Evensong). One of London's great musical rituals.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-westminster-abbey-evensong",
@@ -2123,7 +2927,19 @@
     "address": "20 Deans Yd, London SW1P 3PA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Evensong%20at%20Westminster%20Abbey%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Arrive 16:40. Sit in the quire stalls if allowed."
+    "tips": "Arrive 16:40. Sit in the quire stalls if allowed.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-st-johns-smith",
@@ -2154,7 +2970,19 @@
     "address": "Smith Square, London SW1P 3HA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=St%20John's%20Smith%20Square%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Also known as 'Queen Anne's footstool' for its four-corner towers."
+    "tips": "Also known as 'Queen Anne's footstool' for its four-corner towers.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-milton-court",
@@ -2186,7 +3014,19 @@
     "address": "1 Milton St, London EC2Y 9BH",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Milton%20Court%20Concert%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Student concerts often free — check website."
+    "tips": "Student concerts often free — check website.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-royal-academy-music-museum",
@@ -2216,7 +3056,19 @@
     "address": "Marylebone Rd, London NW1 5HT",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Royal%20Academy%20of%20Music%20Museum%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free. Student recitals also free — check website."
+    "tips": "Free. Student recitals also free — check website.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-royal-college-museum",
@@ -2246,7 +3098,19 @@
     "address": "Prince Consort Rd, London SW7 2BS",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Royal%20College%20of%20Music%20Museum%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free. Student recitals also frequently free."
+    "tips": "Free. Student recitals also frequently free.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-horniman-instruments",
@@ -2278,7 +3142,19 @@
     "address": "100 London Rd, London SE23 3PQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Horniman%20Museum%20Music%20Gallery%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free. Family-friendly interactive stations."
+    "tips": "Free. Family-friendly interactive stations.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-va-theatre-performance",
@@ -2310,7 +3186,19 @@
     "address": "Cromwell Rd, London SW7 2RL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=V%26A%20Theatre%20%26%20Performance%20Collection%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free. Includes the ceremonial Olivier Award and music-industry archives."
+    "tips": "Free. Includes the ceremonial Olivier Award and music-industry archives.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-british-library-sound",
@@ -2342,7 +3230,19 @@
     "address": "96 Euston Rd, London NW1 2DB",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=British%20Library%20Sound%20Archive%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free to use. Book a listening booth at the information desk."
+    "tips": "Free to use. Book a listening booth at the information desk.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-beatles-store-baker",
@@ -2374,7 +3274,19 @@
     "address": "231-233 Baker St, London NW1 6XE",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Beatles%20Store%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free to browse. Combine with Sherlock Holmes Museum next door."
+    "tips": "Free to browse. Combine with Sherlock Holmes Museum next door.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-fender-london",
@@ -2406,7 +3318,19 @@
     "address": "Tottenham Ct Rd area, London W1T",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Fender%20London%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Free to try any guitar — bring your own picks."
+    "tips": "Free to try any guitar — bring your own picks.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-george-tavern",
@@ -2438,7 +3362,19 @@
     "address": "373 Commercial Rd, London E1 0LA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20George%20Tavern%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Save-the-George campaign saved it from demolition. Support the venue."
+    "tips": "Save-the-George campaign saved it from demolition. Support the venue.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-hope-anchor",
@@ -2470,7 +3406,19 @@
     "address": "207 Upper St, London N1 1BZ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Hope%20%26%20Anchor%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Basement venue, 70-cap. Gigs most nights."
+    "tips": "Basement venue, 70-cap. Gigs most nights.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-drumsheds",
@@ -2502,7 +3450,19 @@
     "address": "Meridian Water, London N17",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Drumsheds%20(Printworks%20successor)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Meridian Water station. Check event calendar."
+    "tips": "Meridian Water station. Check event calendar.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-dublin-castle-memorial",
@@ -2534,7 +3494,19 @@
     "address": "Denmark St, London WC2H 8LT",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Denmark%20Street%20Heritage%20Walk%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Plaques along the street. No. 6 was Sex Pistols' flat; No. 20 where Elton John wrote Your Song."
+    "tips": "Plaques along the street. No. 6 was Sex Pistols' flat; No. 20 where Elton John wrote Your Song.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-london-jazz-school",
@@ -2566,7 +3538,19 @@
     "address": "Creekside, London SE8 3DZ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Trinity%20Laban%20Conservatoire%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Student showcases frequently free. Blackheath Halls is associated."
+    "tips": "Student showcases frequently free. Blackheath Halls is associated.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-magic-circle-music",
@@ -2597,7 +3581,19 @@
     "address": "309 Regent St, London W1B 2UW",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Regent%20Street%20Cinema%20Silent%20Film%20Concerts%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Only cinema in London still projecting 35mm regularly."
+    "tips": "Only cinema in London still projecting 35mm regularly.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-carnaby-street",
@@ -2629,7 +3625,19 @@
     "address": "Carnaby St, London W1F",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Carnaby%20Street%20(Swinging%2060s)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Christmas lights installation famously music-themed each year."
+    "tips": "Christmas lights installation famously music-themed each year.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-apple-boutique",
@@ -2659,7 +3667,19 @@
     "address": "94 Baker St, London W1U 6TQ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Apple%20Boutique%20Site%20(94%20Baker%20St)%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Now a different shop — plaque outside."
+    "tips": "Now a different shop — plaque outside.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-bolan-tree",
@@ -2689,7 +3709,19 @@
     "address": "Queen's Ride, Barnes, London SW13",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Marc%20Bolan's%20Tree%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Fans still leave tributes. Anniversary vigils draw crowds."
+    "tips": "Fans still leave tributes. Anniversary vigils draw crowds.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-handel-hendrix",
@@ -2721,7 +3753,19 @@
     "address": "25 Brook St, London W1K 4HB",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Handel%20%26%20Hendrix%20in%20London%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Hendrix's flat restored to 1969 — his guitars, album collection, and ashtrays exactly where he left them."
+    "tips": "Hendrix's flat restored to 1969 — his guitars, album collection, and ashtrays exactly where he left them.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-ronnie-scotts",
@@ -2751,7 +3795,19 @@
     "address": "47 Frith St, London W1D 4HT",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Ronnie%20Scott's%20Jazz%20Club%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Late show (11:30pm) cheaper than main show. Dinner tables best for view."
+    "tips": "Late show (11:30pm) cheaper than main show. Dinner tables best for view.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-royal-albert-hall",
@@ -2783,7 +3839,19 @@
     "address": "Kensington Gore, London SW7 2AP",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Royal%20Albert%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Proms standing tickets £8 on the day. Daytime tours £18."
+    "tips": "Proms standing tickets £8 on the day. Daytime tours £18.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-wigmore-hall",
@@ -2815,7 +3883,19 @@
     "address": "36 Wigmore St, London W1U 2BP",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wigmore%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Sunday coffee concerts £20 — best value in classical London."
+    "tips": "Sunday coffee concerts £20 — best value in classical London.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-union-chapel",
@@ -2849,7 +3929,19 @@
     "address": "19b Compton Terrace, London N1 2UN",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Union%20Chapel%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Pew seating — arrive early for front rows. Daytime Sanctuary Series is free."
+    "tips": "Pew seating — arrive early for front rows. Daytime Sanctuary Series is free.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-dublin-castle",
@@ -2882,7 +3974,19 @@
     "address": "94 Parkway, London NW1 7AN",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Dublin%20Castle%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Cash-only. Gigs nightly £5-10."
+    "tips": "Cash-only. Gigs nightly £5-10.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-windmill-brixton",
@@ -2914,7 +4018,19 @@
     "address": "22 Blenheim Gardens, London SW2 5BZ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Windmill%20Brixton%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Cash-friendly. Frequent sell-outs — arrive early."
+    "tips": "Cash-friendly. Frequent sell-outs — arrive early.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-good-mixer",
@@ -2946,7 +4062,19 @@
     "address": "30 Inverness St, London NW1 7HJ",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Good%20Mixer%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Famous Blur–Oasis rivalry nearly came to blows here."
+    "tips": "Famous Blur–Oasis rivalry nearly came to blows here.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-wiltons-music-hall",
@@ -2979,7 +4107,19 @@
     "address": "1 Grace's Alley, London E1 8JB",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Wilton's%20Music%20Hall%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Mahogany Bar open without a ticket. Victorian time capsule."
+    "tips": "Mahogany Bar open without a ticket. Victorian time capsule.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-hawley-arms",
@@ -3010,7 +4150,19 @@
     "address": "2 Castlehaven Rd, London NW1 8QU",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Hawley%20Arms%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Amy-themed photo wall upstairs. Burned down 2008, rebuilt."
+    "tips": "Amy-themed photo wall upstairs. Burned down 2008, rebuilt.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-royal-opera-house",
@@ -3042,7 +4194,19 @@
     "address": "Bow St, London WC2E 9DD",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Royal%20Opera%20House%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Day-seats from £10 — queue from 10am. Tours offered daily."
+    "tips": "Day-seats from £10 — queue from 10am. Tours offered daily.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-shepherds-bush-empire",
@@ -3074,7 +4238,19 @@
     "address": "Shepherd's Bush Green, London W12 8TT",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=O2%20Shepherd's%20Bush%20Empire%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Upper circle has best sight-lines."
+    "tips": "Upper circle has best sight-lines.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-rough-trade-east",
@@ -3106,7 +4282,19 @@
     "address": "Dray Walk, 91 Brick Ln, London E1 6QL",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=Rough%20Trade%20East%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Daily free in-store performances — schedule on their website."
+    "tips": "Daily free in-store performances — schedule on their website.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ml-troubadour",
@@ -3138,6 +4326,18 @@
     "address": "263-267 Old Brompton Rd, London SW5 9JA",
     "affiliateUrl": "https://www.getyourguide.com/s/?q=The%20Troubadour%20London",
     "affiliateLabel": "Book Music Experiences",
-    "tips": "Upstairs café, downstairs venue. Open-mic Wednesdays."
+    "tips": "Upstairs café, downstairs venue. Open-mic Wednesdays.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   }
 ]

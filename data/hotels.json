@@ -4,1064 +4,2575 @@
     "name": "Generator London",
     "description": "Stylish hostel in a converted police station near King's Cross. Social atmosphere with a bar, cafe, and events.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["budget"],
-    "tags": ["adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure"
+    ],
     "starRating": 2,
     "priceRange": "£40-60/night",
-    "estimatedCost": { "amount": 50, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
     "address": "37 Tavistock Place, London WC1H 9SE",
     "affiliateUrl": "https://www.booking.com/hotel/gb/generator-hostel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Private rooms available too. Great location near King's Cross and the British Library."
+    "tips": "Private rooms available too. Great location near King's Cross and the British Library.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "point-a-shoreditch",
     "name": "Point A Hotel Shoreditch",
     "description": "Smart, compact rooms with everything you need in trendy Shoreditch. Modern design, great WiFi, and excellent location.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["budget"],
-    "tags": ["nightlife", "art"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "art"
+    ],
     "starRating": 3,
     "priceRange": "£60-90/night",
-    "estimatedCost": { "amount": 75, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
     "address": "130-136 Curtain Rd, London EC2A 3AR",
     "affiliateUrl": "https://www.booking.com/hotel/gb/point-a-shoreditch",
     "affiliateLabel": "Check Availability",
-    "tips": "Rooms are small but perfectly designed. Steps from Shoreditch's best bars and restaurants."
+    "tips": "Rooms are small but perfectly designed. Steps from Shoreditch's best bars and restaurants.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hub-by-premier-inn-covent-garden",
     "name": "hub by Premier Inn Covent Garden",
     "description": "Brilliantly located compact hotel right in Covent Garden. Control your room from an app - lights, TV, temperature.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["theatre", "shopping"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "theatre",
+      "shopping"
+    ],
     "starRating": 3,
     "priceRange": "£80-120/night",
-    "estimatedCost": { "amount": 100, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 100,
+      "currency": "GBP"
+    },
     "address": "110 St Martin's Ln, London WC2N 4BA",
     "affiliateUrl": "https://www.booking.com/hotel/gb/hub-by-premier-inn-covent-garden",
     "affiliateLabel": "Check Availability",
-    "tips": "Unbeatable location for West End theatres. Smart tech-enabled rooms. Book early for best rates."
+    "tips": "Unbeatable location for West End theatres. Smart tech-enabled rooms. Book early for best rates.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-hoxton-southwark",
     "name": "The Hoxton Southwark",
     "description": "Design-led boutique hotel with a lively lobby, rooftop bar, and excellent on-site dining. Cool, creative atmosphere.",
     "neighbourhood": "Bankside",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "food", "photography"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "food",
+      "photography"
+    ],
     "starRating": 4,
     "priceRange": "£120-180/night",
-    "estimatedCost": { "amount": 150, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 150,
+      "currency": "GBP"
+    },
     "address": "40 Blackfriars Rd, London SE1 8PB",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-southwark",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank."
+    "tips": "The rooftop restaurant Seabird has stunning views. Walk to Tate Modern, Borough Market, and the South Bank.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-zetter-townhouse",
     "name": "The Zetter Townhouse Clerkenwell",
     "description": "Boutique Georgian townhouse hotel with individually designed rooms full of vintage curiosities. Award-winning cocktail lounge.",
     "neighbourhood": "Clerkenwell",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["romance", "food", "history"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "history"
+    ],
     "starRating": 4,
     "priceRange": "£180-280/night",
-    "estimatedCost": { "amount": 220, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 220,
+      "currency": "GBP"
+    },
     "address": "49-50 St John's Square, London EC1V 4JJ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-zetter-townhouse-clerkenwell",
     "affiliateLabel": "Check Availability",
-    "tips": "The cocktail lounge is one of London's best. Each room is unique. Perfect romantic getaway."
+    "tips": "The cocktail lounge is one of London's best. Each room is unique. Perfect romantic getaway.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "citizenm-tower",
     "name": "citizenM Tower of London",
     "description": "High-tech hotel with mood lighting, rain showers, and king-size beds. Stunning views of the Tower of London from the rooftop bar.",
     "neighbourhood": "Tower Hill",
-    "budgetTier": ["mid-range"],
-    "tags": ["history", "photography", "architecture"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "photography",
+      "architecture"
+    ],
     "starRating": 4,
     "priceRange": "£130-200/night",
-    "estimatedCost": { "amount": 160, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 160,
+      "currency": "GBP"
+    },
     "address": "40 Trinity Square, London EC3N 4DJ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/citizenm-tower-of-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop bar has incredible Tower of London views. Self-check-in kiosks. Great for tech lovers."
+    "tips": "The rooftop bar has incredible Tower of London views. Self-check-in kiosks. Great for tech lovers.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-savoy",
     "name": "The Savoy",
     "description": "A legendary 5-star hotel on the Strand. Art Deco glamour, impeccable service, and Thames views. London luxury at its finest.",
     "neighbourhood": "West End",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "history", "theatre"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "history",
+      "theatre"
+    ],
     "starRating": 5,
     "priceRange": "£400-800/night",
-    "estimatedCost": { "amount": 550, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 550,
+      "currency": "GBP"
+    },
     "address": "Strand, London WC2R 0EZ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-savoy",
     "affiliateLabel": "Check Availability",
-    "tips": "Even if not staying, visit the American Bar for cocktails or book their famous afternoon tea."
+    "tips": "Even if not staying, visit the American Bar for cocktails or book their famous afternoon tea.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "claridges",
     "name": "Claridge's",
     "description": "The epitome of London luxury. Art Deco masterpiece in Mayfair with legendary service. The afternoon tea is world-famous.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "shopping", "art"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "shopping",
+      "art"
+    ],
     "starRating": 5,
     "priceRange": "£500-1000/night",
-    "estimatedCost": { "amount": 700, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 700,
+      "currency": "GBP"
+    },
     "address": "Brook St, London W1K 4HR",
     "affiliateUrl": "https://www.booking.com/hotel/gb/claridges",
     "affiliateLabel": "Check Availability",
-    "tips": "The Art Deco foyer is worth seeing even if you're not a guest. Afternoon tea here is a bucket-list experience."
+    "tips": "The Art Deco foyer is worth seeing even if you're not a guest. Afternoon tea here is a bucket-list experience.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "shangri-la-the-shard",
     "name": "Shangri-La The Shard",
     "description": "London's highest hotel, occupying floors 34-52 of The Shard. Infinity pool with city views. Unforgettable skyline vistas.",
     "neighbourhood": "London Bridge",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "photography", "architecture"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "photography",
+      "architecture"
+    ],
     "starRating": 5,
     "priceRange": "£450-900/night",
-    "estimatedCost": { "amount": 600, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 600,
+      "currency": "GBP"
+    },
     "address": "31 St Thomas St, London SE1 9QU",
     "affiliateUrl": "https://www.booking.com/hotel/gb/shangri-la-the-shard",
     "affiliateLabel": "Check Availability",
-    "tips": "The infinity pool on the 52nd floor is London's most spectacular. Bar and lounge on floor 35 open to non-guests."
+    "tips": "The infinity pool on the 52nd floor is London's most spectacular. Bar and lounge on floor 35 open to non-guests.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "safestay-london-elephant",
     "name": "Safestay London Elephant & Castle",
     "description": "Modern hostel in a beautifully converted Victorian mansion. Dorms and private rooms with a garden and communal kitchen.",
     "neighbourhood": "Elephant & Castle",
-    "budgetTier": ["budget"],
-    "tags": ["adventure", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure",
+      "family"
+    ],
     "starRating": 2,
     "priceRange": "£30-55/night",
-    "estimatedCost": { "amount": 40, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
     "address": "144 Walworth Rd, London SE17 1JL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/safestay-london-elephant",
     "affiliateLabel": "Check Availability",
-    "tips": "Great budget option with good transport links. The building itself is gorgeous. 10 mins to central London."
+    "tips": "Great budget option with good transport links. The building itself is gorgeous. 10 mins to central London.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "wombats-city-hostel",
     "name": "Wombat's City Hostel London",
     "description": "Award-winning hostel near Tower Hill with a large communal kitchen, bar, and friendly atmosphere. Clean and well-run.",
     "neighbourhood": "Whitechapel",
-    "budgetTier": ["budget"],
-    "tags": ["adventure", "nightlife"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure",
+      "nightlife"
+    ],
     "starRating": 2,
     "priceRange": "£35-60/night",
-    "estimatedCost": { "amount": 45, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
     "address": "7 Dock St, London E1 8LL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/wombats-city-hostel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "One of London's best-rated hostels. The WomBar downstairs is a great place to meet fellow travellers."
+    "tips": "One of London's best-rated hostels. The WomBar downstairs is a great place to meet fellow travellers.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "clink78-hostel",
     "name": "Clink78 Hostel",
     "description": "Hostel in a stunning 200-year-old Victorian courthouse near King's Cross. Unique character with original courtroom features preserved.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["budget"],
-    "tags": ["adventure", "history"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure",
+      "history"
+    ],
     "starRating": 2,
     "priceRange": "£30-55/night",
-    "estimatedCost": { "amount": 40, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 40,
+      "currency": "GBP"
+    },
     "address": "78 King's Cross Rd, London WC1X 9QG",
     "affiliateUrl": "https://www.booking.com/hotel/gb/clink78",
     "affiliateLabel": "Check Availability",
-    "tips": "The old courtroom is now the common area. Charles Dickens visited this building. ClashBar in the basement is fun."
+    "tips": "The old courtroom is now the common area. Charles Dickens visited this building. ClashBar in the basement is fun.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "st-christophers-inn-borough",
     "name": "St Christopher's Inn Borough",
     "description": "Party hostel right next to Borough Market with Belushi's bar downstairs. Social, lively, and perfectly located for South Bank exploring.",
     "neighbourhood": "Borough",
-    "budgetTier": ["budget"],
-    "tags": ["nightlife", "food", "adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "adventure"
+    ],
     "starRating": 2,
     "priceRange": "£30-55/night",
-    "estimatedCost": { "amount": 42, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 42,
+      "currency": "GBP"
+    },
     "address": "121 Borough High St, London SE1 1NP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/st-christophers-inn-borough",
     "affiliateLabel": "Check Availability",
-    "tips": "Right next to Borough Market for incredible street food. Belushi's bar has happy hour deals. Great social scene."
+    "tips": "Right next to Borough Market for incredible street food. Belushi's bar has happy hour deals. Great social scene.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "yha-london-central",
     "name": "YHA London Central",
     "description": "Modern purpose-built hostel in a great location between Oxford Street and King's Cross. Clean, safe, and excellent facilities.",
     "neighbourhood": "Bloomsbury",
-    "budgetTier": ["budget"],
-    "tags": ["family", "adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "family",
+      "adventure"
+    ],
     "starRating": 2,
     "priceRange": "£30-55/night",
-    "estimatedCost": { "amount": 42, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 42,
+      "currency": "GBP"
+    },
     "address": "104 Bolsover St, London W1W 5NU",
     "affiliateUrl": "https://www.booking.com/hotel/gb/yha-london-central",
     "affiliateLabel": "Check Availability",
-    "tips": "Best family-friendly hostel in London with private family rooms. Walk to the British Museum in 5 minutes."
+    "tips": "Best family-friendly hostel in London with private family rooms. Walk to the British Museum in 5 minutes.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "selina-camden",
     "name": "Selina Camden",
     "description": "Trendy co-working and co-living hostel in vibrant Camden. Rooftop terrace, yoga classes, and a creative community vibe.",
     "neighbourhood": "Camden",
-    "budgetTier": ["budget"],
-    "tags": ["adventure", "music", "nightlife"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure",
+      "music",
+      "nightlife"
+    ],
     "starRating": 2,
     "priceRange": "£35-65/night",
-    "estimatedCost": { "amount": 48, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 48,
+      "currency": "GBP"
+    },
     "address": "65-67 Camden High St, London NW1 7JL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/selina-camden",
     "affiliateLabel": "Check Availability",
-    "tips": "Great for digital nomads with co-working space. Steps from Camden Market and the live music scene."
+    "tips": "Great for digital nomads with co-working space. Steps from Camden Market and the live music scene.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "sohostel",
     "name": "SoHostel",
     "description": "Budget hostel in an unbeatable Soho location. Basic but clean rooms minutes from Oxford Circus, Piccadilly, and Theatreland.",
     "neighbourhood": "Soho",
-    "budgetTier": ["budget"],
-    "tags": ["nightlife", "theatre", "shopping"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "nightlife",
+      "theatre",
+      "shopping"
+    ],
     "starRating": 2,
     "priceRange": "£35-60/night",
-    "estimatedCost": { "amount": 45, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 45,
+      "currency": "GBP"
+    },
     "address": "1 Frith St, London W1D 3HZ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/sohostel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "You cannot beat this location for budget accommodation. Soho nightlife, restaurants, and theatres on your doorstep."
+    "tips": "You cannot beat this location for budget accommodation. Soho nightlife, restaurants, and theatres on your doorstep.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-hoxton-shoreditch",
     "name": "The Hoxton Shoreditch",
     "description": "The original Hoxton hotel that started the brand. Industrial-chic rooms, buzzy lobby, and a restaurant that draws locals and guests alike.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["nightlife", "art", "food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "art",
+      "food"
+    ],
     "starRating": 4,
     "priceRange": "£120-180/night",
-    "estimatedCost": { "amount": 150, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 150,
+      "currency": "GBP"
+    },
     "address": "81 Great Eastern St, London EC2A 3HU",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-shoreditch",
     "affiliateLabel": "Check Availability",
-    "tips": "The lobby is always buzzing. Excellent brunch at Hoxton Grill. Heart of the Shoreditch nightlife scene."
+    "tips": "The lobby is always buzzing. Excellent brunch at Hoxton Grill. Heart of the Shoreditch nightlife scene.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-hoxton-holborn",
     "name": "The Hoxton Holborn",
     "description": "Stylish boutique hotel in a grand former office building. Lofty lobby with co-working vibes, cocktail bar, and great restaurant.",
     "neighbourhood": "Holborn",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "shopping", "history"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "shopping",
+      "history"
+    ],
     "starRating": 4,
     "priceRange": "£130-190/night",
-    "estimatedCost": { "amount": 155, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 155,
+      "currency": "GBP"
+    },
     "address": "199-206 High Holborn, London WC1V 7BD",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-hoxton-holborn",
     "affiliateLabel": "Check Availability",
-    "tips": "Stunning lobby space for working or lounging. Walk to the British Museum, Covent Garden, and the West End."
+    "tips": "Stunning lobby space for working or lounging. Walk to the British Museum, Covent Garden, and the West End.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "citizenm-shoreditch",
     "name": "citizenM Shoreditch",
     "description": "Trendy tech-forward hotel in the heart of Shoreditch. MoodPad-controlled rooms, art-filled lobby, and 24/7 canteen.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "nightlife", "food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "nightlife",
+      "food"
+    ],
     "starRating": 4,
     "priceRange": "£120-180/night",
-    "estimatedCost": { "amount": 145, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 145,
+      "currency": "GBP"
+    },
     "address": "6 Holywell Ln, London EC2A 3ET",
     "affiliateUrl": "https://www.booking.com/hotel/gb/citizenm-london-shoreditch",
     "affiliateLabel": "Check Availability",
-    "tips": "King-size beds and rain showers as standard. The lobby living room is great for hanging out and working."
+    "tips": "King-size beds and rain showers as standard. The lobby living room is great for hanging out and working.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "citizenm-south-bank",
     "name": "citizenM London South Bank",
     "description": "Design-led hotel steps from the Tate Modern and the South Bank cultural strip. Compact but beautifully designed rooms.",
     "neighbourhood": "Bankside",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "theatre", "photography"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "theatre",
+      "photography"
+    ],
     "starRating": 4,
     "priceRange": "£120-175/night",
-    "estimatedCost": { "amount": 140, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 140,
+      "currency": "GBP"
+    },
     "address": "22 Lavington St, London SE1 0NZ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/citizenm-london-bankside",
     "affiliateLabel": "Check Availability",
-    "tips": "Walk to Tate Modern, Shakespeare's Globe, and Borough Market. Great value for this prime cultural location."
+    "tips": "Walk to Tate Modern, Shakespeare's Globe, and Borough Market. Great value for this prime cultural location.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "z-hotel-soho",
     "name": "The Z Hotel Soho",
     "description": "Compact, stylish rooms in the heart of Soho with complimentary wine and cheese each evening. Unbeatable West End location.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range"],
-    "tags": ["theatre", "nightlife", "shopping"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "theatre",
+      "nightlife",
+      "shopping"
+    ],
     "starRating": 3,
     "priceRange": "£90-140/night",
-    "estimatedCost": { "amount": 110, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 110,
+      "currency": "GBP"
+    },
     "address": "17 Moor St, London W1D 5AP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-z-hotel-soho",
     "affiliateLabel": "Check Availability",
-    "tips": "Free wine and cheese 4-8pm daily is a lovely touch. Rooms are small but smart. Best Soho location."
+    "tips": "Free wine and cheese 4-8pm daily is a lovely touch. Rooms are small but smart. Best Soho location.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "z-hotel-piccadilly",
     "name": "The Z Hotel Piccadilly",
     "description": "Chic budget-boutique hotel just off Piccadilly Circus. Small but perfectly formed rooms with premium bedding and free evening wine.",
     "neighbourhood": "West End",
-    "budgetTier": ["mid-range"],
-    "tags": ["theatre", "shopping"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "theatre",
+      "shopping"
+    ],
     "starRating": 3,
     "priceRange": "£85-130/night",
-    "estimatedCost": { "amount": 105, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 105,
+      "currency": "GBP"
+    },
     "address": "7 Coventry St, London W1D 6BL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-z-hotel-piccadilly",
     "affiliateLabel": "Check Availability",
-    "tips": "Steps from Piccadilly Circus and Leicester Square. The complimentary evening cheese and wine is a great bonus."
+    "tips": "Steps from Piccadilly Circus and Leicester Square. The complimentary evening cheese and wine is a great bonus.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "point-a-kings-cross",
     "name": "Point A Hotel King's Cross",
     "description": "Ultra-modern compact hotel with excellent transport links from King's Cross and St Pancras. Smart design maximises small spaces.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["budget"],
-    "tags": ["adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure"
+    ],
     "starRating": 3,
     "priceRange": "£55-85/night",
-    "estimatedCost": { "amount": 70, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 70,
+      "currency": "GBP"
+    },
     "address": "324-330 Gray's Inn Rd, London WC1X 8BU",
     "affiliateUrl": "https://www.booking.com/hotel/gb/point-a-hotel-london-kings-cross",
     "affiliateLabel": "Check Availability",
-    "tips": "Eurostar connection at St Pancras next door. Great value for the location. Power showers and smart TVs."
+    "tips": "Eurostar connection at St Pancras next door. Great value for the location. Power showers and smart TVs.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "mama-shelter-shoreditch",
     "name": "Mama Shelter London Shoreditch",
     "description": "Playful, colourful hotel with a vibrant rooftop bar and restaurant. Eclectic interiors, DJ nights, and a fun social atmosphere.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["nightlife", "food", "art"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "nightlife",
+      "food",
+      "art"
+    ],
     "starRating": 4,
     "priceRange": "£110-170/night",
-    "estimatedCost": { "amount": 135, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 135,
+      "currency": "GBP"
+    },
     "address": "437 Hackney Rd, London E2 8PP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/mama-shelter-london-shoreditch",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop is one of east London's best hangouts. Sunday brunch with bottomless drinks is legendary."
+    "tips": "The rooftop is one of east London's best hangouts. Sunday brunch with bottomless drinks is legendary.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-pilgrm",
     "name": "The Pilgrm",
     "description": "Independent boutique hotel in Paddington with curated interiors, a locally sourced restaurant, and a cosy neighbourhood feel.",
     "neighbourhood": "Paddington",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "romance"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£120-180/night",
-    "estimatedCost": { "amount": 145, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 145,
+      "currency": "GBP"
+    },
     "address": "25 London St, London W2 1HH",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-pilgrm",
     "affiliateLabel": "Check Availability",
-    "tips": "Heathrow Express from Paddington makes arrival easy. Lovely independent coffee shop downstairs."
+    "tips": "Heathrow Express from Paddington makes arrival easy. Lovely independent coffee shop downstairs.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "qbic-london-city",
     "name": "Qbic London City",
     "description": "Eco-friendly design hotel in Whitechapel with modular room pods, a lively bar, and strong sustainability credentials.",
     "neighbourhood": "Whitechapel",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "food"
+    ],
     "starRating": 3,
     "priceRange": "£90-140/night",
-    "estimatedCost": { "amount": 110, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 110,
+      "currency": "GBP"
+    },
     "address": "42 Adler St, London E1 1EE",
     "affiliateUrl": "https://www.booking.com/hotel/gb/qbic-hotel-london-city",
     "affiliateLabel": "Check Availability",
-    "tips": "Great for eco-conscious travellers. Near Brick Lane for incredible curry and street art. Motilo room pods are fun."
+    "tips": "Great for eco-conscious travellers. Near Brick Lane for incredible curry and street art. Motilo room pods are fun.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-ritz-london",
     "name": "The Ritz London",
     "description": "Legendary luxury hotel on Piccadilly with Louis XVI-style interiors, world-famous afternoon tea, and impeccable white-glove service.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "history", "shopping"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "history",
+      "shopping"
+    ],
     "starRating": 5,
     "priceRange": "£500-1100/night",
-    "estimatedCost": { "amount": 750, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 750,
+      "currency": "GBP"
+    },
     "address": "150 Piccadilly, London W1J 9BR",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-ritz-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Afternoon tea here is a London institution - book months ahead. Jacket and tie required in The Ritz Restaurant."
+    "tips": "Afternoon tea here is a London institution - book months ahead. Jacket and tie required in The Ritz Restaurant.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "browns-hotel",
     "name": "Brown's Hotel, a Rocco Forte Hotel",
     "description": "London's first ever hotel, opened in 1837. Quintessentially English luxury in Mayfair with Olga Polizzi-designed interiors.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "history", "food", "shopping"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "history",
+      "food",
+      "shopping"
+    ],
     "starRating": 5,
     "priceRange": "£450-900/night",
-    "estimatedCost": { "amount": 620, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 620,
+      "currency": "GBP"
+    },
     "address": "33 Albemarle St, London W1S 4BP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/browns-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "Alexander Graham Bell made the first ever telephone call from here. The English Tea Room is gorgeous."
+    "tips": "Alexander Graham Bell made the first ever telephone call from here. The English Tea Room is gorgeous.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "corinthia-london",
     "name": "Corinthia London",
     "description": "Grand Victorian-era hotel near Trafalgar Square with an extraordinary spa, opulent suites, and world-class dining.",
     "neighbourhood": "Westminster",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "history", "wellness"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "history",
+      "wellness"
+    ],
     "starRating": 5,
     "priceRange": "£450-950/night",
-    "estimatedCost": { "amount": 650, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 650,
+      "currency": "GBP"
+    },
     "address": "Whitehall Place, London SW1A 2BD",
     "affiliateUrl": "https://www.booking.com/hotel/gb/corinthia-hotel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The ESPA Life spa is one of London's most spectacular. Kerridge's Bar & Grill by Tom Kerridge is exceptional."
+    "tips": "The ESPA Life spa is one of London's most spectacular. Kerridge's Bar & Grill by Tom Kerridge is exceptional.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "rosewood-london",
     "name": "Rosewood London",
     "description": "Edwardian Belle Epoque mansion in Holborn transformed into a grand luxury hotel. Stunning courtyard entrance and Scarfes Bar.",
     "neighbourhood": "Holborn",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "art", "history"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "art",
+      "history"
+    ],
     "starRating": 5,
     "priceRange": "£400-850/night",
-    "estimatedCost": { "amount": 580, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 580,
+      "currency": "GBP"
+    },
     "address": "252 High Holborn, London WC1V 7EN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/rosewood-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Scarfes Bar is one of London's best cocktail bars and open to non-guests. The courtyard entrance is magnificent."
+    "tips": "Scarfes Bar is one of London's best cocktail bars and open to non-guests. The courtyard entrance is magnificent.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-ned",
     "name": "The Ned",
     "description": "Soho House group's grand hotel in the former Midland Bank HQ. Nine restaurants, a rooftop pool, and stunning 1920s banking hall.",
     "neighbourhood": "City of London",
-    "budgetTier": ["premium"],
-    "tags": ["food", "nightlife", "architecture", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "nightlife",
+      "architecture",
+      "romance"
+    ],
     "starRating": 5,
     "priceRange": "£350-700/night",
-    "estimatedCost": { "amount": 480, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 480,
+      "currency": "GBP"
+    },
     "address": "27 Poultry, London EC2R 8AJ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-ned-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop pool and terrace have incredible City views. The ground-floor restaurants in the old banking hall are open to all."
+    "tips": "The rooftop pool and terrace have incredible City views. The ground-floor restaurants in the old banking hall are open to all.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-standard-london",
     "name": "The Standard London",
     "description": "Bold, retro-futuristic hotel in a brutalist 1970s building opposite St Pancras. Rooftop restaurant with panoramic views and a red London bus library.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "architecture", "art"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "architecture",
+      "art"
+    ],
     "starRating": 4,
     "priceRange": "£200-400/night",
-    "estimatedCost": { "amount": 280, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 280,
+      "currency": "GBP"
+    },
     "address": "10 Argyle St, London WC1H 8EG",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-standard-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Decimo on the 10th floor serves incredible Spanish-Mexican food with views. The exterior lift ride is an experience itself."
+    "tips": "Decimo on the 10th floor serves incredible Spanish-Mexican food with views. The exterior lift ride is an experience itself.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "nomad-london",
     "name": "NoMad London",
     "description": "New York import in a stunning Grade II-listed Bow Street magistrates' court. Beautifully restored with a soaring atrium restaurant.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["premium"],
-    "tags": ["food", "theatre", "romance", "history"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "theatre",
+      "romance",
+      "history"
+    ],
     "starRating": 5,
     "priceRange": "£350-650/night",
-    "estimatedCost": { "amount": 470, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 470,
+      "currency": "GBP"
+    },
     "address": "28 Bow St, London WC2E 7AW",
     "affiliateUrl": "https://www.booking.com/hotel/gb/nomad-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The atrium restaurant is jaw-droppingly beautiful. Perfect for theatre-goers - Royal Opera House is next door."
+    "tips": "The atrium restaurant is jaw-droppingly beautiful. Perfect for theatre-goers - Royal Opera House is next door.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "pan-pacific-london",
     "name": "Pan Pacific London",
     "description": "Ultra-modern luxury hotel in the City with an infinity pool, destination spa, and exceptional dining in a striking skyscraper.",
     "neighbourhood": "City of London",
-    "budgetTier": ["premium"],
-    "tags": ["wellness", "food", "architecture"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "wellness",
+      "food",
+      "architecture"
+    ],
     "starRating": 5,
     "priceRange": "£400-800/night",
-    "estimatedCost": { "amount": 560, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 560,
+      "currency": "GBP"
+    },
     "address": "80 Houndsditch, London EC3A 7AB",
     "affiliateUrl": "https://www.booking.com/hotel/gb/pan-pacific-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The 18.5m infinity pool is stunning. Straits Kitchen serves excellent Southeast Asian cuisine. Spa is world-class."
+    "tips": "The 18.5m infinity pool is stunning. Straits Kitchen serves excellent Southeast Asian cuisine. Spa is world-class.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "bulgari-hotel-london",
     "name": "Bulgari Hotel London",
     "description": "Italian opulence meets Knightsbridge luxury. Silver and mahogany interiors, a spectacular spa with 25m pool, and private cinema.",
     "neighbourhood": "Knightsbridge",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "shopping", "wellness", "food"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "shopping",
+      "wellness",
+      "food"
+    ],
     "starRating": 5,
     "priceRange": "£600-1200/night",
-    "estimatedCost": { "amount": 850, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 850,
+      "currency": "GBP"
+    },
     "address": "171 Knightsbridge, London SW7 1DW",
     "affiliateUrl": "https://www.booking.com/hotel/gb/bulgari-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Next door to Harrods. The spa and 25m pool are among London's finest. Sette restaurant serves superb Italian."
+    "tips": "Next door to Harrods. The spa and 25m pool are among London's finest. Sette restaurant serves superb Italian.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "premier-inn-hub-westminster",
     "name": "hub by Premier Inn Westminster",
     "description": "Tech-savvy compact hotel in the shadow of Westminster Abbey. App-controlled rooms and a rooftop bar with Parliament views.",
     "neighbourhood": "Westminster",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["history", "photography"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "photography"
+    ],
     "starRating": 3,
     "priceRange": "£80-130/night",
-    "estimatedCost": { "amount": 100, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 100,
+      "currency": "GBP"
+    },
     "address": "31 Matthew Parker St, London SW1H 9HW",
     "affiliateUrl": "https://www.booking.com/hotel/gb/hub-by-premier-inn-london-westminster",
     "affiliateLabel": "Check Availability",
-    "tips": "Rooftop bar has killer views of Big Ben and the Houses of Parliament. Incredible value for this location."
+    "tips": "Rooftop bar has killer views of Big Ben and the Houses of Parliament. Incredible value for this location.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "town-hall-hotel",
     "name": "Town Hall Hotel",
     "description": "Art Deco former town hall in Bethnal Green transformed into a design-forward boutique hotel with a Michelin-starred restaurant.",
     "neighbourhood": "Bethnal Green",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "art", "architecture"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "art",
+      "architecture"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 230,
+      "currency": "GBP"
+    },
     "address": "Patriot Square, London E2 9NF",
     "affiliateUrl": "https://www.booking.com/hotel/gb/town-hall-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "Da Terra restaurant has two Michelin stars. The building's Art Deco and Edwardian features are beautifully preserved."
+    "tips": "Da Terra restaurant has two Michelin stars. The building's Art Deco and Edwardian features are beautifully preserved.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ham-yard-hotel",
     "name": "Ham Yard Hotel",
     "description": "Firmdale Hotels' colourful retreat tucked away in a courtyard off Piccadilly. Rooftop terrace, bowling alley, cinema, and theatre.",
     "neighbourhood": "Soho",
-    "budgetTier": ["premium"],
-    "tags": ["theatre", "food", "art", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "theatre",
+      "food",
+      "art",
+      "romance"
+    ],
     "starRating": 5,
     "priceRange": "£350-600/night",
-    "estimatedCost": { "amount": 450, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 450,
+      "currency": "GBP"
+    },
     "address": "1 Ham Yard, London W1D 7DT",
     "affiliateUrl": "https://www.booking.com/hotel/gb/ham-yard-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "There is a bowling alley, rooftop garden, and private cinema in the hotel. Kit Kemp's interiors are extraordinary."
+    "tips": "There is a bowling alley, rooftop garden, and private cinema in the hotel. Kit Kemp's interiors are extraordinary.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-lanesborough",
     "name": "The Lanesborough",
     "description": "Regency splendour on Hyde Park Corner. Personal butler service, opulent interiors, and Celeste restaurant with a Michelin star.",
     "neighbourhood": "Knightsbridge",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "history"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "history"
+    ],
     "starRating": 5,
     "priceRange": "£550-1200/night",
-    "estimatedCost": { "amount": 800, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 800,
+      "currency": "GBP"
+    },
     "address": "Hyde Park Corner, London SW1X 7TA",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-lanesborough",
     "affiliateLabel": "Check Availability",
-    "tips": "Every guest gets a personal butler. The Library Bar makes some of London's finest cocktails. Overlooking Hyde Park."
+    "tips": "Every guest gets a personal butler. The Library Bar makes some of London's finest cocktails. Overlooking Hyde Park.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "one-aldwych",
     "name": "One Aldwych",
     "description": "Independent luxury hotel in a striking Edwardian building at the gateway to Covent Garden. Chlorine-free pool, modern art, and Eneko restaurant.",
     "neighbourhood": "Covent Garden",
-    "budgetTier": ["premium"],
-    "tags": ["art", "food", "theatre", "romance"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "art",
+      "food",
+      "theatre",
+      "romance"
+    ],
     "starRating": 5,
     "priceRange": "£350-650/night",
-    "estimatedCost": { "amount": 460, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 460,
+      "currency": "GBP"
+    },
     "address": "1 Aldwych, London WC2B 4BZ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/one-aldwych",
     "affiliateLabel": "Check Availability",
-    "tips": "The chlorine-free swimming pool is unique among London hotels. Excellent for Covent Garden and West End access."
+    "tips": "The chlorine-free swimming pool is unique among London hotels. Excellent for Covent Garden and West End access.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ace-hotel-shoreditch",
     "name": "Ace Hotel London Shoreditch",
     "description": "Portland-born creative hotel bringing its signature cool to Shoreditch. Vinyl turntables in rooms, gallery space, and Hoi Polloi restaurant.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "nightlife", "music", "food"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "nightlife",
+      "music",
+      "food"
+    ],
     "starRating": 4,
     "priceRange": "£150-250/night",
-    "estimatedCost": { "amount": 190, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 190,
+      "currency": "GBP"
+    },
     "address": "100 Shoreditch High St, London E1 6JQ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/ace-hotel-london-shoreditch",
     "affiliateLabel": "Check Availability",
-    "tips": "Rooms have Rega turntables with a curated vinyl selection. Miranda bar in the basement is a local favourite."
+    "tips": "Rooms have Rega turntables with a curated vinyl selection. Miranda bar in the basement is a local favourite.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "great-northern-hotel",
     "name": "Great Northern Hotel",
     "description": "Beautifully restored Victorian railway hotel right on King's Cross station. Curved corridor of rooms, excellent restaurant, and superb location.",
     "neighbourhood": "King's Cross",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "history", "architecture"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "history",
+      "architecture"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 230,
+      "currency": "GBP"
+    },
     "address": "Pancras Rd, London N1C 4TB",
     "affiliateUrl": "https://www.booking.com/hotel/gb/great-northern-hotel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Plum + Spilt Milk restaurant is excellent. Directly connected to King's Cross station. Eurostar at St Pancras next door."
+    "tips": "Plum + Spilt Milk restaurant is excellent. Directly connected to King's Cross station. Eurostar at St Pancras next door.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "south-place-hotel",
     "name": "South Place Hotel",
     "description": "Slick, design-led hotel in the City with rooftop terraces, a secret garden, and two excellent restaurants. Great for business and leisure.",
     "neighbourhood": "City of London",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "architecture"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "architecture"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 225, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 225,
+      "currency": "GBP"
+    },
     "address": "3 South Pl, London EC2M 2AF",
     "affiliateUrl": "https://www.booking.com/hotel/gb/south-place-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "Two rooftop terraces are lovely in summer. Angler restaurant has a Michelin star. Secret garden is a hidden gem."
+    "tips": "Two rooftop terraces are lovely in summer. Angler restaurant has a Michelin star. Secret garden is a hidden gem.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "batty-langley",
     "name": "Batty Langley's",
     "description": "Whimsical Georgian townhouse hotel in Spitalfields with elaborately themed rooms evoking 18th-century London. Utterly unique.",
     "neighbourhood": "Spitalfields",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["history", "romance", "art"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "history",
+      "romance",
+      "art"
+    ],
     "starRating": 4,
     "priceRange": "£170-280/night",
-    "estimatedCost": { "amount": 215, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 215,
+      "currency": "GBP"
+    },
     "address": "12 Folgate St, London E1 6BX",
     "affiliateUrl": "https://www.booking.com/hotel/gb/batty-langleys",
     "affiliateLabel": "Check Availability",
-    "tips": "Each room is themed to a different era. Steps from Brick Lane and Spitalfields Market. A truly one-of-a-kind stay."
+    "tips": "Each room is themed to a different era. Steps from Brick Lane and Spitalfields Market. A truly one-of-a-kind stay.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-bermondsey-square-hotel",
     "name": "The Bermondsey Square Hotel",
     "description": "Quirky boutique hotel on a lively square in trendy Bermondsey. Vibrant design, a fun cocktail bar, and antiques market on the doorstep.",
     "neighbourhood": "Bermondsey",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "art", "nightlife"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "art",
+      "nightlife"
+    ],
     "starRating": 4,
     "priceRange": "£110-170/night",
-    "estimatedCost": { "amount": 135, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 135,
+      "currency": "GBP"
+    },
     "address": "Bermondsey Square, Tower Bridge Rd, London SE1 3UN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/bermondsey-square-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "Friday morning antiques market on the square. Walk the Bermondsey Beer Mile of craft breweries. Near Tower Bridge."
+    "tips": "Friday morning antiques market on the square. Walk the Bermondsey Beer Mile of craft breweries. Near Tower Bridge.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-mandrake",
     "name": "The Mandrake",
     "description": "Artful boutique hotel in Fitzrovia with a lush courtyard garden, rooftop terrace, and ever-changing art installations throughout.",
     "neighbourhood": "Fitzrovia",
-    "budgetTier": ["premium"],
-    "tags": ["art", "romance", "food", "wellness"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "art",
+      "romance",
+      "food",
+      "wellness"
+    ],
     "starRating": 5,
     "priceRange": "£300-550/night",
-    "estimatedCost": { "amount": 400, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 400,
+      "currency": "GBP"
+    },
     "address": "20-21 Newman St, London W1T 1PG",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-mandrake",
     "affiliateLabel": "Check Availability",
-    "tips": "The Jurema terrace is magical in the evening. Rotating art installations mean it is different every visit. Serene spa."
+    "tips": "The Jurema terrace is magical in the evening. Rotating art installations mean it is different every visit. Serene spa.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "artist-residence-london",
     "name": "Artist Residence London",
     "description": "Bohemian-chic boutique hotel in Pimlico with just ten individually designed rooms. Cambridge Street Kitchen serves excellent seasonal food.",
     "neighbourhood": "Pimlico",
-    "budgetTier": ["mid-range"],
-    "tags": ["art", "food", "romance"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "art",
+      "food",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£140-220/night",
-    "estimatedCost": { "amount": 170, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 170,
+      "currency": "GBP"
+    },
     "address": "52 Cambridge St, London SW1V 4QQ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/artist-residence-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Only ten rooms so book early. Each room features original artworks. Walk to Tate Britain and Victoria station."
+    "tips": "Only ten rooms so book early. Each room features original artworks. Walk to Tate Britain and Victoria station.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "treehouse-hotel-london",
     "name": "Treehouse Hotel London",
     "description": "Playful, nature-inspired hotel near Oxford Street with a stunning rooftop bar offering 360-degree London views.",
     "neighbourhood": "Marylebone",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["food", "shopping", "photography"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "shopping",
+      "photography"
+    ],
     "starRating": 4,
     "priceRange": "£200-350/night",
-    "estimatedCost": { "amount": 260, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 260,
+      "currency": "GBP"
+    },
     "address": "14-15 Langham Pl, London W1B 2QS",
     "affiliateUrl": "https://www.booking.com/hotel/gb/treehouse-hotel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The Nest rooftop has some of the best views in London. Near BBC Broadcasting House and Oxford Street shopping."
+    "tips": "The Nest rooftop has some of the best views in London. Near BBC Broadcasting House and Oxford Street shopping.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "lost-property-hotel",
     "name": "Lost Property St Paul's London",
     "description": "Curios-filled boutique hotel near St Paul's Cathedral themed around London's lost and found. Quirky design with a playful spirit.",
     "neighbourhood": "City of London",
-    "budgetTier": ["mid-range"],
-    "tags": ["history", "food", "art"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "food",
+      "art"
+    ],
     "starRating": 4,
     "priceRange": "£130-200/night",
-    "estimatedCost": { "amount": 160, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 160,
+      "currency": "GBP"
+    },
     "address": "16 Holborn Viaduct, London EC1A 2FD",
     "affiliateUrl": "https://www.booking.com/hotel/gb/lost-property-st-pauls-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Walk to St Paul's Cathedral in two minutes. The lobby cafe is a lovely spot for breakfast. Fun themed design."
+    "tips": "Walk to St Paul's Cathedral in two minutes. The lobby cafe is a lovely spot for breakfast. Fun themed design.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "kensington-hotel",
     "name": "The Kensington Hotel",
     "description": "Elegant Victorian townhouse hotel in the heart of South Kensington. Classic English interiors, a tranquil garden, and easy access to three world-class museums.",
     "neighbourhood": "South Kensington",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["romance", "family", "history"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "family",
+      "history"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 230,
+      "currency": "GBP"
+    },
     "address": "109-113 Queen's Gate, London SW7 5LP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-kensington",
     "affiliateLabel": "Check Availability",
-    "tips": "Steps from the V&A, Natural History Museum, and Science Museum. The garden is a peaceful retreat. Harrods is a short walk."
+    "tips": "Steps from the V&A, Natural History Museum, and Science Museum. The garden is a peaceful retreat. Harrods is a short walk.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "travelodge-london-central-tower-bridge",
     "name": "Travelodge London Central Tower Bridge",
     "description": "Reliable budget chain hotel with clean, no-frills rooms in an excellent Tower Bridge location. Great value for money.",
     "neighbourhood": "Tower Hill",
-    "budgetTier": ["budget"],
-    "tags": ["history", "photography", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "history",
+      "photography",
+      "family"
+    ],
     "starRating": 2,
     "priceRange": "£50-80/night",
-    "estimatedCost": { "amount": 65, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
     "address": "Tower Bridge Rd, London SE1 2UP",
     "affiliateUrl": "https://www.booking.com/hotel/gb/travelodge-london-central-tower-bridge",
     "affiliateLabel": "Check Availability",
-    "tips": "Walk to Tower Bridge and the Tower of London. Book well in advance for the best rates. Breakfast is extra but nearby cafes are better value."
+    "tips": "Walk to Tower Bridge and the Tower of London. Book well in advance for the best rates. Breakfast is extra but nearby cafes are better value.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "premier-inn-southwark-tate-modern",
     "name": "Premier Inn London Southwark (Tate Modern)",
     "description": "Dependable mid-budget hotel right on the South Bank cultural strip. Consistent rooms, hearty breakfast, and unbeatable proximity to the Tate Modern.",
     "neighbourhood": "Bankside",
-    "budgetTier": ["budget"],
-    "tags": ["art", "photography", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "art",
+      "photography",
+      "family"
+    ],
     "starRating": 3,
     "priceRange": "£60-95/night",
-    "estimatedCost": { "amount": 75, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 75,
+      "currency": "GBP"
+    },
     "address": "34 Park St, London SE1 9EF",
     "affiliateUrl": "https://www.booking.com/hotel/gb/premier-inn-london-southwark-tate-modern",
     "affiliateLabel": "Check Availability",
-    "tips": "One of the best-value locations in London. Borough Market is across the road and Tate Modern is a two-minute walk."
+    "tips": "One of the best-value locations in London. Borough Market is across the road and Tate Modern is a two-minute walk.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "travelodge-london-central-marylebone",
     "name": "Travelodge London Central Marylebone",
     "description": "Budget-friendly hotel on a quiet Marylebone street within walking distance of Oxford Street and Regent's Park.",
     "neighbourhood": "Marylebone",
-    "budgetTier": ["budget"],
-    "tags": ["shopping", "gardens"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "shopping",
+      "gardens"
+    ],
     "starRating": 2,
     "priceRange": "£55-80/night",
-    "estimatedCost": { "amount": 65, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
     "address": "Harewood Row, London NW1 6SE",
     "affiliateUrl": "https://www.booking.com/hotel/gb/travelodge-london-central-marylebone",
     "affiliateLabel": "Check Availability",
-    "tips": "Walk to Regent's Park and Madame Tussauds. Marylebone High Street has excellent independent shops and cafes."
+    "tips": "Walk to Regent's Park and Madame Tussauds. Marylebone High Street has excellent independent shops and cafes.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ibis-london-blackfriars",
     "name": "ibis London Blackfriars",
     "description": "Modern budget hotel in a prime Southwark location near the Thames. Simple, comfortable rooms with a 24-hour bar and snack service.",
     "neighbourhood": "Bankside",
-    "budgetTier": ["budget"],
-    "tags": ["art", "food"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "art",
+      "food"
+    ],
     "starRating": 3,
     "priceRange": "£65-95/night",
-    "estimatedCost": { "amount": 78, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 78,
+      "currency": "GBP"
+    },
     "address": "49 Blackfriars Rd, London SE1 8NZ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/ibis-london-blackfriars",
     "affiliateLabel": "Check Availability",
-    "tips": "Surprisingly good location for the price. Walk across Blackfriars Bridge for St Paul's or south to the Tate Modern."
+    "tips": "Surprisingly good location for the price. Walk across Blackfriars Bridge for St Paul's or south to the Tate Modern.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "astor-hyde-park-hostel",
     "name": "Astor Hyde Park Hostel",
     "description": "Friendly hostel in a Victorian townhouse near Hyde Park and the museums of South Kensington. Free breakfast and walking tours included.",
     "neighbourhood": "South Kensington",
-    "budgetTier": ["budget"],
-    "tags": ["adventure", "gardens", "family"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure",
+      "gardens",
+      "family"
+    ],
     "starRating": 2,
     "priceRange": "£30-55/night",
-    "estimatedCost": { "amount": 42, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 42,
+      "currency": "GBP"
+    },
     "address": "191 Queen's Gate, London SW7 5EU",
     "affiliateUrl": "https://www.booking.com/hotel/gb/astor-hyde-park",
     "affiliateLabel": "Check Availability",
-    "tips": "Free breakfast is a real money-saver. Walk to the Natural History Museum and V&A. Hyde Park is two minutes away."
+    "tips": "Free breakfast is a real money-saver. Walk to the Natural History Museum and V&A. Hyde Park is two minutes away.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "easyhotel-south-kensington",
     "name": "easyHotel South Kensington",
     "description": "Ultra-budget micro-rooms in the heart of South Kensington. No frills but spotlessly clean, with everything you need for a short stay.",
     "neighbourhood": "South Kensington",
-    "budgetTier": ["budget"],
-    "tags": ["adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure"
+    ],
     "starRating": 2,
     "priceRange": "£40-65/night",
-    "estimatedCost": { "amount": 50, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 50,
+      "currency": "GBP"
+    },
     "address": "14 Lexham Gardens, London W8 5JE",
     "affiliateUrl": "https://www.booking.com/hotel/gb/easyhotel-south-kensington",
     "affiliateLabel": "Check Availability",
-    "tips": "Rooms are tiny but the location is top-tier. Book the slightly larger rooms if you can. Great for museum visits."
+    "tips": "Rooms are tiny but the location is top-tier. Book the slightly larger rooms if you can. Great for museum visits.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-montague-on-the-gardens",
     "name": "The Montague on the Gardens",
     "description": "Charming traditional hotel overlooking the private gardens of Bedford Square, right next to the British Museum. Classic English elegance.",
     "neighbourhood": "Bloomsbury",
-    "budgetTier": ["mid-range"],
-    "tags": ["history", "gardens", "literary", "romance"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "gardens",
+      "literary",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£150-220/night",
-    "estimatedCost": { "amount": 180, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 180,
+      "currency": "GBP"
+    },
     "address": "15 Montague St, London WC1B 5BJ",
     "affiliateUrl": "https://www.booking.com/hotel/gb/montague-on-the-gardens",
     "affiliateLabel": "Check Availability",
-    "tips": "Ask for a garden-view room. The terrace overlooking the gardens is heavenly for afternoon tea. British Museum is next door."
+    "tips": "Ask for a garden-view room. The terrace overlooking the gardens is heavenly for afternoon tea. British Museum is next door.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-marylebone-hotel",
     "name": "The Marylebone Hotel",
     "description": "Stylish contemporary hotel on Marylebone's prettiest street. Excellent spa, refined dining, and a calm village-like atmosphere.",
     "neighbourhood": "Marylebone",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["wellness", "food", "shopping", "romance"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "wellness",
+      "food",
+      "shopping",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£200-350/night",
-    "estimatedCost": { "amount": 260, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 260,
+      "currency": "GBP"
+    },
     "address": "47 Welbeck St, London W1G 8DN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-marylebone",
     "affiliateLabel": "Check Availability",
-    "tips": "Marylebone High Street is one of London's loveliest shopping streets. The in-house spa is a real treat."
+    "tips": "Marylebone High Street is one of London's loveliest shopping streets. The in-house spa is a real treat.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-bloomsbury-hotel",
     "name": "The Bloomsbury Hotel",
     "description": "Grand Neo-Georgian hotel designed by Edwin Lutyens in the heart of literary Bloomsbury. Beautiful ballroom and elegant bar.",
     "neighbourhood": "Bloomsbury",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["literary", "history", "architecture", "romance"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "literary",
+      "history",
+      "architecture",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£200-320/night",
-    "estimatedCost": { "amount": 250, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 250,
+      "currency": "GBP"
+    },
     "address": "16-22 Great Russell St, London WC1B 3NN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-bloomsbury",
     "affiliateLabel": "Check Availability",
-    "tips": "The Lutyens-designed ballroom is extraordinary. Directly opposite the British Museum. The Coral Room cocktail bar is stunning."
+    "tips": "The Lutyens-designed ballroom is extraordinary. Directly opposite the British Museum. The Coral Room cocktail bar is stunning.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "mondrian-shoreditch",
     "name": "Mondrian Shoreditch London",
     "description": "Design-forward lifestyle hotel with a rooftop pool, destination restaurant, and curated art programme in the heart of Shoreditch.",
     "neighbourhood": "Shoreditch",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["art", "nightlife", "food", "instagram"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "art",
+      "nightlife",
+      "food",
+      "instagram"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 230,
+      "currency": "GBP"
+    },
     "address": "45 Curtain Rd, London EC2A 3PT",
     "affiliateUrl": "https://www.booking.com/hotel/gb/mondrian-shoreditch-london",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop pool and terrace are a big draw in summer. Christina's restaurant serves excellent modern European food."
+    "tips": "The rooftop pool and terrace are a big draw in summer. Christina's restaurant serves excellent modern European food.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-gore-hotel",
     "name": "The Gore London - Starhotels Collezione",
     "description": "Eccentric Victorian hotel near the Royal Albert Hall, crammed with over 5,000 prints and antiques. Each room is individually decorated.",
     "neighbourhood": "South Kensington",
-    "budgetTier": ["mid-range"],
-    "tags": ["history", "music", "art", "romance"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "history",
+      "music",
+      "art",
+      "romance"
+    ],
     "starRating": 4,
     "priceRange": "£150-230/night",
-    "estimatedCost": { "amount": 185, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 185,
+      "currency": "GBP"
+    },
     "address": "190 Queen's Gate, London SW7 5EX",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-gore",
     "affiliateLabel": "Check Availability",
-    "tips": "Perfect for concert-goers - the Royal Albert Hall is a two-minute walk. Each room is stuffed with fascinating antiques."
+    "tips": "Perfect for concert-goers - the Royal Albert Hall is a two-minute walk. Each room is stuffed with fascinating antiques.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "premier-inn-london-county-hall",
     "name": "Premier Inn London County Hall",
     "description": "One of London's best-value hotels in a spectacular riverside location. Views of the Thames, Big Ben, and the London Eye from select rooms.",
     "neighbourhood": "South Bank",
-    "budgetTier": ["budget", "mid-range"],
-    "tags": ["family", "photography", "history"],
+    "budgetTier": [
+      "budget",
+      "mid-range"
+    ],
+    "tags": [
+      "family",
+      "photography",
+      "history"
+    ],
     "starRating": 3,
     "priceRange": "£80-120/night",
-    "estimatedCost": { "amount": 95, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 95,
+      "currency": "GBP"
+    },
     "address": "Belvedere Rd, London SE1 7PB",
     "affiliateUrl": "https://www.booking.com/hotel/gb/premier-inn-london-county-hall",
     "affiliateLabel": "Check Availability",
-    "tips": "Request a river-view room for incredible Big Ben views. Possibly the best-value location in all of London. Book months ahead."
+    "tips": "Request a river-view room for incredible Big Ben views. Possibly the best-value location in all of London. Book months ahead.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "ruby-lucy-hotel",
     "name": "Ruby Lucy Hotel London",
     "description": "Trendy lean-luxury hotel near Waterloo with compact, beautifully designed rooms, a vibrant bar, and guitars available to borrow.",
     "neighbourhood": "South Bank",
-    "budgetTier": ["mid-range"],
-    "tags": ["music", "nightlife", "photography"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "music",
+      "nightlife",
+      "photography"
+    ],
     "starRating": 3,
     "priceRange": "£100-160/night",
-    "estimatedCost": { "amount": 125, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 125,
+      "currency": "GBP"
+    },
     "address": "100 Westminster Bridge Rd, London SE1 7XN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/ruby-lucy-hotel-london",
     "affiliateLabel": "Check Availability",
-    "tips": "Borrow a guitar from reception for your room. Walk to the South Bank, London Eye, and Waterloo station. Great cocktail bar."
+    "tips": "Borrow a guitar from reception for your room. Walk to the South Bank, London Eye, and Waterloo station. Great cocktail bar.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "hazlitts",
     "name": "Hazlitt's",
     "description": "Enchanting boutique hotel in three Georgian townhouses in the heart of Soho. Antique-filled rooms with four-poster beds and literary heritage.",
     "neighbourhood": "Soho",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["literary", "romance", "history", "hidden-gems"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "literary",
+      "romance",
+      "history",
+      "hidden-gems"
+    ],
     "starRating": 4,
     "priceRange": "£200-350/night",
-    "estimatedCost": { "amount": 260, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 260,
+      "currency": "GBP"
+    },
     "address": "6 Frith St, London W1D 3JA",
     "affiliateUrl": "https://www.booking.com/hotel/gb/hazlitts",
     "affiliateLabel": "Check Availability",
-    "tips": "Named after essayist William Hazlitt who lived and died here. No two rooms are alike. A secret literary treasure in Soho."
+    "tips": "Named after essayist William Hazlitt who lived and died here. No two rooms are alike. A secret literary treasure in Soho.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-connaught",
     "name": "The Connaught",
     "description": "Understated Mayfair elegance with Michelin-starred Helene Darroze restaurant, award-winning Connaught Bar, and beautifully serene rooms.",
     "neighbourhood": "Mayfair",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "shopping", "wellness"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "shopping",
+      "wellness"
+    ],
     "starRating": 5,
     "priceRange": "£550-1100/night",
-    "estimatedCost": { "amount": 780, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 780,
+      "currency": "GBP"
+    },
     "address": "Carlos Pl, London W1K 2AL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-connaught",
     "affiliateLabel": "Check Availability",
-    "tips": "The Connaught Bar is regularly voted one of the world's best. The Aman spa in the basement is pure tranquillity."
+    "tips": "The Connaught Bar is regularly voted one of the world's best. The Aman spa in the basement is pure tranquillity.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-berkeley",
     "name": "The Berkeley",
     "description": "Fashionable Knightsbridge luxury hotel with a rooftop pool, Blue Bar, and the famous Pret-a-Portea fashion-inspired afternoon tea.",
     "neighbourhood": "Knightsbridge",
-    "budgetTier": ["premium"],
-    "tags": ["romance", "food", "shopping", "wellness"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "romance",
+      "food",
+      "shopping",
+      "wellness"
+    ],
     "starRating": 5,
     "priceRange": "£500-1000/night",
-    "estimatedCost": { "amount": 700, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 700,
+      "currency": "GBP"
+    },
     "address": "Wilton Pl, London SW1X 7RL",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-berkeley",
     "affiliateLabel": "Check Availability",
-    "tips": "The rooftop pool is a London rarity. Pret-a-Portea afternoon tea features pastries inspired by fashion collections."
+    "tips": "The rooftop pool is a London rarity. Pret-a-Portea afternoon tea features pastries inspired by fashion collections.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "great-scotland-yard-hotel",
     "name": "Great Scotland Yard Hotel",
     "description": "Luxury hotel in the original Scotland Yard police headquarters near Trafalgar Square. Rich history with modern opulence.",
     "neighbourhood": "Westminster",
-    "budgetTier": ["premium"],
-    "tags": ["history", "food", "romance", "architecture"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "history",
+      "food",
+      "romance",
+      "architecture"
+    ],
     "starRating": 5,
     "priceRange": "£350-600/night",
-    "estimatedCost": { "amount": 450, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 450,
+      "currency": "GBP"
+    },
     "address": "3-5 Great Scotland Yard, London SW1A 2HN",
     "affiliateUrl": "https://www.booking.com/hotel/gb/great-scotland-yard-hotel",
     "affiliateLabel": "Check Availability",
-    "tips": "The building was the original Metropolitan Police HQ. Fascinating historical details throughout. Walk to Trafalgar Square and Whitehall."
+    "tips": "The building was the original Metropolitan Police HQ. Fascinating historical details throughout. Walk to Trafalgar Square and Whitehall.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "the-londoner",
     "name": "The Londoner",
     "description": "Super boutique hotel on Leicester Square with eight underground levels including a screening room, spa, and multiple restaurants.",
     "neighbourhood": "West End",
-    "budgetTier": ["premium"],
-    "tags": ["food", "theatre", "nightlife", "wellness"],
+    "budgetTier": [
+      "premium"
+    ],
+    "tags": [
+      "food",
+      "theatre",
+      "nightlife",
+      "wellness"
+    ],
     "starRating": 5,
     "priceRange": "£400-750/night",
-    "estimatedCost": { "amount": 530, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 530,
+      "currency": "GBP"
+    },
     "address": "38 Leicester Square, London WC2H 7DX",
     "affiliateUrl": "https://www.booking.com/hotel/gb/the-londoner",
     "affiliateLabel": "Check Availability",
-    "tips": "Eight floors go underground including a private cinema. Right on Leicester Square for theatres and nightlife. The Retreat spa is superb."
+    "tips": "Eight floors go underground including a private cinema. Right on Leicester Square for theatres and nightlife. The Retreat spa is superb.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "st-ermins-hotel",
     "name": "St. Ermin's Hotel",
     "description": "Historic hotel near St James's Park with a stunning ornate lobby, rooftop bee garden, and fascinating connections to British espionage.",
     "neighbourhood": "Westminster",
-    "budgetTier": ["mid-range", "premium"],
-    "tags": ["history", "food", "hidden-gems", "gardens"],
+    "budgetTier": [
+      "mid-range",
+      "premium"
+    ],
+    "tags": [
+      "history",
+      "food",
+      "hidden-gems",
+      "gardens"
+    ],
     "starRating": 4,
     "priceRange": "£180-300/night",
-    "estimatedCost": { "amount": 230, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 230,
+      "currency": "GBP"
+    },
     "address": "2 Caxton St, London SW1H 0QW",
     "affiliateUrl": "https://www.booking.com/hotel/gb/st-ermins",
     "affiliateLabel": "Check Availability",
-    "tips": "MI6 recruited agents in this hotel during WWII. The rooftop bees produce honey used in the restaurant. Incredible ornate lobby."
+    "tips": "MI6 recruited agents in this hotel during WWII. The rooftop bees produce honey used in the restaurant. Incredible ornate lobby.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "native-borough-market",
     "name": "Native Borough Market",
     "description": "Apartment-style hotel in a converted warehouse right above Borough Market. Full kitchens, living spaces, and the best food market in London at your feet.",
     "neighbourhood": "Borough",
-    "budgetTier": ["mid-range"],
-    "tags": ["food", "markets", "photography", "hidden-gems"],
+    "budgetTier": [
+      "mid-range"
+    ],
+    "tags": [
+      "food",
+      "markets",
+      "photography",
+      "hidden-gems"
+    ],
     "starRating": 4,
     "priceRange": "£130-200/night",
-    "estimatedCost": { "amount": 160, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 160,
+      "currency": "GBP"
+    },
     "address": "49-51 Borough High St, London SE1 1NB",
     "affiliateUrl": "https://www.booking.com/hotel/gb/native-borough-market",
     "affiliateLabel": "Check Availability",
-    "tips": "Having a kitchen above Borough Market means you can cook with the finest ingredients in London. Feels like living in the city."
+    "tips": "Having a kitchen above Borough Market means you can cook with the finest ingredients in London. Feels like living in the city.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   },
   {
     "id": "point-a-paddington",
     "name": "Point A Hotel Paddington",
     "description": "Smart micro-hotel near Paddington station with well-designed compact rooms, powerful showers, and excellent Heathrow Express access.",
     "neighbourhood": "Paddington",
-    "budgetTier": ["budget"],
-    "tags": ["adventure"],
+    "budgetTier": [
+      "budget"
+    ],
+    "tags": [
+      "adventure"
+    ],
     "starRating": 3,
     "priceRange": "£55-80/night",
-    "estimatedCost": { "amount": 65, "currency": "GBP" },
+    "estimatedCost": {
+      "amount": 65,
+      "currency": "GBP"
+    },
     "address": "41 Norfolk Pl, London W2 1QH",
     "affiliateUrl": "https://www.booking.com/hotel/gb/point-a-hotel-london-paddington",
     "affiliateLabel": "Check Availability",
-    "tips": "Heathrow Express makes this perfect for early flights. Hyde Park is a short walk away. Rooms are small but smartly designed."
+    "tips": "Heathrow Express makes this perfect for early flights. Hyde Park is a short walk away. Rooms are small but smartly designed.",
+    "verification": {
+      "placeId": null,
+      "phone": null,
+      "coordinates": null,
+      "status": "unverified",
+      "businessStatus": null,
+      "lastChecked": null,
+      "lastCheckedBy": null,
+      "hoursSnapshot": null,
+      "priceSnapshot": null,
+      "notes": null
+    }
   }
 ]
