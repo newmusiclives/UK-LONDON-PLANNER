@@ -115,11 +115,19 @@ async function commitJsonUpdate({ filePath, transform, message, author }) {
     return { changed: false };
   }
 
+  // Allow lazy message construction so the caller can reference data the
+  // transform produced (e.g. the listing's name). Called with the post-transform
+  // value; must return a non-empty string.
+  const finalMessage = typeof message === 'function' ? message(next) : message;
+  if (!finalMessage || typeof finalMessage !== 'string') {
+    throw new Error('commit message resolver returned a non-string');
+  }
+
   const result = await putFile({
     filePath,
     content: serialised,
     sha,
-    message,
+    message: finalMessage,
     author,
   });
 

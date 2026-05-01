@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings Review — London Planned Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    body { background: var(--color-bg, #f7f6f1); }
+    .lr-shell { max-width: 1280px; margin: 0 auto; padding: 1.25rem 1.5rem 4rem; }
+    .lr-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+    .lr-topbar h1 { font-size: 1.5rem; margin: 0; }
+    .lr-topbar .who { color: var(--color-text-muted); font-size: 0.85rem; }
+    .lr-topbar .who button { margin-left: 0.75rem; padding: 0.3rem 0.7rem; font-size: 0.8rem; background: transparent; border: 1px solid var(--color-border); border-radius: 4px; cursor: pointer; }
+    .lr-topbar .who button:hover { background: var(--color-border); }
+
+    .lr-stats { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface, #fff); border-radius: var(--radius-lg, 12px); box-shadow: var(--shadow-sm); }
+    .lr-stat { font-size: 0.85rem; }
+    .lr-stat strong { color: var(--color-text); display: block; font-size: 1.1rem; font-weight: 700; }
+    .lr-stat span { color: var(--color-text-muted); }
+
+    .lr-filters { display: grid; grid-template-columns: 1fr 1fr 2fr auto; gap: 0.75rem; margin-bottom: 1rem; padding: 1rem; background: var(--color-surface, #fff); border-radius: var(--radius-lg, 12px); box-shadow: var(--shadow-sm); align-items: end; }
+    .lr-filters label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .lr-filters select, .lr-filters input { width: 100%; padding: 0.55rem 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md, 8px); font-size: 0.9rem; }
+    .lr-filters button { padding: 0.6rem 1.2rem; }
+
+    .lr-card { background: var(--color-surface, #fff); border-radius: var(--radius-lg, 12px); box-shadow: var(--shadow-sm); padding: 1.1rem 1.25rem; margin-bottom: 0.75rem; border-left: 4px solid var(--color-border); }
+    .lr-card.status-needs-review, .lr-card.status-not-found, .lr-card.status-drift { border-left-color: #d97706; }
+    .lr-card.status-closed { border-left-color: #b91c1c; background: #fef2f2; }
+    .lr-card.status-manually-verified { border-left-color: #16a34a; }
+    .lr-card.status-auto-verified { border-left-color: #65a30d; }
+    .lr-card.status-unverified { border-left-color: #94a3b8; }
+
+    .lr-card__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem; }
+    .lr-card__title { margin: 0 0 0.25rem; font-size: 1.05rem; }
+    .lr-card__meta { color: var(--color-text-muted); font-size: 0.85rem; }
+    .lr-card__meta strong { color: var(--color-text); }
+
+    .lr-badge { font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+    .lr-badge.unverified { background: #e2e8f0; color: #475569; }
+    .lr-badge.auto-verified { background: #ecfccb; color: #4d7c0f; }
+    .lr-badge.manually-verified { background: #dcfce7; color: #166534; }
+    .lr-badge.needs-review, .lr-badge.not-found, .lr-badge.drift { background: #ffedd5; color: #9a3412; }
+    .lr-badge.closed { background: #fee2e2; color: #991b1b; }
+
+    .lr-details { margin-top: 0.75rem; padding: 0.75rem; background: rgba(0,0,0,0.025); border-radius: var(--radius-md, 8px); font-size: 0.85rem; color: var(--color-text-muted); display: none; }
+    .lr-details.open { display: block; }
+    .lr-details code { font-family: ui-monospace, monospace; font-size: 0.8rem; background: rgba(0,0,0,0.05); padding: 0.05rem 0.3rem; border-radius: 3px; }
+    .lr-details dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 1rem; }
+    .lr-details dt { font-weight: 600; color: var(--color-text); }
+    .lr-details dd { margin: 0; word-break: break-word; }
+
+    .lr-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .lr-actions button { padding: 0.45rem 0.85rem; font-size: 0.8rem; border-radius: var(--radius-md, 8px); border: 1px solid var(--color-border); background: #fff; cursor: pointer; font-weight: 600; transition: all 0.15s; }
+    .lr-actions button:hover:not(:disabled) { background: var(--color-border); }
+    .lr-actions button:disabled { opacity: 0.55; cursor: not-allowed; }
+    .lr-actions button.confirm { color: #166534; border-color: #86efac; }
+    .lr-actions button.confirm:hover:not(:disabled) { background: #dcfce7; }
+    .lr-actions button.close { color: #991b1b; border-color: #fca5a5; }
+    .lr-actions button.close:hover:not(:disabled) { background: #fee2e2; }
+    .lr-actions button.flag { color: #9a3412; border-color: #fdba74; }
+    .lr-actions button.flag:hover:not(:disabled) { background: #ffedd5; }
+    .lr-actions button.expand { color: var(--color-text-muted); }
+
+    .lr-pagination { display: flex; gap: 0.5rem; justify-content: center; align-items: center; margin-top: 1.5rem; }
+    .lr-pagination button { padding: 0.5rem 0.9rem; }
+    .lr-pagination .page-info { color: var(--color-text-muted); font-size: 0.85rem; }
+
+    .lr-empty { text-align: center; padding: 3rem 1rem; color: var(--color-text-muted); }
+    .lr-loading { text-align: center; padding: 2rem; color: var(--color-text-muted); }
+    .lr-error { padding: 1rem; background: #fef2f2; color: #991b1b; border-radius: var(--radius-md, 8px); margin-bottom: 1rem; }
+
+    .lr-toast { position: fixed; bottom: 1.5rem; right: 1.5rem; padding: 0.85rem 1.25rem; background: #166534; color: #fff; border-radius: var(--radius-md, 8px); box-shadow: var(--shadow-md); font-size: 0.9rem; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+    .lr-toast.show { opacity: 1; }
+    .lr-toast.error { background: #991b1b; }
+
+    .lr-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 100; padding: 1rem; }
+    .lr-modal.open { display: flex; }
+    .lr-modal__card { background: #fff; padding: 1.5rem; border-radius: var(--radius-lg, 12px); max-width: 480px; width: 100%; }
+    .lr-modal__card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+    .lr-modal__card p { margin: 0 0 1rem; color: var(--color-text-muted); font-size: 0.9rem; }
+    .lr-modal__card textarea { width: 100%; min-height: 80px; padding: 0.6rem 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-md, 8px); font-family: inherit; font-size: 0.9rem; resize: vertical; }
+    .lr-modal__actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 1rem; }
+
+    @media (max-width: 720px) {
+      .lr-filters { grid-template-columns: 1fr 1fr; }
+      .lr-filters button { grid-column: 1 / -1; }
+      .lr-stats { gap: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lr-shell">
+    <div class="lr-topbar">
+      <h1>Listings review</h1>
+      <div class="who">
+        <span id="who-name">…</span>
+        <button id="logout-btn" type="button">Sign out</button>
+      </div>
+    </div>
+
+    <div class="lr-stats" id="stats">Loading stats…</div>
+
+    <form class="lr-filters" id="filters">
+      <div>
+        <label for="filter-category">Category</label>
+        <select id="filter-category">
+          <option value="all">All categories</option>
+          <option value="attractions">Attractions</option>
+          <option value="restaurants">Restaurants</option>
+          <option value="cafes">Cafes</option>
+          <option value="nightlife">Nightlife</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="hidden-london">Hidden London</option>
+          <option value="hotels">Hotels</option>
+          <option value="musical-london">Musical London</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-status">Status</label>
+        <select id="filter-status">
+          <option value="">All statuses</option>
+          <option value="not-found,needs-review,drift">Needs attention</option>
+          <option value="unverified">Unverified only</option>
+          <option value="auto-verified">Auto-verified only</option>
+          <option value="manually-verified">Manually verified only</option>
+          <option value="closed">Closed only</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-search">Search</label>
+        <input type="search" id="filter-search" placeholder="Name, neighbourhood, address…">
+      </div>
+      <button type="submit" class="btn btn--primary">Apply</button>
+    </form>
+
+    <div id="error-box"></div>
+    <div id="results"></div>
+
+    <div class="lr-pagination" id="pagination" style="display:none;">
+      <button id="prev-btn" class="btn btn--outline btn--small" type="button">&larr; Prev</button>
+      <span class="page-info" id="page-info"></span>
+      <button id="next-btn" class="btn btn--outline btn--small" type="button">Next &rarr;</button>
+    </div>
+  </div>
+
+  <div class="lr-toast" id="toast"></div>
+
+  <div class="lr-modal" id="notes-modal">
+    <div class="lr-modal__card">
+      <h3 id="notes-modal-title">Add notes</h3>
+      <p id="notes-modal-prompt">Add a short note explaining the action.</p>
+      <textarea id="notes-modal-input" placeholder="e.g. confirmed via phone 2026-05-01"></textarea>
+      <div class="lr-modal__actions">
+        <button class="btn btn--outline btn--small" id="notes-modal-cancel" type="button">Cancel</button>
+        <button class="btn btn--primary btn--small" id="notes-modal-confirm" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (() => {
+    const PAGE_SIZE = 25;
+    const els = {
+      whoName: document.getElementById('who-name'),
+      logoutBtn: document.getElementById('logout-btn'),
+      stats: document.getElementById('stats'),
+      filters: document.getElementById('filters'),
+      filterCategory: document.getElementById('filter-category'),
+      filterStatus: document.getElementById('filter-status'),
+      filterSearch: document.getElementById('filter-search'),
+      results: document.getElementById('results'),
+      pagination: document.getElementById('pagination'),
+      prevBtn: document.getElementById('prev-btn'),
+      nextBtn: document.getElementById('next-btn'),
+      pageInfo: document.getElementById('page-info'),
+      error: document.getElementById('error-box'),
+      toast: document.getElementById('toast'),
+      modal: document.getElementById('notes-modal'),
+      modalTitle: document.getElementById('notes-modal-title'),
+      modalPrompt: document.getElementById('notes-modal-prompt'),
+      modalInput: document.getElementById('notes-modal-input'),
+      modalCancel: document.getElementById('notes-modal-cancel'),
+      modalConfirm: document.getElementById('notes-modal-confirm'),
+    };
+
+    let state = {
+      offset: 0,
+      total: 0,
+      filtered: 0,
+      lastQuery: {},
+    };
+
+    function showToast(msg, isError = false) {
+      els.toast.textContent = msg;
+      els.toast.classList.toggle('error', isError);
+      els.toast.classList.add('show');
+      setTimeout(() => els.toast.classList.remove('show'), 2400);
+    }
+
+    function showError(msg) {
+      els.error.innerHTML = msg ? '<div class="lr-error">' + msg + '</div>' : '';
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(path, { credentials: 'same-origin', ...opts });
+      if (res.status === 401) { window.location.href = '/admin/login.html'; throw new Error('not authed'); }
+      const ct = res.headers.get('content-type') || '';
+      const data = ct.includes('application/json') ? await res.json() : await res.text();
+      if (!res.ok) {
+        const msg = (data && data.error) || (typeof data === 'string' ? data : 'Request failed');
+        throw new Error(msg);
+      }
+      return data;
+    }
+
+    async function loadMe() {
+      try {
+        const data = await api('/.netlify/functions/auth-me');
+        els.whoName.textContent = data.user.name + ' (' + data.user.email + ')';
+      } catch (e) { /* redirected */ }
+    }
+
+    async function loadStats() {
+      try {
+        const data = await api('/.netlify/functions/listings-list?stats=1');
+        const s = data.totals.byStatus;
+        const total = data.totals.total;
+        els.stats.innerHTML =
+          renderStat('Total listings', total) +
+          renderStat('Manually verified', s['manually-verified'] || 0) +
+          renderStat('Auto-verified', s['auto-verified'] || 0) +
+          renderStat('Needs attention', (s['needs-review'] || 0) + (s['not-found'] || 0) + (s['drift'] || 0)) +
+          renderStat('Closed', s.closed || 0) +
+          renderStat('Unverified', s.unverified || 0);
+      } catch (e) {
+        els.stats.textContent = 'Stats unavailable: ' + e.message;
+      }
+    }
+
+    function renderStat(label, value) {
+      return '<div class="lr-stat"><strong>' + value.toLocaleString() + '</strong><span>' + label + '</span></div>';
+    }
+
+    function buildQuery() {
+      return {
+        category: els.filterCategory.value,
+        status: els.filterStatus.value,
+        search: els.filterSearch.value.trim(),
+        limit: PAGE_SIZE,
+        offset: state.offset,
+      };
+    }
+
+    async function loadList() {
+      els.results.innerHTML = '<div class="lr-loading">Loading…</div>';
+      showError('');
+      const q = buildQuery();
+      const params = new URLSearchParams();
+      if (q.category && q.category !== 'all') params.set('category', q.category);
+      if (q.status) params.set('status', q.status);
+      if (q.search) params.set('search', q.search);
+      params.set('limit', q.limit);
+      params.set('offset', q.offset);
+
+      try {
+        const data = await api('/.netlify/functions/listings-list?' + params.toString());
+        state.total = data.total;
+        state.filtered = data.filtered;
+        state.lastQuery = q;
+        renderList(data.items);
+        renderPagination();
+      } catch (e) {
+        showError('Failed to load: ' + e.message);
+        els.results.innerHTML = '';
+      }
+    }
+
+    function fmtVerification(v) {
+      if (!v) return '<em>no metadata</em>';
+      const bits = [];
+      if (v.placeId) bits.push('placeId: <code>' + v.placeId + '</code>');
+      if (v.businessStatus) bits.push('businessStatus: <code>' + v.businessStatus + '</code>');
+      if (v.priceSnapshot) bits.push('price: <code>' + v.priceSnapshot + '</code>');
+      if (v.lastChecked) bits.push('lastChecked: <code>' + v.lastChecked + '</code>');
+      if (v.lastCheckedBy) bits.push('by: <code>' + v.lastCheckedBy + '</code>');
+      if (v.notes) bits.push('notes: ' + v.notes);
+      return bits.length ? '<dl>' + bits.map((b) => {
+        const idx = b.indexOf(':');
+        const k = idx > -1 ? b.slice(0, idx) : b;
+        const val = idx > -1 ? b.slice(idx + 1) : '';
+        return '<dt>' + k + '</dt><dd>' + val.trim() + '</dd>';
+      }).join('') + '</dl>' : '<em>no metadata yet</em>';
+    }
+
+    function escape(str) {
+      return String(str || '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+    }
+
+    function renderList(items) {
+      if (!items || items.length === 0) {
+        els.results.innerHTML = '<div class="lr-empty">No listings match your filters.</div>';
+        return;
+      }
+      els.results.innerHTML = items.map((it) => {
+        const v = it.verification || {};
+        const status = v.status || 'unverified';
+        return (
+          '<div class="lr-card status-' + status + '" data-cat="' + escape(it.category) + '" data-id="' + escape(it.id) + '">' +
+            '<div class="lr-card__head">' +
+              '<div>' +
+                '<h3 class="lr-card__title">' + escape(it.name) + '</h3>' +
+                '<div class="lr-card__meta">' +
+                  '<strong>' + escape(it.category) + '</strong> · ' +
+                  (it.neighbourhood ? escape(it.neighbourhood) + ' · ' : '') +
+                  (it.address ? escape(it.address) : '') +
+                '</div>' +
+              '</div>' +
+              '<span class="lr-badge ' + status + '">' + status.replace(/-/g, ' ') + '</span>' +
+            '</div>' +
+            '<div class="lr-actions">' +
+              '<button type="button" class="confirm" data-action="confirm">Confirm</button>' +
+              '<button type="button" class="close" data-action="mark-closed">Mark closed</button>' +
+              '<button type="button" class="flag" data-action="flag-review">Flag for review</button>' +
+              '<button type="button" class="expand" data-action="toggle-details">Details</button>' +
+            '</div>' +
+            '<div class="lr-details">' + fmtVerification(v) + '</div>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    function renderPagination() {
+      const max = Math.max(1, Math.ceil(state.filtered / PAGE_SIZE));
+      const cur = Math.floor(state.offset / PAGE_SIZE) + 1;
+      els.pageInfo.textContent =
+        state.filtered === 0
+          ? 'No matches'
+          : 'Page ' + cur + ' of ' + max + ' · ' + state.filtered.toLocaleString() + ' matching of ' + state.total.toLocaleString() + ' total';
+      els.prevBtn.disabled = state.offset === 0;
+      els.nextBtn.disabled = state.offset + PAGE_SIZE >= state.filtered;
+      els.pagination.style.display = state.filtered > 0 ? 'flex' : 'none';
+    }
+
+    async function doAction(category, listingId, action, payload) {
+      try {
+        const res = await api('/.netlify/functions/listings-action', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ category, listingId, action, payload }),
+        });
+        showToast(action.replace(/-/g, ' ') + ' · ' + (res.changed ? 'committed' : 'no change'));
+        // Optimistic refresh: reload current page so the badge updates.
+        // The bundled data on the server is stale until next deploy, but the
+        // commit happens immediately so the audit trail is correct.
+        await loadList();
+        loadStats();
+      } catch (e) {
+        showToast('Action failed: ' + e.message, true);
+      }
+    }
+
+    function openNotesModal(title, prompt, onSave) {
+      els.modalTitle.textContent = title;
+      els.modalPrompt.textContent = prompt;
+      els.modalInput.value = '';
+      els.modal.classList.add('open');
+      els.modalInput.focus();
+      els.modalConfirm.onclick = () => {
+        const v = els.modalInput.value.trim();
+        els.modal.classList.remove('open');
+        onSave(v);
+      };
+    }
+    els.modalCancel.addEventListener('click', () => els.modal.classList.remove('open'));
+
+    els.results.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-action]');
+      if (!btn) return;
+      const card = btn.closest('.lr-card');
+      const cat = card.dataset.cat;
+      const id = card.dataset.id;
+      const action = btn.dataset.action;
+
+      if (action === 'toggle-details') {
+        card.querySelector('.lr-details').classList.toggle('open');
+        return;
+      }
+      if (action === 'confirm') {
+        doAction(cat, id, 'confirm', null);
+        return;
+      }
+      if (action === 'mark-closed') {
+        openNotesModal('Mark as closed', 'Optional: a short note explaining the closure (max 500 chars).', (notes) => {
+          doAction(cat, id, 'mark-closed', notes ? { notes } : null);
+        });
+        return;
+      }
+      if (action === 'flag-review') {
+        openNotesModal('Flag for review', 'What needs checking? (will appear in verification.notes)', (notes) => {
+          doAction(cat, id, 'flag-review', notes ? { notes } : null);
+        });
+        return;
+      }
+    });
+
+    els.filters.addEventListener('submit', (e) => {
+      e.preventDefault();
+      state.offset = 0;
+      loadList();
+    });
+
+    els.prevBtn.addEventListener('click', () => {
+      state.offset = Math.max(0, state.offset - PAGE_SIZE);
+      loadList();
+    });
+    els.nextBtn.addEventListener('click', () => {
+      state.offset += PAGE_SIZE;
+      loadList();
+    });
+
+    els.logoutBtn.addEventListener('click', async () => {
+      try { await api('/.netlify/functions/auth-logout', { method: 'POST' }); } catch {}
+      window.location.href = '/admin/login.html';
+    });
+
+    // Boot
+    loadMe();
+    loadStats();
+    loadList();
+  })();
+  </script>
+</body>
+</html>
