@@ -73,6 +73,17 @@
   to = "/musical-london-trip.html"
   status = 200
 
+# --- Legacy blog URL redirects (post moved from /blog/ to root) ---
+[[redirects]]
+  from = "/blog/blog-hot-spring-that-doesnt-exist"
+  to = "/blog-hot-spring-that-doesnt-exist.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/blog-hot-spring-that-doesnt-exist.html"
+  to = "/blog-hot-spring-that-doesnt-exist.html"
+  status = 301
+
 # 404 fallback — must stay last.
 [[redirects]]
   from = "/*"
