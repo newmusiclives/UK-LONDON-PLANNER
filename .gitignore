@@ -8,8 +8,15 @@
 # AI Staff runtime artefacts
 # queue/ and published/ are tracked — downstream GH Action runs do a fresh
 # checkout and need the latest brief + drafts committed to find them.
+# archived/ is local-only; the move from published/ to archived/ is the
+# publisher's "this draft has been used" marker, and git already records
+# the published/ removal.
 ai-staff/logs/
 ai-staff/node_modules/
+ai-staff/archived/
+
+# Deno (edge functions) lock — generated locally when running edge fns
+deno.lock
 
 # Node
 node_modules/
