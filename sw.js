@@ -1,4 +1,8 @@
-const CACHE_NAME = 'london-planned-v11';
+// Bumping this version forces returning visitors to refetch instead of being
+// served stale assets that drift from the deployed config (e.g. v11 shipped
+// before AffiliateLinks.isApproved existed; clients on v11 saw a
+// "AffiliateLinks.isApproved is not a function" error post-wizard).
+const CACHE_NAME = 'london-planned-v12';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -85,19 +89,34 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch — cache-first for static assets, network-first for API calls
+// Fetch — cache-first for static assets, network-first for code + API calls.
+// JS/CSS go network-first so a SW upgrade reaches users without forcing a
+// version bump every JS edit. Images / data / fonts stay cache-first.
 self.addEventListener('fetch', (event) => {
   const { request } = event;
+  const url = request.url;
 
   // Network-first for API calls
-  if (request.url.includes('api.') || request.url.includes('services.leadconnectorhq')) {
+  if (url.includes('api.') || url.includes('services.leadconnectorhq')) {
+    event.respondWith(fetch(request).catch(() => caches.match(request)));
+    return;
+  }
+
+  // Network-first for JS + CSS (code can change between deploys)
+  if (request.destination === 'script' || request.destination === 'style' || /\.(js|css|mjs)(\?|$)/.test(url)) {
     event.respondWith(
-      fetch(request).catch(() => caches.match(request))
+      fetch(request).then((fetchResponse) => {
+        if (fetchResponse && fetchResponse.status === 200) {
+          const clone = fetchResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+        }
+        return fetchResponse;
+      }).catch(() => caches.match(request))
     );
     return;
   }
 
-  // Cache-first for everything else
+  // Cache-first for everything else (images, fonts, data files)
   event.respondWith(
     caches.match(request).then((response) => {
       if (response) return response;
@@ -109,7 +128,6 @@ self.addEventListener('fetch', (event) => {
         return fetchResponse;
       });
     }).catch(() => {
-      // Offline fallback
       if (request.destination === 'document') {
         return caches.match('/index.html');
       }
